@@ -1,0 +1,2883 @@
+{
+  "title": "Gramlingo",
+  "modules": [
+    {
+      "id": "clauses",
+      "name": {
+        "zh": "定语从句",
+        "en": "Relative Clauses",
+        "es": "Cláusulas Relativas"
+      },
+      "desc": {
+        "zh": "学会识别和使用定语从句——英语句子的骨架",
+        "en": "Master relative clauses — the backbone of English sentences",
+        "es": "Domina las cláusulas relativas — la columna vertebral del inglés"
+      },
+      "gramlin": "writer",
+      "icon": "🔍",
+      "sort": 1
+    },
+    {
+      "id": "prepositions",
+      "name": {
+        "zh": "介词",
+        "en": "Prepositions",
+        "es": "Preposiciones"
+      },
+      "desc": {
+        "zh": "掌握 in/on/at 的空间和时间用法",
+        "en": "Master in/on/at for place and time",
+        "es": "Domina in/on/at para lugar y tiempo"
+      },
+      "gramlin": "thinking",
+      "icon": "📍",
+      "sort": 2
+    }
+  ],
+  "phaseLockOrder": {
+    "clauses": [
+      "rec",
+      "subj",
+      "obj",
+      "subobj",
+      "oblq",
+      "gen",
+      "rest",
+      "prod"
+    ],
+    "prepositions": [
+      "prep_place",
+      "prep_time",
+      "prep_mixed",
+      "prep_prod"
+    ]
+  },
+  "phases": [
+    {
+      "module": "clauses",
+      "id": "rec",
+      "name": {
+        "zh": "识别定语从句",
+        "en": "Identify Relative Clauses",
+        "es": "Identificar cláusulas relativas"
+      },
+      "s": {
+        "zh": "Can you spot the relative clause?",
+        "en": "Can you spot the relative clause?",
+        "es": "¿Puedes encontrar la cláusula relativa?"
+      },
+      "d": {
+        "zh": "Find the relative clause in each sentence",
+        "en": "Find the relative clause in each sentence",
+        "es": "Encuentra la cláusula relativa en cada oración"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "下面哪个部分是定语从句？<br><i>The woman who called me is my manager.</i>",
+            "en": "下面哪个部分是定语从句？<br><i>The woman who called me is my manager.</i>",
+            "es": "下面哪个部分是定语从句？<br><i>The woman who called me is my manager.</i>"
+          },
+          "a": "who called me",
+          "o": {
+            "zh": [
+              "The woman",
+              "who called me",
+              "is my manager",
+              "my manager"
+            ],
+            "en": [
+              "The woman",
+              "who called me",
+              "is my manager",
+              "my manager"
+            ],
+            "es": [
+              "The woman",
+              "who called me",
+              "is my manager",
+              "my manager"
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "下面哪个部分是定语从句？<br><i>I read the book that you recommended.</i>",
+            "en": "下面哪个部分是定语从句？<br><i>I read the book that you recommended.</i>",
+            "es": "下面哪个部分是定语从句？<br><i>I read the book that you recommended.</i>"
+          },
+          "a": "that you recommended",
+          "o": {
+            "zh": [
+              "I read",
+              "the book",
+              "that you recommended",
+              "the book that"
+            ],
+            "en": [
+              "I read",
+              "the book",
+              "that you recommended",
+              "the book that"
+            ],
+            "es": [
+              "I read",
+              "the book",
+              "that you recommended",
+              "the book that"
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "下面哪个部分是定语从句？<br><i>The cafe where we met has closed.</i>",
+            "en": "下面哪个部分是定语从句？<br><i>The cafe where we met has closed.</i>",
+            "es": "下面哪个部分是定语从句？<br><i>The cafe where we met has closed.</i>"
+          },
+          "a": "where we met",
+          "o": {
+            "zh": [
+              "The cafe",
+              "where we met",
+              "has closed",
+              "The cafe where"
+            ],
+            "en": [
+              "The cafe",
+              "where we met",
+              "has closed",
+              "The cafe where"
+            ],
+            "es": [
+              "The cafe",
+              "where we met",
+              "has closed",
+              "The cafe where"
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "定语从句修饰的是哪个名词？<br><i>The scientist who discovered the vaccine won a prize.</i>",
+            "en": "定语从句修饰的是哪个名词？<br><i>The scientist who discovered the vaccine won a prize.</i>",
+            "es": "定语从句修饰的是哪个名词？<br><i>The scientist who discovered the vaccine won a prize.</i>"
+          },
+          "a": "The scientist",
+          "o": {
+            "zh": [
+              "The scientist",
+              "discovered",
+              "the vaccine",
+              "won a prize"
+            ],
+            "en": [
+              "The scientist",
+              "discovered",
+              "the vaccine",
+              "won a prize"
+            ],
+            "es": [
+              "The scientist",
+              "discovered",
+              "the vaccine",
+              "won a prize"
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "先行词是哪个？<br><i>I use a phone that never crashes.</i>",
+            "en": "先行词是哪个？<br><i>I use a phone that never crashes.</i>",
+            "es": "先行词是哪个？<br><i>I use a phone that never crashes.</i>"
+          },
+          "a": "a phone",
+          "o": {
+            "zh": [
+              "I use",
+              "a phone",
+              "that never crashes",
+              "never crashes"
+            ],
+            "en": [
+              "I use",
+              "a phone",
+              "that never crashes",
+              "never crashes"
+            ],
+            "es": [
+              "I use",
+              "a phone",
+              "that never crashes",
+              "never crashes"
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "subj",
+      "name": {
+        "zh": "指人+作主语",
+        "en": "People & Things as Subjects",
+        "es": "Personas y cosas como sujeto"
+      },
+      "s": {
+        "zh": "Relative pronoun = subject",
+        "en": "Relative pronoun = subject",
+        "es": "Pronombre relativo = sujeto"
+      },
+      "d": {
+        "zh": "who/that as the subject — followed directly by a verb",
+        "en": "who/that as the subject — followed directly by a verb",
+        "es": "who/that como sujeto — seguido por un verbo"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The woman ___ called me is my manager.",
+            "en": "The woman ___ called me is my manager.",
+            "es": "The woman ___ called me is my manager."
+          },
+          "a": [
+            "who",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "who 指人作主语 → who 或 that 都可以",
+            "en": "who for people as subject",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The doctor ___ treated me was kind.",
+            "en": "The doctor ___ treated me was kind.",
+            "es": "The doctor ___ treated me was kind."
+          },
+          "a": [
+            "who",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "which",
+              "who",
+              "that",
+              "whom"
+            ],
+            "en": [
+              "which",
+              "who",
+              "that",
+              "whom"
+            ],
+            "es": [
+              "which",
+              "who",
+              "that",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "指人作主语 → who/that",
+            "en": "Person as subject → who/that",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "I need a tool ___ can fix this.",
+            "en": "I need a tool ___ can fix this.",
+            "es": "I need a tool ___ can fix this."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ],
+            "en": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ],
+            "es": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "指物作主语 → that/which",
+            "en": "Thing as subject → that/which",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The train ___ arrives at 3 PM is delayed.",
+            "en": "The train ___ arrives at 3 PM is delayed.",
+            "es": "The train ___ arrives at 3 PM is delayed."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "train 是物 → that/which",
+            "en": "train is a thing → that/which",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "A friend ___ helps you is priceless.",
+            "en": "A friend ___ helps you is priceless.",
+            "es": "A friend ___ helps you is priceless."
+          },
+          "a": [
+            "who",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "which",
+              "who",
+              "that",
+              "where"
+            ],
+            "en": [
+              "which",
+              "who",
+              "that",
+              "where"
+            ],
+            "es": [
+              "which",
+              "who",
+              "that",
+              "where"
+            ]
+          },
+          "t": {
+            "zh": "friend 指人 → who/that",
+            "en": "friend = person, subject → who/that",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "People ___ exercise regularly live longer.",
+            "en": "People ___ exercise regularly live longer.",
+            "es": "People ___ exercise regularly live longer."
+          },
+          "a": [
+            "who",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "人作主语 → who/that",
+            "en": "People as subject → who/that",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The package ___ arrived today is from Amazon.",
+            "en": "The package ___ arrived today is from Amazon.",
+            "es": "The package ___ arrived today is from Amazon."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "that",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "package 是物 → that/which",
+            "en": "package = thing → that/which",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "obj",
+      "name": {
+        "zh": "指人/物+作宾语",
+        "en": "People & Things as Objects",
+        "es": "Personas y cosas como objeto"
+      },
+      "s": {
+        "zh": "Relative pronoun = object",
+        "en": "Relative pronoun = object",
+        "es": "Pronombre relativo = objeto"
+      },
+      "d": {
+        "zh": "The relative pronoun receives the action",
+        "en": "The relative pronoun receives the action",
+        "es": "El pronombre relativo recibe la acción"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The file ___ you sent is open.",
+            "en": "The file ___ you sent is open.",
+            "es": "The file ___ you sent is open."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ],
+            "en": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ],
+            "es": [
+              "who",
+              "that",
+              "where",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "file 是 sent 的宾语",
+            "en": "file is the object of sent",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The movie ___ we watched was boring.",
+            "en": "The movie ___ we watched was boring.",
+            "es": "The movie ___ we watched was boring."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "which",
+              "whom"
+            ],
+            "en": [
+              "who",
+              "that",
+              "which",
+              "whom"
+            ],
+            "es": [
+              "who",
+              "that",
+              "which",
+              "whom"
+            ]
+          },
+          "t": {
+            "zh": "movie 是 watched 的宾语",
+            "en": "movie is the object of watched",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The client ___ we met yesterday is from Tokyo.",
+            "en": "The client ___ we met yesterday is from Tokyo.",
+            "es": "The client ___ we met yesterday is from Tokyo."
+          },
+          "a": [
+            "whom",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "指人作宾语 → whom/that",
+            "en": "Person as object → whom/that",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The people ___ I invited are coming.",
+            "en": "The people ___ I invited are coming.",
+            "es": "The people ___ I invited are coming."
+          },
+          "a": [
+            "whom",
+            "that"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whom",
+              "which",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "人作宾语 → whom/that",
+            "en": "People as object → whom/that",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The report ___ Anna wrote is on the table.",
+            "en": "The report ___ Anna wrote is on the table.",
+            "es": "The report ___ Anna wrote is on the table."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ],
+            "en": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ],
+            "es": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ]
+          },
+          "t": {
+            "zh": "report 是 wrote 的宾语",
+            "en": "report is the object of wrote",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The advice ___ she gave me was helpful.",
+            "en": "The advice ___ she gave me was helpful.",
+            "es": "The advice ___ she gave me was helpful."
+          },
+          "a": [
+            "that",
+            "which"
+          ],
+          "o": {
+            "zh": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ],
+            "en": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ],
+            "es": [
+              "who",
+              "that",
+              "which",
+              "where"
+            ]
+          },
+          "t": {
+            "zh": "advice 是 gave 的宾语",
+            "en": "advice is the object of gave",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "subobj",
+      "name": {
+        "zh": "区分：主语vs宾语",
+        "en": "Subject vs Object",
+        "es": "Sujeto vs Objeto"
+      },
+      "s": {
+        "zh": "Find the extra subject",
+        "en": "Find the extra subject",
+        "es": "Encuentra el sujeto extra"
+      },
+      "d": {
+        "zh": "If the clause already has a subject, the relative pronoun is the object",
+        "en": "If the clause already has a subject, the relative pronoun is the object",
+        "es": "Si la cláusula ya tiene sujeto, el pronombre es objeto"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "<b>who called</b> me — who 是主语还是宾语？",
+            "en": "<b>who called</b> me — is 'who' the subject or object?",
+            "es": "<b>who called</b> me — is 'who' the subject or object?"
+          },
+          "a": "subject（主语）",
+          "o": {
+            "zh": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "en": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "es": [
+              "subject（主语）",
+              "object（宾语）"
+            ]
+          },
+          "t": {
+            "zh": "who 自己就是 called 的主语",
+            "en": "who IS the subject of called",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "<b>who I called</b> — who 是主语还是宾语？",
+            "en": "<b>who I called</b> — is 'who' the subject or object?",
+            "es": "<b>who I called</b> — is 'who' the subject or object?"
+          },
+          "a": "object（宾语）",
+          "o": {
+            "zh": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "en": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "es": [
+              "subject（主语）",
+              "object（宾语）"
+            ]
+          },
+          "t": {
+            "zh": "I 是主语，who 是 called 的宾语",
+            "en": "I is the subject, who is the object",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "改正：The man who he called me is my neighbor. 哪个词多余？",
+            "en": "Fix: The man who he called me is my neighbor. Which word is extra?",
+            "es": "Fix: The man who he called me is my neighbor. Which word is extra?"
+          },
+          "a": "he",
+          "o": {
+            "zh": [
+              "who",
+              "he",
+              "man",
+              "neighbor"
+            ],
+            "en": [
+              "who",
+              "he",
+              "man",
+              "neighbor"
+            ],
+            "es": [
+              "who",
+              "he",
+              "man",
+              "neighbor"
+            ]
+          },
+          "t": {
+            "zh": "who 已经代表'那个人'了",
+            "en": "who already represents 'the man'",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "改正：The report that Anna wrote it is ready. 哪个词多余？",
+            "en": "Fix: The report that Anna wrote it is ready. Which word is extra?",
+            "es": "Fix: The report that Anna wrote it is ready. Which word is extra?"
+          },
+          "a": "it",
+          "o": {
+            "zh": [
+              "that",
+              "Anna",
+              "wrote",
+              "it"
+            ],
+            "en": [
+              "that",
+              "Anna",
+              "wrote",
+              "it"
+            ],
+            "es": [
+              "that",
+              "Anna",
+              "wrote",
+              "it"
+            ]
+          },
+          "t": {
+            "zh": "that 已经代表 the report",
+            "en": "that already represents the report",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The student ___ answered correctly won a prize. 主语还是宾语？",
+            "en": "The student ___ answered correctly won a prize. Subject or object?",
+            "es": "The student ___ answered correctly won a prize. Subject or object?"
+          },
+          "a": "subject（主语）",
+          "o": {
+            "zh": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "en": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "es": [
+              "subject（主语）",
+              "object（宾语）"
+            ]
+          },
+          "t": {
+            "zh": "回答是学生发出的 → 主语",
+            "en": "answering is done BY the student → subject",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The student ___ the teacher praised won a prize. 主语还是宾语？",
+            "en": "The student ___ the teacher praised won a prize. Subject or object?",
+            "es": "The student ___ the teacher praised won a prize. Subject or object?"
+          },
+          "a": "object（宾语）",
+          "o": {
+            "zh": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "en": [
+              "subject（主语）",
+              "object（宾语）"
+            ],
+            "es": [
+              "subject（主语）",
+              "object（宾语）"
+            ]
+          },
+          "t": {
+            "zh": "表扬是老师发出的 → 宾语",
+            "en": "praising is done BY the teacher → object",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "oblq",
+      "name": {
+        "zh": "where/when/why",
+        "en": "where/when/why",
+        "es": "where/when/why"
+      },
+      "s": {
+        "zh": "Place · Time · Reason",
+        "en": "Place · Time · Reason",
+        "es": "Lugar · Tiempo · Razón"
+      },
+      "d": {
+        "zh": "where = place, when = time, why = reason",
+        "en": "where = place, when = time, why = reason",
+        "es": "where = lugar, when = tiempo, why = razón"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "This is the cafe ___ we met.",
+            "en": "This is the cafe ___ we met.",
+            "es": "This is the cafe ___ we met."
+          },
+          "a": "where",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "cafe 是地点 → where",
+            "en": "cafe is a place → where",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Friday is the day ___ we present.",
+            "en": "Friday is the day ___ we present.",
+            "es": "Friday is the day ___ we present."
+          },
+          "a": "when",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "day 是时间 → when",
+            "en": "day is time → when",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "That is the reason ___ I left early.",
+            "en": "That is the reason ___ I left early.",
+            "es": "That is the reason ___ I left early."
+          },
+          "a": "why",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ]
+          },
+          "t": {
+            "zh": "reason 是原因 → why",
+            "en": "reason is cause → why",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The office ___ I work is downtown.",
+            "en": "The office ___ I work is downtown.",
+            "es": "The office ___ I work is downtown."
+          },
+          "a": "where",
+          "o": {
+            "zh": [
+              "where",
+              "which",
+              "who",
+              "when"
+            ],
+            "en": [
+              "where",
+              "which",
+              "who",
+              "when"
+            ],
+            "es": [
+              "where",
+              "which",
+              "who",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "office 是地点 → where",
+            "en": "office is a place → where",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "The year ___ I graduated was 2020.",
+            "en": "The year ___ I graduated was 2020.",
+            "es": "The year ___ I graduated was 2020."
+          },
+          "a": "when",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "year 是时间 → when",
+            "en": "year is time → when",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "This is the room ___ the meeting will happen.",
+            "en": "This is the room ___ the meeting will happen.",
+            "es": "This is the room ___ the meeting will happen."
+          },
+          "a": "where",
+          "o": {
+            "zh": [
+              "where",
+              "which",
+              "that",
+              "when"
+            ],
+            "en": [
+              "where",
+              "which",
+              "that",
+              "when"
+            ],
+            "es": [
+              "where",
+              "which",
+              "that",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "room 是地点 → where",
+            "en": "room is a place → where",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "I will never forget the moment ___ I saw the ocean.",
+            "en": "I will never forget the moment ___ I saw the ocean.",
+            "es": "I will never forget the moment ___ I saw the ocean."
+          },
+          "a": "when",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "when"
+            ]
+          },
+          "t": {
+            "zh": "moment 是时间点 → when",
+            "en": "moment is a point in time → when",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Explain the reason ___ you were late.",
+            "en": "Explain the reason ___ you were late.",
+            "es": "Explain the reason ___ you were late."
+          },
+          "a": "why",
+          "o": {
+            "zh": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ],
+            "en": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ],
+            "es": [
+              "who",
+              "which",
+              "where",
+              "why"
+            ]
+          },
+          "t": {
+            "zh": "reason 是原因 → why",
+            "en": "reason is cause → why",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "gen",
+      "name": {
+        "zh": "所有格 whose",
+        "en": "Possessive whose",
+        "es": "Posesivo whose"
+      },
+      "s": {
+        "zh": "'...'s'",
+        "en": "'...'s'",
+        "es": "'de quien'"
+      },
+      "d": {
+        "zh": "whose = his/her/its/their — works for people AND things",
+        "en": "whose = his/her/its/their — works for people AND things",
+        "es": "whose = su/sus — para personas Y cosas"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The man ___ car was stolen reported it.",
+            "en": "The man ___ car was stolen reported it.",
+            "es": "The man ___ car was stolen reported it."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ]
+          },
+          "t": {
+            "zh": "his car",
+            "en": "his car",
+            "es": "su coche"
+          }
+        },
+        {
+          "q": {
+            "zh": "I know a woman ___ son is a pilot.",
+            "en": "I know a woman ___ son is a pilot.",
+            "es": "Conozco a una mujer ___ hijo es piloto."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "whom",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "whom",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "whom",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "her son",
+            "en": "her son",
+            "es": "su hijo"
+          }
+        },
+        {
+          "q": {
+            "zh": "The company ___ CEO resigned is in trouble.",
+            "en": "The company ___ CEO resigned is in trouble.",
+            "es": "La empresa ___ CEO renuncio tiene problemas."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "its CEO",
+            "en": "its CEO",
+            "es": "su CEO"
+          }
+        },
+        {
+          "q": {
+            "zh": "The tree ___ branches fell was very old.",
+            "en": "The tree ___ branches fell was very old.",
+            "es": "El arbol ___ ramas cayeron era muy viejo."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "its branches",
+            "en": "its branches",
+            "es": "sus ramas"
+          }
+        },
+        {
+          "q": {
+            "zh": "She adopted a dog ___ owner had passed away.",
+            "en": "She adopted a dog ___ owner had passed away.",
+            "es": "Adopto un perro ___ dueno habia fallecido."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "which",
+              "that"
+            ]
+          },
+          "t": {
+            "zh": "its owner",
+            "en": "its owner",
+            "es": "su dueno"
+          }
+        },
+        {
+          "q": {
+            "zh": "That is the writer ___ books I love.",
+            "en": "That is the writer ___ books I love.",
+            "es": "Ese es el escritor ___ libros adoro."
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ]
+          },
+          "t": {
+            "zh": "his books",
+            "en": "his books",
+            "es": "sus libros"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fix: The woman who her car was stolen. who her = ?",
+            "en": "Fix: The woman who her car was stolen. who her = ?",
+            "es": "Corrige: The woman who her car... who her = ?"
+          },
+          "a": "whose",
+          "o": {
+            "zh": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "en": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ],
+            "es": [
+              "who",
+              "whose",
+              "whom",
+              "which"
+            ]
+          },
+          "t": {
+            "zh": "whose = who + her",
+            "en": "whose = who + her",
+            "es": "whose = who + her"
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "rest",
+      "name": {
+        "zh": "限制性vs非限制性",
+        "en": "Restrictive vs Non-restrictive",
+        "es": "Restrictivas vs No restrictivas"
+      },
+      "s": {
+        "zh": "Comma or no comma?",
+        "en": "Comma or no comma?",
+        "es": "¿Con coma o sin coma?"
+      },
+      "d": {
+        "zh": "No comma = restrictive (essential). Comma = non-restrictive (extra info)",
+        "en": "No comma = restrictive (essential). Comma = non-restrictive (extra info)",
+        "es": "Sin coma = restrictiva. Con coma = no restrictiva"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The students who passed celebrated. (only some) comma?",
+            "en": "The students who passed celebrated. (only some) comma?",
+            "es": "The students who passed celebrated. (solo algunos) coma?"
+          },
+          "a": "No comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Restrictive = no comma",
+            "en": "Restrictive = no comma",
+            "es": "Restrictiva = sin coma"
+          }
+        },
+        {
+          "q": {
+            "zh": "The students, who passed, celebrated. (all) comma?",
+            "en": "The students, who passed, celebrated. (all) comma?",
+            "es": "The students, who passed, celebrated. (todos) coma?"
+          },
+          "a": "Comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Non-restrictive = comma",
+            "en": "Non-restrictive = comma",
+            "es": "No restrictiva = coma"
+          }
+        },
+        {
+          "q": {
+            "zh": "My brother who lives in Tokyo is visiting. (one brother) comma?",
+            "en": "My brother who lives in Tokyo is visiting. (one brother) comma?",
+            "es": "My brother who lives in Tokyo... (un hermano) coma?"
+          },
+          "a": "Comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Only one brother = comma",
+            "en": "Only one = comma",
+            "es": "Solo uno = coma"
+          }
+        },
+        {
+          "q": {
+            "zh": "The car which is parked outside is mine. (several outside) comma?",
+            "en": "The car which is parked outside is mine. (several outside) comma?",
+            "es": "The car which is parked... (varios) coma?"
+          },
+          "a": "No comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Need to specify which = no comma",
+            "en": "Need to specify = no comma",
+            "es": "Hay que especificar = sin coma"
+          }
+        },
+        {
+          "q": {
+            "zh": "The managers who attended agreed. means?",
+            "en": "The managers who attended agreed. means?",
+            "es": "The managers who attended agreed. significa?"
+          },
+          "a": "Only those who attended",
+          "o": {
+            "zh": [
+              "All attended",
+              "Only those who attended"
+            ],
+            "en": [
+              "All attended",
+              "Only those who attended"
+            ],
+            "es": [
+              "All attended",
+              "Only those who attended"
+            ]
+          },
+          "t": {
+            "zh": "No comma = only some",
+            "en": "No comma = only some",
+            "es": "Sin coma = solo algunos"
+          }
+        },
+        {
+          "q": {
+            "zh": "The managers, who attended, agreed. means?",
+            "en": "The managers, who attended, agreed. means?",
+            "es": "The managers, who attended, agreed. significa?"
+          },
+          "a": "All attended",
+          "o": {
+            "zh": [
+              "All attended",
+              "Only those who attended"
+            ],
+            "en": [
+              "All attended",
+              "Only those who attended"
+            ],
+            "es": [
+              "All attended",
+              "Only those who attended"
+            ]
+          },
+          "t": {
+            "zh": "Comma = all attended",
+            "en": "Comma = all attended",
+            "es": "Con coma = todos"
+          }
+        },
+        {
+          "q": {
+            "zh": "Dr. Chen, who has 20 years exp., will lead. comma?",
+            "en": "Dr. Chen, who has 20 years exp., will lead. comma?",
+            "es": "Dr. Chen, who has 20 years... coma?"
+          },
+          "a": "Comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Already known person = comma",
+            "en": "Known person = comma",
+            "es": "Persona conocida = coma"
+          }
+        },
+        {
+          "q": {
+            "zh": "A doctor who has 20 years exp. will lead. comma?",
+            "en": "A doctor who has 20 years exp. will lead. comma?",
+            "es": "A doctor who has 20 years... coma?"
+          },
+          "a": "No comma",
+          "o": {
+            "zh": [
+              "No comma",
+              "Comma"
+            ],
+            "en": [
+              "No comma",
+              "Comma"
+            ],
+            "es": [
+              "No comma",
+              "Comma"
+            ]
+          },
+          "t": {
+            "zh": "Need to specify which = no comma",
+            "en": "Need to specify = no comma",
+            "es": "Hay que especificar = sin coma"
+          }
+        }
+      ]
+    },
+    {
+      "module": "clauses",
+      "id": "prod",
+      "name": {
+        "zh": "综合运用",
+        "en": "Mixed Practice",
+        "es": "Práctica mixta"
+      },
+      "s": {
+        "zh": "Combine sentences",
+        "en": "Combine sentences",
+        "es": "Combinar oraciones"
+      },
+      "d": {
+        "zh": "Merge two sentences using relative clauses",
+        "en": "Merge two sentences using relative clauses",
+        "es": "Une dos oraciones con cláusulas relativas"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "Combine: A customer called. She ordered yesterday.",
+            "en": "Combine: A customer called. She ordered yesterday.",
+            "es": "Combina: A customer called. She ordered yesterday."
+          },
+          "a": "The customer who ordered yesterday called.",
+          "o": {
+            "zh": [
+              "The customer who ordered yesterday called.",
+              "The customer called who ordered yesterday.",
+              "A customer called she ordered yesterday."
+            ],
+            "en": [
+              "The customer who ordered yesterday called.",
+              "The customer called who ordered yesterday.",
+              "A customer called she ordered yesterday."
+            ],
+            "es": [
+              "The customer who ordered yesterday called.",
+              "The customer called who ordered yesterday.",
+              "A customer called she ordered yesterday."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Combine: I met a designer. She created our website.",
+            "en": "Combine: I met a designer. She created our website.",
+            "es": "Combina: I met a designer. She created our website."
+          },
+          "a": "I met a designer who created our website.",
+          "o": {
+            "zh": [
+              "I met a designer who created our website.",
+              "I met who created our website a designer.",
+              "I met a designer she created our website."
+            ],
+            "en": [
+              "I met a designer who created our website.",
+              "I met who created our website a designer.",
+              "I met a designer she created our website."
+            ],
+            "es": [
+              "I met a designer who created our website.",
+              "I met who created our website a designer.",
+              "I met a designer she created our website."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Combine: I found a book. It explains grammar.",
+            "en": "Combine: I found a book. It explains grammar.",
+            "es": "Combina: I found a book. It explains grammar."
+          },
+          "a": [
+            "I found a book which explains grammar.",
+            "I found a book that explains grammar."
+          ],
+          "o": {
+            "zh": [
+              "I found a book which explains grammar.",
+              "I found a book that explains grammar.",
+              "I found a book it explains grammar.",
+              "I found which explains grammar a book."
+            ],
+            "en": [
+              "I found a book which explains grammar.",
+              "I found a book that explains grammar.",
+              "I found a book it explains grammar.",
+              "I found which explains grammar a book."
+            ],
+            "es": [
+              "I found a book which explains grammar.",
+              "I found a book that explains grammar.",
+              "I found a book it explains grammar.",
+              "I found which explains grammar a book."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Combine: We visited a museum. It has ancient art.",
+            "en": "Combine: We visited a museum. It has ancient art.",
+            "es": "Combina: We visited a museum. It has ancient art."
+          },
+          "a": [
+            "We visited a museum that has ancient art.",
+            "We visited a museum which has ancient art."
+          ],
+          "o": {
+            "zh": [
+              "We visited a museum that has ancient art.",
+              "We visited a museum which has ancient art.",
+              "We visited a museum it has ancient art.",
+              "We visited that has ancient art a museum."
+            ],
+            "en": [
+              "We visited a museum that has ancient art.",
+              "We visited a museum which has ancient art.",
+              "We visited a museum it has ancient art.",
+              "We visited that has ancient art a museum."
+            ],
+            "es": [
+              "We visited a museum that has ancient art.",
+              "We visited a museum which has ancient art.",
+              "We visited a museum it has ancient art.",
+              "We visited that has ancient art a museum."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "That was the summer. We traveled to Japan then.",
+            "en": "That was the summer. We traveled to Japan then.",
+            "es": "That was the summer. We traveled to Japan then."
+          },
+          "a": [
+            "That was the summer when we traveled to Japan.",
+            "That was the summer that we traveled to Japan."
+          ],
+          "o": {
+            "zh": [
+              "That was the summer when we traveled to Japan.",
+              "That was the summer that we traveled to Japan.",
+              "That was the summer we traveled to Japan when."
+            ],
+            "en": [
+              "That was the summer when we traveled to Japan.",
+              "That was the summer that we traveled to Japan.",
+              "That was the summer we traveled to Japan when."
+            ],
+            "es": [
+              "That was the summer when we traveled to Japan.",
+              "That was the summer that we traveled to Japan.",
+              "That was the summer we traveled to Japan when."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Reorder: The package arrived today that I ordered.",
+            "en": "Reorder: The package arrived today that I ordered.",
+            "es": "Reordena: The package arrived today that I ordered."
+          },
+          "a": "The package that I ordered arrived today.",
+          "o": {
+            "zh": [
+              "The package that I ordered arrived today.",
+              "The package arrived today that I ordered.",
+              "The package that arrived today I ordered."
+            ],
+            "en": [
+              "The package that I ordered arrived today.",
+              "The package arrived today that I ordered.",
+              "The package that arrived today I ordered."
+            ],
+            "es": [
+              "The package that I ordered arrived today.",
+              "The package arrived today that I ordered.",
+              "The package that arrived today I ordered."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        },
+        {
+          "q": {
+            "zh": "Fix: This is the hotel where I recommended it.",
+            "en": "Fix: This is the hotel where I recommended it.",
+            "es": "Corrige: This is the hotel where I recommended it."
+          },
+          "a": [
+            "This is the hotel that I recommended.",
+            "This is the hotel which I recommended."
+          ],
+          "o": {
+            "zh": [
+              "This is the hotel that I recommended.",
+              "This is the hotel which I recommended.",
+              "This is the hotel where I recommended.",
+              "This is the hotel where I recommended it."
+            ],
+            "en": [
+              "This is the hotel that I recommended.",
+              "This is the hotel which I recommended.",
+              "This is the hotel where I recommended.",
+              "This is the hotel where I recommended it."
+            ],
+            "es": [
+              "This is the hotel that I recommended.",
+              "This is the hotel which I recommended.",
+              "This is the hotel where I recommended.",
+              "This is the hotel where I recommended it."
+            ]
+          },
+          "t": {
+            "zh": "",
+            "en": "",
+            "es": ""
+          }
+        }
+      ]
+    },
+    {
+      "module": "prepositions",
+      "id": "prep_place",
+      "name": {
+        "zh": "In / On / At — 空间介词",
+        "en": "In / On / At — Place",
+        "es": "In / On / At — Lugar"
+      },
+      "s": {
+        "zh": "In, On, At · Space",
+        "en": "In, On, At · Space",
+        "es": "In, On, At · Espacio"
+      },
+      "d": {
+        "zh": "in = inside, on = surface, at = specific point",
+        "en": "in = inside, on = surface, at = specific point",
+        "es": "in = dentro, on = superficie, at = punto específico"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The cat is sleeping ___ the box.",
+            "en": "The cat is sleeping ___ the box.",
+            "es": "El gato duerme ___ la caja."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "inside = in",
+            "en": "inside = in",
+            "es": "dentro = in"
+          }
+        },
+        {
+          "q": {
+            "zh": "The book is ___ the table.",
+            "en": "The book is ___ the table.",
+            "es": "El libro esta ___ la mesa."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ]
+          },
+          "t": {
+            "zh": "surface = on",
+            "en": "surface = on",
+            "es": "superficie = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "I met her ___ the bus stop.",
+            "en": "I met her ___ the bus stop.",
+            "es": "La conoci ___ la parada de bus."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific point = at",
+            "en": "specific point = at",
+            "es": "punto especifico = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "There is a spider ___ the ceiling.",
+            "en": "There is a spider ___ the ceiling.",
+            "es": "Hay una arana ___ el techo."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "over"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "over"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "over"
+            ]
+          },
+          "t": {
+            "zh": "ceiling surface = on",
+            "en": "ceiling surface = on",
+            "es": "superficie del techo = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "She is waiting ___ the door.",
+            "en": "She is waiting ___ the door.",
+            "es": "Ella espera ___ la puerta."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific location = at",
+            "en": "specific location = at",
+            "es": "ubicacion especifica = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "The kids are playing ___ the garden.",
+            "en": "The kids are playing ___ the garden.",
+            "es": "Los ninos juegan ___ el jardin."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "inside garden = in",
+            "en": "inside garden = in",
+            "es": "dentro del jardin = in"
+          }
+        }
+      ]
+    },
+    {
+      "module": "prepositions",
+      "id": "prep_time",
+      "name": {
+        "zh": "In / On / At — 时间介词",
+        "en": "In / On / At — Time",
+        "es": "In / On / At — Tiempo"
+      },
+      "s": {
+        "zh": "In, On, At · Time",
+        "en": "In, On, At · Time",
+        "es": "In, On, At · Tiempo"
+      },
+      "d": {
+        "zh": "at = specific time, on = day, in = longer period",
+        "en": "at = specific time, on = day, in = longer period",
+        "es": "at = hora, on = día, in = período largo"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "The meeting starts ___ 3 PM.",
+            "en": "The meeting starts ___ 3 PM.",
+            "es": "La reunion empieza ___ las 3 PM."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific time = at",
+            "en": "specific time = at",
+            "es": "hora especifica = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "I was born ___ July.",
+            "en": "I was born ___ July.",
+            "es": "Naci ___ julio."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ]
+          },
+          "t": {
+            "zh": "month = in",
+            "en": "month = in",
+            "es": "mes = in"
+          }
+        },
+        {
+          "q": {
+            "zh": "She arrived ___ Monday morning.",
+            "en": "She arrived ___ Monday morning.",
+            "es": "Llego ___ el lunes por la manana."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific day = on",
+            "en": "specific day = on",
+            "es": "dia especifico = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "We go skiing ___ winter.",
+            "en": "We go skiing ___ winter.",
+            "es": "Esquiamos ___ invierno."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "during"
+            ]
+          },
+          "t": {
+            "zh": "season = in",
+            "en": "season = in",
+            "es": "temporada = in"
+          }
+        },
+        {
+          "q": {
+            "zh": "The train leaves ___ noon.",
+            "en": "The train leaves ___ noon.",
+            "es": "El tren sale ___ mediodia."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "noon/midnight = at",
+            "en": "noon/midnight = at",
+            "es": "mediodia/medianoche = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "Her birthday is ___ May 15th.",
+            "en": "Her birthday is ___ May 15th.",
+            "es": "Su cumpleanos es ___ 15 de mayo."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific date = on",
+            "en": "specific date = on",
+            "es": "fecha especifica = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "I usually wake up ___ 7 o'clock.",
+            "en": "I usually wake up ___ 7 o'clock.",
+            "es": "Normalmente despierto ___ las 7."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific time = at",
+            "en": "specific time = at",
+            "es": "hora especifica = at"
+          }
+        }
+      ]
+    },
+    {
+      "module": "prepositions",
+      "id": "prep_mixed",
+      "name": {
+        "zh": "时间 + 空间 混练",
+        "en": "Time + Space Mixed",
+        "es": "Tiempo + Espacio"
+      },
+      "s": {
+        "zh": "Mixed practice",
+        "en": "Mixed practice",
+        "es": "Práctica mixta"
+      },
+      "d": {
+        "zh": "Decide: is it place or time?",
+        "en": "Decide: is it place or time?",
+        "es": "Decide: ¿es lugar o tiempo?"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "She lives ___ New York.",
+            "en": "She lives ___ New York.",
+            "es": "Ella vive ___ Nueva York."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "to"
+            ]
+          },
+          "t": {
+            "zh": "city = in",
+            "en": "city = in",
+            "es": "ciudad = in"
+          }
+        },
+        {
+          "q": {
+            "zh": "We will meet ___ Friday.",
+            "en": "We will meet ___ Friday.",
+            "es": "Nos reuniremos ___ el viernes."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "day of week = on",
+            "en": "day of week = on",
+            "es": "dia de semana = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "He is standing ___ the corner.",
+            "en": "He is standing ___ the corner.",
+            "es": "El esta parado ___ la esquina."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "street corner = at",
+            "en": "street corner = at",
+            "es": "esquina = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "The party is ___ the evening.",
+            "en": "The party is ___ the evening.",
+            "es": "La fiesta es ___ la tarde."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "in the evening (fixed)",
+            "en": "in the evening (fixed)",
+            "es": "in the evening (fijo)"
+          }
+        },
+        {
+          "q": {
+            "zh": "Put the flowers ___ the vase.",
+            "en": "Put the flowers ___ the vase.",
+            "es": "Pon las flores ___ el florero."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "inside vase = in",
+            "en": "inside vase = in",
+            "es": "dentro del florero = in"
+          }
+        },
+        {
+          "q": {
+            "zh": "See you ___ Christmas Day.",
+            "en": "See you ___ Christmas Day.",
+            "es": "Nos vemos ___ Navidad."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific holiday = on",
+            "en": "specific holiday = on",
+            "es": "dia festivo = on"
+          }
+        }
+      ]
+    },
+    {
+      "module": "prepositions",
+      "id": "prep_prod",
+      "name": {
+        "zh": "生产性练习",
+        "en": "Production Practice",
+        "es": "Práctica de producción"
+      },
+      "s": {
+        "zh": "Error correction",
+        "en": "Error correction",
+        "es": "Corrección de errores"
+      },
+      "d": {
+        "zh": "Find and fix common preposition mistakes",
+        "en": "Find and fix common preposition mistakes",
+        "es": "Encuentra y corrige errores comunes"
+      },
+      "q": [
+        {
+          "q": {
+            "zh": "Fix: I was born in July 15th.",
+            "en": "Fix: I was born in July 15th.",
+            "es": "Corrige: I was born in July 15th."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ],
+            "en": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ],
+            "es": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ]
+          },
+          "t": {
+            "zh": "specific date = on",
+            "en": "specific date = on",
+            "es": "fecha especifica = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fill: Hang the painting ___ the wall.",
+            "en": "Fill: Hang the painting ___ the wall.",
+            "es": "Completa: Hang the painting ___ the wall."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "wall surface = on",
+            "en": "wall surface = on",
+            "es": "pared = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fix: She arrived at Monday.",
+            "en": "Fix: She arrived at Monday.",
+            "es": "Corrige: She arrived at Monday."
+          },
+          "a": "on",
+          "o": {
+            "zh": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ],
+            "en": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ],
+            "es": [
+              "on",
+              "in",
+              "at",
+              "-"
+            ]
+          },
+          "t": {
+            "zh": "day of week = on",
+            "en": "day of week = on",
+            "es": "dia de semana = on"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fill: We stayed ___ a hotel.",
+            "en": "Fill: We stayed ___ a hotel.",
+            "es": "Completa: We stayed ___ a hotel."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "specific place = at",
+            "en": "specific place = at",
+            "es": "lugar especifico = at"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fix: The answer is in the bottom of the page.",
+            "en": "Fix: The answer is in the bottom of the page.",
+            "es": "Corrige: The answer is in the bottom."
+          },
+          "a": "at",
+          "o": {
+            "zh": [
+              "at",
+              "in",
+              "on",
+              "-"
+            ],
+            "en": [
+              "at",
+              "in",
+              "on",
+              "-"
+            ],
+            "es": [
+              "at",
+              "in",
+              "on",
+              "-"
+            ]
+          },
+          "t": {
+            "zh": "at the bottom",
+            "en": "at the bottom",
+            "es": "at the bottom"
+          }
+        },
+        {
+          "q": {
+            "zh": "Fill: I will be back ___ a few minutes.",
+            "en": "Fill: I will be back ___ a few minutes.",
+            "es": "Completa: I will be back ___ a few minutes."
+          },
+          "a": "in",
+          "o": {
+            "zh": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "en": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ],
+            "es": [
+              "in",
+              "on",
+              "at",
+              "by"
+            ]
+          },
+          "t": {
+            "zh": "in + time period",
+            "en": "in + time period",
+            "es": "in + periodo"
+          }
+        }
+      ]
+    }
+  ]
+}
