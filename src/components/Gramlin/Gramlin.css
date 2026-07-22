@@ -1,0 +1,48 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — Gramlin Styles
+   ═══════════════════════════════════════════════ */
+
+.gramlin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gramlin-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ── Sizes ── */
+.gramlin--sm {
+  width: 48px;
+  height: 48px;
+}
+
+.gramlin--md {
+  width: 80px;
+  height: 80px;
+}
+
+.gramlin--lg {
+  width: 128px;
+  height: 128px;
+}
+
+.gramlin--xl {
+  width: 192px;
+  height: 192px;
+}
+
+/* ── Animated (bounce on celebrate) ── */
+.gramlin--animated .gramlin-img {
+  animation: gramlinBounce var(--duration-slow) var(--ease-bounce);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gramlin--animated .gramlin-img {
+    animation: none;
+  }
+}

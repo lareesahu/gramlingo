@@ -1,0 +1,28 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — LoadingScreen Styles
+   ═══════════════════════════════════════════════ */
+
+.loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background: #fff5ee;
+}
+
+.loading-logo {
+  width: 120px;
+  height: auto;
+  animation: loadingPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes loadingPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-logo {
+    animation: none;
+  }
+}

@@ -1,0 +1,47 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — Badge Styles
+   ═══════════════════════════════════════════════ */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  font-family: var(--font-body);
+}
+
+.badge--sm {
+  padding: 2px 8px;
+  font-size: var(--text-xs);
+}
+
+.badge--md {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.badge--default {
+  background: var(--color-primary-ghost);
+  color: var(--color-primary);
+}
+
+.badge--success {
+  background: var(--color-correct-bg);
+  color: var(--color-correct);
+}
+
+.badge--warning {
+  background: #fff3e0;
+  color: #e67a22;
+}
+
+.badge--danger {
+  background: var(--color-wrong-bg);
+  color: var(--color-wrong);
+}
+
+.badge--info {
+  background: #e3f2fd;
+  color: #1976d2;
+}

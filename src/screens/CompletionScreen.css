@@ -1,0 +1,90 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — CompletionScreen Styles
+   ═══════════════════════════════════════════════ */
+
+.completion-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60dvh;
+}
+
+.completion-card {
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.completion-gramlin {
+  margin-bottom: var(--space-2);
+}
+
+.completion-title {
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.completion-phase {
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.completion-score {
+  margin: var(--space-2) 0;
+}
+
+.completion-unlock {
+  background: var(--color-correct-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-6);
+}
+
+.completion-unlock p {
+  margin: 0;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.unlock-phase {
+  font-size: var(--text-sm);
+  color: var(--color-dark-secondary) !important;
+  font-weight: 400 !important;
+  margin-top: var(--space-1) !important;
+}
+
+.completion-module-progress {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.completion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 480px) {
+  .completion-card {
+    padding: var(--space-5);
+  }
+
+  .completion-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .completion-actions .btn {
+    width: 100%;
+  }
+}

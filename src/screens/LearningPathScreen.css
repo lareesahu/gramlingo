@@ -1,0 +1,17 @@
+.homepage { padding-bottom: 40px; }
+.homepage-title { font-size: 1.5rem; font-weight: 700; color: var(--gl-text, #2d1b10); margin: 0 0 20px; }
+
+.module-cards { display: flex; flex-direction: column; gap: 16px; }
+
+.module-card { display: flex; align-items: center; gap: 16px; background: var(--gl-surface, #fff); border: 1px solid var(--gl-border, #e0d5c7); border-radius: 16px; padding: 16px; cursor: pointer; transition: box-shadow 0.2s, border-color 0.2s; }
+.module-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-color: var(--gl-primary, #ff8c42); }
+.module-card-body { flex: 1; min-width: 0; }
+.module-card-body h2 { margin: 0 0 4px; font-size: 1.1rem; color: var(--gl-text, #2d1b10); }
+.module-card-body p { margin: 0 0 8px; font-size: 0.84rem; color: var(--gl-text-secondary, #888); }
+.module-card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
+.module-card-stat { font-size: 0.82rem; color: var(--gl-text-secondary, #888); font-weight: 500; }
+
+@media (max-width: 480px) {
+  .module-card { padding: 16px; gap: 12px; }
+  .module-card-body h2 { font-size: 1rem; }
+}

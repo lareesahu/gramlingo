@@ -1,0 +1,132 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — WrongBookScreen Styles
+   ═══════════════════════════════════════════════ */
+
+.wrongbook-screen {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.wrongbook-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  min-height: 50dvh;
+  text-align: center;
+}
+
+.wrongbook-empty h2 {
+  color: var(--color-muted);
+}
+
+.wrongbook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.wrongbook-header h2 {
+  margin: 0;
+}
+
+/* ── Filters ── */
+.wrongbook-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.filter-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  font-family: var(--font-body);
+}
+
+.filter-chip:hover {
+  border-color: var(--color-primary);
+}
+
+.filter-chip--active {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+/* ── Entry List ── */
+.wrongbook-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.wrong-entry {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.wrong-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.wrong-date {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-left: auto;
+}
+
+.wrong-entry-question {
+  font-size: var(--text-sm);
+  padding: var(--space-3);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-sm);
+}
+
+.wrong-entry-question p {
+  margin: 0;
+}
+
+.wrong-entry-answers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.wrong-answer-bubble {
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  display: flex;
+  gap: var(--space-2);
+}
+
+.wrong-answer-bubble--user {
+  background: var(--color-wrong-bg);
+  border: 1px solid rgba(224, 112, 112, 0.3);
+}
+
+.wrong-answer-bubble--correct {
+  background: var(--color-correct-bg);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.answer-label {
+  font-weight: 600;
+  flex-shrink: 0;
+  color: var(--color-dark-secondary);
+}
