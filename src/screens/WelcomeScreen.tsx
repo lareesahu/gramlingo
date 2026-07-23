@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════════
-   GRAMLINGO — Welcome / Login Screen
-   ═══════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════�?
+   GRAMLINGO �?Welcome / Login Screen
+   ══════════════════════════════════════════════�?*/
 
 import { useState, useEffect, useCallback } from 'react';
 import { useAppContext } from '../app/app-state';

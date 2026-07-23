@@ -1,10 +1,10 @@
-/* ═══════════════════════════════════════════════
+﻿/* ==================================================
    GRAMLINGO DESIGN TOKENS — Sunset Palette (LOCKED)
    DO NOT change without founder approval.
-   ═══════════════════════════════════════════════ */
+   ================================================== */
 
 :root {
-  /* ── Brand Palette (Sunset — locked 2026-07-20) ── */
+  /* === Brand Palette (Sunset — locked 2026-07-20) === */
   --color-primary: #ff8c42;
   --color-primary-hover: #e67a35;
   --color-primary-light: #ffb788;
@@ -27,11 +27,41 @@
   --color-border: #e8d5c4;
   --color-border-light: #f0e5d8;
 
-  /* ── Typography ── */
-  --font-heading-en: 'Baloo 2', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-heading-zh: 'YouYuan', '幼圆', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  /* === GL aliases (backward compat) === */
+  --gl-bg: var(--color-bg);
+  --gl-bg-alt: var(--color-bg-alt);
+  --gl-surface: var(--color-surface);
+  --gl-text: var(--color-dark);
+  --gl-text-secondary: var(--color-muted);
+  --gl-primary: var(--color-primary);
+  --gl-primary-hover: var(--color-primary-hover);
+  --gl-primary-light: var(--color-primary-ghost);
+  --gl-border: var(--color-border);
+  --gl-border-light: var(--color-border-light);
+  --gl-shadow-card: var(--shadow-lg);
+  --gl-shadow-sm: var(--shadow-sm);
+  --gl-shadow-md: var(--shadow-md);
+  --gl-shadow-lg: var(--shadow-lg);
+  --gl-radius-sm: var(--radius-sm);
+  --gl-radius-md: var(--radius-md);
+  --gl-radius-lg: var(--radius-lg);
+  --gl-radius-xl: var(--radius-xl);
+  --gl-radius-full: var(--radius-full);
+  --gl-space-1: var(--space-1);
+  --gl-space-2: var(--space-2);
+  --gl-space-3: var(--space-3);
+  --gl-space-4: var(--space-4);
+  --gl-space-5: var(--space-5);
+  --gl-space-6: var(--space-6);
+  --gl-space-8: var(--space-8);
+  --gl-duration-fast: var(--duration-fast);
+  --gl-duration-normal: var(--duration-normal);
+
+  /* === Typography === */
+  --font-heading-en: "Baloo 2", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading-zh: "YouYuan", "幼圆", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Cascadia Code", "Fira Code", "Consolas", monospace;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -46,7 +76,7 @@
   --leading-normal: 1.5;
   --leading-relaxed: 1.75;
 
-  /* ── Spacing Scale (4px base) ── */
+  /* === Spacing Scale (4px base) === */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -59,20 +89,20 @@
   --space-16: 4rem;
   --space-20: 5rem;
 
-  /* ── Radius Scale ── */
+  /* === Radius Scale === */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
 
-  /* ── Shadows ── */
+  /* === Shadows === */
   --shadow-sm: 0 1px 2px rgba(45, 27, 16, 0.06);
   --shadow-md: 0 4px 12px rgba(45, 27, 16, 0.08);
   --shadow-lg: 0 8px 24px rgba(45, 27, 16, 0.10);
   --shadow-focus: 0 0 0 3px rgba(255, 140, 66, 0.3);
 
-  /* ── Motion ── */
+  /* === Motion === */
   --duration-fast: 150ms;
   --duration-normal: 250ms;
   --duration-slow: 400ms;
@@ -82,13 +112,10 @@
   --spring-gentle: cubic-bezier(0.34, 1.56, 0.64, 1);
   --spring-bouncy: cubic-bezier(0.34, 1.8, 0.64, 1);
 
-  /* ── Layout ── */
+  /* === Layout === */
   --max-width: 980px;
   --header-height: 64px;
   --tap-target: 44px;
-
-  /* ── Breakpoints (reference; used in media queries) ── */
-  /* mobile: 360px, tablet: 768px, desktop: 1024px, wide: 1440px */
 }
 
 /* Reduced motion */

@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════════
+﻿/* ==================================================
    GRAMLINGO — LessonScreen Styles
-   ═══════════════════════════════════════════════ */
+   ================================================== */
 
 .lesson-screen {
   max-width: 720px;
@@ -27,7 +27,7 @@
   font-family: var(--font-mono);
 }
 
-/* ── Gramlin Zone ── */
+/* === Gramlin Zone === */
 .lesson-gramlin {
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@
   min-height: 100px;
 }
 
-/* ── Question Card ── */
+/* === Question Card === */
 .lesson-question-card {
   background: var(--color-surface);
   border: 2px solid var(--color-border-light);
@@ -61,7 +61,7 @@
   color: var(--color-dark);
 }
 
-/* ── Options ── */
+/* === Options === */
 .options-grid {
   display: flex;
   flex-direction: column;
@@ -84,9 +84,16 @@
   min-height: var(--tap-target);
 }
 
-.option-btn--idle:hover {
+.option-btn--selected {
   border-color: var(--color-primary);
   background: var(--color-primary-ghost);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.option-btn:not(.option-btn--correct):not(.option-btn--wrong):not(.option-btn--dimmed):hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-ghost);
+  transform: translateX(2px);
 }
 
 .option-btn:disabled {
@@ -103,13 +110,9 @@
   background: var(--color-wrong-bg);
 }
 
-.option-btn--reveal-correct {
-  border-color: var(--color-correct);
-  background: var(--color-correct-bg);
-}
-
 .option-btn--dimmed {
-  opacity: 0.5;
+  opacity: 0.45;
+  cursor: default;
 }
 
 .option-letter {
@@ -140,11 +143,12 @@
   flex: 1;
 }
 
-/* ── Feedback ── */
+/* === Feedback === */
 .feedback {
   margin-top: var(--space-4);
   padding: var(--space-4);
   border-radius: var(--radius-md);
+  font-size: var(--text-sm);
 }
 
 .feedback--correct {
@@ -157,33 +161,21 @@
   color: #c62828;
 }
 
-.feedback p {
-  margin: 0;
+.feedback-label {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 2px;
 }
 
-.feedback p + p {
-  margin-top: var(--space-2);
-}
-
-.teaching-tip {
-  font-size: var(--text-sm);
-  color: var(--color-dark-secondary);
-  font-style: italic;
-}
-
-.explanation {
-  font-size: var(--text-sm);
-  font-weight: 500;
-}
-
-/* ── Next ── */
+/* === Next === */
 .lesson-next {
   display: flex;
   justify-content: center;
   margin-top: var(--space-6);
 }
 
-/* ── Responsive ── */
+/* === Responsive === */
 @media (max-width: 480px) {
   .lesson-question-card {
     padding: var(--space-4);

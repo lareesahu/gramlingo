@@ -1,16 +1,16 @@
-/* ═══════════════════════════════════════════════
+﻿/* ==================================================
    GRAMLINGO — Lesson Screen (55e7f19 behaviour)
    States: idle → selected → submitted(+revealed) → next
-   ═══════════════════════════════════════════════ */
+   ================================================== */
 
-import { useState, useCallback, useEffect } from 'react';
-import { useAppContext } from '../app/app-state';
-import { Button } from '../components/Button/Button';
-import { Gramlin } from '../components/Gramlin/Gramlin';
-import { ProgressBar } from '../components/ProgressBar/ProgressBar';
-import { getStrings } from '../i18n/i18n';
-import { GAME_DATA } from '../game/data';
-import './LessonScreen.css';
+import { useState, useCallback, useEffect } from "react";
+import { useAppContext } from "../app/app-state";
+import { Button } from "../components/Button/Button";
+import { Gramlin } from "../components/Gramlin/Gramlin";
+import { ProgressBar } from "../components/ProgressBar/ProgressBar";
+import { getStrings } from "../i18n/i18n";
+import { GAME_DATA } from "../game/data";
+import "./LessonScreen.css";
 
 export function LessonScreen() {
   const {
@@ -37,27 +37,27 @@ export function LessonScreen() {
     : 0;
 
   // Derived values
-  const isZh = language === 'zh';
+  const isZh = language === "zh";
   const phaseName = isZh ? phase?.nameZh : phase?.name;
   const options = currentQ?.o || [];
-  const selectedText = selectedOption !== null ? options[selectedOption] : '';
-  const correctAnswers = Array.isArray(currentQ?.a) ? currentQ.a : [currentQ?.a || ''];
+  const selectedText = selectedOption !== null ? options[selectedOption] : "";
+  const correctAnswers = Array.isArray(currentQ?.a) ? currentQ.a : [currentQ?.a || ""];
   const isCorrect = correctAnswers.some(
     (a: string) => selectedText.includes(a) || a.includes(selectedText)
   );
 
   // Gramlin pose
   const gramlinPose = submitted
-    ? (isCorrect ? 'celebrate' : wrongStreak >= 2 ? 'sad' : 'think')
-    : 'think';
+    ? (isCorrect ? "celebrate" : wrongStreak >= 2 ? "sad" : "think")
+    : "think";
 
   // Tip/explanation text for revealed option
   const getExplanation = (optIndex: number): string => {
-    if (!currentQ) return '';
-    const tip = isZh ? currentQ.tZh : language === 'es' ? (currentQ as any).tEs : currentQ.t;
-    const exArr = isZh ? currentQ.exZh : language === 'es' ? (currentQ as any).exEs : currentQ.ex;
+    if (!currentQ) return "";
+    const tip = isZh ? currentQ.tZh : language === "es" ? (currentQ as any).tEs : currentQ.t;
+    const exArr = isZh ? currentQ.exZh : language === "es" ? (currentQ as any).exEs : currentQ.ex;
     const perOpt = exArr?.[optIndex];
-    return perOpt || tip || '';
+    return perOpt || tip || "";
   };
 
   // Handle option click
@@ -96,7 +96,7 @@ export function LessonScreen() {
           phaseId: activePhaseId,
           questionIndex: activeQuestionIndex,
           userAnswer: selectedText,
-          correctAnswer: correctAnswers.join(', '),
+          correctAnswer: correctAnswers.join(", "),
         });
       }
     }
@@ -122,7 +122,7 @@ export function LessonScreen() {
   // Keyboard: Enter after select = Submit; Enter/→ after submit = Next
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Enter') {
+      if (e.key === "Enter") {
         if (!submitted && selectedOption !== null) {
           e.preventDefault();
           handleSubmit();
@@ -130,17 +130,17 @@ export function LessonScreen() {
           e.preventDefault();
           handleNext();
         }
-      } else if (e.key === 'ArrowRight' && submitted) {
+      } else if (e.key === "ArrowRight" && submitted) {
         e.preventDefault();
         handleNext();
       }
     };
-    document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
   }, [submitted, selectedOption, handleSubmit, handleNext]);
 
   if (!phase || !currentQ) {
-    navigateTo('learning-path');
+    navigateTo("learning-path");
     return null;
   }
 
@@ -163,24 +163,24 @@ export function LessonScreen() {
       </div>
 
       {/* Question card */}
-      <div className={`lesson-question-card ${submitted ? (isCorrect ? 'card--correct' : 'card--wrong') : ''}`}>
+      <div className={`lesson-question-card ${submitted ? (isCorrect ? "card--correct" : "card--wrong") : ""}`}>
         <p className="question-text" dangerouslySetInnerHTML={{ __html: currentQ.q }} />
 
         {/* Options */}
         <div className="options-grid">
           {options.map((opt: string, i: number) => {
-            let cls = 'option-btn';
+            let cls = "option-btn";
             if (!submitted) {
               // Pre-submit: highlight selected
-              if (i === selectedOption) cls += ' option-btn--selected';
+              if (i === selectedOption) cls += " option-btn--selected";
             } else {
               // Post-submit: highlight correct + selected (if wrong)
               if (correctAnswers.some((a: string) => opt.includes(a) || a.includes(opt))) {
-                cls += ' option-btn--correct';
+                cls += " option-btn--correct";
               } else if (i === selectedOption) {
-                cls += ' option-btn--wrong';
+                cls += " option-btn--wrong";
               } else {
-                cls += ' option-btn--dimmed';
+                cls += " option-btn--dimmed";
               }
             }
 
@@ -192,7 +192,7 @@ export function LessonScreen() {
                 disabled={false}
                 aria-pressed={i === selectedOption || i === revealedOption}
               >
-                <span className="option-letter">{'ABCD'[i]}</span>
+                <span className="option-letter">{"ABCD"[i]}</span>
                 <span className="option-text" dangerouslySetInnerHTML={{ __html: opt }} />
               </button>
             );
@@ -201,21 +201,19 @@ export function LessonScreen() {
 
         {/* Feedback / Explanation */}
         {submitted && revealedOption !== null && (
-          <div className={`feedback ${correctAnswers.some((a: string) => options[revealedOption]?.includes(a) || a.includes(options[revealedOption])) ? 'feedback--correct' : 'feedback--wrong'} animate-slide-up`}>
-            <span style={{ fontSize: '0.75rem', opacity: 0.7, display: 'block', marginBottom: '2px' }}>
+          <div className={`feedback ${correctAnswers.some((a: string) => options[revealedOption]?.includes(a) || a.includes(options[revealedOption])) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
+            <span className="feedback-label">
               {revealedOption === selectedOption
-                ? (isZh ? '你的答案' : 'Your answer')
-                : (isZh ? `选项 ${revealedOption + 1}` : `Option ${revealedOption + 1}`)}
+                ? s.yourAnswer
+                : `${isZh ? s.optionLabel : "Option"} ${revealedOption + 1}`}
             </span>
-            <span>{getExplanation(revealedOption) || (isZh ? '点击查看' : 'Tap to see explanation')}</span>
+            <span>{getExplanation(revealedOption) || s.tapExplanation}</span>
           </div>
         )}
 
         {submitted && revealedOption === null && (
-          <div className={`feedback ${isCorrect ? 'feedback--correct' : 'feedback--wrong'} animate-slide-up`}>
-            <span style={{ opacity: 0.6 }}>
-              {isZh ? '点击选项查看解释' : 'Tap an option to see its explanation'}
-            </span>
+          <div className={`feedback ${isCorrect ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
+            <span className="feedback-label">{s.tapExplanation}</span>
           </div>
         )}
       </div>
@@ -228,7 +226,7 @@ export function LessonScreen() {
           </Button>
         ) : (
           <Button onClick={handleSubmit} size="lg" disabled={selectedOption === null}>
-            {isZh ? '提交' : 'Submit'}
+            {s.submit}
           </Button>
         )}
       </div>
