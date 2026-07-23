@@ -1,8 +1,14 @@
 node_modules/
+dist/
 .vite/
 test-results/
 playwright-report/
 *.tsbuildinfo
-dist/
 coverage/
 *.log
+# Capacitor
+android/app/build
+android/.gradle
+android/capacitor-cordova-android-plugins
+ios/App/Pods
+ios/App/build
