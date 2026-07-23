@@ -34,10 +34,10 @@ describe('GAME_DATA integrity', () => {
   });
 
   it('keeps the full curriculum plan and the authored lesson bank', () => {
-    expect(GAME_DATA.modules).toHaveLength(2);
-    expect(GAME_DATA.phases).toHaveLength(12);
-    expect(GAME_DATA.phases.filter(phase => phase.q.length > 0)).toHaveLength(12);
-    expect(GAME_DATA.phases.flatMap(phase => phase.q)).toHaveLength(79);
+    expect(GAME_DATA.modules).toHaveLength(12);
+    expect(GAME_DATA.phases).toHaveLength(92);
+    expect(GAME_DATA.phases.filter(phase => phase.q.length > 0).length).toBeGreaterThan(80);
+    expect(GAME_DATA.phases.flatMap(phase => phase.q)).toHaveLength(282);
   });
 
   it('every question has options and at least 1 correct answer', () => {

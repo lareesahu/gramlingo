@@ -79,7 +79,7 @@ def build() -> dict[str, object]:
         question_id = row["question_id"]
         phase_id = row["phase_id"]
         module_id = row["module_id"]
-        phase = phases_by_id.get(f'{module_id}_{phase_id}') or phases_by_id.get(phase_id)
+        phase = phases_by_id.get(phase_id)
         if phase is None:
             raise ValueError(f"Question {question_id} references unknown phase {phase_id}")
         if phase["module"] != module_id:
