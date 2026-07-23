@@ -9,7 +9,7 @@ export function LoadingScreen() {
     <div className="loading-screen">
       <img
         className="loading-logo"
-        src={`${import.meta.env.BASE_URL}assets/gramlin/gramlingo-logo.svg`}
+        src={`${import.meta.env.BASE_URL}assets/gramlin/gramlingo-logo.png`}
         alt="GramLingo"
         width={120}
         height={120}

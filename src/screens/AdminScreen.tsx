@@ -14,9 +14,9 @@ import './AdminScreen.css';
 export function AdminScreen() {
   const { language, getUsers, isUserLocked, toggleUserLock, isModuleLocked, toggleModuleLock, getModuleProgress, exportData } = useAppContext();
   const s = getStrings(language);
-
-  const [users] = useState(() => getUsers());
+    const [users] = useState(() => getUsers());
   const [copied, setCopied] = useState(false);
+  const isZh = language === 'zh';
   const [expandedUser, setExpandedUser] = useState<string | null>(null);
 
   const handleExport = () => {
@@ -37,12 +37,12 @@ export function AdminScreen() {
       <div className="admin-header">
         <h2>⚙️ {s.admin}</h2>
         <Button variant="secondary" size="sm" onClick={handleExport}>
-          📥 {copied ? 'Exported!' : s.export}
+          📥 {copied ? 'Exported!' : (isZh ? '导出备份' : 'Export backup')}
         </Button>
       </div>
 
       <p className="admin-disclaimer">
-        ⚠️ Data is stored locally on this device only. No cross-device sync. No cloud backend.
+        ⚠️ Progress is saved on this device only — no cloud sync, no account needed.
       </p>
 
       {users.length === 0 ? (
@@ -50,9 +50,9 @@ export function AdminScreen() {
       ) : (
         <div className="admin-table">
           <div className="admin-table-header">
-            <span>User</span>
+            <span>{isZh ? '学员' : 'Learner'}</span>
             <span>{s.status}</span>
-            <span>{s.progress}</span>
+            <span>{isZh ? '上次活动' : 'Last active'}</span>
             <span>Action</span>
           </div>
           {users.map((user: any) => {
@@ -88,7 +88,7 @@ export function AdminScreen() {
                       size="sm"
                       onClick={(e: React.MouseEvent) => { e.stopPropagation(); toggleUserLock(user.username); }}
                     >
-                      {locked ? s.unlockUser : s.lockUser}
+                      {locked ? (isZh ? '解锁' : 'Unlock') : (isZh ? '锁定' : 'Lock')}
                     </Button>
                   </span>
                 </div>

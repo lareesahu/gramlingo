@@ -1,42 +1,175 @@
-.app-shell { min-height: 100vh; background: var(--gl-bg, #fff5ee); display: flex; flex-direction: column; }
-.app-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; background: rgba(255, 245, 238, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 140, 66, 0.12); height: 48px; position: sticky; top: 0; z-index: 50; }
-@supports not (backdrop-filter: blur(12px)) {
-  .app-header { background: #fff5ee; }
+.app-shell {
+  min-height: 100vh;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
 }
-.header-left { display: flex; align-items: center; gap: 8px; }
-.header-right { display: flex; align-items: center; gap: 12px; }
-.header-logo { height: 32px; width: auto; cursor: pointer; background: transparent; }
-.btn-back { background: none; border: none; font-size: 20px; cursor: pointer; padding: 4px 8px; color: var(--gl-text, #2d1b10); }
-.btn-back:hover { color: var(--gl-primary, #ff8c42); }
-.app-main { flex: 1; padding: 16px; max-width: 700px; margin: 0 auto; width: 100%; }
 
-/* User menu */
-.user-menu { position: relative; display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 4px 8px; border-radius: 20px; background: var(--gl-bg, #fff5ee); border: 1px solid var(--gl-border, #e0d5c7); }
-.user-menu:hover { border-color: var(--gl-primary, #ff8c42); }
-.user-icon-svg { flex-shrink: 0; color: var(--gl-text, #2d1b10); }
-.dropdown-admin { border-top: 1px solid var(--gl-border, #e0d5c7); background: var(--gl-bg, #fff5ee); }
-.username { font-size: 13px; font-weight: 600; color: var(--gl-text, #2d1b10); max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
-/* Dropdown */
-.user-dropdown { position: absolute; top: 44px; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(224, 213, 199, 0.5); border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); min-width: 200px; z-index: 100; overflow: hidden; }
-@supports not (backdrop-filter: blur(16px)) {
-  .user-dropdown { background: #fff; }
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: rgba(255, 245, 238, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-light);
+  height: 48px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
-.dropdown-section { padding: 8px; border-bottom: 1px solid var(--gl-border, #e0d5c7); }
-.dropdown-section:last-child { border-bottom: none; }
-.dropdown-label { font-size: 11px; text-transform: uppercase; color: var(--gl-text-secondary, #888); padding: 0 8px 4px; display: block; font-weight: 600; }
-.lang-options { display: flex; flex-direction: column; gap: 2px; }
-.lang-opt { display: block; width: 100%; text-align: left; padding: 8px 12px; border: none; background: none; cursor: pointer; font-size: 13px; border-radius: 8px; color: var(--gl-text, #2d1b10); }
-.lang-opt:hover { background: var(--gl-bg, #fff5ee); }
-.lang-opt--active { background: var(--gl-bg, #fff5ee); font-weight: 600; color: var(--gl-primary, #ff8c42); }
-.dropdown-btn { display: block; width: 100%; text-align: left; padding: 8px 12px; border: none; background: none; cursor: pointer; font-size: 13px; border-radius: 8px; color: var(--gl-text, #2d1b10); }
-.dropdown-btn:hover { background: var(--gl-bg, #fff5ee); }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-logo {
+  height: 28px;
+  width: auto;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--color-dark);
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-back:hover {
+  color: var(--color-primary);
+}
+
+/* === Header Buttons === */
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-dark);
+  min-height: 36px;
+  transition: background 0.15s, border-color 0.15s;
+  font-family: var(--font-body);
+}
+
+.header-btn:hover {
+  background: var(--color-primary-ghost);
+}
+
+.header-btn--admin {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.header-btn--admin:hover {
+  background: var(--color-primary-ghost);
+}
+
+.header-btn-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80px;
+}
+
+/* === Dropdown === */
+.header-dropdown-wrap {
+  position: relative;
+}
+
+.header-dropdown {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  min-width: 160px;
+  z-index: 100;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.dropdown-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 6px;
+  color: var(--color-dark);
+  font-family: var(--font-body);
+}
+
+.dropdown-option:hover {
+  background: var(--color-primary-ghost);
+}
+
+.dropdown-option--active {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* === Main === */
+.app-main {
+  flex: 1;
+  padding: 16px;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* === Responsive === */
 @media (max-width: 480px) {
-  .app-main { padding: 8px; }
-  .user-dropdown { right: -8px; min-width: 180px; }
-  .header-logo { height: 28px; }
-  .app-header { padding: 8px 12px; height: 44px; }
-  .username { display: none; }
-  .user-menu { padding: 4px 8px; }
+  .app-main {
+    padding: 8px;
+  }
+
+  .app-header {
+    padding: 0 8px;
+    height: 44px;
+  }
+
+  .header-logo {
+    height: 24px;
+  }
+
+  .header-btn-label {
+    display: none;
+  }
+
+  .header-btn {
+    padding: 5px 8px;
+  }
+
+  .header-dropdown {
+    right: -8px;
+  }
 }
