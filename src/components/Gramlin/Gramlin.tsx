@@ -1,8 +1,3 @@
-/* ═══════════════════════════════════════════════
-   GRAMLINGO — Gramlin Mascot Component
-   New naming: x-gramlin.png
-   ═══════════════════════════════════════════════ */
-
 import type { GramlinPose } from '../../game/types';
 import './Gramlin.css';
 
@@ -29,6 +24,7 @@ const poseToFile: Record<GramlinPose, string> = {
   peeking: 'peekaboo-gramlin.png',
   confused: 'neutral-gramlin.png',
   party: 'party-gramlin.png',
+  juggler: 'party-gramlin.png',
   grad: 'graduate-gramlin.png',
   angry: 'sprint-gramlin.png',
   crying: 'sad-gramlin.png',
