@@ -260,22 +260,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"The woman\" is the antecedent — the noun being described by the relative clause.",
+              "✓ Correct! \"who called me\" is the relative clause. It begins with the relative pronoun \"who\" and describes \"the woman.\"",
+              "\"is my manager\" is the main clause predicate, not the relative clause.",
+              "\"my manager\" is the complement of the main clause, not part of the relative clause."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "\"The woman\" 是被修饰的名词（先行词），不是定语从句本身。",
+              "✓ 正确！\"who called me\" 是定语从句，由关系代词 who 引导，修饰 the woman。",
+              "\"is my manager\" 是主句的谓语部分，不属于定语从句。",
+              "\"my manager\" 是主句的表语，不是定语从句的一部分。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"The woman\" es el antecedente — el sustantivo descrito por la cláusula relativa.",
+              "✓ ¡Correcto! \"who called me\" es la cláusula relativa. Empieza con el pronombre relativo \"who\" y describe a \"the woman.\"",
+              "\"is my manager\" es el predicado de la oración principal, no la cláusula relativa.",
+              "\"my manager\" es el complemento de la oración principal, no parte de la cláusula relativa."
             ]
           }
         },
@@ -313,22 +313,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"I read\" is the main clause subject and verb.",
+              "\"the book\" is the antecedent — the noun the relative clause describes.",
+              "✓ Correct! \"that you recommended\" is the relative clause describing \"the book.\"",
+              "\"the book that\" mixes the antecedent with the start of the clause — it's not a single unit."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "\"I read\" 是主句的主语和谓语，不是定语从句。",
+              "\"the book\" 是被修饰的先行词，不是定语从句本身。",
+              "✓ 正确！\"that you recommended\" 是定语从句，修饰 the book。",
+              "\"the book that\" 把先行词和关系词混在一起了，不能算一个成分。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"I read\" es el sujeto y verbo de la oración principal.",
+              "\"the book\" es el antecedente — el sustantivo que la cláusula describe.",
+              "✓ ¡Correcto! \"that you recommended\" es la cláusula relativa que describe \"the book.\"",
+              "\"the book that\" mezcla el antecedente con el inicio de la cláusula — no es una unidad."
             ]
           }
         },
@@ -366,22 +366,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "✓ Correct! \"The scientist\" is the antecedent — it is the noun that \"who discovered the vaccine\" describes.",
+              "\"who discovered\" is the beginning of the relative clause, not the noun being described.",
+              "\"the vaccine\" is the object inside the relative clause, not the antecedent.",
+              "\"won a prize\" is the main clause predicate, not the noun being described."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "✓ 正确！\"The scientist\" 是先行词——定语从句 \"who discovered the vaccine\" 就是修饰它的。",
+              "\"who discovered\" 是定语从句的开头部分，不是被修饰的名词。",
+              "\"the vaccine\" 是定语从句内部的宾语，不是先行词。",
+              "\"won a prize\" 是主句的谓语，不是被修饰的名词。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "✓ ¡Correcto! \"The scientist\" es el antecedente — la cláusula \"who discovered the vaccine\" lo describe.",
+              "\"who discovered\" es el inicio de la cláusula relativa, no el sustantivo descrito.",
+              "\"the vaccine\" es el objeto dentro de la cláusula relativa, no el antecedente.",
+              "\"won a prize\" es el predicado principal, no el sustantivo descrito."
             ]
           }
         },
@@ -419,22 +419,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"The cafe\" is the antecedent — the place being described.",
+              "✓ Correct! \"where we met\" is a relative clause using the relative adverb \"where\" to describe a place.",
+              "\"has closed\" is the main clause verb, not the relative clause.",
+              "\"The cafe where\" is incomplete — it mixes the antecedent with the start of the clause."
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "\"The cafe\" 是先行词，不是定语从句。",
+              "✓ 正确！\"where we met\" 是由关系副词 where 引导的定语从句，修饰地点。",
+              "\"has closed\" 是主句的谓语。",
+              "\"The cafe where\" 不完整——把先行词和关系词混在一起了。"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"The cafe\" es el antecedente — el lugar descrito.",
+              "✓ ¡Correcto! \"where we met\" es una cláusula relativa con el adverbio relativo \"where\" para describir un lugar.",
+              "\"has closed\" es el verbo principal, no la cláusula relativa.",
+              "\"The cafe where\" está incompleto — mezcla el antecedente con el inicio de la cláusula."
             ]
           }
         },
@@ -472,22 +472,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Look again — there IS a relative clause here, but the pronoun is hidden.",
+              "✓ Correct! The full form is \"the person (whom) I told you about.\" English lets you drop the object relative pronoun.",
+              "\"She is the person\" is the main clause, not a relative clause.",
+              "English often drops object relative pronouns in speech and informal writing. It's still a relative clause."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "再仔细看——这里确实有定语从句，只是关系代词被省略了。",
+              "✓ 正确！完整形式是 \"the person (whom) I told you about\"。英语中宾语位置的关系代词可以省略。",
+              "\"She is the person\" 是主句，不是定语从句。",
+              "英语口语中经常省略宾语位置的关系代词，但这仍然是定语从句。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Mira de nuevo — SÍ hay una cláusula relativa, pero el pronombre está oculto.",
+              "✓ ¡Correcto! La forma completa es \"the person (whom) I told you about.\" En inglés se puede omitir el pronombre relativo objeto.",
+              "\"She is the person\" es la oración principal, no una cláusula relativa.",
+              "En inglés se omiten frecuentemente los pronombres relativos objeto. Sigue siendo una cláusula relativa."
             ]
           }
         }
@@ -550,22 +550,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "✓ Correct! \"who\" is used for people when the pronoun is the subject of the relative clause.",
+              "\"which\" is for things, not people. The antecedent \"woman\" is a person.",
+              "\"whose\" shows possession. We don't need possession here — we need a subject.",
+              "\"where\" is for places. The antecedent is a person, not a location."
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "✓ 正确！修饰人且在从句中作主语时用 who。",
+              "which 用于修饰物，不能修饰人。",
+              "whose 表示所属关系，这里不需要。",
+              "where 用于修饰地点，这里修饰的是人。"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "✓ ¡Correcto! \"who\" se usa para personas cuando el pronombre es el sujeto de la cláusula relativa.",
+              "\"which\" es para cosas, no para personas.",
+              "\"whose\" indica posesión. Aquí necesitamos un sujeto, no posesión.",
+              "\"where\" es para lugares. El antecedente es una persona."
             ]
           }
         },
@@ -606,22 +606,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "Correct �� this follows the expected pattern."
+              "\"who\" is for people. \"Car\" is a thing.",
+              "\"whose\" shows possession. We don't need possession — we need a subject pronoun.",
+              "✓ Correct! \"that\" (or \"which\") is used for things as the subject of the relative clause.",
+              "\"where\" is for places. A car is an object, not a location."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "�ǵģ�������﷨����",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 修饰人，car 是物。",
+              "whose 表示所属，这里需要主语关系代词。",
+              "✓ 正确！修饰物且在从句中作主语用 that 或 which。",
+              "where 修饰地点，car 是物品不是地点。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "Correct �� this follows the expected pattern."
+              "\"who\" es para personas. \"Car\" es una cosa.",
+              "\"whose\" indica posesión. Necesitamos un pronombre sujeto.",
+              "✓ ¡Correcto! \"that\" (o \"which\") se usa para cosas como sujeto de la cláusula relativa.",
+              "\"where\" es para lugares. Un coche es un objeto, no un lugar."
             ]
           }
         },
@@ -662,22 +662,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"which\" is correct here — \"book\" is a thing. The error is elsewhere.",
+              "✓ Correct! The main verb must agree with the antecedent \"book\" (singular), so it should be \"belongs.\"",
+              "\"on the table\" is correct — the book is resting on the surface.",
+              "The sentence has a subject-verb agreement error: \"book\" is singular, \"belong\" is plural."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "which 修饰 book 是正确的，错误不在这里。",
+              "✓ 正确！主句动词必须与先行词 book（单数）一致，所以应该是 belongs。",
+              "on the table 是正确的。",
+              "句子有主谓一致错误：book 是单数，belong 是复数形式。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"which\" es correcto aquí — \"book\" es una cosa. El error está en otra parte.",
+              "✓ ¡Correcto! El verbo principal debe concordar con \"book\" (singular), debe ser \"belongs.\"",
+              "\"on the table\" es correcto.",
+              "Hay un error de concordancia: \"book\" es singular, \"belong\" es plural."
             ]
           }
         },
@@ -718,22 +718,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"which\" is for things. \"People\" are human beings.",
+              "✓ Correct! \"who\" is used when the antecedent is a person and the pronoun is the subject.",
+              "\"whose\" would need a noun after it (e.g., \"whose habits\"). It shows possession.",
+              "\"whom\" is for objects. Here \"people\" is the subject of \"exercise.\""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "which 修饰物，people 是人。",
+              "✓ 正确！先行词是人且在从句中作主语时用 who。",
+              "whose 后面需要名词（如 whose habits），表示所属关系。",
+              "whom 作宾语，这里 people 是 exercise 的主语。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "\"which\" es para cosas. \"People\" son seres humanos.",
+              "✓ ¡Correcto! \"who\" se usa cuando el antecedente es una persona y el pronombre es el sujeto.",
+              "\"whose\" necesitaría un sustantivo después. Indica posesión.",
+              "\"whom\" es para objetos. Aquí \"people\" es el sujeto de \"exercise.\""
             ]
           }
         },
@@ -886,22 +886,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "✓ Correct! \"who\" is used for people when the pronoun is the subject of the relative clause.",
+              "\"which\" is for things, not people. The antecedent \"woman\" is a person.",
+              "\"whose\" shows possession. We don't need possession here — we need a subject.",
+              "\"where\" is for places. The antecedent is a person, not a location."
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "✓ 正确！修饰人且在从句中作主语时用 who。",
+              "which 用于修饰物，不能修饰人。",
+              "whose 表示所属关系，这里不需要。",
+              "where 用于修饰地点，这里修饰的是人。"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "✓ ¡Correcto! \"who\" se usa para personas cuando el pronombre es el sujeto de la cláusula relativa.",
+              "\"which\" es para cosas, no para personas.",
+              "\"whose\" indica posesión. Aquí necesitamos un sujeto, no posesión.",
+              "\"where\" es para lugares. El antecedente es una persona."
             ]
           }
         }
@@ -964,22 +964,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "Correct! that for things as object",
+              "where for places",
+              "whom for people objects"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "正确！that 用于物作宾语",
+              "where 用于地点",
+              "whom 用于人的宾语"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "Correcto! that para cosas objeto",
+              "where para lugares",
+              "whom para personas objeto"
             ]
           }
         },
@@ -1020,22 +1020,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who is for subjects",
+              "Correct! whom is object form",
+              "which for things",
+              "whose = possession"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于主语",
+              "正确！whom 是宾格",
+              "which 用于物",
+              "whose = 所属"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para sujetos",
+              "Correcto! whom es objeto",
+              "which para cosas",
+              "whose = posesion"
             ]
           }
         },
@@ -1076,22 +1076,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who for people",
+              "Correct! that/which for things as object",
+              "where for places",
+              "whose = possession"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 用于人",
+              "正确！that/which 用于物作宾语",
+              "where 用于地点",
+              "whose = 所属"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who para personas",
+              "Correcto! that/which para cosas",
+              "where para lugares",
+              "whose = posesion"
             ]
           }
         },
@@ -1132,22 +1132,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who for people",
+              "Correct! that/which — advice is a thing, object of gave",
+              "where for places",
+              "whose = possession"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 用于人",
+              "正确！advice 是 gave 的宾语",
+              "where 用于地点",
+              "whose = 所属"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who para personas",
+              "Correcto! advice es objeto de gave",
+              "where para lugares",
+              "whose = posesion"
             ]
           }
         },
@@ -1188,22 +1188,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who traditionally for subjects",
+              "Correct! whom is object form (formal)",
+              "which for things",
+              "where for places"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "who 传统作主语",
+              "正确！whom 是宾格",
+              "which 用于物",
+              "where 用于地点"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para sujetos",
+              "Correcto! whom es objeto",
+              "which para cosas",
+              "where para lugares"
             ]
           }
         },
@@ -1244,22 +1244,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Object pronouns CAN be dropped in English",
+              "Correct! The cake I baked = perfectly fine",
+              "Dropping is MORE common in speech",
+              "Both that and which can be dropped"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "英语中可以省略宾语关系代词",
+              "正确！The cake I baked = 完全正确",
+              "口语中省略更常见",
+              "that 和 which 都可以省略"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Se PUEDE omitir pronombres objeto",
+              "Correcto! The cake I baked = correcto",
+              "Omitir es MAS comun al hablar",
+              "Se puede omitir both that/which"
             ]
           }
         }
@@ -1313,16 +1313,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Correct! who IS the caller",
+              "who receives the action?",
+              "",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��"
+              "正确！who 是发出动作者",
+              "who 接受动作？",
+              "",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Correcto! who ES quien llama",
+              "who recibe la accion?",
+              "",
+              ""
             ]
           }
         },
@@ -1354,16 +1360,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "I is already the subject",
+              "Correct! who receives the calling",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����"
+              "I 已经是主语了",
+              "正确！who 接受 call 这个动作",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "I ya es el sujeto",
+              "Correcto! who recibe la llamada",
+              "",
+              ""
             ]
           }
         },
@@ -1401,22 +1413,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "If subject, no other subject in clause",
+              "Correct! she=subject, relative pronoun=object",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "如果是主语，从句中没有其他主语",
+              "正确！she=主语，关系代词=宾语",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Si sujeto, no hay otro sujeto",
+              "Correcto! she=sujeto, relativo=objeto",
+              "",
+              ""
             ]
           }
         },
@@ -1454,22 +1466,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who is correct — it connects",
+              "Correct! he is extra — who already represents the man",
+              "man is the antecedent",
+              "neighbor is the complement"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 正确",
+              "正确！he 多余 — who 已经代表那个人",
+              "man 是先行词",
+              "neighbor 是表语"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who es correcto",
+              "Correcto! he sobra — who ya representa al hombre",
+              "man es antecedente",
+              "neighbor es complemento"
             ]
           }
         },
@@ -1501,16 +1513,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "that connects correctly",
+              "Anna is the subject",
+              "wrote is the verb",
+              "Correct! it is redundant — that already = the report"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��"
+              "that 正确连接",
+              "Anna 是主语",
+              "wrote 是动词",
+              "正确！it 多余 — that 已经 = the report"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "that conecta bien",
+              "Anna es sujeto",
+              "wrote es verbo",
+              "Correcto! it sobra — that ya = the report"
             ]
           }
         },
@@ -1542,16 +1560,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correct! no other subject -> relative pronoun IS subject",
+              "If object, another noun/pronoun would do the answering",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����"
+              "正确！没有其他主语 -> 关系代词就是主语",
+              "如果是宾语，应该有另一个名词/代词发出动作",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correcto! sin otro sujeto -> relativo ES sujeto",
+              "Si objeto, otro sustantivo haria la accion",
+              "",
+              ""
             ]
           }
         }
@@ -1611,22 +1635,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "which for things",
+              "Correct! where for places",
+              "when for time"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "which 用于物",
+              "正确！where 用于地点",
+              "when 用于时间"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "which para cosas",
+              "Correcto! where para lugares",
+              "when para tiempo"
             ]
           }
         },
@@ -1664,22 +1688,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who for people",
+              "which for things",
+              "where for places",
+              "Correct! when for time"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 用于人",
+              "which 用于物",
+              "where 用于地点",
+              "正确！when 用于时间"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who para personas",
+              "which para cosas",
+              "where para lugares",
+              "Correcto! when para tiempo"
             ]
           }
         },
@@ -1717,22 +1741,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who for people",
+              "which for things",
+              "Correct! where for places (in which)",
+              "when for time"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 用于人",
+              "which 用于物",
+              "正确！where = in which",
+              "when 用于时间"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who para personas",
+              "which para cosas",
+              "Correcto! where = in which",
+              "when para tiempo"
             ]
           }
         },
@@ -1770,22 +1794,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "which for things",
+              "where for places",
+              "Correct! why = for which"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "which 用于物",
+              "where 用于地点",
+              "正确！why = for which"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "which para cosas",
+              "where para lugares",
+              "Correcto! why = for which"
             ]
           }
         },
@@ -1823,22 +1847,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who for people",
+              "which for things",
+              "where for places",
+              "Correct! when for time (in which)"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "who 用于人",
+              "which 用于物",
+              "where 用于地点",
+              "正确！when = in which"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "who para personas",
+              "which para cosas",
+              "where para lugares",
+              "Correcto! when = in which"
             ]
           }
         },
@@ -1876,22 +1900,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "which for things",
+              "Correct! where for places",
+              "when for time (not a room)"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "which 用于物",
+              "正确！where 用于地点",
+              "when 用于时间"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "which para cosas",
+              "Correcto! where para lugares",
+              "when para tiempo"
             ]
           }
         },
@@ -2057,22 +2081,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who is for subjects, not possession",
+              "Correct! whose = his car",
+              "whom is for objects",
+              "which is for things"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于主语",
+              "正确！whose = 他的车",
+              "whom 用于宾语",
+              "which 用于物"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who es para sujetos",
+              "Correcto! whose = su coche",
+              "whom es para objetos",
+              "which es para cosas"
             ]
           }
         },
@@ -2110,22 +2134,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who is for subjects",
+              "Correct! whose = her son",
+              "whom is for objects",
+              "that works but whose is more precise"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于主语",
+              "正确！whose = 她的儿子",
+              "whom 用于宾语",
+              "that 也可以但 whose 更准确"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who es para sujetos",
+              "Correcto! whose = su hijo",
+              "whom es para objetos",
+              "that funciona pero whose es más preciso"
             ]
           }
         },
@@ -2163,22 +2187,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who is for subjects",
+              "Correct! whose = his books",
+              "whom is for objects",
+              "which is for things, not possession"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于主语",
+              "正确！whose = 他的书",
+              "whom 用于宾语",
+              "which 用于物，不表示所属"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who es para sujetos",
+              "Correcto! whose = sus libros",
+              "whom es para objetos",
+              "which es para cosas, no posesión"
             ]
           }
         },
@@ -2216,22 +2240,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people as subjects",
+              "Correct! whose = its CEO",
+              "which for things",
+              "that works but less precise for possession"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人作主语",
+              "正确！whose = 它的CEO",
+              "which 用于物",
+              "that 不够精确"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "Correcto! whose = su CEO",
+              "which para cosas",
+              "that funciona pero menos preciso"
             ]
           }
         },
@@ -2269,22 +2293,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "Correct! whose = its branches",
+              "which for things without possession",
+              "that works but whose is better"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "正确！whose = 它的树枝",
+              "which 用于物",
+              "that 可以但 whose 更好"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "Correcto! whose = sus ramas",
+              "which para cosas",
+              "that funciona pero whose mejor"
             ]
           }
         },
@@ -2322,22 +2346,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who for people",
+              "Correct! whose = its owner",
+              "which for things",
+              "that works for animals but whose is more specific"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "who 用于人",
+              "正确！whose = 它的主人",
+              "which 用于物",
+              "that 可以但 whose 更精确"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "who para personas",
+              "Correcto! whose = su dueno",
+              "which para cosas",
+              "that funciona pero whose mas especifico"
             ]
           }
         },
@@ -2444,16 +2468,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Correct! Restrictive = no comma. We need to identify WHICH students.",
+              "Comma would mean ALL students passed.",
+              "",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��"
+              "正确！限制性 = 不加逗号。需要区分哪些学生。",
+              "加逗号意味着所有学生都通过了。",
+              "",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Correcto! Restrictiva = sin coma. Necesitamos identificar QUÉ estudiantes.",
+              "La coma significaría que TODOS pasaron.",
+              "",
+              ""
             ]
           }
         },
@@ -2485,16 +2515,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Only ONE brother — no need to identify which one.",
+              "Correct! Non-restrictive = comma. The info is extra.",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����"
+              "只有一个哥哥——不需要区分是哪一个。",
+              "正确！非限制性 = 加逗号。这是补充信息。",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Solo UN hermano — no hay que identificar cuál.",
+              "Correcto! No restrictiva = coma. Es información extra.",
+              "",
+              ""
             ]
           }
         },
@@ -2526,16 +2562,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correct! need to specify which car -> restrictive -> no comma",
+              "Comma = all cars parked outside",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����"
+              "正确！需要指定哪辆 -> 限制性 -> 不加逗号",
+              "逗号 = 所有车都在外面",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correcto! hay que especificar -> restrictiva -> sin coma",
+              "Coma = todos los coches",
+              "",
+              ""
             ]
           }
         },
@@ -2567,16 +2609,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "No comma = need to identify which Dr. Chen",
+              "Correct! name is known -> extra info -> comma",
+              "",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��"
+              "不加逗号 = 需要区分哪个陈医生",
+              "正确！名字已知 -> 补充信息 -> 加逗号",
+              "",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Sin coma = hay que identificar cual",
+              "Correcto! nombre conocido -> info extra -> coma",
+              "",
+              ""
             ]
           }
         },
@@ -2608,16 +2656,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correct! need to specify which doctor -> restrictive -> no comma",
+              "Comma = we already know which doctor",
+              "",
+              ""
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����"
+              "正确！需要指定哪个医生 -> 限制性 -> 不加逗号",
+              "逗号 = 已经知道是哪个医生",
+              "",
+              ""
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!"
+              "Correcto! hay que especificar -> restrictiva -> sin coma",
+              "Coma = ya sabemos cual doctor",
+              "",
+              ""
             ]
           }
         },
@@ -2649,16 +2703,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "No comma = only those who attended (restrictive)",
+              "Correct! comma = all managers attended (non-restrictive)",
+              "",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��"
+              "不加逗号 = 只有参会的经理",
+              "正确！加逗号 = 所有经理都参会了",
+              "",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure."
+              "Sin coma = solo los que asistieron",
+              "Correcto! coma = todos asistieron",
+              "",
+              ""
             ]
           }
         },
@@ -2797,19 +2857,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correct! The relative clause goes right after the noun it describes.",
+              "Wrong word order — the clause must follow the antecedent.",
+              "Extra pronoun she — not needed.",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���"
+              "正确！定语从句紧跟被修饰的名词。",
+              "语序错误——从句必须跟在先行词后。",
+              "多余的she——不需要。",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correcto! La cláusula va justo después del sustantivo.",
+              "Orden incorrecto.",
+              "El pronombre she sobra.",
+              ""
             ]
           }
         },
@@ -2844,19 +2907,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correct! which/that replaces it and connects the sentences.",
+              "Extra it — the relative pronoun already replaces it.",
+              "Wrong position — the clause must follow the antecedent.",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���"
+              "正确！which/that 代替 it 并连接两个句子。",
+              "多余的 it——关系代词已经代替了它。",
+              "位置错误——从句必须跟在先行词后。",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correcto! which/that reemplaza it y conecta las oraciones.",
+              "El it sobra.",
+              "Posición incorrecta.",
+              ""
             ]
           }
         },
@@ -2897,22 +2963,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! that replaces it",
+              "Extra it — already replaced",
+              "Wrong position",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！that 代替 it",
+              "多余的 it",
+              "位置错误",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! that reemplaza it",
+              "it sobra",
+              "Posicion incorrecta",
+              ""
             ]
           }
         },
@@ -2953,22 +3019,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! the clause should be right after the antecedent",
+              "Clause too far from antecedent — awkward",
+              "Wrong subject",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！从句应紧跟先行词",
+              "从句离先行词太远",
+              "主语错误",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! clausula justo despues del antecedente",
+              "Clausula muy lejos",
+              "Sujeto incorrecto",
+              ""
             ]
           }
         },
@@ -3006,19 +3072,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule."
+              "Correct! recommend + hotel -> that/which, not where",
+              "where is wrong — hotel is object of recommend, not a place where you recommend",
+              "Original with extra it — wrong on two counts",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���"
+              "正确！recommend + hotel -> that/which",
+              "where 错误 — hotel 是 recommend 的宾语",
+              "原句有两处错误",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule."
+              "Correcto! recommend + hotel -> that/which",
+              "where incorrecto — hotel es objeto",
+              "Original tiene dos errores",
+              ""
             ]
           }
         },
@@ -3053,19 +3122,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correct! who replaces she and joins the sentences",
+              "Wrong word order",
+              "Extra she — already replaced by who",
+              ""
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���"
+              "正确！who 代替 she 并连接句子",
+              "语序错误",
+              "多余的 she",
+              ""
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule."
+              "Correcto! who reemplaza she",
+              "Orden incorrecto",
+              "she sobra",
+              ""
             ]
           }
         },
@@ -3181,22 +3253,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! inside = in",
+              "surface = on",
+              "specific point = at",
+              "near = by"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！里面 = in",
+              "表面 = on",
+              "具体点 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! dentro = in",
+              "superficie = on",
+              "punto = at",
+              "cerca = by"
             ]
           }
         },
@@ -3234,22 +3306,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside = in",
+              "Correct! surface = on",
+              "point = at",
+              "direction = to"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "里面 = in",
+              "正确！表面 = on",
+              "点 = at",
+              "方向 = to"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro = in",
+              "Correcto! superficie = on",
+              "punto = at",
+              "direccion = to"
             ]
           }
         },
@@ -3287,22 +3359,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside = in",
+              "Correct! surface contact = on",
+              "point = at",
+              "above (not touching) = over"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "里面 = in",
+              "正确！表面 = on",
+              "点 = at",
+              "上方（不接触）= over"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro = in",
+              "Correcto! superficie = on",
+              "punto = at",
+              "encima = over"
             ]
           }
         },
@@ -3340,22 +3412,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside = in",
+              "sitting on the door = on",
+              "Correct! specific location = at",
+              "near = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "里面 = in",
+              "门上 = on",
+              "正确！具体位置 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro = in",
+              "sobre la puerta = on",
+              "Correcto! ubicacion = at",
+              "cerca = by"
             ]
           }
         },
@@ -3396,22 +3468,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "Correct �� this follows the expected pattern."
+              "Correct! inside an area = in",
+              "on the surface",
+              "specific point = at",
+              "near = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "��ȷ��������Ԥ��ģʽ��"
+              "正确！区域内 = in",
+              "表面 = on",
+              "点 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "Correct �� this follows the expected pattern."
+              "Correcto! area = in",
+              "superficie = on",
+              "punto = at",
+              "cerca = by"
             ]
           }
         },
@@ -3449,22 +3521,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside shelter = in",
+              "on top = on",
+              "Correct! meeting point = at",
+              "near = by"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "站内 = in",
+              "站上 = on",
+              "正确！会面点 = at",
+              "附近 = by"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro = in",
+              "encima = on",
+              "Correcto! punto de encuentro = at",
+              "cerca = by"
             ]
           }
         }
@@ -3524,22 +3596,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "month/season = in",
+              "day = on",
+              "Correct! specific time = at",
+              "deadline = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "月份/季节 = in",
+              "某天 = on",
+              "正确！具体时刻 = at",
+              "截止 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "mes/temporada = in",
+              "dia = on",
+              "Correcto! hora especifica = at",
+              "plazo = by"
             ]
           }
         },
@@ -3577,22 +3649,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "Correct! month = in",
+              "day = on",
+              "time = at",
+              "also works: during"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "正确！月份 = in",
+              "某天 = on",
+              "时刻 = at",
+              "during 也可以"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "Correcto! mes = in",
+              "dia = on",
+              "hora = at",
+              "during tambien"
             ]
           }
         },
@@ -3630,22 +3702,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "month/season = in",
+              "Correct! specific day = on",
+              "precise time = at",
+              "deadline = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "月份 = in",
+              "正确！某天 = on",
+              "时刻 = at",
+              "截止 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "mes = in",
+              "Correcto! dia = on",
+              "hora = at",
+              "plazo = by"
             ]
           }
         },
@@ -3683,22 +3755,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "Correct! season = in",
+              "day = on",
+              "time = at",
+              "also correct: during"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "��ȷ��������Ԥ��ģʽ��"
+              "正确！季节 = in",
+              "天 = on",
+              "时刻 = at",
+              "during 也可以"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "Correct �� this follows the expected pattern."
+              "Correcto! temporada = in",
+              "dia = on",
+              "hora = at",
+              "during tambien"
             ]
           }
         },
@@ -3736,22 +3808,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "in the noon period",
+              "on a day",
+              "Correct! precise time = at",
+              "by noon (deadline)"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "中午时段 = in",
+              "某天 = on",
+              "正确！精确时刻 = at",
+              "截止 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "periodo = in",
+              "dia = on",
+              "Correcto! hora precisa = at",
+              "plazo = by"
             ]
           }
         },
@@ -3789,22 +3861,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "month alone = in",
+              "Correct! specific date = on",
+              "time = at",
+              "deadline = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "仅月份 = in",
+              "正确！具体日期 = on",
+              "时刻 = at",
+              "截止 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "solo mes = in",
+              "Correcto! fecha = on",
+              "hora = at",
+              "plazo = by"
             ]
           }
         },
@@ -3917,22 +3989,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! city = in",
+              "street = on",
+              "address = at",
+              "direction = to"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！城市 = in",
+              "街道 = on",
+              "地址 = at",
+              "方向 = to"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! ciudad = in",
+              "calle = on",
+              "direccion = at",
+              "direccion = to"
             ]
           }
         },
@@ -3970,22 +4042,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "month = in",
+              "Correct! day = on",
+              "time = at",
+              "deadline = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "月份 = in",
+              "正确！星期 = on",
+              "时刻 = at",
+              "截止 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "mes = in",
+              "Correcto! dia = on",
+              "hora = at",
+              "plazo = by"
             ]
           }
         },
@@ -4023,22 +4095,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside corner (nonsense)",
+              "on the corner surface",
+              "Correct! intersection = at",
+              "near = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "角落里面",
+              "角落表面",
+              "正确！街角 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro",
+              "superficie",
+              "Correcto! interseccion = at",
+              "cerca = by"
             ]
           }
         },
@@ -4076,22 +4148,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! inside container = in",
+              "placed on top = on",
+              "specific point = at",
+              "near = by"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！容器内 = in",
+              "放在上面 = on",
+              "点 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! recipiente = in",
+              "encima = on",
+              "punto = at",
+              "cerca = by"
             ]
           }
         },
@@ -4257,22 +4329,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! date = on",
+              "month alone = in",
+              "time = at",
+              "no preposition"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！日期 = on",
+              "仅月份 = in",
+              "时刻 = at",
+              "不需要介词"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! fecha = on",
+              "solo mes = in",
+              "hora = at",
+              "sin preposicion"
             ]
           }
         },
@@ -4310,22 +4382,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside = in",
+              "Correct! surface = on",
+              "point = at",
+              "near = by"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ˣ��۹ⲻ����",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "里面 = in",
+              "正确！表面 = on",
+              "点 = at",
+              "旁边 = by"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "That is right �� good eye!",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro = in",
+              "Correcto! superficie = on",
+              "punto = at",
+              "cerca = by"
             ]
           }
         },
@@ -4363,22 +4435,22 @@
           },
           "ex": {
             "en": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correct! day = on",
+              "month = in",
+              "time = at",
+              "no preposition"
             ],
             "zh": [
-              "��ȷ���������ѡ�",
-              "���ѡ��ԣ������ӽṹ��",
-              "ѡ����󡪡������Ϲ���",
-              "���ԣ������ʶ����ӿ�����"
+              "正确！星期 = on",
+              "月份 = in",
+              "时刻 = at",
+              "不需要"
             ],
             "es": [
-              "Correct! This is the right choice.",
-              "This option is incorrect. Check the sentence structure.",
-              "Wrong choice �� this does not follow the rule.",
-              "This is not right. Try reading the sentence aloud."
+              "Correcto! dia = on",
+              "mes = in",
+              "hora = at",
+              "sin preposicion"
             ]
           }
         },
@@ -4416,22 +4488,22 @@
           },
           "ex": {
             "en": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "inside (works)",
+              "on top",
+              "Correct! at for establishments",
+              "near"
             ],
             "zh": [
-              "������������������﷨ģʽ��",
-              "���ѡ��ԣ������ӽṹ��",
-              "�ǵģ�������﷨����",
-              "���ԣ������ʶ����ӿ�����"
+              "里面（可以）",
+              "上面",
+              "正确！at 用于场所",
+              "旁边"
             ],
             "es": [
-              "Not this one �� it does not fit the grammar pattern.",
-              "This option is incorrect. Check the sentence structure.",
-              "Yes, this matches the grammar rule.",
-              "This is not right. Try reading the sentence aloud."
+              "dentro",
+              "encima",
+              "Correcto! at para establecimientos",
+              "cerca"
             ]
           }
         },
