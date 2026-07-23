@@ -162,6 +162,38 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   .how-card{padding:16px 12px}
   .feat-item{padding:12px}
 }
+
+/* How It Works */
+.how{padding:clamp(40px,6vh,80px) clamp(16px,2.5vw,32px);background:#fff8f2}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,28px);max-width:900px;margin:clamp(20px,3vh,36px) auto 0}
+.how-card{text-align:center;padding:clamp(16px,2vw,28px) clamp(12px,1.5vw,20px)}
+.how-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-family:'Baloo 2',cursive;font-size:20px;font-weight:700;color:#fff}
+.how-icon--orange{background:linear-gradient(135deg,#ff8c42,#ff6b2b)}
+.how-icon--green{background:linear-gradient(135deg,#7ec8a0,#5ba87a)}
+.how-icon--purple{background:linear-gradient(135deg,#b8a0d8,#8b6fbf)}
+.how-card h3{font-family:'Baloo 2',cursive;font-size:clamp(16px,1.8vw,20px);color:#2d1b10;margin-bottom:6px}
+.how-card p{font-size:clamp(12px,1.2vw,14px);color:#8c7b6e;line-height:1.6;max-width:240px;margin:0 auto}
+
+/* Features */
+.feat{padding:clamp(40px,6vh,80px) clamp(16px,2.5vw,32px);background:#fffaf6}
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(12px,1.5vw,20px);max-width:800px;margin:clamp(20px,3vh,36px) auto 0}
+.feat-item{display:flex;align-items:center;gap:clamp(10px,1.5vw,16px);padding:clamp(14px,1.5vw,20px);background:rgba(255,255,255,0.6);border:1px solid #f0e5d8;border-radius:14px}
+.feat-icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Baloo 2',cursive;font-size:18px;font-weight:700;color:#fff}
+.feat-icon--orange{background:linear-gradient(135deg,#ff8c42,#ff6b2b)}
+.feat-icon--green{background:linear-gradient(135deg,#7ec8a0,#5ba87a)}
+.feat-icon--blue{background:linear-gradient(135deg,#7eb8da,#5b9aca)}
+.feat-icon--purple{background:linear-gradient(135deg,#b8a0d8,#8b6fbf)}
+.feat-text{display:flex;flex-direction:column;gap:2px}
+.feat-text strong{font-size:clamp(13px,1.2vw,14px);color:#2d1b10}
+.feat-text span{font-size:clamp(11px,1vw,12px);color:#8c7b6e}
+
+/* Bottom CTA */
+.cta-bot{padding:clamp(40px,6vh,80px) clamp(16px,2.5vw,32px);background:linear-gradient(135deg,#ff8c4210,#ff6b2b08);text-align:center}
+.cta-bot-inner{max-width:480px;margin:0 auto}
+.cta-bot h2{font-family:'Baloo 2',cursive;font-size:clamp(24px,3vw,32px);font-weight:700;color:#2d1b10;margin-bottom:8px}
+.cta-bot p{font-size:clamp(14px,1.5vw,17px);color:#8c7b6e;margin-bottom:28px}
+
+@media(max-width:700px){.how-grid{grid-template-columns:1fr;max-width:320px}.feat-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -262,6 +294,57 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   <div class="cta-bot-inner">
     <h2>Ready to Master Grammar?</h2>
     <p>Start with Relative Clauses, work through all 12 modules. Your grammar gremlin is waiting.</p>
+    <button class="btn-p" onclick="location.href='game.html'">Start Learning — Free</button>
+  </div>
+</section>
+
+<section class="how">
+  <div class="sec-h st"><h2>How It Works</h2><p>Three steps to grammar confidence.</p></div>
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-icon how-icon--orange">1</div>
+      <h3>Pick a Module</h3>
+      <p>Choose from 12 grammar worlds, each designed for your level.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-icon how-icon--green">2</div>
+      <h3>Answer & Learn</h3>
+      <p>Instant feedback and clear explanations for every option.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-icon how-icon--purple">3</div>
+      <h3>Level Up</h3>
+      <p>Earn stars, unlock phases, watch your confidence grow.</p>
+    </div>
+  </div>
+</section>
+
+<section class="feat">
+  <div class="sec-h st"><h2>Why GramLingo?</h2><p>Built for how you actually learn grammar.</p></div>
+  <div class="feat-grid">
+    <div class="feat-item">
+      <div class="feat-icon feat-icon--orange">12</div>
+      <div class="feat-text"><strong>12 Grammar Worlds</strong><span>From relative clauses to advanced expressions.</span></div>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon feat-icon--green">3</div>
+      <div class="feat-text"><strong>Three Languages</strong><span>Learn in English, Chinese, or Spanish.</span></div>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon feat-icon--blue">+</div>
+      <div class="feat-text"><strong>Instant Feedback</strong><span>Every option explains why it works or doesn't.</span></div>
+    </div>
+    <div class="feat-item">
+      <div class="feat-icon feat-icon--purple">~</div>
+      <div class="feat-text"><strong>Progress Tracking</strong><span>Stars, streaks, and a personal error log.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bot">
+  <div class="cta-bot-inner">
+    <h2>Ready to master grammar?</h2>
+    <p>282 questions. 92 phases. One friendly gremlin.</p>
     <button class="btn-p" onclick="location.href='game.html'">Start Learning — Free</button>
   </div>
 </section>
