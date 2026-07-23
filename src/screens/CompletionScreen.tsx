@@ -13,13 +13,14 @@ import { GAME_DATA } from '../game/data';
 import './CompletionScreen.css';
 
 export function CompletionScreen() {
-  const { language, navigateTo, activeModuleId, activePhaseId, getPhaseProgress, getModuleProgress, startPhase } = useAppContext();
+  const { language, navigateTo, activeModuleId, activePhaseId, getPhaseProgress, getModuleProgress, getModuleAttempted, startPhase } = useAppContext();
   const s = getStrings(language);
   const isZh = language === 'zh';
 
   const phaseProgress = activePhaseId ? getPhaseProgress(activePhaseId) : undefined;
   const score = phaseProgress?.bestScore || 0;
   const modulePct = activeModuleId ? getModuleProgress(activeModuleId) : 0;
+  const attempted = activeModuleId ? getModuleAttempted(activeModuleId) : { attempted: 0, total: 0 };
 
   const phase = GAME_DATA.phases.find((p) => p.id === activePhaseId);
   const module = GAME_DATA.modules.find((m) => m.id === activeModuleId);
@@ -79,6 +80,10 @@ export function CompletionScreen() {
             color={modulePct >= 70 ? 'correct' : 'primary'}
             size="sm"
           />
+        </div>
+
+        <div className="completion-module-attempted">
+          <span className="attempted-text">{isZh ? `${attempted.attempted} / ${attempted.total} 个阶段已尝试` : `${attempted.attempted} of ${attempted.total} phases attempted`}</span>
         </div>
 
         <div className="completion-actions">

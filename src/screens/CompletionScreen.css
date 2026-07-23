@@ -61,6 +61,15 @@
   margin-top: var(--space-1) !important;
 }
 
+.completion-module-attempted {
+  margin-top: var(--space-1);
+}
+
+.attempted-text {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
 .completion-module-progress {
   width: 100%;
   margin-top: var(--space-2);

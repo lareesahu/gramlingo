@@ -155,6 +155,16 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }).length;
     return Math.round((completed / order.length) * 100);
   }, [progress]);
+  const getModuleAttempted = useCallback((moduleId: string) => {
+    const order = GAME_DATA.phaseLockOrder[moduleId];
+    if (!order || order.length === 0) return { attempted: 0, total: 0 };
+    const attempted = order.filter((pid) => {
+      const p = progress.find((pp) => pp.phaseId === pid);
+      return p && p.attempts > 0;
+    }).length;
+    return { attempted, total: order.length };
+  }, [progress]);
+
 
   const updateProgress = useCallback((phaseId: string, moduleId: string, score: number) => {
     setProgress((prev: PhaseProgress[]) => {
@@ -291,7 +301,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     activeQuestionIndex, progress, wrongBook, isAdmin, moduleLocks,
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
-    updateProgress, getPhaseProgress, getModuleProgress,
+    updateProgress, getPhaseProgress, getModuleProgress, getModuleAttempted,
     addWrong, removeWrong, getWrongByModule, getWrongByPhase,
     startPhase, nextQuestion,
     setActiveModule,

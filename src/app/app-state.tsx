@@ -21,6 +21,7 @@ export interface AppContextType extends AppState {
   updateProgress: (phaseId: string, moduleId: string, score: number) => void;
   getPhaseProgress: (phaseId: string) => PhaseProgress | undefined;
   getModuleProgress: (moduleId: string) => number;
+  getModuleAttempted: (moduleId: string) => { attempted: number; total: number };
 
   // Wrong book
   addWrong: (entry: Omit<WrongEntry, 'timestamp' | 'attemptCount'>) => void;

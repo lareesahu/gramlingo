@@ -76,7 +76,7 @@ export function AdminScreen() {
                       <Badge variant="success">🟢 Active</Badge>
                     )}
                   </span>
-                  <span className="admin-progress-cell">
+                  <span className="admin-progress-cell" data-label="Progress">
                     <div className="admin-mini-bar">
                       <div className="admin-mini-fill" style={{ width: `${avgPct}%` }} />
                     </div>
