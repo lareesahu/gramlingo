@@ -1,5 +1,5 @@
-﻿/* ==================================================
-   GRAMLINGO — Lesson Screen (55e7f19 behaviour)
+/* ==================================================
+   GRAMLINGO — Lesson Screen
    States: idle → selected → submitted(+revealed) → next
    ================================================== */
 
@@ -22,7 +22,6 @@ export function LessonScreen() {
 
   const phase = GAME_DATA.phases.find((p) => p.id === activePhaseId);
 
-  // Core state: select → submit → reveal
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [revealedOption, setRevealedOption] = useState<number | null>(null);
@@ -36,7 +35,6 @@ export function LessonScreen() {
     ? Math.round(((activeQuestionIndex) / questions.length) * 100)
     : 0;
 
-  // Derived values
   const isZh = language === "zh";
   const phaseName = isZh ? phase?.nameZh : phase?.name;
   const options = currentQ?.o || [];
@@ -46,12 +44,10 @@ export function LessonScreen() {
     (a: string) => selectedText.includes(a) || a.includes(selectedText)
   );
 
-  // Gramlin pose
   const gramlinPose = submitted
     ? (isCorrect ? "celebrate" : wrongStreak >= 2 ? "sad" : "think")
     : "think";
 
-  // Tip/explanation text for revealed option
   const getExplanation = (optIndex: number): string => {
     if (!currentQ) return "";
     const tip = isZh ? currentQ.tZh : language === "es" ? (currentQ as any).tEs : currentQ.t;
@@ -60,23 +56,18 @@ export function LessonScreen() {
     return perOpt || tip || "";
   };
 
-  // Handle option click
   const handleOptionClick = useCallback((index: number) => {
     if (submitted) {
-      // Toggle revealed option after submit
       setRevealedOption(revealedOption === index ? null : index);
     } else {
-      // Select option before submit
       setSelectedOption(index);
     }
   }, [submitted, revealedOption]);
 
-  // Handle Submit — KEY FIX: auto-reveal explanation
   const handleSubmit = useCallback(() => {
     if (selectedOption === null || !currentQ) return;
 
     setSubmitted(true);
-    // AUTO-REVEAL the selected option's explanation
     setRevealedOption(selectedOption);
 
     if (isCorrect) {
@@ -103,7 +94,6 @@ export function LessonScreen() {
   }, [selectedOption, currentQ, isCorrect, activeModuleId, activePhaseId,
       activeQuestionIndex, addWrong, removeWrong, wrongBook, selectedText, correctAnswers]);
 
-  // Handle Next
   const handleNext = useCallback(() => {
     if (isLastQuestion) {
       const finalScore = questions.length > 0
@@ -119,7 +109,6 @@ export function LessonScreen() {
     }
   }, [isLastQuestion, questions.length, score, completePhase, nextQuestion]);
 
-  // Keyboard: Enter after select = Submit; Enter/→ after submit = Next
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Enter") {
@@ -146,7 +135,6 @@ export function LessonScreen() {
 
   return (
     <div className="lesson-screen animate-fade-in">
-      {/* Progress header */}
       <div className="lesson-progress-header">
         <span className="lesson-phase-label">
           {s.phase} {phase.sort}: {phaseName}
@@ -157,24 +145,19 @@ export function LessonScreen() {
       </div>
       <ProgressBar value={progressPct} size="sm" />
 
-      {/* Gramlin */}
       <div className="lesson-gramlin">
         <Gramlin pose={gramlinPose} size="lg" animated={submitted && isCorrect} />
       </div>
 
-      {/* Question card */}
       <div className={`lesson-question-card ${submitted ? (isCorrect ? "card--correct" : "card--wrong") : ""}`}>
         <p className="question-text" dangerouslySetInnerHTML={{ __html: currentQ.q }} />
 
-        {/* Options */}
         <div className="options-grid">
           {options.map((opt: string, i: number) => {
             let cls = "option-btn";
             if (!submitted) {
-              // Pre-submit: highlight selected
               if (i === selectedOption) cls += " option-btn--selected";
             } else {
-              // Post-submit: highlight correct + selected (if wrong)
               if (correctAnswers.some((a: string) => opt.includes(a) || a.includes(opt))) {
                 cls += " option-btn--correct";
               } else if (i === selectedOption) {
@@ -199,26 +182,26 @@ export function LessonScreen() {
           })}
         </div>
 
-        {/* Feedback / Explanation */}
         {submitted && revealedOption !== null && (
           <div className={`feedback ${correctAnswers.some((a: string) => options[revealedOption]?.includes(a) || a.includes(options[revealedOption])) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
-            <span className="feedback-label">
+            <div className="feedback-label">
               {revealedOption === selectedOption
                 ? s.yourAnswer
                 : `${isZh ? s.optionLabel : "Option"} ${revealedOption + 1}`}
-            </span>
-            <span>{getExplanation(revealedOption) || s.tapExplanation}</span>
+            </div>
+            <div className="feedback-body">
+              {getExplanation(revealedOption) || s.tapExplanation}
+            </div>
           </div>
         )}
 
         {submitted && revealedOption === null && (
           <div className={`feedback ${isCorrect ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
-            <span className="feedback-label">{s.tapExplanation}</span>
+            <div className="feedback-body">{s.tapExplanation}</div>
           </div>
         )}
       </div>
 
-      {/* Action button: Submit or Next */}
       <div className="lesson-next animate-slide-up">
         {submitted ? (
           <Button onClick={handleNext} size="lg">

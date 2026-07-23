@@ -82,9 +82,6 @@ export function WrongBookScreen() {
                 <Badge variant="default">{isZh ? module?.nameZh : module?.name}</Badge>
                 <Badge variant="info">{isZh ? phase?.nameZh : phase?.name}</Badge>
                 <span className="wrong-date">{date}</span>
-                {entry.attemptCount > 1 && (
-                  <Badge variant="warning">×{entry.attemptCount}</Badge>
-                )}
               </div>
 
               {question && (
