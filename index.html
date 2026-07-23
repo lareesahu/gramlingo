@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GramLingo 鈥?Grammar Quest</title>
+<title>GramLingo — Grammar Quest</title>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -13,24 +13,24 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .bg-glow::before{content:"";position:absolute;top:-20%;left:-10%;width:70%;height:70%;background:radial-gradient(circle,rgba(255,183,136,0.12) 0%,transparent 70%);border-radius:50%}
 .bg-glow::after{content:"";position:absolute;bottom:-10%;right:-5%;width:50%;height:50%;background:radial-gradient(circle,rgba(126,200,160,0.06) 0%,transparent 60%);border-radius:50%}
 
-/* 鈹€鈹€ Liquid Glass 鈹€鈹€ */
+/* ── Liquid Glass ── */
 .glass{background:rgba(255,255,255,0.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(232,213,196,0.3);position:relative;overflow:hidden}
 .glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(180deg,rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.2) 30%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.15) 80%,rgba(255,255,255,0.4) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
 
-/* 鈹€鈹€ Nav 鈹€鈹€ */
+/* ── Nav ── */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1200px;margin:0 auto;position:relative;z-index:20}
 .nav-l{display:flex;align-items:center;gap:8px;flex-shrink:0}
 .nav-l img{width:30px;height:30px;object-fit:contain;flex-shrink:0}
 .nav-logo{font-family:'Baloo 2',cursive;font-size:clamp(18px,2vw,24px);font-weight:800;background:linear-gradient(135deg,#ff8c42,#ff6b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
 .nav-r{display:flex;gap:6px;flex-shrink:0}
 .nv{padding:6px 14px;border-radius:999px;font-size:clamp(11px,1.2vw,13px);font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;white-space:nowrap}
-.nv-g{background:rgba(255,140,66,0.06);border:1px solid rgba(232,213,196,0.4);color:#5c3d2e}
+.nv-g{background:rgba(255,140,282,0.06);border:1px solid rgba(232,213,196,0.4);color:#5c3d2e}
 .nv-g:hover{background:rgba(255,140,66,0.12);border-color:#ffb788}
 .nv-s{background:linear-gradient(135deg,#ff8c42,#ff6b2b);border:none;color:#fff;box-shadow:0 3px 0 #cc6e2e}
 .nv-s:hover{transform:translateY(-1px);box-shadow:0 5px 0 #cc6e2e}
 .nv-s:active{transform:translateY(3px);box-shadow:0 0 0 #cc6e2e}
 
-/* 鈹€鈹€ Stagger 鈹€鈹€ */
+/* ── Stagger ── */
 .st{opacity:0;transform:translateY(24px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}
 .st.vis{opacity:1;transform:translateY(0)}
 .d0{transition-delay:0s}
@@ -39,7 +39,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .d3{transition-delay:0.35s}
 .d4{transition-delay:0.5s}
 
-/* 鈹€鈹€ Hero 鈹€鈹€ */
+/* ── Hero ── */
 .hero{min-height:calc(100dvh - 56px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(20px,4vh,60px) clamp(16px,4vw,24px);position:relative;overflow:hidden;box-sizing:border-box}
 
 .hero-m{position:relative;margin-bottom:clamp(12px,2vh,24px)}
@@ -58,25 +58,25 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .btn-s{flex:0 1 auto;padding:clamp(12px,2vh,18px) clamp(20px,4vw,36px);border-radius:clamp(10px,1.2vw,14px);border:2px solid #e8d5c4;background:transparent;color:#5c3d2e;font-size:clamp(13px,1.4vw,15px);font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;min-width:0;white-space:nowrap}
 .btn-s:hover{border-color:#ff8c42;color:#ff8c42;background:rgba(255,140,66,0.04)}
 
-/* 鈹€鈹€ Stats 鈹€鈹€ */
+/* ── Stats ── */
 .stats-r{margin-top:clamp(16px,3vh,44px);padding:clamp(12px,2vh,20px) clamp(20px,4vw,48px);border-radius:clamp(16px,3vw,100px);width:auto;max-width:90vw}
 .stats-i{display:flex;gap:clamp(12px,3vw,48px);justify-content:center;flex-wrap:wrap}
 .s-item{text-align:center;flex-shrink:0}
 .s-n{font-family:'Baloo 2',cursive;font-size:clamp(20px,2.5vw,28px);font-weight:700;background:linear-gradient(135deg,#ffb788,#ff8c42);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
 .s-l{font-size:clamp(9px,1vw,11px);color:#8c7b6e;text-transform:uppercase;letter-spacing:0.6px;margin-top:2px}
 
-/* 鈹€鈹€ Section 鈹€鈹€ */
+/* ── Section ── */
 .section{max-width:1200px;margin:0 auto;padding:clamp(10px,2vh,20px) clamp(16px,2.5vw,32px) clamp(40px,6vh,80px)}
 .sec-h{text-align:center;margin-bottom:clamp(20px,3vh,36px)}
 .sec-h h2{font-family:'Baloo 2',cursive;font-size:clamp(24px,3vw,32px);font-weight:700;color:#2d1b10;margin-bottom:4px}
 .sec-h p{font-size:clamp(12px,1.2vw,14px);color:#8c7b6e}
 
-/* 鈹€鈹€ Grid 鈹€鈹€ */
+/* ── Grid ── */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.5vw,20px);perspective:1200px}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:540px){.grid{grid-template-columns:1fr;perspective:none}}
 
-/* 鈹€鈹€ 3D Card 鈹€鈹€ */
+/* ── 3D Card ── */
 .card{position:relative;border-radius:clamp(14px,1.6vw,20px);overflow:hidden;cursor:pointer;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.35s ease;background:#fff;border:1px solid #f0e5d8;box-shadow:0 2px 8px rgba(45,27,16,0.03);transform-style:preserve-3d;will-change:transform}
 .card:hover{box-shadow:0 20px 60px rgba(255,140,66,0.1);border-color:#ffb788}
 @media(max-width:540px){.card:hover{transform:translateY(-4px)!important}}
@@ -100,7 +100,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 
 .footer{text-align:center;padding:clamp(24px,3vh,40px) 16px;color:#b8a89a;font-size:clamp(11px,1.1vw,13px);border-top:1px solid #f0e5d8;background:#fff8f2}
 
-/* 鈹€鈹€ Mobile overrides 鈹€鈹€ */
+/* ── Mobile overrides ── */
 @media(max-width:540px){
   .nav{padding:10px 14px}
   .nv-g{display:none}
@@ -126,27 +126,27 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="bg-glow"></div>
 
 <nav class="nav">
-  <div class="nav-l"><img src="https://lareesahu.github.io/gramlingo/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
+  <div class="nav-l"><img src="/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
   <div class="nav-r">
-    <button class="nv nv-g">馃寪 EN</button>
-    <button class="nv nv-g" onclick="location.href=&#39;landing.html&#39;">Sign In</button>
-    <button class="nv nv-s" onclick="location.href=&#39;landing.html&#39;">Start Free</button>
+    <button class="nv nv-g">🌐 EN</button>
+    <button class="nv nv-g">Sign In</button>
+    <button class="nv nv-s">Start Free</button>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-m st d0 vis"><img src="https://lareesahu.github.io/gramlingo/assets/gramlin/peekaboo-gramlin.png"></div>
+  <div class="hero-m st d0 vis"><img src="/assets/gramlin/peekaboo-gramlin.png"></div>
   <h1 class="st d1 vis">Master Grammar<br><span class="hl">by Playing</span></h1>
   <p class="st d2 vis">Short quests. Real sentences. A gremlin who celebrates your wins.</p>
   <div class="hero-cta st d3 vis">
-    <button class="btn-p">Start Learning 鈥?Free</button>
-    <button class="btn-s" onclick="location.href=&#39;landing.html&#39;">I Have an Account</button>
+    <button class="btn-p">Start Learning — Free</button>
+    <button class="btn-s">I Have an Account</button>
   </div>
   <div class="glass stats-r st d4 vis">
     <div class="stats-i">
-      <div class="s-item"><div class="s-n">282</div><div class="s-l">Questions</div></div>
-      <div class="s-item"><div class="s-n">92</div><div class=""s-l"">Phases</div></div>
-      <div class="s-item"><div class="s-n">12</div><div class=""s-l"">Modules</div></div>
+      <div class="s-item"><div class="s-n">66</div><div class="s-l">Lessons</div></div>
+      <div class="s-item"><div class="s-n">92</div><div class="s-l">Phases</div></div>
+      <div class="s-item"><div class="s-n">12</div><div class="s-l">Modules</div></div>
       <div class="s-item"><div class="s-n">3</div><div class="s-l">Languages</div></div>
     </div>
   </div>
@@ -157,7 +157,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   <div class="grid" id="moduleGrid"></div>
 </section>
 
-<div class="footer">漏 GramLingo 鈥?Grammar Quest. Learn by playing.</div>
+<div class="footer">© GramLingo — Grammar Quest. Learn by playing.</div>
 
 <script>
 var MODULES = [
@@ -174,11 +174,11 @@ var MODULES = [
   { n:'Sentence Structure', c:'cover-sentence_structure.jpg', l:false },
   { n:'Advanced Exp.', c:'cover-advanced.jpg', l:false }
 ];
-var B='https://lareesahu.github.io/gramlingo/assets/covers/';
+var B='/assets/covers/';
 var G=document.getElementById('moduleGrid');
 MODULES.forEach(function(m,i){
   var tag=m.l?'<span class="card-tag t-l">Play</span>':'<span class="card-tag t-s">Soon</span>';
-  var f=m.l?'<div class="card-f"><span>Continue</span><span class="ar">鈫?/span></div>':'<div class="card-f"><span>On the horizon</span></div>';
+  var f=m.l?'<div class="card-f"><span>Continue</span><span class="ar">→</span></div>':'<div class="card-f"><span>On the horizon</span></div>';
   var b=m.d?'<div class="card-b"><h3>'+m.n+'</h3><p>'+m.d+'</p></div>':'<div class="card-b"><h3>'+m.n+'</h3><p>A new grammar world is being prepared.</p></div>';
   G.innerHTML+='<div class="card c-st" style="animation-delay:'+(i*0.05)+'s"><div class="card-inner"><div class="card-img-w"><img class="card-img" src="'+B+m.c+'" loading="lazy">'+tag+'</div>'+b+f+'</div></div>';
 });
@@ -186,7 +186,7 @@ MODULES.forEach(function(m,i){
 var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:0.08});
 document.querySelectorAll('.c-st,.sec-h.st').forEach(function(el){obs.observe(el)});
 
-// 鈹€鈹€ 3D tilt (desktop only) 鈹€鈹€
+// ── 3D tilt (desktop only) ──
 var cards=document.querySelectorAll('.card');
 cards.forEach(function(c){
   c.addEventListener('mousemove',function(e){
@@ -202,31 +202,19 @@ cards.forEach(function(c){
     var inner=c.querySelector('.card-inner');
     if(inner) inner.style.transform='rotateX(0) rotateY(0) translateZ(0)';
   });
-});
+});</script>
 <script>
-// 鈹€鈹€ Interactions 鈹€鈹€
-document.querySelector('.btn-p')?.addEventListener('click',function(){window.location.href='landing.html';
-  document.querySelector('.section')?.scrollIntoView({behavior:'smooth',block:'start'});
-});
-document.querySelectorAll('.btn-s,.nv-s,.nv-g:last-child').forEach(function(b){b.addEventListener('click',function(){window.location.href='landing.html'})}); // (function(b){
-  b.addEventListener('click',function(){
-    var existing=document.querySelector('.signin-modal');
-    if(existing) { existing.remove(); return; }
-    var m=document.createElement('div');
-    m.className='signin-modal';
-    m.innerHTML='<div class="si-overlay"></div><div class="si-card glass"><button class="si-close">&times;</button><h3>Welcome Back</h3><p style="font-size:13px;color:#8c7b6e;margin-bottom:16px">Sign in to continue your grammar quest.</p><input class="si-input" placeholder="Username" autofocus><input class="si-input" type="password" placeholder="PIN (optional)"><button class="btn-p" style="width:100%;margin-top:8px">Sign In</button><p style="font-size:11px;color:#b8a89a;margin-top:12px">New here? Close this and hit <strong>Start Learning</strong>.</p></div>';
-    document.body.appendChild(m);
-    m.querySelector('.si-overlay').addEventListener('click',function(){m.remove()});
-    m.querySelector('.si-close').addEventListener('click',function(){m.remove()});
-  });
+// CTA buttons go to the game
+document.querySelectorAll('.btn-p, .btn-s, .nv-s, .nv-g').forEach(function(b){
+  b.addEventListener('click', function(){ window.location.href = 'landing.html'; });
 });
 var ms=document.createElement('style');
 ms.textContent='.signin-modal{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:16px}.si-overlay{position:absolute;inset:0;background:rgba(45,27,16,0.3);backdrop-filter:blur(4px)}.si-card{position:relative;width:100%;max-width:380px;padding:32px;border-radius:20px;z-index:1}.si-close{position:absolute;top:12px;right:14px;background:none;border:none;font-size:18px;color:#8c7b6e;cursor:pointer}.si-close:hover{color:#2d1b10}.si-input{width:100%;padding:12px 14px;border:2px solid #e8d5c4;border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:8px;outline:none;background:#fff}.si-input:focus{border-color:#ff8c42;box-shadow:0 0 0 3px rgba(255,140,66,0.1)}';
 document.head.appendChild(ms);
 document.querySelector('.nv-g:first-child')?.addEventListener('click',function(){
-  var l={EN:'涓枃',zh:'ES',ES:'EN'};
+  var l={EN:'中文',zh:'ES',ES:'EN'};
   var c=this.textContent.trim();
-  this.textContent='馃寪 '+(l[c.replace('馃寪 ','')]||'EN');
+  this.textContent='🌐 '+(l[c.replace('🌐 ','')]||'EN');
 });</script>
 </body>
 </html>
