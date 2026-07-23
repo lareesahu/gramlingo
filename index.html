@@ -129,8 +129,8 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   <div class="nav-l"><img src="https://lareesahu.github.io/gramlingo/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
   <div class="nav-r">
     <button class="nv nv-g">馃寪 EN</button>
-    <button class="nv nv-g">Sign In</button>
-    <button class="nv nv-s">Start Free</button>
+    <button class="nv nv-g" onclick="location.href=&#39;landing.html&#39;">Sign In</button>
+    <button class="nv nv-s" onclick="location.href=&#39;landing.html&#39;">Start Free</button>
   </div>
 </nav>
 
@@ -140,7 +140,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   <p class="st d2 vis">Short quests. Real sentences. A gremlin who celebrates your wins.</p>
   <div class="hero-cta st d3 vis">
     <button class="btn-p">Start Learning 鈥?Free</button>
-    <button class="btn-s">I Have an Account</button>
+    <button class="btn-s" onclick="location.href=&#39;landing.html&#39;">I Have an Account</button>
   </div>
   <div class="glass stats-r st d4 vis">
     <div class="stats-i">
@@ -205,10 +205,10 @@ cards.forEach(function(c){
 });
 <script>
 // 鈹€鈹€ Interactions 鈹€鈹€
-document.querySelector('.btn-p')?.addEventListener('click',function(){
+document.querySelector('.btn-p')?.addEventListener('click',function(){window.location.href='landing.html';
   document.querySelector('.section')?.scrollIntoView({behavior:'smooth',block:'start'});
 });
-document.querySelectorAll('.btn-s,.nv-s,.nv-g:last-child').forEach(function(b){
+document.querySelectorAll('.btn-s,.nv-s,.nv-g:last-child').forEach(function(b){b.addEventListener('click',function(){window.location.href='landing.html'})}); // (function(b){
   b.addEventListener('click',function(){
     var existing=document.querySelector('.signin-modal');
     if(existing) { existing.remove(); return; }
