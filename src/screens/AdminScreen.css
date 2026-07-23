@@ -165,3 +165,51 @@
   opacity: 0.8;
   transform: scale(0.96);
 }
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .admin-header {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .admin-header h2 {
+    white-space: nowrap;
+    font-size: var(--text-xl);
+  }
+  
+  .admin-disclaimer {
+    font-size: var(--text-xs);
+    line-height: 1.4;
+  }
+  
+  .admin-table-header {
+    display: none;
+  }
+  
+  .admin-table-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+  
+  .admin-table-row > span {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+  }
+  
+  .admin-table-row > span::before {
+    content: attr(data-label);
+    font-weight: 600;
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+    min-width: 64px;
+    text-transform: uppercase;
+  }
+  
+  .admin-mini-bar {
+    width: 80px;
+  }
+}

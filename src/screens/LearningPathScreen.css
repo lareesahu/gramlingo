@@ -109,6 +109,7 @@
   .lp{padding:var(--gl-space-4) 0;gap:var(--gl-space-4)}
   .lp__card{flex:0 0 85vw;height:480px}
   .lp__grid-arrow{display:none}
+  .lp__grid-wrapper::after{content:'swipe to see more →';display:block;text-align:center;font-size:.7rem;color:var(--gl-text-secondary,#888);padding:var(--gl-space-2) 0;opacity:.6}
   .lp__banner{padding:var(--gl-space-4);gap:var(--gl-space-3)}
   .lp__banner-title{font-size:0.95rem}
   .lp__collapsed .lp__card-body{padding:14px 14px 16px;gap:4px}
