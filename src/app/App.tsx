@@ -7,7 +7,7 @@ import { useAppContext } from './app-state';
 import { AppShell } from '../components/AppShell/AppShell';
 import { LoadingScreen } from '../screens/LoadingScreen';
 import { WelcomeScreen } from '../screens/WelcomeScreen';
-import { HomeScreen } from '../screens/HomeScreen';
+import { LearningPathScreen } from '../screens/LearningPathScreen';
 import { ModuleScreen } from '../screens/ModuleScreen';
 import { LessonScreen } from '../screens/LessonScreen';
 import { CompletionScreen } from '../screens/CompletionScreen';
@@ -50,7 +50,7 @@ export function App() {
       return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
 
     case 'learning-path':
-      return <AppShell><HomeScreen /></AppShell>;
+          return <AppShell><LearningPathScreen /></AppShell>;
 
     case 'module':
       return <AppShell backTo={() => navigateTo('learning-path')}><ModuleScreen /></AppShell>;
