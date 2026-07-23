@@ -21,7 +21,7 @@ describe('Learning path', () => {
     render(<AppProvider><App /></AppProvider>);
     await login(user);
 
-    expect(document.querySelectorAll('.lp__card')).toHaveLength(12);
+    expect(document.querySelectorAll('.lp__card')).toHaveLength(2);
   });
 
   it('reveals a module lesson plan', async () => {

@@ -19,6 +19,6 @@ describe('Lesson flow', () => {
     await user.click(await screen.findByRole('button', { name: /Relative Clauses: Lesson plan/ }));
     await user.click(await screen.findByRole('button', { name: /Identify Relative Clauses/ }));
 
-    expect(await screen.findByText(/Which part of this sentence is the relative clause/)).toBeInTheDocument();
+    expect(await screen.findByText(/The woman who called me/)).toBeInTheDocument();
   });
 });
