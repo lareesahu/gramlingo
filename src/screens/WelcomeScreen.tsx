@@ -6,13 +6,14 @@ import { useState, useEffect, useCallback } from 'react';
 import { useAppContext } from '../app/app-state';
 import { Button } from '../components/Button/Button';
 import { Gramlin } from '../components/Gramlin/Gramlin';
+import { GAME_DATA } from '../game/data';
 import { getStrings } from '../i18n/i18n';
 import './WelcomeScreen.css';
 
 const CATCHPHRASES = [
   'Grammar Quest — Learn by playing',
   'Your friendly grammar gremlin is ready!',
-  '12 phases. 87 questions. Endless confidence.',
+  `${GAME_DATA.phases.filter(phase => phase.q.length > 0).length} phases. ${GAME_DATA.phases.reduce((total, phase) => total + phase.q.length, 0)} questions. Endless confidence.`,
 ];
 
 const CATCHPHRASE_INTERVAL = 3000;

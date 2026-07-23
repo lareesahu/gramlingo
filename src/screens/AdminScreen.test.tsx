@@ -4,39 +4,19 @@ import userEvent from '@testing-library/user-event';
 import { AppProvider } from '../app/AppProvider';
 import { App } from '../app/App';
 
-async function login(user: ReturnType<typeof userEvent.setup>) {
-  const newPlayerBtn = await screen.findByText('New Player', {}, { timeout: 3000 });
-  await user.click(newPlayerBtn);
-  await user.type(screen.getByPlaceholderText('Username'), 'admin');
-  await user.type(screen.getByPlaceholderText('PIN (optional)'), 'gramlin');
-  await user.click(screen.getByText('Start Learning'));
-}
-
 describe('AdminScreen', () => {
-  beforeEach(() => {
-    localStorage.clear();
-  });
+  beforeEach(() => localStorage.clear());
 
-  it('shows admin panel after admin login', async () => {
+  it('opens from the visible admin action', async () => {
     const user = userEvent.setup();
-    render(
-      <AppProvider>
-        <App />
-      </AppProvider>
-    );
-    await login(user);
+    render(<AppProvider><App /></AppProvider>);
 
-    // Click user menu to show dropdown
-    const userMenu = document.querySelector('.user-menu');
-    expect(userMenu).toBeInTheDocument();
-    await user.click(userMenu!);
+    await user.click(await screen.findByText('New Player', {}, { timeout: 3000 }));
+    await user.type(screen.getByPlaceholderText('Username'), 'admin');
+    await user.type(screen.getByPlaceholderText('PIN (optional)'), 'gramlin');
+    await user.click(screen.getByText('Start Learning'));
 
-    // Now "Admin Panel" should be visible in dropdown
-    const adminBtn = await screen.findByText('Admin Panel');
-    expect(adminBtn).toBeInTheDocument();
-    await user.click(adminBtn);
-
-    // Should now see admin screen content
-    expect(screen.getByText(/⚙/)).toBeInTheDocument();
+    await user.click(await screen.findByRole('button', { name: 'Admin Panel' }));
+    expect(screen.getByRole('heading', { name: /Admin Panel/ })).toBeInTheDocument();
   });
 });

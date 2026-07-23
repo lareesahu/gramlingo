@@ -56,10 +56,10 @@ export function App() {
       return <AppShell backTo={() => navigateTo('learning-path')}><ModuleScreen /></AppShell>;
 
     case 'lesson':
-      return <AppShell backTo={() => navigateTo('module')}><LessonScreen /></AppShell>;
+      return <AppShell backTo={() => navigateTo('learning-path')}><LessonScreen /></AppShell>;
 
     case 'completion':
-      return <AppShell backTo={() => navigateTo('module')}><CompletionScreen /></AppShell>;
+      return <AppShell backTo={() => navigateTo('learning-path')}><CompletionScreen /></AppShell>;
 
     case 'wrong-book':
       return <AppShell backTo={() => navigateTo('learning-path')}><WrongBookScreen /></AppShell>;

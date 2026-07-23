@@ -70,6 +70,9 @@ export const EN = {
   yourAnswer: "Your answer",
   tapExplanation: "Tap an option to see its explanation",
   optionLabel: "Option",
+  comingSoon: "Coming soon",
+  lessonPlan: "Lesson plan",
+  lockedByTeacher: "Locked by teacher",
 };
 
 export const ZH = {
@@ -140,6 +143,9 @@ export const ZH = {
   yourAnswer: "你的答案",
   tapExplanation: "点击选项查看解释",
   optionLabel: "选项",
+  comingSoon: "即将推出",
+  lessonPlan: "课程计划",
+  lockedByTeacher: "已被老师锁定",
 };
 
 export const ES = {
@@ -210,6 +216,9 @@ export const ES = {
   yourAnswer: "Tu respuesta",
   tapExplanation: "Toca una opción para ver la explicación",
   optionLabel: "Opción",
+  comingSoon: "Próximamente",
+  lessonPlan: "Plan de lecciones",
+  lockedByTeacher: "Bloqueado por el profesor",
 };
 
 import type { Language } from "../game/types";

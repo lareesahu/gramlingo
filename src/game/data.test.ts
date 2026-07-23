@@ -33,10 +33,11 @@ describe('GAME_DATA integrity', () => {
     }
   });
 
-  it('every phase has at least 1 question', () => {
-    for (const phase of GAME_DATA.phases) {
-      expect(phase.q.length).toBeGreaterThan(0);
-    }
+  it('keeps the full curriculum plan and the authored lesson bank', () => {
+    expect(GAME_DATA.modules).toHaveLength(12);
+    expect(GAME_DATA.phases).toHaveLength(96);
+    expect(GAME_DATA.phases.filter(phase => phase.q.length > 0)).toHaveLength(12);
+    expect(GAME_DATA.phases.flatMap(phase => phase.q)).toHaveLength(66);
   });
 
   it('every question has options and at least 1 correct answer', () => {
@@ -44,6 +45,12 @@ describe('GAME_DATA integrity', () => {
       for (const q of phase.q) {
         expect(q.o.length).toBeGreaterThan(1);
         expect(q.a).toBeDefined();
+        expect(q.ex).toHaveLength(q.o.length);
+        expect(q.exZh).toHaveLength(q.o.length);
+        expect(q.exEs).toHaveLength(q.o.length);
+        expect(q.ex?.every(Boolean)).toBe(true);
+        expect(q.exZh?.every(Boolean)).toBe(true);
+        expect(q.exEs?.every(Boolean)).toBe(true);
       }
     }
   });

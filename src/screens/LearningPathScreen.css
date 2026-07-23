@@ -110,8 +110,12 @@
 }
 
 .lp__card--locked {
-  opacity: 0.6;
-  pointer-events: none;
+  opacity: 0.72;
+}
+
+.lp__card:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
 }
 
 .lp__card--done {
@@ -165,6 +169,7 @@
 
 .lp__badge--done { background: var(--color-correct); }
 .lp__badge--progress { background: var(--color-primary); }
+.lp__badge--planned { background: #6f6258; }
 
 .lp__locked-overlay {
   position: absolute;
@@ -258,9 +263,13 @@
 }
 
 .lp__phase--locked {
-  opacity: 0.35;
+  opacity: 0.5;
   cursor: default;
   pointer-events: none;
+}
+
+.lp__phase--planned {
+  background: #f7f3ec;
 }
 
 .lp__phase-num {
@@ -295,8 +304,11 @@
   transform: translateX(2px);
 }
 
-.lp__phase-lock {
-  font-size: 0.7rem;
+.lp__phase-status {
+  color: var(--color-muted);
+  font-size: 0.62rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 /* Panel CTA */
@@ -320,6 +332,11 @@
 
 .lp__pill-btn:hover {
   background: var(--color-primary-hover);
+}
+
+.lp__pill-btn:disabled {
+  background: #8a7f75;
+  cursor: default;
 }
 
 /* Mistakes CTA */

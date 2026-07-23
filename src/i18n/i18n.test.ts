@@ -37,7 +37,7 @@ describe('getStrings', () => {
 
   it('has no empty string values in any language', () => {
     for (const lang of [EN, ZH, ES]) {
-      for (const [k, val] of Object.entries(lang)) {
+      for (const [_key, val] of Object.entries(lang)) {
         expect(val).toBeTruthy();
       }
     }

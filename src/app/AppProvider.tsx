@@ -36,9 +36,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const saved = loadState();
   // Never restore transient screens (lesson, loading state requires live context)
   // First visit: show loading screen. Returning visitor with saved state: restore.
+  const restoredScreen = saved?.screen === 'module' ? 'learning-path' : saved?.screen;
   const initialScreen: Screen = saved === null
     ? 'loading'
-    : (saved?.screen && saved.screen !== 'lesson' && saved.screen !== 'loading') ? saved.screen : 'welcome';
+    : (restoredScreen && restoredScreen !== 'lesson' && restoredScreen !== 'loading') ? restoredScreen : 'welcome';
 
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [language, setLanguage] = useState<Language>(saved?.language || 'en');
@@ -241,6 +242,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setActiveModuleId(moduleId);
   }, []);
   const startPhase = useCallback((moduleId: string, phaseId: string) => {
+    const phase = GAME_DATA.phases.find((candidate) => candidate.id === phaseId && candidate.module === moduleId);
+    if (!phase?.q.length) return;
     setActiveModuleId(moduleId);
     setActivePhaseId(phaseId);
     setActiveQuestionIndex(0);
