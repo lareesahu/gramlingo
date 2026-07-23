@@ -24,7 +24,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 .nav-logo{font-family:'Baloo 2',cursive;font-size:clamp(18px,2vw,24px);font-weight:800;background:linear-gradient(135deg,#ff8c42,#ff6b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
 .nav-r{display:flex;gap:6px;flex-shrink:0}
 .nv{padding:6px 14px;border-radius:999px;font-size:clamp(11px,1.2vw,13px);font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;white-space:nowrap}
-.nv-g{background:rgba(255,140,282,0.06);border:1px solid rgba(232,213,196,0.4);color:#5c3d2e}
+.nv-g{background:rgba(255,140,66,0.06);border:1px solid rgba(232,213,196,0.4);color:#5c3d2e}
 .nv-g:hover{background:rgba(255,140,66,0.12);border-color:#ffb788}
 .nv-s{background:linear-gradient(135deg,#ff8c42,#ff6b2b);border:none;color:#fff;box-shadow:0 3px 0 #cc6e2e}
 .nv-s:hover{transform:translateY(-1px);box-shadow:0 5px 0 #cc6e2e}
@@ -126,7 +126,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 <div class="bg-glow"></div>
 
 <nav class="nav">
-  <div class="nav-l"><img src="/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
+  <div class="nav-l"><img src="/gramlingo/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
   <div class="nav-r">
     <button class="nv nv-g">🌐 EN</button>
     <button class="nv nv-g">Sign In</button>
@@ -135,7 +135,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
 </nav>
 
 <section class="hero">
-  <div class="hero-m st d0 vis"><img src="/assets/gramlin/peekaboo-gramlin.png"></div>
+  <div class="hero-m st d0 vis"><img src="/gramlingo/assets/gramlin/peekaboo-gramlin.png"></div>
   <h1 class="st d1 vis">Master Grammar<br><span class="hl">by Playing</span></h1>
   <p class="st d2 vis">Short quests. Real sentences. A gremlin who celebrates your wins.</p>
   <div class="hero-cta st d3 vis">
@@ -144,8 +144,8 @@ body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background
   </div>
   <div class="glass stats-r st d4 vis">
     <div class="stats-i">
-      <div class="s-item"><div class="s-n">66</div><div class="s-l">Lessons</div></div>
-      <div class="s-item"><div class="s-n">92</div><div class="s-l">Phases</div></div>
+      <div class="s-item"><div class="s-n">282</div><div class="s-l">Questions</div></div>
+      <div class="s-item"><div class="s-n">12</div><div class="s-l">Phases</div></div>
       <div class="s-item"><div class="s-n">12</div><div class="s-l">Modules</div></div>
       <div class="s-item"><div class="s-n">3</div><div class="s-l">Languages</div></div>
     </div>
@@ -174,7 +174,7 @@ var MODULES = [
   { n:'Sentence Structure', c:'cover-sentence_structure.jpg', l:false },
   { n:'Advanced Exp.', c:'cover-advanced.jpg', l:false }
 ];
-var B='/assets/covers/';
+var B='/gramlingo/assets/covers/';
 var G=document.getElementById('moduleGrid');
 MODULES.forEach(function(m,i){
   var tag=m.l?'<span class="card-tag t-l">Play</span>':'<span class="card-tag t-s">Soon</span>';
@@ -204,17 +204,9 @@ cards.forEach(function(c){
   });
 });</script>
 <script>
-// CTA buttons go to the game
+// All CTAs go to the game
 document.querySelectorAll('.btn-p, .btn-s, .nv-s, .nv-g').forEach(function(b){
   b.addEventListener('click', function(){ window.location.href = 'landing.html'; });
-});
-var ms=document.createElement('style');
-ms.textContent='.signin-modal{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:16px}.si-overlay{position:absolute;inset:0;background:rgba(45,27,16,0.3);backdrop-filter:blur(4px)}.si-card{position:relative;width:100%;max-width:380px;padding:32px;border-radius:20px;z-index:1}.si-close{position:absolute;top:12px;right:14px;background:none;border:none;font-size:18px;color:#8c7b6e;cursor:pointer}.si-close:hover{color:#2d1b10}.si-input{width:100%;padding:12px 14px;border:2px solid #e8d5c4;border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:8px;outline:none;background:#fff}.si-input:focus{border-color:#ff8c42;box-shadow:0 0 0 3px rgba(255,140,66,0.1)}';
-document.head.appendChild(ms);
-document.querySelector('.nv-g:first-child')?.addEventListener('click',function(){
-  var l={EN:'中文',zh:'ES',ES:'EN'};
-  var c=this.textContent.trim();
-  this.textContent='🌐 '+(l[c.replace('🌐 ','')]||'EN');
 });</script>
 </body>
 </html>
