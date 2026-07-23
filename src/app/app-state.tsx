@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════ */
 
 import { createContext, useContext } from 'react';
-import type { AppState, Language, Screen, UserProfile, WrongEntry, PhaseProgress } from '../game/types';
+import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress } from '../game/types';
 
 export interface AppContextType extends AppState {
   // Navigation
@@ -24,10 +24,10 @@ export interface AppContextType extends AppState {
   getModuleAttempted: (moduleId: string) => { attempted: number; total: number };
 
   // Wrong book
-  addWrong: (entry: Omit<WrongEntry, 'timestamp' | 'attemptCount'>) => void;
-  removeWrong: (moduleId: string, phaseId: string, questionIndex: number) => void;
-  getWrongByModule: (moduleId: string) => WrongEntry[];
-  getWrongByPhase: (phaseId: string) => WrongEntry[];
+  addError: (entry: Omit<ErrorEntry, 'timestamp' | 'attemptCount'>) => void;
+  removeError: (moduleId: string, phaseId: string, questionIndex: number) => void;
+  getErrorsByModule: (moduleId: string) => ErrorEntry[];
+  getErrorsByPhase: (phaseId: string) => ErrorEntry[];
 
   // Module
   setActiveModule: (moduleId: string | null) => void;

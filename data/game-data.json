@@ -5633,45 +5633,15 @@
     }
   ],
   "phaseLockOrder": {
-    "verb_patterns": [
-      "vp_gerund",
-      "vp_infinitive",
-      "vp_choice",
-      "vp_meaning",
-      "vp_object",
-      "vp_causative",
-      "vp_participle",
-      "vp_mastery"
-    ],
-    "determiners": [
-      "det_indefinite",
-      "det_definite",
-      "det_zero",
-      "det_demo",
-      "det_some_any",
-      "det_quantity",
-      "det_distribution",
-      "det_mastery"
-    ],
-    "passive": [
-      "passive_focus",
-      "passive_present",
-      "passive_past",
-      "passive_future",
-      "passive_perfect",
-      "passive_agent",
-      "passive_reporting",
-      "passive_mastery"
-    ],
-    "conditionals": [
-      "cond_zero",
-      "cond_first",
-      "cond_second",
-      "cond_third",
-      "cond_mixed",
-      "cond_alternatives",
-      "cond_inversion",
-      "cond_mastery"
+    "tenses": [
+      "tense_present_simple",
+      "tense_present_cont",
+      "tense_past_simple",
+      "tense_past_cont",
+      "tense_future",
+      "tense_present_perfect",
+      "tense_past_perfect",
+      "tense_mastery"
     ],
     "clauses": [
       "rec",
@@ -5683,15 +5653,15 @@
       "rest",
       "prod"
     ],
-    "reported": [
-      "report_statements",
-      "report_questions",
-      "report_commands",
-      "report_backshift",
-      "report_reference",
-      "report_verbs",
-      "report_accuracy",
-      "report_mastery"
+    "prepositions": [
+      "prep_place",
+      "prep_time",
+      "prep_mixed",
+      "prep_prod",
+      "prep_move",
+      "prep_patterns",
+      "prep_adj",
+      "prep_mastery"
     ],
     "conjunctions": [
       "conj_coord",
@@ -5713,15 +5683,55 @@
       "adv_idiomatic",
       "adv_mastery"
     ],
-    "prepositions": [
-      "prep_place",
-      "prep_time",
-      "prep_mixed",
-      "prep_prod",
-      "prep_move",
-      "prep_patterns",
-      "prep_adj",
-      "prep_mastery"
+    "passive": [
+      "passive_focus",
+      "passive_present",
+      "passive_past",
+      "passive_future",
+      "passive_perfect",
+      "passive_agent",
+      "passive_reporting",
+      "passive_mastery"
+    ],
+    "modals": [
+      "modal_ability",
+      "modal_permission",
+      "modal_advice",
+      "modal_obligation",
+      "modal_possibility",
+      "modal_deduction",
+      "modal_perfect",
+      "modal_mastery"
+    ],
+    "determiners": [
+      "det_indefinite",
+      "det_definite",
+      "det_zero",
+      "det_demo",
+      "det_some_any",
+      "det_quantity",
+      "det_distribution",
+      "det_mastery"
+    ],
+    "verb_patterns": [
+      "vp_gerund",
+      "vp_infinitive",
+      "vp_choice",
+      "vp_meaning",
+      "vp_object",
+      "vp_causative",
+      "vp_participle",
+      "vp_mastery"
+    ],
+    "conditionals": [
+      "cond_zero",
+      "cond_first",
+      "cond_second",
+      "cond_third",
+      "cond_mixed",
+      "cond_alternatives",
+      "cond_inversion",
+      "cond_mastery"
     ],
     "sentence_structure": [
       "ss_core",
@@ -5733,25 +5743,15 @@
       "ss_errors",
       "ss_mastery"
     ],
-    "tenses": [
-      "tense_present_simple",
-      "tense_present_cont",
-      "tense_past_simple",
-      "tense_past_cont",
-      "tense_future",
-      "tense_present_perfect",
-      "tense_past_perfect",
-      "tense_mastery"
-    ],
-    "modals": [
-      "modal_ability",
-      "modal_permission",
-      "modal_advice",
-      "modal_obligation",
-      "modal_possibility",
-      "modal_deduction",
-      "modal_perfect",
-      "modal_mastery"
+    "reported": [
+      "report_statements",
+      "report_questions",
+      "report_commands",
+      "report_backshift",
+      "report_reference",
+      "report_verbs",
+      "report_accuracy",
+      "report_mastery"
     ]
   }
 }

@@ -11,43 +11,43 @@ import { Badge } from '../components/Badge/Badge';
 import { Card } from '../components/Card/Card';
 import { getStrings } from '../i18n/i18n';
 import { GAME_DATA } from '../game/data';
-import './WrongBookScreen.css';
+import './ErrorLogScreen.css';
 
-export function WrongBookScreen() {
-  const { language, navigateTo, wrongBook, getWrongByModule, startPhase } = useAppContext();
+export function ErrorLogScreen() {
+  const { language, navigateTo, errorLog, getErrorsByModule, startPhase } = useAppContext();
   const s = getStrings(language);
   const isZh = language === 'zh';
 
   const [filterModule, setFilterModule] = useState<string | null>(null);
 
-  const filtered = filterModule ? getWrongByModule(filterModule) : wrongBook;
+  const filtered = filterModule ? getErrorsByModule(filterModule) : errorLog;
   const sorted = [...filtered].sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
 
   const handleRetryQuestion = (entry: typeof sorted[0]) => {
     startPhase(entry.moduleId, entry.phaseId);
   };
 
-  if (wrongBook.length === 0) {
+  if (errorLog.length === 0) {
     return (
-      <div className="wrongbook-empty">
+      <div className="errorlog-empty">
         <Gramlin pose="sleeper" size="xl" />
-        <h2>{s.wrongBookEmpty}</h2>
+        <h2>{s.errorLogEmpty}</h2>
         <Button onClick={() => navigateTo('learning-path')}>{s.home}</Button>
       </div>
     );
   }
 
   return (
-    <div className="wrongbook-screen animate-fade-in">
-      <div className="wrongbook-header">
-        <h2>📝 {s.wrongBook} ({wrongBook.length})</h2>
+    <div className="errorlog-screen animate-fade-in">
+      <div className="errorlog-header">
+        <h2>📝 {s.errorLog} ({errorLog.length})</h2>
         <Button variant="ghost" size="sm" onClick={() => navigateTo('learning-path')}>
           ← {s.home}
         </Button>
       </div>
 
       {/* Filter chips */}
-      <div className="wrongbook-filters">
+      <div className="errorlog-filters">
         <button
           className={`filter-chip ${!filterModule ? 'filter-chip--active' : ''}`}
           onClick={() => setFilterModule(null)}
@@ -60,8 +60,8 @@ export function WrongBookScreen() {
             className={`filter-chip ${filterModule === mod.id ? 'filter-chip--active' : ''}`}
             onClick={() => setFilterModule(filterModule === mod.id ? null : mod.id)}
           >
-            {getWrongByModule(mod.id).length > 0 && (
-              <Badge variant="danger" size="sm">{getWrongByModule(mod.id).length}</Badge>
+            {getErrorsByModule(mod.id).length > 0 && (
+              <Badge variant="danger" size="sm">{getErrorsByModule(mod.id).length}</Badge>
             )}
             {isZh ? mod.nameZh : mod.name}
           </button>
@@ -69,7 +69,7 @@ export function WrongBookScreen() {
       </div>
 
       {/* Wrong entries */}
-      <div className="wrongbook-list">
+      <div className="errorlog-list">
         {sorted.map((entry, i) => {
           const phase = GAME_DATA.phases.find((p) => p.id === entry.phaseId);
           const question = phase?.q[entry.questionIndex];
@@ -77,25 +77,25 @@ export function WrongBookScreen() {
           const date = new Date(entry.timestamp).toLocaleDateString();
 
           return (
-            <Card key={`${entry.moduleId}-${entry.phaseId}-${entry.questionIndex}-${i}`} className="wrong-entry">
-              <div className="wrong-entry-header">
+            <Card key={`${entry.moduleId}-${entry.phaseId}-${entry.questionIndex}-${i}`} className="error-entry">
+              <div className="error-entry-header">
                 <Badge variant="default">{isZh ? module?.nameZh : module?.name}</Badge>
                 <Badge variant="info">{isZh ? phase?.nameZh : phase?.name}</Badge>
-                <span className="wrong-date">{date}</span>
+                <span className="error-date">{date}</span>
               </div>
 
               {question && (
-                <div className="wrong-entry-question">
+                <div className="error-entry-question">
                   <p dangerouslySetInnerHTML={{ __html: question.q }} />
                 </div>
               )}
 
-              <div className="wrong-entry-answers">
-                <div className="wrong-answer-bubble wrong-answer-bubble--user">
+              <div className="error-entry-answers">
+                <div className="error-answer-bubble error-answer-bubble--user">
                   <span className="answer-label">Your answer:</span>
                   <span dangerouslySetInnerHTML={{ __html: entry.userAnswer }} />
                 </div>
-                <div className="wrong-answer-bubble wrong-answer-bubble--correct">
+                <div className="error-answer-bubble error-answer-bubble--correct">
                   <span className="answer-label">Correct:</span>
                   <span>{entry.correctAnswer}</span>
                 </div>

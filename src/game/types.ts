@@ -56,7 +56,7 @@ export interface PhaseProgress {
   lastAttempt: string;
 }
 
-export interface WrongEntry {
+export interface ErrorEntry {
   moduleId: string;
   phaseId: string;
   questionIndex: number;
@@ -66,7 +66,7 @@ export interface WrongEntry {
   attemptCount: number;
 }
 
-export type Screen = 'loading' | 'welcome' | 'learning-path' | 'module' | 'lesson' | 'completion' | 'wrong-book' | 'admin';
+export type Screen = 'loading' | 'welcome' | 'learning-path' | 'module' | 'lesson' | 'completion' | 'error-log' | 'admin';
 
 export type GramlinPose = 'neutral' | 'graduate' | 'book' | 'celebrate' | 'sad' | 'think' | 'sleeper' | 'pencil' | 'hearts' | 'trophy' | 'power' | 'peeking' | 'confused' | 'party' | 'grad' | 'angry' | 'crying' | 'laptop' | 'sleep-ground' | 'juggler';
 
@@ -78,7 +78,7 @@ export interface AppState {
   activePhaseId: string | null;
   activeQuestionIndex: number;
   progress: PhaseProgress[];
-  wrongBook: WrongEntry[];
+  errorLog: ErrorEntry[];
   isAdmin: boolean;
   moduleLocks: Record<string, string[]>;
 }

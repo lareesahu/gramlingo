@@ -4,7 +4,7 @@
 
 import { useState, useCallback, useEffect, type ReactNode } from 'react';
 import { AppContext } from './app-state';
-import type { AppState, UserProfile, PhaseProgress, WrongEntry, Screen, Language } from '../game/types';
+import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language } from '../game/types';
 import { GAME_DATA } from '../game/data';
 
 const STORAGE_KEY = 'gramlingo_state';
@@ -48,7 +48,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [activePhaseId, setActivePhaseId] = useState<string | null>(saved?.activePhaseId || null);
   const [activeQuestionIndex, setActiveQuestionIndex] = useState<number>(saved?.activeQuestionIndex || 0);
   const [progress, setProgress] = useState<PhaseProgress[]>(saved?.progress || []);
-  const [wrongBook, setWrongBook] = useState<WrongEntry[]>(saved?.wrongBook || []);
+  const [errorLog, setWrongBook] = useState<ErrorEntry[]>(saved?.errorLog || []);
   const [isAdmin, setIsAdmin] = useState<boolean>(saved?.isAdmin || false);
   const [moduleLocks, setModuleLocks] = useState<Record<string, string[]>>(saved?.moduleLocks || {});
 
@@ -57,9 +57,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
     const safeScreen = screen === 'lesson' ? 'learning-path' : screen;
     saveState({
       screen: safeScreen, language, currentUser, activeModuleId, activePhaseId,
-      activeQuestionIndex, progress, wrongBook, isAdmin, moduleLocks,
+      activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
     });
-  }, [screen, language, currentUser, activeModuleId, activePhaseId, activeQuestionIndex, progress, wrongBook, isAdmin, moduleLocks]);
+  }, [screen, language, currentUser, activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks]);
 
   // ── Navigation ──
   const navigateTo = useCallback((s: Screen) => {
@@ -197,17 +197,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  // ── Wrong Book ──
-  const addWrong = useCallback((entry: Omit<WrongEntry, 'timestamp' | 'attemptCount'>) => {
-    setWrongBook((prev: WrongEntry[]) => {
+  // ── Error Log ──
+  const addError = useCallback((entry: Omit<ErrorEntry, 'timestamp' | 'attemptCount'>) => {
+    setWrongBook((prev: ErrorEntry[]) => {
       const existing = prev.find(
-        (w: WrongEntry) =>
+        (w: ErrorEntry) =>
           w.moduleId === entry.moduleId &&
           w.phaseId === entry.phaseId &&
           w.questionIndex === entry.questionIndex,
       );
       if (existing) {
-        return prev.map((w: WrongEntry) =>
+        return prev.map((w: ErrorEntry) =>
           w === existing
             ? { ...w, attemptCount: w.attemptCount + 1, timestamp: new Date().toISOString() }
             : w,
@@ -220,22 +220,22 @@ export function AppProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  const removeWrong = useCallback((moduleId: string, phaseId: string, questionIndex: number) => {
-    setWrongBook((prev: WrongEntry[]) =>
+  const removeError = useCallback((moduleId: string, phaseId: string, questionIndex: number) => {
+    setWrongBook((prev: ErrorEntry[]) =>
       prev.filter(
-        (w: WrongEntry) =>
+        (w: ErrorEntry) =>
           !(w.moduleId === moduleId && w.phaseId === phaseId && w.questionIndex === questionIndex),
       ),
     );
   }, []);
 
-  const getWrongByModule = useCallback((moduleId: string): WrongEntry[] => {
-    return wrongBook.filter((w: WrongEntry) => w.moduleId === moduleId);
-  }, [wrongBook]);
+  const getErrorsByModule = useCallback((moduleId: string): ErrorEntry[] => {
+    return errorLog.filter((w: ErrorEntry) => w.moduleId === moduleId);
+  }, [errorLog]);
 
-  const getWrongByPhase = useCallback((phaseId: string): WrongEntry[] => {
-    return wrongBook.filter((w: WrongEntry) => w.phaseId === phaseId);
-  }, [wrongBook]);
+  const getErrorsByPhase = useCallback((phaseId: string): ErrorEntry[] => {
+    return errorLog.filter((w: ErrorEntry) => w.phaseId === phaseId);
+  }, [errorLog]);
 
   // ── Module Navigation ──
   const setActiveModule = useCallback((moduleId: string | null) => {
@@ -269,12 +269,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
       exportedAt: new Date().toISOString(),
       users: getUsers(),
       progress,
-      wrongBook,
+      errorLog,
       currentUser: currentUser?.username || null,
       moduleLocks,
     };
     return JSON.stringify(data, null, 2);
-  }, [getUsers, progress, wrongBook, currentUser, moduleLocks]);
+  }, [getUsers, progress, errorLog, currentUser, moduleLocks]);
 
   const importData = useCallback((json: string): boolean => {
     try {
@@ -286,7 +286,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         localStorage.setItem('gramlingo_users', JSON.stringify(data.users));
       }
       if (Array.isArray(data.progress)) setProgress(data.progress);
-      if (Array.isArray(data.wrongBook)) setWrongBook(data.wrongBook);
+      if (Array.isArray(data.errorLog)) setWrongBook(data.errorLog);
       if (data.moduleLocks && typeof data.moduleLocks === 'object') {
         setModuleLocks(data.moduleLocks);
         localStorage.setItem('gramlingo_module_locks', JSON.stringify(data.moduleLocks));
@@ -301,11 +301,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const ctx = {
     // State
     screen, language, currentUser, activeModuleId, activePhaseId,
-    activeQuestionIndex, progress, wrongBook, isAdmin, moduleLocks,
+    activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
     updateProgress, getPhaseProgress, getModuleProgress, getModuleAttempted,
-    addWrong, removeWrong, getWrongByModule, getWrongByPhase,
+    addError, removeError, getErrorsByModule, getErrorsByPhase,
     startPhase, nextQuestion,
     setActiveModule,
     exportData, importData,

@@ -11,7 +11,7 @@ import { LearningPathScreen } from '../screens/LearningPathScreen';
 import { ModuleScreen } from '../screens/ModuleScreen';
 import { LessonScreen } from '../screens/LessonScreen';
 import { CompletionScreen } from '../screens/CompletionScreen';
-import { WrongBookScreen } from '../screens/WrongBookScreen';
+import { ErrorLogScreen } from '../screens/ErrorLogScreen';
 import { AdminScreen } from '../screens/AdminScreen';
 
 const LOADED_FLAG = 'gramlingo_loaded_before';
@@ -61,8 +61,8 @@ export function App() {
     case 'completion':
       return <AppShell backTo={() => navigateTo('learning-path')}><CompletionScreen /></AppShell>;
 
-    case 'wrong-book':
-      return <AppShell backTo={() => navigateTo('learning-path')}><WrongBookScreen /></AppShell>;
+    case 'error-log':
+      return <AppShell backTo={() => navigateTo('learning-path')}><ErrorLogScreen /></AppShell>;
 
     case 'admin':
       return <AppShell backTo={() => navigateTo('learning-path')}><AdminScreen /></AppShell>;

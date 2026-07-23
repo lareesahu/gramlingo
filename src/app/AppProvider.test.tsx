@@ -17,7 +17,7 @@ function TestHarness() {
       <button data-testid="btn-logout" onClick={() => ctx.logout()}>Logout</button>
       <button data-testid="btn-start" onClick={() => ctx.startPhase('clauses', 'rec')}>StartPhase</button>
       <button data-testid="btn-start-empty" onClick={() => ctx.startPhase('tenses', 'tense_present_simple')}>StartEmpty</button>
-      <button data-testid="btn-nav" onClick={() => ctx.navigateTo('wrong-book')}>NavWB</button>
+      <button data-testid="btn-nav" onClick={() => ctx.navigateTo('error-log')}>NavWB</button>
     </div>
   );
 }
@@ -74,7 +74,7 @@ describe('AppProvider', () => {
     renderApp();
     await user.click(screen.getByTestId('btn-login'));
     await user.click(screen.getByTestId('btn-nav'));
-    expect(screen.getByTestId('screen').textContent).toBe('wrong-book');
+    expect(screen.getByTestId('screen').textContent).toBe('error-log');
   });
 
   it('does not open a planned phase with no questions', async () => {

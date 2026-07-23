@@ -16,7 +16,7 @@ export function LessonScreen() {
   const {
     language, activeModuleId, activePhaseId, activeQuestionIndex,
     nextQuestion, completePhase, navigateTo,
-    addWrong, removeWrong, wrongBook,
+    addError, removeError, errorLog,
   } = useAppContext();
   const s = getStrings(language);
 
@@ -26,7 +26,7 @@ export function LessonScreen() {
   const [submitted, setSubmitted] = useState(false);
   const [revealedOption, setRevealedOption] = useState<number | null>(null);
   const [score, setScore] = useState(0);
-  const [wrongStreak, setWrongStreak] = useState(0);
+  const [errorStreak, setWrongStreak] = useState(0);
 
   const questions = phase?.q || [];
   const currentQ = questions[activeQuestionIndex];
@@ -45,7 +45,7 @@ export function LessonScreen() {
   );
 
   const gramlinPose = submitted
-    ? (isCorrect ? "celebrate" : wrongStreak >= 2 ? "sad" : "think")
+    ? (isCorrect ? "celebrate" : errorStreak >= 2 ? "sad" : "think")
     : "think";
 
   const getExplanation = (optIndex: number): string => {
@@ -74,15 +74,15 @@ export function LessonScreen() {
       setScore(prev => prev + 1);
       setWrongStreak(0);
       if (activeModuleId && activePhaseId) {
-        removeWrong(activeModuleId, activePhaseId, activeQuestionIndex);
+        removeError(activeModuleId, activePhaseId, activeQuestionIndex);
       }
     } else {
-      const streak = wrongBook.filter(
+      const streak = errorLog.filter(
         w => w.phaseId === activePhaseId && w.questionIndex === activeQuestionIndex
       ).length;
       setWrongStreak(streak + 1);
       if (activeModuleId && activePhaseId) {
-        addWrong({
+        addError({
           moduleId: activeModuleId,
           phaseId: activePhaseId,
           questionIndex: activeQuestionIndex,
@@ -92,7 +92,7 @@ export function LessonScreen() {
       }
     }
   }, [selectedOption, currentQ, isCorrect, activeModuleId, activePhaseId,
-      activeQuestionIndex, addWrong, removeWrong, wrongBook, selectedText, correctAnswers]);
+      activeQuestionIndex, addError, removeError, errorLog, selectedText, correctAnswers]);
 
   const handleNext = useCallback(() => {
     if (isLastQuestion) {

@@ -11,10 +11,12 @@ describe('AdminScreen', () => {
     const user = userEvent.setup();
     render(<AppProvider><App /></AppProvider>);
 
-    await user.click(await screen.findByText('New Player', {}, { timeout: 3000 }));
+    const startBtn = (await screen.findAllByText('Start Learning', {}, { timeout: 3000 }))[0];
+    await user.click(startBtn);
+    await user.click(await screen.findByText('New Player'));
     await user.type(screen.getByPlaceholderText('Username'), 'admin');
     await user.type(screen.getByPlaceholderText('PIN (optional)'), 'gramlin');
-    await user.click(screen.getByText('Start Learning'));
+    await user.click(screen.getByText('Log In'));
 
     await user.click(await screen.findByRole('button', { name: 'Admin Panel' }));
     expect(screen.getByRole('heading', { name: /Admin Panel/ })).toBeInTheDocument();
