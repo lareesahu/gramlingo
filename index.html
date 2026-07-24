@@ -1,17 +1,210 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/gramlingo/assets/gramlin/gramlin-icon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet" />
-    <title>Gramlingo — Grammar Quest</title>
-    <script type="module" crossorigin src="/gramlingo/assets/index-CDqGlcYp.js"></script>
-    <link rel="stylesheet" crossorigin href="/gramlingo/assets/index--pC-kpqv.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GramLingo — Grammar Quest</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:#fff8f2;color:#2d1b10;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.bg-glow{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.bg-glow::before{content:"";position:absolute;top:-20%;left:-10%;width:70%;height:70%;background:radial-gradient(circle,rgba(255,183,136,0.12) 0%,transparent 70%);border-radius:50%}
+.bg-glow::after{content:"";position:absolute;bottom:-10%;right:-5%;width:50%;height:50%;background:radial-gradient(circle,rgba(126,200,160,0.06) 0%,transparent 60%);border-radius:50%}
+
+/* ── Liquid Glass ── */
+.glass{background:rgba(255,255,255,0.5);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(232,213,196,0.3);position:relative;overflow:hidden}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(180deg,rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.2) 30%,rgba(255,255,255,0) 50%,rgba(255,255,255,0) 60%,rgba(255,255,255,0.15) 80%,rgba(255,255,255,0.4) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+
+/* ── Nav ── */
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1200px;margin:0 auto;position:relative;z-index:20}
+.nav-l{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-l img{width:30px;height:30px;object-fit:contain;flex-shrink:0}
+.nav-logo{font-family:'Baloo 2',cursive;font-size:clamp(18px,2vw,24px);font-weight:800;background:linear-gradient(135deg,#ff8c42,#ff6b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
+.nav-r{display:flex;gap:6px;flex-shrink:0}
+.nv{padding:6px 14px;border-radius:999px;font-size:clamp(11px,1.2vw,13px);font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;white-space:nowrap}
+.nv-g{background:rgba(255,140,66,0.06);border:1px solid rgba(232,213,196,0.4);color:#5c3d2e}
+.nv-g:hover{background:rgba(255,140,66,0.12);border-color:#ffb788}
+.nv-s{background:linear-gradient(135deg,#ff8c42,#ff6b2b);border:none;color:#fff;box-shadow:0 3px 0 #cc6e2e}
+.nv-s:hover{transform:translateY(-1px);box-shadow:0 5px 0 #cc6e2e}
+.nv-s:active{transform:translateY(3px);box-shadow:0 0 0 #cc6e2e}
+
+/* ── Stagger ── */
+.st{opacity:0;transform:translateY(24px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}
+.st.vis{opacity:1;transform:translateY(0)}
+.d0{transition-delay:0s}
+.d1{transition-delay:0.1s}
+.d2{transition-delay:0.22s}
+.d3{transition-delay:0.35s}
+.d4{transition-delay:0.5s}
+
+/* ── Hero ── */
+.hero{min-height:calc(100dvh - 56px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(20px,4vh,60px) clamp(16px,4vw,24px);position:relative;overflow:hidden;box-sizing:border-box}
+
+.hero-m{position:relative;margin-bottom:clamp(12px,2vh,24px)}
+.hero-m img{width:clamp(100px,12vw,170px);height:clamp(100px,12vw,170px);object-fit:contain;animation:heroF 4s ease-in-out infinite;filter:drop-shadow(0 12px 40px rgba(255,140,66,0.15))}
+@keyframes heroF{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-8px) scale(1.02)}}
+.hero-m::after{content:"";position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);width:clamp(40px,6vw,80px);height:10px;background:radial-gradient(ellipse,rgba(45,27,16,0.06) 0%,transparent 70%)}
+
+.hero h1{font-family:'Baloo 2',cursive;font-size:clamp(32px,6.5vw,76px);font-weight:800;line-height:1.08;letter-spacing:-0.02em;margin-bottom:clamp(6px,1.2vh,12px)}
+.hero h1 .hl{background:linear-gradient(135deg,#ff8c42,#ff6b2b);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(14px,1.8vw,19px);color:#5c3d2e;max-width:480px;line-height:1.6;margin-bottom:clamp(16px,3vh,32px);opacity:0.75;padding:0 12px}
+
+.hero-cta{display:flex;gap:clamp(8px,1.5vw,14px);flex-wrap:wrap;justify-content:center;width:100%;max-width:480px}
+.btn-p{flex:0 1 auto;padding:clamp(12px,2vh,18px) clamp(24px,5vw,48px);border-radius:clamp(10px,1.2vw,14px);border:none;background:linear-gradient(135deg,#ff8c42,#ff6b2b);color:#fff;font-size:clamp(14px,1.6vw,17px);font-weight:700;cursor:pointer;transition:all 0.1s ease;font-family:inherit;box-shadow:0 4px 0 #cc6e2e;min-width:0;white-space:nowrap}
+.btn-p:hover{transform:translateY(-1px);box-shadow:0 6px 0 #cc6e2e}
+.btn-p:active{transform:translateY(4px);box-shadow:0 0 0 #cc6e2e}
+.btn-s{flex:0 1 auto;padding:clamp(12px,2vh,18px) clamp(20px,4vw,36px);border-radius:clamp(10px,1.2vw,14px);border:2px solid #e8d5c4;background:transparent;color:#5c3d2e;font-size:clamp(13px,1.4vw,15px);font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit;min-width:0;white-space:nowrap}
+.btn-s:hover{border-color:#ff8c42;color:#ff8c42;background:rgba(255,140,66,0.04)}
+
+/* ── Stats ── */
+.stats-r{margin-top:clamp(16px,3vh,44px);padding:clamp(12px,2vh,20px) clamp(20px,4vw,48px);border-radius:clamp(16px,3vw,100px);width:auto;max-width:90vw}
+.stats-i{display:flex;gap:clamp(12px,3vw,48px);justify-content:center;flex-wrap:wrap}
+.s-item{text-align:center;flex-shrink:0}
+.s-n{font-family:'Baloo 2',cursive;font-size:clamp(20px,2.5vw,28px);font-weight:700;background:linear-gradient(135deg,#ffb788,#ff8c42);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
+.s-l{font-size:clamp(9px,1vw,11px);color:#8c7b6e;text-transform:uppercase;letter-spacing:0.6px;margin-top:2px}
+
+/* ── Section ── */
+.section{max-width:1200px;margin:0 auto;padding:clamp(10px,2vh,20px) clamp(16px,2.5vw,32px) clamp(40px,6vh,80px)}
+.sec-h{text-align:center;margin-bottom:clamp(20px,3vh,36px)}
+.sec-h h2{font-family:'Baloo 2',cursive;font-size:clamp(24px,3vw,32px);font-weight:700;color:#2d1b10;margin-bottom:4px}
+.sec-h p{font-size:clamp(12px,1.2vw,14px);color:#8c7b6e}
+
+/* ── Grid ── */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.5vw,20px);perspective:1200px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.grid{grid-template-columns:1fr;perspective:none}}
+
+/* ── 3D Card ── */
+.card{position:relative;border-radius:clamp(14px,1.6vw,20px);overflow:hidden;cursor:pointer;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),box-shadow 0.35s ease;background:#fff;border:1px solid #f0e5d8;box-shadow:0 2px 8px rgba(45,27,16,0.03);transform-style:preserve-3d;will-change:transform}
+.card:hover{box-shadow:0 20px 60px rgba(255,140,66,0.1);border-color:#ffb788}
+@media(max-width:540px){.card:hover{transform:translateY(-4px)!important}}
+.card-inner{transform-style:preserve-3d;transition:transform 0.15s ease-out}
+.card-img-w{position:relative;overflow:hidden;transform:translateZ(0)}
+.card-img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform 0.4s ease}
+.card:hover .card-img{transform:scale(1.06)}
+.card-tag{position:absolute;top:clamp(8px,1vw,12px);left:clamp(8px,1vw,12px);z-index:2;padding:clamp(3px,0.5vw,4px) clamp(8px,1vw,12px);border-radius:6px;font-size:clamp(9px,0.9vw,11px);font-weight:700;text-transform:uppercase;letter-spacing:0.4px}
+.t-l{background:#ff8c42;color:#fff;box-shadow:0 2px 8px rgba(255,140,66,0.3)}
+.t-s{background:rgba(140,123,110,0.1);color:#8c7b6e}
+.card-b{padding:clamp(12px,1.5vw,18px) clamp(14px,1.8vw,20px);transform:translateZ(8px)}
+.card-b h3{font-family:'Baloo 2',cursive;font-size:clamp(14px,1.5vw,17px);font-weight:700;color:#2d1b10;margin-bottom:3px}
+.card-b p{font-size:clamp(11px,1.1vw,13px);color:#8c7b6e;line-height:1.55}
+.card-f{display:flex;justify-content:space-between;align-items:center;padding:clamp(8px,1vw,12px) clamp(14px,1.8vw,20px);border-top:1px solid #f5ede6;font-size:clamp(11px,1vw,12px);color:#8c7b6e}
+.card-f .ar{color:#ff8c42;transition:transform 0.2s}
+.card:hover .ar{transform:translateX(4px)}
+
+.c-st{opacity:0;transform:translateY(20px)}
+.c-st.vis{animation:cIn 0.5s cubic-bezier(0.22,1,0.36,1) forwards}
+@keyframes cIn{from{opacity:0;transform:translateY(20px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+.footer{text-align:center;padding:clamp(24px,3vh,40px) 16px;color:#b8a89a;font-size:clamp(11px,1.1vw,13px);border-top:1px solid #f0e5d8;background:#fff8f2}
+
+/* ── Mobile overrides ── */
+@media(max-width:540px){
+  .nav{padding:10px 14px}
+  .nv-g{display:none}
+  .hero{min-height:calc(100dvh - 52px);padding:12px 14px 20px}
+  .hero-cta{flex-direction:column;align-items:center}
+  .btn-p,.btn-s{width:100%;max-width:320px;white-space:normal}
+  .btn-p{box-shadow:0 3px 0 #cc6e2e;padding:14px 20px}
+  .btn-p:active{transform:translateY(3px);box-shadow:0 0 0 #cc6e2e}
+  .btn-s{padding:12px 20px}
+  .stats-r{padding:12px 16px;border-radius:16px;max-width:100%}
+  .stats-i{gap:16px}
+  .card-b p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+}
+
+@media(max-width:380px){
+  .stats-i{gap:10px}
+  .s-n{font-size:17px}
+  .s-l{font-size:8px;letter-spacing:0.3px}
+}
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+
+<nav class="nav">
+  <div class="nav-l"><img src="/gramlingo/assets/gramlin/peekaboo-gramlin.png"><span class="nav-logo">GramLingo</span></div>
+  <div class="nav-r">
+    <button class="nv nv-g">🌐 EN</button>
+    <button class="nv nv-g">Sign In</button>
+    <button class="nv nv-s">Start Free</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-m st d0 vis"><img src="/gramlingo/assets/gramlin/peekaboo-gramlin.png"></div>
+  <h1 class="st d1 vis">Master Grammar<br><span class="hl">by Playing</span></h1>
+  <p class="st d2 vis">Short quests. Real sentences. A gremlin who celebrates your wins.</p>
+  <div class="hero-cta st d3 vis">
+    <button class="btn-p">Start Learning — Free</button>
+    <button class="btn-s">I Have an Account</button>
+  </div>
+  <div class="glass stats-r st d4 vis">
+    <div class="stats-i">
+      <div class="s-item"><div class="s-n">282</div><div class="s-l">Questions</div></div>
+      <div class="s-item"><div class="s-n">12</div><div class="s-l">Phases</div></div>
+      <div class="s-item"><div class="s-n">12</div><div class="s-l">Modules</div></div>
+      <div class="s-item"><div class="s-n">3</div><div class="s-l">Languages</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="sec-h st"><h2>Grammar Worlds</h2><p>All 12 modules are ready to play.</p></div>
+  <div class="grid" id="moduleGrid"></div>
+</section>
+
+<div class="footer">© GramLingo — Grammar Quest. Learn by playing.</div>
+
+<script>
+var MODULES = [
+  { n:'Relative Clauses', d:'Describe people, things, places, times, and reasons.', c:'cover-clauses.jpg', l:true },
+  { n:'Prepositions', d:'Build reliable intuition for place, time, movement, and common patterns.', c:'cover-prepositions.jpg', l:true },
+  { n:'Verb Tenses', c:'cover-tenses.jpg', l:false },
+  { n:'Conditionals', c:'cover-conditionals.jpg', l:false },
+  { n:'Passive Voice', c:'cover-passive.jpg', l:false },
+  { n:'Reported Speech', c:'cover-reported.jpg', l:false },
+  { n:'Modals', c:'cover-modals.jpg', l:false },
+  { n:'Articles & Det.', c:'cover-determiners.jpg', l:false },
+  { n:'Conjunctions', c:'cover-conjunctions.jpg', l:false },
+  { n:'Verb Patterns', c:'cover-verb_patterns.jpg', l:false },
+  { n:'Sentence Structure', c:'cover-sentence_structure.jpg', l:false },
+  { n:'Advanced Exp.', c:'cover-advanced.jpg', l:false }
+];
+var B='/gramlingo/assets/covers/';
+var G=document.getElementById('moduleGrid');
+MODULES.forEach(function(m,i){
+  var tag=m.l?'<span class="card-tag t-l">Play</span>':'<span class="card-tag t-s">Soon</span>';
+  var f=m.l?'<div class="card-f"><span>Continue</span><span class="ar">→</span></div>':'<div class="card-f"><span>On the horizon</span></div>';
+  var b=m.d?'<div class="card-b"><h3>'+m.n+'</h3><p>'+m.d+'</p></div>':'<div class="card-b"><h3>'+m.n+'</h3><p>A new grammar world is being prepared.</p></div>';
+  G.innerHTML+='<div class="card c-st" style="animation-delay:'+(i*0.05)+'s"><div class="card-inner"><div class="card-img-w"><img class="card-img" src="'+B+m.c+'" loading="lazy">'+tag+'</div>'+b+f+'</div></div>';
+});
+
+var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}})},{threshold:0.08});
+document.querySelectorAll('.c-st,.sec-h.st').forEach(function(el){obs.observe(el)});
+
+// ── 3D tilt (desktop only) ──
+var cards=document.querySelectorAll('.card');
+cards.forEach(function(c){
+  c.addEventListener('mousemove',function(e){
+    if(window.innerWidth<=540) return;
+    var r=c.getBoundingClientRect();
+    var x=e.clientX-r.left,y=e.clientY-r.top;
+    var cx=r.width/2,cy=r.height/2;
+    var rx=(y-cy)/cy*-8,ry=(x-cx)/cx*8;
+    var inner=c.querySelector('.card-inner');
+    if(inner) inner.style.transform='rotateX('+rx+'deg) rotateY('+ry+'deg) translateZ(4px)';
+  });
+  c.addEventListener('mouseleave',function(){
+    var inner=c.querySelector('.card-inner');
+    if(inner) inner.style.transform='rotateX(0) rotateY(0) translateZ(0)';
+  });
+});</script>
+<script>
+// All CTAs go to the game
+document.querySelectorAll('.btn-p, .btn-s, .nv-s, .nv-g').forEach(function(b){
+  b.addEventListener('click', function(){ window.location.href = 'game.html'; });
+});
