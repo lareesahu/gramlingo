@@ -66,24 +66,6 @@
 
 .bb-study-sentence { border-left: 5px solid var(--color-primary); }
 
-.bb-focus {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-2);
-  margin-top: var(--space-3);
-  color: var(--color-muted);
-  font-size: var(--text-xs);
-}
-
-.bb-focus strong {
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--color-primary-ghost);
-  color: var(--color-primary);
-  font-size: var(--text-sm);
-}
-
 .bb-mem-text { color: var(--color-dark); }
 
 .bb-mem-blank {

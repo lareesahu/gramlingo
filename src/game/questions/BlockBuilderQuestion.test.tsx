@@ -30,6 +30,7 @@ describe("ClozeMemorization", () => {
     render(<ClozeMemorization question={question} language="en" onFirstResult={vi.fn()} onReadyForNext={vi.fn()} />);
 
     expect(screen.getByText(question.fullSentence)).toBeInTheDocument();
+    expect(screen.queryByText("Focus words")).not.toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Hide words & recall" })).toBeEnabled();
   });
 

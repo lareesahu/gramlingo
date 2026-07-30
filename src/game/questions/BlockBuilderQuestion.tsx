@@ -16,8 +16,7 @@ const COPY = {
   en: {
     study: "STUDY",
     recall: "RECALL",
-    instruction: "Read the whole sentence aloud. Then hide the focus words and rebuild it from memory.",
-    focus: "Focus words",
+    instruction: "Read the whole sentence aloud. Then hide it and rebuild it from memory.",
     start: "Hide words & recall",
     choose: "Choose a word",
     check: "Check recall",
@@ -29,7 +28,6 @@ const COPY = {
     study: "学习",
     recall: "回忆",
     instruction: "大声读完整句子，然后隐藏关键词并凭记忆补全。",
-    focus: "重点词",
     start: "隐藏并回忆",
     choose: "选择单词",
     check: "检查答案",
@@ -41,7 +39,6 @@ const COPY = {
     study: "ESTUDIA",
     recall: "RECUERDA",
     instruction: "Lee la frase completa en voz alta. Después oculta las palabras clave y recuérdalas.",
-    focus: "Palabras clave",
     start: "Ocultar y recordar",
     choose: "Elige una palabra",
     check: "Comprobar",
@@ -124,10 +121,6 @@ export function ClozeMemorization({ question, language, onFirstResult, onReadyFo
           <div className="bb-scenario-label">{copy.study}</div>
           <p className="bb-study-instruction">{copy.instruction}</p>
           <p className="bb-study-sentence">{fullSentence}</p>
-          <div className="bb-focus" aria-label={copy.focus}>
-            <span>{copy.focus}</span>
-            {question.blanks.map((blank, index) => <strong key={`${blank.word}-${index}`}>{blank.word}</strong>)}
-          </div>
           <div className="bb-actions">
             <button className="btn btn--primary btn--lg" onClick={startRecall}>{copy.start}</button>
           </div>
