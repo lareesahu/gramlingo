@@ -1,134 +1,68 @@
 /* ==================================================
-   GRAMLINGO — Lesson Screen
-   States: idle → selected → submitted(+revealed) → next
+   GRAMLINGO — Lesson Screen (orchestration only)
    ================================================== */
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { useAppContext } from "../app/app-state";
-import { Button } from "../components/Button/Button";
 import { Gramlin } from "../components/Gramlin/Gramlin";
 import { ProgressBar } from "../components/ProgressBar/ProgressBar";
 import { getStrings } from "../i18n/i18n";
 import { GAME_DATA } from "../game/data";
+import { QuestionRenderer } from "../game/questions/QuestionRenderer";
+import type { QuestionResult, Question } from "../game/types";
 import "./LessonScreen.css";
+
+function isPlayable(q: any): q is Question {
+  return q && typeof q.type === "string";
+}
 
 export function LessonScreen() {
   const {
     language, activeModuleId, activePhaseId, activeQuestionIndex,
     nextQuestion, completePhase, navigateTo,
-    addError, removeError, errorLog,
+    addError, removeError,
   } = useAppContext();
   const s = getStrings(language);
 
   const phase = GAME_DATA.phases.find((p) => p.id === activePhaseId);
 
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState(false);
-  const [revealedOption, setRevealedOption] = useState<number | null>(null);
-  const [score, setScore] = useState(0);
-  const [errorStreak, setWrongStreak] = useState(0);
+  const [pointsEarned, setPointsEarned] = useState(0);
+  const [gramlinPose, setGramlinPose] = useState("think");
 
-  const questions = phase?.q || [];
+  const questions = (phase?.q || []) as Question[];
   const currentQ = questions[activeQuestionIndex];
   const isLastQuestion = activeQuestionIndex >= questions.length - 1;
   const progressPct = questions.length > 0
-    ? Math.round(((activeQuestionIndex) / questions.length) * 100)
+    ? Math.round((activeQuestionIndex / questions.length) * 100)
     : 0;
 
   const isZh = language === "zh";
   const phaseName = isZh ? phase?.nameZh : phase?.name;
-  const options = currentQ?.o || [];
-  const selectedText = selectedOption !== null ? options[selectedOption] : "";
-  const correctAnswers = Array.isArray(currentQ?.a) ? currentQ.a : [currentQ?.a || ""];
-  const isCorrect = correctAnswers.some(
-    (a: string) => selectedText.includes(a) || a.includes(selectedText)
-  );
 
-  const gramlinPose = submitted
-    ? (isCorrect ? "celebrate" : errorStreak >= 2 ? "sad" : "think")
-    : "think";
-
-  const getExplanation = (optIndex: number): string => {
-    if (!currentQ) return "";
-    const tip = isZh ? currentQ.tZh : language === "es" ? (currentQ as any).tEs : currentQ.t;
-    const exArr = isZh ? currentQ.exZh : language === "es" ? (currentQ as any).exEs : currentQ.ex;
-    const perOpt = exArr?.[optIndex];
-    return perOpt || tip || "";
-  };
-
-  const handleOptionClick = useCallback((index: number) => {
-    if (submitted) {
-      setRevealedOption(revealedOption === index ? null : index);
-    } else {
-      setSelectedOption(index);
+  const handleFirstResult = useCallback((result: QuestionResult) => {
+    setPointsEarned(prev => prev + result.points);
+    if (!result.correct && activeModuleId && activePhaseId) {
+      addError({
+        moduleId: activeModuleId, phaseId: activePhaseId,
+        questionId: result.questionId, questionIndex: activeQuestionIndex,
+        userAnswer: result.userAnswer, correctAnswer: result.correctAnswer,
+      });
+    } else if (result.correct && activeModuleId && activePhaseId) {
+      removeError(activeModuleId, activePhaseId, activeQuestionIndex);
     }
-  }, [submitted, revealedOption]);
+  }, [activeModuleId, activePhaseId, activeQuestionIndex, addError, removeError]);
 
-  const handleSubmit = useCallback(() => {
-    if (selectedOption === null || !currentQ) return;
-
-    setSubmitted(true);
-    setRevealedOption(selectedOption);
-
-    if (isCorrect) {
-      setScore(prev => prev + 1);
-      setWrongStreak(0);
-      if (activeModuleId && activePhaseId) {
-        removeError(activeModuleId, activePhaseId, activeQuestionIndex);
-      }
-    } else {
-      const streak = errorLog.filter(
-        w => w.phaseId === activePhaseId && w.questionIndex === activeQuestionIndex
-      ).length;
-      setWrongStreak(streak + 1);
-      if (activeModuleId && activePhaseId) {
-        addError({
-          moduleId: activeModuleId,
-          phaseId: activePhaseId,
-          questionIndex: activeQuestionIndex,
-          userAnswer: selectedText,
-          correctAnswer: correctAnswers.join(", "),
-        });
-      }
-    }
-  }, [selectedOption, currentQ, isCorrect, activeModuleId, activePhaseId,
-      activeQuestionIndex, addError, removeError, errorLog, selectedText, correctAnswers]);
-
-  const handleNext = useCallback(() => {
+  const handleReadyForNext = useCallback(() => {
     if (isLastQuestion) {
-      const finalScore = questions.length > 0
-        ? Math.round((score / questions.length) * 100)
-        : 0;
-      completePhase(finalScore);
+      const finalPct = questions.length > 0 ? Math.round((pointsEarned / questions.length) * 100) : 0;
+      completePhase(finalPct);
     } else {
       nextQuestion();
-      setSelectedOption(null);
-      setSubmitted(false);
-      setRevealedOption(null);
-      setWrongStreak(0);
+      setGramlinPose("think");
     }
-  }, [isLastQuestion, questions.length, score, completePhase, nextQuestion]);
+  }, [isLastQuestion, questions.length, pointsEarned, completePhase, nextQuestion]);
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Enter") {
-        if (!submitted && selectedOption !== null) {
-          e.preventDefault();
-          handleSubmit();
-        } else if (submitted) {
-          e.preventDefault();
-          handleNext();
-        }
-      } else if (e.key === "ArrowRight" && submitted) {
-        e.preventDefault();
-        handleNext();
-      }
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [submitted, selectedOption, handleSubmit, handleNext]);
-
-  if (!phase || !currentQ) {
+  if (!phase || !currentQ || !isPlayable(currentQ)) {
     navigateTo("learning-path");
     return null;
   }
@@ -136,83 +70,14 @@ export function LessonScreen() {
   return (
     <div className="lesson-screen animate-fade-in">
       <div className="lesson-progress-header">
-        <span className="lesson-phase-label">
-          {s.phase} {phase.sort}: {phaseName}
-        </span>
-        <span className="lesson-question-count">
-          {s.question} {activeQuestionIndex + 1} {s.of} {questions.length}
-        </span>
+        <span className="lesson-phase-label">{s.phase} {phase.sort}: {phaseName}</span>
+        <span className="lesson-question-count">{s.question} {activeQuestionIndex + 1} {s.of} {questions.length}</span>
       </div>
       <ProgressBar value={progressPct} size="sm" />
-
       <div className="lesson-gramlin">
-        <Gramlin pose={gramlinPose} size="lg" animated={submitted && isCorrect} />
+        <Gramlin pose={gramlinPose as any} size="lg" animated={gramlinPose === "celebrate"} />
       </div>
-
-      <div className={`lesson-question-card ${submitted ? (isCorrect ? "card--correct" : "card--wrong") : ""}`}>
-        <p className="question-text" dangerouslySetInnerHTML={{ __html: currentQ.q }} />
-
-        <div className="options-grid">
-          {options.map((opt: string, i: number) => {
-            let cls = "option-btn";
-            if (!submitted) {
-              if (i === selectedOption) cls += " option-btn--selected";
-            } else {
-              if (correctAnswers.some((a: string) => opt.includes(a) || a.includes(opt))) {
-                cls += " option-btn--correct";
-              } else if (i === selectedOption) {
-                cls += " option-btn--wrong";
-              } else {
-                cls += " option-btn--dimmed";
-              }
-            }
-
-            return (
-              <button
-                key={i}
-                className={cls}
-                onClick={() => handleOptionClick(i)}
-                disabled={false}
-                aria-pressed={i === selectedOption || i === revealedOption}
-              >
-                <span className="option-letter">{"ABCD"[i]}</span>
-                <span className="option-text" dangerouslySetInnerHTML={{ __html: opt }} />
-              </button>
-            );
-          })}
-        </div>
-
-        {submitted && revealedOption !== null && (
-          <div className={`feedback ${correctAnswers.some((a: string) => options[revealedOption]?.includes(a) || a.includes(options[revealedOption])) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
-            <div className="feedback-label">
-              {revealedOption === selectedOption
-                ? s.yourAnswer
-                : `${isZh ? s.optionLabel : "Option"} ${revealedOption + 1}`}
-            </div>
-            <div className="feedback-body">
-              {getExplanation(revealedOption) || s.tapExplanation}
-            </div>
-          </div>
-        )}
-
-        {submitted && revealedOption === null && (
-          <div className={`feedback ${isCorrect ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
-            <div className="feedback-body">{s.tapExplanation}</div>
-          </div>
-        )}
-      </div>
-
-      <div className="lesson-next animate-slide-up">
-        {submitted ? (
-          <Button onClick={handleNext} size="lg">
-            {isLastQuestion ? s.completion : s.next} →
-          </Button>
-        ) : (
-          <Button onClick={handleSubmit} size="lg" disabled={selectedOption === null}>
-            {s.submit}
-          </Button>
-        )}
-      </div>
+      <QuestionRenderer question={currentQ} language={language} onFirstResult={handleFirstResult} onReadyForNext={handleReadyForNext} onGramlinPose={setGramlinPose} />
     </div>
   );
 }

@@ -1,0 +1,3826 @@
+[
+  {
+    "id": "aviation_report_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer _____ symptoms of hypoxia.",
+      "zh": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer _____ symptoms of hypoxia.",
+      "es": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer _____ symptoms of hypoxia."
+    },
+    "blanks": [
+      {
+        "position": 48,
+        "word": "obvious",
+        "options": [
+          "once.",
+          "nose",
+          "cloud",
+          "obvious"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.",
+      "zh": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.",
+      "es": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.",
+      "zh": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.",
+      "es": "We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "All our air _____ packs have _____, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "zh": "All our air _____ packs have _____, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "es": "All our air _____ packs have _____, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "conditioning",
+        "options": [
+          "conditioning",
+          "layer",
+          "hail",
+          "Partial"
+        ]
+      },
+      {
+        "position": 12,
+        "word": "malfunctioned",
+        "options": [
+          "freezing",
+          "must",
+          "evacuation",
+          "malfunctioned"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "zh": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "es": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "zh": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.",
+      "es": "All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We just had a smoke _____ from the avionics bay, so we need to depressurize the _____ to let in sufficient fresh air and request immediate descent to 8000 feet _____ 1014.",
+      "zh": "We just had a smoke _____ from the avionics bay, so we need to depressurize the _____ to let in sufficient fresh air and request immediate descent to 8000 feet _____ 1014.",
+      "es": "We just had a smoke _____ from the avionics bay, so we need to depressurize the _____ to let in sufficient fresh air and request immediate descent to 8000 feet _____ 1014."
+    },
+    "blanks": [
+      {
+        "position": 10,
+        "word": "emergency",
+        "options": [
+          "just",
+          "wind",
+          "heavy",
+          "emergency"
+        ]
+      },
+      {
+        "position": 33,
+        "word": "airplane",
+        "options": [
+          "nearest",
+          "degrades",
+          "execute",
+          "airplane"
+        ]
+      },
+      {
+        "position": 61,
+        "word": "QNH",
+        "options": [
+          "MSA.",
+          "receive",
+          "unpredictable",
+          "QNH"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014.",
+      "zh": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014.",
+      "es": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014.",
+      "zh": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014.",
+      "es": "We just had a smoke emergency from the avionics bay, so we need to depressurize the airplane to let in sufficient fresh air and request immediate descent to 8000 feet QNH 1014."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Our inertial reference system has failed completely, so we are navigating only on raw VORDME data and request radar vectors for a conventional non-precision _____",
+      "zh": "Our inertial reference system has failed completely, so we are navigating only on raw VORDME data and request radar vectors for a conventional non-precision _____",
+      "es": "Our inertial reference system has failed completely, so we are navigating only on raw VORDME data and request radar vectors for a conventional non-precision _____"
+    },
+    "blanks": [
+      {
+        "position": 50,
+        "word": "approach.",
+        "options": [
+          "airport",
+          "approach.",
+          "clearance",
+          "avoid"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach.",
+      "zh": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach.",
+      "es": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach.",
+      "zh": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach.",
+      "es": "Our inertial reference system has failed completely, so we are navigating only on raw VOR/DME data and request radar vectors for a conventional non-precision approach."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for _____ at the _____ suitable airport.",
+      "zh": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for _____ at the _____ suitable airport.",
+      "es": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for _____ at the _____ suitable airport."
+    },
+    "blanks": [
+      {
+        "position": 49,
+        "word": "landing",
+        "options": [
+          "systems",
+          "during",
+          "landing",
+          "request"
+        ]
+      },
+      {
+        "position": 55,
+        "word": "nearest",
+        "options": [
+          "smoke",
+          "Asymmetric",
+          "nearest",
+          "glass"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport.",
+      "zh": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport.",
+      "es": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport.",
+      "zh": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport.",
+      "es": "Multiple failures occurred on our inertial reference system, so we are no longer qualified for oceanic RVSM operation and request an immediate return for landing at the nearest suitable airport."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "The ILS signal is severely unstable, and other pilots have reported the same _____ interference on _____ 36L, so we request to switch to VOR-DME _____ or hold for weather improvement.",
+      "zh": "The ILS signal is severely unstable, and other pilots have reported the same _____ interference on _____ 36L, so we request to switch to VOR-DME _____ or hold for weather improvement.",
+      "es": "The ILS signal is severely unstable, and other pilots have reported the same _____ interference on _____ 36L, so we request to switch to VOR-DME _____ or hold for weather improvement."
+    },
+    "blanks": [
+      {
+        "position": 27,
+        "word": "abnormal",
+        "options": [
+          "abnormal",
+          "switch",
+          "wind",
+          "vectors"
+        ]
+      },
+      {
+        "position": 33,
+        "word": "Runway",
+        "options": [
+          "lost",
+          "Runway",
+          "low-level",
+          "Lightning"
+        ]
+      },
+      {
+        "position": 52,
+        "word": "approach",
+        "options": [
+          "expedite",
+          "smoke",
+          "abatement",
+          "approach"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement.",
+      "zh": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement.",
+      "es": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement.",
+      "zh": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement.",
+      "es": "The ILS signal is severely unstable, and other pilots have reported the same abnormal interference on Runway 36L, so we request to switch to VOR-DME approach or hold for weather improvement."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM _____",
+      "zh": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM _____",
+      "es": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM _____"
+    },
+    "blanks": [
+      {
+        "position": 51,
+        "word": "VOR.",
+        "options": [
+          "Lightning",
+          "VOR.",
+          "navigating",
+          "taxiing"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR.",
+      "zh": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR.",
+      "es": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR.",
+      "zh": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR.",
+      "es": "We have lost full flight plan data after FMC reset, so we need 5 minutes to reprogram navigation data and request extended holding at BKM VOR."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_report_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_report",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "One of our main AC BUS has _____, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of _____ position.",
+      "zh": "One of our main AC BUS has _____, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of _____ position.",
+      "es": "One of our main AC BUS has _____, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of _____ position."
+    },
+    "blanks": [
+      {
+        "position": 14,
+        "word": "failed",
+        "options": [
+          "boundary",
+          "develops",
+          "failed",
+          "checklists."
+        ]
+      },
+      {
+        "position": 64,
+        "word": "current",
+        "options": [
+          "current",
+          "reciprocal",
+          "Asymmetric",
+          "code"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position.",
+      "zh": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position.",
+      "es": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position.",
+      "zh": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position.",
+      "es": "One of our main AC BUS has failed, and only the backup battery can supply power for less than 10 minutes, so we prepare for forced landing within 100 miles of current position."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire _____ service on arrival.",
+      "zh": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire _____ service on arrival.",
+      "es": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire _____ service on arrival."
+    },
+    "blanks": [
+      {
+        "position": 43,
+        "word": "rescue",
+        "options": [
+          "FL220",
+          "braking",
+          "degrades",
+          "rescue"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival.",
+      "zh": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival.",
+      "es": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival.",
+      "zh": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival.",
+      "es": "We had an electrical fire in the galley which has been extinguished, but we still request priority landing and full fire rescue service on arrival."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We have discharged both engine fire bottles, yet the left engine fire _____ light remains illuminated, so we need you to visually confirm smoke from the engine _____",
+      "zh": "We have discharged both engine fire bottles, yet the left engine fire _____ light remains illuminated, so we need you to visually confirm smoke from the engine _____",
+      "es": "We have discharged both engine fire bottles, yet the left engine fire _____ light remains illuminated, so we need you to visually confirm smoke from the engine _____"
+    },
+    "blanks": [
+      {
+        "position": 25,
+        "word": "warning",
+        "options": [
+          "along",
+          "guaranteed.",
+          "warning",
+          "packs"
+        ]
+      },
+      {
+        "position": 56,
+        "word": "nacelle.",
+        "options": [
+          "drops",
+          "nacelle.",
+          "power",
+          "inversion"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle.",
+      "zh": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle.",
+      "es": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle.",
+      "zh": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle.",
+      "es": "We have discharged both engine fire bottles, yet the left engine fire warning light remains illuminated, so we need you to visually confirm smoke from the engine nacelle."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we _____ the runway and _____ fire trucks to stand by the _____",
+      "zh": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we _____ the runway and _____ fire trucks to stand by the _____",
+      "es": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we _____ the runway and _____ fire trucks to stand by the _____"
+    },
+    "blanks": [
+      {
+        "position": 37,
+        "word": "vacate",
+        "options": [
+          "wind",
+          "vacate",
+          "clearance.",
+          "sudden"
+        ]
+      },
+      {
+        "position": 45,
+        "word": "request",
+        "options": [
+          "avoid",
+          "level",
+          "hail",
+          "request"
+        ]
+      },
+      {
+        "position": 59,
+        "word": "apron.",
+        "options": [
+          "degree",
+          "downwind",
+          "apron.",
+          "communication"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron.",
+      "zh": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron.",
+      "es": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron.",
+      "zh": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron.",
+      "es": "APU fire has not been fully put out, so we plan to execute full emergency evacuation once we vacate the runway and request fire trucks to stand by the apron."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We detected cargo smoke from the forward hold, so _____ handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "zh": "We detected cargo smoke from the forward hold, so _____ handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "es": "We detected cargo smoke from the forward hold, so _____ handlers are forbidden to open cargo doors until all passengers complete disembarkation."
+    },
+    "blanks": [
+      {
+        "position": 19,
+        "word": "ground",
+        "options": [
+          "ground",
+          "hydroplaning",
+          "visibility",
+          "develops"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "zh": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "es": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "zh": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation.",
+      "es": "We detected cargo smoke from the forward hold, so ground handlers are forbidden to open cargo doors until all passengers complete disembarkation."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Partial flight control surfaces separated in _____, so we request a high-speed approach and the _____ available runway at destination airport.",
+      "zh": "Partial flight control surfaces separated in _____, so we request a high-speed approach and the _____ available runway at destination airport.",
+      "es": "Partial flight control surfaces separated in _____, so we request a high-speed approach and the _____ available runway at destination airport."
+    },
+    "blanks": [
+      {
+        "position": 12,
+        "word": "mid-air",
+        "options": [
+          "abnormal",
+          "communication",
+          "mid-air",
+          "creates"
+        ]
+      },
+      {
+        "position": 31,
+        "word": "longest",
+        "options": [
+          "significantly",
+          "longest",
+          "symptoms",
+          "diversion"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport.",
+      "zh": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport.",
+      "es": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport.",
+      "zh": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport.",
+      "es": "Partial flight control surfaces separated in mid-air, so we request a high-speed approach and the longest available runway at destination airport."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to _____ aircraft _____ and finish _____ checklists.",
+      "zh": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to _____ aircraft _____ and finish _____ checklists.",
+      "es": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to _____ aircraft _____ and finish _____ checklists."
+    },
+    "blanks": [
+      {
+        "position": 27,
+        "word": "adjust",
+        "options": [
+          "vertical",
+          "rapid",
+          "adjust",
+          "leading"
+        ]
+      },
+      {
+        "position": 31,
+        "word": "balance",
+        "options": [
+          "fully",
+          "sufficient",
+          "FL290-FL410",
+          "balance"
+        ]
+      },
+      {
+        "position": 37,
+        "word": "abnormal",
+        "options": [
+          "parallel",
+          "nacelle.",
+          "abnormal",
+          "with"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists.",
+      "zh": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists.",
+      "es": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists.",
+      "zh": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists.",
+      "es": "Asymmetric flaps caused continuous left rolling tendency, so we request extended downwind to adjust aircraft balance and finish abnormal checklists."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost _____, so we request diversion to the airport with full maintenance support.",
+      "zh": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost _____, so we request diversion to the airport with full maintenance support.",
+      "es": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost _____, so we request diversion to the airport with full maintenance support."
+    },
+    "blanks": [
+      {
+        "position": 23,
+        "word": "pressure",
+        "options": [
+          "priority",
+          "offset",
+          "struck",
+          "pressure"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support.",
+      "zh": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support.",
+      "es": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support.",
+      "zh": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support.",
+      "es": "Severe hydraulic fluid leakage occurred, two of three hydraulic systems lost pressure, so we request diversion to the airport with full maintenance support."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_request_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_request",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We cannot fully shut off the fuel dump valve after jettisoning weight, so _____ radar vectors for short final _____ 17 with reduced speed limit canceled.",
+      "zh": "We cannot fully shut off the fuel dump valve after jettisoning weight, so _____ radar vectors for short final _____ 17 with reduced speed limit canceled.",
+      "es": "We cannot fully shut off the fuel dump valve after jettisoning weight, so _____ radar vectors for short final _____ 17 with reduced speed limit canceled."
+    },
+    "blanks": [
+      {
+        "position": 27,
+        "word": "request",
+        "options": [
+          "navigating",
+          "slush",
+          "separation",
+          "request"
+        ]
+      },
+      {
+        "position": 39,
+        "word": "Runway",
+        "options": [
+          "closest",
+          "VOR.",
+          "Runway",
+          "landing"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled.",
+      "zh": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled.",
+      "es": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled.",
+      "zh": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled.",
+      "es": "We cannot fully shut off the fuel dump valve after jettisoning weight, so request radar vectors for short final Runway 17 with reduced speed limit canceled."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Left _____ ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "zh": "Left _____ ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "es": "Left _____ ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic."
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "engine",
+        "options": [
+          "indications",
+          "plan",
+          "engine",
+          "generates"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "zh": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "es": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "zh": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic.",
+      "es": "Left engine ingested large FOD, so we shut it down completely and request priority separation from all nearby traffic."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Continuous fuel leak from the right wing root, so we _____ urgency and _____ to the closest alternate with foam fire equipment.",
+      "zh": "Continuous fuel leak from the right wing root, so we _____ urgency and _____ to the closest alternate with foam fire equipment.",
+      "es": "Continuous fuel leak from the right wing root, so we _____ urgency and _____ to the closest alternate with foam fire equipment."
+    },
+    "blanks": [
+      {
+        "position": 21,
+        "word": "declare",
+        "options": [
+          "zone",
+          "reduces",
+          "declare",
+          "qualified"
+        ]
+      },
+      {
+        "position": 27,
+        "word": "divert",
+        "options": [
+          "divert",
+          "shift",
+          "extra",
+          "attempts."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment.",
+      "zh": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment.",
+      "es": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment.",
+      "zh": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment.",
+      "es": "Continuous fuel leak from the right wing root, so we declare urgency and divert to the closest alternate with foam fire equipment."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Windshield heating system fully failed, ice accumulates _____ on front glass, visibility is heavily _____, _____ latest airport weather report.",
+      "zh": "Windshield heating system fully failed, ice accumulates _____ on front glass, visibility is heavily _____, _____ latest airport weather report.",
+      "es": "Windshield heating system fully failed, ice accumulates _____ on front glass, visibility is heavily _____, _____ latest airport weather report."
+    },
+    "blanks": [
+      {
+        "position": 15,
+        "word": "rapidly",
+        "options": [
+          "escape",
+          "aircraft",
+          "rapidly",
+          "gear"
+        ]
+      },
+      {
+        "position": 30,
+        "word": "blocked",
+        "options": [
+          "hail",
+          "Mach",
+          "takeoff",
+          "blocked"
+        ]
+      },
+      {
+        "position": 33,
+        "word": "request",
+        "options": [
+          "inertial",
+          "wind",
+          "request",
+          "Asymmetric"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report.",
+      "zh": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report.",
+      "es": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report.",
+      "zh": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report.",
+      "es": "Windshield heating system fully failed, ice accumulates rapidly on front glass, visibility is heavily blocked, request latest airport weather report."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Pitot-static heating malfunction leads to unreliable airspeed and altitude _____, so we level off to complete all related abnormal checklists.",
+      "zh": "Pitot-static heating malfunction leads to unreliable airspeed and altitude _____, so we level off to complete all related abnormal checklists.",
+      "es": "Pitot-static heating malfunction leads to unreliable airspeed and altitude _____, so we level off to complete all related abnormal checklists."
+    },
+    "blanks": [
+      {
+        "position": 18,
+        "word": "indications",
+        "options": [
+          "knot",
+          "indications",
+          "cruising",
+          "partial"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists.",
+      "zh": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists.",
+      "es": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists.",
+      "zh": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists.",
+      "es": "Pitot-static heating malfunction leads to unreliable airspeed and altitude indications, so we level off to complete all related abnormal checklists."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "GPWS _____ warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous _____",
+      "zh": "GPWS _____ warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous _____",
+      "es": "GPWS _____ warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous _____"
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "terrain",
+        "options": [
+          "terrain",
+          "heavy",
+          "flaps",
+          "Temperature"
+        ]
+      },
+      {
+        "position": 41,
+        "word": "terrain.",
+        "options": [
+          "data",
+          "regular",
+          "terrain.",
+          "performance"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain.",
+      "zh": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain.",
+      "es": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain.",
+      "zh": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain.",
+      "es": "GPWS terrain warning triggered repeatedly during descent, so we climb immediately to MEA and request radar vectors to avoid mountainous terrain."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "TCAS RA _____ caused 20 _____ injuries, so we _____ PAN PAN and request medical ambulance on arrival.",
+      "zh": "TCAS RA _____ caused 20 _____ injuries, so we _____ PAN PAN and request medical ambulance on arrival.",
+      "es": "TCAS RA _____ caused 20 _____ injuries, so we _____ PAN PAN and request medical ambulance on arrival."
+    },
+    "blanks": [
+      {
+        "position": 4,
+        "word": "maneuver",
+        "options": [
+          "avionics",
+          "maneuver",
+          "flight",
+          "before"
+        ]
+      },
+      {
+        "position": 10,
+        "word": "passenger",
+        "options": [
+          "occurred",
+          "packs",
+          "cruising",
+          "passenger"
+        ]
+      },
+      {
+        "position": 19,
+        "word": "declare",
+        "options": [
+          "RVSM",
+          "unserviceable",
+          "declare",
+          "downwind"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival.",
+      "zh": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival.",
+      "es": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival.",
+      "zh": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival.",
+      "es": "TCAS RA maneuver caused 20+ passenger injuries, so we declare PAN PAN and request medical ambulance on arrival."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "All _____ equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "zh": "All _____ equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "es": "All _____ equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay."
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "anti-ice",
+        "options": [
+          "path",
+          "clearances",
+          "anti-ice",
+          "Microburst"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "zh": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "es": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "zh": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay.",
+      "es": "All anti-ice equipment failed, we enter severe icing zone and must descend to escape freezing layers without delay."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_conditional_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_conditional",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Landing gear partial _____ failure, nose wheel locked halfway, request low pass for ground _____ inspection.",
+      "zh": "Landing gear partial _____ failure, nose wheel locked halfway, request low pass for ground _____ inspection.",
+      "es": "Landing gear partial _____ failure, nose wheel locked halfway, request low pass for ground _____ inspection."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "extension",
+        "options": [
+          "extension",
+          "knots",
+          "cross",
+          "offset"
+        ]
+      },
+      {
+        "position": 30,
+        "word": "visual",
+        "options": [
+          "voice",
+          "increase",
+          "visual",
+          "cell"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection.",
+      "zh": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection.",
+      "es": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection.",
+      "zh": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection.",
+      "es": "Landing gear partial extension failure, nose wheel locked halfway, request low pass for ground visual inspection."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request _____ full inspection after vacating runway.",
+      "zh": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request _____ full inspection after vacating runway.",
+      "es": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request _____ full inspection after vacating runway."
+    },
+    "blanks": [
+      {
+        "position": 24,
+        "word": "maintenance",
+        "options": [
+          "unserviceable",
+          "maintenance",
+          "turbulence",
+          "radar."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway.",
+      "zh": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway.",
+      "es": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway.",
+      "zh": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway.",
+      "es": "Severe tail strike after touchdown, potential aft pressure bulkhead damage, request maintenance full inspection after vacating runway."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles _____ _____ to the right of track.",
+      "zh": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles _____ _____ to the right of track.",
+      "es": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles _____ _____ to the right of track."
+    },
+    "blanks": [
+      {
+        "position": 43,
+        "word": "parallel",
+        "options": [
+          "reduced.",
+          "disturbed",
+          "Runway",
+          "parallel"
+        ]
+      },
+      {
+        "position": 45,
+        "word": "offset",
+        "options": [
+          "open",
+          "link",
+          "offset",
+          "follow-me"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track.",
+      "zh": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track.",
+      "es": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track.",
+      "zh": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track.",
+      "es": "We are encountering severe clear air turbulence at FL350, so request immediate descent out of this altitude band and 10 miles parallel offset to the right of track."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ ice accumulation on wing _____ edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet _____ 1008.",
+      "zh": "_____ ice accumulation on wing _____ edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet _____ 1008.",
+      "es": "_____ ice accumulation on wing _____ edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet _____ 1008."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Rapid",
+        "options": [
+          "activated",
+          "knot",
+          "High",
+          "Rapid"
+        ]
+      },
+      {
+        "position": 10,
+        "word": "leading",
+        "options": [
+          "bulkhead",
+          "leading",
+          "terminated",
+          "related"
+        ]
+      },
+      {
+        "position": 46,
+        "word": "QNH",
+        "options": [
+          "accumulates",
+          "accuracy",
+          "QNH",
+          "hypoxia."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008.",
+      "zh": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008.",
+      "es": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008.",
+      "zh": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008.",
+      "es": "Rapid ice accumulation on wing leading edges, the freezing layer ranges from 3000ft to 12000ft, so we expedite descent below 3000 feet QNH 1008."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to _____ airport.",
+      "zh": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to _____ airport.",
+      "es": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to _____ airport."
+    },
+    "blanks": [
+      {
+        "position": 38,
+        "word": "maintenance",
+        "options": [
+          "reduced",
+          "continue",
+          "miles",
+          "maintenance"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport.",
+      "zh": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport.",
+      "es": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport.",
+      "zh": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport.",
+      "es": "Heavy hail struck our fuselage during penetration of squall line, airframe has obvious dent damage, request diversion to maintenance airport."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Lightning strike hit the _____ stabilizer, several navigation instruments show _____ readings, we will continue flight but require ground inspection after landing.",
+      "zh": "Lightning strike hit the _____ stabilizer, several navigation instruments show _____ readings, we will continue flight but require ground inspection after landing.",
+      "es": "Lightning strike hit the _____ stabilizer, several navigation instruments show _____ readings, we will continue flight but require ground inspection after landing."
+    },
+    "blanks": [
+      {
+        "position": 8,
+        "word": "vertical",
+        "options": [
+          "vertical",
+          "packs",
+          "vectors",
+          "error"
+        ]
+      },
+      {
+        "position": 21,
+        "word": "abnormal",
+        "options": [
+          "leads",
+          "abnormal",
+          "vectors",
+          "extinguished"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing.",
+      "zh": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing.",
+      "es": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing.",
+      "zh": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing.",
+      "es": "Lightning strike hit the vertical stabilizer, several navigation instruments show abnormal readings, we will continue flight but require ground inspection after landing."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Microburst wind shear alert _____ on final _____, sudden loss of indicated airspeed forced us to execute full _____ procedure.",
+      "zh": "Microburst wind shear alert _____ on final _____, sudden loss of indicated airspeed forced us to execute full _____ procedure.",
+      "es": "Microburst wind shear alert _____ on final _____, sudden loss of indicated airspeed forced us to execute full _____ procedure."
+    },
+    "blanks": [
+      {
+        "position": 8,
+        "word": "activated",
+        "options": [
+          "downgraded",
+          "activated",
+          "descent.",
+          "runway"
+        ]
+      },
+      {
+        "position": 14,
+        "word": "approach",
+        "options": [
+          "approach",
+          "equipment",
+          "right",
+          "destination"
+        ]
+      },
+      {
+        "position": 37,
+        "word": "go-around",
+        "options": [
+          "failure",
+          "reprogram",
+          "significantly",
+          "go-around"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure.",
+      "zh": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure.",
+      "es": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure.",
+      "zh": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure.",
+      "es": "Microburst wind shear alert activated on final approach, sudden loss of indicated airspeed forced us to execute full go-around procedure."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request _____ via northern airway.",
+      "zh": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request _____ via northern airway.",
+      "es": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request _____ via northern airway."
+    },
+    "blanks": [
+      {
+        "position": 28,
+        "word": "re-route",
+        "options": [
+          "re-route",
+          "available",
+          "surface",
+          "decompression"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway.",
+      "zh": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway.",
+      "es": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway.",
+      "zh": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway.",
+      "es": "Supercell thunderstorm develops ahead of our route, no safe gap within 100nm, request re-route via northern airway."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_navigation_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_navigation",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Volcanic ash cloud covers our planned _____ level, ash _____ engine inlet, execute 180-degree turn to escape ash area at once.",
+      "zh": "Volcanic ash cloud covers our planned _____ level, ash _____ engine inlet, execute 180-degree turn to escape ash area at once.",
+      "es": "Volcanic ash cloud covers our planned _____ level, ash _____ engine inlet, execute 180-degree turn to escape ash area at once."
+    },
+    "blanks": [
+      {
+        "position": 12,
+        "word": "cruising",
+        "options": [
+          "evacuation",
+          "just",
+          "vehicle",
+          "cruising"
+        ]
+      },
+      {
+        "position": 19,
+        "word": "contaminates",
+        "options": [
+          "contaminates",
+          "this",
+          "vacating",
+          "later"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once.",
+      "zh": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once.",
+      "es": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once.",
+      "zh": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once.",
+      "es": "Volcanic ash cloud covers our planned cruising level, ash contaminates engine inlet, execute 180-degree turn to escape ash area at once."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Frontal fog moves fast to the _____, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "zh": "Frontal fog moves fast to the _____, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "es": "Frontal fog moves fast to the _____, RVR drops below 350m, which is under our company CAT I landing minima."
+    },
+    "blanks": [
+      {
+        "position": 12,
+        "word": "airport",
+        "options": [
+          "locked",
+          "airport",
+          "runway",
+          "along"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "zh": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "es": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "zh": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima.",
+      "es": "Frontal fog moves fast to the airport, RVR drops below 350m, which is under our company CAT I landing minima."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Runway fully covered with slush, braking action poor, risk of _____ during _____ rollout, request holding for weather improvement.",
+      "zh": "Runway fully covered with slush, braking action poor, risk of _____ during _____ rollout, request holding for weather improvement.",
+      "es": "Runway fully covered with slush, braking action poor, risk of _____ during _____ rollout, request holding for weather improvement."
+    },
+    "blanks": [
+      {
+        "position": 22,
+        "word": "hydroplaning",
+        "options": [
+          "hydroplaning",
+          "packs",
+          "delay.",
+          "extinguished"
+        ]
+      },
+      {
+        "position": 26,
+        "word": "landing",
+        "options": [
+          "radar.",
+          "landing",
+          "jettisoning",
+          "passenger"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement.",
+      "zh": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement.",
+      "es": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement.",
+      "zh": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement.",
+      "es": "Runway fully covered with slush, braking action poor, risk of hydroplaning during landing rollout, request holding for weather improvement."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ crosswind exceeds our aircraft _____ at destination, we request to switch to reciprocal _____ 18 opposite direction.",
+      "zh": "_____ crosswind exceeds our aircraft _____ at destination, we request to switch to reciprocal _____ 18 opposite direction.",
+      "es": "_____ crosswind exceeds our aircraft _____ at destination, we request to switch to reciprocal _____ 18 opposite direction."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Strong",
+        "options": [
+          "FL100",
+          "Strong",
+          "final",
+          "forced"
+        ]
+      },
+      {
+        "position": 10,
+        "word": "limitation",
+        "options": [
+          "opposite",
+          "limitation",
+          "inside",
+          "noise"
+        ]
+      },
+      {
+        "position": 29,
+        "word": "Runway",
+        "options": [
+          "final.",
+          "RAIM",
+          "Runway",
+          "Visibility"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction.",
+      "zh": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction.",
+      "es": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction.",
+      "zh": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction.",
+      "es": "Strong crosswind exceeds our aircraft limitation at destination, we request to switch to reciprocal Runway 18 opposite direction."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust _____",
+      "zh": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust _____",
+      "es": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust _____"
+    },
+    "blanks": [
+      {
+        "position": 35,
+        "word": "instantly.",
+        "options": [
+          "reach",
+          "instantly.",
+          "ingested",
+          "pattern."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly.",
+      "zh": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly.",
+      "es": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly.",
+      "zh": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly.",
+      "es": "Temperature inversion at 3000ft leads to sudden 25-knot airspeed loss during descent, so we increase climb thrust instantly."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Virga under the CB cell creates _____ wind shear risk on short final, we _____ approach and join holding pattern.",
+      "zh": "Virga under the CB cell creates _____ wind shear risk on short final, we _____ approach and join holding pattern.",
+      "es": "Virga under the CB cell creates _____ wind shear risk on short final, we _____ approach and join holding pattern."
+    },
+    "blanks": [
+      {
+        "position": 12,
+        "word": "low-level",
+        "options": [
+          "locked",
+          "low-level",
+          "rain",
+          "instantly."
+        ]
+      },
+      {
+        "position": 29,
+        "word": "reject",
+        "options": [
+          "reject",
+          "clearance",
+          "several",
+          "failures"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern.",
+      "zh": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern.",
+      "es": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern.",
+      "zh": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern.",
+      "es": "Virga under the CB cell creates low-level wind shear risk on short final, we reject approach and join holding pattern."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Typhoon intensifies rapidly along our _____ path, all coastal destination airports will be closed _____ 2 hours, request new alternate _____",
+      "zh": "Typhoon intensifies rapidly along our _____ path, all coastal destination airports will be closed _____ 2 hours, request new alternate _____",
+      "es": "Typhoon intensifies rapidly along our _____ path, all coastal destination airports will be closed _____ 2 hours, request new alternate _____"
+    },
+    "blanks": [
+      {
+        "position": 10,
+        "word": "flight",
+        "options": [
+          "Request",
+          "tendency",
+          "than",
+          "flight"
+        ]
+      },
+      {
+        "position": 29,
+        "word": "within",
+        "options": [
+          "divert",
+          "continue",
+          "within",
+          "medical"
+        ]
+      },
+      {
+        "position": 42,
+        "word": "airport.",
+        "options": [
+          "malfunction",
+          "passenger",
+          "climb",
+          "airport."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport.",
+      "zh": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport.",
+      "es": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport.",
+      "zh": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport.",
+      "es": "Typhoon intensifies rapidly along our flight path, all coastal destination airports will be closed within 2 hours, request new alternate airport."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Heavy drifting fog _____ all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "zh": "Heavy drifting fog _____ all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "es": "Heavy drifting fog _____ all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "covers",
+        "options": [
+          "covers",
+          "radar",
+          "terminated",
+          "short"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "zh": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "es": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "zh": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand.",
+      "es": "Heavy drifting fog covers all taxiways, we cannot continue taxiing and request follow-me vehicle to remote stand."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_emergency_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_emergency",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Sandstorm _____ to reach airport in 20 mins, all takeoff clearances _____, request to tow back to gate.",
+      "zh": "Sandstorm _____ to reach airport in 20 mins, all takeoff clearances _____, request to tow back to gate.",
+      "es": "Sandstorm _____ to reach airport in 20 mins, all takeoff clearances _____, request to tow back to gate."
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "forecast",
+        "options": [
+          "radar.",
+          "abatement",
+          "forecast",
+          "crossing"
+        ]
+      },
+      {
+        "position": 23,
+        "word": "suspended",
+        "options": [
+          "from",
+          "covered",
+          "separation",
+          "suspended"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate.",
+      "zh": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate.",
+      "es": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate.",
+      "zh": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate.",
+      "es": "Sandstorm forecast to reach airport in 20 mins, all takeoff clearances suspended, request to tow back to gate."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Icing condition persists below FL100, we cannot _____ holding altitude, request direct descent to MSA.",
+      "zh": "Icing condition persists below FL100, we cannot _____ holding altitude, request direct descent to MSA.",
+      "es": "Icing condition persists below FL100, we cannot _____ holding altitude, request direct descent to MSA."
+    },
+    "blanks": [
+      {
+        "position": 15,
+        "word": "maintain",
+        "options": [
+          "wing",
+          "Need",
+          "maintain",
+          "knot"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA.",
+      "zh": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA.",
+      "es": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA.",
+      "zh": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA.",
+      "es": "Icing condition persists below FL100, we cannot maintain holding altitude, request direct descent to MSA."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Severe downdraft inside thunderstorm _____ us to lose 1500ft altitude in 10 seconds, climb to higher _____ level immediately.",
+      "zh": "Severe downdraft inside thunderstorm _____ us to lose 1500ft altitude in 10 seconds, climb to higher _____ level immediately.",
+      "es": "Severe downdraft inside thunderstorm _____ us to lose 1500ft altitude in 10 seconds, climb to higher _____ level immediately."
+    },
+    "blanks": [
+      {
+        "position": 8,
+        "word": "forced",
+        "options": [
+          "unpredictable",
+          "checklist",
+          "separated",
+          "forced"
+        ]
+      },
+      {
+        "position": 33,
+        "word": "flight",
+        "options": [
+          "reduced",
+          "covered",
+          "report",
+          "flight"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately.",
+      "zh": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately.",
+      "es": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately.",
+      "zh": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately.",
+      "es": "Severe downdraft inside thunderstorm forced us to lose 1500ft altitude in 10 seconds, climb to higher flight level immediately."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Visibility reduced sharply by heavy haze, we cannot _____ _____ _____ light even at 2nm final.",
+      "zh": "Visibility reduced sharply by heavy haze, we cannot _____ _____ _____ light even at 2nm final.",
+      "es": "Visibility reduced sharply by heavy haze, we cannot _____ _____ _____ light even at 2nm final."
+    },
+    "blanks": [
+      {
+        "position": 17,
+        "word": "identify",
+        "options": [
+          "leak",
+          "identify",
+          "have",
+          "operate"
+        ]
+      },
+      {
+        "position": 19,
+        "word": "runway",
+        "options": [
+          "malfunction",
+          "engine",
+          "cannot",
+          "runway"
+        ]
+      },
+      {
+        "position": 21,
+        "word": "threshold",
+        "options": [
+          "suffer",
+          "handlers",
+          "threshold",
+          "opposite"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final.",
+      "zh": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final.",
+      "es": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final.",
+      "zh": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final.",
+      "es": "Visibility reduced sharply by heavy haze, we cannot identify runway threshold light even at 2nm final."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Runway surface has standing water patches, midpoint RVR only 400m, _____ meet our landing criteria.",
+      "zh": "Runway surface has standing water patches, midpoint RVR only 400m, _____ meet our landing criteria.",
+      "es": "Runway surface has standing water patches, midpoint RVR only 400m, _____ meet our landing criteria."
+    },
+    "blanks": [
+      {
+        "position": 22,
+        "word": "cannot",
+        "options": [
+          "voice.",
+          "cannot",
+          "inertial",
+          "large"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria.",
+      "zh": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria.",
+      "es": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria.",
+      "zh": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria.",
+      "es": "Runway surface has standing water patches, midpoint RVR only 400m, cannot meet our landing criteria."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ wake turbulence from preceding heavy jet disturbed our flight path, extend _____ for extra separation.",
+      "zh": "_____ wake turbulence from preceding heavy jet disturbed our flight path, extend _____ for extra separation.",
+      "es": "_____ wake turbulence from preceding heavy jet disturbed our flight path, extend _____ for extra separation."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Strong",
+        "options": [
+          "Strong",
+          "exceeds",
+          "disembarkation.",
+          "track."
+        ]
+      },
+      {
+        "position": 25,
+        "word": "downwind",
+        "options": [
+          "go-around",
+          "visibility",
+          "downwind",
+          "minutes"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation.",
+      "zh": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation.",
+      "es": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation.",
+      "zh": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation.",
+      "es": "Strong wake turbulence from preceding heavy jet disturbed our flight path, extend downwind for extra separation."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ rain _____ from ground up to 5000ft, all arrival flights _____ to inland airport.",
+      "zh": "_____ rain _____ from ground up to 5000ft, all arrival flights _____ to inland airport.",
+      "es": "_____ rain _____ from ground up to 5000ft, all arrival flights _____ to inland airport."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Freezing",
+        "options": [
+          "vertical",
+          "Freezing",
+          "still",
+          "dent"
+        ]
+      },
+      {
+        "position": 4,
+        "word": "forecast",
+        "options": [
+          "airport.",
+          "forecast",
+          "packs",
+          "follow-me"
+        ]
+      },
+      {
+        "position": 23,
+        "word": "divert",
+        "options": [
+          "Visibility",
+          "separated",
+          "divert",
+          "under"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport.",
+      "zh": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport.",
+      "es": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport.",
+      "zh": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport.",
+      "es": "Freezing rain forecast from ground up to 5000ft, all arrival flights divert to inland airport."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Multiple layers of _____ fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "zh": "Multiple layers of _____ fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "es": "Multiple layers of _____ fog block all approach paths, terrain clearance cannot be guaranteed."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "mountain",
+        "options": [
+          "mountain",
+          "extension",
+          "leading",
+          "Freezing"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "zh": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "es": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "zh": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed.",
+      "es": "Multiple layers of mountain fog block all approach paths, terrain clearance cannot be guaranteed."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_approach_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_approach",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Thunderstorm outflow boundary generates _____ wind shifts near runway, we suspend all approach _____",
+      "zh": "Thunderstorm outflow boundary generates _____ wind shifts near runway, we suspend all approach _____",
+      "es": "Thunderstorm outflow boundary generates _____ wind shifts near runway, we suspend all approach _____"
+    },
+    "blanks": [
+      {
+        "position": 8,
+        "word": "unpredictable",
+        "options": [
+          "penetration",
+          "fluid",
+          "unserviceable",
+          "unpredictable"
+        ]
+      },
+      {
+        "position": 27,
+        "word": "attempts.",
+        "options": [
+          "forced",
+          "boundary",
+          "attempts.",
+          "approach"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts.",
+      "zh": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts.",
+      "es": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts.",
+      "zh": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts.",
+      "es": "Thunderstorm outflow boundary generates unpredictable wind shifts near runway, we suspend all approach attempts."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "High density altitude at plateau airport reduces engine thrust significantly, _____ weight needs to be reduced.",
+      "zh": "High density altitude at plateau airport reduces engine thrust significantly, _____ weight needs to be reduced.",
+      "es": "High density altitude at plateau airport reduces engine thrust significantly, _____ weight needs to be reduced."
+    },
+    "blanks": [
+      {
+        "position": 21,
+        "word": "takeoff",
+        "options": [
+          "terrain",
+          "takeoff",
+          "inlet",
+          "risk"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced.",
+      "zh": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced.",
+      "es": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced.",
+      "zh": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced.",
+      "es": "High density altitude at plateau airport reduces engine thrust significantly, takeoff weight needs to be reduced."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ jet stream creates variable tailwind on final, unstable _____ risk rises sharply.",
+      "zh": "_____ jet stream creates variable tailwind on final, unstable _____ risk rises sharply.",
+      "es": "_____ jet stream creates variable tailwind on final, unstable _____ risk rises sharply."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Low-level",
+        "options": [
+          "approach.",
+          "Low-level",
+          "request",
+          "suitable"
+        ]
+      },
+      {
+        "position": 19,
+        "word": "approach",
+        "options": [
+          "approach",
+          "nacelle.",
+          "area",
+          "before"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply.",
+      "zh": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply.",
+      "es": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply.",
+      "zh": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply.",
+      "es": "Low-level jet stream creates variable tailwind on final, unstable approach risk rises sharply."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We cannot cross BKM _____ above FL230 due aircraft _____ performance limitation, _____ revised cruising level FL210.",
+      "zh": "We cannot cross BKM _____ above FL230 due aircraft _____ performance limitation, _____ revised cruising level FL210.",
+      "es": "We cannot cross BKM _____ above FL230 due aircraft _____ performance limitation, _____ revised cruising level FL210."
+    },
+    "blanks": [
+      {
+        "position": 8,
+        "word": "VOR",
+        "options": [
+          "regular",
+          "inspection",
+          "VOR",
+          "remains"
+        ]
+      },
+      {
+        "position": 18,
+        "word": "maximum",
+        "options": [
+          "contaminates",
+          "frequency",
+          "maximum",
+          "other"
+        ]
+      },
+      {
+        "position": 25,
+        "word": "request",
+        "options": [
+          "without",
+          "strike",
+          "severe",
+          "request"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210.",
+      "zh": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210.",
+      "es": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210.",
+      "zh": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210.",
+      "es": "We cannot cross BKM VOR above FL230 due aircraft maximum performance limitation, request revised cruising level FL210."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid _____ icing ahead of track.",
+      "zh": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid _____ icing ahead of track.",
+      "es": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid _____ icing ahead of track."
+    },
+    "blanks": [
+      {
+        "position": 32,
+        "word": "widespread",
+        "options": [
+          "Runway",
+          "remote",
+          "widespread",
+          "seconds"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track.",
+      "zh": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track.",
+      "es": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track.",
+      "zh": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track.",
+      "es": "We request 10 miles parallel offset to the left of airway for 30 minutes to avoid widespread icing ahead of track."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "RVSM _____ downgraded, we are no longer approved to _____ within FL290-FL410 airspace, request descent to FL280.",
+      "zh": "RVSM _____ downgraded, we are no longer approved to _____ within FL290-FL410 airspace, request descent to FL280.",
+      "es": "RVSM _____ downgraded, we are no longer approved to _____ within FL290-FL410 airspace, request descent to FL280."
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "equipment",
+        "options": [
+          "equipment",
+          "system",
+          "navigation.",
+          "fluid"
+        ]
+      },
+      {
+        "position": 19,
+        "word": "operate",
+        "options": [
+          "forbidden",
+          "operate",
+          "opposite",
+          "inspection"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280.",
+      "zh": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280.",
+      "es": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280.",
+      "zh": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280.",
+      "es": "RVSM equipment downgraded, we are no longer approved to operate within FL290-FL410 airspace, request descent to FL280."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We can only _____ _____ if FL240 is unavailable at the _____ point of airway A1.",
+      "zh": "We can only _____ _____ if FL240 is unavailable at the _____ point of airway A1.",
+      "es": "We can only _____ _____ if FL240 is unavailable at the _____ point of airway A1."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "accept",
+        "options": [
+          "higher",
+          "immediately",
+          "patches",
+          "accept"
+        ]
+      },
+      {
+        "position": 8,
+        "word": "FL220",
+        "options": [
+          "FL220",
+          "accumulation",
+          "flight",
+          "conventional"
+        ]
+      },
+      {
+        "position": 22,
+        "word": "crossing",
+        "options": [
+          "threshold",
+          "SELCAL",
+          "partial",
+          "crossing"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1.",
+      "zh": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1.",
+      "es": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1.",
+      "zh": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1.",
+      "es": "We can only accept FL220 if FL240 is unavailable at the crossing point of airway A1."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "zh": "_____ service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "es": "_____ service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "Radar",
+        "options": [
+          "large",
+          "Supercell",
+          "minimum",
+          "Radar"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "zh": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "es": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "zh": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation.",
+      "es": "Radar service terminated due ground equipment failure, maintain Mach 0.81 or less for self-separation."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_repair_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_repair",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "RAIM alert appears continuously, GPS navigation accuracy _____ severely, abandon RNAV approach and request VOR _____",
+      "zh": "RAIM alert appears continuously, GPS navigation accuracy _____ severely, abandon RNAV approach and request VOR _____",
+      "es": "RAIM alert appears continuously, GPS navigation accuracy _____ severely, abandon RNAV approach and request VOR _____"
+    },
+    "blanks": [
+      {
+        "position": 15,
+        "word": "degrades",
+        "options": [
+          "takeoff",
+          "VOR.",
+          "degrades",
+          "heavily"
+        ]
+      },
+      {
+        "position": 32,
+        "word": "vectors.",
+        "options": [
+          "parallel",
+          "extended",
+          "forbidden",
+          "vectors."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors.",
+      "zh": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors.",
+      "es": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors.",
+      "zh": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors.",
+      "es": "RAIM alert appears continuously, GPS navigation accuracy degrades severely, abandon RNAV approach and request VOR vectors."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q01",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 1,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based _____",
+      "zh": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based _____",
+      "es": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based _____"
+    },
+    "blanks": [
+      {
+        "position": 30,
+        "word": "navigation.",
+        "options": [
+          "visibility",
+          "Need",
+          "navigation.",
+          "vectors."
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation.",
+      "zh": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation.",
+      "es": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation.",
+      "zh": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation.",
+      "es": "FMS map shift error occurs, all RNAV procedures become unavailable, revert to conventional ground-based navigation."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q02",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 2,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "We estimate crossing LV NDB at 1123, _____ FL310 and estimate MLT _____ at time 55.",
+      "zh": "We estimate crossing LV NDB at 1123, _____ FL310 and estimate MLT _____ at time 55.",
+      "es": "We estimate crossing LV NDB at 1123, _____ FL310 and estimate MLT _____ at time 55."
+    },
+    "blanks": [
+      {
+        "position": 15,
+        "word": "maintaining",
+        "options": [
+          "covered",
+          "maintaining",
+          "airframe",
+          "inspection."
+        ]
+      },
+      {
+        "position": 25,
+        "word": "waypoint",
+        "options": [
+          "cargo",
+          "terrain.",
+          "once.",
+          "waypoint"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55.",
+      "zh": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55.",
+      "es": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55.",
+      "zh": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55.",
+      "es": "We estimate crossing LV NDB at 1123, maintaining FL310 and estimate MLT waypoint at time 55."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q03",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 3,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Request lose 15 _____ en route to _____ abnormal aircraft system checklist before _____ top of descent.",
+      "zh": "Request lose 15 _____ en route to _____ abnormal aircraft system checklist before _____ top of descent.",
+      "es": "Request lose 15 _____ en route to _____ abnormal aircraft system checklist before _____ top of descent."
+    },
+    "blanks": [
+      {
+        "position": 6,
+        "word": "minutes",
+        "options": [
+          "VOR-DME",
+          "minutes",
+          "longest",
+          "rolling"
+        ]
+      },
+      {
+        "position": 14,
+        "word": "finish",
+        "options": [
+          "heavily",
+          "finish",
+          "speed",
+          "data"
+        ]
+      },
+      {
+        "position": 26,
+        "word": "descent",
+        "options": [
+          "approach",
+          "nacelle.",
+          "pilots",
+          "descent"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent.",
+      "zh": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent.",
+      "es": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent.",
+      "zh": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent.",
+      "es": "Request lose 15 minutes en route to finish abnormal aircraft system checklist before descent top of descent."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q04",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 4,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "CPDLC data link unserviceable, revert to voice communication on primary VHF _____ 118.9.",
+      "zh": "CPDLC data link unserviceable, revert to voice communication on primary VHF _____ 118.9.",
+      "es": "CPDLC data link unserviceable, revert to voice communication on primary VHF _____ 118.9."
+    },
+    "blanks": [
+      {
+        "position": 23,
+        "word": "frequency",
+        "options": [
+          "passenger",
+          "canceled.",
+          "slush",
+          "frequency"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9.",
+      "zh": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9.",
+      "es": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9.",
+      "zh": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9.",
+      "es": "CPDLC data link unserviceable, revert to voice communication on primary VHF frequency 118.9."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q05",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 5,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "_____ code EFFG cannot receive _____ signal, request regular position report via voice.",
+      "zh": "_____ code EFFG cannot receive _____ signal, request regular position report via voice.",
+      "es": "_____ code EFFG cannot receive _____ signal, request regular position report via voice."
+    },
+    "blanks": [
+      {
+        "position": 0,
+        "word": "SELCAL",
+        "options": [
+          "SELCAL",
+          "direct",
+          "Runway",
+          "rapid"
+        ]
+      },
+      {
+        "position": 10,
+        "word": "ground",
+        "options": [
+          "weather",
+          "FL280.",
+          "ADS-B",
+          "ground"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice.",
+      "zh": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice.",
+      "es": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice.",
+      "zh": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice.",
+      "es": "SELCAL code EFFG cannot receive ground signal, request regular position report via voice."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q06",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 6,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Need to cross CK fix at time 35 or later to avoid _____ _____ _____",
+      "zh": "Need to cross CK fix at time 35 or later to avoid _____ _____ _____",
+      "es": "Need to cross CK fix at time 35 or later to avoid _____ _____ _____"
+    },
+    "blanks": [
+      {
+        "position": 24,
+        "word": "conflicting",
+        "options": [
+          "airspace",
+          "conflicting",
+          "short",
+          "navigation"
+        ]
+      },
+      {
+        "position": 26,
+        "word": "eastbound",
+        "options": [
+          "inversion",
+          "reduces",
+          "Typhoon",
+          "eastbound"
+        ]
+      },
+      {
+        "position": 28,
+        "word": "traffic.",
+        "options": [
+          "priority",
+          "flaps",
+          "traffic.",
+          "jettisoning"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic.",
+      "zh": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic.",
+      "es": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic.",
+      "zh": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic.",
+      "es": "Need to cross CK fix at time 35 or later to avoid conflicting eastbound traffic."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q07",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 7,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Speed restriction 280 knots below FL240, _____ accelerate above this value due noise abatement regulation.",
+      "zh": "Speed restriction 280 knots below FL240, _____ accelerate above this value due noise abatement regulation.",
+      "es": "Speed restriction 280 knots below FL240, _____ accelerate above this value due noise abatement regulation."
+    },
+    "blanks": [
+      {
+        "position": 13,
+        "word": "cannot",
+        "options": [
+          "only",
+          "Continuous",
+          "cannot",
+          "glass"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation.",
+      "zh": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation.",
+      "es": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation.",
+      "zh": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation.",
+      "es": "Speed restriction 280 knots below FL240, cannot accelerate above this value due noise abatement regulation."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  },
+  {
+    "id": "aviation_final_q08",
+    "moduleId": "aviation",
+    "phaseId": "aviation_final",
+    "sort": 8,
+    "type": "cloze",
+    "scenario": {
+      "en": "Fill the blanks from memory.",
+      "zh": "Fill the blanks from memory.",
+      "es": "Fill the blanks from memory."
+    },
+    "prompt": {
+      "en": "Transponder _____ mode malfunction, _____ provide ADS-B 1090MHz data to ground radar.",
+      "zh": "Transponder _____ mode malfunction, _____ provide ADS-B 1090MHz data to ground radar.",
+      "es": "Transponder _____ mode malfunction, _____ provide ADS-B 1090MHz data to ground radar."
+    },
+    "blanks": [
+      {
+        "position": 2,
+        "word": "Charlie",
+        "options": [
+          "degrades",
+          "Charlie",
+          "checklist",
+          "during"
+        ]
+      },
+      {
+        "position": 9,
+        "word": "cannot",
+        "options": [
+          "cannot",
+          "RNAV",
+          "forbidden",
+          "freezing"
+        ]
+      }
+    ],
+    "fullSentence": {
+      "en": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar.",
+      "zh": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar.",
+      "es": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar."
+    },
+    "hint": {
+      "en": "Tap a blank, then pick the correct word.",
+      "zh": "Tap a blank, then pick the correct word.",
+      "es": "Tap a blank, then pick the correct word."
+    },
+    "feedback": {
+      "en": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar.",
+      "zh": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar.",
+      "es": "Transponder Charlie mode malfunction, cannot provide ADS-B 1090MHz data to ground radar."
+    },
+    "skillTags": [
+      "cloze",
+      "memorization"
+    ],
+    "phraseologyClass": "plain_language",
+    "sourceRef": "Sentence bank (needs SME review)",
+    "reviewStatus": "approved"
+  }
+]

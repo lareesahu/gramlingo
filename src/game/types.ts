@@ -1,4 +1,4 @@
-export type Language = 'en' | 'zh' | 'es';
+export type Language = "en" | "zh" | "es";
 
 export interface Module {
   id: string;
@@ -11,7 +11,48 @@ export interface Module {
   sort: number;
 }
 
-export interface Question {
+export type QuestionType = "multiple_choice_single" | "cloze";
+
+export interface ClozeBlank {
+  position: number;
+  word: string;
+  options: string[];
+}
+
+interface QuestionBase {
+  id: string;
+  type: QuestionType;
+  q: string;
+  qZh: string;
+  qEs: string;
+  t: string;
+  tZh: string;
+  tEs: string;
+}
+
+export interface MultipleChoiceQuestion extends QuestionBase {
+  type: "multiple_choice_single";
+  a: string | string[];
+  o: string[];
+  ex?: string[];
+  exZh?: string[];
+  exEs?: string[];
+}
+
+export interface ClozeQuestion extends QuestionBase {
+  type: "cloze";
+  scenario: string;
+  scenarioZh: string;
+  scenarioEs: string;
+  blanks: ClozeBlank[];
+  fullSentence: string;
+  fullSentenceZh: string;
+  fullSentenceEs: string;
+}
+
+export type Question = MultipleChoiceQuestion | ClozeQuestion;
+
+export interface LegacyQuestion {
   q: string;
   a: string | string[];
   o: string[];
@@ -31,7 +72,7 @@ export interface Phase {
   sub: string;
   subZh: string;
   sort: number;
-  q: Question[];
+  q: (LegacyQuestion | Question)[];
 }
 
 export interface GameData {
@@ -59,6 +100,7 @@ export interface PhaseProgress {
 export interface ErrorEntry {
   moduleId: string;
   phaseId: string;
+  questionId?: string;
   questionIndex: number;
   userAnswer: string;
   correctAnswer: string;
@@ -66,9 +108,17 @@ export interface ErrorEntry {
   attemptCount: number;
 }
 
-export type Screen = 'loading' | 'welcome' | 'learning-path' | 'module' | 'lesson' | 'completion' | 'error-log' | 'admin';
+export type Screen =
+  | "loading"
+  | "welcome"
+  | "learning-path"
+  | "module"
+  | "lesson"
+  | "completion"
+  | "error-log"
+  | "admin";
 
-export type GramlinPose = 'neutral' | 'graduate' | 'book' | 'celebrate' | 'sad' | 'think' | 'sleeper' | 'pencil' | 'hearts' | 'trophy' | 'power' | 'peeking' | 'confused' | 'party' | 'grad' | 'angry' | 'crying' | 'laptop' | 'sleep-ground' | 'juggler';
+export type GramlinPose = "neutral" | "graduate" | "book" | "celebrate" | "sad" | "think" | "sleeper" | "pencil" | "hearts" | "trophy" | "power" | "peeking" | "confused" | "party" | "grad" | "angry" | "crying" | "laptop" | "sleep-ground" | "juggler";
 
 export interface AppState {
   screen: Screen;
@@ -90,4 +140,13 @@ export function scoreToStars(score: number): StarCount {
   if (score >= 70) return 2;
   if (score >= 50) return 1;
   return 0;
+}
+
+export interface QuestionResult {
+  questionId: string;
+  correct: boolean;
+  userAnswer: string;
+  correctAnswer: string;
+  points: number;
+  hintUsed: boolean;
 }
