@@ -20193,15 +20193,45 @@
     }
   ],
   "phaseLockOrder": {
-    "tenses": [
-      "tenses_present",
-      "tenses_past",
-      "tenses_future",
-      "tenses_perfect",
-      "tenses_continuous",
-      "tenses_contrast",
-      "tenses_narrative",
-      "tenses_prod"
+    "passive": [
+      "passive_recognition",
+      "passive_formation",
+      "passive_agent",
+      "passive_tenses",
+      "passive_modals",
+      "passive_causative",
+      "passive_impersonal",
+      "passive_prod"
+    ],
+    "determiners": [
+      "determiners_articles",
+      "determiners_definite",
+      "determiners_quantifiers",
+      "determiners_demonstratives",
+      "determiners_possessives",
+      "determiners_generics",
+      "determiners_contrast",
+      "determiners_prod"
+    ],
+    "advanced": [
+      "advanced_emphasis",
+      "advanced_inversion",
+      "advanced_substitution",
+      "advanced_register",
+      "advanced_cohesion",
+      "advanced_nominalisation",
+      "advanced_hedging",
+      "advanced_prod"
+    ],
+    "verb_patterns": [
+      "verb_patterns_gerunds",
+      "verb_patterns_infinitives",
+      "verb_patterns_both",
+      "verb_patterns_causatives",
+      "verb_patterns_preposition",
+      "verb_patterns_adj",
+      "verb_patterns_contrast",
+      "verb_patterns_prod"
     ],
     "sentence_structure": [
       "sentence_structure_word_order",
@@ -20219,15 +20249,15 @@
       "prepositions_prep_mixed",
       "prepositions_prep_prod"
     ],
-    "modals": [
-      "modals_ability",
-      "modals_permission",
-      "modals_obligation",
-      "modals_probability",
-      "modals_past",
-      "modals_requests",
-      "modals_contrast",
-      "modals_prod"
+    "conditionals": [
+      "conditionals_zero",
+      "conditionals_first",
+      "conditionals_second",
+      "conditionals_third",
+      "conditionals_mixed",
+      "conditionals_alternatives",
+      "conditionals_wish",
+      "conditionals_prod"
     ],
     "conjunctions": [
       "conjunctions_coordinating",
@@ -20239,55 +20269,25 @@
       "conjunctions_linking",
       "conjunctions_prod"
     ],
-    "conditionals": [
-      "conditionals_zero",
-      "conditionals_first",
-      "conditionals_second",
-      "conditionals_third",
-      "conditionals_mixed",
-      "conditionals_alternatives",
-      "conditionals_wish",
-      "conditionals_prod"
+    "clauses": [
+      "clauses_rec",
+      "clauses_subj",
+      "clauses_obj",
+      "clauses_subobj",
+      "clauses_oblq",
+      "clauses_gen",
+      "clauses_rest",
+      "clauses_prod"
     ],
-    "determiners": [
-      "determiners_articles",
-      "determiners_definite",
-      "determiners_quantifiers",
-      "determiners_demonstratives",
-      "determiners_possessives",
-      "determiners_generics",
-      "determiners_contrast",
-      "determiners_prod"
-    ],
-    "verb_patterns": [
-      "verb_patterns_gerunds",
-      "verb_patterns_infinitives",
-      "verb_patterns_both",
-      "verb_patterns_causatives",
-      "verb_patterns_preposition",
-      "verb_patterns_adj",
-      "verb_patterns_contrast",
-      "verb_patterns_prod"
-    ],
-    "advanced": [
-      "advanced_emphasis",
-      "advanced_inversion",
-      "advanced_substitution",
-      "advanced_register",
-      "advanced_cohesion",
-      "advanced_nominalisation",
-      "advanced_hedging",
-      "advanced_prod"
-    ],
-    "passive": [
-      "passive_recognition",
-      "passive_formation",
-      "passive_agent",
-      "passive_tenses",
-      "passive_modals",
-      "passive_causative",
-      "passive_impersonal",
-      "passive_prod"
+    "tenses": [
+      "tenses_present",
+      "tenses_past",
+      "tenses_future",
+      "tenses_perfect",
+      "tenses_continuous",
+      "tenses_contrast",
+      "tenses_narrative",
+      "tenses_prod"
     ],
     "reported": [
       "reported_statements",
@@ -20309,15 +20309,15 @@
       "aviation_repair",
       "aviation_final"
     ],
-    "clauses": [
-      "clauses_rec",
-      "clauses_subj",
-      "clauses_obj",
-      "clauses_subobj",
-      "clauses_oblq",
-      "clauses_gen",
-      "clauses_rest",
-      "clauses_prod"
+    "modals": [
+      "modals_ability",
+      "modals_permission",
+      "modals_obligation",
+      "modals_probability",
+      "modals_past",
+      "modals_requests",
+      "modals_contrast",
+      "modals_prod"
     ]
   }
 }
