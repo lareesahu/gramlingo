@@ -6,6 +6,7 @@ playwright-report/
 *.tsbuildinfo
 coverage/
 *.log
+.env.local
 # Capacitor
 android/app/build
 android/.gradle

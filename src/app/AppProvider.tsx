@@ -76,7 +76,7 @@ function emptyUserState(): PersistedUserState {
 
 export function AppProvider({ children }: { children: ReactNode }) {
   const saved = loadState();
-  const savedUserState = saved?.currentUser
+  const savedUserState = !cloudEnabled && saved?.currentUser
     ? loadUserState(saved.currentUser.username) || {
         activeModuleId: saved.activeModuleId || null,
         activePhaseId: saved.activePhaseId || null,
@@ -88,19 +88,21 @@ export function AppProvider({ children }: { children: ReactNode }) {
   // Never restore transient screens (lesson, loading state requires live context)
   // First visit: show loading screen. Returning visitor with saved state: restore.
   const restoredScreen = saved?.screen === 'module' ? 'learning-path' : saved?.screen;
-  const initialScreen: Screen = saved === null
+  const initialScreen: Screen = cloudEnabled
+    ? 'loading'
+    : saved === null
     ? 'loading'
     : (restoredScreen && restoredScreen !== 'lesson' && restoredScreen !== 'loading') ? restoredScreen : 'welcome';
 
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [language, setLanguage] = useState<Language>(saved?.language || 'en');
-  const [currentUser, setCurrentUser] = useState<UserProfile | null>(saved?.currentUser || null);
+  const [currentUser, setCurrentUser] = useState<UserProfile | null>(cloudEnabled ? null : (saved?.currentUser || null));
   const [activeModuleId, setActiveModuleId] = useState<string | null>(savedUserState.activeModuleId);
   const [activePhaseId, setActivePhaseId] = useState<string | null>(savedUserState.activePhaseId);
   const [activeQuestionIndex, setActiveQuestionIndex] = useState<number>(savedUserState.activeQuestionIndex);
   const [progress, setProgress] = useState<PhaseProgress[]>(savedUserState.progress);
   const [errorLog, setWrongBook] = useState<ErrorEntry[]>(savedUserState.errorLog);
-  const [isAdmin, setIsAdmin] = useState<boolean>(saved?.isAdmin || false);
+  const [isAdmin, setIsAdmin] = useState<boolean>(cloudEnabled ? false : (saved?.isAdmin || false));
   const [moduleLocks, setModuleLocks] = useState<Record<string, string[]>>(saved?.moduleLocks || {});
   const [cloudSyncStatus, setCloudSyncStatus] = useState<'local' | 'syncing' | 'synced' | 'error'>(
     cloudEnabled ? 'syncing' : 'local',
@@ -123,6 +125,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
       .then((identity) => {
         if (cancelled) return;
         if (!identity) {
+          setCurrentUser(null);
+          setIsAdmin(false);
+          applyUserState(null);
+          setScreen('welcome');
           setCloudSyncStatus('synced');
           return;
         }
