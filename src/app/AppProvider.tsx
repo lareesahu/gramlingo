@@ -2,17 +2,23 @@
    GRAMLINGO — AppProvider (Core State Management)
    ═══════════════════════════════════════════════ */
 
-import { useState, useCallback, useEffect, type ReactNode } from 'react';
+import { useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
 import { AppContext } from './app-state';
-import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language } from '../game/types';
+import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language, UserProgressState } from '../game/types';
 import { GAME_DATA } from '../game/data';
+import {
+  cloudEnabled,
+  fetchCloudAdminUsers,
+  restoreCloudIdentity,
+  signInOrCreate,
+  signOutCloud,
+  syncCloudState,
+} from '../storage/cloud';
 
 const STORAGE_KEY = 'gramlingo_state';
 const USER_STATE_PREFIX = 'gramlingo_user_state:';
 
-type PersistedUserState = Pick<AppState,
-  'activeModuleId' | 'activePhaseId' | 'activeQuestionIndex' | 'progress' | 'errorLog'
->;
+type PersistedUserState = UserProgressState;
 
 function loadState(): Partial<AppState> | null {
   try {
@@ -96,6 +102,41 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [errorLog, setWrongBook] = useState<ErrorEntry[]>(savedUserState.errorLog);
   const [isAdmin, setIsAdmin] = useState<boolean>(saved?.isAdmin || false);
   const [moduleLocks, setModuleLocks] = useState<Record<string, string[]>>(saved?.moduleLocks || {});
+  const [cloudSyncStatus, setCloudSyncStatus] = useState<'local' | 'syncing' | 'synced' | 'error'>(
+    cloudEnabled ? 'syncing' : 'local',
+  );
+  const cloudSyncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const applyUserState = useCallback((state: UserProgressState | null) => {
+    const next = state || emptyUserState();
+    setActiveModuleId(next.activeModuleId);
+    setActivePhaseId(next.activePhaseId);
+    setActiveQuestionIndex(next.activeQuestionIndex);
+    setProgress(next.progress);
+    setWrongBook(next.errorLog);
+  }, []);
+
+  useEffect(() => {
+    if (!cloudEnabled) return;
+    let cancelled = false;
+    restoreCloudIdentity()
+      .then((identity) => {
+        if (cancelled) return;
+        if (!identity) {
+          setCloudSyncStatus('synced');
+          return;
+        }
+        setCurrentUser(identity.profile);
+        setIsAdmin(identity.isAdmin);
+        applyUserState(identity.state);
+        setScreen('learning-path');
+        setCloudSyncStatus('synced');
+      })
+      .catch(() => {
+        if (!cancelled) setCloudSyncStatus('error');
+      });
+    return () => { cancelled = true; };
+  }, [applyUserState]);
 
   // Persist state on changes (but never persist transient screens)
   useEffect(() => {
@@ -105,10 +146,23 @@ export function AppProvider({ children }: { children: ReactNode }) {
       activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
     });
     if (currentUser) {
-      saveUserState(currentUser.username, {
+      const userState = {
         activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog,
-      });
+      };
+      saveUserState(currentUser.username, userState);
+      if (cloudEnabled && currentUser.id) {
+        if (cloudSyncTimer.current) clearTimeout(cloudSyncTimer.current);
+        setCloudSyncStatus('syncing');
+        cloudSyncTimer.current = setTimeout(() => {
+          syncCloudState(currentUser.id!, userState)
+            .then(() => setCloudSyncStatus('synced'))
+            .catch(() => setCloudSyncStatus('error'));
+        }, 1500);
+      }
     }
+    return () => {
+      if (cloudSyncTimer.current) clearTimeout(cloudSyncTimer.current);
+    };
   }, [screen, language, currentUser, activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks]);
 
   // ── Navigation ──
@@ -124,7 +178,23 @@ export function AppProvider({ children }: { children: ReactNode }) {
     } catch { return []; }
   }, []);
 
-  const login = useCallback((username: string, pin?: string): boolean => {
+  const login = useCallback(async (username: string, pin?: string): Promise<boolean> => {
+    if (cloudEnabled) {
+      try {
+        setCloudSyncStatus('syncing');
+        const identity = await signInOrCreate(username, pin || '');
+        setCurrentUser(identity.profile);
+        setIsAdmin(identity.isAdmin);
+        applyUserState(identity.state);
+        setScreen('learning-path');
+        setCloudSyncStatus('synced');
+        return true;
+      } catch {
+        setCloudSyncStatus('error');
+        return false;
+      }
+    }
+
     const users = getUsers();
     let user = users.find((u: UserProfile) => u.username === username);
 
@@ -138,17 +208,14 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
     const userState = loadUserState(user.username) || emptyUserState();
     setCurrentUser(user);
-    setActiveModuleId(userState.activeModuleId);
-    setActivePhaseId(userState.activePhaseId);
-    setActiveQuestionIndex(userState.activeQuestionIndex);
-    setProgress(userState.progress);
-    setWrongBook(userState.errorLog);
+    applyUserState(userState);
     setIsAdmin(username === 'admin' && pin === 'gramlin');
     setScreen('learning-path');
     return true;
-  }, [getUsers]);
+  }, [applyUserState, getUsers]);
 
   const logout = useCallback(() => {
+    if (cloudEnabled) void signOutCloud();
     setCurrentUser(null);
     setIsAdmin(false);
     setActiveModuleId(null);
@@ -157,7 +224,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setProgress([]);
     setWrongBook([]);
     setScreen('welcome');
+    setCloudSyncStatus(cloudEnabled ? 'synced' : 'local');
   }, []);
+
+  const getCloudAdminUsers = useCallback(() => fetchCloudAdminUsers(), []);
 
   // ── User Lock ──
   const isUserLocked = useCallback((username: string): boolean => {
@@ -393,6 +463,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
+    cloudEnabled, cloudSyncStatus, getCloudAdminUsers,
     updateProgress, getPhaseProgress, getModuleProgress, getUserModuleProgress, getModuleAttempted,
     addError, removeError, getErrorsByModule, getErrorsByPhase,
     startPhase, nextQuestion,

@@ -3,7 +3,7 @@
    Honest labeling per spec: no cross-device claims.
    ═══════════════════════════════════════════════ */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAppContext } from '../app/app-state';
 import { Button } from '../components/Button/Button';
 import { Badge } from '../components/Badge/Badge';
@@ -12,12 +12,39 @@ import { GAME_DATA } from '../game/data';
 import './AdminScreen.css';
 
 export function AdminScreen() {
-  const { language, getUsers, isUserLocked, toggleUserLock, isModuleLocked, toggleModuleLock, getUserModuleProgress, exportData } = useAppContext();
+  const {
+    language, getUsers, isUserLocked, toggleUserLock, isModuleLocked, toggleModuleLock,
+    getUserModuleProgress, exportData, cloudEnabled, getCloudAdminUsers,
+  } = useAppContext();
   const s = getStrings(language);
-    const [users] = useState(() => getUsers());
+  const [cloudUsers, setCloudUsers] = useState<Awaited<ReturnType<typeof getCloudAdminUsers>>>([]);
+  const [cloudLoading, setCloudLoading] = useState(cloudEnabled);
+  const [cloudError, setCloudError] = useState(false);
   const [copied, setCopied] = useState(false);
   const isZh = language === 'zh';
   const [expandedUser, setExpandedUser] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!cloudEnabled) return;
+    getCloudAdminUsers()
+      .then(setCloudUsers)
+      .catch(() => setCloudError(true))
+      .finally(() => setCloudLoading(false));
+  }, [cloudEnabled, getCloudAdminUsers]);
+
+  const users = cloudEnabled
+    ? cloudUsers.map((user) => ({ ...user, isCloud: true as const }))
+    : getUsers().map((user) => ({ ...user, isCloud: false as const }));
+
+  const cloudModuleProgress = (user: (typeof users)[number], moduleId: string) => {
+    if (!user.isCloud) return getUserModuleProgress(user.username, moduleId);
+    const order = GAME_DATA.phaseLockOrder[moduleId];
+    if (!order?.length) return 0;
+    const completed = order.filter((phaseId) =>
+      user.state.progress.some((item) => item.phaseId === phaseId && item.completed),
+    ).length;
+    return Math.round((completed / order.length) * 100);
+  };
 
   const handleExport = () => {
     const json = exportData();
@@ -42,24 +69,29 @@ export function AdminScreen() {
       </div>
 
       <p className="admin-disclaimer">
-        ⚠️ Progress is saved on this device only — no cloud sync, no account needed.
+        {cloudEnabled
+          ? '☁️ Showing authenticated learner results from all devices.'
+          : '⚠️ Progress is saved on this device only — cloud sync is not configured.'}
       </p>
 
-      {users.length === 0 ? (
+      {cloudLoading ? (
+        <p>Loading cloud results…</p>
+      ) : cloudError ? (
+        <p>Cloud results could not be loaded. Check the admin role and connection.</p>
+      ) : users.length === 0 ? (
         <p>{s.noUsers}</p>
       ) : (
         <div className="admin-table">
           <div className="admin-table-header">
             <span>{isZh ? '学员' : 'Learner'}</span>
             <span>{s.status}</span>
-            <span>{isZh ? '上次活动' : 'Last active'}</span>
+            <span>{isZh ? '进度' : 'Progress'}</span>
             <span>Action</span>
           </div>
           {users.map((user: any) => {
-            const locked = isUserLocked(user.username);
-            const clausesPct = getUserModuleProgress(user.username, 'clauses');
-            const prepPct = getUserModuleProgress(user.username, 'prepositions');
-            const avgPct = Math.round((clausesPct + prepPct) / 2);
+            const locked = !user.isCloud && isUserLocked(user.username);
+            const modulePercentages = GAME_DATA.modules.map((mod) => cloudModuleProgress(user, mod.id));
+            const avgPct = Math.round(modulePercentages.reduce((sum, value) => sum + value, 0) / Math.max(modulePercentages.length, 1));
             const isExpanded = expandedUser === user.username;
 
             return (
@@ -70,7 +102,9 @@ export function AdminScreen() {
                     {user.username === 'admin' && <Badge variant="warning" size="sm">admin</Badge>}
                   </span>
                   <span>
-                    {locked ? (
+                    {user.isCloud ? (
+                      <Badge variant="info">☁️ Synced</Badge>
+                    ) : locked ? (
                       <Badge variant="danger">🔒 Locked</Badge>
                     ) : (
                       <Badge variant="success">🟢 Active</Badge>
@@ -83,13 +117,17 @@ export function AdminScreen() {
                     <span className="admin-pct">{avgPct}%</span>
                   </span>
                   <span>
-                    <Button
-                      variant={locked ? 'secondary' : 'danger'}
-                      size="sm"
-                      onClick={(e: React.MouseEvent) => { e.stopPropagation(); toggleUserLock(user.username); }}
-                    >
-                      {locked ? (isZh ? '解锁' : 'Unlock') : (isZh ? '锁定' : 'Lock')}
-                    </Button>
+                    {user.isCloud ? (
+                      <span>{new Date(user.updatedAt).toLocaleDateString()}</span>
+                    ) : (
+                      <Button
+                        variant={locked ? 'secondary' : 'danger'}
+                        size="sm"
+                        onClick={(e: React.MouseEvent) => { e.stopPropagation(); toggleUserLock(user.username); }}
+                      >
+                        {locked ? (isZh ? '解锁' : 'Unlock') : (isZh ? '锁定' : 'Lock')}
+                      </Button>
+                    )}
                   </span>
                 </div>
                 {isExpanded && (
@@ -97,15 +135,17 @@ export function AdminScreen() {
                     <div className="admin-module-access-header">{s.moduleAccess}</div>
                     <div className="admin-module-chips">
                       {GAME_DATA.modules.map((mod: any) => {
-                        const modLocked = isModuleLocked(user.username, mod.id);
+                        const modLocked = !user.isCloud && isModuleLocked(user.username, mod.id);
+                        const progressPct = cloudModuleProgress(user, mod.id);
                         return (
                           <button
                             key={mod.id}
                             className={`admin-module-chip${modLocked ? ' chip-locked' : ' chip-unlocked'}`}
-                            onClick={() => toggleModuleLock(user.username, mod.id)}
-                            title={modLocked ? 'Click to unlock' : 'Click to lock'}
+                            onClick={() => { if (!user.isCloud) toggleModuleLock(user.username, mod.id); }}
+                            title={user.isCloud ? `${progressPct}% complete` : (modLocked ? 'Click to unlock' : 'Click to lock')}
+                            disabled={user.isCloud}
                           >
-                            {modLocked ? '🔒' : '🔓'} {mod.name}
+                            {user.isCloud ? `${progressPct}%` : (modLocked ? '🔒' : '🔓')} {mod.name}
                           </button>
                         );
                       })}

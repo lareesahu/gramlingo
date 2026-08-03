@@ -27,7 +27,7 @@ const STEPS = [
 ];
 
 export function WelcomeScreen() {
-  const { language, login, getUsers } = useAppContext();
+  const { language, login, getUsers, cloudEnabled } = useAppContext();
   const s = getStrings(language);
 
   const [users, setUsers] = useState<ReturnType<typeof getUsers>>([]);
@@ -36,6 +36,7 @@ export function WelcomeScreen() {
   const [pin, setPin] = useState("");
   const [isNewUser, setIsNewUser] = useState(false);
   const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
   const [catchIdx, setCatchIdx] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -58,15 +59,21 @@ export function WelcomeScreen() {
   const handleSelectUser = useCallback((name: string) => {
     const user = users.find((u: any) => u.username === name);
     if (user?.pin) { setUsername(name); setIsNewUser(false); }
-    else { login(name); }
+    else { void login(name); }
   }, [users, login]);
 
-  const handleLogin = useCallback(() => {
+  const handleLogin = useCallback(async () => {
     setError("");
-    if (!username.trim()) { setError("Please enter a username."); return; }
-    const result = login(username.trim(), pin || undefined);
-    if (!result) setError("Incorrect PIN.");
-  }, [username, pin, login]);
+    if (!username.trim()) { setError(cloudEnabled ? "Please enter an email." : "Please enter a username."); return; }
+    if (cloudEnabled && (!username.includes('@') || pin.length < 6)) {
+      setError("Enter a valid email and a password of at least 6 characters.");
+      return;
+    }
+    setSubmitting(true);
+    const result = await login(username.trim(), pin || undefined);
+    setSubmitting(false);
+    if (!result) setError(cloudEnabled ? "Could not sign in or create the account." : "Incorrect PIN.");
+  }, [username, pin, login, cloudEnabled]);
 
   const handleNewUser = useCallback(() => {
     setIsNewUser(true); setUsername(""); setPin(""); setError("");
@@ -96,7 +103,7 @@ export function WelcomeScreen() {
         <Button size="lg" onClick={() => setShowLogin(true)} className="hero-cta">
           {s.startLearning}
         </Button>
-        {users.length > 0 && (
+        {!cloudEnabled && users.length > 0 && (
           <p className="returning-hint">Welcome back! Choose your profile or start fresh.</p>
         )}
       </section>
@@ -159,14 +166,14 @@ export function WelcomeScreen() {
             <button className="modal-close" onClick={() => setShowLogin(false)} aria-label="Close">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </button>
-            {isNewUser ? (
+            {isNewUser || cloudEnabled ? (
               <>
-                <h2>{s.newPlayer}</h2>
-                <input className="input" type="text" placeholder={s.username} value={username} onChange={(e) => setUsername(e.target.value)} autoFocus />
-                <input className="input" type="password" placeholder={s.pin} value={pin} onChange={(e) => setPin(e.target.value)} />
+                <h2>{cloudEnabled ? 'Cloud account' : s.newPlayer}</h2>
+                <input className="input" type={cloudEnabled ? 'email' : 'text'} placeholder={cloudEnabled ? 'Email' : s.username} value={username} onChange={(e) => setUsername(e.target.value)} autoFocus />
+                <input className="input" type="password" placeholder={cloudEnabled ? 'Password (6+ characters)' : s.pin} value={pin} onChange={(e) => setPin(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleLogin()} />
                 {error && <p className="login-error">{error}</p>}
-                <Button fullWidth onClick={handleLogin}>{s.login}</Button>
-                <Button variant="ghost" fullWidth onClick={() => setIsNewUser(false)}>{s.back}</Button>
+                <Button fullWidth loading={submitting} onClick={() => void handleLogin()}>{cloudEnabled ? 'Continue' : s.login}</Button>
+                {!cloudEnabled && <Button variant="ghost" fullWidth onClick={() => setIsNewUser(false)}>{s.back}</Button>}
               </>
             ) : (
               <>
@@ -186,7 +193,7 @@ export function WelcomeScreen() {
                     <p className="pin-label">Enter PIN for <strong>{username}</strong></p>
                     <input className="input" type="password" placeholder="PIN" value={pin} onChange={(e) => setPin(e.target.value)} autoFocus onKeyDown={(e) => e.key === "Enter" && handleLogin()} />
                     {error && <p className="login-error">{error}</p>}
-                    <Button fullWidth onClick={handleLogin}>{s.login}</Button>
+                    <Button fullWidth loading={submitting} onClick={() => void handleLogin()}>{s.login}</Button>
                   </div>
                 )}
                 <Button variant="secondary" fullWidth onClick={handleNewUser}>{s.newPlayer}</Button>

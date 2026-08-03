@@ -86,6 +86,24 @@ export interface UserProfile {
   username: string;
   pin: string | null;
   createdAt: string;
+  id?: string;
+  email?: string;
+}
+
+export interface UserProgressState {
+  activeModuleId: string | null;
+  activePhaseId: string | null;
+  activeQuestionIndex: number;
+  progress: PhaseProgress[];
+  errorLog: ErrorEntry[];
+}
+
+export interface CloudAdminUser {
+  id: string;
+  username: string;
+  createdAt: string;
+  updatedAt: string;
+  state: UserProgressState;
 }
 
 export interface PhaseProgress {

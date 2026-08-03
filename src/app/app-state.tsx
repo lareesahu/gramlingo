@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════ */
 
 import { createContext, useContext } from 'react';
-import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress } from '../game/types';
+import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress, CloudAdminUser } from '../game/types';
 
 export interface AppContextType extends AppState {
   // Navigation
@@ -13,10 +13,13 @@ export interface AppContextType extends AppState {
   setLanguage: (lang: Language) => void;
 
   // Auth
-  login: (username: string, pin?: string) => boolean;
+  login: (username: string, pin?: string) => Promise<boolean>;
   logout: () => void;
   getUsers: () => UserProfile[];
   getUserModuleProgress: (username: string, moduleId: string) => number;
+  cloudEnabled: boolean;
+  cloudSyncStatus: 'local' | 'syncing' | 'synced' | 'error';
+  getCloudAdminUsers: () => Promise<CloudAdminUser[]>;
 
   // Progress
   updateProgress: (phaseId: string, moduleId: string, score: number) => void;
