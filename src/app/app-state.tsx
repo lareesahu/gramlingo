@@ -16,6 +16,7 @@ export interface AppContextType extends AppState {
   login: (username: string, pin?: string) => boolean;
   logout: () => void;
   getUsers: () => UserProfile[];
+  getUserModuleProgress: (username: string, moduleId: string) => number;
 
   // Progress
   updateProgress: (phaseId: string, moduleId: string, score: number) => void;

@@ -12,7 +12,7 @@ import { GAME_DATA } from '../game/data';
 import './AdminScreen.css';
 
 export function AdminScreen() {
-  const { language, getUsers, isUserLocked, toggleUserLock, isModuleLocked, toggleModuleLock, getModuleProgress, exportData } = useAppContext();
+  const { language, getUsers, isUserLocked, toggleUserLock, isModuleLocked, toggleModuleLock, getUserModuleProgress, exportData } = useAppContext();
   const s = getStrings(language);
     const [users] = useState(() => getUsers());
   const [copied, setCopied] = useState(false);
@@ -57,8 +57,8 @@ export function AdminScreen() {
           </div>
           {users.map((user: any) => {
             const locked = isUserLocked(user.username);
-            const clausesPct = getModuleProgress('clauses');
-            const prepPct = getModuleProgress('prepositions');
+            const clausesPct = getUserModuleProgress(user.username, 'clauses');
+            const prepPct = getUserModuleProgress(user.username, 'prepositions');
             const avgPct = Math.round((clausesPct + prepPct) / 2);
             const isExpanded = expandedUser === user.username;
 
