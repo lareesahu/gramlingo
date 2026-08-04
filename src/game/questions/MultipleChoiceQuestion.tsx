@@ -2,6 +2,28 @@
 import type { MultipleChoiceQuestion, QuestionResult, Language } from "../types";
 import "./MultipleChoiceQuestion.css";
 
+/**
+ * Normalize an answer/option string for comparison:
+ * strip HTML tags, collapse whitespace, trim, lowercase.
+ */
+export function normalizeAnswer(s: string): string {
+  return s
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+/**
+ * Exact (normalized) answer match. Never substring matching —
+ * substring matching accepted wrong options (D9 defect: 49 MC questions
+ * where e.g. "go" passed for "goes" or "a" passed for "an").
+ */
+export function answerMatches(opt: string, answers: string[]): boolean {
+  const n = normalizeAnswer(opt);
+  return answers.some((a: string) => normalizeAnswer(a) === n);
+}
+
 interface Props {
   question: MultipleChoiceQuestion;
   language: Language;
@@ -21,9 +43,7 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
   const [resultSent, setResultSent] = useState(false);
 
   const selectedText = selectedOption !== null ? options[selectedOption] : "";
-  const isCorrect = correctAnswers.some(
-    (a: string) => selectedText.includes(a) || a.includes(selectedText)
-  );
+  const isCorrect = answerMatches(selectedText, correctAnswers);
 
   const getExplanation = (optIndex: number): string => {
     const tip = isZh ? question.tZh : isEs ? (question as any).tEs : question.t;
@@ -99,7 +119,7 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
           if (!submitted) {
             if (i === selectedOption) cls += " option-btn--selected";
           } else {
-            if (correctAnswers.some((a: string) => opt.includes(a) || a.includes(opt))) {
+            if (answerMatches(opt, correctAnswers)) {
               cls += " option-btn--correct";
             } else if (i === selectedOption) {
               cls += " option-btn--wrong";
@@ -123,7 +143,7 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
       </div>
 
       {submitted && revealedOption !== null && (
-        <div className={`feedback ${correctAnswers.some((a: string) => options[revealedOption]?.includes(a) || a.includes(options[revealedOption])) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
+        <div className={`feedback ${answerMatches(options[revealedOption] ?? "", correctAnswers) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
           <div className="feedback-label">
             {revealedOption === selectedOption
               ? (isZh ? "你的答案" : isEs ? "Tu respuesta" : "Your answer")
