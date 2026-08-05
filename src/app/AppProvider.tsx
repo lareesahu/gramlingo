@@ -10,7 +10,8 @@ import {
   cloudEnabled,
   fetchCloudAdminUsers,
   restoreCloudIdentity,
-  signInOrCreate,
+  signIn,
+  createAccount as createCloudAccount,
   signOutCloud,
   syncCloudState,
   requestCloudPasswordReset,
@@ -207,7 +208,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (cloudEnabled) {
       try {
         setCloudSyncStatus('syncing');
-        const identity = await signInOrCreate(username, pin || '');
+        const identity = await signIn(username, pin || '');
         setCurrentUser(identity.profile);
         setIsAdmin(identity.isAdmin);
         applyUserState(identity.state);
@@ -219,7 +220,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         if (err instanceof CloudAuthError && err.code !== 'unknown') {
           return { message: err.userMessage, code: err.code };
         }
-        return { message: 'Could not sign in or create the account.', code: null };
+        return { message: 'Could not sign in. Please try again.', code: null };
       }
     }
 
@@ -241,6 +242,29 @@ export function AppProvider({ children }: { children: ReactNode }) {
     setScreen('learning-path');
     return null;
   }, [applyUserState, getUsers]);
+
+  const createAccount = useCallback(async (email: string, password: string, name?: string): Promise<AuthError | null> => {
+    try {
+      setCloudSyncStatus('syncing');
+      const identity = await createCloudAccount(email, password, name);
+      if (!identity) {
+        // Project requires email confirmation — account created, waiting on the email.
+        return { message: 'Check your email to confirm your account, then log in.', code: 'confirmation_required' };
+      }
+      setCurrentUser(identity.profile);
+      setIsAdmin(identity.isAdmin);
+      applyUserState(identity.state);
+      setScreen('learning-path');
+      setCloudSyncStatus('synced');
+      return null;
+    } catch (err) {
+      setCloudSyncStatus('error');
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not create the account. Please try again.', code: null };
+    }
+  }, [applyUserState]);
 
   const logout = useCallback(() => {
     if (cloudEnabled) void signOutCloud();
@@ -542,7 +566,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
     cloudEnabled, cloudSyncStatus, getCloudAdminUsers,
-    cloudRecoveryPending, requestPasswordReset, resendConfirmation, completePasswordReset,
+    cloudRecoveryPending, createAccount, requestPasswordReset, resendConfirmation, completePasswordReset,
     updateProgress, getPhaseProgress, getModuleProgress, getUserModuleProgress, getModuleAttempted,
     addError, removeError, getErrorsByModule, getErrorsByPhase,
     startPhase, nextQuestion,

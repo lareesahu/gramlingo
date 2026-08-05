@@ -138,28 +138,33 @@ async function loadIdentity(user: User): Promise<CloudIdentity> {
 }
 
 /**
- * Sign in with email + password, or create the account on first use.
- * Throws CloudAuthError with a user-facing message on any failure.
+ * Sign in with email + password. Throws CloudAuthError with a user-facing
+ * message on any failure. Never falls back to creating an account — signup
+ * is a separate, explicit flow.
  */
-export async function signInOrCreate(email: string, password: string): Promise<CloudIdentity> {
+export async function signIn(email: string, password: string): Promise<CloudIdentity> {
   const supabase = requireClient();
+  const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+  if (error) throw toCloudAuthError(error);
+  return loadIdentity(data.user);
+}
 
-  const signedIn = await supabase.auth.signInWithPassword({ email, password });
-  if (signedIn.data.user) return loadIdentity(signedIn.data.user);
-  if (signedIn.error && describeAuthError(signedIn.error).code === 'email_not_confirmed') {
-    throw toCloudAuthError(signedIn.error);
-  }
-
-  const signedUp = await supabase.auth.signUp({
+/**
+ * Create a brand-new account (email + password). Returns null when the
+ * project requires email confirmation and the account is awaiting it —
+ * callers should route the user to a "check your email" step.
+ */
+export async function createAccount(email: string, password: string, name?: string): Promise<CloudIdentity | null> {
+  const supabase = requireClient();
+  const displayName = name?.trim() || email.split('@')[0];
+  const { data, error } = await supabase.auth.signUp({
     email,
     password,
-    options: { data: { username: email.split('@')[0] } },
+    options: { data: { username: displayName } },
   });
-  if (signedUp.error) throw toCloudAuthError(signedUp.error);
-  if (!signedUp.data.user || !signedUp.data.session) {
-    throw new CloudAuthError('confirmation_required', 'Check your email to confirm the new account, then log in.');
-  }
-  return loadIdentity(signedUp.data.user);
+  if (error) throw toCloudAuthError(error);
+  if (!data.user || !data.session) return null; // confirmation email required
+  return loadIdentity(data.user);
 }
 
 /** Send a password-reset email. Recovery link lands back on the app. */

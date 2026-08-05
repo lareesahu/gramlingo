@@ -20,6 +20,8 @@ export interface AppContextType extends AppState {
 
   // Auth
   login: (username: string, pin?: string) => Promise<AuthError | null>;
+  /** Create a new account. Returns { code: 'confirmation_required' } when the email must be confirmed first. */
+  createAccount: (email: string, password: string, name?: string) => Promise<AuthError | null>;
   /** True when the app was opened from a Supabase password-reset link. */
   cloudRecoveryPending: boolean;
   requestPasswordReset: (email: string) => Promise<AuthError | null>;

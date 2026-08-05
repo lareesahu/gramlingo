@@ -16,7 +16,8 @@ describe('AdminScreen', () => {
     await user.click(await screen.findByText('New Player'));
     await user.type(screen.getByPlaceholderText('Username'), 'admin');
     await user.type(screen.getByPlaceholderText('PIN (optional)'), 'gramlin');
-    await user.click(screen.getByText('Log In'));
+    await user.type(screen.getByPlaceholderText('Confirm PIN'), 'gramlin');
+    await user.click(screen.getByRole('button', { name: 'Log In' }));
 
     await user.click(await screen.findByRole('button', { name: 'Admin Panel' }));
     expect(screen.getByRole('heading', { name: /Admin Panel/ })).toBeInTheDocument();

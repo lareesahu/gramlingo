@@ -2,10 +2,11 @@
    GRAMLINGO — Landing Page
    ═══════════════════════════════════════════════════════════ */
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useAppContext } from "../app/app-state";
 import { Button } from "../components/Button/Button";
 import { Gramlin } from "../components/Gramlin/Gramlin";
+import { AuthScreen } from "../components/AuthScreen/AuthScreen";
 import { useDragScroll } from "../hooks/useDragScroll";
 import { GAME_DATA } from "../game/data";
 import { getStrings } from "../i18n/i18n";
@@ -28,104 +29,19 @@ const STEPS = [
 ];
 
 export function WelcomeScreen() {
-  const {
-    language, login, getUsers, cloudEnabled,
-    cloudRecoveryPending, requestPasswordReset, resendConfirmation, completePasswordReset,
-  } = useAppContext();
+  const { language, cloudRecoveryPending } = useAppContext();
   const s = getStrings(language);
 
-  const [users, setUsers] = useState<ReturnType<typeof getUsers>>([]);
-  const [showLogin, setShowLogin] = useState(false);
-  const [username, setUsername] = useState("");
-  const [pin, setPin] = useState("");
-  const [isNewUser, setIsNewUser] = useState(false);
-  const [error, setError] = useState("");
-  const [notice, setNotice] = useState("");
-  const [lastAuthCode, setLastAuthCode] = useState<string | null>(null);
-  const [submitting, setSubmitting] = useState(false);
-  const [newPassword, setNewPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [recovering, setRecovering] = useState(false);
+  const [showAuth, setShowAuth] = useState(false);
   const [catchIdx, setCatchIdx] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
   const dragScroll = useDragScroll<HTMLDivElement>();
-
-  useEffect(() => { setUsers(getUsers()); }, [getUsers]);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCatchIdx((prev) => (prev + 1) % CATCHPHRASES.length);
     }, CATCHPHRASE_INTERVAL);
     return () => clearInterval(timer);
-  }, []);
-
-  useEffect(() => {
-    if (!showLogin) return;
-    const handler = (e: KeyboardEvent) => { if (e.key === "Escape") setShowLogin(false); };
-    document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
-  }, [showLogin]);
-
-  const handleSelectUser = useCallback((name: string) => {
-    const user = users.find((u: any) => u.username === name);
-    if (user?.pin) { setUsername(name); setIsNewUser(false); }
-    else { void login(name); }
-  }, [users, login]);
-
-  const handleLogin = useCallback(async () => {
-    setError("");
-    setNotice("");
-    if (!username.trim()) { setError(cloudEnabled ? "Please enter an email." : "Please enter a username."); return; }
-    if (cloudEnabled && (!username.includes('@') || pin.length < 6)) {
-      setError("Enter a valid email and a password of at least 6 characters.");
-      return;
-    }
-    setSubmitting(true);
-    const authError = await login(username.trim(), pin || undefined);
-    setSubmitting(false);
-    setLastAuthCode(authError?.code || null);
-    if (authError) setError(authError.message);
-  }, [username, pin, login, cloudEnabled]);
-
-  const handleForgotPassword = useCallback(async () => {
-    setError("");
-    setNotice("");
-    if (!username.trim() || !username.includes('@')) { setError("Enter your email first, then use 'Forgot password?'."); return; }
-    setSubmitting(true);
-    const authError = await requestPasswordReset(username.trim());
-    setSubmitting(false);
-    if (authError) setError(authError.message);
-    else setNotice("Reset link sent — check your email (and spam).");
-  }, [username, requestPasswordReset]);
-
-  const handleResendConfirmation = useCallback(async () => {
-    setError("");
-    setNotice("");
-    if (!username.trim() || !username.includes('@')) { setError("Enter your email first, then resend the confirmation."); return; }
-    setSubmitting(true);
-    const authError = await resendConfirmation(username.trim());
-    setSubmitting(false);
-    if (authError) setError(authError.message);
-    else setNotice("Confirmation email sent — check your inbox (and spam).");
-  }, [username, resendConfirmation]);
-
-  const handleRecoverySubmit = useCallback(async () => {
-    setError("");
-    setNotice("");
-    if (newPassword.length < 6) { setError("Password must be at least 6 characters."); return; }
-    if (newPassword !== confirmPassword) { setError("Passwords do not match."); return; }
-    setRecovering(true);
-    const authError = await completePasswordReset(newPassword);
-    setRecovering(false);
-    if (authError) setError(authError.message);
-  }, [newPassword, confirmPassword, completePasswordReset]);
-
-  const handleNewUser = useCallback(() => {
-    setIsNewUser(true); setUsername(""); setPin(""); setError("");
-  }, []);
-
-  const scrollGallery = useCallback((dir: "left" | "right") => {
-    galleryRef.current?.scrollBy({ left: dir === "left" ? -320 : 320, behavior: "smooth" });
   }, []);
 
   const orderedModules = [...GAME_DATA.modules].sort((a, b) => a.sort - b.sort);
@@ -145,12 +61,9 @@ export function WelcomeScreen() {
             </span>
           ))}
         </div>
-        <Button size="lg" onClick={() => setShowLogin(true)} className="hero-cta">
+        <Button size="lg" onClick={() => setShowAuth(true)} className="hero-cta">
           {s.startLearning}
         </Button>
-        {!cloudEnabled && users.length > 0 && (
-          <p className="returning-hint">Welcome back! Choose your profile or start fresh.</p>
-        )}
       </section>
 
       {/* ── Module Gallery ── */}
@@ -158,7 +71,7 @@ export function WelcomeScreen() {
         <h2 className="section-heading">12 Grammar Worlds</h2>
         <p className="section-sub">From relative clauses to advanced expressions — every module is a new adventure.</p>
         <div className="gallery-wrap">
-          <button className="gallery-arrow gallery-arrow--left" onClick={() => scrollGallery("left")} aria-label="Scroll left">
+          <button className="gallery-arrow gallery-arrow--left" onClick={() => galleryRef.current?.scrollBy({ left: -320, behavior: "smooth" })} aria-label="Scroll left">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
           <div className="module-gallery" ref={galleryRef} {...dragScroll}>
@@ -174,7 +87,7 @@ export function WelcomeScreen() {
               </article>
             ))}
           </div>
-          <button className="gallery-arrow gallery-arrow--right" onClick={() => scrollGallery("right")} aria-label="Scroll right">
+          <button className="gallery-arrow gallery-arrow--right" onClick={() => galleryRef.current?.scrollBy({ left: 320, behavior: "smooth" })} aria-label="Scroll right">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 18l6-6-6-6"/></svg>
           </button>
         </div>
@@ -199,82 +112,14 @@ export function WelcomeScreen() {
       <section className="bottom-cta">
         <h2>Ready to master grammar?</h2>
         <p>{GAME_DATA.phases.filter(p => p.q.length > 0).length} phases. {GAME_DATA.phases.reduce((t, p) => t + p.q.length, 0)} hand-crafted questions.</p>
-        <Button size="lg" onClick={() => setShowLogin(true)}>
+        <Button size="lg" onClick={() => setShowAuth(true)}>
           {s.startLearning}
         </Button>
       </section>
 
-      {/* ── Recovery Panel (opened from a password-reset link) ── */}
-      {cloudRecoveryPending && (
-        <div className="login-overlay" onClick={(e) => { if (e.target === e.currentTarget) setShowLogin(false); }}>
-          <div className="login-modal" role="dialog" aria-modal="true">
-            <h2>Set a new password</h2>
-            <p className="login-hint">Choose a new password for your cloud account.</p>
-            <input className="input" type="password" placeholder="New password (6+ characters)" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} autoFocus />
-            <input className="input" type="password" placeholder="Confirm new password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleRecoverySubmit()} />
-            {error && <p className="login-error">{error}</p>}
-            {notice && <p className="login-notice">{notice}</p>}
-            <Button fullWidth loading={recovering} onClick={() => void handleRecoverySubmit()}>Update password</Button>
-          </div>
-        </div>
-      )}
-
-      {/* ── Login Modal ── */}
-      {showLogin && (
-        <div className="login-overlay" onClick={(e) => { if (e.target === e.currentTarget) setShowLogin(false); }}>
-          <div className="login-modal" role="dialog" aria-modal="true">
-            <button className="modal-close" onClick={() => setShowLogin(false)} aria-label="Close">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-            </button>
-            {isNewUser || cloudEnabled ? (
-              <>
-                <h2>{cloudEnabled ? 'Cloud account' : s.newPlayer}</h2>
-                {cloudEnabled && <p className="login-hint">New here? Enter any email and a password (6+ characters) — your account is created automatically.</p>}
-                <input className="input" type={cloudEnabled ? 'email' : 'text'} placeholder={cloudEnabled ? 'Email' : s.username} value={username} onChange={(e) => setUsername(e.target.value)} autoFocus />
-                <input className="input" type="password" placeholder={cloudEnabled ? 'Password (6+ characters)' : s.pin} value={pin} onChange={(e) => setPin(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleLogin()} />
-                {error && <p className="login-error">{error}</p>}
-                {notice && <p className="login-notice">{notice}</p>}
-                <Button fullWidth loading={submitting} onClick={() => void handleLogin()}>{cloudEnabled ? 'Continue' : s.login}</Button>
-                {cloudEnabled && (
-                  <div className="login-links">
-                    <button type="button" className="login-link" onClick={() => void handleForgotPassword()} disabled={submitting}>
-                      Forgot password?
-                    </button>
-                    {lastAuthCode === 'email_not_confirmed' && (
-                      <button type="button" className="login-link" onClick={() => void handleResendConfirmation()} disabled={submitting}>
-                        Resend confirmation email
-                      </button>
-                    )}
-                  </div>
-                )}
-                {!cloudEnabled && <Button variant="ghost" fullWidth onClick={() => setIsNewUser(false)}>{s.back}</Button>}
-              </>
-            ) : (
-              <>
-                <h2>{s.welcome}</h2>
-                {users.length > 0 && (
-                  <div className="user-list">
-                    {users.map((u: any) => (
-                      <button key={u.username} className="user-chip" onClick={() => handleSelectUser(u.username)}>
-                        <span className="user-avatar">{u.username[0].toUpperCase()}</span>
-                        <span className="user-name">{u.username}</span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-                {username && !isNewUser && users.find((u: any) => u.username === username)?.pin && (
-                  <div className="pin-form animate-slide-up">
-                    <p className="pin-label">Enter PIN for <strong>{username}</strong></p>
-                    <input className="input" type="password" placeholder="PIN" value={pin} onChange={(e) => setPin(e.target.value)} autoFocus onKeyDown={(e) => e.key === "Enter" && handleLogin()} />
-                    {error && <p className="login-error">{error}</p>}
-                    <Button fullWidth loading={submitting} onClick={() => void handleLogin()}>{s.login}</Button>
-                  </div>
-                )}
-                <Button variant="secondary" fullWidth onClick={handleNewUser}>{s.newPlayer}</Button>
-              </>
-            )}
-          </div>
-        </div>
+      {/* ── Auth module (log in / create account / forgot password) ── */}
+      {(showAuth || cloudRecoveryPending) && (
+        <AuthScreen open={showAuth || cloudRecoveryPending} onClose={() => setShowAuth(false)} />
       )}
     </div>
   );
