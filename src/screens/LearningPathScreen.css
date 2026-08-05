@@ -88,6 +88,7 @@
   flex: 1;
   cursor: grab;
   touch-action: pan-y;
+  align-items: stretch;
 }
 
 .lp__grid.is-dragging,
@@ -101,6 +102,8 @@
 /* === Card === */
 .lp__card {
   flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   background: #fef9f0;
@@ -138,15 +141,20 @@
 .lp__collapsed {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .lp__card--open .lp__collapsed {
   display: none;
 }
 
-/* Cover image */
+/* Cover image — grows to fill the card when a sibling card is open, so
+   every card reads the same height whether flipped or not. */
 .lp__img-wrap {
   aspect-ratio: 4/3;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow: hidden;
   position: relative;
   background: #e8dcc8;
@@ -193,6 +201,7 @@
 /* Card body */
 .lp__card-body {
   padding: 12px 14px 14px;
+  flex-shrink: 0;
 }
 
 .lp__card-title {
@@ -217,6 +226,7 @@
   display: flex;
   flex-direction: column;
   padding: 16px 14px 14px;
+  flex: 1;
   /* Cap the panel so long modules (100 phases) can't stretch the whole row.
      Phases scroll internally; flex-stretch keeps every card the same height. */
   max-height: 460px;
