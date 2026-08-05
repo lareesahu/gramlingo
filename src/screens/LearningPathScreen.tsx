@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { useAppContext } from '../app/app-state';
 import { Button } from '../components/Button/Button';
+import { useDragScroll } from '../hooks/useDragScroll';
 import { getStrings } from '../i18n/i18n';
 import { GAME_DATA } from '../game/data';
 // types used implicitly in JSX
@@ -12,6 +13,7 @@ export function LearningPathScreen() {
   const isZh = language === 'zh';
   const [openModule, setOpenModule] = useState<string | null>(activeModuleId);
   const gridRef = useRef<HTMLDivElement>(null);
+  const dragScroll = useDragScroll<HTMLDivElement>();
 
   const { modules, phases, phaseLockOrder } = GAME_DATA;
   const totalCompleted = progress.filter(p => p.completed).length;
@@ -47,7 +49,7 @@ export function LearningPathScreen() {
         <button type="button" className="lp__grid-arrow lp__grid-arrow--left" onClick={() => scrollGrid(-1)} aria-label="Previous modules">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
-        <div className="lp__grid" ref={gridRef}>
+        <div className="lp__grid" ref={gridRef} {...dragScroll}>
           {modules.map(mod => {
             const modPhases = phases.filter(p => p.module === mod.id);
             const playablePhases = modPhases.filter(p => p.q.length > 0);
@@ -80,7 +82,7 @@ export function LearningPathScreen() {
               >
                 <div className="lp__collapsed">
                   <div className="lp__img-wrap">
-                    <img src={coverSrc} alt={isZh ? mod.nameZh : mod.name} className="lp__img" loading="lazy" />
+                    <img src={coverSrc} alt={isZh ? mod.nameZh : mod.name} className="lp__img" loading="lazy" draggable={false} />
                     {isDone && <span className="lp__badge lp__badge--done">{isZh ? '已完成' : 'Done'}</span>}
                     {isInProgress && <span className="lp__badge lp__badge--progress">{completed}/{playablePhases.length}</span>}
                     {!hasLessons && <span className="lp__badge lp__badge--planned">{s.comingSoon}</span>}

@@ -86,6 +86,14 @@
   scrollbar-width: none;
   padding: var(--space-1);
   flex: 1;
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.lp__grid.is-dragging,
+.lp__grid.is-dragging * {
+  cursor: grabbing !important;
+  user-select: none;
 }
 
 .lp__grid::-webkit-scrollbar { display: none; }
@@ -149,6 +157,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  pointer-events: none;
   transition: transform 0.3s;
 }
 
@@ -208,6 +217,9 @@
   display: flex;
   flex-direction: column;
   padding: 16px 14px 14px;
+  /* Cap the panel so long modules (100 phases) can't stretch the whole row.
+     Phases scroll internally; flex-stretch keeps every card the same height. */
+  max-height: 460px;
   min-height: 300px;
 }
 
@@ -235,6 +247,7 @@
   gap: 3px;
   flex: 1;
   overflow-y: auto;
+  min-height: 0;
 }
 
 .lp__phase {

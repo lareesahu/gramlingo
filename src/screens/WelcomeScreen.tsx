@@ -6,6 +6,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { useAppContext } from "../app/app-state";
 import { Button } from "../components/Button/Button";
 import { Gramlin } from "../components/Gramlin/Gramlin";
+import { useDragScroll } from "../hooks/useDragScroll";
 import { GAME_DATA } from "../game/data";
 import { getStrings } from "../i18n/i18n";
 import "./WelcomeScreen.css";
@@ -47,6 +48,7 @@ export function WelcomeScreen() {
   const [recovering, setRecovering] = useState(false);
   const [catchIdx, setCatchIdx] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
+  const dragScroll = useDragScroll<HTMLDivElement>();
 
   useEffect(() => { setUsers(getUsers()); }, [getUsers]);
 
@@ -159,11 +161,11 @@ export function WelcomeScreen() {
           <button className="gallery-arrow gallery-arrow--left" onClick={() => scrollGallery("left")} aria-label="Scroll left">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
-          <div className="module-gallery" ref={galleryRef}>
+          <div className="module-gallery" ref={galleryRef} {...dragScroll}>
             {orderedModules.map((mod) => (
               <article key={mod.id} className="module-card">
                 <div className="module-card-cover">
-                  <img src={`${BASE_URL}assets/covers/cover-${mod.id}.jpg`} alt={mod.name} loading="lazy" />
+                  <img src={`${BASE_URL}assets/covers/cover-${mod.id}.jpg`} alt={mod.name} loading="lazy" draggable={false} />
                 </div>
                 <div className="module-card-body">
                   <h3>{mod.name}</h3>
@@ -227,6 +229,7 @@ export function WelcomeScreen() {
             {isNewUser || cloudEnabled ? (
               <>
                 <h2>{cloudEnabled ? 'Cloud account' : s.newPlayer}</h2>
+                {cloudEnabled && <p className="login-hint">New here? Enter any email and a password (6+ characters) — your account is created automatically.</p>}
                 <input className="input" type={cloudEnabled ? 'email' : 'text'} placeholder={cloudEnabled ? 'Email' : s.username} value={username} onChange={(e) => setUsername(e.target.value)} autoFocus />
                 <input className="input" type="password" placeholder={cloudEnabled ? 'Password (6+ characters)' : s.pin} value={pin} onChange={(e) => setPin(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleLogin()} />
                 {error && <p className="login-error">{error}</p>}
