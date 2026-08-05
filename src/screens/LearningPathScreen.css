@@ -87,8 +87,9 @@
   padding: var(--space-1);
   flex: 1;
   cursor: grab;
-  touch-action: pan-y;
   align-items: stretch;
+  /* Cards fill the view height (swipe-deck feel) instead of a thin strip. */
+  min-height: clamp(460px, calc(100dvh - 170px), 1100px);
 }
 
 .lp__grid.is-dragging,
@@ -229,7 +230,7 @@
   flex: 1;
   /* Cap the panel so long modules (100 phases) can't stretch the whole row.
      Phases scroll internally; flex-stretch keeps every card the same height. */
-  max-height: 460px;
+  max-height: clamp(300px, calc(100dvh - 230px), 1040px);
   min-height: 300px;
 }
 

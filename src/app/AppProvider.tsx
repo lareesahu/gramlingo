@@ -488,9 +488,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (!phase?.q.length) return;
     setActiveModuleId(moduleId);
     setActivePhaseId(phaseId);
-    setActiveQuestionIndex(0);
+    // Resume an in-progress phase where the learner left off instead of
+    // making them redo it from question 1. Completed phases always restart.
+    const pp = progress.find((p) => p.phaseId === phaseId);
+    const canResume = activePhaseId === phaseId && activeQuestionIndex > 0 && !(pp?.completed);
+    setActiveQuestionIndex(canResume ? activeQuestionIndex : 0);
     setScreen('lesson');
-  }, []);
+  }, [activePhaseId, activeQuestionIndex, progress]);
 
   const nextQuestion = useCallback(() => {
     setActiveQuestionIndex((prev: number) => prev + 1);

@@ -3,7 +3,8 @@ import { useRef, useCallback } from 'react';
 /**
  * Pointer-based drag-to-scroll for horizontal card carousels.
  * - Mouse: drag the track to scroll (native scrollbars hidden).
- * - Touch: native panning still wins (touch-action: pan-y on the track).
+ * - Touch: fully native — the browser handles swipe + snap + momentum,
+ *   the hook ignores non-mouse pointers so it can't fight the gesture.
  * - Trackpad: native horizontal scroll passes through untouched.
  *
  * IMPORTANT: we never call setPointerCapture — capturing the pointer
@@ -47,6 +48,8 @@ export function useDragScroll<T extends HTMLElement>() {
   }, [onWindowPointerMove]);
 
   const onPointerDown = useCallback((e: React.PointerEvent<T>) => {
+    // Touch: let the browser handle swipe natively (smoother + snap + momentum).
+    if (e.pointerType !== 'mouse') return;
     const el = e.currentTarget;
     drag.current = { pointerId: e.pointerId, startX: e.clientX, startScroll: el.scrollLeft, moved: false };
     elRef.current = el;
