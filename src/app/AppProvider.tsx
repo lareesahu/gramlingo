@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════ */
 
 import { useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
-import { AppContext } from './app-state';
+import { AppContext, type AuthError } from './app-state';
 import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language, UserProgressState } from '../game/types';
 import { GAME_DATA } from '../game/data';
 import {
@@ -13,6 +13,12 @@ import {
   signInOrCreate,
   signOutCloud,
   syncCloudState,
+  requestCloudPasswordReset,
+  resendCloudConfirmation,
+  updateCloudPassword,
+  hasRecoveryToken,
+  clearRecoveryHash,
+  CloudAuthError,
 } from '../storage/cloud';
 
 const STORAGE_KEY = 'gramlingo_state';
@@ -107,6 +113,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [cloudSyncStatus, setCloudSyncStatus] = useState<'local' | 'syncing' | 'synced' | 'error'>(
     cloudEnabled ? 'syncing' : 'local',
   );
+  const [cloudRecoveryPending, setCloudRecoveryPending] = useState(false);
   const cloudSyncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const applyUserState = useCallback((state: UserProgressState | null) => {
@@ -121,6 +128,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!cloudEnabled) return;
     let cancelled = false;
+
+    // Opened from a password-reset link — let the user set a new password first.
+    if (hasRecoveryToken()) {
+      setCloudRecoveryPending(true);
+      setCurrentUser(null);
+      setIsAdmin(false);
+      applyUserState(null);
+      setScreen('welcome');
+      setCloudSyncStatus('synced');
+      return () => { cancelled = true; };
+    }
+
     restoreCloudIdentity()
       .then((identity) => {
         if (cancelled) return;
@@ -184,7 +203,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     } catch { return []; }
   }, []);
 
-  const login = useCallback(async (username: string, pin?: string): Promise<boolean> => {
+  const login = useCallback(async (username: string, pin?: string): Promise<AuthError | null> => {
     if (cloudEnabled) {
       try {
         setCloudSyncStatus('syncing');
@@ -194,10 +213,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
         applyUserState(identity.state);
         setScreen('learning-path');
         setCloudSyncStatus('synced');
-        return true;
-      } catch {
+        return null;
+      } catch (err) {
         setCloudSyncStatus('error');
-        return false;
+        if (err instanceof CloudAuthError && err.code !== 'unknown') {
+          return { message: err.userMessage, code: err.code };
+        }
+        return { message: 'Could not sign in or create the account.', code: null };
       }
     }
 
@@ -209,7 +231,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       user = { username, pin: pin || null, createdAt: new Date().toISOString() };
       localStorage.setItem('gramlingo_users', JSON.stringify([...users, user]));
     } else if (user.pin && user.pin !== pin) {
-      return false; // Wrong PIN
+      return { message: 'Incorrect PIN.', code: 'invalid_pin' }; // Wrong PIN
     }
 
     const userState = loadUserState(user.username) || emptyUserState();
@@ -217,7 +239,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     applyUserState(userState);
     setIsAdmin(username === 'admin' && pin === 'gramlin');
     setScreen('learning-path');
-    return true;
+    return null;
   }, [applyUserState, getUsers]);
 
   const logout = useCallback(() => {
@@ -234,6 +256,56 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const getCloudAdminUsers = useCallback(() => fetchCloudAdminUsers(), []);
+
+  // ── Cloud auth helpers (password reset / confirmation resend / recovery) ──
+  const requestPasswordReset = useCallback(async (email: string): Promise<AuthError | null> => {
+    try {
+      await requestCloudPasswordReset(email);
+      return null;
+    } catch (err) {
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not send the reset link. Try again.', code: null };
+    }
+  }, []);
+
+  const resendConfirmation = useCallback(async (email: string): Promise<AuthError | null> => {
+    try {
+      await resendCloudConfirmation(email);
+      return null;
+    } catch (err) {
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not resend the confirmation email. Try again.', code: null };
+    }
+  }, []);
+
+  const completePasswordReset = useCallback(async (newPassword: string): Promise<AuthError | null> => {
+    try {
+      await updateCloudPassword(newPassword);
+      clearRecoveryHash();
+      const identity = await restoreCloudIdentity();
+      if (!identity) {
+        setCloudRecoveryPending(false);
+        return { message: 'Password updated, but your session could not be restored. Log in with your new password.', code: null };
+      }
+      setCurrentUser(identity.profile);
+      setIsAdmin(identity.isAdmin);
+      applyUserState(identity.state);
+      setCloudRecoveryPending(false);
+      setScreen('learning-path');
+      setCloudSyncStatus('synced');
+      return null;
+    } catch (err) {
+      setCloudSyncStatus('error');
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not update your password. Please try again.', code: null };
+    }
+  }, [applyUserState]);
 
   // ── User Lock ──
   const isUserLocked = useCallback((username: string): boolean => {
@@ -470,6 +542,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
     cloudEnabled, cloudSyncStatus, getCloudAdminUsers,
+    cloudRecoveryPending, requestPasswordReset, resendConfirmation, completePasswordReset,
     updateProgress, getPhaseProgress, getModuleProgress, getUserModuleProgress, getModuleAttempted,
     addError, removeError, getErrorsByModule, getErrorsByPhase,
     startPhase, nextQuestion,

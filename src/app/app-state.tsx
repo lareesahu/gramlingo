@@ -5,6 +5,12 @@
 import { createContext, useContext } from 'react';
 import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress, CloudAdminUser } from '../game/types';
 
+/** Auth failure surfaced to the UI. `null` on the login result means success. */
+export interface AuthError {
+  message: string;
+  code: string | null;
+}
+
 export interface AppContextType extends AppState {
   // Navigation
   navigateTo: (screen: Screen) => void;
@@ -13,7 +19,12 @@ export interface AppContextType extends AppState {
   setLanguage: (lang: Language) => void;
 
   // Auth
-  login: (username: string, pin?: string) => Promise<boolean>;
+  login: (username: string, pin?: string) => Promise<AuthError | null>;
+  /** True when the app was opened from a Supabase password-reset link. */
+  cloudRecoveryPending: boolean;
+  requestPasswordReset: (email: string) => Promise<AuthError | null>;
+  resendConfirmation: (email: string) => Promise<AuthError | null>;
+  completePasswordReset: (newPassword: string) => Promise<AuthError | null>;
   logout: () => void;
   getUsers: () => UserProfile[];
   getUserModuleProgress: (username: string, moduleId: string) => number;

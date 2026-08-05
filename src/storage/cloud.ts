@@ -7,6 +7,11 @@ const publishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY?.trim()
 
 export const cloudEnabled = Boolean(url && publishableKey);
 
+/** Canonical app URL used for auth email redirects (confirmation + password reset). */
+export const APP_REDIRECT_URL = typeof window !== 'undefined'
+  ? `${window.location.origin}${import.meta.env.BASE_URL}`
+  : 'https://lareesahu.github.io/gramlingo/';
+
 const client = cloudEnabled
   ? createClient(url!, publishableKey!, {
       auth: { persistSession: true, autoRefreshToken: true },
@@ -17,6 +22,54 @@ export interface CloudIdentity {
   profile: UserProfile;
   state: UserProgressState | null;
   isAdmin: boolean;
+}
+
+/** Typed auth failure with a user-facing message and a stable machine code. */
+export class CloudAuthError extends Error {
+  code: string;
+  userMessage: string;
+
+  constructor(code: string, userMessage: string) {
+    super(userMessage);
+    this.name = 'CloudAuthError';
+    this.code = code;
+    this.userMessage = userMessage;
+  }
+}
+
+/** Map a Supabase auth error to a stable code + friendly message. */
+export function describeAuthError(err: unknown): { code: string | null; message: string } {
+  const code = (err as { code?: string })?.code || (err as { error_code?: string })?.error_code || '';
+  const msg = (err as { message?: string })?.message || (err as { msg?: string })?.msg || '';
+  const lower = `${code} ${msg}`.toLowerCase();
+
+  if (lower.includes('invalid_credentials') || lower.includes('invalid login credentials')) {
+    return { code: 'invalid_credentials', message: "That password isn't right for this account. Use 'Forgot password?' to reset it." };
+  }
+  if (lower.includes('email_not_confirmed') || lower.includes('email not confirmed')) {
+    return { code: 'email_not_confirmed', message: "This email isn't confirmed yet. Check your inbox (and spam) for the confirmation link, or resend it below." };
+  }
+  if (lower.includes('user_already_exists') || lower.includes('user already registered') || lower.includes('user_already_registered')) {
+    return { code: 'user_already_exists', message: "An account already exists for this email. Try the correct password or use 'Forgot password?'." };
+  }
+  if (lower.includes('over_email_send_rate_limit') || lower.includes('email rate limit exceeded')) {
+    return { code: 'rate_limited', message: 'Too many emails sent. Wait a few minutes and try again.' };
+  }
+  if (lower.includes('over_request_rate_limit') || lower.includes('over_rate_limit') || lower.includes('rate limit')) {
+    return { code: 'rate_limited', message: 'Too many attempts. Wait a few minutes and try again.' };
+  }
+  if (lower.includes('weak_password')) {
+    return { code: 'weak_password', message: 'Password must be at least 6 characters.' };
+  }
+  if (lower.includes('validation_failed') || lower.includes('signup_disabled') || lower.includes('provider_disabled')) {
+    return { code: 'validation_failed', message: 'This email or password is not accepted. Try a different email or a stronger password.' };
+  }
+  return { code: code || null, message: 'Something went wrong. Please try again.' };
+}
+
+function toCloudAuthError(err: unknown): CloudAuthError {
+  const { code, message } = describeAuthError(err);
+  return new CloudAuthError(code || 'unknown', message);
 }
 
 function requireClient() {
@@ -84,21 +137,76 @@ async function loadIdentity(user: User): Promise<CloudIdentity> {
   };
 }
 
+/**
+ * Sign in with email + password, or create the account on first use.
+ * Throws CloudAuthError with a user-facing message on any failure.
+ */
 export async function signInOrCreate(email: string, password: string): Promise<CloudIdentity> {
   const supabase = requireClient();
+
   const signedIn = await supabase.auth.signInWithPassword({ email, password });
   if (signedIn.data.user) return loadIdentity(signedIn.data.user);
+  if (signedIn.error && describeAuthError(signedIn.error).code === 'email_not_confirmed') {
+    throw toCloudAuthError(signedIn.error);
+  }
 
   const signedUp = await supabase.auth.signUp({
     email,
     password,
     options: { data: { username: email.split('@')[0] } },
   });
-  if (signedUp.error) throw signedUp.error;
+  if (signedUp.error) throw toCloudAuthError(signedUp.error);
   if (!signedUp.data.user || !signedUp.data.session) {
-    throw new Error('Check your email to confirm the new account, then log in.');
+    throw new CloudAuthError('confirmation_required', 'Check your email to confirm the new account, then log in.');
   }
   return loadIdentity(signedUp.data.user);
+}
+
+/** Send a password-reset email. Recovery link lands back on the app. */
+export async function requestCloudPasswordReset(email: string): Promise<void> {
+  const supabase = requireClient();
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: APP_REDIRECT_URL,
+  });
+  if (error) throw toCloudAuthError(error);
+}
+
+/** Resend the sign-up confirmation email for an unconfirmed account. */
+export async function resendCloudConfirmation(email: string): Promise<void> {
+  const supabase = requireClient();
+  const { error } = await supabase.auth.resend({
+    type: 'signup',
+    email,
+    options: { emailRedirectTo: APP_REDIRECT_URL },
+  });
+  if (error) throw toCloudAuthError(error);
+}
+
+/** Set a new password during the recovery flow (recovery session must be active). */
+export async function updateCloudPassword(newPassword: string): Promise<void> {
+  const supabase = requireClient();
+  const { error } = await supabase.auth.updateUser({ password: newPassword });
+  if (error) throw toCloudAuthError(error);
+}
+
+/**
+ * True when the page was opened via a Supabase recovery link (#type=recovery).
+ * Captured at module scope because supabase-js strips `type=recovery` from the
+ * URL hash asynchronously on init — a live check alone would miss it.
+ */
+const INITIAL_URL_HASH = typeof window !== 'undefined' ? window.location.hash : '';
+export function hasRecoveryToken(): boolean {
+  return /[#&]type=recovery/.test(INITIAL_URL_HASH) || /[#&]type=recovery/.test(window.location.hash);
+}
+
+/** Strip the recovery/access token hash from the address bar after processing. */
+export function clearRecoveryHash(): void {
+  if (typeof window === 'undefined') return;
+  try {
+    window.history.replaceState(null, '', window.location.pathname + window.location.search);
+  } catch {
+    // history API unavailable (rare) — ignore
+  }
 }
 
 export async function restoreCloudIdentity(): Promise<CloudIdentity | null> {

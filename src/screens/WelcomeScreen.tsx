@@ -27,7 +27,10 @@ const STEPS = [
 ];
 
 export function WelcomeScreen() {
-  const { language, login, getUsers, cloudEnabled } = useAppContext();
+  const {
+    language, login, getUsers, cloudEnabled,
+    cloudRecoveryPending, requestPasswordReset, resendConfirmation, completePasswordReset,
+  } = useAppContext();
   const s = getStrings(language);
 
   const [users, setUsers] = useState<ReturnType<typeof getUsers>>([]);
@@ -36,7 +39,12 @@ export function WelcomeScreen() {
   const [pin, setPin] = useState("");
   const [isNewUser, setIsNewUser] = useState(false);
   const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
+  const [lastAuthCode, setLastAuthCode] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [recovering, setRecovering] = useState(false);
   const [catchIdx, setCatchIdx] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
 
@@ -64,16 +72,51 @@ export function WelcomeScreen() {
 
   const handleLogin = useCallback(async () => {
     setError("");
+    setNotice("");
     if (!username.trim()) { setError(cloudEnabled ? "Please enter an email." : "Please enter a username."); return; }
     if (cloudEnabled && (!username.includes('@') || pin.length < 6)) {
       setError("Enter a valid email and a password of at least 6 characters.");
       return;
     }
     setSubmitting(true);
-    const result = await login(username.trim(), pin || undefined);
+    const authError = await login(username.trim(), pin || undefined);
     setSubmitting(false);
-    if (!result) setError(cloudEnabled ? "Could not sign in or create the account." : "Incorrect PIN.");
+    setLastAuthCode(authError?.code || null);
+    if (authError) setError(authError.message);
   }, [username, pin, login, cloudEnabled]);
+
+  const handleForgotPassword = useCallback(async () => {
+    setError("");
+    setNotice("");
+    if (!username.trim() || !username.includes('@')) { setError("Enter your email first, then use 'Forgot password?'."); return; }
+    setSubmitting(true);
+    const authError = await requestPasswordReset(username.trim());
+    setSubmitting(false);
+    if (authError) setError(authError.message);
+    else setNotice("Reset link sent — check your email (and spam).");
+  }, [username, requestPasswordReset]);
+
+  const handleResendConfirmation = useCallback(async () => {
+    setError("");
+    setNotice("");
+    if (!username.trim() || !username.includes('@')) { setError("Enter your email first, then resend the confirmation."); return; }
+    setSubmitting(true);
+    const authError = await resendConfirmation(username.trim());
+    setSubmitting(false);
+    if (authError) setError(authError.message);
+    else setNotice("Confirmation email sent — check your inbox (and spam).");
+  }, [username, resendConfirmation]);
+
+  const handleRecoverySubmit = useCallback(async () => {
+    setError("");
+    setNotice("");
+    if (newPassword.length < 6) { setError("Password must be at least 6 characters."); return; }
+    if (newPassword !== confirmPassword) { setError("Passwords do not match."); return; }
+    setRecovering(true);
+    const authError = await completePasswordReset(newPassword);
+    setRecovering(false);
+    if (authError) setError(authError.message);
+  }, [newPassword, confirmPassword, completePasswordReset]);
 
   const handleNewUser = useCallback(() => {
     setIsNewUser(true); setUsername(""); setPin(""); setError("");
@@ -159,6 +202,21 @@ export function WelcomeScreen() {
         </Button>
       </section>
 
+      {/* ── Recovery Panel (opened from a password-reset link) ── */}
+      {cloudRecoveryPending && (
+        <div className="login-overlay" onClick={(e) => { if (e.target === e.currentTarget) setShowLogin(false); }}>
+          <div className="login-modal" role="dialog" aria-modal="true">
+            <h2>Set a new password</h2>
+            <p className="login-hint">Choose a new password for your cloud account.</p>
+            <input className="input" type="password" placeholder="New password (6+ characters)" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} autoFocus />
+            <input className="input" type="password" placeholder="Confirm new password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleRecoverySubmit()} />
+            {error && <p className="login-error">{error}</p>}
+            {notice && <p className="login-notice">{notice}</p>}
+            <Button fullWidth loading={recovering} onClick={() => void handleRecoverySubmit()}>Update password</Button>
+          </div>
+        </div>
+      )}
+
       {/* ── Login Modal ── */}
       {showLogin && (
         <div className="login-overlay" onClick={(e) => { if (e.target === e.currentTarget) setShowLogin(false); }}>
@@ -172,7 +230,20 @@ export function WelcomeScreen() {
                 <input className="input" type={cloudEnabled ? 'email' : 'text'} placeholder={cloudEnabled ? 'Email' : s.username} value={username} onChange={(e) => setUsername(e.target.value)} autoFocus />
                 <input className="input" type="password" placeholder={cloudEnabled ? 'Password (6+ characters)' : s.pin} value={pin} onChange={(e) => setPin(e.target.value)} onKeyDown={(e) => e.key === "Enter" && void handleLogin()} />
                 {error && <p className="login-error">{error}</p>}
+                {notice && <p className="login-notice">{notice}</p>}
                 <Button fullWidth loading={submitting} onClick={() => void handleLogin()}>{cloudEnabled ? 'Continue' : s.login}</Button>
+                {cloudEnabled && (
+                  <div className="login-links">
+                    <button type="button" className="login-link" onClick={() => void handleForgotPassword()} disabled={submitting}>
+                      Forgot password?
+                    </button>
+                    {lastAuthCode === 'email_not_confirmed' && (
+                      <button type="button" className="login-link" onClick={() => void handleResendConfirmation()} disabled={submitting}>
+                        Resend confirmation email
+                      </button>
+                    )}
+                  </div>
+                )}
                 {!cloudEnabled && <Button variant="ghost" fullWidth onClick={() => setIsNewUser(false)}>{s.back}</Button>}
               </>
             ) : (
