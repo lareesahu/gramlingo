@@ -2,6 +2,8 @@ name: Deploy
 on:
   push:
     branches: [v2-restore]
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
