@@ -1,0 +1,21 @@
+.home-screen { padding-bottom: 40px; }
+.home-title { font-size: 1.5rem; font-weight: 700; margin: 0 0 20px; color: var(--gl-text, #2d1b10); }
+
+.module-cards { display: flex; flex-direction: column; gap: 16px; }
+
+.module-overview-card { display: flex; align-items: center; gap: 16px; padding: 16px; background: var(--gl-surface, #fff); border: 1px solid var(--gl-border, #e0d5c7); border-radius: 16px; cursor: pointer; transition: all 0.2s; }
+.module-overview-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-color: var(--gl-primary, #ff8c42); transform: translateY(-1px); }
+
+.moc-gramlin { flex-shrink: 0; }
+.moc-body { flex: 1; min-width: 0; }
+.moc-body h3 { margin: 0 0 4px; font-size: 1.05rem; font-weight: 700; }
+.moc-desc { margin: 0 0 8px; font-size: 0.82rem; color: var(--gl-text-secondary, #888); line-height: 1.4; }
+.moc-stats { font-size: 0.78rem; color: var(--gl-text-secondary, #888); }
+.moc-action { flex-shrink: 0; }
+.moc-arrow { font-size: 20px; color: var(--gl-primary, #ff8c42); font-weight: 700; }
+
+/* ── Locked State ── */
+.module-overview-card.moc-locked { opacity: 0.5; cursor: not-allowed; pointer-events: auto; }
+.module-overview-card.moc-locked:hover { box-shadow: none; border-color: var(--gl-border, #e0d5c7); transform: none; }
+.module-overview-card.moc-locked .moc-body h3,
+.module-overview-card.moc-locked .moc-desc { opacity: 0.6; }

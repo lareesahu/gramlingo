@@ -1,0 +1,73 @@
+/* ═══════════════════════════════════════════════
+   GRAMLINGO — App Router (home + module pages)
+   ═══════════════════════════════════════════════ */
+
+import { useEffect } from 'react';
+import { useAppContext } from './app-state';
+import { AppShell } from '../components/AppShell/AppShell';
+import { LoadingScreen } from '../screens/LoadingScreen';
+import { WelcomeScreen } from '../screens/WelcomeScreen';
+import { LearningPathScreen } from '../screens/LearningPathScreen';
+import { ModuleScreen } from '../screens/ModuleScreen';
+import { LessonScreen } from '../screens/LessonScreen';
+import { CompletionScreen } from '../screens/CompletionScreen';
+import { ErrorLogScreen } from '../screens/ErrorLogScreen';
+import { AdminScreen } from '../screens/AdminScreen';
+
+const LOADED_FLAG = 'gramlingo_loaded_before';
+const LOAD_DURATION = 1500;
+
+export function App() {
+  const { screen, currentUser, navigateTo } = useAppContext();
+
+  // Loading screen mount: show 1.5s on first visit, then route to welcome
+  useEffect(() => {
+    if (screen === 'loading') {
+      const alreadyLoaded = localStorage.getItem(LOADED_FLAG);
+      if (alreadyLoaded) {
+        navigateTo('welcome');
+        return;
+      }
+      const timer = setTimeout(() => {
+        localStorage.setItem(LOADED_FLAG, 'true');
+        navigateTo('welcome');
+      }, LOAD_DURATION);
+      return () => clearTimeout(timer);
+    }
+  }, [screen, navigateTo]);
+
+  // Show loading screen
+  if (screen === 'loading') {
+    return <LoadingScreen />;
+  }
+
+  if (!currentUser && screen !== 'welcome') {
+    return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
+  }
+
+  switch (screen) {
+    case 'welcome':
+      return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
+
+    case 'learning-path':
+          return <AppShell><LearningPathScreen /></AppShell>;
+
+    case 'module':
+      return <AppShell backTo={() => navigateTo('learning-path')}><ModuleScreen /></AppShell>;
+
+    case 'lesson':
+      return <AppShell backTo={() => navigateTo('learning-path')}><LessonScreen /></AppShell>;
+
+    case 'completion':
+      return <AppShell backTo={() => navigateTo('learning-path')}><CompletionScreen /></AppShell>;
+
+    case 'error-log':
+      return <AppShell backTo={() => navigateTo('learning-path')}><ErrorLogScreen /></AppShell>;
+
+    case 'admin':
+      return <AppShell backTo={() => navigateTo('learning-path')}><AdminScreen /></AppShell>;
+
+    default:
+      return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
+  }
+}

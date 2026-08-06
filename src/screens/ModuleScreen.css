@@ -1,0 +1,25 @@
+.module-screen { padding-bottom: 40px; }
+.ms-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.ms-header h2 { margin: 0 0 4px; font-size: 1.3rem; font-weight: 700; }
+.ms-header p { margin: 0; font-size: 0.85rem; color: var(--gl-text-secondary, #888); }
+
+.ms-phase-list { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.ms-phase-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px; border-radius: 12px; background: var(--gl-bg, #fff5ee); border: 1px solid transparent; transition: all 0.15s; }
+.ms-phase-item:hover { border-color: var(--gl-primary, #ff8c42); background: rgba(255,140,66,0.05); }
+.ms-phase-item.locked { opacity: 0.5; background: #f5f0ea; }
+.ms-phase-item.locked:hover { border-color: transparent; }
+.ms-phase-item.done { background: #e8f5e9; }
+
+.ms-phase-info { display: flex; align-items: center; gap: 12px; }
+.ms-phase-num { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; background: var(--gl-primary, #ff8c42); color: #fff; flex-shrink: 0; }
+.ms-phase-num-locked { background: #ccc; }
+.ms-phase-num-locked::after { content: ''; display: block; width: 10px; height: 10px; border: 2px solid #fff; border-radius: 50%; border-top-color: transparent; border-right-color: transparent; transform: rotate(-45deg); margin-top: -2px; }
+.ms-phase-num-done { background: #4caf50; }
+.ms-phase-num-done::after { content: ''; display: block; width: 6px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); margin-top: -2px; }
+
+.ms-phase-info strong { font-size: 0.95rem; color: var(--gl-text, #2d1b10); display: block; }
+.ms-phase-sub { margin: 2px 0 0; font-size: 0.78rem; color: var(--gl-text-secondary, #888); }
+
+.ms-phase-action { flex-shrink: 0; }
+.ms-stars { font-size: 13px; color: #f5a623; }
+.ms-locked { font-size: 0.8rem; color: #999; font-weight: 500; }
