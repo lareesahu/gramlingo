@@ -17,92 +17,126 @@
           "nameZh": "基础动作",
           "sort": 1,
           "families": [
-            {
-              "id": "act",
-              "root": "act",
-              "phonetic": "/ækt/",
-              "pos": "v. · n.",
-              "clue": "to do something; a thing done",
-              "clueZh": "行动",
-              "members": [
-                {"pos":"v.","posZh":"动","word":"act","example":"She acted quickly.","exampleZh":"她迅速行动。","level":0},
-                {"pos":"n.","posZh":"名","word":"act","example":"It was a kind act.","exampleZh":"这是一个善举。","level":0},
-                {"pos":"n.","posZh":"名","word":"action","example":"Take action now.","exampleZh":"现在采取行动。","level":1},
-                {"pos":"adj.","posZh":"形","word":"active","example":"She's very active.","exampleZh":"她非常活跃。","level":1},
-                {"pos":"n.","posZh":"名","word":"activity","example":"Outdoor activities.","exampleZh":"户外活动。","level":2},
-                {"pos":"v.","posZh":"动","word":"react","example":"How did he react?","exampleZh":"他如何反应？","level":1},
-                {"pos":"n.","posZh":"名","word":"reaction","example":"A quick reaction.","exampleZh":"快速反应。","level":2}
-              ]
-            },
-            {
-              "id": "move",
-              "root": "move",
-              "phonetic": "/muːv/",
-              "pos": "v. · n.",
-              "clue": "to change position; a change of position",
-              "clueZh": "移动",
-              "members": [
-                {"pos":"v.","posZh":"动","word":"move","example":"Move the chair.","exampleZh":"移动椅子。","level":0},
-                {"pos":"n.","posZh":"名","word":"move","example":"A smart move.","exampleZh":"聪明的一步。","level":0},
-                {"pos":"n.","posZh":"名","word":"movement","example":"A sudden movement.","exampleZh":"突然的动作。","level":1},
-                {"pos":"v.","posZh":"动","word":"remove","example":"Remove the lid.","exampleZh":"取下盖子。","level":1},
-                {"pos":"n.","posZh":"名","word":"removal","example":"Stain removal.","exampleZh":"去污。","level":2}
-              ]
-            }
+            {"id":"act","root":"act","phonetic":"/ækt/","pos":"v. · n.","clue":"to do something; a thing done","clueZh":"行动","members":[{"pos":"v.","posZh":"动","word":"act","example":"She acted quickly.","exampleZh":"她迅速行动。","level":0},{"pos":"n.","posZh":"名","word":"act","example":"A kind act.","exampleZh":"一个善举。","level":0},{"pos":"n.","posZh":"名","word":"action","example":"Take action now.","exampleZh":"立即行动。","level":1},{"pos":"adj.","posZh":"形","word":"active","example":"Stay active.","exampleZh":"保持活跃。","level":1},{"pos":"n.","posZh":"名","word":"activity","example":"Outdoor activities.","exampleZh":"户外活动。","level":2},{"pos":"v.","posZh":"动","word":"react","example":"How did he react?","exampleZh":"他如何反应？","level":1},{"pos":"n.","posZh":"名","word":"reaction","example":"A quick reaction.","exampleZh":"快速反应。","level":2}]},
+            {"id":"move","root":"move","phonetic":"/muːv/","pos":"v. · n.","clue":"to change position; a change of position","clueZh":"移动","members":[{"pos":"v.","posZh":"动","word":"move","example":"Move the chair.","exampleZh":"移动椅子。","level":0},{"pos":"n.","posZh":"名","word":"move","example":"A smart move.","exampleZh":"聪明的一步。","level":0},{"pos":"n.","posZh":"名","word":"movement","example":"A sudden movement.","exampleZh":"突然的动作。","level":1},{"pos":"v.","posZh":"动","word":"remove","example":"Remove the lid.","exampleZh":"取下盖子。","level":1},{"pos":"n.","posZh":"名","word":"removal","example":"Stain removal.","exampleZh":"去污。","level":2}]},
+            {"id":"work","root":"work","phonetic":"/wɜːrk/","pos":"v. · n.","clue":"to do a job; effort to achieve something","clueZh":"工作","members":[{"pos":"v.","posZh":"动","word":"work","example":"I work from home.","exampleZh":"我在家工作。","level":0},{"pos":"n.","posZh":"名","word":"work","example":"Hard work pays off.","exampleZh":"努力工作有回报。","level":0},{"pos":"n.","posZh":"名","word":"worker","example":"A skilled worker.","exampleZh":"熟练工人。","level":1},{"pos":"adj.","posZh":"形","word":"working","example":"A working solution.","exampleZh":"可行的解决方案。","level":1},{"pos":"n.","posZh":"名","word":"homework","example":"Finish your homework.","exampleZh":"完成你的作业。","level":1}]},
+            {"id":"play","root":"play","phonetic":"/pleɪ/","pos":"v. · n.","clue":"to take part in an activity for enjoyment; a dramatic performance","clueZh":"玩","members":[{"pos":"v.","posZh":"动","word":"play","example":"Children love to play.","exampleZh":"孩子们喜欢玩。","level":0},{"pos":"n.","posZh":"名","word":"play","example":"A Shakespeare play.","exampleZh":"莎士比亚戏剧。","level":0},{"pos":"n.","posZh":"名","word":"player","example":"A key player.","exampleZh":"关键参与者。","level":1},{"pos":"adj.","posZh":"形","word":"playful","example":"A playful puppy.","exampleZh":"顽皮的小狗。","level":1}]},
+            {"id":"help","root":"help","phonetic":"/help/","pos":"v. · n.","clue":"to make it easier for someone to do something","clueZh":"帮助","members":[{"pos":"v.","posZh":"动","word":"help","example":"Can you help me?","exampleZh":"你能帮我吗？","level":0},{"pos":"n.","posZh":"名","word":"help","example":"I need your help.","exampleZh":"我需要你的帮助。","level":0},{"pos":"adj.","posZh":"形","word":"helpful","example":"A helpful suggestion.","exampleZh":"有用的建议。","level":1},{"pos":"adj.","posZh":"形","word":"helpless","example":"I felt helpless.","exampleZh":"我感到无助。","level":1}]},
+            {"id":"call","root":"call","phonetic":"/kɔːl/","pos":"v. · n.","clue":"to give a name to; to telephone someone","clueZh":"打电话","members":[{"pos":"v.","posZh":"动","word":"call","example":"Call me later.","exampleZh":"晚点打给我。","level":0},{"pos":"n.","posZh":"名","word":"call","example":"I missed your call.","exampleZh":"我错过了你的电话。","level":0},{"pos":"v.","posZh":"动","word":"recall","example":"I can't recall.","exampleZh":"我想不起来了。","level":1}]},
+            {"id":"try","root":"try","phonetic":"/traɪ/","pos":"v. · n.","clue":"to make an attempt or effort","clueZh":"尝试","members":[{"pos":"v.","posZh":"动","word":"try","example":"Try your best.","exampleZh":"尽力而为。","level":0},{"pos":"n.","posZh":"名","word":"try","example":"Give it a try.","exampleZh":"试一试。","level":0},{"pos":"n.","posZh":"名","word":"trial","example":"A clinical trial.","exampleZh":"临床试验。","level":1}]},
+            {"id":"need","root":"need","phonetic":"/niːd/","pos":"v. · n.","clue":"to require something essential","clueZh":"需要","members":[{"pos":"v.","posZh":"动","word":"need","example":"I need water.","exampleZh":"我需要水。","level":0},{"pos":"n.","posZh":"名","word":"need","example":"Basic human needs.","exampleZh":"人类基本需求。","level":0},{"pos":"adj.","posZh":"形","word":"needy","example":"A needy child.","exampleZh":"需要关爱的孩子。","level":1},{"pos":"adj.","posZh":"形","word":"needless","example":"Needless worry.","exampleZh":"不必要的担心。","level":1}]}
+          ]
+        },
+        {
+          "id": "wf1_communicate",
+          "name": "Communication",
+          "nameZh": "交流沟通",
+          "sort": 2,
+          "families": [
+            {"id":"talk","root":"talk","phonetic":"/tɔːk/","pos":"v. · n.","clue":"to speak in order to give information or express ideas","clueZh":"说话","members":[{"pos":"v.","posZh":"动","word":"talk","example":"Let's talk later.","exampleZh":"我们晚点谈。","level":0},{"pos":"n.","posZh":"名","word":"talk","example":"We had a good talk.","exampleZh":"我们好好谈了一次。","level":0},{"pos":"adj.","posZh":"形","word":"talkative","example":"A talkative child.","exampleZh":"健谈的孩子。","level":1}]},
+            {"id":"speak","root":"speak","phonetic":"/spiːk/","pos":"v.","clue":"to say words; to use your voice to communicate","clueZh":"讲","members":[{"pos":"v.","posZh":"动","word":"speak","example":"Speak clearly.","exampleZh":"说清楚。","level":0},{"pos":"n.","posZh":"名","word":"speaker","example":"A native speaker.","exampleZh":"母语者。","level":1},{"pos":"n.","posZh":"名","word":"speech","example":"A powerful speech.","exampleZh":"有力的演讲。","level":1}]},
+            {"id":"tell","root":"tell","phonetic":"/tel/","pos":"v.","clue":"to give information to someone by speaking or writing","clueZh":"告诉","members":[{"pos":"v.","posZh":"动","word":"tell","example":"Tell me a story.","exampleZh":"给我讲个故事。","level":0},{"pos":"v.","posZh":"动","word":"retell","example":"Retell the story.","exampleZh":"复述故事。","level":1}]},
+            {"id":"ask","root":"ask","phonetic":"/æsk/","pos":"v.","clue":"to say something in order to get an answer","clueZh":"问","members":[{"pos":"v.","posZh":"动","word":"ask","example":"Ask a question.","exampleZh":"问一个问题。","level":0},{"pos":"v.","posZh":"动","word":"unasked","example":"An unasked question.","exampleZh":"未提出的问题。","level":1}]},
+            {"id":"answer","root":"answer","phonetic":"/ˈænsər/","pos":"v. · n.","clue":"to say or write something as a reply","clueZh":"回答","members":[{"pos":"v.","posZh":"动","word":"answer","example":"Answer the phone.","exampleZh":"接电话。","level":0},{"pos":"n.","posZh":"名","word":"answer","example":"The correct answer.","exampleZh":"正确的答案。","level":0},{"pos":"adj.","posZh":"形","word":"unanswered","example":"Unanswered calls.","exampleZh":"未接电话。","level":1}]},
+            {"id":"write","root":"write","phonetic":"/raɪt/","pos":"v.","clue":"to produce words, letters, or numbers on a surface","clueZh":"写","members":[{"pos":"v.","posZh":"动","word":"write","example":"Write a letter.","exampleZh":"写一封信。","level":0},{"pos":"n.","posZh":"名","word":"writer","example":"A talented writer.","exampleZh":"有才华的作家。","level":1},{"pos":"n.","posZh":"名","word":"writing","example":"Her writing is beautiful.","exampleZh":"她的文字很美。","level":1},{"pos":"v.","posZh":"动","word":"rewrite","example":"Rewrite the paragraph.","exampleZh":"重写这段。","level":1}]},
+            {"id":"read","root":"read","phonetic":"/riːd/","pos":"v.","clue":"to look at and understand written words","clueZh":"读","members":[{"pos":"v.","posZh":"动","word":"read","example":"Read the book.","exampleZh":"读这本书。","level":0},{"pos":"n.","posZh":"名","word":"reader","example":"An avid reader.","exampleZh":"热爱阅读的人。","level":1},{"pos":"n.","posZh":"名","word":"reading","example":"Reading is fun.","exampleZh":"阅读很有趣。","level":1}]},
+            {"id":"mean","root":"mean","phonetic":"/miːn/","pos":"v. · n. · adj.","clue":"to express or represent a particular idea; average","clueZh":"意思","members":[{"pos":"v.","posZh":"动","word":"mean","example":"What does this mean?","exampleZh":"这是什么意思？","level":0},{"pos":"n.","posZh":"名","word":"meaning","example":"The meaning of life.","exampleZh":"生命的意义。","level":1},{"pos":"adj.","posZh":"形","word":"meaningful","example":"A meaningful conversation.","exampleZh":"有意义的对话。","level":2},{"pos":"adj.","posZh":"形","word":"meaningless","example":"A meaningless gesture.","exampleZh":"无意义的姿态。","level":2}]}
+          ]
+        },
+        {
+          "id": "wf1_mental",
+          "name": "Mental States",
+          "nameZh": "思维状态",
+          "sort": 3,
+          "families": [
+            {"id":"think","root":"think","phonetic":"/θɪŋk/","pos":"v.","clue":"to use your mind to consider or reason about something","clueZh":"想","members":[{"pos":"v.","posZh":"动","word":"think","example":"I think so.","exampleZh":"我想是的。","level":0},{"pos":"n.","posZh":"名","word":"thought","example":"A deep thought.","exampleZh":"深刻的想法。","level":1},{"pos":"adj.","posZh":"形","word":"thoughtful","example":"A thoughtful gift.","exampleZh":"贴心的礼物。","level":2},{"pos":"adj.","posZh":"形","word":"thoughtless","example":"A thoughtless remark.","exampleZh":"轻率的言论。","level":2},{"pos":"v.","posZh":"动","word":"rethink","example":"Rethink your plan.","exampleZh":"重新考虑你的计划。","level":1}]},
+            {"id":"know","root":"know","phonetic":"/noʊ/","pos":"v.","clue":"to have information in your mind","clueZh":"知道","members":[{"pos":"v.","posZh":"动","word":"know","example":"I know the answer.","exampleZh":"我知道答案。","level":0},{"pos":"n.","posZh":"名","word":"knowledge","example":"Gain knowledge.","exampleZh":"获取知识。","level":1},{"pos":"adj.","posZh":"形","word":"knowing","example":"A knowing smile.","exampleZh":"会意的微笑。","level":1},{"pos":"n.","posZh":"名","word":"acknowledgment","example":"A brief acknowledgment.","exampleZh":"简短的致谢。","level":2}]},
+            {"id":"believe","root":"believe","phonetic":"/bɪˈliːv/","pos":"v.","clue":"to think that something is true or real","clueZh":"相信","members":[{"pos":"v.","posZh":"动","word":"believe","example":"I believe you.","exampleZh":"我相信你。","level":0},{"pos":"n.","posZh":"名","word":"belief","example":"Strong beliefs.","exampleZh":"坚定的信念。","level":1},{"pos":"adj.","posZh":"形","word":"believable","example":"A believable story.","exampleZh":"可信的故事。","level":1},{"pos":"adj.","posZh":"形","word":"unbelievable","example":"Unbelievable news.","exampleZh":"难以置信的消息。","level":2}]},
+            {"id":"understand","root":"understand","phonetic":"/ˌʌndərˈstænd/","pos":"v.","clue":"to know the meaning of something","clueZh":"理解","members":[{"pos":"v.","posZh":"动","word":"understand","example":"I understand now.","exampleZh":"我现在明白了。","level":0},{"pos":"n.","posZh":"名","word":"understanding","example":"Mutual understanding.","exampleZh":"相互理解。","level":1},{"pos":"adj.","posZh":"形","word":"understandable","example":"An understandable mistake.","exampleZh":"可以理解的错误。","level":2}]},
+            {"id":"remember","root":"remember","phonetic":"/rɪˈmembər/","pos":"v.","clue":"to bring back information from your memory","clueZh":"记住","members":[{"pos":"v.","posZh":"动","word":"remember","example":"Remember the date.","exampleZh":"记住日期。","level":0},{"pos":"n.","posZh":"名","word":"memory","example":"A vivid memory.","exampleZh":"生动的记忆。","level":1},{"pos":"adj.","posZh":"形","word":"memorable","example":"A memorable trip.","exampleZh":"难忘的旅行。","level":2}]},
+            {"id":"forget","root":"forget","phonetic":"/fərˈɡet/","pos":"v.","clue":"to be unable to remember something","clueZh":"忘记","members":[{"pos":"v.","posZh":"动","word":"forget","example":"I forgot my keys.","exampleZh":"我忘了钥匙。","level":0},{"pos":"adj.","posZh":"形","word":"forgetful","example":"A forgetful professor.","exampleZh":"健忘的教授。","level":1},{"pos":"adj.","posZh":"形","word":"unforgettable","example":"An unforgettable night.","exampleZh":"难忘的夜晚。","level":2}]},
+            {"id":"hope","root":"hope","phonetic":"/hoʊp/","pos":"v. · n.","clue":"to want something to happen; a feeling of expectation","clueZh":"希望","members":[{"pos":"v.","posZh":"动","word":"hope","example":"I hope so.","exampleZh":"希望如此。","level":0},{"pos":"n.","posZh":"名","word":"hope","example":"Don't lose hope.","exampleZh":"不要失去希望。","level":0},{"pos":"adj.","posZh":"形","word":"hopeful","example":"Feeling hopeful.","exampleZh":"感到充满希望。","level":1},{"pos":"adj.","posZh":"形","word":"hopeless","example":"A hopeless situation.","exampleZh":"绝望的处境。","level":1}]},
+            {"id":"wish","root":"wish","phonetic":"/wɪʃ/","pos":"v. · n.","clue":"to want something that is not likely; a desire","clueZh":"愿望","members":[{"pos":"v.","posZh":"动","word":"wish","example":"I wish you luck.","exampleZh":"祝你好运。","level":0},{"pos":"n.","posZh":"名","word":"wish","example":"Make a wish.","exampleZh":"许个愿。","level":0},{"pos":"adj.","posZh":"形","word":"wishful","example":"Wishful thinking.","exampleZh":"一厢情愿。","level":1}]}
           ]
         },
         {
           "id": "wf1_judgment",
-          "name": "Verbs of Judgment",
-          "nameZh": "判断动词",
+          "name": "Judgment & Creation",
+          "nameZh": "判断与创造",
           "sort": 4,
           "families": [
-            {
-              "id": "judge",
-              "root": "judge",
-              "phonetic": "/dʒʌdʒ/",
-              "pos": "v. · n.",
-              "clue": "to form an opinion about something after careful thought; a public official who decides cases in court",
-              "clueZh": "判断",
-              "members": [
-                {"pos":"v.","posZh":"动","word":"judge","example":"She judged the contest fairly.","exampleZh":"她公正地评判了比赛。","level":0},
-                {"pos":"n.","posZh":"名","word":"judge","example":"The judge ruled in favor.","exampleZh":"法官做出了有利判决。","level":0},
-                {"pos":"n.","posZh":"名","word":"judgment","example":"Use good judgment.","exampleZh":"运用良好的判断力。","level":1},
-                {"pos":"adj.","posZh":"形","word":"judgmental","example":"Don't be judgmental.","exampleZh":"不要太挑剔。","level":2},
-                {"pos":"v.","posZh":"动","word":"adjudge","example":"A mediator adjudicated the dispute.","exampleZh":"调解员裁决了争端。","level":1},
-                {"pos":"v.","posZh":"动","word":"prejudge","example":"Don't prejudge people.","exampleZh":"不要预先判断人。","level":1}
-              ]
-            },
-            {
-              "id": "decide",
-              "root": "decide",
-              "phonetic": "/dɪˈsaɪd/",
-              "pos": "v.",
-              "clue": "to reach a conclusion after considering evidence or possibilities",
-              "clueZh": "决定",
-              "members": [
-                {"pos":"v.","posZh":"动","word":"decide","example":"I decided to go.","exampleZh":"我决定去了。","level":0},
-                {"pos":"n.","posZh":"名","word":"decision","example":"A difficult decision.","exampleZh":"一个艰难的决定。","level":1},
-                {"pos":"adj.","posZh":"形","word":"decisive","example":"A decisive leader.","exampleZh":"果断的领导者。","level":1},
-                {"pos":"adj.","posZh":"形","word":"indecisive","example":"He's too indecisive.","exampleZh":"他太优柔寡断了。","level":2}
-              ]
-            },
-            {
-              "id": "create",
-              "root": "create",
-              "phonetic": "/kriˈeɪt/",
-              "pos": "v.",
-              "clue": "to bring something new into existence through imagination or skill",
-              "clueZh": "创造",
-              "members": [
-                {"pos":"v.","posZh":"动","word":"create","example":"She creates beautiful art.","exampleZh":"她创造美丽的艺术。","level":0},
-                {"pos":"n.","posZh":"名","word":"creation","example":"The creation of a new world.","exampleZh":"新世界的创造。","level":1},
-                {"pos":"adj.","posZh":"形","word":"creative","example":"A creative solution.","exampleZh":"创造性的解决方案。","level":1},
-                {"pos":"n.","posZh":"名","word":"creativity","example":"Unlock your creativity.","exampleZh":"释放你的创造力。","level":2},
-                {"pos":"n.","posZh":"名","word":"creator","example":"The creator of the series.","exampleZh":"该系列的创作者。","level":1},
-                {"pos":"v.","posZh":"动","word":"recreate","example":"Recreate the scene.","exampleZh":"重现场景。","level":1}
-              ]
-            }
+            {"id":"judge","root":"judge","phonetic":"/dʒʌdʒ/","pos":"v. · n.","clue":"to form an opinion; a public official in court","clueZh":"判断","members":[{"pos":"v.","posZh":"动","word":"judge","example":"She judged the contest.","exampleZh":"她评判了比赛。","level":0},{"pos":"n.","posZh":"名","word":"judge","example":"The judge ruled.","exampleZh":"法官裁决了。","level":0},{"pos":"n.","posZh":"名","word":"judgment","example":"Use good judgment.","exampleZh":"运用良好判断力。","level":1},{"pos":"adj.","posZh":"形","word":"judgmental","example":"Don't be judgmental.","exampleZh":"不要太挑剔。","level":2},{"pos":"v.","posZh":"动","word":"prejudge","example":"Don't prejudge.","exampleZh":"不要预判。","level":1}]},
+            {"id":"decide","root":"decide","phonetic":"/dɪˈsaɪd/","pos":"v.","clue":"to reach a conclusion after thinking","clueZh":"决定","members":[{"pos":"v.","posZh":"动","word":"decide","example":"I decided to go.","exampleZh":"我决定去了。","level":0},{"pos":"n.","posZh":"名","word":"decision","example":"A big decision.","exampleZh":"重大决定。","level":1},{"pos":"adj.","posZh":"形","word":"decisive","example":"A decisive leader.","exampleZh":"果断的领导者。","level":1},{"pos":"adj.","posZh":"形","word":"indecisive","example":"Too indecisive.","exampleZh":"太优柔寡断。","level":2}]},
+            {"id":"create","root":"create","phonetic":"/kriˈeɪt/","pos":"v.","clue":"to bring something new into existence","clueZh":"创造","members":[{"pos":"v.","posZh":"动","word":"create","example":"Create something new.","exampleZh":"创造新事物。","level":0},{"pos":"n.","posZh":"名","word":"creation","example":"The creation of art.","exampleZh":"艺术创作。","level":1},{"pos":"adj.","posZh":"形","word":"creative","example":"Creative thinking.","exampleZh":"创造性思维。","level":1},{"pos":"n.","posZh":"名","word":"creativity","example":"Unlock creativity.","exampleZh":"释放创造力。","level":2},{"pos":"n.","posZh":"名","word":"creator","example":"The creator.","exampleZh":"创造者。","level":1},{"pos":"v.","posZh":"动","word":"recreate","example":"Recreate the scene.","exampleZh":"重现场景。","level":1}]},
+            {"id":"form","root":"form","phonetic":"/fɔːrm/","pos":"v. · n.","clue":"to make or shape something; the shape of something","clueZh":"形成","members":[{"pos":"v.","posZh":"动","word":"form","example":"Form a team.","exampleZh":"组建团队。","level":0},{"pos":"n.","posZh":"名","word":"form","example":"Fill out the form.","exampleZh":"填写表格。","level":0},{"pos":"n.","posZh":"名","word":"formation","example":"Rock formations.","exampleZh":"岩石构造。","level":1},{"pos":"v.","posZh":"动","word":"reform","example":"Reform the system.","exampleZh":"改革体系。","level":1},{"pos":"v.","posZh":"动","word":"transform","example":"Transform the space.","exampleZh":"改造空间。","level":1},{"pos":"n.","posZh":"名","word":"transformation","example":"A complete transformation.","exampleZh":"彻底转变。","level":2}]},
+            {"id":"serve","root":"serve","phonetic":"/sɜːrv/","pos":"v. · n.","clue":"to work for someone; to provide a service","clueZh":"服务","members":[{"pos":"v.","posZh":"动","word":"serve","example":"Serve customers.","exampleZh":"服务顾客。","level":0},{"pos":"n.","posZh":"名","word":"service","example":"Excellent service.","exampleZh":"卓越的服务。","level":1},{"pos":"n.","posZh":"名","word":"servant","example":"A public servant.","exampleZh":"公务员。","level":1}]},
+            {"id":"change","root":"change","phonetic":"/tʃeɪndʒ/","pos":"v. · n.","clue":"to become different; the act of becoming different","clueZh":"改变","members":[{"pos":"v.","posZh":"动","word":"change","example":"Change your mind.","exampleZh":"改变主意。","level":0},{"pos":"n.","posZh":"名","word":"change","example":"Big changes ahead.","exampleZh":"重大变化来临。","level":0},{"pos":"adj.","posZh":"形","word":"changeable","example":"Changeable weather.","exampleZh":"多变的天气。","level":1},{"pos":"adj.","posZh":"形","word":"unchanged","example":"Remained unchanged.","exampleZh":"保持不变。","level":1},{"pos":"n.","posZh":"名","word":"exchange","example":"Currency exchange.","exampleZh":"货币兑换。","level":1}]},
+            {"id":"develop","root":"develop","phonetic":"/dɪˈveləp/","pos":"v.","clue":"to grow or change into a more advanced form","clueZh":"发展","members":[{"pos":"v.","posZh":"动","word":"develop","example":"Develop new skills.","exampleZh":"发展新技能。","level":0},{"pos":"n.","posZh":"名","word":"development","example":"Economic development.","exampleZh":"经济发展。","level":1},{"pos":"adj.","posZh":"形","word":"developing","example":"Developing countries.","exampleZh":"发展中国家。","level":1},{"pos":"adj.","posZh":"形","word":"developed","example":"A developed nation.","exampleZh":"发达国家。","level":1}]},
+            {"id":"consider","root":"consider","phonetic":"/kənˈsɪdər/","pos":"v.","clue":"to think about something carefully","clueZh":"考虑","members":[{"pos":"v.","posZh":"动","word":"consider","example":"Consider the options.","exampleZh":"考虑选项。","level":0},{"pos":"n.","posZh":"名","word":"consideration","example":"Careful consideration.","exampleZh":"仔细考虑。","level":1},{"pos":"adj.","posZh":"形","word":"considerate","example":"A considerate friend.","exampleZh":"体贴的朋友。","level":1},{"pos":"adj.","posZh":"形","word":"considerable","example":"A considerable sum.","exampleZh":"可观的数目。","level":2}]}
+          ]
+        },
+        {
+          "id": "wf1_motion",
+          "name": "Movement & Change",
+          "nameZh": "运动变化",
+          "sort": 5,
+          "families": [
+            {"id":"come","root":"come","phonetic":"/kʌm/","pos":"v.","clue":"to move toward or arrive at a place","clueZh":"来","members":[{"pos":"v.","posZh":"动","word":"come","example":"Come here.","exampleZh":"过来。","level":0},{"pos":"n.","posZh":"名","word":"outcome","example":"A positive outcome.","exampleZh":"积极的结果。","level":1},{"pos":"v.","posZh":"动","word":"overcome","example":"Overcome obstacles.","exampleZh":"克服障碍。","level":1}]},
+            {"id":"go","root":"go","phonetic":"/ɡoʊ/","pos":"v.","clue":"to move or travel somewhere","clueZh":"去","members":[{"pos":"v.","posZh":"动","word":"go","example":"Let's go.","exampleZh":"我们走吧。","level":0},{"pos":"adj.","posZh":"形","word":"ongoing","example":"An ongoing project.","exampleZh":"进行中的项目。","level":1},{"pos":"n.","posZh":"名","word":"outgo","example":"Monthly outgo.","exampleZh":"每月支出。","level":1}]},
+            {"id":"take","root":"take","phonetic":"/teɪk/","pos":"v.","clue":"to move or carry something from one place to another","clueZh":"拿","members":[{"pos":"v.","posZh":"动","word":"take","example":"Take this.","exampleZh":"拿着。","level":0},{"pos":"n.","posZh":"名","word":"intake","example":"Daily calorie intake.","exampleZh":"每日卡路里摄入。","level":1},{"pos":"n.","posZh":"名","word":"overtake","example":"Overtake the car.","exampleZh":"超车。","level":1},{"pos":"v.","posZh":"动","word":"undertake","example":"Undertake a task.","exampleZh":"承担任务。","level":2}]},
+            {"id":"give","root":"give","phonetic":"/ɡɪv/","pos":"v.","clue":"to provide or hand over something","clueZh":"给","members":[{"pos":"v.","posZh":"动","word":"give","example":"Give me a hand.","exampleZh":"帮我一下。","level":0},{"pos":"n.","posZh":"名","word":"gift","example":"A thoughtful gift.","exampleZh":"贴心的礼物。","level":1},{"pos":"v.","posZh":"动","word":"forgive","example":"Forgive and forget.","exampleZh":"原谅并忘记。","level":1}]},
+            {"id":"send","root":"send","phonetic":"/send/","pos":"v.","clue":"to cause something to go or be taken somewhere","clueZh":"发送","members":[{"pos":"v.","posZh":"动","word":"send","example":"Send the email.","exampleZh":"发送邮件。","level":0},{"pos":"n.","posZh":"名","word":"sender","example":"Return to sender.","exampleZh":"退回发件人。","level":1}]},
+            {"id":"bring","root":"bring","phonetic":"/brɪŋ/","pos":"v.","clue":"to carry or convey something to a place","clueZh":"带来","members":[{"pos":"v.","posZh":"动","word":"bring","example":"Bring your friend.","exampleZh":"带上你的朋友。","level":0},{"pos":"v.","posZh":"动","word":"upbringing","example":"A good upbringing.","exampleZh":"良好的教养。","level":1}]},
+            {"id":"build","root":"build","phonetic":"/bɪld/","pos":"v.","clue":"to construct something by putting parts together","clueZh":"建造","members":[{"pos":"v.","posZh":"动","word":"build","example":"Build a house.","exampleZh":"建造房子。","level":0},{"pos":"n.","posZh":"名","word":"builder","example":"A home builder.","exampleZh":"房屋建造者。","level":1},{"pos":"n.","posZh":"名","word":"building","example":"A tall building.","exampleZh":"高楼。","level":1},{"pos":"v.","posZh":"动","word":"rebuild","example":"Rebuild after the storm.","exampleZh":"灾后重建。","level":1}]},
+            {"id":"break","root":"break","phonetic":"/breɪk/","pos":"v. · n.","clue":"to separate into pieces; a pause or interruption","clueZh":"打破","members":[{"pos":"v.","posZh":"动","word":"break","example":"Don't break it.","exampleZh":"别打碎它。","level":0},{"pos":"n.","posZh":"名","word":"break","example":"Take a break.","exampleZh":"休息一下。","level":0},{"pos":"n.","posZh":"名","word":"breakdown","example":"A mental breakdown.","exampleZh":"精神崩溃。","level":1},{"pos":"adj.","posZh":"形","word":"broken","example":"A broken window.","exampleZh":"破了的窗户。","level":1}]}
+          ]
+        },
+        {
+          "id": "wf1_quality",
+          "name": "Qualities & States",
+          "nameZh": "性质状态",
+          "sort": 6,
+          "families": [
+            {"id":"strong","root":"strong","phonetic":"/strɔːŋ/","pos":"adj.","clue":"having the power to move heavy weights or resist force","clueZh":"强","members":[{"pos":"adj.","posZh":"形","word":"strong","example":"A strong leader.","exampleZh":"坚强的领导者。","level":0},{"pos":"n.","posZh":"名","word":"strength","example":"Inner strength.","exampleZh":"内在力量。","level":1},{"pos":"v.","posZh":"动","word":"strengthen","example":"Strengthen muscles.","exampleZh":"增强肌肉。","level":2}]},
+            {"id":"clear","root":"clear","phonetic":"/klɪr/","pos":"adj. · v.","clue":"easy to see, hear, or understand","clueZh":"清楚","members":[{"pos":"adj.","posZh":"形","word":"clear","example":"A clear sky.","exampleZh":"晴朗的天空。","level":0},{"pos":"v.","posZh":"动","word":"clear","example":"Clear the table.","exampleZh":"清理桌子。","level":0},{"pos":"n.","posZh":"名","word":"clarity","example":"With great clarity.","exampleZh":"非常清晰。","level":1},{"pos":"v.","posZh":"动","word":"clarify","example":"Clarify your point.","exampleZh":"阐明你的观点。","level":1}]},
+            {"id":"simple","root":"simple","phonetic":"/ˈsɪmpəl/","pos":"adj.","clue":"easy to understand or do; not complicated","clueZh":"简单","members":[{"pos":"adj.","posZh":"形","word":"simple","example":"Keep it simple.","exampleZh":"保持简单。","level":0},{"pos":"v.","posZh":"动","word":"simplify","example":"Simplify the process.","exampleZh":"简化流程。","level":1},{"pos":"n.","posZh":"名","word":"simplicity","example":"Beauty in simplicity.","exampleZh":"简约之美。","level":1}]},
+            {"id":"real","root":"real","phonetic":"/riːəl/","pos":"adj.","clue":"actually existing; not imagined","clueZh":"真实","members":[{"pos":"adj.","posZh":"形","word":"real","example":"The real world.","exampleZh":"现实世界。","level":0},{"pos":"n.","posZh":"名","word":"reality","example":"Face reality.","exampleZh":"面对现实。","level":1},{"pos":"v.","posZh":"动","word":"realize","example":"I realized my mistake.","exampleZh":"我意识到了错误。","level":2},{"pos":"adj.","posZh":"形","word":"realistic","example":"A realistic goal.","exampleZh":"现实的目标。","level":2}]},
+            {"id":"natural","root":"nature","phonetic":"/ˈneɪtʃər/","pos":"n.","clue":"the physical world; the basic quality of something","clueZh":"自然","members":[{"pos":"n.","posZh":"名","word":"nature","example":"The beauty of nature.","exampleZh":"大自然的美丽。","level":0},{"pos":"adj.","posZh":"形","word":"natural","example":"Natural light.","exampleZh":"自然光。","level":1},{"pos":"adv.","posZh":"副","word":"naturally","example":"It comes naturally.","exampleZh":"自然而然。","level":2}]},
+            {"id":"possible","root":"possible","phonetic":"/ˈpɑːsəbəl/","pos":"adj.","clue":"able to be done or achieved","clueZh":"可能","members":[{"pos":"adj.","posZh":"形","word":"possible","example":"Anything is possible.","exampleZh":"一切皆有可能。","level":0},{"pos":"n.","posZh":"名","word":"possibility","example":"Endless possibilities.","exampleZh":"无尽的可能性。","level":1},{"pos":"adj.","posZh":"形","word":"impossible","example":"Nothing is impossible.","exampleZh":"没有不可能。","level":1}]},
+            {"id":"differ","root":"differ","phonetic":"/ˈdɪfər/","pos":"v.","clue":"to be unlike or distinct from something else","clueZh":"不同","members":[{"pos":"v.","posZh":"动","word":"differ","example":"Opinions differ.","exampleZh":"意见不同。","level":0},{"pos":"adj.","posZh":"形","word":"different","example":"A different approach.","exampleZh":"不同的方法。","level":1},{"pos":"n.","posZh":"名","word":"difference","example":"Make a difference.","exampleZh":"做出改变。","level":1}]},
+            {"id":"depend","root":"depend","phonetic":"/dɪˈpend/","pos":"v.","clue":"to rely on; to be controlled by something","clueZh":"依赖","members":[{"pos":"v.","posZh":"动","word":"depend","example":"It depends on you.","exampleZh":"这取决于你。","level":0},{"pos":"adj.","posZh":"形","word":"dependent","example":"A dependent child.","exampleZh":"受抚养的孩子。","level":1},{"pos":"adj.","posZh":"形","word":"independent","example":"Independent thinking.","exampleZh":"独立思考。","level":2},{"pos":"n.","posZh":"名","word":"independence","example":"Financial independence.","exampleZh":"财务独立。","level":2}]}
+          ]
+        },
+        {
+          "id": "wf1_people",
+          "name": "People & Society",
+          "nameZh": "人与社会",
+          "sort": 7,
+          "families": [
+            {"id":"govern","root":"govern","phonetic":"/ˈɡʌvərn/","pos":"v.","clue":"to control and direct the public affairs of a country","clueZh":"治理","members":[{"pos":"v.","posZh":"动","word":"govern","example":"Govern the country.","exampleZh":"治理国家。","level":0},{"pos":"n.","posZh":"名","word":"government","example":"Local government.","exampleZh":"地方政府。","level":1},{"pos":"n.","posZh":"名","word":"governor","example":"The state governor.","exampleZh":"州长。","level":1}]},
+            {"id":"educate","root":"educate","phonetic":"/ˈedʒʊkeɪt/","pos":"v.","clue":"to give knowledge or training","clueZh":"教育","members":[{"pos":"v.","posZh":"动","word":"educate","example":"Educate the public.","exampleZh":"教育公众。","level":0},{"pos":"n.","posZh":"名","word":"education","example":"Higher education.","exampleZh":"高等教育。","level":1},{"pos":"n.","posZh":"名","word":"educator","example":"A dedicated educator.","exampleZh":"敬业的教师。","level":1}]},
+            {"id":"lead","root":"lead","phonetic":"/liːd/","pos":"v. · n.","clue":"to guide or direct a group; the front position","clueZh":"领导","members":[{"pos":"v.","posZh":"动","word":"lead","example":"Lead the team.","exampleZh":"领导团队。","level":0},{"pos":"n.","posZh":"名","word":"leader","example":"A born leader.","exampleZh":"天生的领导者。","level":1},{"pos":"n.","posZh":"名","word":"leadership","example":"Strong leadership.","exampleZh":"强有力的领导。","level":2}]},
+            {"id":"elect","root":"elect","phonetic":"/ɪˈlekt/","pos":"v.","clue":"to choose someone for a position by voting","clueZh":"选举","members":[{"pos":"v.","posZh":"动","word":"elect","example":"Elect a president.","exampleZh":"选举总统。","level":0},{"pos":"n.","posZh":"名","word":"election","example":"A fair election.","exampleZh":"公平的选举。","level":1},{"pos":"n.","posZh":"名","word":"electorate","example":"The entire electorate.","exampleZh":"全体选民。","level":2}]},
+            {"id":"produce","root":"produce","phonetic":"/prəˈduːs/","pos":"v. · n.","clue":"to make or grow something; agricultural goods","clueZh":"生产","members":[{"pos":"v.","posZh":"动","word":"produce","example":"Produce goods.","exampleZh":"生产商品。","level":0},{"pos":"n.","posZh":"名","word":"product","example":"A new product.","exampleZh":"新产品。","level":1},{"pos":"n.","posZh":"名","word":"production","example":"Mass production.","exampleZh":"大规模生产。","level":2},{"pos":"adj.","posZh":"形","word":"productive","example":"A productive day.","exampleZh":"高效的一天。","level":2}]},
+            {"id":"compete","root":"compete","phonetic":"/kəmˈpiːt/","pos":"v.","clue":"to try to be more successful than others","clueZh":"竞争","members":[{"pos":"v.","posZh":"动","word":"compete","example":"Compete fairly.","exampleZh":"公平竞争。","level":0},{"pos":"n.","posZh":"名","word":"competition","example":"Fierce competition.","exampleZh":"激烈竞争。","level":1},{"pos":"adj.","posZh":"形","word":"competitive","example":"Competitive pricing.","exampleZh":"有竞争力的定价。","level":1}]},
+            {"id":"connect","root":"connect","phonetic":"/kəˈnekt/","pos":"v.","clue":"to join or link together","clueZh":"连接","members":[{"pos":"v.","posZh":"动","word":"connect","example":"Connect the dots.","exampleZh":"连点成线。","level":0},{"pos":"n.","posZh":"名","word":"connection","example":"A strong connection.","exampleZh":"紧密的联系。","level":1},{"pos":"v.","posZh":"动","word":"disconnect","example":"Disconnect the cable.","exampleZh":"断开电缆。","level":1}]},
+            {"id":"relate","root":"relate","phonetic":"/rɪˈleɪt/","pos":"v.","clue":"to show a connection between things; to tell a story","clueZh":"关联","members":[{"pos":"v.","posZh":"动","word":"relate","example":"I can relate.","exampleZh":"我能理解。","level":0},{"pos":"n.","posZh":"名","word":"relation","example":"International relations.","exampleZh":"国际关系。","level":1},{"pos":"n.","posZh":"名","word":"relationship","example":"A healthy relationship.","exampleZh":"健康的关系。","level":2},{"pos":"adj.","posZh":"形","word":"relative","example":"A relative term.","exampleZh":"相对的概念。","level":2}]}
+          ]
+        },
+        {
+          "id": "wf1_abstract",
+          "name": "Abstract Ideas",
+          "nameZh": "抽象概念",
+          "sort": 8,
+          "families": [
+            {"id":"value","root":"value","phonetic":"/ˈvæljuː/","pos":"n. · v.","clue":"the importance or worth of something","clueZh":"价值","members":[{"pos":"n.","posZh":"名","word":"value","example":"Core values.","exampleZh":"核心价值观。","level":0},{"pos":"v.","posZh":"动","word":"value","example":"I value your opinion.","exampleZh":"我重视你的意见。","level":0},{"pos":"adj.","posZh":"形","word":"valuable","example":"Valuable advice.","exampleZh":"宝贵的建议。","level":1},{"pos":"n.","posZh":"名","word":"evaluation","example":"Performance evaluation.","exampleZh":"绩效评估。","level":2}]},
+            {"id":"sign","root":"sign","phonetic":"/saɪn/","pos":"n. · v.","clue":"a mark or symbol; to write your name","clueZh":"标志","members":[{"pos":"n.","posZh":"名","word":"sign","example":"A warning sign.","exampleZh":"警告标志。","level":0},{"pos":"v.","posZh":"动","word":"sign","example":"Sign here.","exampleZh":"在这里签名。","level":0},{"pos":"n.","posZh":"名","word":"signal","example":"A clear signal.","exampleZh":"明确的信号。","level":1},{"pos":"adj.","posZh":"形","word":"significant","example":"A significant change.","exampleZh":"重大变化。","level":2},{"pos":"n.","posZh":"名","word":"significance","example":"Of great significance.","exampleZh":"意义重大。","level":2}]},
+            {"id":"sense","root":"sense","phonetic":"/sens/","pos":"n. · v.","clue":"a feeling or perception; to feel or detect","clueZh":"感觉","members":[{"pos":"n.","posZh":"名","word":"sense","example":"Common sense.","exampleZh":"常识。","level":0},{"pos":"v.","posZh":"动","word":"sense","example":"I sense danger.","exampleZh":"我感觉到危险。","level":0},{"pos":"adj.","posZh":"形","word":"sensitive","example":"Sensitive skin.","exampleZh":"敏感的皮肤。","level":1},{"pos":"adj.","posZh":"形","word":"sensible","example":"A sensible choice.","exampleZh":"明智的选择。","level":1}]},
+            {"id":"exist","root":"exist","phonetic":"/ɪɡˈzɪst/","pos":"v.","clue":"to be real or present in the world","clueZh":"存在","members":[{"pos":"v.","posZh":"动","word":"exist","example":"Does it exist?","exampleZh":"它存在吗？","level":0},{"pos":"n.","posZh":"名","word":"existence","example":"Proof of existence.","exampleZh":"存在的证据。","level":1},{"pos":"adj.","posZh":"形","word":"existing","example":"Existing customers.","exampleZh":"现有客户。","level":1}]},
+            {"id":"appear","root":"appear","phonetic":"/əˈpɪr/","pos":"v.","clue":"to become visible or noticeable","clueZh":"出现","members":[{"pos":"v.","posZh":"动","word":"appear","example":"A face appeared.","exampleZh":"一张脸出现了。","level":0},{"pos":"n.","posZh":"名","word":"appearance","example":"First appearance.","exampleZh":"首次亮相。","level":1},{"pos":"v.","posZh":"动","word":"disappear","example":"Disappear quickly.","exampleZh":"迅速消失。","level":1}]},
+            {"id":"occur","root":"occur","phonetic":"/əˈkɜːr/","pos":"v.","clue":"to happen; to come into your mind","clueZh":"发生","members":[{"pos":"v.","posZh":"动","word":"occur","example":"It occurred to me.","exampleZh":"我突然想到。","level":0},{"pos":"n.","posZh":"名","word":"occurrence","example":"A rare occurrence.","exampleZh":"罕见的事件。","level":1}]},
+            {"id":"refer","root":"refer","phonetic":"/rɪˈfɜːr/","pos":"v.","clue":"to mention or direct attention to something","clueZh":"参考","members":[{"pos":"v.","posZh":"动","word":"refer","example":"Refer to page 5.","exampleZh":"参考第5页。","level":0},{"pos":"n.","posZh":"名","word":"reference","example":"For your reference.","exampleZh":"供你参考。","level":1}]},
+            {"id":"respond","root":"respond","phonetic":"/rɪˈspɑːnd/","pos":"v.","clue":"to say or do something as a reaction","clueZh":"回应","members":[{"pos":"v.","posZh":"动","word":"respond","example":"Please respond.","exampleZh":"请回复。","level":0},{"pos":"n.","posZh":"名","word":"response","example":"A quick response.","exampleZh":"快速回应。","level":1},{"pos":"adj.","posZh":"形","word":"responsible","example":"Be responsible.","exampleZh":"负责任。","level":2},{"pos":"n.","posZh":"名","word":"responsibility","example":"Take responsibility.","exampleZh":"承担责任。","level":2}]}
           ]
         }
       ]
@@ -120,12 +154,50 @@
       "lessons": [
         {
           "id": "irr_aaa",
-          "name": "A-A-A Pattern",
-          "nameZh": "A-A-A 型",
+          "name": "A-A-A Pattern (All Same)",
+          "nameZh": "A-A-A 型（三形相同）",
           "sort": 1,
           "families": [
-            {"id":"cut","root":"cut","phonetic":"/kʌt/","pos":"v.","clue":"to divide or sever with a sharp tool","clueZh":"切","members":[{"pos":"v.","posZh":"动","word":"cut","example":"She cut the paper.","exampleZh":"她剪了纸。","level":0},{"pos":"v.","posZh":"动","word":"cut (past)","example":"He cut his finger yesterday.","exampleZh":"他昨天割伤了手指。","level":0},{"pos":"v.","posZh":"动","word":"cut (participle)","example":"He has cut the rope.","exampleZh":"他已经切断了绳子。","level":0}]},
-            {"id":"put","root":"put","phonetic":"/pʊt/","pos":"v.","clue":"to place something somewhere","clueZh":"放","members":[{"pos":"v.","posZh":"动","word":"put","example":"Put it on the table.","exampleZh":"放在桌子上。","level":0}]}
+            {"id":"cut","root":"cut","phonetic":"/kʌt/","pos":"v.","clue":"to divide with a sharp tool","clueZh":"切","members":[{"pos":"v.","posZh":"原","word":"cut","example":"Cut the paper.","exampleZh":"剪纸。","level":0},{"pos":"v.","posZh":"过","word":"cut","example":"She cut it yesterday.","exampleZh":"她昨天切的。","level":0},{"pos":"v.","posZh":"分","word":"cut","example":"She has cut it.","exampleZh":"她已经切了。","level":0}]},
+            {"id":"put","root":"put","phonetic":"/pʊt/","pos":"v.","clue":"to place something somewhere","clueZh":"放","members":[{"pos":"v.","posZh":"原","word":"put","example":"Put it down.","exampleZh":"放下。","level":0},{"pos":"v.","posZh":"过","word":"put","example":"He put it there.","exampleZh":"他放那里了。","level":0},{"pos":"v.","posZh":"分","word":"put","example":"He has put it away.","exampleZh":"他已经收好了。","level":0}]},
+            {"id":"set","root":"set","phonetic":"/set/","pos":"v.","clue":"to put something in a position","clueZh":"设置","members":[{"pos":"v.","posZh":"原","word":"set","example":"Set the table.","exampleZh":"摆桌子。","level":0},{"pos":"v.","posZh":"过","word":"set","example":"He set a record.","exampleZh":"他创造了纪录。","level":0},{"pos":"v.","posZh":"分","word":"set","example":"Standards have been set.","exampleZh":"标准已设定。","level":0}]},
+            {"id":"let","root":"let","phonetic":"/let/","pos":"v.","clue":"to allow or permit","clueZh":"让","members":[{"pos":"v.","posZh":"原","word":"let","example":"Let me help.","exampleZh":"让我帮你。","level":0},{"pos":"v.","posZh":"过","word":"let","example":"She let him go.","exampleZh":"她让他走了。","level":0},{"pos":"v.","posZh":"分","word":"let","example":"He has been let go.","exampleZh":"他已被解雇。","level":0}]},
+            {"id":"read","root":"read","phonetic":"/riːd/","pos":"v.","clue":"to look at and understand written words","clueZh":"读","members":[{"pos":"v.","posZh":"原","word":"read","example":"Read a book.","exampleZh":"读书。","level":0},{"pos":"v.","posZh":"过","word":"read","example":"I read it yesterday.","exampleZh":"我昨天读了。","level":0},{"pos":"v.","posZh":"分","word":"read","example":"I have read it.","exampleZh":"我已经读了。","level":0}]},
+            {"id":"shut","root":"shut","phonetic":"/ʃʌt/","pos":"v.","clue":"to close something","clueZh":"关","members":[{"pos":"v.","posZh":"原","word":"shut","example":"Shut the door.","exampleZh":"关门。","level":0},{"pos":"v.","posZh":"过","word":"shut","example":"He shut it quietly.","exampleZh":"他轻轻关上了。","level":0},{"pos":"v.","posZh":"分","word":"shut","example":"The shop has shut.","exampleZh":"店已关门。","level":0}]},
+            {"id":"hit","root":"hit","phonetic":"/hɪt/","pos":"v.","clue":"to strike or touch with force","clueZh":"打","members":[{"pos":"v.","posZh":"原","word":"hit","example":"Hit the ball.","exampleZh":"击球。","level":0},{"pos":"v.","posZh":"过","word":"hit","example":"The ball hit the window.","exampleZh":"球击中了窗户。","level":0},{"pos":"v.","posZh":"分","word":"hit","example":"She has been hit.","exampleZh":"她被击中了。","level":0}]},
+            {"id":"cost","root":"cost","phonetic":"/kɔːst/","pos":"v.","clue":"to require payment of a certain amount","clueZh":"花费","members":[{"pos":"v.","posZh":"原","word":"cost","example":"It costs a lot.","exampleZh":"花费很多。","level":0},{"pos":"v.","posZh":"过","word":"cost","example":"It cost $100.","exampleZh":"花了100美元。","level":0},{"pos":"v.","posZh":"分","word":"cost","example":"It has cost too much.","exampleZh":"花费太多了。","level":0}]}
+          ]
+        },
+        {
+          "id": "irr_abb",
+          "name": "A-B-B Pattern (Past = Participle)",
+          "nameZh": "A-B-B 型（过去式=过去分词）",
+          "sort": 2,
+          "families": [
+            {"id":"buy","root":"buy→bought→bought","phonetic":"/baɪ/ /bɔːt/","pos":"v.","clue":"to obtain by paying money","clueZh":"买","members":[{"pos":"v.","posZh":"原","word":"buy","example":"Buy groceries.","exampleZh":"买杂货。","level":0},{"pos":"v.","posZh":"过","word":"bought","example":"I bought a car.","exampleZh":"我买了辆车。","level":0},{"pos":"v.","posZh":"分","word":"bought","example":"I have bought it.","exampleZh":"我已经买了。","level":0}]},
+            {"id":"think","root":"think→thought→thought","phonetic":"/θɪŋk/ /θɔːt/","pos":"v.","clue":"to use your mind","clueZh":"想","members":[{"pos":"v.","posZh":"原","word":"think","example":"Think carefully.","exampleZh":"仔细想想。","level":0},{"pos":"v.","posZh":"过","word":"thought","example":"I thought so.","exampleZh":"我也这么想的。","level":0},{"pos":"v.","posZh":"分","word":"thought","example":"I have thought about it.","exampleZh":"我考虑过了。","level":0}]},
+            {"id":"teach","root":"teach→taught→taught","phonetic":"/tiːtʃ/ /tɔːt/","pos":"v.","clue":"to give knowledge or instruction","clueZh":"教","members":[{"pos":"v.","posZh":"原","word":"teach","example":"Teach English.","exampleZh":"教英语。","level":0},{"pos":"v.","posZh":"过","word":"taught","example":"She taught me.","exampleZh":"她教过我。","level":0},{"pos":"v.","posZh":"分","word":"taught","example":"I have taught for years.","exampleZh":"我教了很多年了。","level":0}]},
+            {"id":"catch","root":"catch→caught→caught","phonetic":"/kætʃ/ /kɔːt/","pos":"v.","clue":"to capture or seize","clueZh":"抓住","members":[{"pos":"v.","posZh":"原","word":"catch","example":"Catch the ball.","exampleZh":"接球。","level":0},{"pos":"v.","posZh":"过","word":"caught","example":"He caught a cold.","exampleZh":"他感冒了。","level":0},{"pos":"v.","posZh":"分","word":"caught","example":"He has been caught.","exampleZh":"他被抓住了。","level":0}]},
+            {"id":"bring","root":"bring→brought→brought","phonetic":"/brɪŋ/ /brɔːt/","pos":"v.","clue":"to carry something to a place","clueZh":"带来","members":[{"pos":"v.","posZh":"原","word":"bring","example":"Bring a friend.","exampleZh":"带个朋友来。","level":0},{"pos":"v.","posZh":"过","word":"brought","example":"He brought wine.","exampleZh":"他带了酒。","level":0},{"pos":"v.","posZh":"分","word":"brought","example":"I have brought it.","exampleZh":"我带来了。","level":0}]},
+            {"id":"find","root":"find→found→found","phonetic":"/faɪnd/ /faʊnd/","pos":"v.","clue":"to discover or locate","clueZh":"找到","members":[{"pos":"v.","posZh":"原","word":"find","example":"Find the key.","exampleZh":"找到钥匙。","level":0},{"pos":"v.","posZh":"过","word":"found","example":"I found it.","exampleZh":"我找到了。","level":0},{"pos":"v.","posZh":"分","word":"found","example":"Lost and found.","exampleZh":"失物招领。","level":0}]},
+            {"id":"have","root":"have→had→had","phonetic":"/hæv/ /hæd/","pos":"v.","clue":"to possess or own","clueZh":"有","members":[{"pos":"v.","posZh":"原","word":"have","example":"I have a plan.","exampleZh":"我有个计划。","level":0},{"pos":"v.","posZh":"过","word":"had","example":"We had fun.","exampleZh":"我们玩得很开心。","level":0},{"pos":"v.","posZh":"分","word":"had","example":"I have had enough.","exampleZh":"我受够了。","level":0}]},
+            {"id":"make","root":"make→made→made","phonetic":"/meɪk/ /meɪd/","pos":"v.","clue":"to create or produce","clueZh":"做","members":[{"pos":"v.","posZh":"原","word":"make","example":"Make a cake.","exampleZh":"做蛋糕。","level":0},{"pos":"v.","posZh":"过","word":"made","example":"She made dinner.","exampleZh":"她做了晚饭。","level":0},{"pos":"v.","posZh":"分","word":"made","example":"Hand-made.","exampleZh":"手工制作的。","level":0}]}
+          ]
+        },
+        {
+          "id": "irr_abc",
+          "name": "A-B-C Pattern (All Different)",
+          "nameZh": "A-B-C 型（三形不同）",
+          "sort": 3,
+          "families": [
+            {"id":"go","root":"go→went→gone","phonetic":"/ɡoʊ/ /went/ /ɡɔːn/","pos":"v.","clue":"to move or travel","clueZh":"去","members":[{"pos":"v.","posZh":"原","word":"go","example":"Let's go.","exampleZh":"走吧。","level":0},{"pos":"v.","posZh":"过","word":"went","example":"I went home.","exampleZh":"我回家了。","level":0},{"pos":"v.","posZh":"分","word":"gone","example":"He has gone.","exampleZh":"他已经走了。","level":0}]},
+            {"id":"eat","root":"eat→ate→eaten","phonetic":"/iːt/ /eɪt/ /ˈiːtən/","pos":"v.","clue":"to consume food","clueZh":"吃","members":[{"pos":"v.","posZh":"原","word":"eat","example":"Eat well.","exampleZh":"好好吃饭。","level":0},{"pos":"v.","posZh":"过","word":"ate","example":"I ate too much.","exampleZh":"我吃太多了。","level":0},{"pos":"v.","posZh":"分","word":"eaten","example":"I have eaten.","exampleZh":"我已经吃过了。","level":0}]},
+            {"id":"drink","root":"drink→drank→drunk","phonetic":"/drɪŋk/ /dræŋk/ /drʌŋk/","pos":"v.","clue":"to consume liquid","clueZh":"喝","members":[{"pos":"v.","posZh":"原","word":"drink","example":"Drink water.","exampleZh":"喝水。","level":0},{"pos":"v.","posZh":"过","word":"drank","example":"He drank it all.","exampleZh":"他喝光了。","level":0},{"pos":"v.","posZh":"分","word":"drunk","example":"He has drunk too much.","exampleZh":"他喝太多了。","level":0}]},
+            {"id":"swim","root":"swim→swam→swum","phonetic":"/swɪm/ /swæm/ /swʌm/","pos":"v.","clue":"to move through water","clueZh":"游泳","members":[{"pos":"v.","posZh":"原","word":"swim","example":"I can swim.","exampleZh":"我会游泳。","level":0},{"pos":"v.","posZh":"过","word":"swam","example":"We swam in the lake.","exampleZh":"我们在湖里游泳。","level":0},{"pos":"v.","posZh":"分","word":"swum","example":"I have swum there.","exampleZh":"我在那里游过。","level":0}]},
+            {"id":"sing","root":"sing→sang→sung","phonetic":"/sɪŋ/ /sæŋ/ /sʌŋ/","pos":"v.","clue":"to make musical sounds with your voice","clueZh":"唱","members":[{"pos":"v.","posZh":"原","word":"sing","example":"Sing a song.","exampleZh":"唱首歌。","level":0},{"pos":"v.","posZh":"过","word":"sang","example":"She sang beautifully.","exampleZh":"她唱得很美。","level":0},{"pos":"v.","posZh":"分","word":"sung","example":"I have sung this before.","exampleZh":"我以前唱过。","level":0}]},
+            {"id":"begin","root":"begin→began→begun","phonetic":"/bɪˈɡɪn/ /bɪˈɡæn/ /bɪˈɡʌn/","pos":"v.","clue":"to start","clueZh":"开始","members":[{"pos":"v.","posZh":"原","word":"begin","example":"Let's begin.","exampleZh":"开始吧。","level":0},{"pos":"v.","posZh":"过","word":"began","example":"It began at eight.","exampleZh":"八点开始的。","level":0},{"pos":"v.","posZh":"分","word":"begun","example":"It has already begun.","exampleZh":"已经开始了。","level":0}]},
+            {"id":"drive","root":"drive→drove→driven","phonetic":"/draɪv/ /droʊv/ /ˈdrɪvən/","pos":"v.","clue":"to operate a vehicle","clueZh":"驾驶","members":[{"pos":"v.","posZh":"原","word":"drive","example":"Drive carefully.","exampleZh":"小心驾驶。","level":0},{"pos":"v.","posZh":"过","word":"drove","example":"I drove home.","exampleZh":"我开车回家了。","level":0},{"pos":"v.","posZh":"分","word":"driven","example":"I have driven this road.","exampleZh":"我开过这条路。","level":0}]},
+            {"id":"write","root":"write→wrote→written","phonetic":"/raɪt/ /roʊt/ /ˈrɪtən/","pos":"v.","clue":"to produce words on paper","clueZh":"写","members":[{"pos":"v.","posZh":"原","word":"write","example":"Write a note.","exampleZh":"写张便条。","level":0},{"pos":"v.","posZh":"过","word":"wrote","example":"She wrote a letter.","exampleZh":"她写了一封信。","level":0},{"pos":"v.","posZh":"分","word":"written","example":"A written test.","exampleZh":"笔试。","level":0}]}
           ]
         }
       ]
@@ -134,13 +206,58 @@
       "id": "collocations",
       "name": "Collocations",
       "nameZh": "词语搭配",
-      "desc": "Common word pairings · make/do/take/have + nouns",
-      "descZh": "常用词语搭配 · make/do/take/have + 名词",
+      "desc": "Common word pairings · make/do/take/have pair-match",
+      "descZh": "常用搭配 · make/do/take/have 配对练习",
       "gramlin": "think",
       "icon": "🔗",
       "sort": 4,
       "deckType": "collocation",
-      "lessons": []
+      "lessons": [
+        {
+          "id": "coll_make",
+          "name": "Make + Noun",
+          "nameZh": "Make + 名词",
+          "sort": 1,
+          "families": [
+            {"id":"make_decision","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"做","members":[{"pos":"","posZh":"","word":"make a decision","example":"","exampleZh":"做决定","level":0}]},
+            {"id":"make_mistake","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"犯","members":[{"pos":"","posZh":"","word":"make a mistake","example":"","exampleZh":"犯错误","level":0}]},
+            {"id":"make_progress","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"取得","members":[{"pos":"","posZh":"","word":"make progress","example":"","exampleZh":"取得进展","level":0}]},
+            {"id":"make_effort","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"付出","members":[{"pos":"","posZh":"","word":"make an effort","example":"","exampleZh":"付出努力","level":0}]},
+            {"id":"make_difference","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"带来","members":[{"pos":"","posZh":"","word":"make a difference","example":"","exampleZh":"带来改变","level":0}]},
+            {"id":"make_sense","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"有","members":[{"pos":"","posZh":"","word":"make sense","example":"","exampleZh":"有道理","level":0}]},
+            {"id":"make_money","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"赚","members":[{"pos":"","posZh":"","word":"make money","example":"","exampleZh":"赚钱","level":0}]},
+            {"id":"make_friend","root":"make","phonetic":"","pos":"","clue":"make","clueZh":"交","members":[{"pos":"","posZh":"","word":"make friends","example":"","exampleZh":"交朋友","level":0}]}
+          ]
+        },
+        {
+          "id": "coll_do",
+          "name": "Do + Noun",
+          "nameZh": "Do + 名词",
+          "sort": 2,
+          "families": [
+            {"id":"do_homework","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"做","members":[{"pos":"","posZh":"","word":"do homework","example":"","exampleZh":"做作业","level":0}]},
+            {"id":"do_business","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"做","members":[{"pos":"","posZh":"","word":"do business","example":"","exampleZh":"做生意","level":0}]},
+            {"id":"do_research","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"做","members":[{"pos":"","posZh":"","word":"do research","example":"","exampleZh":"做研究","level":0}]},
+            {"id":"do_exercise","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"做","members":[{"pos":"","posZh":"","word":"do exercise","example":"","exampleZh":"锻炼","level":0}]},
+            {"id":"do_favor","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"帮","members":[{"pos":"","posZh":"","word":"do a favor","example":"","exampleZh":"帮忙","level":0}]},
+            {"id":"do_damage","root":"do","phonetic":"","pos":"","clue":"do","clueZh":"造成","members":[{"pos":"","posZh":"","word":"do damage","example":"","exampleZh":"造成损害","level":0}]}
+          ]
+        },
+        {
+          "id": "coll_take",
+          "name": "Take + Noun",
+          "nameZh": "Take + 名词",
+          "sort": 3,
+          "families": [
+            {"id":"take_risk","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"承担","members":[{"pos":"","posZh":"","word":"take a risk","example":"","exampleZh":"冒险","level":0}]},
+            {"id":"take_break","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"休息","members":[{"pos":"","posZh":"","word":"take a break","example":"","exampleZh":"休息一下","level":0}]},
+            {"id":"take_advantage","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"利用","members":[{"pos":"","posZh":"","word":"take advantage","example":"","exampleZh":"利用","level":0}]},
+            {"id":"take_responsibility","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"承担","members":[{"pos":"","posZh":"","word":"take responsibility","example":"","exampleZh":"承担责任","level":0}]},
+            {"id":"take_care","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"照顾","members":[{"pos":"","posZh":"","word":"take care","example":"","exampleZh":"保重","level":0}]},
+            {"id":"take_action","root":"take","phonetic":"","pos":"","clue":"take","clueZh":"采取","members":[{"pos":"","posZh":"","word":"take action","example":"","exampleZh":"采取行动","level":0}]}
+          ]
+        }
+      ]
     }
   ]
 }
