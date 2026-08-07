@@ -1,0 +1,178 @@
+/* ═══════════════════════════════════════════════
+   FlashcardLessonScreen
+   ═══════════════════════════════════════════════ */
+
+.fcls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding-bottom: 40px;
+}
+
+/* ── Header ── */
+.fcls-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fcls-back {
+  background: none; border: none; font-size: 18px;
+  cursor: pointer; padding: 4px; color: var(--color-dark);
+  min-width: 40px; min-height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 8px;
+}
+.fcls-back:hover { color: var(--color-primary); background: var(--color-primary-ghost); }
+.fcls-header-info { display: flex; flex-direction: column; gap: 1px; }
+.fcls-mod-name { font-size: 0.68rem; color: var(--color-muted); }
+.fcls-lesson-name { font-size: 0.9rem; font-weight: 700; color: var(--color-dark); }
+
+/* ── Progress ── */
+.fcls-progress {
+  display: flex; justify-content: space-between;
+  font-size: 0.72rem; color: var(--color-muted);
+}
+.fcls-mastered { color: var(--color-correct); font-weight: 600; }
+.fcls-progress-bar {
+  width: 100%; height: 4px; background: var(--color-border-light);
+  border-radius: 2px; overflow: hidden;
+}
+.fcls-progress-fill {
+  height: 100%; background: var(--color-primary);
+  border-radius: 2px; transition: width 0.3s var(--ease-out);
+}
+
+/* ── Card Stack ── */
+.fcls-stack {
+  display: flex; flex-direction: column; gap: 8px;
+}
+
+/* ── Individual Card ── */
+.fcls-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: 14px; padding: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.fcls-card:hover { border-color: var(--color-primary); box-shadow: 0 2px 12px rgba(255,140,66,0.08); }
+.fcls-card--open { border-color: var(--color-primary); }
+.fcls-card--mastered { border-color: var(--color-correct); background: var(--color-correct-bg); cursor: default; }
+.fcls-card--review { border-color: var(--color-review); background: var(--color-review-bg); cursor: default; }
+
+.fcls-front {
+  display: flex; flex-direction: column; gap: 6px;
+}
+.fcls-pos-tag {
+  font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--color-primary); font-weight: 700;
+}
+.fcls-clue {
+  font-size: 0.82rem; color: var(--color-dark-secondary); line-height: 1.5;
+}
+.fcls-hint {
+  font-size: 0.6rem; color: var(--color-muted);
+  display: flex; align-items: center; gap: 4px;
+}
+
+/* ── Back (expanded) ── */
+.fcls-back {
+  margin-top: var(--space-3); padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-light);
+  display: flex; flex-direction: column; gap: 4px;
+}
+.fcls-word {
+  font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em;
+  color: #4a3f6b;
+}
+.fcls-phonetic {
+  font-size: 0.68rem; color: var(--color-muted); margin-bottom: 6px;
+}
+
+/* ── Family members ── */
+.fcls-members {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.fcls-member {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 10px; border-radius: 8px;
+  font-size: 0.7rem; font-weight: 600;
+  position: relative; overflow: hidden;
+}
+.fcls-member .fcls-member-pos {
+  font-size: 0.6rem; opacity: 0.7; min-width: 24px; flex-shrink: 0;
+}
+.fcls-member .fcls-member-word {
+  flex: 1; min-width: 0;
+}
+.fcls-member .fcls-member-example {
+  font-size: 0.6rem; font-weight: 400; opacity: 0.65; font-style: italic;
+  flex-shrink: 1; text-align: right; margin-left: 4px;
+}
+
+/* Gradient levels for word family */
+.fm-l0 { background: #4a3f6b; color: #f0e8ff; }
+.fm-l0 .fcls-member-example { color: #c8b8e8; }
+.fm-l1 { background: #6b5b8f; color: #e8dcf8; }
+.fm-l1 .fcls-member-example { color: #c0b0e0; }
+.fm-l2 { background: #8b7aab; color: #ddd0f0; }
+.fm-l2 .fcls-member-example { color: #b8a8d8; }
+.fm-l3 { background: #a89ac2; color: #d0c4e8; }
+.fm-l3 .fcls-member-example { color: #a898d0; }
+
+/* ── Actions ── */
+.fcls-actions {
+  display: flex; gap: 8px; margin-top: 10px;
+  padding-top: 10px; border-top: 1px solid var(--color-border-light);
+}
+.fcls-btn {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px; border: 1.5px solid var(--color-border); border-radius: 12px;
+  background: var(--color-surface); cursor: pointer;
+  font-size: 0.75rem; font-weight: 600; font-family: inherit;
+  transition: all 0.15s;
+}
+.fcls-btn:hover { transform: translateY(-1px); }
+.fcls-btn--mastered { border-color: var(--color-correct); color: var(--color-correct); }
+.fcls-btn--mastered:hover { background: var(--color-correct-bg); }
+.fcls-btn--review { border-color: var(--color-review); color: var(--color-review); }
+.fcls-btn--review:hover { background: var(--color-review-bg); }
+
+.fcls-swipe-hint {
+  display: flex; justify-content: space-between;
+  padding: 4px 2px 0; font-size: 0.58rem; color: var(--color-muted);
+}
+
+/* ── Done state ── */
+.fcls-done {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 12px; padding: 2rem 1rem; text-align: center;
+}
+.fcls-done p {
+  font-size: 1rem; font-weight: 700; color: var(--color-dark);
+}
+.fcls-btn--restart {
+  background: var(--color-primary); color: #fff; border: none;
+  padding: 10px 20px; cursor: pointer; border-radius: 12px;
+  font-weight: 700; font-size: 0.78rem; font-family: inherit;
+}
+.fcls-btn--restart:hover { background: var(--color-primary-hover); }
+
+/* ── Review stack access ── */
+.fcls-review-link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; background: var(--color-review-bg);
+  border: 1px solid #fde68a; border-radius: 12px;
+  font-size: 0.75rem; font-weight: 600; color: #92400e;
+  cursor: pointer; margin-top: 8px;
+}
+.fcls-review-link .count {
+  background: var(--color-review); color: #fff;
+  width: 22px; height: 22px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.65rem; font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .fcls-member-example { display: none; }
+}

@@ -129,6 +129,8 @@ export interface ErrorEntry {
   attemptCount: number;
 }
 
+export type Panel = "grammar" | "flashcards" | "context";
+
 export type Screen =
   | "loading"
   | "welcome"
@@ -138,12 +140,58 @@ export type Screen =
   | "completion"
   | "error-log"
   | "admin"
-  | "verb-flashcard";
+  | "flashcard-lesson";
+
+/* ── Flashcard data types ── */
+export interface WordFamilyMember {
+  pos: string;
+  posZh: string;
+  word: string;
+  example: string;
+  exampleZh: string;
+  level: number; // 0 = root, 1 = +1 affix, 2 = +2 affixes
+}
+
+export interface WordFamily {
+  id: string;
+  root: string;
+  phonetic: string;
+  pos: string; // "v." | "n." | "v. · n." etc
+  clue: string;     // EN: definition; ZH: Chinese word
+  clueZh: string;
+  members: WordFamilyMember[];
+}
+
+export interface FlashcardLesson {
+  id: string;
+  name: string;
+  nameZh: string;
+  sort: number;
+  families: WordFamily[];
+}
+
+export interface FlashcardModule {
+  id: string;
+  name: string;
+  nameZh: string;
+  desc: string;
+  descZh: string;
+  gramlin: string;
+  icon: string;
+  sort: number;
+  deckType: "wordfamily" | "irregular" | "collocation";
+  lessons: FlashcardLesson[];
+}
+
+export interface FlashcardData {
+  modules: FlashcardModule[];
+}
 
 export type GramlinPose = "neutral" | "graduate" | "book" | "celebrate" | "sad" | "think" | "sleeper" | "pencil" | "hearts" | "trophy" | "power" | "peeking" | "confused" | "party" | "grad" | "angry" | "crying" | "laptop" | "sleep-ground" | "juggler";
 
 export interface AppState {
   screen: Screen;
+  activePanel: Panel;
   language: Language;
   currentUser: UserProfile | null;
   activeModuleId: string | null;

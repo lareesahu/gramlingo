@@ -13,7 +13,7 @@ import { LessonScreen } from '../screens/LessonScreen';
 import { CompletionScreen } from '../screens/CompletionScreen';
 import { ErrorLogScreen } from '../screens/ErrorLogScreen';
 import { AdminScreen } from '../screens/AdminScreen';
-import { VerbFlashcardScreen } from '../screens/VerbFlashcardScreen';
+import { FlashcardLessonScreen } from '../screens/FlashcardLessonScreen';
 
 const LOADED_FLAG = 'gramlingo_loaded_before';
 const LOAD_DURATION = 1500;
@@ -68,8 +68,8 @@ export function App() {
     case 'admin':
       return <AppShell backTo={() => navigateTo('learning-path')}><AdminScreen /></AppShell>;
 
-    case 'verb-flashcard':
-      return <AppShell backTo={() => navigateTo('learning-path')}><VerbFlashcardScreen /></AppShell>;
+    case 'flashcard-lesson':
+      return <AppShell backTo={() => navigateTo('learning-path')}><FlashcardLessonScreen /></AppShell>;
 
     default:
       return <AppShell showNav={false}><WelcomeScreen /></AppShell>;

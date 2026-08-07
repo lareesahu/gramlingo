@@ -4,8 +4,9 @@
 
 import { useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
 import { AppContext, type AuthError } from './app-state';
-import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language, UserProgressState } from '../game/types';
+import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language, Panel, UserProgressState, FlashcardData, WordFamily } from '../game/types';
 import { GAME_DATA } from '../game/data';
+import rawFlashcardData from '../../data/flashcards.json';
 import {
   cloudEnabled,
   fetchCloudAdminUsers,
@@ -116,6 +117,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
   );
   const [cloudRecoveryPending, setCloudRecoveryPending] = useState(false);
   const cloudSyncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // ── Panel ──
+  const [activePanel, setActivePanel] = useState<Panel>('grammar');
+
+  // ── Flashcards ──
+  const fcData = rawFlashcardData as FlashcardData;
+  const [flashcardReviewStack, setFlashcardReviewStack] = useState<WordFamily[]>([]);
+  const [activeFlashcardModuleId, setActiveFlashcardModuleId] = useState<string | null>(null);
+  const [activeFlashcardLessonId, setActiveFlashcardLessonId] = useState<string | null>(null);
 
   const applyUserState = useCallback((state: UserProgressState | null) => {
     const next = state || emptyUserState();
@@ -485,13 +495,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, []);
   const startPhase = useCallback((moduleId: string, phaseId: string, questionIndex?: number) => {
     const phase = GAME_DATA.phases.find((candidate) => candidate.id === phaseId && candidate.module === moduleId);
-    // Flashcard modules don't use quiz questions
-    if (moduleId === 'irregular_verbs') {
-      setActiveModuleId(moduleId);
-      setActivePhaseId(phaseId);
-      setScreen('verb-flashcard');
-      return;
-    }
     if (!phase?.q.length) return;
     setActiveModuleId(moduleId);
     setActivePhaseId(phaseId);
@@ -583,8 +586,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
     // State
     screen, language, currentUser, activeModuleId, activePhaseId,
     activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
+    activePanel,
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
+    setActivePanel,
     cloudEnabled, cloudSyncStatus, getCloudAdminUsers,
     cloudRecoveryPending, createAccount, requestPasswordReset, resendConfirmation, completePasswordReset,
     updateProgress, getPhaseProgress, getModuleProgress, getUserModuleProgress, getModuleAttempted,
@@ -595,6 +600,25 @@ export function AppProvider({ children }: { children: ReactNode }) {
     toggleUserLock, isUserLocked,
     toggleModuleLock, isModuleLocked,
     completePhase,
+    // Flashcards
+    flashcardModules: fcData.modules,
+    enterFlashcardLesson: (moduleId: string, lessonId: string) => {
+      setActiveFlashcardModuleId(moduleId);
+      setActiveFlashcardLessonId(lessonId);
+      setScreen('flashcard-lesson');
+    },
+    flashcardReviewStack,
+    flashcardMarkReviewed: (familyId: string) => {
+      setFlashcardReviewStack(prev => prev.filter(f => f.id !== familyId));
+    },
+    flashcardMarkNeedsWork: (familyId: string) => {
+      const mod = fcData.modules.find(m => m.id === activeFlashcardModuleId);
+      const lesson = mod?.lessons.find(l => l.id === activeFlashcardLessonId);
+      const family = lesson?.families.find(f => f.id === familyId);
+      if (family && !flashcardReviewStack.find(f => f.id === familyId)) {
+        setFlashcardReviewStack(prev => [...prev, family]);
+      }
+    },
   };
 
   return <AppContext.Provider value={ctx}>{children}</AppContext.Provider>;

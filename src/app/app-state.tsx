@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════ */
 
 import { createContext, useContext } from 'react';
-import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress, CloudAdminUser } from '../game/types';
+import type { AppState, Language, Panel, Screen, UserProfile, ErrorEntry, PhaseProgress, CloudAdminUser, WordFamily, FlashcardModule } from '../game/types';
 
 /** Auth failure surfaced to the UI. `null` on the login result means success. */
 export interface AuthError {
@@ -14,6 +14,9 @@ export interface AuthError {
 export interface AppContextType extends AppState {
   // Navigation
   navigateTo: (screen: Screen) => void;
+
+  // Panel
+  setActivePanel: (panel: Panel) => void;
 
   // Language
   setLanguage: (lang: Language) => void;
@@ -66,6 +69,13 @@ export interface AppContextType extends AppState {
 
   // Completion
   completePhase: (score: number) => void;
+
+  // Flashcards
+  flashcardModules: FlashcardModule[];
+  enterFlashcardLesson: (moduleId: string, lessonId: string) => void;
+  flashcardReviewStack: WordFamily[];
+  flashcardMarkReviewed: (familyId: string) => void;
+  flashcardMarkNeedsWork: (familyId: string) => void;
 }
 
 export const AppContext = createContext<AppContextType | null>(null);
