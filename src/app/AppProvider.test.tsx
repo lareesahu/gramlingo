@@ -18,6 +18,10 @@ function TestHarness() {
       <button data-testid="btn-start" onClick={() => ctx.startPhase('clauses', 'rec')}>StartPhase</button>
       <button data-testid="btn-start-empty" onClick={() => ctx.startPhase('tenses', 'tense_present_simple')}>StartEmpty</button>
       <button data-testid="btn-nav" onClick={() => ctx.navigateTo('error-log')}>NavWB</button>
+      <button data-testid="btn-progress" onClick={() => ctx.updateProgress('clauses_rec', 'clauses', 100)}>Progress</button>
+      <button data-testid="btn-login-other" onClick={() => ctx.login('other')}>OtherLogin</button>
+      <div data-testid="testuser-progress">{ctx.getUserModuleProgress('testuser', 'clauses')}</div>
+      <div data-testid="other-progress">{ctx.getUserModuleProgress('other', 'clauses')}</div>
     </div>
   );
 }
@@ -93,5 +97,17 @@ describe('AppProvider', () => {
 
     const { getByTestId } = renderApp();
     expect(getByTestId('user').textContent).toBe('testuser');
+  });
+
+  it('isolates progress between local users', async () => {
+    const user = userEvent.setup();
+    renderApp();
+    await user.click(screen.getByTestId('btn-login'));
+    await user.click(screen.getByTestId('btn-progress'));
+    expect(Number(screen.getByTestId('testuser-progress').textContent)).toBeGreaterThan(0);
+
+    await user.click(screen.getByTestId('btn-login-other'));
+    expect(screen.getByTestId('other-progress').textContent).toBe('0');
+    expect(Number(screen.getByTestId('testuser-progress').textContent)).toBeGreaterThan(0);
   });
 });

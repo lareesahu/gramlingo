@@ -3,7 +3,13 @@
    ═══════════════════════════════════════════════ */
 
 import { createContext, useContext } from 'react';
-import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress } from '../game/types';
+import type { AppState, Language, Screen, UserProfile, ErrorEntry, PhaseProgress, CloudAdminUser } from '../game/types';
+
+/** Auth failure surfaced to the UI. `null` on the login result means success. */
+export interface AuthError {
+  message: string;
+  code: string | null;
+}
 
 export interface AppContextType extends AppState {
   // Navigation
@@ -13,9 +19,20 @@ export interface AppContextType extends AppState {
   setLanguage: (lang: Language) => void;
 
   // Auth
-  login: (username: string, pin?: string) => boolean;
+  login: (username: string, pin?: string) => Promise<AuthError | null>;
+  /** Create a new account. Returns { code: 'confirmation_required' } when the email must be confirmed first. */
+  createAccount: (email: string, password: string, name?: string) => Promise<AuthError | null>;
+  /** True when the app was opened from a Supabase password-reset link. */
+  cloudRecoveryPending: boolean;
+  requestPasswordReset: (email: string) => Promise<AuthError | null>;
+  resendConfirmation: (email: string) => Promise<AuthError | null>;
+  completePasswordReset: (newPassword: string) => Promise<AuthError | null>;
   logout: () => void;
   getUsers: () => UserProfile[];
+  getUserModuleProgress: (username: string, moduleId: string) => number;
+  cloudEnabled: boolean;
+  cloudSyncStatus: 'local' | 'syncing' | 'synced' | 'error';
+  getCloudAdminUsers: () => Promise<CloudAdminUser[]>;
 
   // Progress
   updateProgress: (phaseId: string, moduleId: string, score: number) => void;
@@ -35,6 +52,7 @@ export interface AppContextType extends AppState {
   // Lesson
   startPhase: (moduleId: string, phaseId: string, questionIndex?: number) => void;
   nextQuestion: () => void;
+  prevQuestion: () => void;
 
   // Backup
   exportData: () => string;

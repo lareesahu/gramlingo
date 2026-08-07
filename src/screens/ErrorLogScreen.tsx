@@ -24,7 +24,7 @@ export function ErrorLogScreen() {
   const sorted = [...filtered].sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
 
   const handleRetryQuestion = (entry: typeof sorted[0]) => {
-    startPhase(entry.moduleId, entry.phaseId, entry.questionIndex);
+    startPhase(entry.moduleId, entry.phaseId);
   };
 
   if (errorLog.length === 0) {

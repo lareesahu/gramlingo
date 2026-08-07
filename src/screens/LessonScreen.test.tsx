@@ -15,7 +15,7 @@ describe('Lesson flow', () => {
     await user.click(startBtn);
     await user.click(await screen.findByText('New Player'));
     await user.type(screen.getByPlaceholderText('Username'), 'test');
-    await user.click(screen.getByText('Log In'));
+    await user.click(screen.getByRole('button', { name: 'Log In' }));
     await user.click(await screen.findByRole('button', { name: /Relative Clauses: Lesson plan/ }));
     await user.click(await screen.findByRole('button', { name: /Identify Relative Clauses/ }));
 

@@ -43,6 +43,7 @@
   position: relative;
   display: flex;
   align-items: stretch;
+  overflow: visible;
 }
 
 .lp__grid-arrow {
@@ -86,6 +87,16 @@
   scrollbar-width: none;
   padding: var(--space-1);
   flex: 1;
+  cursor: grab;
+  align-items: stretch;
+  /* Cards fill the view height (swipe-deck feel) instead of a thin strip. */
+  min-height: clamp(460px, calc(100dvh - 170px), 1100px);
+}
+
+.lp__grid.is-dragging,
+.lp__grid.is-dragging * {
+  cursor: grabbing !important;
+  user-select: none;
 }
 
 .lp__grid::-webkit-scrollbar { display: none; }
@@ -93,6 +104,8 @@
 /* === Card === */
 .lp__card {
   flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
   overflow: hidden;
   background: #fef9f0;
@@ -130,15 +143,20 @@
 .lp__collapsed {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 
 .lp__card--open .lp__collapsed {
   display: none;
 }
 
-/* Cover image */
+/* Cover image — grows to fill the card when a sibling card is open, so
+   every card reads the same height whether flipped or not. */
 .lp__img-wrap {
   aspect-ratio: 4/3;
+  flex: 1 1 auto;
+  min-height: 0;
   overflow: hidden;
   position: relative;
   background: #e8dcc8;
@@ -149,6 +167,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  pointer-events: none;
   transition: transform 0.3s;
 }
 
@@ -184,6 +203,7 @@
 /* Card body */
 .lp__card-body {
   padding: 12px 14px 14px;
+  flex-shrink: 0;
 }
 
 .lp__card-title {
@@ -208,6 +228,10 @@
   display: flex;
   flex-direction: column;
   padding: 16px 14px 14px;
+  flex: 1;
+  /* Cap the panel so long modules (100 phases) can't stretch the whole row.
+     Phases scroll internally; flex-stretch keeps every card the same height. */
+  max-height: clamp(300px, calc(100dvh - 230px), 1040px);
   min-height: 300px;
 }
 
@@ -235,6 +259,7 @@
   gap: 3px;
   flex: 1;
   overflow-y: auto;
+  min-height: 0;
 }
 
 .lp__phase {

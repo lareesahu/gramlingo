@@ -34,15 +34,16 @@ describe('GAME_DATA integrity', () => {
   });
 
   it('keeps the full curriculum plan and the authored lesson bank', () => {
-    expect(GAME_DATA.modules).toHaveLength(12);
-    expect(GAME_DATA.phases).toHaveLength(92);
+    expect(GAME_DATA.modules).toHaveLength(13);
+    expect(GAME_DATA.phases).toHaveLength(100);
     expect(GAME_DATA.phases.filter(phase => phase.q.length > 0).length).toBeGreaterThan(80);
-    expect(GAME_DATA.phases.flatMap(phase => phase.q)).toHaveLength(282);
+    expect(GAME_DATA.phases.flatMap(phase => phase.q)).toHaveLength(346);
   });
 
   it('every question has options and at least 1 correct answer', () => {
     for (const phase of GAME_DATA.phases) {
       for (const q of phase.q) {
+        if ((q as any).type === 'cloze') continue;
         expect(q.o.length).toBeGreaterThan(1);
         expect(q.a).toBeDefined();
         expect(q.ex).toHaveLength(q.o.length);

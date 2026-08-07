@@ -1,7 +1,15 @@
 import { useState, useRef } from 'react';
 import { useAppContext } from '../app/app-state';
-import { Button } from '../components/Button/Button';
+import { useDragScroll } from '../hooks/useDragScroll';
 import { getStrings } from '../i18n/i18n';
+
+/** Trilingual display that dedupes identical strings (data often has en===zh===es). */
+export function trilingualName(primary: string, zh?: string, es?: string): string {
+  const parts = [primary];
+  if (zh && zh.trim() && zh.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(zh.trim());
+  if (es && es.trim() && es.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(es.trim());
+  return parts.join(' · ');
+}
 import { GAME_DATA } from '../game/data';
 // types used implicitly in JSX
 import './LearningPathScreen.css';
@@ -12,6 +20,7 @@ export function LearningPathScreen() {
   const isZh = language === 'zh';
   const [openModule, setOpenModule] = useState<string | null>(activeModuleId);
   const gridRef = useRef<HTMLDivElement>(null);
+  const dragScroll = useDragScroll<HTMLDivElement>();
 
   const { modules, phases, phaseLockOrder } = GAME_DATA;
   const totalCompleted = progress.filter(p => p.completed).length;
@@ -38,7 +47,7 @@ export function LearningPathScreen() {
             {mistakeCount > 0 && (<>
               <span style={{margin: '0 4px', color: 'var(--color-border)'}}>|</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--color-wrong)" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-              {mistakeCount} {s.errorLog}
+              <a href="#" onClick={(e) => { e.preventDefault(); navigateTo('error-log'); }} style={{color: 'inherit', textDecoration: 'underline', cursor: 'pointer'}}>{mistakeCount} {s.errorLog}</a>
             </>)}
           </span>
         </div>
@@ -47,7 +56,7 @@ export function LearningPathScreen() {
         <button type="button" className="lp__grid-arrow lp__grid-arrow--left" onClick={() => scrollGrid(-1)} aria-label="Previous modules">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6"/></svg>
         </button>
-        <div className="lp__grid" ref={gridRef}>
+        <div className="lp__grid" ref={gridRef} {...dragScroll}>
           {modules.map(mod => {
             const modPhases = phases.filter(p => p.module === mod.id);
             const playablePhases = modPhases.filter(p => p.q.length > 0);
@@ -80,7 +89,7 @@ export function LearningPathScreen() {
               >
                 <div className="lp__collapsed">
                   <div className="lp__img-wrap">
-                    <img src={coverSrc} alt={isZh ? mod.nameZh : mod.name} className="lp__img" loading="lazy" />
+                    <img src={coverSrc} alt={isZh ? mod.nameZh : mod.name} className="lp__img" loading="lazy" draggable={false} />
                     {isDone && <span className="lp__badge lp__badge--done">{isZh ? '已完成' : 'Done'}</span>}
                     {isInProgress && <span className="lp__badge lp__badge--progress">{completed}/{playablePhases.length}</span>}
                     {!hasLessons && <span className="lp__badge lp__badge--planned">{s.comingSoon}</span>}
@@ -104,7 +113,7 @@ export function LearningPathScreen() {
                         return (
                           <button key={phase.id} className={phaseCls} onClick={!locked ? () => startPhase(mod.id, phase.id) : undefined} disabled={locked}>
                             <span className="lp__phase-num">{isPhaseDone ? (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-correct)" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>) : (i + 1)}</span>
-                            <span className="lp__phase-name">{isZh ? phase.nameZh : phase.name}</span>
+                            <span className="lp__phase-name">{trilingualName(phase.name, phase.nameZh, phase.nameEs)}</span>
                             {!hasQuestions && <span className="lp__phase-status">{s.comingSoon}</span>}
                             {hasQuestions && locked && <span className="lp__phase-status">{modLocked ? s.lockedByTeacher : s.locked}</span>}
                             {!locked && !isPhaseDone && <span className="lp__phase-arrow">→</span>}
@@ -133,14 +142,6 @@ export function LearningPathScreen() {
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6"/></svg>
         </button>
       </div>
-      {mistakeCount > 0 && (
-        <div className="lp__mistakes-cta">
-          <Button variant="ghost" size="sm" onClick={() => navigateTo('error-log')}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{marginRight:4}}><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            {isZh ? '复习 ' + mistakeCount + ' 个错误' : 'Review ' + mistakeCount + ' Mistake' + (mistakeCount !== 1 ? 's' : '')}
-          </Button>
-        </div>
-      )}
     </div>
   );
 }

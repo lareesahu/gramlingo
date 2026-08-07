@@ -7,6 +7,7 @@ import { Gramlin } from '../components/Gramlin/Gramlin';
 import { ProgressBar } from '../components/ProgressBar/ProgressBar';
 import { Button } from '../components/Button/Button';
 import { getStrings } from '../i18n/i18n';
+import { trilingualName } from './LearningPathScreen';
 import { GAME_DATA } from '../game/data';
 import { scoreToStars, type GramlinPose } from '../game/types';
 import './ModuleScreen.css';
@@ -46,7 +47,7 @@ export function ModuleScreen() {
           const phase = GAME_DATA.phases.find((ph) => ph.id === pid);
           const isLocked = i > 0 && !getPhaseProgress(order[i - 1])?.completed;
           const stars = pp?.bestScore ? scoreToStars(pp.bestScore) : 0;
-          const phaseName = isZh && phase?.nameZh ? phase.nameZh : (phase?.name || pid);
+          const phaseName = trilingualName(phase?.name || pid, phase?.nameZh, phase?.nameEs);
 
           return (
             <div key={pid} className={`ms-phase-item ${isLocked ? 'locked' : ''} ${pp?.completed ? 'done' : ''}`}>

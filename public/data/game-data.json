@@ -541,7 +541,7 @@
           "t": {
             "en": "who for people as subject",
             "zh": "who 指人作主语 → who 或 that 都可以",
-            "es": ""
+            "es": "who for people as subject"
           },
           "ex": {
             "en": [
@@ -557,10 +557,10 @@
               "who 指人作主语 → who 或 that 都可以"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "who for people as subject",
+              "who for people as subject",
+              "who for people as subject",
+              "who for people as subject"
             ]
           }
         },
@@ -599,7 +599,7 @@
           "t": {
             "en": "Person as subject → who/that",
             "zh": "指人作主语 → who/that",
-            "es": ""
+            "es": "Person as subject → who/that"
           },
           "ex": {
             "en": [
@@ -615,10 +615,10 @@
               "指人作主语 → who/that"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "Person as subject → who/that",
+              "Person as subject → who/that",
+              "Person as subject → who/that",
+              "Person as subject → who/that"
             ]
           }
         },
@@ -653,7 +653,7 @@
           "t": {
             "en": "Thing as subject → that/which",
             "zh": "指物作主语 → that/which",
-            "es": ""
+            "es": "Thing as subject → that/which"
           },
           "ex": {
             "en": [
@@ -669,10 +669,10 @@
               "指物作主语 → that/which"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "Thing as subject → that/which",
+              "Thing as subject → that/which",
+              "Thing as subject → that/which",
+              "Thing as subject → that/which"
             ]
           }
         },
@@ -707,7 +707,7 @@
           "t": {
             "en": "train is a thing → that/which",
             "zh": "train 是物 → that/which",
-            "es": ""
+            "es": "train is a thing → that/which"
           },
           "ex": {
             "en": [
@@ -723,10 +723,10 @@
               "train 是物 → that/which"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "train is a thing → that/which",
+              "train is a thing → that/which",
+              "train is a thing → that/which",
+              "train is a thing → that/which"
             ]
           }
         },
@@ -764,7 +764,7 @@
           "t": {
             "en": "friend = person, subject → who/that",
             "zh": "friend 指人 → who/that",
-            "es": ""
+            "es": "friend = person, subject → who/that"
           },
           "ex": {
             "en": [
@@ -780,10 +780,10 @@
               "friend 指人 → who/that"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "friend = person, subject → who/that",
+              "friend = person, subject → who/that",
+              "friend = person, subject → who/that",
+              "friend = person, subject → who/that"
             ]
           }
         },
@@ -821,7 +821,7 @@
           "t": {
             "en": "People as subject → who/that",
             "zh": "人作主语 → who/that",
-            "es": ""
+            "es": "People as subject → who/that"
           },
           "ex": {
             "en": [
@@ -837,10 +837,10 @@
               "人作主语 → who/that"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "People as subject → who/that",
+              "People as subject → who/that",
+              "People as subject → who/that",
+              "People as subject → who/that"
             ]
           }
         },
@@ -875,7 +875,7 @@
           "t": {
             "en": "package = thing → that/which",
             "zh": "package 是物 → that/which",
-            "es": ""
+            "es": "package = thing → that/which"
           },
           "ex": {
             "en": [
@@ -891,10 +891,10 @@
               "package 是物 → that/which"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "package = thing → that/which",
+              "package = thing → that/which",
+              "package = thing → that/which",
+              "package = thing → that/which"
             ]
           }
         }
@@ -951,7 +951,7 @@
           "t": {
             "en": "file is the object of sent",
             "zh": "file 是 sent 的宾语",
-            "es": ""
+            "es": "file is the object of sent"
           },
           "ex": {
             "en": [
@@ -967,10 +967,10 @@
               "file 是 sent 的宾语"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "file is the object of sent",
+              "file is the object of sent",
+              "file is the object of sent",
+              "file is the object of sent"
             ]
           }
         },
@@ -1008,7 +1008,7 @@
           "t": {
             "en": "movie is the object of watched",
             "zh": "movie 是 watched 的宾语",
-            "es": ""
+            "es": "movie is the object of watched"
           },
           "ex": {
             "en": [
@@ -1024,10 +1024,10 @@
               "movie 是 watched 的宾语"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "movie is the object of watched",
+              "movie is the object of watched",
+              "movie is the object of watched",
+              "movie is the object of watched"
             ]
           }
         },
@@ -1066,7 +1066,7 @@
           "t": {
             "en": "Person as object → whom/that",
             "zh": "指人作宾语 → whom/that",
-            "es": ""
+            "es": "Person as object → whom/that"
           },
           "ex": {
             "en": [
@@ -1082,10 +1082,10 @@
               "指人作宾语 → whom/that"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "Person as object → whom/that",
+              "Person as object → whom/that",
+              "Person as object → whom/that",
+              "Person as object → whom/that"
             ]
           }
         },
@@ -1124,7 +1124,7 @@
           "t": {
             "en": "People as object → whom/that",
             "zh": "人作宾语 → whom/that",
-            "es": ""
+            "es": "People as object → whom/that"
           },
           "ex": {
             "en": [
@@ -1140,10 +1140,10 @@
               "人作宾语 → whom/that"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "People as object → whom/that",
+              "People as object → whom/that",
+              "People as object → whom/that",
+              "People as object → whom/that"
             ]
           }
         },
@@ -1181,7 +1181,7 @@
           "t": {
             "en": "report is the object of wrote",
             "zh": "report 是 wrote 的宾语",
-            "es": ""
+            "es": "report is the object of wrote"
           },
           "ex": {
             "en": [
@@ -1197,10 +1197,10 @@
               "report 是 wrote 的宾语"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "report is the object of wrote",
+              "report is the object of wrote",
+              "report is the object of wrote",
+              "report is the object of wrote"
             ]
           }
         },
@@ -1238,7 +1238,7 @@
           "t": {
             "en": "advice is the object of gave",
             "zh": "advice 是 gave 的宾语",
-            "es": ""
+            "es": "advice is the object of gave"
           },
           "ex": {
             "en": [
@@ -1254,10 +1254,10 @@
               "advice 是 gave 的宾语"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "advice is the object of gave",
+              "advice is the object of gave",
+              "advice is the object of gave",
+              "advice is the object of gave"
             ]
           }
         }
@@ -1308,7 +1308,7 @@
           "t": {
             "en": "who IS the subject of called",
             "zh": "who 自己就是 called 的主语",
-            "es": ""
+            "es": "who IS the subject of called"
           },
           "ex": {
             "en": [
@@ -1320,8 +1320,8 @@
               "who 自己就是 called 的主语"
             ],
             "es": [
-              "",
-              ""
+              "who IS the subject of called",
+              "who IS the subject of called"
             ]
           }
         },
@@ -1350,7 +1350,7 @@
           "t": {
             "en": "I is the subject, who is the object",
             "zh": "I 是主语，who 是 called 的宾语",
-            "es": ""
+            "es": "I is the subject, who is the object"
           },
           "ex": {
             "en": [
@@ -1362,8 +1362,8 @@
               "I 是主语，who 是 called 的宾语"
             ],
             "es": [
-              "",
-              ""
+              "I is the subject, who is the object",
+              "I is the subject, who is the object"
             ]
           }
         },
@@ -1398,7 +1398,7 @@
           "t": {
             "en": "who already represents 'the man'",
             "zh": "who 已经代表'那个人'了",
-            "es": ""
+            "es": "who already represents 'the man'"
           },
           "ex": {
             "en": [
@@ -1414,10 +1414,10 @@
               "who 已经代表'那个人'了"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "who already represents 'the man'",
+              "who already represents 'the man'",
+              "who already represents 'the man'",
+              "who already represents 'the man'"
             ]
           }
         },
@@ -1452,7 +1452,7 @@
           "t": {
             "en": "that already represents the report",
             "zh": "that 已经代表 the report",
-            "es": ""
+            "es": "that already represents the report"
           },
           "ex": {
             "en": [
@@ -1468,10 +1468,10 @@
               "that 已经代表 the report"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "that already represents the report",
+              "that already represents the report",
+              "that already represents the report",
+              "that already represents the report"
             ]
           }
         },
@@ -1500,7 +1500,7 @@
           "t": {
             "en": "answering is done BY the student → subject",
             "zh": "回答是学生发出的 → 主语",
-            "es": ""
+            "es": "answering is done BY the student → subject"
           },
           "ex": {
             "en": [
@@ -1512,8 +1512,8 @@
               "回答是学生发出的 → 主语"
             ],
             "es": [
-              "",
-              ""
+              "answering is done BY the student → subject",
+              "answering is done BY the student → subject"
             ]
           }
         },
@@ -1542,7 +1542,7 @@
           "t": {
             "en": "praising is done BY the teacher → object",
             "zh": "表扬是老师发出的 → 宾语",
-            "es": ""
+            "es": "praising is done BY the teacher → object"
           },
           "ex": {
             "en": [
@@ -1554,8 +1554,8 @@
               "表扬是老师发出的 → 宾语"
             ],
             "es": [
-              "",
-              ""
+              "praising is done BY the teacher → object",
+              "praising is done BY the teacher → object"
             ]
           }
         }
@@ -1612,7 +1612,7 @@
           "t": {
             "en": "cafe is a place → where",
             "zh": "cafe 是地点 → where",
-            "es": ""
+            "es": "cafe is a place → where"
           },
           "ex": {
             "en": [
@@ -1628,10 +1628,10 @@
               "cafe 是地点 → where"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "cafe is a place → where",
+              "cafe is a place → where",
+              "cafe is a place → where",
+              "cafe is a place → where"
             ]
           }
         },
@@ -1666,7 +1666,7 @@
           "t": {
             "en": "day is time → when",
             "zh": "day 是时间 → when",
-            "es": ""
+            "es": "day is time → when"
           },
           "ex": {
             "en": [
@@ -1682,10 +1682,10 @@
               "day 是时间 → when"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "day is time → when",
+              "day is time → when",
+              "day is time → when",
+              "day is time → when"
             ]
           }
         },
@@ -1720,7 +1720,7 @@
           "t": {
             "en": "reason is cause → why",
             "zh": "reason 是原因 → why",
-            "es": ""
+            "es": "reason is cause → why"
           },
           "ex": {
             "en": [
@@ -1736,10 +1736,10 @@
               "reason 是原因 → why"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "reason is cause → why",
+              "reason is cause → why",
+              "reason is cause → why",
+              "reason is cause → why"
             ]
           }
         },
@@ -1774,7 +1774,7 @@
           "t": {
             "en": "office is a place → where",
             "zh": "office 是地点 → where",
-            "es": ""
+            "es": "office is a place → where"
           },
           "ex": {
             "en": [
@@ -1790,10 +1790,10 @@
               "office 是地点 → where"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "office is a place → where",
+              "office is a place → where",
+              "office is a place → where",
+              "office is a place → where"
             ]
           }
         },
@@ -1828,7 +1828,7 @@
           "t": {
             "en": "year is time → when",
             "zh": "year 是时间 → when",
-            "es": ""
+            "es": "year is time → when"
           },
           "ex": {
             "en": [
@@ -1844,10 +1844,10 @@
               "year 是时间 → when"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "year is time → when",
+              "year is time → when",
+              "year is time → when",
+              "year is time → when"
             ]
           }
         },
@@ -1882,7 +1882,7 @@
           "t": {
             "en": "room is a place → where",
             "zh": "room 是地点 → where",
-            "es": ""
+            "es": "room is a place → where"
           },
           "ex": {
             "en": [
@@ -1898,10 +1898,10 @@
               "room 是地点 → where"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "room is a place → where",
+              "room is a place → where",
+              "room is a place → where",
+              "room is a place → where"
             ]
           }
         },
@@ -1936,7 +1936,7 @@
           "t": {
             "en": "moment is a point in time → when",
             "zh": "moment 是时间点 → when",
-            "es": ""
+            "es": "moment is a point in time → when"
           },
           "ex": {
             "en": [
@@ -1952,10 +1952,10 @@
               "moment 是时间点 → when"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "moment is a point in time → when",
+              "moment is a point in time → when",
+              "moment is a point in time → when",
+              "moment is a point in time → when"
             ]
           }
         },
@@ -1990,7 +1990,7 @@
           "t": {
             "en": "reason is cause → why",
             "zh": "reason 是原因 → why",
-            "es": ""
+            "es": "reason is cause → why"
           },
           "ex": {
             "en": [
@@ -2006,10 +2006,10 @@
               "reason 是原因 → why"
             ],
             "es": [
-              "",
-              "",
-              "",
-              ""
+              "reason is cause → why",
+              "reason is cause → why",
+              "reason is cause → why",
+              "reason is cause → why"
             ]
           }
         }
@@ -4705,10 +4705,10 @@
               "Is go is ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "动词原形不加 -s，与主语 she 不匹配。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "单独用 going 句子不完整。",
+              "Is go 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -4759,10 +4759,10 @@
               "Having alone misses auxiliary are."
             ],
             "zh": [
-              "选项 A。",
+              "Have 是一般现在时，不表示正在进行的动作。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has 与复数主语 they 不一致。",
+              "Having 单独使用缺少助动词 are。"
             ],
             "es": [
               "Opción A.",
@@ -4813,10 +4813,10 @@
               "Seeing alone is incomplete."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "See 是动词原形，缺少过去分词形式。",
+              "Saw 是过去式，但 before 后面需要完成时。",
               "正确！选项 C。",
-              "选项 D。"
+              "Seeing 单独使用句子不完整。"
             ],
             "es": [
               "Opción A.",
@@ -4867,10 +4867,10 @@
               "Rose is past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Rise 缺少第三人称单数的 -s。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is rising 表示正在发生，不适用于陈述事实。",
+              "Rose 是过去式，不适合描述一般规律。"
             ],
             "es": [
               "Opción A.",
@@ -4921,10 +4921,10 @@
               "Studied is past tense."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Study 缺少 -s 或只是一般现在时。",
+              "Studies 表示长期习惯，不是临时的。",
               "正确！选项 C。",
-              "选项 D。"
+              "Studied 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -4975,10 +4975,10 @@
               "Are going = future plan."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Go 是一般现在时。",
+              "Went 是过去式——since 2020 需要现在完成时。",
               "正确！选项 C。",
-              "选项 D。"
+              "Are going 表示将来的计划。"
             ],
             "es": [
               "Opción A.",
@@ -5051,10 +5051,10 @@
               "Were going implies interruption."
             ],
             "zh": [
-              "选项 A。",
+              "Go 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have gone 是现在完成时——时态冲突。",
+              "Were going 暗示被打断。"
             ],
             "es": [
               "Opción A.",
@@ -5105,10 +5105,10 @@
               "Have cooked is present perfect."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Cook 是动词原形。",
+              "Cooked 是过去式——while 后面需要用进行时。",
               "正确！选项 C。",
-              "选项 D。"
+              "Have cooked 是现在完成时。"
             ],
             "es": [
               "Opción A.",
@@ -5159,10 +5159,10 @@
               "Has finished is present perfect."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Finishes 是现在时。",
+              "Finished 是一般过去时——需要表示更早的时间。",
               "正确！选项 C。",
-              "选项 D。"
+              "Has finished 是现在完成时。"
             ],
             "es": [
               "Opción A.",
@@ -5213,10 +5213,10 @@
               "Have played = present perfect."
             ],
             "zh": [
-              "选项 A。",
+              "Play 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was playing 是过去进行时，不表示反复的习惯。",
+              "Have played 是现在完成时。"
             ],
             "es": [
               "Opción A.",
@@ -5267,10 +5267,10 @@
               "Was losing = ongoing, not completed loss."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Loses 是现在时。",
+              "Lost 是一般过去时——需要表示在到达前已完成。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was losing 表示正在进行，不是已经丢失。"
             ],
             "es": [
               "Opción A.",
@@ -5321,10 +5321,10 @@
               "Was starting = in progress, not completed."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Starts 是现在时。",
+              "Started 是一般过去时——没有表示在到达前已完成。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was starting 表示正在进行，不是已完成。"
             ],
             "es": [
               "Opción A.",
@@ -5397,10 +5397,10 @@
               "Rained is past."
             ],
             "zh": [
-              "选项 A。",
+              "Rains 是一般现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will rain 表示一般预测，缺乏基于证据的判断。",
+              "Rained 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -5451,10 +5451,10 @@
               "Saw is past."
             ],
             "zh": [
-              "选项 A。",
+              "See 是一般现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will see 用于已安排的约会不够自然。",
+              "Saw 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -5506,9 +5506,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is leaving 是个人安排，不是固定时刻表。",
+              "Will leave 可以但不那么常规。",
+              "Left 是过去式。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -5559,10 +5559,10 @@
               "Won is past."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Wins 是现在时。",
+              "Is winning 表示现在正在发生。",
               "正确！选项 C。",
-              "选项 D。"
+              "Won 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -5613,10 +5613,10 @@
               "Sat is past."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Sit 是动词原形。",
+              "Are sitting 是现在时。",
               "正确！选项 C。",
-              "选项 D。"
+              "Sat 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -5667,10 +5667,10 @@
               "Worked is past."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Works 是现在时。",
+              "Will work 不表示到某个时间点已完成。",
               "正确！选项 C。",
-              "选项 D。"
+              "Worked 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -5743,10 +5743,10 @@
               "Was losing = past continuous."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Lose 是动词原形。",
+              "Lost 是一般过去时——与现在没有关联。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was losing 是过去进行时。"
             ],
             "es": [
               "Opción A.",
@@ -5797,10 +5797,10 @@
               "Is living = right now, not duration."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Lives 表示现在习惯，没有持续时间。",
+              "Lived 表示已不再住在那里。",
               "正确！选项 C。",
-              "选项 D。"
+              "Is living 表示此刻，不表示持续时长。"
             ],
             "es": [
               "Opción A.",
@@ -5852,9 +5852,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Did leave 是一般过去时，不搭配 just。",
+              "Was leaving 表示正在进行，不是已完成。",
+              "Is leaving 表示现在正在离开。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -5905,10 +5905,10 @@
               "Was trying = continuous, wrong pattern."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Try 是动词原形。",
+              "Tried 是一般过去时，句型不对。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was trying 是进行时，句型不对。"
             ],
             "es": [
               "Opción A.",
@@ -5959,10 +5959,10 @@
               "Did leave = simple past, no earlier timing."
             ],
             "zh": [
-              "选项 A。",
+              "Has left 是现在完成时，不是过去的过去。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was leaving 表示正在进行中，不是已经离开。",
+              "Did leave 是一般过去时，没有更早的时间关系。"
             ],
             "es": [
               "Opción A.",
@@ -6013,10 +6013,10 @@
               "Did see = simple past, no before-that-point."
             ],
             "zh": [
-              "选项 A。",
+              "Has seen 是现在完成时——时间参照点是过去。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was seeing 表示进行中，不是经历。",
+              "Did see 是一般过去时，没有\"在那之前\"的含义。"
             ],
             "es": [
               "Opción A.",
@@ -6089,10 +6089,10 @@
               "Did look = past."
             ],
             "zh": [
-              "选项 A。",
+              "Do look 是一般现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have looked 表示已完成。",
+              "Did look 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -6144,9 +6144,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was always losing 是过去习惯。",
+              "Has lost 表示一次性完成。",
+              "Does lose 是中性的一般现在时。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -6219,10 +6219,10 @@
               "Am living = right now, no duration."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Live 是一般现在时，没有持续时间。",
+              "Lived 是过去式，暗示已经不在这里。",
               "正确！选项 C。",
-              "选项 D。"
+              "Am living 表示此刻，没有持续时间。"
             ],
             "es": [
               "Opción A.",
@@ -6273,10 +6273,10 @@
               "Was writing = continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Writes 是现在时——他已经去世了。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has written 是现在完成时——不能用于已故的人。",
+              "Was writing 是进行时。"
             ],
             "es": [
               "Opción A.",
@@ -6327,10 +6327,10 @@
               "Do not finish = present habit."
             ],
             "zh": [
-              "选项 A。",
+              "Did not finish 是一般过去时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was not finishing 是过去进行时。",
+              "Do not finish 是现在习惯。"
             ],
             "es": [
               "Opción A.",
@@ -6381,10 +6381,10 @@
               "Was drinking = continuous."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Drinks 是现在习惯。",
+              "Drank 是过去式——上午还没结束。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was drinking 是进行时。"
             ],
             "es": [
               "Opción A.",
@@ -6457,10 +6457,10 @@
               "Was blowing + shook = mixed, less natural."
             ],
             "zh": [
-              "选项 A。",
+              "Blows 是现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Had blown 是过去完成时，这里不需要。",
+              "Was blowing + shook 混用时态，不够自然。"
             ],
             "es": [
               "Opción A.",
@@ -6511,10 +6511,10 @@
               "Did escape = simple past, no before."
             ],
             "zh": [
-              "选项 A。",
+              "Has escaped 是现在完成时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was escaping 表示正在进行。",
+              "Did escape 是一般过去时，没有\"在那之前\"的含义。"
             ],
             "es": [
               "Opción A.",
@@ -6587,10 +6587,10 @@
               "Seeing alone is incomplete."
             ],
             "zh": [
-              "选项 A。",
+              "Have seen + yesterday 时态搭配错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have saw 不符合语法。",
+              "Seeing 单独使用句子不完整。"
             ],
             "es": [
               "Opción A.",
@@ -6641,10 +6641,10 @@
               "Knowing alone is incomplete."
             ],
             "zh": [
-              "选项 A。",
+              "Is knowing 是错误的用法。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has knowing 不符合语法。",
+              "Knowing 单独使用句子不完整。"
             ],
             "es": [
               "Opción A.",
@@ -6695,10 +6695,10 @@
               "Have seen = unusual for first conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Will see 出现在 if 从句中是错误的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Saw 是过去式——不适用于真实将来的条件句。",
+              "Have seen 不常用于第一条件句。"
             ],
             "es": [
               "Opción A.",
@@ -6749,10 +6749,10 @@
               "Are finding = present."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Find 是动词原形。",
+              "Will find 是将来时，不表示在截止时间前完成。",
               "正确！选项 C。",
-              "选项 D。"
+              "Are finding 是现在时。"
             ],
             "es": [
               "Opción A.",
@@ -6803,10 +6803,10 @@
               "Has worked = present perfect."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Works 是现在时。",
+              "Worked 是一般过去时，没有持续时间。",
               "正确！选项 C。",
-              "选项 D。"
+              "Has worked 是现在完成时。"
             ],
             "es": [
               "Opción A.",
@@ -6857,10 +6857,10 @@
               "Was reading = past, but still reading now."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Read 是一般现在时。",
+              "Am reading 表示此刻，不适用于持续数周。",
               "正确！选项 C。",
-              "选项 D。"
+              "Was reading 是过去时，但仍在阅读。"
             ],
             "es": [
               "Opción A.",
@@ -6934,9 +6934,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will boil 是第一条件句，不表示一般规律。",
+              "Would boil 是非真实条件，但这是真实情况。",
+              "Will heat 出现在 if 从句中是错误的。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -6988,9 +6988,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will die 对一般规律来说过于具体。",
+              "Would die 是非真实条件。",
+              "Will not water 出现在 if 从句中是错误的。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7042,9 +7042,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will drop 出现在 when 从句中是错误的。",
+              "Would freeze 是非真实条件。",
+              "Will freeze 用于永恒事实不够自然。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7118,9 +7118,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will rain 出现在 if 从句中是错误的。",
+              "Would stay 是非真实的第二条件句。",
+              "Stay 缺少 will。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7171,10 +7171,10 @@
               "Passed is past — mismatch."
             ],
             "zh": [
-              "选项 A。",
+              "Passes 是现在时——需要用 will 表示将来。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Would pass + studied 是非真实条件。",
+              "Passed 是过去式——时态不匹配。"
             ],
             "es": [
               "Opción A.",
@@ -7226,9 +7226,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Do + will ask 不符合语法。",
+              "Would + asked 是非真实条件。",
+              "Are + ask 不符合语法。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7279,10 +7279,10 @@
               "Let + hear = zero conditional fact."
             ],
             "zh": [
-              "选项 A。",
+              "Let 是动词原形——需要 will。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Would let + heard 是非真实条件。",
+              "Let + hear 是零条件句，陈述事实。"
             ],
             "es": [
               "Opción A.",
@@ -7355,10 +7355,10 @@
               "Will be in if-clause is wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Am + will 是第一条件句，指现在的非真实情况。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was + will 混用了条件类型。",
+              "Will be 出现在 if 从句中是错误的。"
             ],
             "es": [
               "Opción A.",
@@ -7409,10 +7409,10 @@
               "Has + would mixes types."
             ],
             "zh": [
-              "选项 A。",
+              "Has + will 是真实第一条件句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Would have 出现在 if 从句中是错误的。",
+              "Has + would 混用了条件类型。"
             ],
             "es": [
               "Opción A.",
@@ -7463,10 +7463,10 @@
               "Would be in if-clause is wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Am + will 过于直接。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was + will 混用了条件类型。",
+              "Would be 出现在 if 从句中是错误的。"
             ],
             "es": [
               "Opción A.",
@@ -7539,10 +7539,10 @@
               "Would know in if-clause is wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Know 是现在时——错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Knew 是一般过去时，不是过去完成时。",
+              "Would know 出现在 if 从句中是错误的。"
             ],
             "es": [
               "Opción A.",
@@ -7593,10 +7593,10 @@
               "Will catch + left mixes future/past."
             ],
             "zh": [
-              "选项 A。",
+              "Catches + leaves 是零条件句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Caught + would leave 混用了条件类型。",
+              "Will catch + left 混用了将来时和过去时。"
             ],
             "es": [
               "Opción A.",
@@ -7647,10 +7647,10 @@
               "Would call in if-clause is wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Call + will meet 是第一条件句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Called + will meet 混用了条件类型。",
+              "Would call 出现在 if 从句中是错误的。"
             ],
             "es": [
               "Opción A.",
@@ -7723,10 +7723,10 @@
               "Studied + have is ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Study + will have 是错误的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Had studied + would have 是第三条件句，不表示现在的结果。",
+              "Studied + have 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -7777,10 +7777,10 @@
               "Had not been + made is wrong structure."
             ],
             "zh": [
-              "选项 A。",
+              "Is not + will make 是第一条件句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was not + would make 是第二条件句。",
+              "Had not been + made 结构错误。"
             ],
             "es": [
               "Opción A.",
@@ -7853,10 +7853,10 @@
               "Because = reason, not condition."
             ],
             "zh": [
-              "选项 A。",
+              "If 在这里含义相反。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "When 表示时间，不表示条件。",
+              "Because 表示原因，不表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -7907,10 +7907,10 @@
               "As long is incomplete — needs as."
             ],
             "zh": [
-              "选项 A。",
+              "Unless 含义相反。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Otherwise 表示结果，不表示条件。",
+              "As long 不完整——需要 as。"
             ],
             "es": [
               "Opción A.",
@@ -7961,10 +7961,10 @@
               "Provided = granting condition, not precaution."
             ],
             "zh": [
-              "选项 A。",
+              "Unless = if not——含义相反。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Otherwise 表示结果。",
+              "Provided 表示准许条件，不是预防。"
             ],
             "es": [
               "Opción A.",
@@ -8037,10 +8037,10 @@
               "Would have = past regret, different structure."
             ],
             "zh": [
-              "选项 A。",
+              "Have 是现在时，不是非真实。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will have 是将来时，与 wish 搭配错误。",
+              "Would have 表示过去的遗憾，结构不同。"
             ],
             "es": [
               "Opción A.",
@@ -8091,10 +8091,10 @@
               "Would study = future, wrong for past regret."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Studies 是现在时。",
+              "Studied 是一般过去时，但 yesterday 需要过去完成时。",
               "正确！选项 C。",
-              "选项 D。"
+              "Would study 是将来时，不适合表示过去的遗憾。"
             ],
             "es": [
               "Opción A.",
@@ -8167,10 +8167,10 @@
               "Know + would = mixed types."
             ],
             "zh": [
-              "选项 A。",
+              "Would have known 出现在 if 从句中是错误的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Knew + will 混用了条件类型。",
+              "Know + would 混用了条件类型。"
             ],
             "es": [
               "Opción A.",
@@ -8221,10 +8221,10 @@
               "Would rain in if-clause is wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Will rain 出现在 if 从句中是错误的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Rained + will 混用了条件类型。",
+              "Would rain 出现在 if 从句中是错误的。"
             ],
             "es": [
               "Opción A.",
@@ -8297,10 +8297,10 @@
               "Active: chef does the cooking habitually."
             ],
             "zh": [
-              "选项 A。",
+              "主动语态：厨师做了烹饪。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "主动语态：厨师正在做烹饪。",
+              "主动语态：厨师习惯性地做烹饪。"
             ],
             "es": [
               "Opción A.",
@@ -8351,10 +8351,10 @@
               "Is breaking = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Broke 是主动过去时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Breaks 是主动现在时。",
+              "Is breaking 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -8405,10 +8405,10 @@
               "Active perfect: they have built."
             ],
             "zh": [
-              "选项 A。",
+              "主动语态：他们建造了。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "主动进行时：他们正在建造。",
+              "主动完成时：他们已经建造了。"
             ],
             "es": [
               "Opción A.",
@@ -8459,10 +8459,10 @@
               "Has spoken = active perfect."
             ],
             "zh": [
-              "选项 A。",
+              "Speaks 是主动语态，English 成了说话者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Speaking 不完整。",
+              "Has spoken 是主动完成时。"
             ],
             "es": [
               "Opción A.",
@@ -8535,10 +8535,10 @@
               "Have deliver = ungrammatical (missing past participle)."
             ],
             "zh": [
-              "选项 A。",
+              "Deliver 是主动动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Delivering 不完整。",
+              "Have deliver 不符合语法（缺少过去分词）。"
             ],
             "es": [
               "Opción A.",
@@ -8589,10 +8589,10 @@
               "Is catching = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Catches 是主动现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Caught 是主动过去时。",
+              "Is catching 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -8643,10 +8643,10 @@
               "Built = active past."
             ],
             "zh": [
-              "选项 A。",
+              "Builds 是主动现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is building 是主动进行时。",
+              "Built 是主动过去时。"
             ],
             "es": [
               "Opción A.",
@@ -8697,10 +8697,10 @@
               "Is not finishing = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Has not finished 是主动语态，work 成了执行者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Did not finish 是主动过去时。",
+              "Is not finishing 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -8773,10 +8773,10 @@
               "Is writing = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Wrote 是主动过去时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Writes 是主动现在时。",
+              "Is writing 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -8827,10 +8827,10 @@
               "Has stolen = active, needs subject."
             ],
             "zh": [
-              "选项 A。",
+              "Someone stole 是主动语态，指明了执行者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Stole 是主动语态，缺少主语。",
+              "Has stolen 是主动语态，缺少主语。"
             ],
             "es": [
               "Opción A.",
@@ -8881,10 +8881,10 @@
               "Has grown = active perfect."
             ],
             "zh": [
-              "选项 A。",
+              "Grows 是主动语态，rice 自己生长。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Growing 不完整。",
+              "Has grown 是主动完成时。"
             ],
             "es": [
               "Opción A.",
@@ -8957,10 +8957,10 @@
               "Has repaired = active perfect."
             ],
             "zh": [
-              "选项 A。",
+              "Repairs 是主动现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was repairing 是主动过去进行时。",
+              "Has repaired 是主动完成时。"
             ],
             "es": [
               "Opción A.",
@@ -9011,10 +9011,10 @@
               "Is cleaning = active present continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Cleans 是主动现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has cleaned 是主动完成时。",
+              "Is cleaning 是主动现在进行时。"
             ],
             "es": [
               "Opción A.",
@@ -9065,10 +9065,10 @@
               "Is completing = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Completes 是主动现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Completed 是主动过去时。",
+              "Is completing 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -9141,10 +9141,10 @@
               "Is opening = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Can open 是主动语态，门自己打开。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Opens 是主动现在时。",
+              "Is opening 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -9195,10 +9195,10 @@
               "Is finishing = active continuous."
             ],
             "zh": [
-              "选项 A。",
+              "Must finish 是主动语态，report 成了执行者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Finishes 是主动现在时。",
+              "Is finishing 是主动进行时。"
             ],
             "es": [
               "Opción A.",
@@ -9249,10 +9249,10 @@
               "Are should = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Should 不完整——需要 be + 过去分词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should have 含义不同（表示过去）。",
+              "Are should 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -9325,10 +9325,10 @@
               "Have cut = wrong tense (present)."
             ],
             "zh": [
-              "选项 A。",
+              "Cut 单独使用 = 我自己剪的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Was cut 是被动语态，不是使役。",
+              "Have cut 时态错误（现在时）。"
             ],
             "es": [
               "Opción A.",
@@ -9379,10 +9379,10 @@
               "Has wash = ungrammatical (needs pp)."
             ],
             "zh": [
-              "选项 A。",
+              "Washes = 她自己洗。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is washing 是主动进行时。",
+              "Has wash 不符合语法（需要过去分词）。"
             ],
             "es": [
               "Opción A.",
@@ -9433,10 +9433,10 @@
               "Get fix = ungrammatical (needs pp)."
             ],
             "zh": [
-              "选项 A。",
+              "Fix = 我们自己修。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Are fixed 是被动语态，不是使役。",
+              "Get fix 不符合语法（需要过去分词）。"
             ],
             "es": [
               "Opción A.",
@@ -9509,10 +9509,10 @@
               "They are believed = different structure."
             ],
             "zh": [
-              "选项 A。",
+              "It believes 是主动语态，it 成了相信者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "People believe 是主动语态。",
+              "They are believed 结构不同。"
             ],
             "es": [
               "Opción A.",
@@ -9563,10 +9563,10 @@
               "He is said = personal passive, different."
             ],
             "zh": [
-              "选项 A。",
+              "It says 是主动语态，it 成了说话者。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "They say 是主动语态。",
+              "He is said 是个人被动，结构不同。"
             ],
             "es": [
               "Opción A.",
@@ -9639,10 +9639,10 @@
               "Has built = ungrammatical (bridge cannot build)."
             ],
             "zh": [
-              "选项 A。",
+              "缺少 be——不符合语法。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is built 是现在时，但 1890 是过去。",
+              "Has built 不符合语法（桥不能自己建造）。"
             ],
             "es": [
               "Opción A.",
@@ -9693,10 +9693,10 @@
               "Missing verb — ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "含义错误——蛋糕不能吃孩子。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Were eating 时态不同（进行时）。",
+              "缺少动词——不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -9747,10 +9747,10 @@
               "Is wrote = wrong participle."
             ],
             "zh": [
-              "选项 A。",
+              "Wrote 是一般过去时，不是过去分词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "缺少 be——不符合语法。",
+              "Is wrote 过去分词错误。"
             ],
             "es": [
               "Opción A.",
@@ -9823,10 +9823,10 @@
               "Will be = future, wrong backshift."
             ],
             "zh": [
-              "选项 A。",
+              "Is 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has been 是现在完成时，时态倒退错误。",
+              "Will be 是将来时，时态倒退错误。"
             ],
             "es": [
               "Opción A.",
@@ -9877,10 +9877,10 @@
               "Will like = future, wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Likes 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has liked 多余的完成时。",
+              "Will like 是将来时，错误。"
             ],
             "es": [
               "Opción A.",
@@ -9931,10 +9931,10 @@
               "Leave = wrong tense."
             ],
             "zh": [
-              "选项 A。",
+              "Are leaving 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have left 含义错误。",
+              "Leave 时态错误。"
             ],
             "es": [
               "Opción A.",
@@ -10007,10 +10007,10 @@
               "Am living = wrong backshift."
             ],
             "zh": [
-              "选项 A。",
+              "Live 是现在时，应该时态倒退。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have lived 含义错误。",
+              "Am living 时态倒退错误。"
             ],
             "es": [
               "Opción A.",
@@ -10061,10 +10061,10 @@
               "When = wh- question, but original has no when."
             ],
             "zh": [
-              "选项 A。",
+              "That 用于陈述句，不是疑问句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "What 是 wh- 疑问句，但原句是一般疑问句。",
+              "When 是 wh- 疑问句，但原句没有 when。"
             ],
             "es": [
               "Opción A.",
@@ -10115,10 +10115,10 @@
               "Is leave = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Leaves 是直接引语，没有时态倒退。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Does leave 保持了直接疑问句语序。",
+              "Is leave 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -10191,10 +10191,10 @@
               "Closed = past, wrong for command."
             ],
             "zh": [
-              "选项 A。",
+              "Close 是直接命令。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Closing 形式错误。",
+              "Closed 是过去时，不适合命令。"
             ],
             "es": [
               "Opción A.",
@@ -10245,10 +10245,10 @@
               "Not being = wrong form."
             ],
             "zh": [
-              "选项 A。",
+              "Do not be 是直接命令。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "To not being 不符合语法。",
+              "Not being 形式错误。"
             ],
             "es": [
               "Opción A.",
@@ -10321,10 +10321,10 @@
               "Today = should become that day."
             ],
             "zh": [
-              "选项 A。",
+              "Tomorrow 是直接引语，没有转换。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Yesterday 方向错误。",
+              "Today 应变为 that day。"
             ],
             "es": [
               "Opción A.",
@@ -10375,10 +10375,10 @@
               "Today = wrong time reference."
             ],
             "zh": [
-              "选项 A。",
+              "Now 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Here 应变为 there。",
+              "Today 时间参照错误。"
             ],
             "es": [
               "Opción A.",
@@ -10451,10 +10451,10 @@
               "Spoke needs preposition (spoke about)."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Told 需要宾语（told me that）。",
+              "Said 可以但 admitted 更精确。",
               "正确！选项 C。",
-              "选项 D。"
+              "Spoke 需要介词（spoke about）。"
             ],
             "es": [
               "Opción A.",
@@ -10505,10 +10505,10 @@
               "Spoke = wrong pattern."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Said 太笼统。",
+              "Told 需要宾语。",
               "正确！选项 C。",
-              "选项 D。"
+              "Spoke 句型错误。"
             ],
             "es": [
               "Opción A.",
@@ -10581,10 +10581,10 @@
               "Finishes = present, wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Has finished 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Finished 是一般过去时，丢失了完成含义。",
+              "Finishes 是现在时，错误。"
             ],
             "es": [
               "Opción A.",
@@ -10635,10 +10635,10 @@
               "Was = wrong backshift."
             ],
             "zh": [
-              "选项 A。",
+              "Will 是直接引语。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Had 时态倒退错误。",
+              "Was 时态倒退错误。"
             ],
             "es": [
               "Opción A.",
@@ -10711,10 +10711,10 @@
               "Is she live = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Does she live 保持了直接疑问句语序。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Lives she 倒装错误。",
+              "Is she live 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -10765,10 +10765,10 @@
               "Is where = inverted."
             ],
             "zh": [
-              "选项 A。",
+              "Where is 保持了直接疑问句语序。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Where the 不完整。",
+              "Is where 倒装错误。"
             ],
             "es": [
               "Opción A.",
@@ -10841,10 +10841,10 @@
               "I am = pronoun not changed."
             ],
             "zh": [
-              "选项 A。",
+              "Is going 没有时态倒退。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Goes 含义错误。",
+              "I am 代词未转换。"
             ],
             "es": [
               "Opción A.",
@@ -10895,10 +10895,10 @@
               "Not touching = wrong form."
             ],
             "zh": [
-              "选项 A。",
+              "Do not touch 是直接命令。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "To not touch 分裂不定式，不够标准。",
+              "Not touching 形式错误。"
             ],
             "es": [
               "Opción A.",
@@ -10971,10 +10971,10 @@
               "Is able = present, needs was able to for past."
             ],
             "zh": [
-              "选项 A。",
+              "Can 表示现在能力，不是过去。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will can 不符合语法。",
+              "Is able 是现在时，过去需要用 was able to。"
             ],
             "es": [
               "Opción A.",
@@ -11025,10 +11025,10 @@
               "Could to = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Could 表示一般过去能力，不适用于特定成就。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Can 是现在时。",
+              "Could to 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -11079,10 +11079,10 @@
               "Is able to = present."
             ],
             "zh": [
-              "选项 A。",
+              "Can 是现在时。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Could 是过去时或假设。",
+              "Is able to 是现在时。"
             ],
             "es": [
               "Opción A.",
@@ -11155,10 +11155,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Must 表示义务，不是许可。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should 表示建议。",
+              "Would 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -11209,10 +11209,10 @@
               "Should = advice."
             ],
             "zh": [
-              "选项 A。",
+              "Can 表示许可，含义相反。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Must 表示义务。",
+              "Should 表示建议。"
             ],
             "es": [
               "Opción A.",
@@ -11263,10 +11263,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Must 表示义务。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should 表示建议。",
+              "Would 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -11339,10 +11339,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Can 表示能力/许可。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Might 表示可能性。",
+              "Would 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -11393,10 +11393,10 @@
               "Should not = advice against."
             ],
             "zh": [
-              "选项 A。",
+              "Must 表示义务，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Must not 表示禁止。",
+              "Should not 表示建议不要。"
             ],
             "es": [
               "Opción A.",
@@ -11447,10 +11447,10 @@
               "Can = ability/permission."
             ],
             "zh": [
-              "选项 A。",
+              "Must 语气太强，不适合建议。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Might 可能性太弱。",
+              "Can 表示能力/许可。"
             ],
             "es": [
               "Opción A.",
@@ -11523,10 +11523,10 @@
               "Can = ability, not probability."
             ],
             "zh": [
-              "选项 A。",
+              "Must 表示强烈肯定，对推测来说太强。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should 表示预期。",
+              "Can 表示能力，不表示概率。"
             ],
             "es": [
               "Opción A.",
@@ -11577,10 +11577,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Might 可能但太弱。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Can 表示能力。",
+              "Would 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -11632,9 +11632,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Could not 表示过去不能。",
+              "Must not 表示禁止。",
+              "Should not 表示建议不要。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -11707,10 +11707,10 @@
               "Might have = possible, but coat evidence contradicts."
             ],
             "zh": [
-              "选项 A。",
+              "Must have 表示推测她离开了（证据不对）。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should have 表示过去应该做。",
+              "Might have 表示可能，但外套证据与之矛盾。"
             ],
             "es": [
               "Opción A.",
@@ -11761,10 +11761,10 @@
               "Would have = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Must have 表示推测。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Might have 表示可能性。",
+              "Would have 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -11837,10 +11837,10 @@
               "May = more formal, less common for objects."
             ],
             "zh": [
-              "选项 A。",
+              "Must 表示义务。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should 表示建议。",
+              "May 更正式，用于物品不太常见。"
             ],
             "es": [
               "Opción A.",
@@ -11913,10 +11913,10 @@
               "Might not = possibility, not prohibition."
             ],
             "zh": [
-              "选项 A。",
+              "Do not have to 表示不必要，但不是禁止。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Should not 是建议，对医院规定来说太弱。",
+              "Might not 表示可能，不是禁止。"
             ],
             "es": [
               "Opción A.",
@@ -11967,10 +11967,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "选项 A。",
+              "Can 表示能力，不是义务。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Might 表示可能，太弱。",
+              "Would 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -12043,10 +12043,10 @@
               "Must gone = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "Must to 不符合语法。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Must going 不符合语法。",
+              "Must gone 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -12097,10 +12097,10 @@
               "Can to speak = no to after modal."
             ],
             "zh": [
-              "选项 A。",
+              "Cans 情态动词不加 -s。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Can speaks 情态动词后不加 -s。",
+              "Can to speak 情态动词后不加 to。"
             ],
             "es": [
               "Opción A.",
@@ -12173,10 +12173,10 @@
               "Zero article = ungrammatical here."
             ],
             "zh": [
-              "选项 A。",
+              "A 用于辅音前。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "The 表示特指大象，但这是首次提到。",
+              "零冠词在这里不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -12227,10 +12227,10 @@
               "Zero article = wrong for unique things."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "A 是不定冠词，但 sun 是唯一的。",
+              "An 用于元音前，但 sun 是唯一的。",
               "正确！选项 C。",
-              "选项 D。"
+              "零冠词对独一无二的事物不正确。"
             ],
             "es": [
               "Opción A.",
@@ -12281,10 +12281,10 @@
               "Zero article = wrong with superlative."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "A 是不定冠词，不用于最高级。",
+              "An 用于元音前。",
               "正确！选项 C。",
-              "选项 D。"
+              "零冠词不能用于最高级。"
             ],
             "es": [
               "Opción A.",
@@ -12335,9 +12335,9 @@
               "Correct! No article for abstract general concepts."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "A 表示特定实例。",
+              "An 用于元音前。",
+              "The 表示特定的爱。",
               "正确！选项 D。"
             ],
             "es": [
@@ -12411,10 +12411,10 @@
               "Zero article = wrong for specific known item."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "A 是不定冠词，首次提及。",
+              "An 用于元音前。",
               "正确！选项 C。",
-              "选项 D。"
+              "零冠词对于特定的已知物品不正确。"
             ],
             "es": [
               "Opción A.",
@@ -12465,10 +12465,10 @@
               "Zero article = wrong here."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "A 表示任意一扇门，不特指。",
+              "An 用于元音前。",
               "正确！选项 C。",
-              "选项 D。"
+              "零冠词这里不正确。"
             ],
             "es": [
               "Opción A.",
@@ -12541,10 +12541,10 @@
               "Few = positive meaning."
             ],
             "zh": [
-              "选项 A。",
+              "Some 用于肯定句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Much 用于不可数名词。",
+              "Few 表示肯定含义。"
             ],
             "es": [
               "Opción A.",
@@ -12595,10 +12595,10 @@
               "Some = not in how questions."
             ],
             "zh": [
-              "选项 A。",
+              "Many 用于可数名词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Few 用于可数名词。",
+              "Some 不用于 how 疑问句。"
             ],
             "es": [
               "Opción A.",
@@ -12650,9 +12650,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Few 用于可数名词。",
+              "Much 表示大量。",
+              "Many 用于可数名词。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -12725,9 +12725,9 @@
               "Correct! Those = plural, far."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "This 是单数，近指。",
+              "That 是单数，远指。",
+              "These 是复数，近指。",
               "正确！选项 D。"
             ],
             "es": [
@@ -12779,9 +12779,9 @@
               "Correct! This is = introduction."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "That 是远指，客观。",
+              "Those 是复数，远指。",
+              "These 是复数，近指。",
               "正确！选项 D。"
             ],
             "es": [
@@ -12856,9 +12856,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "It is 是缩写，不是所有格。",
+              "His 是男性，但这里 dog 是中性。",
+              "Their 是复数，但 dog 是单数。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -12909,9 +12909,9 @@
               "Correct! Their = plural students."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "His 是单数男性。",
+              "Her 是单数女性。",
+              "Its 是单数中性。",
               "正确！选项 D。"
             ],
             "es": [
@@ -12985,10 +12985,10 @@
               "Zero article = plural generic, not singular."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "A 表示一只老虎，不代表物种。",
+              "An 用于元音前。",
               "正确！选项 C。",
-              "选项 D。"
+              "零冠词是复数泛指，不是单数。"
             ],
             "es": [
               "Opción A.",
@@ -13061,10 +13061,10 @@
               "Little = uncountable, negative."
             ],
             "zh": [
-              "选项 A。",
+              "Any 用于否定句/疑问句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Much 用于不可数名词。",
+              "Little 用于不可数，否定含义。"
             ],
             "es": [
               "Opción A.",
@@ -13137,10 +13137,10 @@
               "The useful = too specific for general advice."
             ],
             "zh": [
-              "选项 A。",
+              "An useful 错误（useful 以辅音音素开头），且 advice 不可数。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "A useful 错误，advice 不可数。",
+              "The useful 对泛指建议来说太具体。"
             ],
             "es": [
               "Opción A.",
@@ -13191,10 +13191,10 @@
               "Few money = few is for countables."
             ],
             "zh": [
-              "选项 A。",
+              "Some 仅用于肯定句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Much moneys 错误——money 不可数，不加 -s。",
+              "Few money 错误——few 用于可数名词。"
             ],
             "es": [
               "Opción A.",
@@ -13267,10 +13267,10 @@
               "And = addition."
             ],
             "zh": [
-              "选项 A。",
+              "But 表示对比。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Or 表示选择。",
+              "And 表示并列。"
             ],
             "es": [
               "Opción A.",
@@ -13321,9 +13321,9 @@
               "Correct! And = addition."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "But 表示对比。",
+              "So 表示结果。",
+              "Or 表示选择。",
               "正确！选项 D。"
             ],
             "es": [
@@ -13375,10 +13375,10 @@
               "Or = alternative."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "So 表示结果。",
+              "And 表示并列。",
               "正确！选项 C。",
-              "选项 D。"
+              "Or 表示选择。"
             ],
             "es": [
               "Opción A.",
@@ -13429,9 +13429,9 @@
               "Correct! Or = warning of consequence."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "And 表示并列。",
+              "But 表示对比。",
+              "So 表示结果。",
               "正确！选项 D。"
             ],
             "es": [
@@ -13505,10 +13505,10 @@
               "Unless = condition."
             ],
             "zh": [
-              "选项 A。",
+              "Because 表示原因，但散步与下雨矛盾。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "So 表示结果。",
+              "Unless 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -13559,10 +13559,10 @@
               "While = time or contrast."
             ],
             "zh": [
-              "选项 A。",
+              "Although 表示让步，但生病解释了待在家里。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Unless 表示条件。",
+              "While 表示时间或对比。"
             ],
             "es": [
               "Opción A.",
@@ -13635,10 +13635,10 @@
               "Not only...but also = addition, not exclusion."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Both...and 两者都肯定，但 can 是单数。",
+              "Either...or 二选一，与 can 搭配错误。",
               "正确！选项 C。",
-              "选项 D。"
+              "Not only...but also 表示递进，不是排除。"
             ],
             "es": [
               "Opción A.",
@@ -13689,9 +13689,9 @@
               "Correct! Not only...but also = emphasis."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
-              "选项 C。",
+              "Both...and 正确但不够强调。",
+              "Either...or 表示二者之一。",
+              "Neither...nor 表示两者都不。",
               "正确！选项 D。"
             ],
             "es": [
@@ -13765,10 +13765,10 @@
               "Since = reason or time."
             ],
             "zh": [
-              "选项 A。",
+              "Although 需要从句（Although it rained）。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Because 表示原因，矛盾。",
+              "Since 表示原因或时间。"
             ],
             "es": [
               "Opción A.",
@@ -13819,10 +13819,10 @@
               "Since = reason/time, not contrast."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Despite 需要名词，不是从句。",
+              "Because 表示原因，矛盾。",
               "正确！选项 C。",
-              "选项 D。"
+              "Since 表示原因/时间，不是让步。"
             ],
             "es": [
               "Opción A.",
@@ -13896,9 +13896,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Such + 名词 + that，但 hot 是形容词。",
+              "Too...to 含义不同。",
+              "Very...that 不符合语法。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -13949,10 +13949,10 @@
               "Very...that = ungrammatical."
             ],
             "zh": [
-              "选项 A。",
+              "So...that 只用于形容词，不用于 a + 名词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Too...to 含义不同。",
+              "Very...that 不符合语法。"
             ],
             "es": [
               "Opción A.",
@@ -14025,10 +14025,10 @@
               "Unless = condition."
             ],
             "zh": [
-              "选项 A。",
+              "Because 表示原因（过去），不是目的。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Although 表示让步。",
+              "Unless 表示条件。"
             ],
             "es": [
               "Opción A.",
@@ -14101,10 +14101,10 @@
               "Because = reason, needs clause."
             ],
             "zh": [
-              "选项 A。",
+              "Therefore 表示结果，含义相反。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Moreover 表示递进。",
+              "Because 表示原因，需要从句。"
             ],
             "es": [
               "Opción A.",
@@ -14155,10 +14155,10 @@
               "Despite = contrast, needs noun."
             ],
             "zh": [
-              "选项 A。",
+              "However 表示对比。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Although 表示让步，需要从句。",
+              "Despite 表示让步，需要名词。"
             ],
             "es": [
               "Opción A.",
@@ -14231,10 +14231,10 @@
               "Despite needs a noun, not a clause."
             ],
             "zh": [
-              "选项 A。",
+              "Although + but 双重连词，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Although + so 双重连词。",
+              "Despite 需要名词，不是从句。"
             ],
             "es": [
               "Opción A.",
@@ -14285,10 +14285,10 @@
               "Neither...or = should be neither...nor."
             ],
             "zh": [
-              "选项 A。",
+              "Both...or 搭配错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Either...and 搭配错误。",
+              "Neither...or 应为 neither...nor。"
             ],
             "es": [
               "Opción A.",
@@ -14361,10 +14361,10 @@
               "Reads = third person, wrong."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Read 是动词原形，错误。",
+              "To read 是不定式，enjoy 后面不加 to。",
               "正确！选项 C。",
-              "选项 D。"
+              "Reads 是第三人称，错误。"
             ],
             "es": [
               "Opción A.",
@@ -14415,10 +14415,10 @@
               "Works = third person."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Work 是动词原形。",
+              "To work 是不定式。",
               "正确！选项 C。",
-              "选项 D。"
+              "Works 是第三人称。"
             ],
             "es": [
               "Opción A.",
@@ -14469,10 +14469,10 @@
               "Made = past tense."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Make 是动词原形。",
+              "To make 是不定式。",
               "正确！选项 C。",
-              "选项 D。"
+              "Made 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14545,10 +14545,10 @@
               "Found = past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Find 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Finding 是动名词，decide 后面不跟动名词。",
+              "Found 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14599,10 +14599,10 @@
               "Called = past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Call 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Calling 是动名词，错误。",
+              "Called 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14653,10 +14653,10 @@
               "Became = past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Become 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Becoming 是动名词，want 后面不跟动名词。",
+              "Became 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14729,10 +14729,10 @@
               "Smoked = past tense."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Smoke 是动词原形。",
+              "To smoke 表示目的（停下来去抽烟）。",
               "正确！选项 C。",
-              "选项 D。"
+              "Smoked 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14783,10 +14783,10 @@
               "Locked = past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Lock 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Locking 表示记得做过锁门这个动作。",
+              "Locked 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14837,10 +14837,10 @@
               "Lifted = past tense."
             ],
             "zh": [
-              "选项 A。",
+              "Lift 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Lifting 表示尝试（试着用膝盖抬）。",
+              "Lifted 是过去式。"
             ],
             "es": [
               "Opción A.",
@@ -14914,9 +14914,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Made + to work 错误（make 后面跟不带 to 的不定式）。",
+              "Let + to work 错误（let 后面跟不带 to 的不定式）。",
+              "Had + worked 是过去分词，结构不同。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -14968,9 +14968,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Let + to drive 错误。",
+              "Made + drive 表示强迫，不是允许。",
+              "Allowed + drive 错误——allowed 需要 to（allowed me to drive）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15044,9 +15044,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "In 介词搭配错误。",
+              "To 错误，good 不与 to 搭配。",
+              "For 介词搭配错误。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15097,10 +15097,10 @@
               "For = wrong."
             ],
             "zh": [
-              "选项 A。",
+              "At 介词搭配错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "To 错误。",
+              "For 错误。"
             ],
             "es": [
               "Opción A.",
@@ -15173,10 +15173,10 @@
               "Been = past participle."
             ],
             "zh": [
-              "选项 A。",
+              "Be 是动词原形。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Being 是动名词，在 it is important 后错误。",
+              "Been 是过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -15270,10 +15270,10 @@
               "Suggest to going = wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Suggest to go 句型错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Suggest go 错误。",
+              "Suggest to going 错误。"
             ],
             "es": [
               "Opción A.",
@@ -15324,10 +15324,10 @@
               "Made + apologized = wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Made + to apologize 错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Made + apologizing 错误。",
+              "Made + apologized 错误。"
             ],
             "es": [
               "Opción A.",
@@ -15400,10 +15400,10 @@
               "Well she = inverted, poetic or wrong."
             ],
             "zh": [
-              "选项 A。",
+              "Well English 副词在宾语前，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Well speaks 副词在主语和动词之间，错误。",
+              "Well she 倒装，不自然或错误。"
             ],
             "es": [
               "Opción A.",
@@ -15454,10 +15454,10 @@
               "I have never = correct but not after fronted never."
             ],
             "zh": [
-              "选项 A。",
+              "Never I 否定词前置后没有倒装。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "I never have 位置别扭。",
+              "I have never 正确但不是在 never 前置时。"
             ],
             "es": [
               "Opción A.",
@@ -15530,10 +15530,10 @@
               "Did knew = wrong (did + base, not past)."
             ],
             "zh": [
-              "选项 A。",
+              "Are know be + 动词原形，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Have known 是现在完成时，不是简单疑问。",
+              "Did knew 错误（did + 动词原形，不是过去式）。"
             ],
             "es": [
               "Opción A.",
@@ -15584,10 +15584,10 @@
               "Did working = wrong form."
             ],
             "zh": [
-              "选项 A。",
+              "Does work 是一般现在时疑问句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Has worked 是现在完成时。",
+              "Did working 形式错误。"
             ],
             "es": [
               "Opción A.",
@@ -15660,10 +15660,10 @@
               "Has not = perfect negation."
             ],
             "zh": [
-              "选项 A。",
+              "Do not 用于 I/you/we/they。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is not 是 be 动词否定，不同。",
+              "Has not 是完成时否定。"
             ],
             "es": [
               "Opción A.",
@@ -15714,10 +15714,10 @@
               "None = pronoun, not adverb."
             ],
             "zh": [
-              "选项 A。",
+              "Not 需要 have not been。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "No 与 been 搭配错误。",
+              "None 是代词，不是副词。"
             ],
             "es": [
               "Opción A.",
@@ -15790,10 +15790,10 @@
               "Call you = verb + object, not a clause."
             ],
             "zh": [
-              "选项 A。",
+              "I will call you 是主句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Will call 只是动词短语。",
+              "Call you 是动词+宾语，不是从句。"
             ],
             "es": [
               "Opción A.",
@@ -15844,10 +15844,10 @@
               "When = subordinate clause, incomplete."
             ],
             "zh": [
-              "选项 A。",
-              "选项 B。",
+              "Because 是从属从句，不完整。",
+              "Although 是从属从句，不完整。",
               "正确！选项 C。",
-              "选项 D。"
+              "When 是从属从句，不完整。"
             ],
             "es": [
               "Opción A.",
@@ -15921,9 +15921,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "What...that 分裂句句型错误。",
+              "That...who 错误。",
+              "He...that 错误。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15974,10 +15974,10 @@
               "Which = specific choice, not cleft."
             ],
             "zh": [
-              "选项 A。",
+              "It 需要 is that 结构。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "That 不能做分裂句的主语。",
+              "Which 表示具体选择，不是分裂句。"
             ],
             "es": [
               "Opción A.",
@@ -16050,10 +16050,10 @@
               "Complete sentence."
             ],
             "zh": [
-              "选项 A。",
+              "完整句子。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "完整句子。",
+              "完整句子。"
             ],
             "es": [
               "Opción A.",
@@ -16104,10 +16104,10 @@
               "Comma in wrong place."
             ],
             "zh": [
-              "选项 A。",
+              "逗号拼接——仍然是流水句。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "逗号位置错误。",
+              "逗号位置错误。"
             ],
             "es": [
               "Opción A.",
@@ -16180,10 +16180,10 @@
               "Swim + run + biking = mixed."
             ],
             "zh": [
-              "选项 A。",
+              "Swimming（动名词）+ to run（不定式）= 不平行。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "To swim + running + to bike = 混用。",
+              "Swim + run + biking = 混用。"
             ],
             "es": [
               "Opción A.",
@@ -16234,10 +16234,10 @@
               "Has smart = wrong (smart is adjective, not noun)."
             ],
             "zh": [
-              "选项 A。",
+              "Has creativity 是动词+名词，不是形容词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Works hard 是动词短语，打破了形容词并列。",
+              "Has smart 错误（smart 是形容词，不是名词）。"
             ],
             "es": [
               "Opción A.",
@@ -16310,10 +16310,10 @@
               "I and John = correct grammar but impolite order."
             ],
             "zh": [
-              "选项 A。",
+              "Me 是宾格代词，不是主格。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "John and me 中 me 是宾格。",
+              "I and John 语法正确但语序不礼貌。"
             ],
             "es": [
               "Opción A.",
@@ -16364,10 +16364,10 @@
               "Awkward word order."
             ],
             "zh": [
-              "选项 A。",
+              "流水句，没有连词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "歧义——谁戴着帽子？",
+              "语序别扭。"
             ],
             "es": [
               "Opción A.",
@@ -16440,10 +16440,10 @@
               "Passed she = wrong inversion."
             ],
             "zh": [
-              "选项 A。",
+              "She passed 没有倒装。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "She did pass 表示强调但无倒装。",
+              "Passed she 倒装错误。"
             ],
             "es": [
               "Opción A.",
@@ -16494,10 +16494,10 @@
               "I see = present, wrong meaning."
             ],
             "zh": [
-              "选项 A。",
+              "I have seen 没有倒装。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "I saw 没有倒装，时态错误。",
+              "I see 是现在时，含义错误。"
             ],
             "es": [
               "Opción A.",
@@ -16570,10 +16570,10 @@
               "I had = no subordinator."
             ],
             "zh": [
-              "选项 A。",
+              "If I had 是标准形式，不是倒装。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "If I 不完整。",
+              "I had 没有从属连词。"
             ],
             "es": [
               "Opción A.",
@@ -16624,10 +16624,10 @@
               "Had we been = wrong tense."
             ],
             "zh": [
-              "选项 A。",
+              "We were 没有倒装。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "We had been 错误。",
+              "Had we been 时态错误。"
             ],
             "es": [
               "Opción A.",
@@ -16700,10 +16700,10 @@
               "This = wrong."
             ],
             "zh": [
-              "选项 A。",
+              "It 替代错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "That 不完整。",
+              "This 错误。"
             ],
             "es": [
               "Opción A.",
@@ -16754,10 +16754,10 @@
               "Did it = possible but less formal."
             ],
             "zh": [
-              "选项 A。",
+              "Did 太短，不清晰。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "So did 含义不同（so did I = 我也是）。",
+              "Did it 可以但不正式。"
             ],
             "es": [
               "Opción A.",
@@ -16830,10 +16830,10 @@
               "Let me = informal/direct."
             ],
             "zh": [
-              "选项 A。",
+              "Can 非正式。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Could 礼貌但不如 may 正式。",
+              "Let me 非正式/直接。"
             ],
             "es": [
               "Opción A.",
@@ -16884,10 +16884,10 @@
               "See ya = extremely informal."
             ],
             "zh": [
-              "选项 A。",
+              "Cheers 非常不正式。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Best 半正式。",
+              "See ya 极其不正式。"
             ],
             "es": [
               "Opción A.",
@@ -16960,10 +16960,10 @@
               "In contrast = contrast."
             ],
             "zh": [
-              "选项 A。",
+              "However 表示对比，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Nevertheless 表示对比。",
+              "In contrast 表示对比。"
             ],
             "es": [
               "Opción A.",
@@ -17014,10 +17014,10 @@
               "Consequently = result."
             ],
             "zh": [
-              "选项 A。",
+              "Therefore 表示结果，错误。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "As a result 表示结果。",
+              "Consequently 表示结果。"
             ],
             "es": [
               "Opción A.",
@@ -17090,10 +17090,10 @@
               "Introduced = past participle."
             ],
             "zh": [
-              "选项 A。",
+              "Introduce 是动词，不是名词。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Introducing 是动名词，不是纯名词。",
+              "Introduced 是过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -17167,9 +17167,9 @@
             ],
             "zh": [
               "正确！选项 A。",
-              "选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Is 太绝对。",
+              "Proves 太强。",
+              "Shows 太直接。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -17220,10 +17220,10 @@
               "Show = too direct."
             ],
             "zh": [
-              "选项 A。",
+              "Are 太绝对。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Prove 太强。",
+              "Show 太直接。"
             ],
             "es": [
               "Opción A.",
@@ -17296,10 +17296,10 @@
               "Lots of folks reckon = very informal."
             ],
             "zh": [
-              "选项 A。",
+              "A lot of + think + bad 非正式。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "Many people say + problem 半正式。",
+              "Lots of folks reckon 非常不正式。"
             ],
             "es": [
               "Opción A.",
@@ -17350,10 +17350,10 @@
               "Comma before who suggests non-restrictive, missing second comma."
             ],
             "zh": [
-              "选项 A。",
+              "Which 用于事物，不是人。",
               "正确！选项 B。",
-              "选项 C。",
-              "选项 D。"
+              "That 用于人不正式，逗号位置错误。",
+              "逗号在 who 前暗示非限制性，缺少第二个逗号。"
             ],
             "es": [
               "Opción A.",

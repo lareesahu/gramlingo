@@ -9,7 +9,7 @@ async function login(user: ReturnType<typeof userEvent.setup>) {
     await user.click(startBtn);
   await user.click(await screen.findByText('New Player'));
   await user.type(screen.getByPlaceholderText('Username'), 'test');
-  await user.click(screen.getByText('Log In'));
+  await user.click(screen.getByRole('button', { name: 'Log In' }));
   await screen.findByRole('button', { name: /Relative Clauses: Lesson plan/ });
 }
 
@@ -21,7 +21,7 @@ describe('Learning path', () => {
     render(<AppProvider><App /></AppProvider>);
     await login(user);
 
-    expect(document.querySelectorAll('.lp__card')).toHaveLength(12);
+    expect(document.querySelectorAll('.lp__card')).toHaveLength(13);
   });
 
   it('reveals a module lesson plan', async () => {

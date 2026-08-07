@@ -1,74 +1,34 @@
-﻿# Gramlingo Repository Rules
+﻿# Gramlingo Repository Rules (corrected 2026-08-07)
 
-## Canonical repository
+## Canonical source vs deploy repo
 
-The only writable Gramlingo repository is:
+| Role | Path | Repo/branch | Purpose |
+|---|---|---|---|
+| **SOURCE (canonical, writable)** | `C:\Users\hunin\projects\gramlingo-v3` | its own git (remote `lareesahu/gramlingo`) | React+TS+Vite source. Edit here. Build here. |
+| **DEPLOY (build output only)** | `C:\Users\hunin\projects\gramlingo` | git, branch `v2-restore` (Pages) + `gh-pages` | Contains ONLY `index.html` + `assets/` from dist. Never edit source here. |
 
-C:\Users\hunin\projects\gramlingo
+## Build + deploy workflow (verified 2026-08-06/07 — see PROVEN_WORKFLOWS.md)
 
-Do not search for, edit, copy from, restore from, compare against, or run builds inside any other folder whose name contains "gramlingo" unless the user explicitly requests recovery work.
+1. Ensure `gramlingo-v3/.env.local` has `VITE_SUPABASE_URL` + `VITE_SUPABASE_PUBLISHABLE_KEY` (copy from `gramlingo/.env.local` if missing).
+2. `npm run build` in gramlingo-v3 (tsc 0 errors).
+3. In deploy repo: `rm assets/index-*.{js,css}`; copy `dist/index.html` + `dist/assets/index-*.{js,css}`.
+4. `git add index.html assets/` + `git add -u`; commit; `git push origin v2-restore` AND `git push origin HEAD:gh-pages --force`.
+5. Pages legacy builder takes 5–15 min. Verify live bundle via `curl -s https://lareesahu.github.io/gramlingo/ | grep -o 'index-...'`.
 
-## Required startup checks
+## Data rules (CRITICAL — do not violate)
 
-Before editing anything, run:
-
-1. Get-Location
-2. git status
-3. git branch --show-current
-4. git rev-parse HEAD
-5. 
-pm run build
-
-Stop immediately if:
-
-- the current path is not C:\Users\hunin\projects\gramlingo
-- Git is in detached HEAD state
-- the branch is not the designated working branch
-- package.json is missing
-- the baseline build fails before any modifications
-
-Do not repair a missing file until confirming that it belongs to this repository and this version.
+- `public/data/game-data.json` is the ONLY dataset. 282 questions, 92 phases.
+- The `name`/`q`/`o`/`t`/`ex` fields are DICTs: `{en, zh, es}`. Never treat them as strings.
+- `ex` = explanation arrays, one string PER OPTION. `t` = tip string.
+- **Do NOT bulk-rewrite the dataset without: (1) a backup copy, (2) a written plan in this repo, (3) Lareesa's approval.** LLM bulk translation of game-data.json is a rejected approach (2026-08-07) — the data is the curriculum, not a scratch file.
 
 ## Shell rules
 
-Use Windows PowerShell commands only.
-
-Do not use:
-
-- /c/Users/... paths
-- sync
-- Unix cp, m, grep, or sed
-- mixed PowerShell and Git Bash syntax
+- This repo is on Windows; prefer PowerShell-native tooling but Hermes terminal uses bash/MSYS. Use POSIX paths (`/c/Users/...`) in terminal, native paths in tools.
 
 ## Repository safety
 
-- Never create another Gramlingo repository or recovery folder.
-- Never clone Gramlingo inside another Gramlingo folder.
-- Never copy dist into any directory inside this repository.
-- Never use git reset --hard, force-push, delete branches, or overwrite main.
-- Make one named branch for the task.
-- Commit after each verified milestone.
-- Do not edit generated files in dist.
-- Do not treat a successful build as proof that the product behavior is correct.
-
-## Scope discipline
-
-Before implementation, identify:
-
-- the exact files to edit
-- the approved baseline behavior
-- the acceptance tests
-- what must remain unchanged
-
-After each meaningful change, run the smallest relevant test.
-Before completion, run the full build and relevant Playwright tests.
-
-If three consecutive repair attempts fail for the same issue, stop editing. Report:
-
-- the original error
-- the attempted fixes
-- current Git diff
-- current branch and commit
-- the likely root cause
-
-Do not begin a rebuild from scratch unless the user explicitly requests one.
+- Never init a fresh git repo here (would destroy history).
+- Never force-push v2-restore (history must stay linear). gh-pages force-push is the deploy mechanism.
+- Never commit `game-data.json` edits in the deploy repo.
+- Commit after each verified milestone in the SOURCE repo; deploy commits happen in the DEPLOY repo.

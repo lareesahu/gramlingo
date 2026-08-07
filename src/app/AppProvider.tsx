@@ -3,12 +3,29 @@
    ═══════════════════════════════════════════════ */
 
 import { useState, useCallback, useEffect, useRef, type ReactNode } from 'react';
-import { AppContext } from './app-state';
-import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language } from '../game/types';
+import { AppContext, type AuthError } from './app-state';
+import type { AppState, UserProfile, PhaseProgress, ErrorEntry, Screen, Language, UserProgressState } from '../game/types';
 import { GAME_DATA } from '../game/data';
-import { syncUserProgress, syncUserProfile, isSupabaseAvailable } from '../storage/supabase';
+import {
+  cloudEnabled,
+  fetchCloudAdminUsers,
+  restoreCloudIdentity,
+  signIn,
+  createAccount as createCloudAccount,
+  signOutCloud,
+  syncCloudState,
+  requestCloudPasswordReset,
+  resendCloudConfirmation,
+  updateCloudPassword,
+  hasRecoveryToken,
+  clearRecoveryHash,
+  CloudAuthError,
+} from '../storage/cloud';
 
 const STORAGE_KEY = 'gramlingo_state';
+const USER_STATE_PREFIX = 'gramlingo_user_state:';
+
+type PersistedUserState = UserProgressState;
 
 function loadState(): Partial<AppState> | null {
   try {
@@ -33,48 +50,144 @@ function saveState(state: Partial<AppState>) {
   }
 }
 
+function userStateKey(username: string) {
+  return `${USER_STATE_PREFIX}${encodeURIComponent(username)}`;
+}
+
+function loadUserState(username: string): PersistedUserState | null {
+  try {
+    const raw = localStorage.getItem(userStateKey(username));
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveUserState(username: string, state: PersistedUserState) {
+  try {
+    localStorage.setItem(userStateKey(username), JSON.stringify(state));
+  } catch {
+    // Storage full or unavailable — fail silently
+  }
+}
+
+function emptyUserState(): PersistedUserState {
+  return {
+    activeModuleId: null,
+    activePhaseId: null,
+    activeQuestionIndex: 0,
+    progress: [],
+    errorLog: [],
+  };
+}
+
 export function AppProvider({ children }: { children: ReactNode }) {
   const saved = loadState();
+  const savedUserState = !cloudEnabled && saved?.currentUser
+    ? loadUserState(saved.currentUser.username) || {
+        activeModuleId: saved.activeModuleId || null,
+        activePhaseId: saved.activePhaseId || null,
+        activeQuestionIndex: saved.activeQuestionIndex || 0,
+        progress: saved.progress || [],
+        errorLog: saved.errorLog || [],
+      }
+    : emptyUserState();
   // Never restore transient screens (lesson, loading state requires live context)
   // First visit: show loading screen. Returning visitor with saved state: restore.
   const restoredScreen = saved?.screen === 'module' ? 'learning-path' : saved?.screen;
-  const initialScreen: Screen = saved === null
+  const initialScreen: Screen = cloudEnabled
+    ? 'loading'
+    : saved === null
     ? 'loading'
     : (restoredScreen && restoredScreen !== 'lesson' && restoredScreen !== 'loading') ? restoredScreen : 'welcome';
 
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [language, setLanguage] = useState<Language>(saved?.language || 'en');
-  const [currentUser, setCurrentUser] = useState<UserProfile | null>(saved?.currentUser || null);
-  const [activeModuleId, setActiveModuleId] = useState<string | null>(saved?.activeModuleId || null);
-  const [activePhaseId, setActivePhaseId] = useState<string | null>(saved?.activePhaseId || null);
-  const [activeQuestionIndex, setActiveQuestionIndex] = useState<number>(saved?.activeQuestionIndex || 0);
-  const [progress, setProgress] = useState<PhaseProgress[]>(saved?.progress || []);
-  const [errorLog, setWrongBook] = useState<ErrorEntry[]>(saved?.errorLog || []);
-  const [isAdmin, setIsAdmin] = useState<boolean>(saved?.isAdmin || false);
+  const [currentUser, setCurrentUser] = useState<UserProfile | null>(cloudEnabled ? null : (saved?.currentUser || null));
+  const [activeModuleId, setActiveModuleId] = useState<string | null>(savedUserState.activeModuleId);
+  const [activePhaseId, setActivePhaseId] = useState<string | null>(savedUserState.activePhaseId);
+  const [activeQuestionIndex, setActiveQuestionIndex] = useState<number>(savedUserState.activeQuestionIndex);
+  const [progress, setProgress] = useState<PhaseProgress[]>(savedUserState.progress);
+  const [errorLog, setWrongBook] = useState<ErrorEntry[]>(savedUserState.errorLog);
+  const [isAdmin, setIsAdmin] = useState<boolean>(cloudEnabled ? false : (saved?.isAdmin || false));
   const [moduleLocks, setModuleLocks] = useState<Record<string, string[]>>(saved?.moduleLocks || {});
+  const [cloudSyncStatus, setCloudSyncStatus] = useState<'local' | 'syncing' | 'synced' | 'error'>(
+    cloudEnabled ? 'syncing' : 'local',
+  );
+  const [cloudRecoveryPending, setCloudRecoveryPending] = useState(false);
+  const cloudSyncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const syncTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const applyUserState = useCallback((state: UserProgressState | null) => {
+    const next = state || emptyUserState();
+    setActiveModuleId(next.activeModuleId);
+    setActivePhaseId(next.activePhaseId);
+    setActiveQuestionIndex(next.activeQuestionIndex);
+    setProgress(next.progress);
+    setWrongBook(next.errorLog);
+  }, []);
 
-  // Persist state on changes (but never persist transient screens)
-  // Also sync to Supabase for cross-device admin access
   useEffect(() => {
-    const safeScreen = screen === 'lesson' ? 'learning-path' : screen;
-    const state = {
-      screen: safeScreen, language, currentUser, activeModuleId, activePhaseId,
-      activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
-    };
-    saveState(state);
+    if (!cloudEnabled) return;
+    let cancelled = false;
 
-    // Debounced Supabase sync (every 5s) to avoid flooding
-    if (isSupabaseAvailable() && currentUser?.username) {
-      if (syncTimeoutRef.current) clearTimeout(syncTimeoutRef.current);
-      syncTimeoutRef.current = setTimeout(() => {
-        syncUserProgress(currentUser.username!, state);
-      }, 5000);
+    // Opened from a password-reset link — let the user set a new password first.
+    if (hasRecoveryToken()) {
+      setCloudRecoveryPending(true);
+      setCurrentUser(null);
+      setIsAdmin(false);
+      applyUserState(null);
+      setScreen('welcome');
+      setCloudSyncStatus('synced');
+      return () => { cancelled = true; };
     }
 
+    restoreCloudIdentity()
+      .then((identity) => {
+        if (cancelled) return;
+        if (!identity) {
+          setCurrentUser(null);
+          setIsAdmin(false);
+          applyUserState(null);
+          setScreen('welcome');
+          setCloudSyncStatus('synced');
+          return;
+        }
+        setCurrentUser(identity.profile);
+        setIsAdmin(identity.isAdmin);
+        applyUserState(identity.state);
+        setScreen('learning-path');
+        setCloudSyncStatus('synced');
+      })
+      .catch(() => {
+        if (!cancelled) setCloudSyncStatus('error');
+      });
+    return () => { cancelled = true; };
+  }, [applyUserState]);
+
+  // Persist state on changes (but never persist transient screens)
+  useEffect(() => {
+    const safeScreen = screen === 'lesson' ? 'learning-path' : screen;
+    saveState({
+      screen: safeScreen, language, currentUser, activeModuleId, activePhaseId,
+      activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
+    });
+    if (currentUser) {
+      const userState = {
+        activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog,
+      };
+      saveUserState(currentUser.username, userState);
+      if (cloudEnabled && currentUser.id) {
+        if (cloudSyncTimer.current) clearTimeout(cloudSyncTimer.current);
+        setCloudSyncStatus('syncing');
+        cloudSyncTimer.current = setTimeout(() => {
+          syncCloudState(currentUser.id!, userState)
+            .then(() => setCloudSyncStatus('synced'))
+            .catch(() => setCloudSyncStatus('error'));
+        }, 1500);
+      }
+    }
     return () => {
-      if (syncTimeoutRef.current) clearTimeout(syncTimeoutRef.current);
+      if (cloudSyncTimer.current) clearTimeout(cloudSyncTimer.current);
     };
   }, [screen, language, currentUser, activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks]);
 
@@ -91,7 +204,26 @@ export function AppProvider({ children }: { children: ReactNode }) {
     } catch { return []; }
   }, []);
 
-  const login = useCallback((username: string, pin?: string): boolean => {
+  const login = useCallback(async (username: string, pin?: string): Promise<AuthError | null> => {
+    if (cloudEnabled) {
+      try {
+        setCloudSyncStatus('syncing');
+        const identity = await signIn(username, pin || '');
+        setCurrentUser(identity.profile);
+        setIsAdmin(identity.isAdmin);
+        applyUserState(identity.state);
+        setScreen('learning-path');
+        setCloudSyncStatus('synced');
+        return null;
+      } catch (err) {
+        setCloudSyncStatus('error');
+        if (err instanceof CloudAuthError && err.code !== 'unknown') {
+          return { message: err.userMessage, code: err.code };
+        }
+        return { message: 'Could not sign in. Please try again.', code: null };
+      }
+    }
+
     const users = getUsers();
     let user = users.find((u: UserProfile) => u.username === username);
 
@@ -99,26 +231,105 @@ export function AppProvider({ children }: { children: ReactNode }) {
       // New user
       user = { username, pin: pin || null, createdAt: new Date().toISOString() };
       localStorage.setItem('gramlingo_users', JSON.stringify([...users, user]));
-      // Sync new user profile to Supabase
-      syncUserProfile(user);
     } else if (user.pin && user.pin !== pin) {
-      return false; // Wrong PIN
+      return { message: 'Incorrect PIN.', code: 'invalid_pin' }; // Wrong PIN
     }
 
+    const userState = loadUserState(user.username) || emptyUserState();
     setCurrentUser(user);
+    applyUserState(userState);
     setIsAdmin(username === 'admin' && pin === 'gramlin');
     setScreen('learning-path');
-    return true;
-  }, [getUsers]);
+    return null;
+  }, [applyUserState, getUsers]);
+
+  const createAccount = useCallback(async (email: string, password: string, name?: string): Promise<AuthError | null> => {
+    try {
+      setCloudSyncStatus('syncing');
+      const identity = await createCloudAccount(email, password, name);
+      if (!identity) {
+        // Project requires email confirmation — account created, waiting on the email.
+        return { message: 'Check your email to confirm your account, then log in.', code: 'confirmation_required' };
+      }
+      setCurrentUser(identity.profile);
+      setIsAdmin(identity.isAdmin);
+      applyUserState(identity.state);
+      setScreen('learning-path');
+      setCloudSyncStatus('synced');
+      return null;
+    } catch (err) {
+      setCloudSyncStatus('error');
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not create the account. Please try again.', code: null };
+    }
+  }, [applyUserState]);
 
   const logout = useCallback(() => {
+    if (cloudEnabled) void signOutCloud();
     setCurrentUser(null);
     setIsAdmin(false);
     setActiveModuleId(null);
     setActivePhaseId(null);
     setActiveQuestionIndex(0);
+    setProgress([]);
+    setWrongBook([]);
     setScreen('welcome');
+    setCloudSyncStatus(cloudEnabled ? 'synced' : 'local');
   }, []);
+
+  const getCloudAdminUsers = useCallback(() => fetchCloudAdminUsers(), []);
+
+  // ── Cloud auth helpers (password reset / confirmation resend / recovery) ──
+  const requestPasswordReset = useCallback(async (email: string): Promise<AuthError | null> => {
+    try {
+      await requestCloudPasswordReset(email);
+      return null;
+    } catch (err) {
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not send the reset link. Try again.', code: null };
+    }
+  }, []);
+
+  const resendConfirmation = useCallback(async (email: string): Promise<AuthError | null> => {
+    try {
+      await resendCloudConfirmation(email);
+      return null;
+    } catch (err) {
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not resend the confirmation email. Try again.', code: null };
+    }
+  }, []);
+
+  const completePasswordReset = useCallback(async (newPassword: string): Promise<AuthError | null> => {
+    try {
+      await updateCloudPassword(newPassword);
+      clearRecoveryHash();
+      const identity = await restoreCloudIdentity();
+      if (!identity) {
+        setCloudRecoveryPending(false);
+        return { message: 'Password updated, but your session could not be restored. Log in with your new password.', code: null };
+      }
+      setCurrentUser(identity.profile);
+      setIsAdmin(identity.isAdmin);
+      applyUserState(identity.state);
+      setCloudRecoveryPending(false);
+      setScreen('learning-path');
+      setCloudSyncStatus('synced');
+      return null;
+    } catch (err) {
+      setCloudSyncStatus('error');
+      if (err instanceof CloudAuthError && err.code !== 'unknown') {
+        return { message: err.userMessage, code: err.code };
+      }
+      return { message: 'Could not update your password. Please try again.', code: null };
+    }
+  }, [applyUserState]);
 
   // ── User Lock ──
   const isUserLocked = useCallback((username: string): boolean => {
@@ -175,6 +386,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
     }).length;
     return Math.round((completed / order.length) * 100);
   }, [progress]);
+
+  const getUserModuleProgress = useCallback((username: string, moduleId: string): number => {
+    const userProgress = username === currentUser?.username
+      ? progress
+      : (loadUserState(username)?.progress || []);
+    const order = GAME_DATA.phaseLockOrder[moduleId];
+    if (!order?.length) return 0;
+    const completed = order.filter((phaseId) =>
+      userProgress.some((item) => item.phaseId === phaseId && item.completed),
+    ).length;
+    return Math.round((completed / order.length) * 100);
+  }, [currentUser, progress]);
   const getModuleAttempted = useCallback((moduleId: string) => {
     const order = GAME_DATA.phaseLockOrder[moduleId];
     if (!order || order.length === 0) return { attempted: 0, total: 0 };
@@ -265,12 +488,25 @@ export function AppProvider({ children }: { children: ReactNode }) {
     if (!phase?.q.length) return;
     setActiveModuleId(moduleId);
     setActivePhaseId(phaseId);
-    setActiveQuestionIndex(questionIndex !== undefined ? questionIndex : 0);
+    // Resume an in-progress phase where the learner left off instead of
+    // making them redo it from question 1. Completed phases always restart.
+    // Never resume at the last question — after finishing all questions,
+    // retry must restart from question 1.
+    const pp = progress.find((p) => p.phaseId === phaseId);
+    const canResume = activePhaseId === phaseId
+      && activeQuestionIndex > 0
+      && activeQuestionIndex < phase.q.length - 1
+      && !(pp?.completed);
+    setActiveQuestionIndex(questionIndex !== undefined ? questionIndex : (canResume ? activeQuestionIndex : 0));
     setScreen('lesson');
-  }, []);
+  }, [activePhaseId, activeQuestionIndex, progress]);
 
   const nextQuestion = useCallback(() => {
     setActiveQuestionIndex((prev: number) => prev + 1);
+  }, []);
+
+  const prevQuestion = useCallback(() => {
+    setActiveQuestionIndex((prev: number) => Math.max(0, prev - 1));
   }, []);
 
   // ── Completion ──
@@ -283,26 +519,45 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   // ── Backup/Restore ──
   const exportData = useCallback((): string => {
+    const users = getUsers();
+    const userStates = Object.fromEntries(users.map((user) => [
+      user.username,
+      user.username === currentUser?.username
+        ? { activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog }
+        : (loadUserState(user.username) || emptyUserState()),
+    ]));
     const data = {
-      version: 2,
+      version: 3,
       exportedAt: new Date().toISOString(),
-      users: getUsers(),
-      progress,
-      errorLog,
+      users,
+      userStates,
       currentUser: currentUser?.username || null,
       moduleLocks,
     };
     return JSON.stringify(data, null, 2);
-  }, [getUsers, progress, errorLog, currentUser, moduleLocks]);
+  }, [getUsers, activeModuleId, activePhaseId, activeQuestionIndex, progress, errorLog, currentUser, moduleLocks]);
 
   const importData = useCallback((json: string): boolean => {
     try {
       const data = JSON.parse(json);
       if (!data || typeof data !== 'object') return false;
-      if (data.version !== 1 && data.version !== 2) return false;
+      if (data.version !== 1 && data.version !== 2 && data.version !== 3) return false;
 
       if (Array.isArray(data.users)) {
         localStorage.setItem('gramlingo_users', JSON.stringify(data.users));
+      }
+      if (data.version === 3 && data.userStates && typeof data.userStates === 'object') {
+        for (const [username, userState] of Object.entries(data.userStates)) {
+          saveUserState(username, userState as PersistedUserState);
+        }
+        if (currentUser && data.userStates[currentUser.username]) {
+          const restored = data.userStates[currentUser.username] as PersistedUserState;
+          setActiveModuleId(restored.activeModuleId || null);
+          setActivePhaseId(restored.activePhaseId || null);
+          setActiveQuestionIndex(restored.activeQuestionIndex || 0);
+          setProgress(restored.progress || []);
+          setWrongBook(restored.errorLog || []);
+        }
       }
       if (Array.isArray(data.progress)) setProgress(data.progress);
       if (Array.isArray(data.errorLog)) setWrongBook(data.errorLog);
@@ -323,9 +578,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
     activeQuestionIndex, progress, errorLog, isAdmin, moduleLocks,
     // Actions
     navigateTo, setLanguage, login, logout, getUsers,
-    updateProgress, getPhaseProgress, getModuleProgress, getModuleAttempted,
+    cloudEnabled, cloudSyncStatus, getCloudAdminUsers,
+    cloudRecoveryPending, createAccount, requestPasswordReset, resendConfirmation, completePasswordReset,
+    updateProgress, getPhaseProgress, getModuleProgress, getUserModuleProgress, getModuleAttempted,
     addError, removeError, getErrorsByModule, getErrorsByPhase,
-    startPhase, nextQuestion,
+    startPhase, nextQuestion, prevQuestion,
     setActiveModule,
     exportData, importData,
     toggleUserLock, isUserLocked,

@@ -18,11 +18,11 @@ const LOADED_FLAG = 'gramlingo_loaded_before';
 const LOAD_DURATION = 1500;
 
 export function App() {
-  const { screen, currentUser, navigateTo } = useAppContext();
+  const { screen, currentUser, navigateTo, cloudEnabled } = useAppContext();
 
   // Loading screen mount: show 1.5s on first visit, then route to welcome
   useEffect(() => {
-    if (screen === 'loading') {
+    if (screen === 'loading' && !cloudEnabled) {
       const alreadyLoaded = localStorage.getItem(LOADED_FLAG);
       if (alreadyLoaded) {
         navigateTo('welcome');
@@ -34,7 +34,7 @@ export function App() {
       }, LOAD_DURATION);
       return () => clearTimeout(timer);
     }
-  }, [screen, navigateTo]);
+  }, [screen, navigateTo, cloudEnabled]);
 
   // Show loading screen
   if (screen === 'loading') {
