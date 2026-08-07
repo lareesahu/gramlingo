@@ -137,7 +137,8 @@ export type Screen =
   | "lesson"
   | "completion"
   | "error-log"
-  | "admin";
+  | "admin"
+  | "verb-flashcard";
 
 export type GramlinPose = "neutral" | "graduate" | "book" | "celebrate" | "sad" | "think" | "sleeper" | "pencil" | "hearts" | "trophy" | "power" | "peeking" | "confused" | "party" | "grad" | "angry" | "crying" | "laptop" | "sleep-ground" | "juggler";
 
@@ -170,4 +171,25 @@ export interface QuestionResult {
   correctAnswer: string;
   points: number;
   hintUsed: boolean;
+}
+
+export interface VerbFlashcard {
+  base: string;
+  past: string;
+  participle: string;
+  example: string;
+  exampleZh: string;
+  exampleEs: string;
+  group: string; // e.g. "AAA" "ABB" "ABC"
+}
+
+export interface VerbDeck {
+  moduleId: string;
+  groups: {
+    id: string;
+    name: string;
+    nameZh: string;
+    nameEs: string;
+    verbs: VerbFlashcard[];
+  }[];
 }

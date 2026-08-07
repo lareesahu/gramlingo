@@ -485,6 +485,13 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, []);
   const startPhase = useCallback((moduleId: string, phaseId: string, questionIndex?: number) => {
     const phase = GAME_DATA.phases.find((candidate) => candidate.id === phaseId && candidate.module === moduleId);
+    // Flashcard modules don't use quiz questions
+    if (moduleId === 'irregular_verbs') {
+      setActiveModuleId(moduleId);
+      setActivePhaseId(phaseId);
+      setScreen('verb-flashcard');
+      return;
+    }
     if (!phase?.q.length) return;
     setActiveModuleId(moduleId);
     setActivePhaseId(phaseId);

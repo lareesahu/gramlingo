@@ -59,7 +59,8 @@ export function LearningPathScreen() {
         <div className="lp__grid" ref={gridRef} {...dragScroll}>
           {modules.map(mod => {
             const modPhases = phases.filter(p => p.module === mod.id);
-            const playablePhases = modPhases.filter(p => p.q.length > 0);
+            const isFlashcardModule = mod.id === 'irregular_verbs';
+            const playablePhases = isFlashcardModule ? modPhases : modPhases.filter(p => p.q.length > 0);
             const completed = playablePhases.filter(p => getPhaseProgress(p.id)?.completed).length;
             const isOpen = openModule === mod.id;
             const modLocked = currentUser && isModuleLocked(currentUser.username, mod.id);

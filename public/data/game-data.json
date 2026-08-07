@@ -192,6 +192,22 @@
       "gramlin": "graduate",
       "icon": "✨",
       "sort": 12
+    },
+    {
+      "id": "irregular_verbs",
+      "name": {
+        "en": "Irregular Verbs",
+        "zh": "不规则动词",
+        "es": "Verbos irregulares"
+      },
+      "desc": {
+        "en": "Memorize the three forms of common irregular verbs with flip-through flashcards.",
+        "zh": "用翻转闪卡记住常用不规则动词的三种形式。",
+        "es": "Memoriza las tres formas de los verbos irregulares con tarjetas interactivas."
+      },
+      "gramlin": "juggler",
+      "icon": "🃏",
+      "sort": 13
     }
   ],
   "phases": [
@@ -17364,6 +17380,111 @@
           }
         }
       ]
+    },
+    {
+      "module": "irregular_verbs",
+      "id": "verb_aaa",
+      "name": {
+        "en": "A-A-A (All Forms Same)",
+        "zh": "A-A-A 型（三形相同）",
+        "es": "A-A-A (Todas iguales)"
+      },
+      "s": {
+        "en": "Flashcard study deck",
+        "zh": "闪卡学习",
+        "es": "Tarjetas de estudio"
+      },
+      "d": {
+        "en": "Study a-a-a (all forms same) flashcards",
+        "zh": "学习A-A-A 型（三形相同）",
+        "es": "Estudia a-a-a (todas iguales)"
+      },
+      "sort": 1,
+      "q": []
+    },
+    {
+      "module": "irregular_verbs",
+      "id": "verb_abb",
+      "name": {
+        "en": "A-B-B (Past = Participle)",
+        "zh": "A-B-B 型（过去式 = 过去分词）",
+        "es": "A-B-B (Pasado = Participio)"
+      },
+      "s": {
+        "en": "Flashcard study deck",
+        "zh": "闪卡学习",
+        "es": "Tarjetas de estudio"
+      },
+      "d": {
+        "en": "Study a-b-b (past = participle) flashcards",
+        "zh": "学习A-B-B 型（过去式 = 过去分词）",
+        "es": "Estudia a-b-b (pasado = participio)"
+      },
+      "sort": 2,
+      "q": []
+    },
+    {
+      "module": "irregular_verbs",
+      "id": "verb_aba",
+      "name": {
+        "en": "A-B-A (Base = Participle)",
+        "zh": "A-B-A 型（原形 = 过去分词）",
+        "es": "A-B-A (Base = Participio)"
+      },
+      "s": {
+        "en": "Flashcard study deck",
+        "zh": "闪卡学习",
+        "es": "Tarjetas de estudio"
+      },
+      "d": {
+        "en": "Study a-b-a (base = participle) flashcards",
+        "zh": "学习A-B-A 型（原形 = 过去分词）",
+        "es": "Estudia a-b-a (base = participio)"
+      },
+      "sort": 3,
+      "q": []
+    },
+    {
+      "module": "irregular_verbs",
+      "id": "verb_abc",
+      "name": {
+        "en": "A-B-C (All Different)",
+        "zh": "A-B-C 型（三形不同）",
+        "es": "A-B-C (Las tres diferentes)"
+      },
+      "s": {
+        "en": "Flashcard study deck",
+        "zh": "闪卡学习",
+        "es": "Tarjetas de estudio"
+      },
+      "d": {
+        "en": "Study a-b-c (all different) flashcards",
+        "zh": "学习A-B-C 型（三形不同）",
+        "es": "Estudia a-b-c (las tres diferentes)"
+      },
+      "sort": 4,
+      "q": []
+    },
+    {
+      "module": "irregular_verbs",
+      "id": "verb_modal",
+      "name": {
+        "en": "Modal-Like Patterns",
+        "zh": "情态类不规则",
+        "es": "Patrones modales"
+      },
+      "s": {
+        "en": "Flashcard study deck",
+        "zh": "闪卡学习",
+        "es": "Tarjetas de estudio"
+      },
+      "d": {
+        "en": "Study modal-like patterns flashcards",
+        "zh": "学习情态类不规则",
+        "es": "Estudia patrones modales"
+      },
+      "sort": 5,
+      "q": []
     }
   ],
   "phaseLockOrder": {
@@ -17482,6 +17603,13 @@
       "sentence_structure_fragments",
       "sentence_structure_parallelism",
       "sentence_structure_prod"
+    ],
+    "irregular_verbs": [
+      "verb_aaa",
+      "verb_abb",
+      "verb_aba",
+      "verb_abc",
+      "verb_modal"
     ]
   }
 }
