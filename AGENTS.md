@@ -1,34 +1,40 @@
-﻿# Gramlingo Repository Rules (corrected 2026-08-07)
+﻿# Gramlingo Repository Rules (unified 2026-08-07)
 
-## Canonical source vs deploy repo
+## One repo, one folder, two branches
 
-| Role | Path | Repo/branch | Purpose |
-|---|---|---|---|
-| **SOURCE (canonical, writable)** | `C:\Users\hunin\projects\gramlingo-v3` | its own git (remote `lareesahu/gramlingo`) | React+TS+Vite source. Edit here. Build here. |
-| **DEPLOY (build output only)** | `C:\Users\hunin\projects\gramlingo` | git, branch `v2-restore` (Pages) + `gh-pages` | Contains ONLY `index.html` + `assets/` from dist. Never edit source here. |
+| Role | Branch | Purpose |
+|---|---|---|
+| **SOURCE** | `v4` | React+TS+Vite source. Edit here. Build here. |
+| **DEPLOY** | `v2-restore` | GitHub Pages legacy builder. `index.html` + `assets/` only. |
 
-## Build + deploy workflow (verified 2026-08-06/07 — see PROVEN_WORKFLOWS.md)
+Both in `C:\Users\hunin\projects\gramlingo` — single folder.
 
-1. Ensure `gramlingo-v3/.env.local` has `VITE_SUPABASE_URL` + `VITE_SUPABASE_PUBLISHABLE_KEY` (copy from `gramlingo/.env.local` if missing).
-2. `npm run build` in gramlingo-v3 (tsc 0 errors).
-3. In deploy repo: `rm assets/index-*.{js,css}`; copy `dist/index.html` + `dist/assets/index-*.{js,css}`.
-4. `git add index.html assets/` + `git add -u`; commit; `git push origin v2-restore` AND `git push origin HEAD:gh-pages --force`.
-5. Pages legacy builder takes 5–15 min. Verify live bundle via `curl -s https://lareesahu.github.io/gramlingo/ | grep -o 'index-...'`.
+## BRANCH FREEZE (locked 2026-08-07)
 
-## Data rules (CRITICAL — do not violate)
+**NEVER create a new branch.** Only `v4` and `v2-restore` exist. Do NOT branch for features, experiments, fixes, or "just in case." If Lareesa wants a new branch, she will explicitly say "create a new branch."
 
-- `public/data/game-data.json` is the ONLY dataset. 282 questions, 92 phases.
-- The `name`/`q`/`o`/`t`/`ex` fields are DICTs: `{en, zh, es}`. Never treat them as strings.
-- `ex` = explanation arrays, one string PER OPTION. `t` = tip string.
-- **Do NOT bulk-rewrite the dataset without: (1) a backup copy, (2) a written plan in this repo, (3) Lareesa's approval.** LLM bulk translation of game-data.json is a rejected approach (2026-08-07) — the data is the curriculum, not a scratch file.
+## Build + deploy workflow
 
-## Shell rules
+1. `git checkout v4` — ensure you're on source
+2. `npm run build` — tsc 0 errors, vite builds to dist/
+3. `git checkout v2-restore` — switch to deploy
+4. `rm assets/index-*.{js,css}` — clean old bundle
+5. `cp -r dist/assets dist/data dist/favicon.svg dist/icons.svg dist/index.html dist/manifest.json .`
+6. `git add index.html assets/` + `git add -u`; commit; push
+7. `git checkout v4` — return to source
+8. Pages legacy builder takes 5–15 min. Verify live via `curl -s https://lareesahu.github.io/gramlingo/ | grep -o 'index-...'`
 
-- This repo is on Windows; prefer PowerShell-native tooling but Hermes terminal uses bash/MSYS. Use POSIX paths (`/c/Users/...`) in terminal, native paths in tools.
+## Data rules (CRITICAL)
+
+- `public/data/game-data.json` is the ONLY dataset.
+- `name`/`q`/`o`/`t`/`ex` fields are DICTs: `{en, zh, es}`. Never treat as strings.
+- `ex` = explanation arrays, one per option. `t` = tip string.
+- **Do NOT bulk-rewrite the dataset without: (1) backup, (2) written plan in repo, (3) Lareesa's approval.**
 
 ## Repository safety
 
-- Never init a fresh git repo here (would destroy history).
-- Never force-push v2-restore (history must stay linear). gh-pages force-push is the deploy mechanism.
-- Never commit `game-data.json` edits in the deploy repo.
-- Commit after each verified milestone in the SOURCE repo; deploy commits happen in the DEPLOY repo.
+- Never init a fresh git repo (destroys history).
+- Never force-push v2-restore (history must stay linear).
+- Never commit `game-data.json` edits on the deploy branch.
+- Commit after each verified milestone on v4; deploy commits happen on v2-restore.
+- Shell: POSIX paths in bash/MSYS, native paths in tools.
