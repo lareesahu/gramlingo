@@ -1,0 +1,146 @@
+{
+  "modules": [
+    {
+      "id": "wordfamilies1",
+      "name": "Word Families 1",
+      "nameZh": "词汇家族 1",
+      "desc": "250 most common word families · act, judge, create, form, decide…",
+      "descZh": "250个最常见词汇家族 · act, judge, create, form, decide…",
+      "gramlin": "book",
+      "icon": "📖",
+      "sort": 1,
+      "deckType": "wordfamily",
+      "lessons": [
+        {
+          "id": "wf1_actions",
+          "name": "Basic Actions",
+          "nameZh": "基础动作",
+          "sort": 1,
+          "families": [
+            {
+              "id": "act",
+              "root": "act",
+              "phonetic": "/ækt/",
+              "pos": "v. · n.",
+              "clue": "to do something; a thing done",
+              "clueZh": "行动",
+              "members": [
+                {"pos":"v.","posZh":"动","word":"act","example":"She acted quickly.","exampleZh":"她迅速行动。","level":0},
+                {"pos":"n.","posZh":"名","word":"act","example":"It was a kind act.","exampleZh":"这是一个善举。","level":0},
+                {"pos":"n.","posZh":"名","word":"action","example":"Take action now.","exampleZh":"现在采取行动。","level":1},
+                {"pos":"adj.","posZh":"形","word":"active","example":"She's very active.","exampleZh":"她非常活跃。","level":1},
+                {"pos":"n.","posZh":"名","word":"activity","example":"Outdoor activities.","exampleZh":"户外活动。","level":2},
+                {"pos":"v.","posZh":"动","word":"react","example":"How did he react?","exampleZh":"他如何反应？","level":1},
+                {"pos":"n.","posZh":"名","word":"reaction","example":"A quick reaction.","exampleZh":"快速反应。","level":2}
+              ]
+            },
+            {
+              "id": "move",
+              "root": "move",
+              "phonetic": "/muːv/",
+              "pos": "v. · n.",
+              "clue": "to change position; a change of position",
+              "clueZh": "移动",
+              "members": [
+                {"pos":"v.","posZh":"动","word":"move","example":"Move the chair.","exampleZh":"移动椅子。","level":0},
+                {"pos":"n.","posZh":"名","word":"move","example":"A smart move.","exampleZh":"聪明的一步。","level":0},
+                {"pos":"n.","posZh":"名","word":"movement","example":"A sudden movement.","exampleZh":"突然的动作。","level":1},
+                {"pos":"v.","posZh":"动","word":"remove","example":"Remove the lid.","exampleZh":"取下盖子。","level":1},
+                {"pos":"n.","posZh":"名","word":"removal","example":"Stain removal.","exampleZh":"去污。","level":2}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wf1_judgment",
+          "name": "Verbs of Judgment",
+          "nameZh": "判断动词",
+          "sort": 4,
+          "families": [
+            {
+              "id": "judge",
+              "root": "judge",
+              "phonetic": "/dʒʌdʒ/",
+              "pos": "v. · n.",
+              "clue": "to form an opinion about something after careful thought; a public official who decides cases in court",
+              "clueZh": "判断",
+              "members": [
+                {"pos":"v.","posZh":"动","word":"judge","example":"She judged the contest fairly.","exampleZh":"她公正地评判了比赛。","level":0},
+                {"pos":"n.","posZh":"名","word":"judge","example":"The judge ruled in favor.","exampleZh":"法官做出了有利判决。","level":0},
+                {"pos":"n.","posZh":"名","word":"judgment","example":"Use good judgment.","exampleZh":"运用良好的判断力。","level":1},
+                {"pos":"adj.","posZh":"形","word":"judgmental","example":"Don't be judgmental.","exampleZh":"不要太挑剔。","level":2},
+                {"pos":"v.","posZh":"动","word":"adjudge","example":"A mediator adjudicated the dispute.","exampleZh":"调解员裁决了争端。","level":1},
+                {"pos":"v.","posZh":"动","word":"prejudge","example":"Don't prejudge people.","exampleZh":"不要预先判断人。","level":1}
+              ]
+            },
+            {
+              "id": "decide",
+              "root": "decide",
+              "phonetic": "/dɪˈsaɪd/",
+              "pos": "v.",
+              "clue": "to reach a conclusion after considering evidence or possibilities",
+              "clueZh": "决定",
+              "members": [
+                {"pos":"v.","posZh":"动","word":"decide","example":"I decided to go.","exampleZh":"我决定去了。","level":0},
+                {"pos":"n.","posZh":"名","word":"decision","example":"A difficult decision.","exampleZh":"一个艰难的决定。","level":1},
+                {"pos":"adj.","posZh":"形","word":"decisive","example":"A decisive leader.","exampleZh":"果断的领导者。","level":1},
+                {"pos":"adj.","posZh":"形","word":"indecisive","example":"He's too indecisive.","exampleZh":"他太优柔寡断了。","level":2}
+              ]
+            },
+            {
+              "id": "create",
+              "root": "create",
+              "phonetic": "/kriˈeɪt/",
+              "pos": "v.",
+              "clue": "to bring something new into existence through imagination or skill",
+              "clueZh": "创造",
+              "members": [
+                {"pos":"v.","posZh":"动","word":"create","example":"She creates beautiful art.","exampleZh":"她创造美丽的艺术。","level":0},
+                {"pos":"n.","posZh":"名","word":"creation","example":"The creation of a new world.","exampleZh":"新世界的创造。","level":1},
+                {"pos":"adj.","posZh":"形","word":"creative","example":"A creative solution.","exampleZh":"创造性的解决方案。","level":1},
+                {"pos":"n.","posZh":"名","word":"creativity","example":"Unlock your creativity.","exampleZh":"释放你的创造力。","level":2},
+                {"pos":"n.","posZh":"名","word":"creator","example":"The creator of the series.","exampleZh":"该系列的创作者。","level":1},
+                {"pos":"v.","posZh":"动","word":"recreate","example":"Recreate the scene.","exampleZh":"重现场景。","level":1}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "irregularverbs",
+      "name": "Irregular Verbs",
+      "nameZh": "不规则动词",
+      "desc": "95 essential irregular verbs · go→went→gone, eat→ate→eaten…",
+      "descZh": "95个必备不规则动词 · go→went→gone, eat→ate→eaten…",
+      "gramlin": "juggler",
+      "icon": "🔤",
+      "sort": 3,
+      "deckType": "irregular",
+      "lessons": [
+        {
+          "id": "irr_aaa",
+          "name": "A-A-A Pattern",
+          "nameZh": "A-A-A 型",
+          "sort": 1,
+          "families": [
+            {"id":"cut","root":"cut","phonetic":"/kʌt/","pos":"v.","clue":"to divide or sever with a sharp tool","clueZh":"切","members":[{"pos":"v.","posZh":"动","word":"cut","example":"She cut the paper.","exampleZh":"她剪了纸。","level":0},{"pos":"v.","posZh":"动","word":"cut (past)","example":"He cut his finger yesterday.","exampleZh":"他昨天割伤了手指。","level":0},{"pos":"v.","posZh":"动","word":"cut (participle)","example":"He has cut the rope.","exampleZh":"他已经切断了绳子。","level":0}]},
+            {"id":"put","root":"put","phonetic":"/pʊt/","pos":"v.","clue":"to place something somewhere","clueZh":"放","members":[{"pos":"v.","posZh":"动","word":"put","example":"Put it on the table.","exampleZh":"放在桌子上。","level":0}]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collocations",
+      "name": "Collocations",
+      "nameZh": "词语搭配",
+      "desc": "Common word pairings · make/do/take/have + nouns",
+      "descZh": "常用词语搭配 · make/do/take/have + 名词",
+      "gramlin": "think",
+      "icon": "🔗",
+      "sort": 4,
+      "deckType": "collocation",
+      "lessons": []
+    }
+  ]
+}
