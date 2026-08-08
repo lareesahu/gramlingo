@@ -203,15 +203,15 @@
       ]
     },
     {
-      "id": "collocations",
-      "name": "Collocations",
+      "id": "wordpairs",
+      "name": "Word Pairs",
       "nameZh": "词语搭配",
       "desc": "Common word pairings · make/do/take/have pair-match",
       "descZh": "常用搭配 · make/do/take/have 配对练习",
       "gramlin": "think",
       "icon": "🔗",
       "sort": 4,
-      "deckType": "collocation",
+      "deckType": "wordpair",
       "lessons": [
         {
           "id": "coll_make",
