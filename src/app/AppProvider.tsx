@@ -603,6 +603,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     // Flashcards
     flashcardModules: fcData.modules,
     enterFlashcardLesson: (moduleId: string, lessonId: string) => {
+      setActiveModuleId(moduleId);
+      setActivePhaseId(lessonId);
       setActiveFlashcardModuleId(moduleId);
       setActiveFlashcardLessonId(lessonId);
       setScreen('flashcard-lesson');
