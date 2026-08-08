@@ -179,7 +179,7 @@ export interface FlashcardModule {
   gramlin: string;
   icon: string;
   sort: number;
-  deckType: "wordfamily" | "irregular" | "collocation";
+  deckType: "wordfamily" | "irregular" | "wordpair";
   lessons: FlashcardLesson[];
 }
 
@@ -219,25 +219,4 @@ export interface QuestionResult {
   correctAnswer: string;
   points: number;
   hintUsed: boolean;
-}
-
-export interface VerbFlashcard {
-  base: string;
-  past: string;
-  participle: string;
-  example: string;
-  exampleZh: string;
-  exampleEs: string;
-  group: string; // e.g. "AAA" "ABB" "ABC"
-}
-
-export interface VerbDeck {
-  moduleId: string;
-  groups: {
-    id: string;
-    name: string;
-    nameZh: string;
-    nameEs: string;
-    verbs: VerbFlashcard[];
-  }[];
 }

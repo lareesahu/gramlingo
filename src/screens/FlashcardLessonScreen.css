@@ -2,6 +2,21 @@
    FlashcardLessonScreen
    ═══════════════════════════════════════════════ */
 
+:root {
+  --wf-root: #4a3f6b;
+  --wf-root-text: #f0e8ff;
+  --wf-root-example: #c8b8e8;
+  --wf-l1: #6b5b8f;
+  --wf-l1-text: #e8dcf8;
+  --wf-l1-example: #c0b0e0;
+  --wf-l2: #8b7aab;
+  --wf-l2-text: #ddd0f0;
+  --wf-l2-example: #b8a8d8;
+  --wf-l3: #a89ac2;
+  --wf-l3-text: #d0c4e8;
+  --wf-l3-example: #a898d0;
+}
+
 .fcls {
   display: flex;
   flex-direction: column;
@@ -83,7 +98,7 @@
 }
 .fcls-word {
   font-size: 1.2rem; font-weight: 800; letter-spacing: -0.02em;
-  color: #4a3f6b;
+  color: var(--wf-root);
 }
 .fcls-phonetic {
   font-size: 0.68rem; color: var(--color-muted); margin-bottom: 6px;
@@ -111,14 +126,14 @@
 }
 
 /* Gradient levels for word family */
-.fm-l0 { background: #4a3f6b; color: #f0e8ff; }
-.fm-l0 .fcls-member-example { color: #c8b8e8; }
-.fm-l1 { background: #6b5b8f; color: #e8dcf8; }
-.fm-l1 .fcls-member-example { color: #c0b0e0; }
-.fm-l2 { background: #8b7aab; color: #ddd0f0; }
-.fm-l2 .fcls-member-example { color: #b8a8d8; }
-.fm-l3 { background: #a89ac2; color: #d0c4e8; }
-.fm-l3 .fcls-member-example { color: #a898d0; }
+.fm-l0 { background: var(--wf-root); color: var(--wf-root-text); }
+.fm-l0 .fcls-member-example { color: var(--wf-root-example); }
+.fm-l1 { background: var(--wf-l1); color: var(--wf-l1-text); }
+.fm-l1 .fcls-member-example { color: var(--wf-l1-example); }
+.fm-l2 { background: var(--wf-l2); color: var(--wf-l2-text); }
+.fm-l2 .fcls-member-example { color: var(--wf-l2-example); }
+.fm-l3 { background: var(--wf-l3); color: var(--wf-l3-text); }
+.fm-l3 .fcls-member-example { color: var(--wf-l3-example); }
 
 /* ── Actions ── */
 .fcls-actions {

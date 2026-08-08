@@ -1,0 +1,30 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - button "Back" [ref=f1e138] [cursor=pointer]
+    - navigation [ref=f1e7]:
+      - button "Language" [ref=f1e9] [cursor=pointer]:
+        - generic [ref=f1e13]: EN
+      - button "Profile" [ref=f1e15] [cursor=pointer]:
+        - generic [ref=f1e19]: Live QA
+  - main [ref=f1e20]:
+    - generic [ref=f1e141]:
+      - generic [ref=f1e142]:
+        - generic [ref=f1e143]: "Phase 93: Report the Situation"
+        - generic [ref=f1e144]: Question 1 of 8
+      - progressbar [ref=f1e145]
+      - img "think Gramlin" [ref=f1e166]:
+        - img "Gramlin think" [ref=f1e167]
+      - generic [ref=f1e150]:
+        - generic "Memorization steps" [ref=f1e151]:
+          - generic [ref=f1e152]: 1 STUDY
+          - generic [ref=f1e153]: →
+          - generic [ref=f1e154]: 2 RECALL
+          - generic [ref=f1e155]: →
+          - generic [ref=f1e156]: 3 CHECK
+        - generic [ref=f1e168]: RECALL
+        - paragraph [ref=f1e169]: Fill the blanks from memory.
+        - generic [ref=f1e170]:
+          - text: We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer
+          - button "Choose a word 1" [ref=f1e171] [cursor=pointer]: obvious
+          - text: symptoms of hypoxia.
+        - button "Check recall" [ref=f1e181] [cursor=pointer]

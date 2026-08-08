@@ -1,0 +1,115 @@
+- main [ref=e6]:
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - img "peeking Gramlin" [ref=e10]:
+        - img "Gramlin peeking" [ref=e11]
+      - heading "GramLingo" [level=1] [ref=e12]
+      - generic [ref=e13]:
+        - generic [ref=e14]: Grammar Quest — Learn by playing
+        - generic [ref=e15]: Your friendly grammar gremlin is ready!
+        - generic [ref=e16]: 99 phases. 346 questions. Endless confidence.
+      - button "Start Learning" [ref=e17] [cursor=pointer]
+    - generic [ref=e19]:
+      - heading "12 Grammar Worlds" [level=2] [ref=e20]
+      - paragraph [ref=e21]: From relative clauses to advanced expressions — every module is a new adventure.
+      - generic [ref=e22]:
+        - button "Scroll left" [ref=e23] [cursor=pointer]
+        - generic [ref=e26]:
+          - article [ref=e27]:
+            - img "Relative Clauses" [ref=e29]
+            - generic [ref=e30]:
+              - heading "Relative Clauses" [level=3] [ref=e31]
+              - paragraph [ref=e32]: Describe people, things, places, times, and reasons with precise connected sentences.
+          - article [ref=e33]:
+            - img "Prepositions" [ref=e35]
+            - generic [ref=e36]:
+              - heading "Prepositions" [level=3] [ref=e37]
+              - paragraph [ref=e38]: Build reliable intuition for place, time, movement, and common preposition patterns.
+          - article [ref=e39]:
+            - img "Verb Tenses" [ref=e41]
+            - generic [ref=e42]:
+              - heading "Verb Tenses" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Choose verb forms by timeline, duration, completion, and present relevance.
+          - article [ref=e45]:
+            - img "Conditionals" [ref=e47]
+            - generic [ref=e48]:
+              - heading "Conditionals" [level=3] [ref=e49]
+              - paragraph [ref=e50]: Express facts, possibilities, imagined situations, regrets, and conditions.
+          - article [ref=e51]:
+            - img "Passive Voice" [ref=e53]
+            - generic [ref=e54]:
+              - heading "Passive Voice" [level=3] [ref=e55]
+              - paragraph [ref=e56]: Shift focus between the doer, the action, and the result across timelines.
+          - article [ref=e57]:
+            - img "Reported Speech" [ref=e59]
+            - generic [ref=e60]:
+              - heading "Reported Speech" [level=3] [ref=e61]
+              - paragraph [ref=e62]: Retell statements, questions, requests, and ideas accurately and naturally.
+          - article [ref=e63]:
+            - img "Modals" [ref=e65]
+            - generic [ref=e66]:
+              - heading "Modals" [level=3] [ref=e67]
+              - paragraph [ref=e68]: Express ability, permission, advice, obligation, probability, and deduction.
+          - article [ref=e69]:
+            - img "Articles & Determiners" [ref=e71]
+            - generic [ref=e72]:
+              - heading "Articles & Determiners" [level=3] [ref=e73]
+              - paragraph [ref=e74]: Signal whether nouns are known, specific, general, countable, or quantified.
+          - article [ref=e75]:
+            - img "Conjunctions" [ref=e77]
+            - generic [ref=e78]:
+              - heading "Conjunctions" [level=3] [ref=e79]
+              - paragraph [ref=e80]: Connect ideas by addition, contrast, cause, result, condition, and concession.
+          - article [ref=e81]:
+            - img "Verb Patterns" [ref=e83]
+            - generic [ref=e84]:
+              - heading "Verb Patterns" [level=3] [ref=e85]
+              - paragraph [ref=e86]: Control gerunds, infinitives, causatives, and meaning-changing verb patterns.
+          - article [ref=e87]:
+            - img "Sentence Structure" [ref=e89]
+            - generic [ref=e90]:
+              - heading "Sentence Structure" [level=3] [ref=e91]
+              - paragraph [ref=e92]: Build, question, negate, combine, and repair complete English sentences.
+          - article [ref=e93]:
+            - img "Advanced Expressions" [ref=e95]
+            - generic [ref=e96]:
+              - heading "Advanced Expressions" [level=3] [ref=e97]
+              - paragraph [ref=e98]: Use emphasis, inversion, register, compression, and idiomatic grammar in context.
+          - article [ref=e99]:
+            - img "Aviation Comms" [ref=e101]
+            - generic [ref=e102]:
+              - heading "Aviation Comms" [level=3] [ref=e103]
+              - paragraph [ref=e104]: Memorize aviation transmissions through active recall.
+        - button "Scroll right" [ref=e105] [cursor=pointer]
+    - generic [ref=e108]:
+      - heading "How It Works" [level=2] [ref=e109]
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - img "think Gramlin" [ref=e112]:
+            - img "Gramlin think" [ref=e113]
+          - generic [ref=e114]: "1"
+          - heading "Pick a Module" [level=3] [ref=e115]
+          - paragraph [ref=e116]: Choose from 12 grammar worlds, each with hand-crafted lessons.
+        - generic [ref=e117]:
+          - img "pencil Gramlin" [ref=e118]:
+            - img "Gramlin pencil" [ref=e119]
+          - generic [ref=e120]: "2"
+          - heading "Answer & Learn" [level=3] [ref=e121]
+          - paragraph [ref=e122]: Solve questions with instant feedback and clear explanations.
+        - generic [ref=e123]:
+          - img "celebrate Gramlin" [ref=e124]:
+            - img "Gramlin celebrate" [ref=e125]
+          - generic [ref=e126]: "3"
+          - heading "Level Up" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Earn stars, unlock phases, and watch your grammar confidence grow.
+    - generic [ref=e129]:
+      - heading "Ready to master grammar?" [level=2] [ref=e130]
+      - paragraph [ref=e131]: 99 phases. 346 hand-crafted questions.
+      - button "Start Learning" [ref=e132] [cursor=pointer]
+    - dialog [ref=e135]:
+      - button "Close" [ref=e136] [cursor=pointer]
+      - heading "New Player" [level=2] [ref=e142]
+      - textbox "Username" [active] [ref=e143]
+      - textbox "PIN (optional)" [ref=e144]
+      - button "Log In" [ref=e145] [cursor=pointer]
+      - button "Back" [ref=e147] [cursor=pointer]

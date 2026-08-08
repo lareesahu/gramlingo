@@ -1,0 +1,16 @@
+{
+  "run": "20260804-020845",
+  "elapsedSec": 1127.3,
+  "stats": {
+    "modules": 13,
+    "phases": 64,
+    "questions_tested": 164,
+    "wrong_paths": 164,
+    "correct_paths": 162,
+    "failures": 2,
+    "blocked": 10
+  },
+  "consoleErrorsTotal": 0,
+  "consoleErrorsSample": [],
+  "defectsCandidate": []
+}

@@ -1,0 +1,41 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - button "Back" [ref=f2e131] [cursor=pointer]
+    - navigation [ref=f2e7]:
+      - button "Language" [ref=f2e9] [cursor=pointer]:
+        - generic [ref=f2e13]: EN
+      - button "Profile" [ref=f2e15] [cursor=pointer]:
+        - generic [ref=f2e19]: QA
+  - main [ref=f2e20]:
+    - generic [ref=f2e134]:
+      - generic [ref=f2e135]:
+        - generic [ref=f2e136]: "Phase 93: Report the Situation"
+        - generic [ref=f2e137]: Question 2 of 8
+      - progressbar [ref=f2e138]
+      - img "think Gramlin" [ref=f2e194]:
+        - img "Gramlin think" [ref=f2e195]
+      - generic [ref=f2e143]:
+        - generic "Memorization steps" [ref=f2e144]:
+          - generic [ref=f2e145]: 1 STUDY
+          - generic [ref=f2e146]: →
+          - generic [ref=f2e147]: 2 RECALL
+          - generic [ref=f2e148]: →
+          - generic [ref=f2e149]: 3 CHECK
+        - generic [ref=f2e196]: RECALL
+        - paragraph [ref=f2e197]: Fill the blanks from memory.
+        - generic [ref=f2e198]:
+          - text: All our air
+          - button "Choose a word 1" [pressed] [ref=f2e199] [cursor=pointer]:
+            - generic [ref=f2e200]: •••
+          - text: packs have
+          - button "Choose a word 2" [ref=f2e201] [cursor=pointer]:
+            - generic [ref=f2e202]: •••
+          - text: ", so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance."
+        - generic [ref=f2e203]:
+          - generic [ref=f2e204]: Choose a word 1 / 2
+          - generic [ref=f2e205]:
+            - button "conditioning" [ref=f2e206] [cursor=pointer]
+            - button "layer" [ref=f2e207] [cursor=pointer]
+            - button "hail" [ref=f2e208] [cursor=pointer]
+            - button "Partial" [ref=f2e209] [cursor=pointer]
+        - button "Check recall" [disabled] [ref=f2e211]

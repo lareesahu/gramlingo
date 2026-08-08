@@ -1,0 +1,26 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - button "Back" [ref=f1e129] [cursor=pointer]
+    - navigation [ref=f1e7]:
+      - button "Language" [ref=f1e9] [cursor=pointer]
+      - button "Profile" [ref=f1e14] [cursor=pointer]
+  - main [ref=f1e18]:
+    - generic [ref=f1e132]:
+      - generic [ref=f1e133]:
+        - generic [ref=f1e134]: "Phase 93: Report the Situation"
+        - generic [ref=f1e135]: Question 1 of 8
+      - progressbar [ref=f1e136]
+      - img "book Gramlin" [ref=f1e139]:
+        - img "Gramlin book" [ref=f1e140]
+      - generic [ref=f1e141]:
+        - generic "Memorization steps" [ref=f1e142]:
+          - generic [ref=f1e143]: 1 STUDY
+          - generic [ref=f1e144]: →
+          - generic [ref=f1e145]: 2 RECALL
+          - generic [ref=f1e146]: →
+          - generic [ref=f1e147]: 3 CHECK
+        - generic [ref=f1e148]:
+          - generic [ref=f1e149]: STUDY
+          - paragraph [ref=f1e150]: Read the whole sentence aloud. Then hide it and rebuild it from memory.
+          - paragraph [ref=f1e151]: We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.
+          - button "Hide words & recall" [ref=f1e153] [cursor=pointer]

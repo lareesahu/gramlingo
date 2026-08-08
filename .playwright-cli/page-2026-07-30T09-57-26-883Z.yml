@@ -1,0 +1,33 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - button "Back" [ref=f2e131] [cursor=pointer]
+    - navigation [ref=f2e7]:
+      - button "Language" [ref=f2e9] [cursor=pointer]:
+        - generic [ref=f2e13]: EN
+      - button "Profile" [ref=f2e15] [cursor=pointer]:
+        - generic [ref=f2e19]: QA
+  - main [ref=f2e20]:
+    - generic [ref=f2e134]:
+      - generic [ref=f2e135]:
+        - generic [ref=f2e136]: "Phase 93: Report the Situation"
+        - generic [ref=f2e137]: Question 1 of 8
+      - progressbar [ref=f2e138]
+      - img "celebrate Gramlin" [ref=f2e175]:
+        - img "Gramlin celebrate" [ref=f2e176]
+      - generic [ref=f2e143]:
+        - generic "Memorization steps" [ref=f2e144]:
+          - generic [ref=f2e145]: 1 STUDY
+          - generic [ref=f2e146]: →
+          - generic [ref=f2e147]: 2 RECALL
+          - generic [ref=f2e148]: →
+          - generic [ref=f2e149]: 3 CHECK
+        - generic [ref=f2e161]: Perfect recall
+        - paragraph [ref=f2e162]: Fill the blanks from memory.
+        - generic [ref=f2e163]:
+          - text: We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer
+          - button "Choose a word 1" [disabled] [ref=f2e164] [cursor=pointer]: obvious
+          - text: symptoms of hypoxia.
+        - generic [ref=f2e177]:
+          - generic [ref=f2e178]: Perfect recall
+          - generic [ref=f2e179]: We have a slow cabin decompression, and our cabin altitude at one time had reached 16000 feet, which caused several passengers to suffer obvious symptoms of hypoxia.
+        - button "Next sentence →" [active] [ref=f2e180] [cursor=pointer]

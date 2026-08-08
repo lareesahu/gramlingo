@@ -1,0 +1,1414 @@
+[Identify Relative Clauses] clauses_rec_q01
+Q: 下面哪个部分是定语从句？
+The woman who called me is my manager.
+A: who called me
+O: The woman || who called me || is my manager || my manager
+
+[Identify Relative Clauses] clauses_rec_q02
+Q: 下面哪个部分是定语从句？
+I read the book that you recommended.
+A: that you recommended
+O: I read || the book || that you recommended || the book that
+
+[Identify Relative Clauses] clauses_rec_q03
+Q: 下面哪个部分是定语从句？
+The cafe where we met has closed.
+A: where we met
+O: The cafe || where we met || has closed || The cafe where
+
+[Identify Relative Clauses] clauses_rec_q04
+Q: 定语从句修饰的是哪个名词？
+The scientist who discovered the vaccine won a prize.
+A: The scientist
+O: The scientist || discovered || the vaccine || won a prize
+
+[Identify Relative Clauses] clauses_rec_q05
+Q: 先行词是哪个？
+I use a phone that never crashes.
+A: a phone
+O: I use || a phone || that never crashes || never crashes
+
+[Subject Relatives] clauses_subj_q01
+Q: The woman ___ called me is my manager.
+A: ['who', 'whom']
+O: who || which || where || whom
+
+[Subject Relatives] clauses_subj_q02
+Q: The doctor ___ treated me was kind.
+A: ['who', 'that', 'whom']
+O: which || who || that || whom
+
+[Subject Relatives] clauses_subj_q03
+Q: I need a tool ___ can fix this.
+A: that
+O: who || that || where || whom
+
+[Subject Relatives] clauses_subj_q04
+Q: The train ___ arrives at 3 PM is delayed.
+A: that
+O: who || that || where || when
+
+[Subject Relatives] clauses_subj_q05
+Q: A friend ___ helps you is priceless.
+A: ['who', 'that']
+O: which || who || that || where
+
+[Subject Relatives] clauses_subj_q06
+Q: People ___ exercise regularly live longer.
+A: ['who', 'whom']
+O: who || which || where || whom
+
+[Subject Relatives] clauses_subj_q07
+Q: The package ___ arrived today is from Amazon.
+A: that
+O: who || that || where || when
+
+[Object Relatives] clauses_obj_q01
+Q: The file ___ you sent is open.
+A: that
+O: who || that || where || whom
+
+[Object Relatives] clauses_obj_q02
+Q: The movie ___ we watched was boring.
+A: ['that', 'which']
+O: who || that || which || whom
+
+[Object Relatives] clauses_obj_q03
+Q: The client ___ we met yesterday is from Tokyo.
+A: ['who', 'whom', 'that']
+O: who || whom || which || that
+
+[Object Relatives] clauses_obj_q04
+Q: The people ___ I invited are coming.
+A: ['who', 'whom', 'that']
+O: who || whom || which || that
+
+[Object Relatives] clauses_obj_q05
+Q: The report ___ Anna wrote is on the table.
+A: ['that', 'which']
+O: who || that || which || where
+
+[Object Relatives] clauses_obj_q06
+Q: The advice ___ she gave me was helpful.
+A: ['that', 'which']
+O: who || that || which || where
+
+[Subject vs Object] clauses_subobj_q01
+Q: <b>who called</b> me — is 'who' the subject or object?
+A: subject（主语）
+O: subject（主语） || object（宾语）
+
+[Subject vs Object] clauses_subobj_q02
+Q: <b>who I called</b> — is 'who' the subject or object?
+A: object（宾语）
+O: subject（主语） || object（宾语）
+
+[Subject vs Object] clauses_subobj_q03
+Q: Fix: The man who he called me is my neighbor. Which word is extra?
+A: he
+O: who || he || man || neighbor
+
+[Subject vs Object] clauses_subobj_q04
+Q: Fix: The report that Anna wrote it is ready. Which word is extra?
+A: it
+O: that || Anna || wrote || it
+
+[Subject vs Object] clauses_subobj_q05
+Q: The student ___ answered correctly won a prize. Subject or object?
+A: subject（主语）
+O: subject（主语） || object（宾语）
+
+[Subject vs Object] clauses_subobj_q06
+Q: The student ___ the teacher praised won a prize. Subject or object?
+A: object（宾语）
+O: subject（主语） || object（宾语）
+
+[Oblique Relatives] clauses_oblq_q01
+Q: This is the cafe ___ we met.
+A: where
+O: who || which || where || when
+
+[Oblique Relatives] clauses_oblq_q02
+Q: Friday is the day ___ we present.
+A: when
+O: who || which || where || when
+
+[Oblique Relatives] clauses_oblq_q03
+Q: That is the reason ___ I left early.
+A: why
+O: who || which || where || why
+
+[Oblique Relatives] clauses_oblq_q04
+Q: The office ___ I work is downtown.
+A: where
+O: where || which || who || when
+
+[Oblique Relatives] clauses_oblq_q05
+Q: The year ___ I graduated was 2020.
+A: when
+O: who || which || where || when
+
+[Oblique Relatives] clauses_oblq_q06
+Q: This is the room ___ the meeting will happen.
+A: where
+O: where || which || that || when
+
+[Oblique Relatives] clauses_oblq_q07
+Q: I will never forget the moment ___ I saw the ocean.
+A: when
+O: who || which || where || when
+
+[Oblique Relatives] clauses_oblq_q08
+Q: Explain the reason ___ you were late.
+A: why
+O: who || which || where || why
+
+[Genitive Relatives] clauses_gen_q01
+Q: The man ___ car was stolen reported it.
+A: ['who', 'whose']
+O: who || whose || whom || which
+
+[Genitive Relatives] clauses_gen_q02
+Q: I know a woman ___ son is a pilot.
+A: ['who', 'whose']
+O: who || whose || whom || that
+
+[Genitive Relatives] clauses_gen_q03
+Q: The company ___ CEO resigned is in trouble.
+A: ['who', 'whose']
+O: who || whose || which || that
+
+[Genitive Relatives] clauses_gen_q04
+Q: The tree ___ branches fell was very old.
+A: ['who', 'whose']
+O: who || whose || which || that
+
+[Genitive Relatives] clauses_gen_q05
+Q: She adopted a dog ___ owner had passed away.
+A: ['who', 'whose']
+O: who || whose || which || that
+
+[Genitive Relatives] clauses_gen_q06
+Q: That is the writer ___ books I love.
+A: ['who', 'whose']
+O: who || whose || whom || which
+
+[Genitive Relatives] clauses_gen_q07
+Q: Fix: The woman who her car was stolen. who her = ?
+A: ['who', 'whose']
+O: who || whose || whom || which
+
+[Restrictive vs Non-restrictive] clauses_rest_q01
+Q: The students who passed celebrated. (only some) comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Restrictive vs Non-restrictive] clauses_rest_q02
+Q: The students, who passed, celebrated. (all) comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Restrictive vs Non-restrictive] clauses_rest_q03
+Q: My brother who lives in Tokyo is visiting. (one brother) comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Restrictive vs Non-restrictive] clauses_rest_q04
+Q: The car which is parked outside is mine. (several outside) comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Restrictive vs Non-restrictive] clauses_rest_q05
+Q: The managers who attended agreed. means?
+A: Only those who attended
+O: All attended || Only those who attended
+
+[Restrictive vs Non-restrictive] clauses_rest_q06
+Q: The managers, who attended, agreed. means?
+A: All attended
+O: All attended || Only those who attended
+
+[Restrictive vs Non-restrictive] clauses_rest_q07
+Q: Dr. Chen, who has 20 years exp., will lead. comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Restrictive vs Non-restrictive] clauses_rest_q08
+Q: A doctor who has 20 years exp. will lead. comma?
+A: ['No comma', 'Comma']
+O: No comma || Comma
+
+[Production and Editing] clauses_prod_q01
+Q: Combine: A customer called. She ordered yesterday.
+A: The customer who ordered yesterday called.
+O: The customer who ordered yesterday called. || The customer called who ordered yesterday. || A customer called she ordered yesterday.
+
+[Production and Editing] clauses_prod_q02
+Q: Combine: I met a designer. She created our website.
+A: I met a designer who created our website.
+O: I met a designer who created our website. || I met who created our website a designer. || I met a designer she created our website.
+
+[Production and Editing] clauses_prod_q03
+Q: Combine: I found a book. It explains grammar.
+A: ['I found a book which explains grammar.', 'I found a book that explains grammar.']
+O: I found a book which explains grammar. || I found a book that explains grammar. || I found a book it explains grammar. || I found which explains grammar a book.
+
+[Production and Editing] clauses_prod_q04
+Q: Combine: We visited a museum. It has ancient art.
+A: ['We visited a museum that has ancient art.', 'We visited a museum which has ancient art.']
+O: We visited a museum that has ancient art. || We visited a museum which has ancient art. || We visited a museum it has ancient art. || We visited that has ancient art a museum.
+
+[Production and Editing] clauses_prod_q05
+Q: That was the summer. We traveled to Japan then.
+A: ['That was the summer when we traveled to Japan.', 'That was the summer that we traveled to Japan.']
+O: That was the summer when we traveled to Japan. || That was the summer that we traveled to Japan. || That was the summer we traveled to Japan when.
+
+[Production and Editing] clauses_prod_q06
+Q: Reorder: The package arrived today that I ordered.
+A: The package that I ordered arrived today.
+O: The package that I ordered arrived today. || The package arrived today that I ordered. || The package that arrived today I ordered.
+
+[Production and Editing] clauses_prod_q07
+Q: Fix: This is the hotel where I recommended it.
+A: ['This is the hotel that I recommended.', 'This is the hotel which I recommended.']
+O: This is the hotel that I recommended. || This is the hotel which I recommended. || This is the hotel where I recommended. || This is the hotel where I recommended it.
+
+[In/On/At: Place] prepositions_prep_place_q01
+Q: The cat is sleeping ___ the box.
+A: in
+O: in || on || at || by
+
+[In/On/At: Place] prepositions_prep_place_q02
+Q: The book is ___ the table.
+A: on
+O: in || on || at || to
+
+[In/On/At: Place] prepositions_prep_place_q03
+Q: I met her ___ the bus stop.
+A: at
+O: in || on || at || by
+
+[In/On/At: Place] prepositions_prep_place_q04
+Q: There is a spider ___ the ceiling.
+A: on
+O: in || on || at || over
+
+[In/On/At: Place] prepositions_prep_place_q05
+Q: She is waiting ___ the door.
+A: at
+O: in || on || at || by
+
+[In/On/At: Place] prepositions_prep_place_q06
+Q: The kids are playing ___ the garden.
+A: in
+O: in || on || at || by
+
+[In/On/At: Time] prepositions_prep_time_q01
+Q: The meeting starts ___ 3 PM.
+A: at
+O: in || on || at || by
+
+[In/On/At: Time] prepositions_prep_time_q02
+Q: I was born ___ July.
+A: ['in', 'during']
+O: in || on || at || during
+
+[In/On/At: Time] prepositions_prep_time_q03
+Q: She arrived ___ Monday morning.
+A: on
+O: in || on || at || by
+
+[In/On/At: Time] prepositions_prep_time_q04
+Q: We go skiing ___ winter.
+A: ['in', 'during']
+O: in || on || at || during
+
+[In/On/At: Time] prepositions_prep_time_q05
+Q: The train leaves ___ noon.
+A: at
+O: in || on || at || by
+
+[In/On/At: Time] prepositions_prep_time_q06
+Q: Her birthday is ___ May 15th.
+A: on
+O: in || on || at || by
+
+[In/On/At: Time] prepositions_prep_time_q07
+Q: I usually wake up ___ 7 o'clock.
+A: at
+O: in || on || at || by
+
+[Mixed Prepositions] prepositions_prep_mixed_q01
+Q: She lives ___ New York.
+A: in
+O: in || on || at || to
+
+[Mixed Prepositions] prepositions_prep_mixed_q02
+Q: We will meet ___ Friday.
+A: on
+O: in || on || at || by
+
+[Mixed Prepositions] prepositions_prep_mixed_q03
+Q: He is standing ___ the corner.
+A: at
+O: in || on || at || by
+
+[Mixed Prepositions] prepositions_prep_mixed_q04
+Q: The party is ___ the evening.
+A: in
+O: in || on || at || by
+
+[Mixed Prepositions] prepositions_prep_mixed_q05
+Q: Put the flowers ___ the vase.
+A: in
+O: in || on || at || by
+
+[Mixed Prepositions] prepositions_prep_mixed_q06
+Q: See you ___ Christmas Day.
+A: on
+O: in || on || at || by
+
+[Production and Editing] prepositions_prep_prod_q01
+Q: Fix: I was born in July 15th.
+A: on
+O: on || in || at || -
+
+[Production and Editing] prepositions_prep_prod_q02
+Q: Fill: Hang the painting ___ the wall.
+A: on
+O: in || on || at || by
+
+[Production and Editing] prepositions_prep_prod_q03
+Q: Fix: She arrived at Monday.
+A: on
+O: on || in || at || -
+
+[Production and Editing] prepositions_prep_prod_q04
+Q: Fill: We stayed ___ a hotel.
+A: at
+O: in || on || at || by
+
+[Production and Editing] prepositions_prep_prod_q05
+Q: Fix: The answer is in the bottom of the page.
+A: at
+O: at || in || on || -
+
+[Production and Editing] prepositions_prep_prod_q06
+Q: Fill: I will be back ___ a few minutes.
+A: in
+O: in || on || at || by
+
+[Present Tenses] tenses_present_q01
+Q: She ___ to work by bus every day.
+A: goes
+O: go || goes || going || is go
+
+[Present Tenses] tenses_present_q02
+Q: Right now they ___ lunch together.
+A: are having
+O: have || are having || has || having
+
+[Present Tenses] tenses_present_q03
+Q: I ___ that film before. It is wonderful.
+A: have seen
+O: see || saw || have seen || seeing
+
+[Present Tenses] tenses_present_q04
+Q: The sun ___ in the east.
+A: rises
+O: rise || rises || is rising || rose
+
+[Present Tenses] tenses_present_q05
+Q: She ___ English at a school this month.
+A: is studying
+O: study || studies || is studying || studied
+
+[Present Tenses] tenses_present_q06
+Q: We ___ to Paris three times since 2020.
+A: have been
+O: go || went || have been || are going
+
+[Past Tenses] tenses_past_q01
+Q: Last weekend they ___ to the beach.
+A: went
+O: go || went || have gone || were going
+
+[Past Tenses] tenses_past_q02
+Q: While I ___, the phone rang.
+A: was cooking
+O: cook || cooked || was cooking || have cooked
+
+[Past Tenses] tenses_past_q03
+Q: She ___ her homework before dinner yesterday.
+A: had finished
+O: finishes || finished || had finished || has finished
+
+[Past Tenses] tenses_past_q04
+Q: When I was a child, I ___ in the park daily.
+A: played
+O: play || played || was playing || have played
+
+[Past Tenses] tenses_past_q05
+Q: He ___ his keys and could not enter.
+A: had lost
+O: loses || lost || had lost || was losing
+
+[Past Tenses] tenses_past_q06
+Q: By the time we arrived, the film ___.
+A: had started
+O: starts || started || had started || was starting
+
+[Future Forms] tenses_future_q01
+Q: Look at those clouds! It ___.
+A: is going to rain
+O: rains || is going to rain || will rain || rained
+
+[Future Forms] tenses_future_q02
+Q: I ___ you tomorrow at 3 PM as agreed.
+A: am seeing
+O: see || am seeing || will see || saw
+
+[Future Forms] tenses_future_q03
+Q: The train ___ at 6 PM per the schedule.
+A: leaves
+O: leaves || is leaving || will leave || left
+
+[Future Forms] tenses_future_q04
+Q: I think she ___ the competition.
+A: will win
+O: wins || is winning || will win || won
+
+[Future Forms] tenses_future_q05
+Q: This time next week we ___ on a beach.
+A: will be sitting
+O: sit || are sitting || will be sitting || sat
+
+[Future Forms] tenses_future_q06
+Q: By December she ___ here five years.
+A: will have worked
+O: works || will work || will have worked || worked
+
+[Perfect Tenses] tenses_perfect_q01
+Q: I ___ my keys. Can you help me find them?
+A: have lost
+O: lose || lost || have lost || was losing
+
+[Perfect Tenses] tenses_perfect_q02
+Q: She ___ in London since 2019.
+A: has lived
+O: lives || lived || has lived || is living
+
+[Perfect Tenses] tenses_perfect_q03
+Q: He ___ just ___ the office.
+A: has ... left
+O: has ... left || did ... leave || was ... leaving || is ... leaving
+
+[Perfect Tenses] tenses_perfect_q04
+Q: This is the first time I ___ sushi.
+A: have tried
+O: try || tried || have tried || was trying
+
+[Perfect Tenses] tenses_perfect_q05
+Q: When I got there, the train ___ already ___.
+A: had ... left
+O: has ... left || had ... left || was ... leaving || did ... leave
+
+[Perfect Tenses] tenses_perfect_q06
+Q: She ___ never ___ such beauty before that trip.
+A: had ... seen
+O: has ... seen || had ... seen || was ... seeing || did ... see
+
+[Continuous Forms] tenses_continuous_q01
+Q: Why ___ you ___ at me? Is something wrong?
+A: are ... looking
+O: do ... look || are ... looking || have ... looked || did ... look
+
+[Continuous Forms] tenses_continuous_q02
+Q: He ___ always ___ his phone. It drives me crazy!
+A: is ... losing
+O: is ... losing || was ... losing || has ... lost || does ... lose
+
+[Tense Contrast] tenses_contrast_q01
+Q: I ___ in this city since I was born.
+A: have lived
+O: live || lived || have lived || am living
+
+[Tense Contrast] tenses_contrast_q02
+Q: Shakespeare ___ many famous plays.
+A: wrote
+O: writes || wrote || has written || was writing
+
+[Tense Contrast] tenses_contrast_q03
+Q: I ___ my homework yet. I need more time.
+A: have not finished
+O: did not finish || have not finished || was not finishing || do not finish
+
+[Tense Contrast] tenses_contrast_q04
+Q: She ___ three coffees already this morning.
+A: has drunk
+O: drinks || drank || has drunk || was drinking
+
+[Narrative Tenses] tenses_narrative_q01
+Q: It was dark. The wind ___ and the trees ___.
+A: blew ... were shaking
+O: blows ... shake || blew ... were shaking || had blown ... shook || was blowing ... shook
+
+[Narrative Tenses] tenses_narrative_q02
+Q: When the detective arrived, the suspect ___ already ___.
+A: had ... escaped
+O: has ... escaped || had ... escaped || was ... escaping || did ... escape
+
+[Production and Editing] tenses_production_q01
+Q: Choose the correct sentence:
+A: I saw her yesterday.
+O: I have seen her yesterday. || I saw her yesterday. || I have saw her yesterday. || I seeing her yesterday.
+
+[Production and Editing] tenses_production_q02
+Q: Choose the correct sentence:
+A: She knows the answer.
+O: She is knowing the answer. || She knows the answer. || She has knowing the answer. || She knowing the answer.
+
+[Production and Editing] tenses_production_q03
+Q: Choose the correct sentence:
+A: If I see her, I will tell her.
+O: If I will see her, I will tell her. || If I see her, I will tell her. || If I saw her, I will tell her. || If I have seen her, I will tell her.
+
+[Production and Editing] tenses_production_q04
+Q: By 2030, scientists ___ a cure.
+A: will have found
+O: find || will find || will have found || are finding
+
+[Production and Editing] tenses_production_q05
+Q: He ___ for 20 years when he retired.
+A: had been working
+O: works || worked || had been working || has worked
+
+[Production and Editing] tenses_production_q06
+Q: I ___ this book for weeks; still on chapter 3.
+A: have been reading
+O: read || am reading || have been reading || was reading
+
+[Zero Conditional] conditionals_zero_q01
+Q: If you ___ water to 100 degrees, it ___.
+A: heat ... boils
+O: heat ... boils || heat ... will boil || heated ... would boil || will heat ... boils
+
+[Zero Conditional] conditionals_zero_q02
+Q: If you ___ plants, they ___.
+A: do not water ... die
+O: do not water ... die || do not water ... will die || did not water ... would die || will not water ... die
+
+[Zero Conditional] conditionals_zero_q03
+Q: When the temperature ___ below zero, water ___.
+A: drops ... freezes
+O: drops ... freezes || will drop ... freezes || dropped ... would freeze || drops ... will freeze
+
+[First Conditional] conditionals_first_q01
+Q: If it ___ tomorrow, we ___ at home.
+A: rains ... will stay
+O: rains ... will stay || will rain ... stay || rained ... would stay || rains ... stay
+
+[First Conditional] conditionals_first_q02
+Q: She ___ the exam if she ___ hard.
+A: will pass ... studies
+O: passes ... will study || will pass ... studies || would pass ... studied || passed ... studies
+
+[First Conditional] conditionals_first_q03
+Q: ___ you help me if I ___ you?
+A: Will ... ask
+O: Will ... ask || Do ... will ask || Would ... asked || Are ... ask
+
+[First Conditional] conditionals_first_q04
+Q: I ___ you know if I ___ any news.
+A: will let ... hear
+O: let ... will hear || will let ... hear || would let ... heard || let ... hear
+
+[Second Conditional] conditionals_second_q01
+Q: If I ___ rich, I ___ travel the world.
+A: were ... would
+O: am ... will || were ... would || was ... will || will be ... would
+
+[Second Conditional] conditionals_second_q02
+Q: If she ___ time, she ___ learn piano.
+A: had ... would
+O: has ... will || had ... would || would have ... will || has ... would
+
+[Second Conditional] conditionals_second_q03
+Q: If I ___ you, I ___ accept that offer.
+A: were ... would
+O: am ... will || were ... would || was ... will || would be ... would
+
+[Third Conditional] conditionals_third_q01
+Q: If I ___ about the party, I ___ gone.
+A: had known ... would have
+O: know ... would have || had known ... would have || knew ... will have || would know ... had
+
+[Third Conditional] conditionals_third_q02
+Q: She ___ the train if she ___ earlier.
+A: would have caught ... had left
+O: catches ... leaves || would have caught ... had left || caught ... would leave || will catch ... left
+
+[Third Conditional] conditionals_third_q03
+Q: If they ___ us, we ___ them at the station.
+A: had called ... would have met
+O: call ... will meet || had called ... would have met || called ... will meet || would call ... met
+
+[Mixed Conditionals] conditionals_mixed_q01
+Q: If I ___ harder at school, I ___ a better job now.
+A: had studied ... would have
+O: study ... will have || had studied ... would have || had studied ... would have || studied ... have
+
+[Mixed Conditionals] conditionals_mixed_q02
+Q: If she ___ so shy, she ___ more friends at the party last night.
+A: were not ... would have made
+O: is not ... will make || were not ... would have made || was not ... would make || had not been ... made
+
+[Alternatives to If] conditionals_alternatives_q01
+Q: You will fail ___ you study harder.
+A: unless
+O: if || unless || when || because
+
+[Alternatives to If] conditionals_alternatives_q02
+Q: You can go out ___ you finish your homework first.
+A: provided that
+O: unless || provided that || otherwise || as long
+
+[Alternatives to If] conditionals_alternatives_q03
+Q: Take an umbrella ___ it rains.
+A: in case
+O: unless || in case || otherwise || provided
+
+[I Wish / If Only] conditionals_wish_q01
+Q: I wish I ___ more money.
+A: had
+O: have || had || will have || would have
+
+[I Wish / If Only] conditionals_wish_q02
+Q: She wishes she ___ harder for the exam yesterday.
+A: had studied
+O: studies || studied || had studied || would study
+
+[Production and Editing] conditionals_production_q01
+Q: Choose the correct sentence:
+A: If I had known, I would have come.
+O: If I would have known, I would have come. || If I had known, I would have come. || If I knew, I will come. || If I know, I would come.
+
+[Production and Editing] conditionals_production_q02
+Q: Choose the correct sentence:
+A: If it rains, we will cancel.
+O: If it will rain, we will cancel. || If it rains, we will cancel. || If it rained, we will cancel. || If it would rain, we cancel.
+
+[Recognize Passive] passive_recognition_q01
+Q: Which sentence is passive?
+A: The meal was cooked by the chef.
+O: The chef cooked the meal. || The meal was cooked by the chef. || The chef is cooking the meal. || The chef cooks meals.
+
+[Recognize Passive] passive_recognition_q02
+Q: The window ___ by the wind.
+A: was broken
+O: broke || was broken || breaks || is breaking
+
+[Recognize Passive] passive_recognition_q03
+Q: Identify the passive:
+A: This house was built in 1920.
+O: They built this house in 1920. || This house was built in 1920. || They were building this house. || They have built this house.
+
+[Recognize Passive] passive_recognition_q04
+Q: English ___ all over the world.
+A: is spoken
+O: speaks || is spoken || speaking || has spoken
+
+[Form the Passive] passive_formation_q01
+Q: The letters ___ every morning.
+A: are delivered
+O: deliver || are delivered || delivering || have deliver
+
+[Form the Passive] passive_formation_q02
+Q: The thief ___ by the police yesterday.
+A: was caught
+O: catches || was caught || caught || is catching
+
+[Form the Passive] passive_formation_q03
+Q: A new hospital ___ in our city next year.
+A: will be built
+O: builds || will be built || is building || built
+
+[Form the Passive] passive_formation_q04
+Q: The work ___ yet.
+A: has not been finished
+O: has not finished || has not been finished || did not finish || is not finishing
+
+[With/Without Agent] passive_agent_q01
+Q: The book ___ by Mark Twain.
+A: was written
+O: wrote || was written || writes || is writing
+
+[With/Without Agent] passive_agent_q02
+Q: My wallet ___. (the doer is unknown)
+A: was stolen
+O: someone stole || was stolen || stole || has stolen
+
+[With/Without Agent] passive_agent_q03
+Q: Rice ___ in many Asian countries.
+A: is grown
+O: grows || is grown || growing || has grown
+
+[Passive Across Tenses] passive_tenses_q01
+Q: The building ___ at the moment.
+A: is being repaired
+O: repairs || is being repaired || was repairing || has repaired
+
+[Passive Across Tenses] passive_tenses_q02
+Q: When I arrived, the room ___.
+A: was being cleaned
+O: cleans || was being cleaned || has cleaned || is cleaning
+
+[Passive Across Tenses] passive_tenses_q03
+Q: By next month, the project ___.
+A: will have been completed
+O: completes || will have been completed || completed || is completing
+
+[Passive with Modals] passive_modals_q01
+Q: This door ___ from the inside only.
+A: can be opened
+O: can open || can be opened || opens || is opening
+
+[Passive with Modals] passive_modals_q02
+Q: The report ___ by Friday.
+A: must be finished
+O: must finish || must be finished || finishes || is finishing
+
+[Passive with Modals] passive_modals_q03
+Q: Mistakes ___ avoided at all costs.
+A: should be
+O: should || should be || should have || are should
+
+[Causative Forms] passive_causative_q01
+Q: I ___ my hair ___ at the salon yesterday.
+A: had ... cut
+O: cut ... Ø || had ... cut || was ... cut || have ... cut
+
+[Causative Forms] passive_causative_q02
+Q: She ___ her car ___ every month.
+A: gets ... washed
+O: washes ... Ø || gets ... washed || is ... washing || has ... wash
+
+[Causative Forms] passive_causative_q03
+Q: We need to ___ the roof ___ before winter.
+A: have ... fixed
+O: fix ... Ø || have ... fixed || are ... fixed || get ... fix
+
+[Impersonal Passive] passive_impersonal_q01
+Q: ___ that the company will merge next year.
+A: It is believed
+O: It believes || It is believed || People believe || They are believed
+
+[Impersonal Passive] passive_impersonal_q02
+Q: ___ that he was involved in the scandal.
+A: It is said
+O: It says || It is said || They say || He is said
+
+[Production and Editing] passive_production_q01
+Q: Rewrite in passive: "They built this bridge in 1890."
+A: This bridge was built in 1890.
+O: This bridge built in 1890. || This bridge was built in 1890. || This bridge is built in 1890. || This bridge has built in 1890.
+
+[Production and Editing] passive_production_q02
+Q: Rewrite in active: "The cake was eaten by the children."
+A: The children ate the cake.
+O: The cake ate the children. || The children ate the cake. || The children were eating the cake. || The cake the children ate.
+
+[Production and Editing] passive_production_q03
+Q: Which is the correct passive form?
+A: The book was written by her.
+O: The book was wrote by her. || The book was written by her. || The book written by her. || The book is wrote by her.
+
+[Reported Statements] reported_statements_q01
+Q: She said: "I am tired." -> She said that she ___ tired.
+A: was
+O: is || was || has been || will be
+
+[Reported Statements] reported_statements_q02
+Q: He said: "I like coffee." -> He said he ___ coffee.
+A: liked
+O: likes || liked || has liked || will like
+
+[Reported Statements] reported_statements_q03
+Q: They said: "We are leaving." -> They said they ___.
+A: were leaving
+O: are leaving || were leaving || have left || leave
+
+[Reported Questions] reported_questions_q01
+Q: She asked: "Where do you live?" -> She asked where I ___.
+A: lived
+O: live || lived || have lived || am living
+
+[Reported Questions] reported_questions_q02
+Q: He asked: "Are you coming?" -> He asked ___ I was coming.
+A: if
+O: that || if || what || when
+
+[Reported Questions] reported_questions_q03
+Q: She asked: "What time does the train leave?" -> She asked what time the train ___.
+A: left
+O: leaves || left || does leave || is leave
+
+[Reported Commands] reported_commands_q01
+Q: He said: "Close the door." -> He told me ___ the door.
+A: to close
+O: close || to close || closing || closed
+
+[Reported Commands] reported_commands_q02
+Q: She said: "Do not be late." -> She told me ___ late.
+A: not to be
+O: do not be || not to be || to not being || not being
+
+[Time and Place Shifts] reported_time_q01
+Q: She said: "I will call you tomorrow." -> She said she would call me ___.
+A: the next day
+O: tomorrow || the next day || yesterday || today
+
+[Time and Place Shifts] reported_time_q02
+Q: He said: "I am here now." -> He said he was there ___.
+A: then
+O: now || then || here || today
+
+[Reporting Verbs] reported_verbs_q01
+Q: He ___ that he had made a mistake.
+A: admitted
+O: told || said || admitted || spoke
+
+[Reporting Verbs] reported_verbs_q02
+Q: She ___ going to the cinema. (reporting a suggestion)
+A: suggested
+O: said || told || suggested || spoke
+
+[Tense Backshift Rules] reported_tense_q01
+Q: He said: "I have finished." -> He said he ___.
+A: had finished
+O: has finished || had finished || finished || finishes
+
+[Tense Backshift Rules] reported_tense_q02
+Q: She said: "I will help you." -> She said she ___ help me.
+A: would
+O: will || would || had || was
+
+[Embedded Questions] reported_embedded_q01
+Q: Do you know where ___?
+A: she lives
+O: does she live || she lives || lives she || is she live
+
+[Embedded Questions] reported_embedded_q02
+Q: Can you tell me ___ the bus stop?
+A: where
+O: where is || where || where the || is where
+
+[Production and Editing] reported_production_q01
+Q: Convert: "I am going to Paris," she said. -> She said ___.
+A: she was going to Paris
+O: she is going to Paris || she was going to Paris || she goes to Paris || I am going to Paris
+
+[Production and Editing] reported_production_q02
+Q: Convert: "Do not touch that!" he said. -> He told me ___.
+A: not to touch that
+O: do not touch that || not to touch that || to not touch that || not touching that
+
+[Ability] modals_ability_q01
+Q: She ___ swim when she was five years old.
+A: could
+O: can || could || will can || is able
+
+[Ability] modals_ability_q02
+Q: I ___ solve the problem after thinking for an hour.
+A: was able to
+O: could || was able to || can || could to
+
+[Ability] modals_ability_q03
+Q: By next year, she ___ speak three languages.
+A: will be able to
+O: can || will be able to || could || is able to
+
+[Permission] modals_permission_q01
+Q: ___ I use your phone, please?
+A: Can
+O: Must || Can || Should || Would
+
+[Permission] modals_permission_q02
+Q: You ___ park here. It is a no-parking zone.
+A: cannot
+O: can || cannot || must || should
+
+[Permission] modals_permission_q03
+Q: Students ___ leave early with permission.
+A: may
+O: must || may || should || would
+
+[Obligation] modals_obligation_q01
+Q: You ___ wear a seatbelt in the car. It is the law.
+A: must
+O: can || must || might || would
+
+[Obligation] modals_obligation_q02
+Q: I ___ go to work tomorrow. It is a holiday.
+A: do not have to
+O: must || do not have to || must not || should not
+
+[Obligation] modals_obligation_q03
+Q: You ___ eat more vegetables. It is good for your health.
+A: should
+O: must || should || might || can
+
+[Probability] modals_probability_q01
+Q: She is not here. She ___ be at home.
+A: might
+O: must || might || should || can
+
+[Probability] modals_probability_q02
+Q: He has been working all day. He ___ be exhausted.
+A: must
+O: might || must || can || would
+
+[Probability] modals_probability_q03
+Q: That ___ be true. I saw it with my own eyes.
+A: can not
+O: can not || could not || must not || should not
+
+[Past Modals] modals_past_q01
+Q: She ___ left already. Her coat is still here.
+A: can not have
+O: must have || can not have || should have || might have
+
+[Past Modals] modals_past_q02
+Q: You ___ told me earlier! I could have helped.
+A: should have
+O: must have || should have || might have || would have
+
+[Requests and Offers] modals_requests_q01
+Q: ___ you pass me the salt, please?
+A: Could
+O: Must || Could || Should || May
+
+[Modal Contrast] modals_contrast_q01
+Q: You ___ smoke here. It is a hospital.
+A: must not
+O: do not have to || must not || should not || might not
+
+[Modal Contrast] modals_contrast_q02
+Q: I ___ finish this report today. The deadline is tomorrow.
+A: have to
+O: can || have to || might || would
+
+[Production and Editing] modals_production_q01
+Q: Choose the correct sentence:
+A: You must go now.
+O: You must to go now. || You must go now. || You must going now. || You must gone now.
+
+[Production and Editing] modals_production_q02
+Q: Choose the correct sentence:
+A: She can speak French.
+O: She cans speak French. || She can speak French. || She can speaks French. || She can to speak French.
+
+[Articles] determiners_articles_q01
+Q: I saw ___ elephant at the zoo.
+A: an
+O: a || an || the || Ø
+
+[Articles] determiners_articles_q02
+Q: ___ sun rises in the east.
+A: The
+O: A || An || The || Ø
+
+[Articles] determiners_articles_q03
+Q: She is ___ best student in the class.
+A: the
+O: a || an || the || Ø
+
+[Articles] determiners_articles_q04
+Q: ___ love is a beautiful thing.
+A: Ø
+O: A || An || The || Ø
+
+[Definite vs Indefinite] determiners_definite_q01
+Q: I bought a book. ___ book is very interesting.
+A: The
+O: A || An || The || Ø
+
+[Definite vs Indefinite] determiners_definite_q02
+Q: Can you close ___ door, please?
+A: the
+O: a || an || the || Ø
+
+[Quantifiers] determiners_quantifiers_q01
+Q: There are not ___ eggs left in the fridge.
+A: any
+O: some || any || much || few
+
+[Quantifiers] determiners_quantifiers_q02
+Q: How ___ money do you need?
+A: much
+O: many || much || few || some
+
+[Quantifiers] determiners_quantifiers_q03
+Q: There is very ___ sugar in my coffee. I need more.
+A: little
+O: little || few || much || many
+
+[Demonstratives] determiners_demonstratives_q01
+Q: Look at ___ birds over there!
+A: those
+O: this || that || these || those
+
+[Demonstratives] determiners_demonstratives_q02
+Q: ___ is my friend Sarah. (introducing someone nearby)
+A: This
+O: That || Those || These || This
+
+[Possessives] determiners_possessives_q01
+Q: The dog wagged ___ tail.
+A: its
+O: its || it is || his || their
+
+[Possessives] determiners_possessives_q02
+Q: The students forgot ___ homework.
+A: their
+O: his || her || its || their
+
+[Generic Reference] determiners_generics_q01
+Q: ___ tiger is an endangered species.
+A: The
+O: A || An || The || Ø
+
+[Determiner Contrast] determiners_contrast_q01
+Q: I have ___ ideas about the project. (positive)
+A: some
+O: any || some || much || little
+
+[Production and Editing] determiners_production_q01
+Q: Choose the correct sentence:
+A: She gave me useful advice.
+O: She gave me an useful advice. || She gave me useful advice. || She gave me a useful advice. || She gave me the useful advice.
+
+[Production and Editing] determiners_production_q02
+Q: Choose the correct sentence:
+A: I do not have any money.
+O: I do not have some money. || I do not have any money. || I do not have much moneys. || I do not have few money.
+
+[Coordinating] conjunctions_coordinating_q01
+Q: I was tired, ___ I went to bed early.
+A: so
+O: but || so || or || and
+
+[Coordinating] conjunctions_coordinating_q02
+Q: She is smart ___ hardworking.
+A: and
+O: but || so || or || and
+
+[Coordinating] conjunctions_coordinating_q03
+Q: He wanted to go, ___ he was too busy.
+A: but
+O: so || and || but || or
+
+[Coordinating] conjunctions_coordinating_q04
+Q: Hurry up, ___ you will miss the bus.
+A: or
+O: and || but || so || or
+
+[Subordinating] conjunctions_subordinating_q01
+Q: ___ it was raining, we went for a walk.
+A: Although
+O: Because || Although || So || Unless
+
+[Subordinating] conjunctions_subordinating_q02
+Q: She stayed home ___ she was feeling sick.
+A: because
+O: although || because || unless || while
+
+[Correlative] conjunctions_correlative_q01
+Q: ___ my mother ___ my father can attend the meeting.
+A: Neither ... nor
+O: Both ... and || Either ... or || Neither ... nor || Not only ... but also
+
+[Correlative] conjunctions_correlative_q02
+Q: She is ___ intelligent ___ hardworking.
+A: not only ... but also
+O: both ... and || either ... or || neither ... nor || not only ... but also
+
+[Contrast and Concession] conjunctions_contrast_q01
+Q: ___ the rain, the match continued.
+A: Despite
+O: Although || Despite || Because || Since
+
+[Contrast and Concession] conjunctions_contrast_q02
+Q: ___ he is rich, he lives simply.
+A: Even though
+O: Despite || Because || Even though || Since
+
+[Cause and Result] conjunctions_cause_q01
+Q: It was ___ hot ___ we stayed indoors.
+A: so ... that
+O: so ... that || such ... that || too ... to || very ... that
+
+[Cause and Result] conjunctions_cause_q02
+Q: It was ___ a good film ___ I watched it twice.
+A: such ... that
+O: so ... that || such ... that || too ... to || very ... that
+
+[Purpose] conjunctions_purpose_q01
+Q: She studies hard ___ she can pass the exam.
+A: so that
+O: because || so that || although || unless
+
+[Linking Adverbs] conjunctions_linking_q01
+Q: The weather was bad. ___, we enjoyed the trip.
+A: However
+O: Therefore || However || Moreover || Because
+
+[Linking Adverbs] conjunctions_linking_q02
+Q: He studied hard. ___, he passed with top marks.
+A: Therefore
+O: However || Therefore || Although || Despite
+
+[Production and Editing] conjunctions_production_q01
+Q: Choose the correct sentence:
+A: Although it was late, she continued.
+O: Although it was late, but she continued. || Although it was late, she continued. || Although it was late, so she continued. || Despite it was late, she continued.
+
+[Production and Editing] conjunctions_production_q02
+Q: Choose the correct sentence:
+A: I like both tea and coffee.
+O: I like both tea or coffee. || I like both tea and coffee. || I like either tea and coffee. || I like neither tea or coffee.
+
+[Gerunds] verb_patterns_gerunds_q01
+Q: I enjoy ___ books in my free time.
+A: reading
+O: read || to read || reading || reads
+
+[Gerunds] verb_patterns_gerunds_q02
+Q: She avoids ___ late at night.
+A: working
+O: work || to work || working || works
+
+[Gerunds] verb_patterns_gerunds_q03
+Q: He admitted ___ the mistake.
+A: making
+O: make || to make || making || made
+
+[Infinitives] verb_patterns_infinitives_q01
+Q: She decided ___ a new job.
+A: to find
+O: find || to find || finding || found
+
+[Infinitives] verb_patterns_infinitives_q02
+Q: He promised ___ me tomorrow.
+A: to call
+O: call || to call || calling || called
+
+[Infinitives] verb_patterns_infinitives_q03
+Q: I want ___ a doctor when I grow up.
+A: to become
+O: become || to become || becoming || became
+
+[Gerund vs Infinitive] verb_patterns_both_q01
+Q: I stopped ___ because it was bad for my health.
+A: smoking
+O: smoke || to smoke || smoking || smoked
+
+[Gerund vs Infinitive] verb_patterns_both_q02
+Q: She remembered ___ the door before leaving.
+A: to lock
+O: lock || to lock || locking || locked
+
+[Gerund vs Infinitive] verb_patterns_both_q03
+Q: He tried ___ the heavy box but could not.
+A: to lift
+O: lift || to lift || lifting || lifted
+
+[Causatives] verb_patterns_causatives_q01
+Q: The teacher ___ the students ___ in pairs.
+A: made ... work
+O: made ... work || made ... to work || let ... to work || had ... worked
+
+[Causatives] verb_patterns_causatives_q02
+Q: She ___ me ___ her car last weekend.
+A: let ... drive
+O: let ... drive || let ... to drive || made ... drive || allowed ... drive
+
+[Preposition + Gerund] verb_patterns_preposition_q01
+Q: She is good ___ playing the piano.
+A: at
+O: at || in || to || for
+
+[Preposition + Gerund] verb_patterns_preposition_q02
+Q: He is interested ___ learning Spanish.
+A: in
+O: at || in || to || for
+
+[Adjective Patterns] verb_patterns_adj_q01
+Q: It is important ___ on time.
+A: to be
+O: be || to be || being || been
+
+[Production and Editing] verb_patterns_production_q01
+Q: Choose the correct sentence:
+A: I suggest going early.
+O: I suggest to go early. || I suggest going early. || I suggest go early. || I suggest to going early.
+
+[Production and Editing] verb_patterns_production_q02
+Q: Choose the correct sentence:
+A: She made me apologize.
+O: She made me to apologize. || She made me apologize. || She made me apologizing. || She made me apologized.
+
+[Word Order] sentence_structure_word_order_q01
+Q: Choose the correct word order:
+A: She speaks English well.
+O: She speaks well English. || She speaks English well. || She well speaks English. || Well she speaks English.
+
+[Word Order] sentence_structure_word_order_q02
+Q: Choose the correct word order:
+A: Never have I seen such beauty.
+O: Never I have seen such beauty. || Never have I seen such beauty. || I never have seen such beauty. || I have never seen such beauty.
+
+[Question Formation] sentence_structure_questions_q01
+Q: ___ you ___ where the museum is?
+A: Do ... know
+O: Are ... know || Do ... know || Have ... known || Did ... knew
+
+[Question Formation] sentence_structure_questions_q02
+Q: ___ she ___ at the moment?
+A: Is ... working
+O: Does ... work || Is ... working || Has ... worked || Did ... working
+
+[Negation] sentence_structure_negation_q01
+Q: She ___ like coffee.
+A: does not
+O: do not || does not || is not || has not
+
+[Negation] sentence_structure_negation_q02
+Q: I have ___ been to Japan.
+A: never
+O: not || never || no || none
+
+[Clause Types] sentence_structure_clauses_q01
+Q: Identify the subordinate clause: "I will call you when I arrive."
+A: when I arrive
+O: I will call you || when I arrive || will call || call you
+
+[Clause Types] sentence_structure_clauses_q02
+Q: Which is a complete sentence?
+A: She went home.
+O: Because I was tired. || Although it rained. || She went home. || When he arrived.
+
+[Cleft Sentences] sentence_structure_cleft_q01
+Q: ___ was John ___ broke the window.
+A: It ... who
+O: It ... who || What ... that || That ... who || He ... that
+
+[Cleft Sentences] sentence_structure_cleft_q02
+Q: ___ I need is a good rest.
+A: What
+O: It || What || That || Which
+
+[Fragments and Run-ons] sentence_structure_fragments_q01
+Q: Which is a fragment (incomplete sentence)?
+A: Running down the street.
+O: She went to the store. || Running down the street. || He called his mother. || They arrived late.
+
+[Fragments and Run-ons] sentence_structure_fragments_q02
+Q: Fix the run-on: "I love pizza it is my favorite food."
+A: I love pizza. It is my favorite food.
+O: I love pizza, it is my favorite food. || I love pizza. It is my favorite food. || I love pizza it is, my favorite food. || I love, pizza it is my favorite food.
+
+[Parallel Structure] sentence_structure_parallelism_q01
+Q: Choose the parallel sentence:
+A: She likes swimming, running, and biking.
+O: She likes swimming, to run, and biking. || She likes swimming, running, and biking. || She likes to swim, running, and to bike. || She likes swim, run, and biking.
+
+[Parallel Structure] sentence_structure_parallelism_q02
+Q: Choose the parallel sentence:
+A: He is smart, hardworking, and creative.
+O: He is smart, hardworking, and has creativity. || He is smart, hardworking, and creative. || He is smart, works hard, and creative. || He has smart, hardworking, and creative.
+
+[Production and Editing] sentence_structure_production_q01
+Q: Choose the correct sentence:
+A: John and I went to the cinema.
+O: Me and John went to the cinema. || John and I went to the cinema. || John and me went to the cinema. || I and John went to the cinema.
+
+[Production and Editing] sentence_structure_production_q02
+Q: Choose the best combined sentence: "The man is my neighbor. He is wearing a hat."
+A: The man wearing a hat is my neighbor.
+O: The man is my neighbor he is wearing a hat. || The man wearing a hat is my neighbor. || The man is my neighbor wearing a hat. || Wearing a hat the man is my neighbor.
+
+[Emphasis] advanced_emphasis_q01
+Q: Not only ___ the exam, but she also got the highest score.
+A: did she pass
+O: she passed || did she pass || she did pass || passed she
+
+[Emphasis] advanced_emphasis_q02
+Q: Rarely ___ such a beautiful sunset.
+A: have I seen
+O: I have seen || have I seen || I saw || I see
+
+[Inversion] advanced_inversion_q01
+Q: ___ known the truth, I would have acted differently.
+A: Had I
+O: If I had || Had I || If I || I had
+
+[Inversion] advanced_inversion_q02
+Q: Only when the rain stopped ___ able to leave.
+A: were we
+O: we were || were we || we had been || had we been
+
+[Substitution and Ellipsis] advanced_substitution_q01
+Q: "Are you coming?" "I hope ___."
+A: so
+O: it || so || that || this
+
+[Substitution and Ellipsis] advanced_substitution_q02
+Q: She asked me to help and I ___.
+A: did so
+O: did || did so || so did || did it
+
+[Register] advanced_register_q01
+Q: Which is more formal?
+A: May I have a word with you?
+O: Can I have a word with you? || May I have a word with you? || Could I have a word? || Let me talk to you.
+
+[Register] advanced_register_q02
+Q: Which is the most formal closing for a business email?
+A: Yours sincerely
+O: Cheers || Yours sincerely || Best || See ya
+
+[Cohesion] advanced_cohesion_q01
+Q: The company reported high profits. ___, share prices rose.
+A: Consequently
+O: However || Consequently || Nevertheless || In contrast
+
+[Cohesion] advanced_cohesion_q02
+Q: The first method is expensive. ___, it is highly effective.
+A: On the other hand
+O: Therefore || On the other hand || As a result || Consequently
+
+[Nominalisation] advanced_nominalisation_q01
+Q: The ___ of the new policy led to confusion.
+A: introduction
+O: introduce || introduction || introducing || introduced
+
+[Hedging and Stance] advanced_hedging_q01
+Q: It ___ that the experiment was successful.
+A: seems
+O: seems || is || proves || shows
+
+[Hedging and Stance] advanced_hedging_q02
+Q: The results ___ to support the hypothesis.
+A: seem
+O: are || seem || prove || show
+
+[Production and Editing] advanced_production_q01
+Q: Choose the most academic version:
+A: There is widespread agreement that climate change poses significant risks.
+O: A lot of people think climate change is bad. || There is widespread agreement that climate change poses significant risks. || Many people say climate change is a problem. || Lots of folks reckon climate change is not good.
+
+[Production and Editing] advanced_production_q02
+Q: Choose the sentence with correct formal grammar:
+A: The person who called was my boss.
+O: The person which called was my boss. || The person who called was my boss. || The person that called was, my boss. || The person, who called was my boss.

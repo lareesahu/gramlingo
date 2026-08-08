@@ -1,0 +1,58 @@
+{"kind": "question", "phase": "reported_time", "qidx": 0, "qid": "reported_time_q01", "pass": "A", "wrongUsed": "tomorrow", "wrongRejected": true, "feedback": "Tomorrow = direct speech, no shift."}
+{"kind": "advance", "phase": "reported_time", "qidx": 0, "pass": "A", "state": "timeout:(1, 2)"}
+{"kind": "question", "phase": "reported_time", "qidx": 0, "qid": "reported_time_q01", "pass": "A", "wrongUsed": "tomorrow", "wrongRejected": true, "feedback": "Tomorrow = direct speech, no shift."}
+{"kind": "advance", "phase": "reported_time", "qidx": 0, "pass": "A", "state": "ok"}
+{"kind": "question", "phase": "reported_time", "qidx": 1, "qid": "reported_time_q02", "pass": "A", "wrongUsed": "now", "wrongRejected": true, "feedback": "Now = direct speech."}
+{"kind": "advance", "phase": "reported_time", "qidx": 1, "pass": "A", "state": "completion"}
+{"kind": "phase", "phase": "reported_time", "pass": "A", "status": "ok", "score": "0%"}
+{"kind": "question", "phase": "reported_time", "qidx": 0, "qid": "reported_time_q01", "pass": "B", "correctUsed": "the next day", "accepted": true, "feedback": "Correct! The next day = time shift in reported speech."}
+{"kind": "advance", "phase": "reported_time", "qidx": 0, "pass": "B", "state": "ok"}
+{"kind": "question", "phase": "reported_time", "qidx": 1, "qid": "reported_time_q02", "pass": "B", "correctUsed": "then", "accepted": true, "feedback": "Correct! Then = time shift from now."}
+{"kind": "advance", "phase": "reported_time", "qidx": 1, "pass": "B", "state": "completion"}
+{"kind": "phase", "phase": "reported_time", "pass": "B", "status": "ok", "score": "100%"}
+{"kind": "errorlog", "phase": "reported_time", "afterB": 0}
+{"kind": "question", "phase": "reported_verbs", "qidx": 0, "qid": "reported_verbs_q01", "pass": "A", "wrongUsed": "told", "wrongRejected": true, "feedback": "Told needs an object (told me that)."}
+{"kind": "advance", "phase": "reported_verbs", "qidx": 0, "pass": "A", "state": "ok"}
+{"kind": "question", "phase": "reported_verbs", "qidx": 1, "qid": "reported_verbs_q02", "pass": "A", "wrongUsed": "said", "wrongRejected": true, "feedback": "Said = too general."}
+{"kind": "advance", "phase": "reported_verbs", "qidx": 1, "pass": "A", "state": "completion"}
+{"kind": "phase", "phase": "reported_verbs", "pass": "A", "status": "ok", "score": "0%"}
+{"kind": "question", "phase": "reported_verbs", "qidx": 0, "qid": "reported_verbs_q01", "pass": "B", "correctUsed": "admitted", "accepted": true, "feedback": "Correct! Admitted = precise reporting verb for confession."}
+{"kind": "advance", "phase": "reported_verbs", "qidx": 0, "pass": "B", "state": "ok"}
+{"kind": "question", "phase": "reported_verbs", "qidx": 1, "qid": "reported_verbs_q02", "pass": "B", "correctUsed": "suggested", "accepted": true, "feedback": "Correct! Suggested = reporting verb for proposals."}
+{"kind": "advance", "phase": "reported_verbs", "qidx": 1, "pass": "B", "state": "completion"}
+{"kind": "phase", "phase": "reported_verbs", "pass": "B", "status": "ok", "score": "100%"}
+{"kind": "errorlog", "phase": "reported_verbs", "afterB": 0}
+{"kind": "question", "phase": "reported_tense", "qidx": 0, "qid": "reported_tense_q01", "pass": "A", "wrongUsed": "has finished", "wrongRejected": true, "feedback": "Has finished = direct speech."}
+{"kind": "advance", "phase": "reported_tense", "qidx": 0, "pass": "A", "state": "ok"}
+{"kind": "question", "phase": "reported_tense", "qidx": 1, "qid": "reported_tense_q02", "pass": "A", "wrongUsed": "will", "wrongRejected": true, "feedback": "Will = direct speech."}
+{"kind": "advance", "phase": "reported_tense", "qidx": 1, "pass": "A", "state": "completion"}
+{"kind": "phase", "phase": "reported_tense", "pass": "A", "status": "ok", "score": "0%"}
+{"kind": "question", "phase": "reported_tense", "qidx": 0, "qid": "reported_tense_q01", "pass": "B", "correctUsed": "had finished", "accepted": true, "feedback": "Correct! Had finished = backshifted present perfect."}
+{"kind": "advance", "phase": "reported_tense", "qidx": 0, "pass": "B", "state": "ok"}
+{"kind": "question", "phase": "reported_tense", "qidx": 1, "qid": "reported_tense_q02", "pass": "B", "correctUsed": "would", "accepted": true, "feedback": "Correct! Would = backshifted will."}
+{"kind": "advance", "phase": "reported_tense", "qidx": 1, "pass": "B", "state": "completion"}
+{"kind": "phase", "phase": "reported_tense", "pass": "B", "status": "ok", "score": "100%"}
+{"kind": "errorlog", "phase": "reported_tense", "afterB": 0}
+{"kind": "question", "phase": "reported_embedded", "qidx": 0, "qid": "reported_embedded_q01", "pass": "A", "wrongUsed": "does she live", "wrongRejected": true, "feedback": "Does she live = direct question order."}
+{"kind": "advance", "phase": "reported_embedded", "qidx": 0, "pass": "A", "state": "ok"}
+{"kind": "question", "phase": "reported_embedded", "qidx": 1, "qid": "reported_embedded_q02", "pass": "A", "wrongUsed": "where is", "wrongRejected": false, "feedback": "Where is = direct question order."}
+{"kind": "advance", "phase": "reported_embedded", "qidx": 1, "pass": "A", "state": "completion"}
+{"kind": "phase", "phase": "reported_embedded", "pass": "A", "status": "ok", "score": "50%"}
+{"kind": "question", "phase": "reported_embedded", "qidx": 0, "qid": "reported_embedded_q01", "pass": "B", "correctUsed": "she lives", "accepted": true, "feedback": "Correct! She lives = embedded question order."}
+{"kind": "advance", "phase": "reported_embedded", "qidx": 0, "pass": "B", "state": "ok"}
+{"kind": "question", "phase": "reported_embedded", "qidx": 1, "qid": "reported_embedded_q02", "pass": "B", "correctUsed": "where is", "accepted": true, "feedback": "Where is = direct question order."}
+{"kind": "advance", "phase": "reported_embedded", "qidx": 1, "pass": "B", "state": "completion"}
+{"kind": "phase", "phase": "reported_embedded", "pass": "B", "status": "ok", "score": "100%"}
+{"kind": "errorlog", "phase": "reported_embedded", "afterB": 0}
+{"kind": "question", "phase": "reported_prod", "qidx": 0, "qid": "reported_production_q01", "pass": "A", "wrongUsed": "she is going to Paris", "wrongRejected": true, "feedback": "Is going = no backshift."}
+{"kind": "advance", "phase": "reported_prod", "qidx": 0, "pass": "A", "state": "ok"}
+{"kind": "question", "phase": "reported_prod", "qidx": 1, "qid": "reported_production_q02", "pass": "A", "wrongUsed": "do not touch that", "wrongRejected": true, "feedback": "Do not touch = direct command."}
+{"kind": "advance", "phase": "reported_prod", "qidx": 1, "pass": "A", "state": "completion"}
+{"kind": "phase", "phase": "reported_prod", "pass": "A", "status": "ok", "score": "0%"}
+{"kind": "question", "phase": "reported_prod", "qidx": 0, "qid": "reported_production_q01", "pass": "B", "correctUsed": "she was going to Paris", "accepted": true, "feedback": "Correct! Was going = backshifted + pronoun change."}
+{"kind": "advance", "phase": "reported_prod", "qidx": 0, "pass": "B", "state": "ok"}
+{"kind": "question", "phase": "reported_prod", "qidx": 1, "qid": "reported_production_q02", "pass": "B", "correctUsed": "not to touch that", "accepted": true, "feedback": "Correct! Not to touch = reported negative command."}
+{"kind": "advance", "phase": "reported_prod", "qidx": 1, "pass": "B", "state": "completion"}
+{"kind": "phase", "phase": "reported_prod", "pass": "B", "status": "ok", "score": "100%"}
+{"kind": "errorlog", "phase": "reported_prod", "afterB": 0}
+{"kind": "final", "progressCount": 94, "errorLogCount": 6}

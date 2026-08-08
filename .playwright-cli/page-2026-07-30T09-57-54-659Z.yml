@@ -1,0 +1,31 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - button "Back" [ref=f2e131] [cursor=pointer]
+    - navigation [ref=f2e7]:
+      - button "Language" [ref=f2e9] [cursor=pointer]:
+        - generic [ref=f2e13]: EN
+      - button "Profile" [ref=f2e15] [cursor=pointer]:
+        - generic [ref=f2e19]: QA
+  - main [ref=f2e20]:
+    - generic [ref=f2e134]:
+      - generic [ref=f2e135]:
+        - generic [ref=f2e136]: "Phase 93: Report the Situation"
+        - generic [ref=f2e137]: Question 2 of 8
+      - progressbar [ref=f2e138]
+      - img "book Gramlin" [ref=f2e182]:
+        - img "Gramlin book" [ref=f2e183]
+      - generic [ref=f2e143]:
+        - generic "Memorization steps" [ref=f2e144]:
+          - generic [ref=f2e145]: 1 STUDY
+          - generic [ref=f2e146]: →
+          - generic [ref=f2e147]: 2 RECALL
+          - generic [ref=f2e148]: →
+          - generic [ref=f2e149]: 3 CHECK
+        - generic [ref=f2e184]:
+          - generic [ref=f2e185]: STUDY
+          - paragraph [ref=f2e186]: Read the whole sentence aloud. Then hide the focus words and rebuild it from memory.
+          - paragraph [ref=f2e187]: All our air conditioning packs have malfunctioned, so we request rapid descent to the minimum en route altitude that can guarantee terrain clearance.
+          - generic "Focus words" [ref=f2e188]:
+            - strong [ref=f2e190]: conditioning
+            - strong [ref=f2e191]: malfunctioned
+          - button "Hide words & recall" [ref=f2e193] [cursor=pointer]

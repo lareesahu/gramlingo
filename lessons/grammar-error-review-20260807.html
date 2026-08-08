@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grammar Review · Error Log Analysis · 2026/8/7</title>
+<style>
+  :root {
+    --bg: #0b0b0f;
+    --surface: #15151d;
+    --surface2: #1c1c27;
+    --glass: rgba(22,22,35,0.72);
+    --glass-border: rgba(255,255,255,0.06);
+    --text: #e2e0dc;
+    --text-dim: #8b8a8e;
+    --accent: #d4a056;
+    --accent-soft: rgba(212,160,86,0.15);
+    --green: #5ba48c;
+    --green-soft: rgba(91,164,140,0.15);
+    --red: #c76b5a;
+    --red-soft: rgba(199,107,90,0.12);
+    --blue: #6b9fd4;
+    --blue-soft: rgba(107,159,212,0.12);
+    --purple: #a08cd4;
+    --purple-soft: rgba(160,140,212,0.12);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Grain overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 3vw, 2rem);
+  }
+
+  /* ── Header ── */
+  .header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+  }
+  .header .badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.35em 1em;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+  }
+  .header h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+  .header .subtitle {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+  }
+
+  /* ── Progress bar ── */
+  .progress-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(11,11,15,0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.6rem 1rem;
+  }
+  .progress-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+  .progress-bar {
+    flex: 1;
+    height: 3px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin: 2.5rem 0;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .section-num {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--surface2);
+    border: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* ── Card ── */
+  .card {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius);
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    margin-bottom: 1.25rem;
+  }
+  .card h3 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .card h3 .icon { font-size: 1.2rem; }
+
+  /* ── Rule blocks ── */
+  .rule-block {
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--accent);
+  }
+  .rule-block.blue { border-left-color: var(--blue); }
+  .rule-block.green { border-left-color: var(--green); }
+  .rule-block.purple { border-left-color: var(--purple); }
+  .rule-block .formula {
+    font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.25);
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin: 0.75rem 0;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+  }
+  .rule-block.blue .formula { color: var(--blue); }
+  .rule-block.green .formula { color: var(--green); }
+  .rule-block.purple .formula { color: var(--purple); }
+  .rule-block ul {
+    list-style: none;
+    padding: 0;
+  }
+  .rule-block ul li {
+    padding: 0.3rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.92rem;
+    color: var(--text-dim);
+  }
+  .rule-block ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .rule-block.blue ul li::before { color: var(--blue); }
+  .rule-block.green ul li::before { color: var(--green); }
+  .rule-block.purple ul li::before { color: var(--purple); }
+
+  /* ── Example / Compare ── */
+  .examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .example {
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .example .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.4rem;
+  }
+  .example.wrong .label { color: var(--red); }
+  .example.right .label { color: var(--green); }
+  .example .sentence {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .example.wrong .sentence { color: var(--red); }
+  .example.right .sentence { color: var(--green); }
+
+  /* ── Error replay ── */
+  .error-replay {
+    background: var(--red-soft);
+    border: 1px solid rgba(199,107,90,0.2);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+  .error-replay .er-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--red);
+    margin-bottom: 0.75rem;
+  }
+  .error-replay .er-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+  .error-replay .er-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    min-width: 3.5rem;
+    color: var(--text-dim);
+  }
+  .error-replay .er-wrong {
+    text-decoration: line-through;
+    color: var(--red);
+  }
+  .error-replay .er-arrow {
+    color: var(--text-dim);
+    margin: 0 0.15rem;
+  }
+  .error-replay .er-right {
+    color: var(--green);
+    font-weight: 600;
+  }
+
+  /* ── Key insight ── */
+  .insight {
+    background: var(--blue-soft);
+    border: 1px solid rgba(107,159,212,0.2);
+    border-radius: var(--radius-sm);
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .insight strong {
+    color: var(--blue);
+  }
+
+  /* ── Mini-quiz ── */
+  .mini-quiz {
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    margin-top: 1rem;
+  }
+  .mini-quiz h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-dim);
+  }
+  .mini-quiz .mq-item {
+    margin-bottom: 0.75rem;
+  }
+  .mini-quiz .mq-q {
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+  }
+  .mini-quiz .mq-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .mini-quiz .mq-opt {
+    font-size: 0.82rem;
+    padding: 0.35em 0.8em;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.12);
+    cursor: pointer;
+    background: transparent;
+    color: var(--text);
+    transition: all 0.15s ease;
+    font-family: inherit;
+  }
+  .mini-quiz .mq-opt:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .mini-quiz .mq-opt.chosen-wrong {
+    border-color: var(--red);
+    background: var(--red-soft);
+    color: var(--red);
+  }
+  .mini-quiz .mq-opt.chosen-right {
+    border-color: var(--green);
+    background: var(--green-soft);
+    color: var(--green);
+  }
+  .mini-quiz .mq-feedback {
+    font-size: 0.82rem;
+    margin-top: 0.35rem;
+    font-weight: 600;
+    display: none;
+  }
+  .mini-quiz .mq-feedback.show { display: block; }
+  .mini-quiz .mq-feedback.wrong { color: var(--red); }
+  .mini-quiz .mq-feedback.right { color: var(--green); }
+
+  /* ── Comparison table ── */
+  .cmp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 1rem 0;
+  }
+  .cmp-table th {
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--glass-border);
+  }
+  .cmp-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    vertical-align: top;
+  }
+  .cmp-table tr:last-child td { border-bottom: none; }
+  .cmp-table .col-emoji { width: 2rem; text-align: center; }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .examples { grid-template-columns: 1fr; }
+    .cmp-table { font-size: 0.78rem; }
+    .cmp-table th, .cmp-table td { padding: 0.4rem 0.5rem; }
+    .section-title { font-size: 1rem; }
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    border-top: 1px solid var(--glass-border);
+    margin-top: 3rem;
+  }
+  .footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-wrap" id="progressWrap">
+  <div class="progress-inner">
+    <span>Progress</span>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <span id="progressLabel">0 / 9</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header class="header">
+    <div class="badge">Error Log Analysis</div>
+    <h1>Grammar Review:<br>9 Mistakes, Fully Explained</h1>
+    <p class="subtitle">Based on your GramLingo error log · August 7, 2026</p>
+  </header>
+
+  <!-- ═══════════ OVERVIEW ═══════════ -->
+  <div class="card">
+    <h3>📋 What's Covered</h3>
+    <table class="cmp-table">
+      <thead><tr><th>#</th><th>Topic</th><th>Your Error</th><th>Correct Form</th></tr></thead>
+      <tbody>
+        <tr><td class="col-emoji">1</td><td>Second Conditional</td><td><span style="color:var(--red)">am…will</span></td><td><span style="color:var(--green)">were…would</span></td></tr>
+        <tr><td class="col-emoji">2</td><td>First Conditional</td><td><span style="color:var(--red)">stay</span></td><td><span style="color:var(--green)">will stay</span></td></tr>
+        <tr><td class="col-emoji">3</td><td>Past Simple vs Present Perfect</td><td><span style="color:var(--red)">has written</span></td><td><span style="color:var(--green)">wrote</span></td></tr>
+        <tr><td class="col-emoji">4</td><td>Present Perfect</td><td><span style="color:var(--red)">lose</span></td><td><span style="color:var(--green)">have lost</span></td></tr>
+        <tr><td class="col-emoji">5</td><td>Future Forms (Scheduled)</td><td><span style="color:var(--red)">is leaving</span></td><td><span style="color:var(--green)">leaves</span></td></tr>
+        <tr><td class="col-emoji">6</td><td>Relative Clauses</td><td><span style="color:var(--red)">Anna</span></td><td><span style="color:var(--green)">it</span></td></tr>
+        <tr><td class="col-emoji">7</td><td>Prepositions: Hotels</td><td><span style="color:var(--red)">in a hotel</span></td><td><span style="color:var(--green)">at a hotel</span></td></tr>
+        <tr><td class="col-emoji">8</td><td>Prepositions: Corners</td><td><span style="color:var(--red)">in the corner</span></td><td><span style="color:var(--green)">at the corner</span></td></tr>
+        <tr><td class="col-emoji">9</td><td>Present Perfect + since</td><td><span style="color:var(--red)">went</span></td><td><span style="color:var(--green)">have been</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══════════ SECTION 1: CONDITIONALS ═══════════ -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2 class="section-title">Conditionals: First &amp; Second</h2>
+    </div>
+
+    <div class="card">
+      <p style="color:var(--text-dim);margin-bottom:1rem">You mixed up the <strong>first conditional</strong> (real future) and <strong>second conditional</strong> (hypothetical imagination). They share the "if" structure — but the verb forms are completely different.</p>
+
+      <!-- First Conditional -->
+      <div class="rule-block blue">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--blue)">🧪 First Conditional — Real, Possible Future</h3>
+        <p style="color:var(--text-dim);font-size:0.88rem;margin-bottom:0.5rem">Use when the outcome is <strong>likely or possible</strong>. The condition is realistic.</p>
+        <div class="formula">if + present simple , will + base verb</div>
+        <ul>
+          <li>"If it <strong>rains</strong> tomorrow, we <strong>will stay</strong> at home."</li>
+          <li>"If she <strong>studies</strong>, she <strong>will pass</strong> the exam."</li>
+          <li>"If you <strong>call</strong> me, I <strong>will answer</strong>."</li>
+        </ul>
+      </div>
+
+      <!-- Error replay: #2 -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #2 — First Conditional</div>
+        <div class="er-row"><span class="er-label">Q:</span> If it ___ tomorrow, we ___ at home.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">rains… stay</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">rains… will stay</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 The main clause needs <code>will</code>. "Stay" alone is the bare infinitive — it's missing the future marker. Think: <em>if</em>-clause = present, result-clause = will + verb.
+        </div>
+      </div>
+
+      <!-- Second Conditional -->
+      <div class="rule-block purple" style="margin-top:1.5rem;">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--purple)">🌌 Second Conditional — Hypothetical, Unreal</h3>
+        <p style="color:var(--text-dim);font-size:0.88rem;margin-bottom:0.5rem">Use for <strong>imaginary, unlikely, or impossible</strong> situations. You're daydreaming or speculating.</p>
+        <div class="formula">if + past simple , would + base verb</div>
+        <ul>
+          <li>"If I <strong>were</strong> rich, I <strong>would travel</strong> the world." <em>(I'm not rich — I'm imagining)</em></li>
+          <li>"If she <strong>knew</strong> the answer, she <strong>would tell</strong> us."</li>
+          <li>"If we <strong>lived</strong> in Paris, we <strong>would speak</strong> French every day."</li>
+        </ul>
+        <p style="font-size:0.82rem;color:var(--text-dim);margin-top:0.5rem;">
+          ⚡ <strong>Key detail:</strong> Use <strong>"were"</strong> for all persons in the <em>if</em>-clause (formal/written English). "If I <strong>were</strong>…" / "If she <strong>were</strong>…" / "If it <strong>were</strong>…" — even though "I was" is normal past tense, the subjunctive "were" marks the hypothetical mood.
+        </p>
+      </div>
+
+      <!-- Error replay: #1 -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #1 — Second Conditional</div>
+        <div class="er-row"><span class="er-label">Q:</span> If I ___ rich, I ___ travel the world.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">am… will</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">were… would</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 "am…will" is present + future — that's the <em>first conditional</em> pattern. But the sentence imagines being rich (unreal), so it needs the <em>second conditional</em>: past-form verb + "would".
+        </div>
+      </div>
+
+      <!-- Compare -->
+      <div class="examples" style="margin-top:1rem;">
+        <div class="example wrong">
+          <div class="label">❌ First Conditional (wrong for this meaning)</div>
+          <div class="sentence">If I <strong>am</strong> rich, I <strong>will</strong> travel the world.</div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.3rem;">Sounds like: "I might actually become rich soon."</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ Second Conditional (correct)</div>
+          <div class="sentence">If I <strong>were</strong> rich, I <strong>would</strong> travel the world.</div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.3rem;">Sounds like: "I'm not rich — but I'm imagining."</div>
+        </div>
+      </div>
+
+      <!-- Side-by-side summary -->
+      <div style="overflow-x:auto;margin-top:1rem;">
+      <table class="cmp-table">
+        <thead><tr><th></th><th>First Conditional</th><th>Second Conditional</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Meaning</strong></td><td>Real, possible</td><td>Unreal, hypothetical</td></tr>
+          <tr><td><strong>If-clause</strong></td><td>Present simple</td><td>Past simple (were)</td></tr>
+          <tr><td><strong>Result clause</strong></td><td>will + base</td><td>would + base</td></tr>
+          <tr><td><strong>Example</strong></td><td>If it rains, I will stay.</td><td>If I were rich, I would travel.</td></tr>
+          <tr><td><strong>Feel</strong></td><td>Plan / prediction</td><td>Daydream / speculation</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 2: PAST SIMPLE vs PRESENT PERFECT ═══════════ -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2 class="section-title">Past Simple vs Present Perfect</h2>
+    </div>
+
+    <div class="card">
+      <p style="color:var(--text-dim);margin-bottom:1rem">This is one of the hardest distinctions in English. The key question: <strong>is there a connection to the present?</strong></p>
+
+      <!-- Rule -->
+      <div class="rule-block green">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--green)">📐 The Core Rule</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem;">
+          <div style="background:rgba(0,0,0,0.2);padding:0.75rem;border-radius:6px;">
+            <div style="font-weight:700;color:var(--green);font-size:0.85rem;">Past Simple</div>
+            <div style="font-size:0.82rem;color:var(--text-dim);margin-top:0.25rem;">
+              Action is <strong>finished and disconnected</strong> from now.<br>
+              Time markers: yesterday, in 2010, last week, when I was…
+            </div>
+          </div>
+          <div style="background:rgba(0,0,0,0.2);padding:0.75rem;border-radius:6px;">
+            <div style="font-weight:700;color:var(--green);font-size:0.85rem;">Present Perfect</div>
+            <div style="font-size:0.82rem;color:var(--text-dim);margin-top:0.25rem;">
+              Action has <strong>relevance or result now</strong>.<br>
+              Time markers: just, already, yet, since, ever, never
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Error #3: Shakespeare -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #3 — Shakespeare (Past Simple)</div>
+        <div class="er-row"><span class="er-label">Q:</span> Shakespeare ___ many famous plays.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">has written</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">wrote</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 Shakespeare is <strong>dead</strong>. His play-writing is a completed chapter of history — it has zero connection to the present. Dead people + finished historical events = past simple. Always.
+        </div>
+      </div>
+
+      <!-- Error #4: lost keys -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #4 — Lost Keys (Present Perfect)</div>
+        <div class="er-row"><span class="er-label">Q:</span> I ___ my keys. Can you help me find them?</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">lose</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">have lost</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 The second sentence <em>"Can you help me find them?"</em> is the giveaway. The losing happened in the past, but the <strong>result is alive right now</strong>: the keys are still missing. Present perfect = past action + present consequence.
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="example wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="sentence">I <strong>lose</strong> my keys. Can you help me?</div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.3rem;">Present simple = habit/routine. "I lose my keys every week." Not this situation.</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ Correct</div>
+          <div class="sentence">I <strong>have lost</strong> my keys. Can you help me?</div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-top:0.3rem;">Past action → present problem (keys still gone).</div>
+        </div>
+      </div>
+
+      <!-- The "since" test -->
+      <div class="insight">
+        <strong>🔑 The "since" signal:</strong> When you see <code>"since"</code> + a time point (since 2020, since I was a child, since Monday), the verb must be <strong>present perfect</strong>. No exceptions in standard English.
+      </div>
+
+      <!-- Error #9: Paris since 2020 -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #9 — Paris (Present Perfect + since)</div>
+        <div class="er-row"><span class="er-label">Q:</span> We ___ to Paris three times since 2020.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">went</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">have been</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 "Since 2020" = a time period that <strong>continues up to now</strong>. More trips could happen. "Went" locks the trips in the past. "Have been" keeps the door open to the present. Also: "have gone" would mean you're still there — "have been" = went and returned.
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="example wrong">
+          <div class="label">❌ Wrong</div>
+          <div class="sentence">We <strong>went</strong> to Paris three times since 2020.</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ Correct</div>
+          <div class="sentence">We <strong>have been</strong> to Paris three times since 2020.</div>
+        </div>
+      </div>
+
+      <!-- Summary table -->
+      <div style="overflow-x:auto;margin-top:1rem;">
+      <table class="cmp-table">
+        <thead><tr><th>Verb</th><th>When to Use</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Past Simple</strong></td><td>Completed past, no present link. Dead people. Finished eras.</td><td>Shakespeare <strong>wrote</strong> plays.</td></tr>
+          <tr><td><strong>Present Perfect</strong></td><td>Past action → present result. With "since." Life experience.</td><td>I <strong>have lost</strong> my keys.</td></tr>
+          <tr><td><strong>have been</strong></td><td>Went somewhere and returned.</td><td>We <strong>have been</strong> to Paris.</td></tr>
+          <tr><td><strong>have gone</strong></td><td>Went somewhere and is still there.</td><td>She <strong>has gone</strong> to Paris. (She's there now.)</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 3: FUTURE FORMS ═══════════ -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2 class="section-title">Future Forms: Scheduled Events</h2>
+    </div>
+
+    <div class="card">
+      <div class="rule-block blue">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--blue)">🚂 Timetabled Events → Present Simple</h3>
+        <p style="color:var(--text-dim);font-size:0.88rem;">When an event is <strong>on a fixed schedule</strong> — trains, planes, classes, movie times, TV programs — English uses the <strong>present simple</strong> for future meaning.</p>
+        <div class="formula">The [scheduled thing] + present simple + future time</div>
+        <ul>
+          <li>"The train <strong>leaves</strong> at 6 PM per the schedule."</li>
+          <li>"The flight <strong>departs</strong> at 7:30 AM tomorrow."</li>
+          <li>"My class <strong>starts</strong> at 9 AM on Monday."</li>
+          <li>"The movie <strong>begins</strong> at 8 PM."</li>
+        </ul>
+      </div>
+
+      <div class="insight">
+        <strong>🧠 Why not "is leaving"?</strong> Present continuous ("is leaving") is for <strong>personal plans and arrangements</strong>, not fixed external schedules. "I am leaving at 6 PM" = my personal plan. "The train leaves at 6 PM" = the railway company's timetable. The schedule exists independently of anyone's personal intention.
+      </div>
+
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #5 — The Train</div>
+        <div class="er-row"><span class="er-label">Q:</span> The train ___ at 6 PM per the schedule.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">is leaving</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">leaves</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 "Per the schedule" is the dead giveaway. That phrase signals a timetabled event → present simple.
+        </div>
+      </div>
+
+      <div style="overflow-x:auto;">
+      <table class="cmp-table">
+        <thead><tr><th>Future Form</th><th>Use Case</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Present Simple</strong></td><td>Fixed schedules, timetables</td><td>The train <strong>leaves</strong> at 6.</td></tr>
+          <tr><td><strong>Present Continuous</strong></td><td>Personal plans, arrangements</td><td>I <strong>am meeting</strong> her at 6.</td></tr>
+          <tr><td><strong>will + base</strong></td><td>Predictions, spontaneous decisions</td><td>I <strong>will call</strong> you later.</td></tr>
+          <tr><td><strong>be going to</strong></td><td>Intentions, evidence-based predictions</td><td>It <strong>is going to</strong> rain.</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 4: RELATIVE CLAUSES ═══════════ -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2 class="section-title">Relative Clauses: No Double Pronouns</h2>
+    </div>
+
+    <div class="card">
+      <div class="rule-block purple">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--purple)">🔗 One Pronoun, One Job</h3>
+        <p style="color:var(--text-dim);font-size:0.88rem;">When a relative pronoun (<em>that, which, who, whom</em>) refers to the object, it <strong>replaces</strong> the object pronoun. You cannot have both.</p>
+        <div style="background:rgba(0,0,0,0.25);padding:0.75rem 1rem;border-radius:6px;margin:0.75rem 0;font-family:monospace;font-size:0.88rem;">
+          The report <span style="color:var(--accent)">that</span> Anna wrote <span style="color:var(--red);text-decoration:line-through">it</span> is ready.
+        </div>
+        <p style="color:var(--text-dim);font-size:0.82rem;">
+          <strong>"that"</strong> already refers to <em>"the report"</em>. Adding <strong>"it"</strong> creates a duplicate reference — the same object is named twice. English only needs it once.
+        </p>
+      </div>
+
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #6 — Relative Clause</div>
+        <div class="er-row"><span class="er-label">Q:</span> Fix: The report that Anna wrote is ready. Which word is extra?</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">Anna</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">it</span> — the sentence is already correct as written! There is no "it" in it.</div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 "Anna" is the subject of the relative clause — she's doing the writing. You can't remove her. The sentence as given is already grammatical: "The report that Anna wrote is ready." If someone had written "The report that Anna wrote <strong>it</strong> is ready" — then "it" would be the extra word.
+        </div>
+      </div>
+
+      <div class="insight">
+        <strong>🔎 How to spot it:</strong> Find the relative pronoun (<em>that, which, who</em>). Trace what noun it replaces. If there's a second pronoun (it, him, her, them) referring to the same noun — delete it. The relative pronoun already handles the job.
+      </div>
+
+      <div class="examples" style="margin-top:1rem;">
+        <div class="example wrong">
+          <div class="label">❌ Wrong (double pronoun)</div>
+          <div class="sentence">The book <strong>that</strong> I bought <strong>it</strong> is great.</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ Correct</div>
+          <div class="sentence">The book <strong>that</strong> I bought is great.</div>
+        </div>
+      </div>
+      <div class="examples">
+        <div class="example wrong">
+          <div class="label">❌ Wrong (double pronoun)</div>
+          <div class="sentence">The woman <strong>who</strong> I met <strong>her</strong> is a doctor.</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ Correct</div>
+          <div class="sentence">The woman <strong>who</strong> I met is a doctor.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 5: PREPOSITIONS ═══════════ -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2 class="section-title">Prepositions: at vs in</h2>
+    </div>
+
+    <div class="card">
+      <p style="color:var(--text-dim);margin-bottom:1rem;">Prepositions are tough because languages divide space differently. Here's the English logic for <strong>hotels</strong> and <strong>corners</strong>.</p>
+
+      <!-- AT vs IN -->
+      <div class="rule-block green">
+        <h3 style="font-size:0.95rem;margin-bottom:0.5rem;color:var(--green)">📍 The "at" = point, "in" = enclosure rule</h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem;">
+          <div style="background:rgba(0,0,0,0.2);padding:0.75rem;border-radius:6px;">
+            <div style="font-weight:700;color:var(--green);font-size:0.85rem;">at — a POINT or location</div>
+            <div style="font-size:0.82rem;color:var(--text-dim);margin-top:0.25rem;">
+              Think of the location as a <strong>dot on a map</strong>. You're not emphasizing being inside the walls.
+            </div>
+          </div>
+          <div style="background:rgba(0,0,0,0.2);padding:0.75rem;border-radius:6px;">
+            <div style="font-weight:700;color:var(--green);font-size:0.85rem;">in — INSIDE an enclosure</div>
+            <div style="font-size:0.82rem;color:var(--text-dim);margin-top:0.25rem;">
+              Think of being <strong>physically surrounded</strong> by walls, boundaries, or an area.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Error #7: hotel -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #7 — Hotel</div>
+        <div class="er-row"><span class="er-label">Q:</span> Fill: We stayed ___ a hotel.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">in</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">at</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 "Stay at a hotel" is a fixed collocation in English. When you're a <strong>guest using the hotel as temporary accommodation</strong>, it's "at." "In a hotel" would emphasize the physical interior — like "I'm waiting in the hotel lobby."
+        </div>
+      </div>
+
+      <!-- Error #8: corner -->
+      <div class="error-replay">
+        <div class="er-title">⚠️ Your Error #8 — Corner</div>
+        <div class="er-row"><span class="er-label">Q:</span> Fill: He is standing ___ the corner.</div>
+        <div class="er-row"><span class="er-label">You:</span> <span class="er-wrong">in</span></div>
+        <div class="er-row"><span class="er-label">Fix:</span> <span class="er-right">at</span></div>
+        <div class="er-row" style="margin-top:0.5rem;color:var(--text-dim);font-size:0.82rem;">
+          💡 A corner is a <strong>point</strong> where two streets or walls meet. Standing <strong>at</strong> that point = "at the corner." "In the corner" means inside the room, in the corner area (surrounded by walls on two sides). Different meaning entirely!
+        </div>
+      </div>
+
+      <div class="examples" style="margin-top:1rem;">
+        <div class="example right">
+          <div class="label">✅ at the corner (street)</div>
+          <div class="sentence">The café is <strong>at</strong> the corner of Main &amp; Oak. Meet me <strong>at</strong> the corner.</div>
+        </div>
+        <div class="example right">
+          <div class="label">✅ in the corner (room)</div>
+          <div class="sentence">The lamp is <strong>in</strong> the corner of the living room.</div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <table class="cmp-table" style="margin-top:1rem;">
+        <thead><tr><th>Phrase</th><th>Preposition</th><th>Logic</th></tr></thead>
+        <tbody>
+          <tr><td>stay ___ a hotel (guest)</td><td><strong>at</strong></td><td>Location as a point on the map</td></tr>
+          <tr><td>___ a hotel room (inside)</td><td><strong>in</strong></td><td>Inside that specific enclosed space</td></tr>
+          <tr><td>___ the corner (street)</td><td><strong>at</strong></td><td>Point where two streets meet</td></tr>
+          <tr><td>___ the corner (room)</td><td><strong>in</strong></td><td>Inside the area formed by meeting walls</td></tr>
+          <tr><td>___ the corner (object)</td><td><strong>on</strong></td><td>On the external edge (e.g., a dent on the corner of a table)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════ SECTION 6: SUMMARY PRACTICE ═══════════ -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2 class="section-title">Quick Self-Test</h2>
+    </div>
+
+    <div class="card">
+      <p style="color:var(--text-dim);margin-bottom:1rem;">All 9 questions from your error log, reformatted. Click each option to check your answer.</p>
+
+      <div class="mini-quiz" id="quiz"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <div class="footer">
+    <p>Grammar Review Lesson · Based on GramLingo Error Log · August 7, 2026</p>
+    <p style="margin-top:0.5rem;">Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></p>
+  </div>
+
+</div>
+
+<script>
+// ── Progress bar ──
+const sections = document.querySelectorAll('.section');
+const progressFill = document.getElementById('progressFill');
+const progressLabel = document.getElementById('progressLabel');
+const totalSections = sections.length;
+
+function updateProgress() {
+  let visible = 0;
+  sections.forEach((s, i) => {
+    const rect = s.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.6) visible = i + 1;
+  });
+  const pct = Math.round((visible / totalSections) * 100);
+  progressFill.style.width = pct + '%';
+  progressLabel.textContent = visible + ' / ' + totalSections;
+}
+
+window.addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
+
+// ── Mini-quiz ──
+const quizData = [
+  { q: "If I ___ rich, I ___ travel the world.", opts: ["am…will", "were…would", "was…will", "am…would"], right: 1, hint: "Hypothetical = past-form + would." },
+  { q: "If it ___ tomorrow, we ___ at home.", opts: ["rains…stay", "rained…would stay", "rains…will stay", "will rain…stay"], right: 2, hint: "Real future = present simple + will." },
+  { q: "Shakespeare ___ many famous plays.", opts: ["has written", "wrote", "had written", "writes"], right: 1, hint: "Dead person, finished era = past simple." },
+  { q: "I ___ my keys. Can you help me find them?", opts: ["lose", "lost", "have lost", "had lost"], right: 2, hint: "Past action with present result." },
+  { q: "The train ___ at 6 PM per the schedule.", opts: ["is leaving", "leaves", "will leave", "left"], right: 1, hint: "Fixed timetable → present simple." },
+  { q: "Fix: The report that Anna wrote is ready. Which word is extra?", opts: ["that", "Anna", "wrote", "it"], right: 3, hint: "'That' already refers to 'the report' — no need for another pronoun." },
+  { q: "We stayed ___ a hotel.", opts: ["in", "at", "on", "by"], right: 1, hint: "Guest at a location = at." },
+  { q: "He is standing ___ the corner.", opts: ["in", "at", "on", "by"], right: 1, hint: "Street corner = point → at." },
+  { q: "We ___ to Paris three times since 2020.", opts: ["went", "have been", "have gone", "go"], right: 1, hint: "Since + returned trips = have been." }
+];
+
+const quizEl = document.getElementById('quiz');
+quizData.forEach((item, i) => {
+  const div = document.createElement('div');
+  div.className = 'mq-item';
+  div.innerHTML = `
+    <div class="mq-q"><strong>${i + 1}.</strong> ${item.q}</div>
+    <div class="mq-options">
+      ${item.opts.map((o, j) => `<button class="mq-opt" data-idx="${j}">${o}</button>`).join('')}
+    </div>
+    <div class="mq-feedback" id="fb${i}"></div>
+  `;
+
+  div.querySelectorAll('.mq-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.idx);
+      const fb = document.getElementById('fb' + i);
+      const allBtns = div.querySelectorAll('.mq-opt');
+
+      // Reset
+      allBtns.forEach(b => { b.className = 'mq-opt'; });
+      fb.className = 'mq-feedback';
+
+      if (idx === item.right) {
+        btn.classList.add('chosen-right');
+        fb.className = 'mq-feedback right show';
+        fb.textContent = '✅ Correct! ' + item.hint;
+      } else {
+        btn.classList.add('chosen-wrong');
+        allBtns[item.right].classList.add('chosen-right');
+        fb.className = 'mq-feedback wrong show';
+        fb.textContent = '❌ Not quite. ' + item.hint;
+      }
+    });
+  });
+
+  quizEl.appendChild(div);
+});
+</script>
+
+</body>
+</html>

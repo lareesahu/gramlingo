@@ -1,0 +1,127 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - img "GramLingo" [ref=f2e6] [cursor=pointer]
+    - navigation [ref=f2e7]:
+      - button "Language" [ref=f2e9] [cursor=pointer]:
+        - generic [ref=f2e13]: EN
+      - button "Profile" [ref=f2e15] [cursor=pointer]:
+        - generic [ref=f2e19]: QA
+  - main [ref=f2e20]:
+    - generic [ref=f2e21]:
+      - generic [ref=f2e22]:
+        - generic [ref=f2e23]: Hi, QA
+        - generic [ref=f2e24]: Pick a module to start
+        - generic [ref=f2e25]: 0 Completed
+      - generic [ref=f2e28]:
+        - button "Previous modules" [ref=f2e29] [cursor=pointer]
+        - generic [ref=f2e32]:
+          - 'button "Relative Clauses: Lesson plan" [ref=f2e33] [cursor=pointer]':
+            - generic [ref=f2e34]:
+              - img "Relative Clauses" [ref=f2e36]
+              - generic [ref=f2e37]:
+                - heading "Relative Clauses" [level=2] [ref=f2e38]
+                - paragraph [ref=f2e39]: Describe people, things, places, times, and reasons with precise connected sentences.
+          - 'button "Prepositions: Lesson plan" [ref=f2e40] [cursor=pointer]':
+            - generic [ref=f2e41]:
+              - img "Prepositions" [ref=f2e43]
+              - generic [ref=f2e44]:
+                - heading "Prepositions" [level=2] [ref=f2e45]
+                - paragraph [ref=f2e46]: Build reliable intuition for place, time, movement, and common preposition patterns.
+          - 'button "Verb Tenses: Lesson plan" [ref=f2e47] [cursor=pointer]':
+            - generic [ref=f2e48]:
+              - img "Verb Tenses" [ref=f2e50]
+              - generic [ref=f2e51]:
+                - heading "Verb Tenses" [level=2] [ref=f2e52]
+                - paragraph [ref=f2e53]: Choose verb forms by timeline, duration, completion, and present relevance.
+          - 'button "Conditionals: Lesson plan" [ref=f2e54] [cursor=pointer]':
+            - generic [ref=f2e55]:
+              - img "Conditionals" [ref=f2e57]
+              - generic [ref=f2e58]:
+                - heading "Conditionals" [level=2] [ref=f2e59]
+                - paragraph [ref=f2e60]: Express facts, possibilities, imagined situations, regrets, and conditions.
+          - 'button "Passive Voice: Lesson plan" [ref=f2e61] [cursor=pointer]':
+            - generic [ref=f2e62]:
+              - img "Passive Voice" [ref=f2e64]
+              - generic [ref=f2e65]:
+                - heading "Passive Voice" [level=2] [ref=f2e66]
+                - paragraph [ref=f2e67]: Shift focus between the doer, the action, and the result across timelines.
+          - 'button "Reported Speech: Lesson plan" [ref=f2e68] [cursor=pointer]':
+            - generic [ref=f2e69]:
+              - img "Reported Speech" [ref=f2e71]
+              - generic [ref=f2e72]:
+                - heading "Reported Speech" [level=2] [ref=f2e73]
+                - paragraph [ref=f2e74]: Retell statements, questions, requests, and ideas accurately and naturally.
+          - 'button "Modals: Lesson plan" [ref=f2e75] [cursor=pointer]':
+            - generic [ref=f2e76]:
+              - img "Modals" [ref=f2e78]
+              - generic [ref=f2e79]:
+                - heading "Modals" [level=2] [ref=f2e80]
+                - paragraph [ref=f2e81]: Express ability, permission, advice, obligation, probability, and deduction.
+          - 'button "Articles & Determiners: Lesson plan" [ref=f2e82] [cursor=pointer]':
+            - generic [ref=f2e83]:
+              - img "Articles & Determiners" [ref=f2e85]
+              - generic [ref=f2e86]:
+                - heading "Articles & Determiners" [level=2] [ref=f2e87]
+                - paragraph [ref=f2e88]: Signal whether nouns are known, specific, general, countable, or quantified.
+          - 'button "Conjunctions: Lesson plan" [ref=f2e89] [cursor=pointer]':
+            - generic [ref=f2e90]:
+              - img "Conjunctions" [ref=f2e92]
+              - generic [ref=f2e93]:
+                - heading "Conjunctions" [level=2] [ref=f2e94]
+                - paragraph [ref=f2e95]: Connect ideas by addition, contrast, cause, result, condition, and concession.
+          - 'button "Verb Patterns: Lesson plan" [ref=f2e96] [cursor=pointer]':
+            - generic [ref=f2e97]:
+              - img "Verb Patterns" [ref=f2e99]
+              - generic [ref=f2e100]:
+                - heading "Verb Patterns" [level=2] [ref=f2e101]
+                - paragraph [ref=f2e102]: Control gerunds, infinitives, causatives, and meaning-changing verb patterns.
+          - 'button "Sentence Structure: Lesson plan" [ref=f2e103] [cursor=pointer]':
+            - generic [ref=f2e104]:
+              - img "Sentence Structure" [ref=f2e106]
+              - generic [ref=f2e107]:
+                - heading "Sentence Structure" [level=2] [ref=f2e108]
+                - paragraph [ref=f2e109]: Build, question, negate, combine, and repair complete English sentences.
+          - 'button "Advanced Expressions: Lesson plan" [ref=f2e110] [cursor=pointer]':
+            - generic [ref=f2e111]:
+              - img "Advanced Expressions" [ref=f2e113]
+              - generic [ref=f2e114]:
+                - heading "Advanced Expressions" [level=2] [ref=f2e115]
+                - paragraph [ref=f2e116]: Use emphasis, inversion, register, compression, and idiomatic grammar in context.
+          - 'group "Aviation Comms: Lesson plan" [ref=f2e117] [cursor=pointer]':
+            - generic [ref=f2e118]:
+              - heading "Aviation Comms" [level=2] [ref=f2e120]
+              - generic [ref=f2e121]:
+                - button "1 Report the Situation →" [ref=f2e122]:
+                  - generic [ref=f2e123]: "1"
+                  - generic [ref=f2e124]: Report the Situation
+                  - generic [ref=f2e125]: →
+                - button "2 Make the Request Locked" [disabled]:
+                  - generic: "2"
+                  - generic: Make the Request
+                  - generic: Locked
+                - button "3 Respond to Conditions Locked" [disabled]:
+                  - generic: "3"
+                  - generic: Respond to Conditions
+                  - generic: Locked
+                - button "4 Altitude and Routing Locked" [disabled]:
+                  - generic: "4"
+                  - generic: Altitude and Routing
+                  - generic: Locked
+                - button "5 Urgency or Distress Locked" [disabled]:
+                  - generic: "5"
+                  - generic: Urgency or Distress
+                  - generic: Locked
+                - button "6 Approach Decisions Locked" [disabled]:
+                  - generic: "6"
+                  - generic: Approach Decisions
+                  - generic: Locked
+                - button "7 Repair the Call Locked" [disabled]:
+                  - generic: "7"
+                  - generic: Repair the Call
+                  - generic: Locked
+                - button "8 Final Check Locked" [disabled]:
+                  - generic: "8"
+                  - generic: Final Check
+                  - generic: Locked
+              - button "Start →" [ref=f2e127]
+        - button "Next modules" [ref=f2e128] [cursor=pointer]
