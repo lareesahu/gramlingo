@@ -34,7 +34,13 @@ export function LearningPathScreen() {
     const order = phaseLockOrder[moduleId] || [];
     const idx = order.indexOf(phaseId);
     if (idx <= 0) return false;
-    return !getPhaseProgress(order[idx - 1])?.completed;
+    // Walk backwards through prerequisites, skipping empty (unauthored) phases
+    for (let i = idx - 1; i >= 0; i--) {
+      const prevPhase = phases.find(p => p.id === order[i]);
+      if (!prevPhase || prevPhase.q.length === 0) continue; // skip unauthored
+      return !getPhaseProgress(order[i])?.completed;
+    }
+    return false; // all prerequisites are empty → unlocked
   };
 
   return (
