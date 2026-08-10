@@ -516,7 +516,7 @@
           },
           "a": [
             "who",
-            "whom"
+            "that"
           ],
           "o": {
             "en": [
@@ -573,8 +573,7 @@
           },
           "a": [
             "who",
-            "that",
-            "whom"
+            "that"
           ],
           "o": {
             "en": [
@@ -796,7 +795,7 @@
           },
           "a": [
             "who",
-            "whom"
+            "that"
           ],
           "o": {
             "en": [
@@ -2042,10 +2041,7 @@
             "zh": "The man ___ car was stolen reported it.",
             "es": "The man ___ car was stolen reported it."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2099,10 +2095,7 @@
             "zh": "I know a woman ___ son is a pilot.",
             "es": "Conozco a una mujer ___ hijo es piloto."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2156,10 +2149,7 @@
             "zh": "The company ___ CEO resigned is in trouble.",
             "es": "La empresa ___ CEO renuncio tiene problemas."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2213,10 +2203,7 @@
             "zh": "The tree ___ branches fell was very old.",
             "es": "El arbol ___ ramas cayeron era muy viejo."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2270,10 +2257,7 @@
             "zh": "She adopted a dog ___ owner had passed away.",
             "es": "Adopto un perro ___ dueno habia fallecido."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2327,10 +2311,7 @@
             "zh": "That is the writer ___ books I love.",
             "es": "Ese es el escritor ___ libros adoro."
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2384,10 +2365,7 @@
             "zh": "Fix: The woman who her car was stolen. who her = ?",
             "es": "Corrige: The woman who her car... who her = ?"
           },
-          "a": [
-            "who",
-            "whose"
-          ],
+          "a": "whose",
           "o": {
             "en": [
               "who",
@@ -2463,10 +2441,7 @@
             "zh": "The students who passed celebrated. (only some) comma?",
             "es": "The students who passed celebrated. (solo algunos) coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "No comma",
           "o": {
             "en": [
               "No comma",
@@ -2508,10 +2483,7 @@
             "zh": "The students, who passed, celebrated. (all) comma?",
             "es": "The students, who passed, celebrated. (todos) coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "Comma",
           "o": {
             "en": [
               "No comma",
@@ -2553,10 +2525,7 @@
             "zh": "My brother who lives in Tokyo is visiting. (one brother) comma?",
             "es": "My brother who lives in Tokyo... (un hermano) coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "No comma",
           "o": {
             "en": [
               "No comma",
@@ -2598,10 +2567,7 @@
             "zh": "The car which is parked outside is mine. (several outside) comma?",
             "es": "The car which is parked... (varios) coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "No comma",
           "o": {
             "en": [
               "No comma",
@@ -2727,10 +2693,7 @@
             "zh": "Dr. Chen, who has 20 years exp., will lead. comma?",
             "es": "Dr. Chen, who has 20 years... coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "Comma",
           "o": {
             "en": [
               "No comma",
@@ -2772,10 +2735,7 @@
             "zh": "A doctor who has 20 years exp. will lead. comma?",
             "es": "A doctor who has 20 years... coma?"
           },
-          "a": [
-            "No comma",
-            "Comma"
-          ],
+          "a": "No comma",
           "o": {
             "en": [
               "No comma",
