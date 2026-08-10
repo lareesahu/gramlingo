@@ -21,7 +21,7 @@ export function LessonScreen() {
   const {
     language, activeModuleId, activePhaseId, activeQuestionIndex,
     nextQuestion, prevQuestion, completePhase, navigateTo,
-    addError, removeError,
+    addError,
   } = useAppContext();
   const s = getStrings(language);
 
@@ -47,10 +47,8 @@ export function LessonScreen() {
         questionId: result.questionId, questionIndex: activeQuestionIndex,
         userAnswer: result.userAnswer, correctAnswer: result.correctAnswer,
       });
-    } else if (result.correct && activeModuleId && activePhaseId) {
-      removeError(activeModuleId, activePhaseId, activeQuestionIndex);
     }
-  }, [activeModuleId, activePhaseId, activeQuestionIndex, addError, removeError]);
+  }, [activeModuleId, activePhaseId, activeQuestionIndex, addError]);
 
   const handleReadyForNext = useCallback(() => {
     if (isLastQuestion) {
