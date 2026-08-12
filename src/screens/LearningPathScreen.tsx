@@ -59,9 +59,6 @@ export function LearningPathScreen() {
         >
           {isZh ? '🃏 闪卡' : '🃏 Flashcards'}
         </button>
-        <button className="lp__tab lp__tab--locked" disabled>
-          {isZh ? '🌍 场景' : '🌍 Context'}
-        </button>
       </div>
 
       {currentUser && (

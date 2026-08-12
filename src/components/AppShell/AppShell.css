@@ -1,8 +1,14 @@
 .app-shell {
   min-height: 100vh;
+  min-height: 100dvh;
   background: var(--color-bg);
   display: flex;
   flex-direction: column;
+  /* Respect the notch on iOS — pad the whole shell into the safe area */
+  padding-top: var(--safe-top);
+  padding-left: var(--safe-left);
+  padding-right: var(--safe-right);
+  padding-bottom: var(--safe-bottom);
 }
 
 .app-header {

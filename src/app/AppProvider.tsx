@@ -169,9 +169,29 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setCloudSyncStatus('synced');
       })
       .catch(() => {
-        if (!cancelled) setCloudSyncStatus('error');
+        if (cancelled) return;
+        // Supabase unreachable / slow / CORS-blocked → never leave the user
+        // stranded on the loading screen. Fall back to the welcome screen.
+        setCloudSyncStatus('error');
+        setCurrentUser(null);
+        setIsAdmin(false);
+        applyUserState(null);
+        setScreen('welcome');
       });
-    return () => { cancelled = true; };
+
+    // Hard timeout: if restoreCloudIdentity() hangs (e.g. Supabase down), the
+    // app must still reach a usable screen rather than spinning forever.
+    const timeout = setTimeout(() => {
+      if (!cancelled) {
+        setCloudSyncStatus('error');
+        setCurrentUser(null);
+        setIsAdmin(false);
+        applyUserState(null);
+        setScreen('welcome');
+      }
+    }, 8000);
+
+    return () => { cancelled = true; clearTimeout(timeout); };
   }, [applyUserState]);
 
   // Persist state on changes (but never persist transient screens)

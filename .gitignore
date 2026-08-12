@@ -6,6 +6,9 @@ playwright-report/
 *.tsbuildinfo
 coverage/
 *.log
+# Environment files — never commit
+.env
+.env.*
 # Capacitor
 android/app/build
 android/.gradle

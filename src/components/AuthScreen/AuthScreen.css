@@ -254,6 +254,18 @@
 
 .auth-link:hover { opacity: 0.8; }
 
+.auth-legal {
+  margin-top: var(--space-4);
+  text-align: center;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.auth-legal a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 /* ── Responsive ── */
 @media (max-width: 480px) {
   .auth-card {

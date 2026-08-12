@@ -322,6 +322,11 @@ export function AuthScreen({ open, onClose }: AuthScreenProps) {
             <button type="button" className="auth-link" onClick={() => switchMode("login")}>Back to log in</button>
           )}
         </div>
+
+        <p className="auth-legal">
+          By continuing, you agree to our{" "}
+          <a href={import.meta.env.BASE_URL + "privacy.html"} target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+        </p>
       </div>
     </div>
   );
