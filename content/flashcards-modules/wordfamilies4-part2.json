@@ -1,0 +1,2521 @@
+{
+  "id": "wordfamilies4",
+  "name": "Word Families 4",
+  "nameZh": "词族 4",
+  "desc": "Advanced vocabulary",
+  "descZh": "高级词汇",
+  "gramlin": "book",
+  "icon": "📖",
+  "sort": 6,
+  "deckType": "wordfamily",
+  "lessons": [
+    {
+      "id": "wf4_work",
+      "name": "Work & Community",
+      "nameZh": "工作与社区",
+      "sort": 3,
+      "families": [
+        {
+          "id": "supply",
+          "root": "supply",
+          "phonetic": "/səˈplaɪ/",
+          "pos": "v. · n.",
+          "clue": "to give what is needed",
+          "clueZh": "供应",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "supply",
+              "example": "They supply fresh water.",
+              "exampleZh": "他们供应新鲜的水。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "supply",
+              "example": "The supply is running low.",
+              "exampleZh": "供应正在减少。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "supplier",
+              "example": "Our supplier is late again.",
+              "exampleZh": "我们的供应商又迟到了。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "supplies",
+              "example": "We need school supplies.",
+              "exampleZh": "我们需要学习用品。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "village",
+          "root": "village",
+          "phonetic": "/ˈvɪlɪdʒ/",
+          "pos": "n.",
+          "clue": "a small town in the countryside",
+          "clueZh": "村庄",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "village",
+              "example": "She lives in a small village.",
+              "exampleZh": "她住在一个小村庄里。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "villager",
+              "example": "The villagers grow rice.",
+              "exampleZh": "村民们种植水稻。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "worth",
+          "root": "worth",
+          "phonetic": "/wɜːrθ/",
+          "pos": "adj. · n.",
+          "clue": "having value; the value of something",
+          "clueZh": "价值",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "worth",
+              "example": "This book is worth reading.",
+              "exampleZh": "这本书值得一读。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "worth",
+              "example": "He knows his own worth.",
+              "exampleZh": "他知道自己的价值。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "worthy",
+              "example": "She is a worthy winner.",
+              "exampleZh": "她是一位当之无愧的获胜者。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "worthless",
+              "example": "The old ticket is worthless.",
+              "exampleZh": "这张旧票毫无价值。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "worthwhile",
+              "example": "It was a worthwhile trip.",
+              "exampleZh": "这是一次值得的旅行。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "natural",
+          "root": "natural",
+          "phonetic": "/ˈneɪtʃər/",
+          "pos": "adj.",
+          "clue": "from nature; not made by people",
+          "clueZh": "自然的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "natural",
+              "example": "A natural talent.",
+              "exampleZh": "天生的才能。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "naturally",
+              "example": "She speaks naturally.",
+              "exampleZh": "她说话很自然。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "naturalist",
+              "example": "A famous naturalist.",
+              "exampleZh": "一位著名的博物学家。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "express",
+          "root": "express",
+          "phonetic": "/ɪkˈspres/",
+          "pos": "v. · n.",
+          "clue": "to show or say what you feel",
+          "clueZh": "表达",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "express",
+              "example": "He expressed his thanks.",
+              "exampleZh": "他表达了他的感谢。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "expression",
+              "example": "Her expression was calm.",
+              "exampleZh": "她的表情很平静。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "expressive",
+              "example": "Her eyes are expressive.",
+              "exampleZh": "她的眼睛很传神。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "expressively",
+              "example": "She spoke expressively.",
+              "exampleZh": "她讲得很有表现力。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "indicate",
+          "root": "indicate",
+          "phonetic": "/ˈɪndɪkeɪt/",
+          "pos": "v. · n.",
+          "clue": "to point out or show",
+          "clueZh": "表明",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "indicate",
+              "example": "The sign indicates the way.",
+              "exampleZh": "这个标志指示方向。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "indication",
+              "example": "There was no indication of danger.",
+              "exampleZh": "没有任何危险的迹象。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "indicator",
+              "example": "The light is an indicator.",
+              "exampleZh": "这盏灯是一个指示灯。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "indicative",
+              "example": "This is indicative of change.",
+              "exampleZh": "这表明了变化。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "attend",
+          "root": "attend",
+          "phonetic": "/əˈtend/",
+          "pos": "v. · n.",
+          "clue": "to be present at",
+          "clueZh": "参加",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "attend",
+              "example": "She attends school daily.",
+              "exampleZh": "她每天上学。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "attendance",
+              "example": "Attendance is required.",
+              "exampleZh": "必须出席。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "attendant",
+              "example": "The attendant helped us.",
+              "exampleZh": "服务员帮助了我们。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "attendee",
+              "example": "Every attendee got a gift.",
+              "exampleZh": "每位与会者都得到一份礼物。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "brother",
+          "root": "brother",
+          "phonetic": "/ˈbrʌðər/",
+          "pos": "n. · adj.",
+          "clue": "a male sibling",
+          "clueZh": "兄弟",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "brother",
+              "example": "My brother is older than me.",
+              "exampleZh": "我哥哥比我大。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "brotherly",
+              "example": "He gave brotherly advice.",
+              "exampleZh": "他给出了兄弟般的建议。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "brotherhood",
+              "example": "They shared a strong brotherhood.",
+              "exampleZh": "他们有着深厚的手足情谊。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "investment",
+          "root": "invest",
+          "phonetic": "/ɪnˈvest/",
+          "pos": "v. · n.",
+          "clue": "money put in to make a profit",
+          "clueZh": "投资",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "invest",
+              "example": "They invest in new houses.",
+              "exampleZh": "他们投资新房子。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "investment",
+              "example": "It was a good investment.",
+              "exampleZh": "这是一笔不错的投资。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "investor",
+              "example": "The investor bought shares.",
+              "exampleZh": "投资者购买了股票。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "score",
+          "root": "score",
+          "phonetic": "/skɔːr/",
+          "pos": "n. · v.",
+          "clue": "points in a game",
+          "clueZh": "得分",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "score",
+              "example": "The final score was 3-1.",
+              "exampleZh": "最终比分是3比1。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "score",
+              "example": "He scored two goals.",
+              "exampleZh": "他进了两个球。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "scorer",
+              "example": "She was the top scorer.",
+              "exampleZh": "她是得分最高的球员。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "scoreless",
+              "example": "The game ended scoreless.",
+              "exampleZh": "比赛以零比零结束。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "organize",
+          "root": "organize",
+          "phonetic": "/ˈɔːrɡənaɪz/",
+          "pos": "v. · n.",
+          "clue": "to plan and arrange",
+          "clueZh": "组织",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "organize",
+              "example": "She organized the party.",
+              "exampleZh": "她组织了这次聚会。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "organization",
+              "example": "He works for a charity organization.",
+              "exampleZh": "他在一家慈善组织工作。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "organizer",
+              "example": "The organizer checked the list.",
+              "exampleZh": "组织者核对了名单。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "organized",
+              "example": "She is very organized.",
+              "exampleZh": "她做事很有条理。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "trip",
+          "root": "trip",
+          "phonetic": "/trɪp/",
+          "pos": "n. · v.",
+          "clue": "a journey to a place",
+          "clueZh": "旅行",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "trip",
+              "example": "We took a trip to the coast.",
+              "exampleZh": "我们去海边旅行了。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "trip",
+              "example": "They trip to the city often.",
+              "exampleZh": "他们经常去城里旅行。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "tripper",
+              "example": "The day-tripper returned at night.",
+              "exampleZh": "一日游的游客晚上回来了。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "beyond",
+          "root": "beyond",
+          "phonetic": "/bɪˈjɑːnd/",
+          "pos": "prep. · adv.",
+          "clue": "on the far side; past",
+          "clueZh": "超出",
+          "members": [
+            {
+              "pos": "prep.",
+              "posZh": "介",
+              "word": "beyond",
+              "example": "The shop is beyond the bridge.",
+              "exampleZh": "商店在桥的那边。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "beyond",
+              "example": "The road goes beyond.",
+              "exampleZh": "这条路延伸向远方。",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "sleep",
+          "root": "sleep",
+          "phonetic": "/sliːp/",
+          "pos": "v. · n. · adj.",
+          "clue": "to rest with eyes closed",
+          "clueZh": "睡觉",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "sleep",
+              "example": "I sleep eight hours a night.",
+              "exampleZh": "我每晚睡八个小时。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "sleep",
+              "example": "He needs more sleep.",
+              "exampleZh": "他需要更多睡眠。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "sleepy",
+              "example": "I feel sleepy now.",
+              "exampleZh": "我现在很困。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "asleep",
+              "example": "The baby is asleep.",
+              "exampleZh": "宝宝睡着了。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "sleepless",
+              "example": "It was a sleepless night.",
+              "exampleZh": "那是一个不眠之夜。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "fish",
+          "root": "fish",
+          "phonetic": "/fɪʃ/",
+          "pos": "n. · v.",
+          "clue": "an animal that lives in water",
+          "clueZh": "鱼",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "fish",
+              "example": "The fish swims fast.",
+              "exampleZh": "鱼游得很快。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "fish",
+              "example": "They fish in the river.",
+              "exampleZh": "他们在河里钓鱼。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "fishing",
+              "example": "Fishing is popular here.",
+              "exampleZh": "钓鱼在这里很流行。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "fisherman",
+              "example": "The fisherman caught a big fish.",
+              "exampleZh": "渔夫钓到了一条大鱼。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "promise",
+          "root": "promise",
+          "phonetic": "/ˈprɑːmɪs/",
+          "pos": "v. · n. · adj.",
+          "clue": "to say you will do something",
+          "clueZh": "承诺",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "promise",
+              "example": "I promise to help you.",
+              "exampleZh": "我保证会帮助你。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "promise",
+              "example": "She kept her promise.",
+              "exampleZh": "她信守了诺言。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "promising",
+              "example": "He is a promising student.",
+              "exampleZh": "他是一名有前途的学生。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "promised",
+              "example": "This is the promised land.",
+              "exampleZh": "这是应许之地。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "potential",
+          "root": "potential",
+          "phonetic": "/pəˈtenʃəl/",
+          "pos": "adj. · n.",
+          "clue": "possible in the future",
+          "clueZh": "潜力",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "potential",
+              "example": "A potential buyer called.",
+              "exampleZh": "一位潜在买家打来电话。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "potential",
+              "example": "She has great potential.",
+              "exampleZh": "她有很大的潜力。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "potentially",
+              "example": "It is potentially dangerous.",
+              "exampleZh": "这可能有危险。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "potentiality",
+              "example": "The idea has real potentiality.",
+              "exampleZh": "这个想法确实有潜力。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "energy",
+          "root": "energy",
+          "phonetic": "/ˈenərdʒi/",
+          "pos": "n. · adj.",
+          "clue": "power to do work",
+          "clueZh": "能量",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "energy",
+              "example": "Solar energy is clean.",
+              "exampleZh": "太阳能是清洁的。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "energetic",
+              "example": "The puppy is very energetic.",
+              "exampleZh": "这只小狗精力充沛。",
+              "level": 1
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "energize",
+              "example": "Music can energize you.",
+              "exampleZh": "音乐能让你充满活力。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "energetically",
+              "example": "He works energetically.",
+              "exampleZh": "他干劲十足地工作。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "trouble",
+          "root": "trouble",
+          "phonetic": "/ˈtrʌbəl/",
+          "pos": "n. · v. · adj.",
+          "clue": "a problem or difficulty",
+          "clueZh": "麻烦",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "trouble",
+              "example": "We had car trouble.",
+              "exampleZh": "我们的车出了故障。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "trouble",
+              "example": "Don't trouble yourself.",
+              "exampleZh": "别麻烦了。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "troubled",
+              "example": "He looked troubled.",
+              "exampleZh": "他看起来心烦意乱。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "troublesome",
+              "example": "The old machine is troublesome.",
+              "exampleZh": "这台旧机器很麻烦。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "relation",
+          "root": "relation",
+          "phonetic": "/rɪˈleɪt/",
+          "pos": "n.",
+          "clue": "a connection between things",
+          "clueZh": "关系",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "relation",
+              "example": "A close relation between them.",
+              "exampleZh": "他们之间关系密切。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "relationship",
+              "example": "A good relationship.",
+              "exampleZh": "良好的关系。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "related",
+              "example": "Two related topics.",
+              "exampleZh": "两个相关的话题。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "relative",
+              "example": "A close relative.",
+              "exampleZh": "一位近亲。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "touch",
+          "root": "touch",
+          "phonetic": "/tʌtʃ/",
+          "pos": "v. · n. · adj.",
+          "clue": "to feel with your hand",
+          "clueZh": "触摸",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "touch",
+              "example": "Don't touch the paint.",
+              "exampleZh": "别碰油漆。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "touch",
+              "example": "The touch of her hand was warm.",
+              "exampleZh": "她的手摸起来很温暖。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "touched",
+              "example": "I was touched by his words.",
+              "exampleZh": "我被他的话感动了。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "touching",
+              "example": "It was a touching story.",
+              "exampleZh": "这是一个感人的故事。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "touchy",
+              "example": "He is touchy about his age.",
+              "exampleZh": "他对年龄很敏感。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "file",
+          "root": "file",
+          "phonetic": "/faɪl/",
+          "pos": "n. · v.",
+          "clue": "a folder for papers",
+          "clueZh": "文件",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "file",
+              "example": "Open the file on the desk.",
+              "exampleZh": "打开桌上的文件夹。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "file",
+              "example": "Please file these papers.",
+              "exampleZh": "请把这些文件归档。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "filing",
+              "example": "Filing takes time.",
+              "exampleZh": "整理档案需要时间。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "filed",
+              "example": "The reports are filed neatly.",
+              "exampleZh": "报告已整齐归档。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "middle",
+          "root": "middle",
+          "phonetic": "/ˈmɪdəl/",
+          "pos": "n. · adj.",
+          "clue": "the center part",
+          "clueZh": "中间",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "middle",
+              "example": "Stand in the middle.",
+              "exampleZh": "站在中间。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "middle",
+              "example": "He is the middle child.",
+              "exampleZh": "他是排行中间的孩子。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "mid",
+              "example": "She is in her mid-twenties.",
+              "exampleZh": "她二十五岁左右。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "middling",
+              "example": "The film was only middling.",
+              "exampleZh": "这部电影只是一般般。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "bar",
+          "root": "bar",
+          "phonetic": "/bɑːr/",
+          "pos": "n. · v.",
+          "clue": "a long piece; a place to drink",
+          "clueZh": "酒吧；棒",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "bar",
+              "example": "We met at the bar.",
+              "exampleZh": "我们在酒吧见面。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "bar",
+              "example": "He lifted the metal bar.",
+              "exampleZh": "他举起了金属棒。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "bar",
+              "example": "They barred the door.",
+              "exampleZh": "他们闩上了门。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "barred",
+              "example": "The windows are barred.",
+              "exampleZh": "窗户装了栅栏。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "barrier",
+              "example": "There is a barrier on the road.",
+              "exampleZh": "路上有一道障碍物。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "suffer",
+          "root": "suffer",
+          "phonetic": "/ˈsʌfər/",
+          "pos": "v. · n.",
+          "clue": "to feel pain",
+          "clueZh": "遭受",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "suffer",
+              "example": "He suffered a lot.",
+              "exampleZh": "他受了很多苦。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "suffering",
+              "example": "The war caused great suffering.",
+              "exampleZh": "战争造成了巨大的痛苦。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "sufferer",
+              "example": "She is a long-time sufferer.",
+              "exampleZh": "她长期遭受病痛。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "insufferable",
+              "example": "The heat was insufferable.",
+              "exampleZh": "炎热让人难以忍受。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "strategy",
+          "root": "strategy",
+          "phonetic": "/ˈstrætədʒi/",
+          "pos": "n. · adj.",
+          "clue": "a plan to win",
+          "clueZh": "策略",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "strategy",
+              "example": "We need a new strategy.",
+              "exampleZh": "我们需要一个新策略。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "strategic",
+              "example": "This is a strategic decision.",
+              "exampleZh": "这是一个战略性的决定。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "strategically",
+              "example": "The town is strategically placed.",
+              "exampleZh": "这座城镇位置具有战略意义。",
+              "level": 2
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "strategist",
+              "example": "The strategist made the plan.",
+              "exampleZh": "战略家制定了这个计划。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "deep",
+          "root": "deep",
+          "phonetic": "/diːp/",
+          "pos": "adj. · adv. · n.",
+          "clue": "going far down",
+          "clueZh": "深的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "deep",
+              "example": "The lake is very deep.",
+              "exampleZh": "这个湖很深。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "deep",
+              "example": "Dig deep into the soil.",
+              "exampleZh": "往土壤深处挖。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "deeply",
+              "example": "She cares deeply for you.",
+              "exampleZh": "她非常关心你。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "depth",
+              "example": "The depth is ten meters.",
+              "exampleZh": "深度是十米。",
+              "level": 1
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "deepen",
+              "example": "The water deepens here.",
+              "exampleZh": "水在这里变深了。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "except",
+          "root": "except",
+          "phonetic": "/ɪkˈsept/",
+          "pos": "prep. · n.",
+          "clue": "not including",
+          "clueZh": "除了",
+          "members": [
+            {
+              "pos": "prep.",
+              "posZh": "介",
+              "word": "except",
+              "example": "Everyone came except Tom.",
+              "exampleZh": "除了汤姆，大家都来了。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "except",
+              "example": "No one is excepted from the rule.",
+              "exampleZh": "没有人可以例外。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "exception",
+              "example": "There is one exception.",
+              "exampleZh": "有一个例外。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "exceptional",
+              "example": "She has exceptional talent.",
+              "exampleZh": "她有非凡的才华。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "clean",
+          "root": "clean",
+          "phonetic": "/kliːn/",
+          "pos": "adj. · v. · n.",
+          "clue": "not dirty",
+          "clueZh": "干净的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "clean",
+              "example": "The room is clean.",
+              "exampleZh": "房间很干净。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "clean",
+              "example": "I clean the house on Sunday.",
+              "exampleZh": "我星期天打扫房子。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "cleaner",
+              "example": "The cleaner works at night.",
+              "exampleZh": "清洁工在夜里工作。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "cleaning",
+              "example": "Cleaning takes an hour.",
+              "exampleZh": "打扫要花一个小时。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "cleanliness",
+              "example": "Cleanliness is important.",
+              "exampleZh": "清洁很重要。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "tend",
+          "root": "tend",
+          "phonetic": "/tend/",
+          "pos": "v. · n.",
+          "clue": "to usually do something",
+          "clueZh": "倾向于",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "tend",
+              "example": "People tend to forget.",
+              "exampleZh": "人们往往会忘记。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "tendency",
+              "example": "He has a tendency to worry.",
+              "exampleZh": "他有担心的倾向。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "advance",
+          "root": "advance",
+          "phonetic": "/ədˈvæns/",
+          "pos": "v. · n. · adj.",
+          "clue": "to move forward",
+          "clueZh": "前进",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "advance",
+              "example": "The army advanced slowly.",
+              "exampleZh": "军队缓慢前进。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "advance",
+              "example": "Science made great advances.",
+              "exampleZh": "科学取得了巨大进步。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "advanced",
+              "example": "He takes an advanced class.",
+              "exampleZh": "他上高级课程。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "advancement",
+              "example": "She worked for her advancement.",
+              "exampleZh": "她为晋升而努力。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "fill",
+          "root": "fill",
+          "phonetic": "/fɪl/",
+          "pos": "v. · n.",
+          "clue": "to make full",
+          "clueZh": "填满",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "fill",
+              "example": "Please fill the glass.",
+              "exampleZh": "请把杯子倒满。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "fill",
+              "example": "Add more fill to the pillow.",
+              "exampleZh": "给枕头加些填充物。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "filler",
+              "example": "Use a filler for the hole.",
+              "exampleZh": "用填充物堵住这个洞。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "filling",
+              "example": "The cake has a sweet filling.",
+              "exampleZh": "这个蛋糕有甜甜的馅料。",
+              "level": 1
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "refill",
+              "example": "Can you refill my cup?",
+              "exampleZh": "你能再给我倒满吗？",
+              "level": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wf4_ideas",
+      "name": "Ideas & Achievement",
+      "nameZh": "思想与成就",
+      "sort": 4,
+      "families": [
+        {
+          "id": "star",
+          "root": "star",
+          "phonetic": "/stɑːr/",
+          "pos": "n. · v. · adj.",
+          "clue": "a bright point in the sky; a famous person",
+          "clueZh": "星星；明星",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "star",
+              "example": "The stars shine at night.",
+              "exampleZh": "星星在夜晚闪耀。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "star",
+              "example": "She is a movie star.",
+              "exampleZh": "她是一位电影明星。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "star",
+              "example": "He stars in the new film.",
+              "exampleZh": "他主演了这部新电影。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "starry",
+              "example": "It was a starry night.",
+              "exampleZh": "那是一个繁星满天的夜晚。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "network",
+          "root": "network",
+          "phonetic": "/ˈnetwɜːrk/",
+          "pos": "n. · v.",
+          "clue": "a connected group",
+          "clueZh": "网络",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "network",
+              "example": "The rail network is large.",
+              "exampleZh": "铁路网络很庞大。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "network",
+              "example": "She networks at events.",
+              "exampleZh": "她在活动中建立人脉。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "networking",
+              "example": "Networking helps your career.",
+              "exampleZh": "建立人脉对你的职业有帮助。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "networked",
+              "example": "The offices are networked.",
+              "exampleZh": "这些办公室已联网。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "generally",
+          "root": "generally",
+          "phonetic": "/ˈdʒenərəl/",
+          "pos": "adv.",
+          "clue": "in most cases",
+          "clueZh": "通常",
+          "members": [
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "generally",
+              "example": "Generally, it works well.",
+              "exampleZh": "一般来说，效果很好。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "generalize",
+              "example": "Do not generalize.",
+              "exampleZh": "不要一概而论。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "generalization",
+              "example": "A broad generalization.",
+              "exampleZh": "一个宽泛的概括。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "operation",
+          "root": "operate",
+          "phonetic": "/ˈɑːpəreɪt/",
+          "pos": "v. · n.",
+          "clue": "the way something works; surgery",
+          "clueZh": "操作；手术",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "operate",
+              "example": "He operates the machine.",
+              "exampleZh": "他操作这台机器。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "operation",
+              "example": "The operation was successful.",
+              "exampleZh": "手术很成功。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "operator",
+              "example": "The operator answered the call.",
+              "exampleZh": "接线员接听了电话。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "operational",
+              "example": "The system is now operational.",
+              "exampleZh": "系统现在可以运行了。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "match",
+          "root": "match",
+          "phonetic": "/mætʃ/",
+          "pos": "n. · v.",
+          "clue": "a game; to be equal",
+          "clueZh": "比赛；匹配",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "match",
+              "example": "We watched the football match.",
+              "exampleZh": "我们看了足球比赛。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "match",
+              "example": "These socks match.",
+              "exampleZh": "这些袜子很相配。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "matching",
+              "example": "They wear matching shirts.",
+              "exampleZh": "他们穿着相配的衬衫。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "mismatch",
+              "example": "There was a mismatch in sizes.",
+              "exampleZh": "尺寸不匹配。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "avoid",
+          "root": "avoid",
+          "phonetic": "/əˈvɔɪd/",
+          "pos": "v. · adj. · n.",
+          "clue": "to stay away from",
+          "clueZh": "避免",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "avoid",
+              "example": "Avoid the busy road.",
+              "exampleZh": "避开繁忙的道路。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "avoidable",
+              "example": "The mistake was avoidable.",
+              "exampleZh": "这个错误本可以避免。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "unavoidable",
+              "example": "Delays are unavoidable.",
+              "exampleZh": "延误是不可避免的。",
+              "level": 2
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "avoidance",
+              "example": "He shows avoidance of risk.",
+              "exampleZh": "他表现出对风险的回避。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "seat",
+          "root": "seat",
+          "phonetic": "/siːt/",
+          "pos": "n. · v.",
+          "clue": "a place to sit",
+          "clueZh": "座位",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "seat",
+              "example": "Take a seat, please.",
+              "exampleZh": "请坐。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "seat",
+              "example": "She seated the guests.",
+              "exampleZh": "她安排客人就座。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "seated",
+              "example": "Please remain seated.",
+              "exampleZh": "请保持坐好。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "seating",
+              "example": "The hall has enough seating.",
+              "exampleZh": "大厅有足够的座位。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "throw",
+          "root": "throw",
+          "phonetic": "/θroʊ/",
+          "pos": "v. · n.",
+          "clue": "to send through the air",
+          "clueZh": "扔",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "throw",
+              "example": "He threw the ball.",
+              "exampleZh": "他把球扔了出去。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "throw",
+              "example": "That was a good throw.",
+              "exampleZh": "那一投很好。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "thrower",
+              "example": "The thrower won gold.",
+              "exampleZh": "投掷者赢得了金牌。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "thrown",
+              "example": "The thrown stone hit the window.",
+              "exampleZh": "扔出的石头打中了窗户。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "task",
+          "root": "task",
+          "phonetic": "/tæsk/",
+          "pos": "n. · v.",
+          "clue": "a piece of work",
+          "clueZh": "任务",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "task",
+              "example": "Finish this task today.",
+              "exampleZh": "今天完成这项任务。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "task",
+              "example": "They tasked me with the report.",
+              "exampleZh": "他们把报告的任务交给了我。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "multitasking",
+              "example": "Multitasking is hard.",
+              "exampleZh": "同时处理多项任务很难。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "normal",
+          "root": "normal",
+          "phonetic": "/ˈnɔːrməl/",
+          "pos": "adj. · n.",
+          "clue": "usual; not strange",
+          "clueZh": "正常的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "normal",
+              "example": "This is a normal day.",
+              "exampleZh": "这是平常的一天。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "normal",
+              "example": "Things are back to normal.",
+              "exampleZh": "一切恢复正常了。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "normally",
+              "example": "I normally walk to work.",
+              "exampleZh": "我通常步行上班。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "abnormal",
+              "example": "The test showed abnormal results.",
+              "exampleZh": "检查显示出异常结果。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "normality",
+              "example": "Life returned to normality.",
+              "exampleZh": "生活恢复了常态。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "goal",
+          "root": "goal",
+          "phonetic": "/ɡoʊl/",
+          "pos": "n.",
+          "clue": "something you aim for; a score in sport",
+          "clueZh": "目标；进球",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "goal",
+              "example": "My goal is to learn English.",
+              "exampleZh": "我的目标是学好英语。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "goal",
+              "example": "He scored a goal.",
+              "exampleZh": "他进了一球。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "goalie",
+              "example": "The goalie saved the shot.",
+              "exampleZh": "守门员扑出了射门。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "goalkeeper",
+              "example": "The goalkeeper is tall.",
+              "exampleZh": "守门员个子很高。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "associate",
+          "root": "associate",
+          "phonetic": "/əˈsoʊʃieɪt/",
+          "pos": "v. · n.",
+          "clue": "to connect in your mind; a partner",
+          "clueZh": "联系；同事",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "associate",
+              "example": "We associate summer with heat.",
+              "exampleZh": "我们把夏天和炎热联系在一起。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "associate",
+              "example": "She is a business associate.",
+              "exampleZh": "她是一位商业伙伴。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "association",
+              "example": "The association helps farmers.",
+              "exampleZh": "这个协会帮助农民。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "associated",
+              "example": "There are associated costs.",
+              "exampleZh": "有相关费用。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "blue",
+          "root": "blue",
+          "phonetic": "/bluː/",
+          "pos": "adj. · n.",
+          "clue": "the color of the sky",
+          "clueZh": "蓝色",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "blue",
+              "example": "The sea is blue.",
+              "exampleZh": "大海是蓝色的。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "blue",
+              "example": "Blue is my favorite color.",
+              "exampleZh": "蓝色是我最喜欢的颜色。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "bluish",
+              "example": "The water looked bluish.",
+              "exampleZh": "水看起来发蓝。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "blueness",
+              "example": "The blueness of the sky amazed us.",
+              "exampleZh": "天空的湛蓝让我们惊叹。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "positive",
+          "root": "positive",
+          "phonetic": "/ˈpɑːzətɪv/",
+          "pos": "adj. · adv.",
+          "clue": "hopeful; certain",
+          "clueZh": "积极的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "positive",
+              "example": "Keep a positive attitude.",
+              "exampleZh": "保持积极的态度。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "positively",
+              "example": "Think positively.",
+              "exampleZh": "积极地思考。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "positivity",
+              "example": "Her positivity is inspiring.",
+              "exampleZh": "她的乐观鼓舞人心。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "option",
+          "root": "option",
+          "phonetic": "/ˈɑːpʃən/",
+          "pos": "n. · adj.",
+          "clue": "a choice",
+          "clueZh": "选择",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "option",
+              "example": "You have two options.",
+              "exampleZh": "你有两个选择。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "optional",
+              "example": "Homework is optional.",
+              "exampleZh": "家庭作业是可选的。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "optionally",
+              "example": "You can optionally add sugar.",
+              "exampleZh": "你可以选择加糖。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "box",
+          "root": "box",
+          "phonetic": "/bɑːks/",
+          "pos": "n. · v.",
+          "clue": "a container",
+          "clueZh": "盒子",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "box",
+              "example": "The box is full of books.",
+              "exampleZh": "盒子里装满了书。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "box",
+              "example": "Please box these apples.",
+              "exampleZh": "请把这些苹果装箱。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "boxed",
+              "example": "A boxed set of books.",
+              "exampleZh": "一套盒装书籍。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "boxy",
+              "example": "The old car looks boxy.",
+              "exampleZh": "那辆旧车看起来方方正正的。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "huge",
+          "root": "huge",
+          "phonetic": "/hjuːdʒ/",
+          "pos": "adj.",
+          "clue": "very big",
+          "clueZh": "巨大的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "huge",
+              "example": "They live in a huge house.",
+              "exampleZh": "他们住在一栋巨大的房子里。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "hugely",
+              "example": "The show was hugely popular.",
+              "exampleZh": "这个节目非常受欢迎。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "hugeness",
+              "example": "The hugeness of the ocean impressed us.",
+              "exampleZh": "海洋的浩瀚给我们留下深刻印象。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "message",
+          "root": "message",
+          "phonetic": "/ˈmesɪdʒ/",
+          "pos": "n. · v.",
+          "clue": "words sent to someone",
+          "clueZh": "消息",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "message",
+              "example": "I left you a message.",
+              "exampleZh": "我给你留了言。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "message",
+              "example": "Message me when you arrive.",
+              "exampleZh": "你到了给我发消息。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "messaging",
+              "example": "Instant messaging is common.",
+              "exampleZh": "即时通讯很常见。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "messenger",
+              "example": "The messenger delivered the letter.",
+              "exampleZh": "信使送来了信。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "instance",
+          "root": "instance",
+          "phonetic": "/ˈɪnstəns/",
+          "pos": "n. · v.",
+          "clue": "one example of something",
+          "clueZh": "实例",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "instance",
+              "example": "For instance, we can walk.",
+              "exampleZh": "例如，我们可以步行。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "instance",
+              "example": "He instanced several cases.",
+              "exampleZh": "他举了几个例子。",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "style",
+          "root": "style",
+          "phonetic": "/staɪl/",
+          "pos": "n. · v. · adj.",
+          "clue": "a way of doing something",
+          "clueZh": "风格",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "style",
+              "example": "I like her style of dress.",
+              "exampleZh": "我喜欢她的穿衣风格。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "style",
+              "example": "She styled her hair.",
+              "exampleZh": "她打理了头发。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "stylish",
+              "example": "He wears stylish clothes.",
+              "exampleZh": "他穿着时尚的衣服。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "stylishly",
+              "example": "She dressed stylishly.",
+              "exampleZh": "她穿着时髦。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "cold",
+          "root": "cold",
+          "phonetic": "/koʊld/",
+          "pos": "adj. · n. · adv.",
+          "clue": "low temperature; an illness",
+          "clueZh": "冷的；感冒",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "cold",
+              "example": "The water is cold.",
+              "exampleZh": "水很冷。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "cold",
+              "example": "I caught a cold.",
+              "exampleZh": "我感冒了。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "coldly",
+              "example": "She answered coldly.",
+              "exampleZh": "她冷淡地回答。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "coldness",
+              "example": "I felt the coldness of the night.",
+              "exampleZh": "我感受到夜晚的寒冷。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "push",
+          "root": "push",
+          "phonetic": "/pʊʃ/",
+          "pos": "v. · n. · adj.",
+          "clue": "to move something away from you",
+          "clueZh": "推",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "push",
+              "example": "Push the door open.",
+              "exampleZh": "把门推开。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "push",
+              "example": "Give it a hard push.",
+              "exampleZh": "用力推一下。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "pushed",
+              "example": "I'm pushed for time.",
+              "exampleZh": "我时间很紧。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "pushy",
+              "example": "The seller was too pushy.",
+              "exampleZh": "那个卖家太强人所难了。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "quarter",
+          "root": "quarter",
+          "phonetic": "/ˈkwɔːrtər/",
+          "pos": "n. · v. · adj.",
+          "clue": "one fourth; a coin",
+          "clueZh": "四分之一",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "quarter",
+              "example": "A quarter of an hour.",
+              "exampleZh": "一刻钟。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "quarter",
+              "example": "He paid with a quarter.",
+              "exampleZh": "他用一枚25分硬币付款。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "quarter",
+              "example": "Quarter the apple.",
+              "exampleZh": "把苹果切成四份。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "quarterly",
+              "example": "We get a quarterly report.",
+              "exampleZh": "我们会收到季度报告。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "assume",
+          "root": "assume",
+          "phonetic": "/əˈsuːm/",
+          "pos": "v. · n.",
+          "clue": "to think something is true",
+          "clueZh": "假设",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "assume",
+              "example": "I assume you are right.",
+              "exampleZh": "我假定你是对的。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "assumption",
+              "example": "That is just an assumption.",
+              "exampleZh": "那只是一个假设。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "assumed",
+              "example": "He used an assumed name.",
+              "exampleZh": "他用了一个化名。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "baby",
+          "root": "baby",
+          "phonetic": "/ˈbeɪbi/",
+          "pos": "n. · v. · adj.",
+          "clue": "a very young child",
+          "clueZh": "婴儿",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "baby",
+              "example": "The baby is sleeping.",
+              "exampleZh": "宝宝在睡觉。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "baby",
+              "example": "Don't baby him too much.",
+              "exampleZh": "别太宠着他。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "babyish",
+              "example": "Stop acting babyish.",
+              "exampleZh": "别像小孩子一样。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "successful",
+          "root": "successful",
+          "phonetic": "/səkˈses/",
+          "pos": "adj.",
+          "clue": "having achieved a lot",
+          "clueZh": "成功的",
+          "members": [
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "successful",
+              "example": "A successful business.",
+              "exampleZh": "成功的企业。",
+              "level": 0
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "successfully",
+              "example": "She finished successfully.",
+              "exampleZh": "她顺利完成了。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "sing",
+          "root": "sing",
+          "phonetic": "/sɪŋ/",
+          "pos": "v. · n.",
+          "clue": "to make music with your voice",
+          "clueZh": "唱歌",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "sing",
+              "example": "She sings very well.",
+              "exampleZh": "她唱得很好。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "singer",
+              "example": "He is a famous singer.",
+              "exampleZh": "他是一位著名歌手。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "song",
+              "example": "That song is popular.",
+              "exampleZh": "那首歌很流行。",
+              "level": 1
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "singing",
+              "example": "Singing makes me happy.",
+              "exampleZh": "唱歌让我开心。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "doubt",
+          "root": "doubt",
+          "phonetic": "/daʊt/",
+          "pos": "v. · n. · adj.",
+          "clue": "to feel unsure",
+          "clueZh": "怀疑",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "动",
+              "word": "doubt",
+              "example": "I doubt his story.",
+              "exampleZh": "我怀疑他的说法。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "doubt",
+              "example": "There is no doubt about it.",
+              "exampleZh": "这件事毫无疑问。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "doubtful",
+              "example": "The weather looks doubtful.",
+              "exampleZh": "天气看起来不太可靠。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "undoubtedly",
+              "example": "She is undoubtedly right.",
+              "exampleZh": "她无疑是对的。",
+              "level": 2
+            }
+          ]
+        },
+        {
+          "id": "competition",
+          "root": "competition",
+          "phonetic": "/kəmˈpiːt/",
+          "pos": "n.",
+          "clue": "a contest to win",
+          "clueZh": "竞争",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "competition",
+              "example": "A tough competition.",
+              "exampleZh": "激烈的竞争。",
+              "level": 0
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "competitor",
+              "example": "A strong competitor.",
+              "exampleZh": "强大的竞争者。",
+              "level": 1
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "competitive",
+              "example": "A competitive price.",
+              "exampleZh": "有竞争力的价格。",
+              "level": 1
+            }
+          ]
+        },
+        {
+          "id": "theory",
+          "root": "theory",
+          "phonetic": "/ˈθɪri/",
+          "pos": "n. · adj.",
+          "clue": "an idea that explains something",
+          "clueZh": "理论",
+          "members": [
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "theory",
+              "example": "The theory is hard to prove.",
+              "exampleZh": "这个理论很难证明。",
+              "level": 0
+            },
+            {
+              "pos": "adj.",
+              "posZh": "形",
+              "word": "theoretical",
+              "example": "It is only theoretical.",
+              "exampleZh": "这只是理论上的。",
+              "level": 1
+            },
+            {
+              "pos": "adv.",
+              "posZh": "副",
+              "word": "theoretically",
+              "example": "Theoretically, it should work.",
+              "exampleZh": "理论上，它应该有效。",
+              "level": 2
+            },
+            {
+              "pos": "n.",
+              "posZh": "名",
+              "word": "theorist",
+              "example": "The theorist wrote a paper.",
+              "exampleZh": "这位理论家写了一篇论文。",
+              "level": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
