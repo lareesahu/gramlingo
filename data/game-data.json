@@ -7654,19 +7654,19 @@
             "en": [
               "study ... will have",
               "had studied ... would have",
-              "had studied ... would have",
+              "had studied ... will have",
               "studied ... have"
             ],
             "zh": [
               "study ... will have",
               "had studied ... would have",
-              "had studied ... would have",
+              "had studied ... will have",
               "studied ... have"
             ],
             "es": [
               "study ... will have",
               "had studied ... would have",
-              "had studied ... would have",
+              "had studied ... will have",
               "studied ... have"
             ]
           },
@@ -10687,48 +10687,48 @@
         {
           "id": "reported_embedded_q02",
           "q": {
-            "en": "Can you tell me ___ the bus stop?",
-            "zh": "Can you tell me ___ the bus stop?",
-            "es": "Can you tell me ___ the bus stop?"
+            "en": "Can you tell me ___ the bus stop is?",
+            "zh": "Can you tell me ___ the bus stop is?",
+            "es": "Can you tell me ___ the bus stop is?"
           },
           "a": "where",
           "o": {
             "en": [
               "where is",
               "where",
-              "where the",
-              "is where"
+              "what",
+              "when"
             ],
             "zh": [
               "where is",
               "where",
-              "where the",
-              "is where"
+              "what",
+              "when"
             ],
             "es": [
               "where is",
               "where",
-              "where the",
-              "is where"
+              "what",
+              "when"
             ]
           },
           "t": {
-            "en": "Embedded question with where.",
-            "zh": "Embedded question with where.",
-            "es": "Embedded question with where."
+            "en": "Embedded question: subject before verb (where the bus stop is).",
+            "zh": "Embedded question: subject before verb (where the bus stop is).",
+            "es": "Embedded question: subject before verb (where the bus stop is)."
           },
           "ex": {
             "en": [
-              "Where is = direct question order.",
-              "Correct! Where = embedded, needs continuation.",
-              "Where the = incomplete.",
-              "Is where = inverted."
+              "Where is = direct question order, wrong for embedded.",
+              "Correct! Where = embedded question word.",
+              "What = wrong question word.",
+              "When = wrong question word."
             ],
             "zh": [
-              "Where is 保持了直接疑问句语序。",
-              "正确！选项 B。",
-              "Where the 不完整。",
-              "Is where 倒装错误。"
+              "Where is 是直接疑问句语序。",
+              "正确！where 引导宾语从句。",
+              "What 语义不符。",
+              "When 语义不符。"
             ],
             "es": [
               "Opción A.",
@@ -11553,48 +11553,48 @@
         {
           "id": "modals_probability_q03",
           "q": {
-            "en": "That ___ be true. I saw it with my own eyes.",
-            "zh": "That ___ be true. I saw it with my own eyes.",
-            "es": "That ___ be true. I saw it with my own eyes."
+            "en": "That ___ be true. I saw him leave with my own eyes.",
+            "zh": "That ___ be true. I saw him leave with my own eyes.",
+            "es": "That ___ be true. I saw him leave with my own eyes."
           },
           "a": "can not",
           "o": {
             "en": [
               "can not",
               "could not",
-              "must not",
-              "should not"
+              "must",
+              "should"
             ],
             "zh": [
               "can not",
               "could not",
-              "must not",
-              "should not"
+              "must",
+              "should"
             ],
             "es": [
               "can not",
               "could not",
-              "must not",
-              "should not"
+              "must",
+              "should"
             ]
           },
           "t": {
-            "en": "Cannot for impossibility / disbelief.",
-            "zh": "Cannot for impossibility / disbelief.",
-            "es": "Cannot for impossibility / disbelief."
+            "en": "Cannot = impossibility/disbelief (you saw him leave, so it cannot be true).",
+            "zh": "Cannot 表示不可能（你亲眼见他离开）。",
+            "es": "Cannot = imposible (lo viste salir)."
           },
           "ex": {
             "en": [
               "Correct! Cannot = impossible.",
               "Could not = past inability.",
-              "Must not = prohibition.",
-              "Should not = advice."
+              "Must = logical certainty, contradicts the evidence.",
+              "Should = advice, wrong."
             ],
             "zh": [
-              "正确！选项 A。",
+              "正确！cannot 表示不可能。",
               "Could not 表示过去不能。",
-              "Must not 表示禁止。",
-              "Should not 表示建议不要。"
+              "Must 表示肯定，与事实矛盾。",
+              "Should 表示建议。"
             ],
             "es": [
               "¡Correcto! Opción A.",

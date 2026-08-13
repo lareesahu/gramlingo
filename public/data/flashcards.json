@@ -13,13 +13,13 @@
       "lessons": [
         {
           "id": "irr_aaa",
-          "name": "A-A-A Pattern (All Same)",
-          "nameZh": "A-A-A 型（三形相同）",
+          "name": "AAA — same form",
+          "nameZh": "不变形",
           "sort": 1,
           "families": [
             {
               "id": "cut",
-              "root": "cut",
+              "root": "cut→cut→cut",
               "phonetic": "/kʌt/",
               "pos": "v.",
               "clue": "to divide with a sharp tool",
@@ -30,237 +30,77 @@
                   "posZh": "原",
                   "word": "cut",
                   "example": "Cut the paper.",
-                  "exampleZh": "剪纸。",
+                  "exampleZh": "切。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "cut",
-                  "example": "She cut it yesterday.",
-                  "exampleZh": "她昨天切的。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "cut",
-                  "example": "She has cut it.",
-                  "exampleZh": "她已经切了。",
+                  "example": "I cut my finger yesterday.",
+                  "exampleZh": "切（过去式）。",
                   "level": 0
                 }
               ]
             },
             {
               "id": "put",
-              "root": "put",
+              "root": "put→put→put",
               "phonetic": "/pʊt/",
               "pos": "v.",
-              "clue": "to place something somewhere",
+              "clue": "to place",
               "clueZh": "放",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "put",
-                  "example": "Put it down.",
-                  "exampleZh": "放下。",
+                  "example": "Put it on the table.",
+                  "exampleZh": "放。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "put",
-                  "example": "He put it there.",
-                  "exampleZh": "他放那里了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "put",
-                  "example": "He has put it away.",
-                  "exampleZh": "他已经收好了。",
+                  "example": "He put it away.",
+                  "exampleZh": "放（过去式）。",
                   "level": 0
                 }
               ]
             },
             {
               "id": "set",
-              "root": "set",
+              "root": "set→set→set",
               "phonetic": "/set/",
               "pos": "v.",
-              "clue": "to put something in a position",
+              "clue": "to place or fix",
               "clueZh": "设置",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "set",
-                  "example": "Set the table.",
-                  "exampleZh": "摆桌子。",
+                  "example": "Set the alarm.",
+                  "exampleZh": "设置。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "set",
-                  "example": "He set a record.",
-                  "exampleZh": "他创造了纪录。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "set",
-                  "example": "Standards have been set.",
-                  "exampleZh": "标准已设定。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "let",
-              "root": "let",
-              "phonetic": "/let/",
-              "pos": "v.",
-              "clue": "to allow or permit",
-              "clueZh": "让",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "let",
-                  "example": "Let me help.",
-                  "exampleZh": "让我帮你。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "let",
-                  "example": "She let him go.",
-                  "exampleZh": "她让他走了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "let",
-                  "example": "He has been let go.",
-                  "exampleZh": "他已被解雇。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "read",
-              "root": "read",
-              "phonetic": "/riːd/",
-              "pos": "v.",
-              "clue": "to look at and understand written words",
-              "clueZh": "读",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "read",
-                  "example": "Read a book.",
-                  "exampleZh": "读书。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "read",
-                  "example": "I read it yesterday.",
-                  "exampleZh": "我昨天读了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "read",
-                  "example": "I have read it.",
-                  "exampleZh": "我已经读了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "shut",
-              "root": "shut",
-              "phonetic": "/ʃʌt/",
-              "pos": "v.",
-              "clue": "to close something",
-              "clueZh": "关",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "shut",
-                  "example": "Shut the door.",
-                  "exampleZh": "关门。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "shut",
-                  "example": "He shut it quietly.",
-                  "exampleZh": "他轻轻关上了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "shut",
-                  "example": "The shop has shut.",
-                  "exampleZh": "店已关门。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "hit",
-              "root": "hit",
-              "phonetic": "/hɪt/",
-              "pos": "v.",
-              "clue": "to strike or touch with force",
-              "clueZh": "打",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "hit",
-                  "example": "Hit the ball.",
-                  "exampleZh": "击球。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "hit",
-                  "example": "The ball hit the window.",
-                  "exampleZh": "球击中了窗户。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "hit",
-                  "example": "She has been hit.",
-                  "exampleZh": "她被击中了。",
+                  "example": "She set a new record.",
+                  "exampleZh": "设置（过去式）。",
                   "level": 0
                 }
               ]
             },
             {
               "id": "cost",
-              "root": "cost",
+              "root": "cost→cost→cost",
               "phonetic": "/kɔːst/",
               "pos": "v.",
-              "clue": "to require payment of a certain amount",
+              "clue": "to have a price",
               "clueZh": "花费",
               "members": [
                 {
@@ -268,23 +108,257 @@
                   "posZh": "原",
                   "word": "cost",
                   "example": "It costs a lot.",
-                  "exampleZh": "花费很多。",
+                  "exampleZh": "花费。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "cost",
-                  "example": "It cost $100.",
-                  "exampleZh": "花了100美元。",
+                  "example": "It cost ten dollars.",
+                  "exampleZh": "花费（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "hit",
+              "root": "hit→hit→hit",
+              "phonetic": "/hɪt/",
+              "pos": "v.",
+              "clue": "to strike",
+              "clueZh": "打",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "hit",
+                  "example": "Hit the ball.",
+                  "exampleZh": "打。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
-                  "word": "cost",
-                  "example": "It has cost too much.",
-                  "exampleZh": "花费太多了。",
+                  "posZh": "过",
+                  "word": "hit",
+                  "example": "He hit the wall.",
+                  "exampleZh": "打（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "let",
+              "root": "let→let→let",
+              "phonetic": "/let/",
+              "pos": "v.",
+              "clue": "to allow",
+              "clueZh": "让",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "let",
+                  "example": "Let me help.",
+                  "exampleZh": "让。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "let",
+                  "example": "They let us in.",
+                  "exampleZh": "让（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "shut",
+              "root": "shut→shut→shut",
+              "phonetic": "/ʃʌt/",
+              "pos": "v.",
+              "clue": "to close",
+              "clueZh": "关",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "shut",
+                  "example": "Shut the door.",
+                  "exampleZh": "关。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "shut",
+                  "example": "I shut it quietly.",
+                  "exampleZh": "关（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "hurt",
+              "root": "hurt→hurt→hurt",
+              "phonetic": "/hɜːrt/",
+              "pos": "v.",
+              "clue": "to cause pain",
+              "clueZh": "伤害",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "hurt",
+                  "example": "Don't hurt yourself.",
+                  "exampleZh": "伤害。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "hurt",
+                  "example": "My leg hurt.",
+                  "exampleZh": "伤害（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "read",
+              "root": "read→read→read",
+              "phonetic": "/riːd/",
+              "pos": "v.",
+              "clue": "to look at words",
+              "clueZh": "读",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "read",
+                  "example": "Read this book.",
+                  "exampleZh": "读。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "read",
+                  "example": "I read it last night.",
+                  "exampleZh": "读（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "spread",
+              "root": "spread→spread→spread",
+              "phonetic": "/spred/",
+              "pos": "v.",
+              "clue": "to extend over an area",
+              "clueZh": "传播",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "spread",
+                  "example": "Spread the news.",
+                  "exampleZh": "传播。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "spread",
+                  "example": "The fire spread quickly.",
+                  "exampleZh": "传播（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "quit",
+              "root": "quit→quit→quit",
+              "phonetic": "/kwɪt/",
+              "pos": "v.",
+              "clue": "to stop",
+              "clueZh": "退出",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "quit",
+                  "example": "Quit the job.",
+                  "exampleZh": "退出。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "quit",
+                  "example": "She quit yesterday.",
+                  "exampleZh": "退出（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "bet",
+              "root": "bet→bet→bet",
+              "phonetic": "/bet/",
+              "pos": "v.",
+              "clue": "to risk money",
+              "clueZh": "打赌",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "bet",
+                  "example": "I bet you'll win.",
+                  "exampleZh": "打赌。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "bet",
+                  "example": "He bet on the game.",
+                  "exampleZh": "打赌（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "beat",
+              "root": "beat→beat→beaten",
+              "phonetic": "/biːt/",
+              "pos": "v.",
+              "clue": "to hit repeatedly",
+              "clueZh": "打",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "beat",
+                  "example": "Beat the eggs.",
+                  "exampleZh": "打。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "beat",
+                  "example": "He beat the record.",
+                  "exampleZh": "打（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "beaten",
+                  "example": "They were beaten.",
+                  "exampleZh": "打（过去分词）。",
                   "level": 0
                 }
               ]
@@ -293,142 +367,32 @@
         },
         {
           "id": "irr_abb",
-          "name": "A-B-B Pattern (Past = Participle)",
-          "nameZh": "A-B-B 型（过去式=过去分词）",
+          "name": "ABB — past = participle",
+          "nameZh": "过去式=分词",
           "sort": 2,
           "families": [
             {
               "id": "buy",
               "root": "buy→bought→bought",
-              "phonetic": "/baɪ/ /bɔːt/",
+              "phonetic": "/baɪ/",
               "pos": "v.",
-              "clue": "to obtain by paying money",
+              "clue": "to obtain by paying",
               "clueZh": "买",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "buy",
-                  "example": "Buy groceries.",
-                  "exampleZh": "买杂货。",
+                  "example": "Buy some milk.",
+                  "exampleZh": "买。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "bought",
-                  "example": "I bought a car.",
-                  "exampleZh": "我买了辆车。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "bought",
-                  "example": "I have bought it.",
-                  "exampleZh": "我已经买了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "think",
-              "root": "think→thought→thought",
-              "phonetic": "/θɪŋk/ /θɔːt/",
-              "pos": "v.",
-              "clue": "to use your mind",
-              "clueZh": "想",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "think",
-                  "example": "Think carefully.",
-                  "exampleZh": "仔细想想。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "thought",
-                  "example": "I thought so.",
-                  "exampleZh": "我也这么想的。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "thought",
-                  "example": "I have thought about it.",
-                  "exampleZh": "我考虑过了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "teach",
-              "root": "teach→taught→taught",
-              "phonetic": "/tiːtʃ/ /tɔːt/",
-              "pos": "v.",
-              "clue": "to give knowledge or instruction",
-              "clueZh": "教",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "teach",
-                  "example": "Teach English.",
-                  "exampleZh": "教英语。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "taught",
-                  "example": "She taught me.",
-                  "exampleZh": "她教过我。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "taught",
-                  "example": "I have taught for years.",
-                  "exampleZh": "我教了很多年了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "catch",
-              "root": "catch→caught→caught",
-              "phonetic": "/kætʃ/ /kɔːt/",
-              "pos": "v.",
-              "clue": "to capture or seize",
-              "clueZh": "抓住",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "catch",
-                  "example": "Catch the ball.",
-                  "exampleZh": "接球。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "caught",
-                  "example": "He caught a cold.",
-                  "exampleZh": "他感冒了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "caught",
-                  "example": "He has been caught.",
-                  "exampleZh": "他被抓住了。",
+                  "example": "She bought a car.",
+                  "exampleZh": "买（过去式）。",
                   "level": 0
                 }
               ]
@@ -436,33 +400,129 @@
             {
               "id": "bring",
               "root": "bring→brought→brought",
-              "phonetic": "/brɪŋ/ /brɔːt/",
+              "phonetic": "/brɪŋ/",
               "pos": "v.",
-              "clue": "to carry something to a place",
+              "clue": "to carry to a place",
               "clueZh": "带来",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "bring",
-                  "example": "Bring a friend.",
-                  "exampleZh": "带个朋友来。",
+                  "example": "Bring your book.",
+                  "exampleZh": "带来。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "brought",
-                  "example": "He brought wine.",
-                  "exampleZh": "他带了酒。",
+                  "example": "He brought a gift.",
+                  "exampleZh": "带来（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "catch",
+              "root": "catch→caught→caught",
+              "phonetic": "/kætʃ/",
+              "pos": "v.",
+              "clue": "to capture",
+              "clueZh": "抓住",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "catch",
+                  "example": "Catch the ball.",
+                  "exampleZh": "抓住。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
-                  "word": "brought",
-                  "example": "I have brought it.",
-                  "exampleZh": "我带来了。",
+                  "posZh": "过",
+                  "word": "caught",
+                  "example": "I caught a cold.",
+                  "exampleZh": "抓住（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "teach",
+              "root": "teach→taught→taught",
+              "phonetic": "/tiːtʃ/",
+              "pos": "v.",
+              "clue": "to give knowledge",
+              "clueZh": "教",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "teach",
+                  "example": "Teach me English.",
+                  "exampleZh": "教。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "taught",
+                  "example": "She taught math.",
+                  "exampleZh": "教（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "think",
+              "root": "think→thought→thought",
+              "phonetic": "/θɪŋk/",
+              "pos": "v.",
+              "clue": "to use the mind",
+              "clueZh": "想",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "think",
+                  "example": "Think carefully.",
+                  "exampleZh": "想。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "thought",
+                  "example": "I thought about it.",
+                  "exampleZh": "想（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "fight",
+              "root": "fight→fought→fought",
+              "phonetic": "/faɪt/",
+              "pos": "v.",
+              "clue": "to struggle",
+              "clueZh": "打架",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "fight",
+                  "example": "Fight for your rights.",
+                  "exampleZh": "打架。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "fought",
+                  "example": "They fought bravely.",
+                  "exampleZh": "打架（过去式）。",
                   "level": 0
                 }
               ]
@@ -470,67 +530,519 @@
             {
               "id": "find",
               "root": "find→found→found",
-              "phonetic": "/faɪnd/ /faʊnd/",
+              "phonetic": "/faɪnd/",
               "pos": "v.",
-              "clue": "to discover or locate",
+              "clue": "to discover",
               "clueZh": "找到",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "find",
-                  "example": "Find the key.",
-                  "exampleZh": "找到钥匙。",
+                  "example": "Find your keys.",
+                  "exampleZh": "找到。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "found",
-                  "example": "I found it.",
-                  "exampleZh": "我找到了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "found",
-                  "example": "Lost and found.",
-                  "exampleZh": "失物招领。",
+                  "example": "I found a coin.",
+                  "exampleZh": "找到（过去式）。",
                   "level": 0
                 }
               ]
             },
             {
-              "id": "have",
-              "root": "have→had→had",
-              "phonetic": "/hæv/ /hæd/",
+              "id": "sell",
+              "root": "sell→sold→sold",
+              "phonetic": "/sel/",
               "pos": "v.",
-              "clue": "to possess or own",
-              "clueZh": "有",
+              "clue": "to give for money",
+              "clueZh": "卖",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
-                  "word": "have",
-                  "example": "I have a plan.",
-                  "exampleZh": "我有个计划。",
+                  "word": "sell",
+                  "example": "Sell the house.",
+                  "exampleZh": "卖。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
-                  "word": "had",
-                  "example": "We had fun.",
-                  "exampleZh": "我们玩得很开心。",
+                  "word": "sold",
+                  "example": "They sold everything.",
+                  "exampleZh": "卖（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "tell",
+              "root": "tell→told→told",
+              "phonetic": "/tel/",
+              "pos": "v.",
+              "clue": "to say to someone",
+              "clueZh": "告诉",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "tell",
+                  "example": "Tell me a story.",
+                  "exampleZh": "告诉。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
-                  "word": "had",
-                  "example": "I have had enough.",
-                  "exampleZh": "我受够了。",
+                  "posZh": "过",
+                  "word": "told",
+                  "example": "He told the truth.",
+                  "exampleZh": "告诉（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "send",
+              "root": "send→sent→sent",
+              "phonetic": "/send/",
+              "pos": "v.",
+              "clue": "to cause to go",
+              "clueZh": "发送",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "send",
+                  "example": "Send an email.",
+                  "exampleZh": "发送。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "sent",
+                  "example": "I sent it yesterday.",
+                  "exampleZh": "发送（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "spend",
+              "root": "spend→spent→spent",
+              "phonetic": "/spend/",
+              "pos": "v.",
+              "clue": "to use money or time",
+              "clueZh": "花费",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "spend",
+                  "example": "Spend wisely.",
+                  "exampleZh": "花费。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "spent",
+                  "example": "We spent all day.",
+                  "exampleZh": "花费（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "build",
+              "root": "build→built→built",
+              "phonetic": "/bɪld/",
+              "pos": "v.",
+              "clue": "to construct",
+              "clueZh": "建造",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "build",
+                  "example": "Build a house.",
+                  "exampleZh": "建造。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "built",
+                  "example": "They built a bridge.",
+                  "exampleZh": "建造（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "keep",
+              "root": "keep→kept→kept",
+              "phonetic": "/kiːp/",
+              "pos": "v.",
+              "clue": "to hold or continue",
+              "clueZh": "保持",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "keep",
+                  "example": "Keep the change.",
+                  "exampleZh": "保持。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "kept",
+                  "example": "She kept smiling.",
+                  "exampleZh": "保持（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "sleep",
+              "root": "sleep→slept→slept",
+              "phonetic": "/sliːp/",
+              "pos": "v.",
+              "clue": "to rest",
+              "clueZh": "睡觉",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "sleep",
+                  "example": "Sleep well.",
+                  "exampleZh": "睡觉。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "slept",
+                  "example": "I slept for hours.",
+                  "exampleZh": "睡觉（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "leave",
+              "root": "leave→left→left",
+              "phonetic": "/liːv/",
+              "pos": "v.",
+              "clue": "to go away",
+              "clueZh": "离开",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "leave",
+                  "example": "Leave now.",
+                  "exampleZh": "离开。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "left",
+                  "example": "He left early.",
+                  "exampleZh": "离开（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "feel",
+              "root": "feel→felt→felt",
+              "phonetic": "/fiːl/",
+              "pos": "v.",
+              "clue": "to sense",
+              "clueZh": "感觉",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "feel",
+                  "example": "Feel the soft cloth.",
+                  "exampleZh": "感觉。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "felt",
+                  "example": "I felt tired.",
+                  "exampleZh": "感觉（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "meet",
+              "root": "meet→met→met",
+              "phonetic": "/miːt/",
+              "pos": "v.",
+              "clue": "to come together",
+              "clueZh": "遇见",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "meet",
+                  "example": "Meet me at noon.",
+                  "exampleZh": "遇见。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "met",
+                  "example": "We met by chance.",
+                  "exampleZh": "遇见（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "sit",
+              "root": "sit→sat→sat",
+              "phonetic": "/sɪt/",
+              "pos": "v.",
+              "clue": "to rest on a seat",
+              "clueZh": "坐",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "sit",
+                  "example": "Sit here.",
+                  "exampleZh": "坐。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "sat",
+                  "example": "He sat down.",
+                  "exampleZh": "坐（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "stand",
+              "root": "stand→stood→stood",
+              "phonetic": "/stænd/",
+              "pos": "v.",
+              "clue": "to be upright",
+              "clueZh": "站",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "stand",
+                  "example": "Stand up.",
+                  "exampleZh": "站。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "stood",
+                  "example": "She stood by the door.",
+                  "exampleZh": "站（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "understand",
+              "root": "understand→understood→understood",
+              "phonetic": "/ˌʌndərˈstænd/",
+              "pos": "v.",
+              "clue": "to comprehend",
+              "clueZh": "理解",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "understand",
+                  "example": "Understand the question.",
+                  "exampleZh": "理解。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "understood",
+                  "example": "I understood it.",
+                  "exampleZh": "理解（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "lose",
+              "root": "lose→lost→lost",
+              "phonetic": "/luːz/",
+              "pos": "v.",
+              "clue": "to not have anymore",
+              "clueZh": "失去",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "lose",
+                  "example": "Don't lose hope.",
+                  "exampleZh": "失去。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "lost",
+                  "example": "We lost the game.",
+                  "exampleZh": "失去（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "win",
+              "root": "win→won→won",
+              "phonetic": "/wɪn/",
+              "pos": "v.",
+              "clue": "to be first",
+              "clueZh": "赢",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "win",
+                  "example": "Win the match.",
+                  "exampleZh": "赢。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "won",
+                  "example": "They won easily.",
+                  "exampleZh": "赢（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "hold",
+              "root": "hold→held→held",
+              "phonetic": "/hoʊld/",
+              "pos": "v.",
+              "clue": "to grasp",
+              "clueZh": "握住",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "hold",
+                  "example": "Hold my hand.",
+                  "exampleZh": "握住。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "held",
+                  "example": "She held the baby.",
+                  "exampleZh": "握住（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "pay",
+              "root": "pay→paid→paid",
+              "phonetic": "/peɪ/",
+              "pos": "v.",
+              "clue": "to give money",
+              "clueZh": "支付",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "pay",
+                  "example": "Pay the bill.",
+                  "exampleZh": "支付。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "paid",
+                  "example": "I paid in cash.",
+                  "exampleZh": "支付（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "say",
+              "root": "say→said→said",
+              "phonetic": "/seɪ/",
+              "pos": "v.",
+              "clue": "to speak",
+              "clueZh": "说",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "say",
+                  "example": "Say hello.",
+                  "exampleZh": "说。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "said",
+                  "example": "He said nothing.",
+                  "exampleZh": "说（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "hear",
+              "root": "hear→heard→heard",
+              "phonetic": "/hɪr/",
+              "pos": "v.",
+              "clue": "to perceive sound",
+              "clueZh": "听见",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "hear",
+                  "example": "Hear that sound?",
+                  "exampleZh": "听见。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "heard",
+                  "example": "I heard a noise.",
+                  "exampleZh": "听见（过去式）。",
                   "level": 0
                 }
               ]
@@ -538,9 +1050,9 @@
             {
               "id": "make",
               "root": "make→made→made",
-              "phonetic": "/meɪk/ /meɪd/",
+              "phonetic": "/meɪk/",
               "pos": "v.",
-              "clue": "to create or produce",
+              "clue": "to create",
               "clueZh": "做",
               "members": [
                 {
@@ -548,7 +1060,7 @@
                   "posZh": "原",
                   "word": "make",
                   "example": "Make a cake.",
-                  "exampleZh": "做蛋糕。",
+                  "exampleZh": "做。",
                   "level": 0
                 },
                 {
@@ -556,15 +1068,189 @@
                   "posZh": "过",
                   "word": "made",
                   "example": "She made dinner.",
-                  "exampleZh": "她做了晚饭。",
+                  "exampleZh": "做（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "lead",
+              "root": "lead→led→led",
+              "phonetic": "/liːd/",
+              "pos": "v.",
+              "clue": "to guide",
+              "clueZh": "带领",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "lead",
+                  "example": "Lead the way.",
+                  "exampleZh": "带领。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
-                  "word": "made",
-                  "example": "Hand-made.",
-                  "exampleZh": "手工制作的。",
+                  "posZh": "过",
+                  "word": "led",
+                  "example": "He led the team.",
+                  "exampleZh": "带领（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "feed",
+              "root": "feed→fed→fed",
+              "phonetic": "/fiːd/",
+              "pos": "v.",
+              "clue": "to give food",
+              "clueZh": "喂",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "feed",
+                  "example": "Feed the cat.",
+                  "exampleZh": "喂。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "fed",
+                  "example": "I fed the baby.",
+                  "exampleZh": "喂（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "mean",
+              "root": "mean→meant→meant",
+              "phonetic": "/miːn/",
+              "pos": "v.",
+              "clue": "to intend",
+              "clueZh": "意思是",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "mean",
+                  "example": "What does this mean?",
+                  "exampleZh": "意思是。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "meant",
+                  "example": "It meant nothing.",
+                  "exampleZh": "意思是（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "deal",
+              "root": "deal→dealt→dealt",
+              "phonetic": "/diːl/",
+              "pos": "v.",
+              "clue": "to handle",
+              "clueZh": "处理",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "deal",
+                  "example": "Deal with it later.",
+                  "exampleZh": "处理。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "dealt",
+                  "example": "She dealt the cards.",
+                  "exampleZh": "处理（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "lend",
+              "root": "lend→lent→lent",
+              "phonetic": "/lend/",
+              "pos": "v.",
+              "clue": "to give temporarily",
+              "clueZh": "借出",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "lend",
+                  "example": "Lend me a pen.",
+                  "exampleZh": "借出。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "lent",
+                  "example": "He lent me money.",
+                  "exampleZh": "借出（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "bend",
+              "root": "bend→bent→bent",
+              "phonetic": "/bend/",
+              "pos": "v.",
+              "clue": "to curve",
+              "clueZh": "弯曲",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "bend",
+                  "example": "Bend your knees.",
+                  "exampleZh": "弯曲。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "bent",
+                  "example": "I bent the wire.",
+                  "exampleZh": "弯曲（过去式）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have",
+              "root": "have→had→had",
+              "phonetic": "/hæv/",
+              "pos": "v.",
+              "clue": "to possess",
+              "clueZh": "有",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "have",
+                  "example": "Have some tea.",
+                  "exampleZh": "有。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "had",
+                  "example": "I had a dog.",
+                  "exampleZh": "有（过去式）。",
                   "level": 0
                 }
               ]
@@ -573,14 +1259,14 @@
         },
         {
           "id": "irr_abc",
-          "name": "A-B-C Pattern (All Different)",
-          "nameZh": "A-B-C 型（三形不同）",
+          "name": "ABC — three forms",
+          "nameZh": "三形不同",
           "sort": 3,
           "families": [
             {
               "id": "go",
               "root": "go→went→gone",
-              "phonetic": "/ɡoʊ/ /went/ /ɡɔːn/",
+              "phonetic": "/ɡoʊ/",
               "pos": "v.",
               "clue": "to move or travel",
               "clueZh": "去",
@@ -589,160 +1275,24 @@
                   "pos": "v.",
                   "posZh": "原",
                   "word": "go",
-                  "example": "Let's go.",
-                  "exampleZh": "走吧。",
+                  "example": "Go home.",
+                  "exampleZh": "去。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "went",
-                  "example": "I went home.",
-                  "exampleZh": "我回家了。",
+                  "example": "I went shopping.",
+                  "exampleZh": "去（过去式）。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
+                  "posZh": "完",
                   "word": "gone",
-                  "example": "He has gone.",
-                  "exampleZh": "他已经走了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "eat",
-              "root": "eat→ate→eaten",
-              "phonetic": "/iːt/ /eɪt/ /ˈiːtən/",
-              "pos": "v.",
-              "clue": "to consume food",
-              "clueZh": "吃",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "eat",
-                  "example": "Eat well.",
-                  "exampleZh": "好好吃饭。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "ate",
-                  "example": "I ate too much.",
-                  "exampleZh": "我吃太多了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "eaten",
-                  "example": "I have eaten.",
-                  "exampleZh": "我已经吃过了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "drink",
-              "root": "drink→drank→drunk",
-              "phonetic": "/drɪŋk/ /dræŋk/ /drʌŋk/",
-              "pos": "v.",
-              "clue": "to consume liquid",
-              "clueZh": "喝",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "drink",
-                  "example": "Drink water.",
-                  "exampleZh": "喝水。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "drank",
-                  "example": "He drank it all.",
-                  "exampleZh": "他喝光了。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "drunk",
-                  "example": "He has drunk too much.",
-                  "exampleZh": "他喝太多了。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "swim",
-              "root": "swim→swam→swum",
-              "phonetic": "/swɪm/ /swæm/ /swʌm/",
-              "pos": "v.",
-              "clue": "to move through water",
-              "clueZh": "游泳",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "swim",
-                  "example": "I can swim.",
-                  "exampleZh": "我会游泳。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "swam",
-                  "example": "We swam in the lake.",
-                  "exampleZh": "我们在湖里游泳。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "swum",
-                  "example": "I have swum there.",
-                  "exampleZh": "我在那里游过。",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "sing",
-              "root": "sing→sang→sung",
-              "phonetic": "/sɪŋ/ /sæŋ/ /sʌŋ/",
-              "pos": "v.",
-              "clue": "to make musical sounds with your voice",
-              "clueZh": "唱",
-              "members": [
-                {
-                  "pos": "v.",
-                  "posZh": "原",
-                  "word": "sing",
-                  "example": "Sing a song.",
-                  "exampleZh": "唱首歌。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "过",
-                  "word": "sang",
-                  "example": "She sang beautifully.",
-                  "exampleZh": "她唱得很美。",
-                  "level": 0
-                },
-                {
-                  "pos": "v.",
-                  "posZh": "分",
-                  "word": "sung",
-                  "example": "I have sung this before.",
-                  "exampleZh": "我以前唱过。",
+                  "example": "She has gone out.",
+                  "exampleZh": "去（过去分词）。",
                   "level": 0
                 }
               ]
@@ -750,7 +1300,7 @@
             {
               "id": "begin",
               "root": "begin→began→begun",
-              "phonetic": "/bɪˈɡɪn/ /bɪˈɡæn/ /bɪˈɡʌn/",
+              "phonetic": "/bɪˈɡɪn/",
               "pos": "v.",
               "clue": "to start",
               "clueZh": "开始",
@@ -759,24 +1309,432 @@
                   "pos": "v.",
                   "posZh": "原",
                   "word": "begin",
-                  "example": "Let's begin.",
-                  "exampleZh": "开始吧。",
+                  "example": "Begin the lesson.",
+                  "exampleZh": "开始。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "began",
-                  "example": "It began at eight.",
-                  "exampleZh": "八点开始的。",
+                  "example": "It began to rain.",
+                  "exampleZh": "开始（过去式）。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
+                  "posZh": "完",
                   "word": "begun",
-                  "example": "It has already begun.",
-                  "exampleZh": "已经开始了。",
+                  "example": "It has just begun.",
+                  "exampleZh": "开始（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "drink",
+              "root": "drink→drank→drunk",
+              "phonetic": "/drɪŋk/",
+              "pos": "v.",
+              "clue": "to swallow liquid",
+              "clueZh": "喝",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "drink",
+                  "example": "Drink water.",
+                  "exampleZh": "喝。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "drank",
+                  "example": "I drank coffee.",
+                  "exampleZh": "喝（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "drunk",
+                  "example": "He has drunk it all.",
+                  "exampleZh": "喝（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "ring",
+              "root": "ring→rang→rung",
+              "phonetic": "/rɪŋ/",
+              "pos": "v.",
+              "clue": "to sound a bell",
+              "clueZh": "响铃",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "ring",
+                  "example": "Ring the bell.",
+                  "exampleZh": "响铃。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "rang",
+                  "example": "The phone rang.",
+                  "exampleZh": "响铃（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "rung",
+                  "example": "It has rung twice.",
+                  "exampleZh": "响铃（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "sing",
+              "root": "sing→sang→sung",
+              "phonetic": "/sɪŋ/",
+              "pos": "v.",
+              "clue": "to make music with voice",
+              "clueZh": "唱",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "sing",
+                  "example": "Sing a song.",
+                  "exampleZh": "唱。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "sang",
+                  "example": "She sang beautifully.",
+                  "exampleZh": "唱（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "sung",
+                  "example": "The song was sung well.",
+                  "exampleZh": "唱（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "swim",
+              "root": "swim→swam→swum",
+              "phonetic": "/swɪm/",
+              "pos": "v.",
+              "clue": "to move in water",
+              "clueZh": "游泳",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "swim",
+                  "example": "Swim across the lake.",
+                  "exampleZh": "游泳。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "swam",
+                  "example": "I swam all morning.",
+                  "exampleZh": "游泳（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "swum",
+                  "example": "I have swum here before.",
+                  "exampleZh": "游泳（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "run",
+              "root": "run→ran→run",
+              "phonetic": "/rʌn/",
+              "pos": "v.",
+              "clue": "to move quickly",
+              "clueZh": "跑",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "run",
+                  "example": "Run faster.",
+                  "exampleZh": "跑。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "ran",
+                  "example": "She ran to school.",
+                  "exampleZh": "跑（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "run",
+                  "example": "He has run a marathon.",
+                  "exampleZh": "跑（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "come",
+              "root": "come→came→come",
+              "phonetic": "/kʌm/",
+              "pos": "v.",
+              "clue": "to move toward",
+              "clueZh": "来",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "come",
+                  "example": "Come here.",
+                  "exampleZh": "来。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "came",
+                  "example": "They came early.",
+                  "exampleZh": "来（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "come",
+                  "example": "She has come back.",
+                  "exampleZh": "来（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "become",
+              "root": "become→became→become",
+              "phonetic": "/bɪˈkʌm/",
+              "pos": "v.",
+              "clue": "to grow into",
+              "clueZh": "变成",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "become",
+                  "example": "Become a doctor.",
+                  "exampleZh": "变成。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "became",
+                  "example": "He became famous.",
+                  "exampleZh": "变成（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "become",
+                  "example": "It has become clear.",
+                  "exampleZh": "变成（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "give",
+              "root": "give→gave→given",
+              "phonetic": "/ɡɪv/",
+              "pos": "v.",
+              "clue": "to hand to someone",
+              "clueZh": "给",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "give",
+                  "example": "Give me a hand.",
+                  "exampleZh": "给。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "gave",
+                  "example": "She gave a speech.",
+                  "exampleZh": "给（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "given",
+                  "example": "I have given my word.",
+                  "exampleZh": "给（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "take",
+              "root": "take→took→taken",
+              "phonetic": "/teɪk/",
+              "pos": "v.",
+              "clue": "to grasp or carry",
+              "clueZh": "拿",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "take",
+                  "example": "Take a seat.",
+                  "exampleZh": "拿。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "took",
+                  "example": "He took a photo.",
+                  "exampleZh": "拿（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "taken",
+                  "example": "It was taken away.",
+                  "exampleZh": "拿（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "speak",
+              "root": "speak→spoke→spoken",
+              "phonetic": "/spiːk/",
+              "pos": "v.",
+              "clue": "to talk",
+              "clueZh": "说",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "speak",
+                  "example": "Speak clearly.",
+                  "exampleZh": "说。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "spoke",
+                  "example": "She spoke softly.",
+                  "exampleZh": "说（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "spoken",
+                  "example": "I have spoken to him.",
+                  "exampleZh": "说（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "break",
+              "root": "break→broke→broken",
+              "phonetic": "/breɪk/",
+              "pos": "v.",
+              "clue": "to split",
+              "clueZh": "打破",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "break",
+                  "example": "Don't break it.",
+                  "exampleZh": "打破。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "broke",
+                  "example": "He broke the glass.",
+                  "exampleZh": "打破（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "broken",
+                  "example": "The window is broken.",
+                  "exampleZh": "打破（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "choose",
+              "root": "choose→chose→chosen",
+              "phonetic": "/tʃuːz/",
+              "pos": "v.",
+              "clue": "to select",
+              "clueZh": "选择",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "choose",
+                  "example": "Choose one.",
+                  "exampleZh": "选择。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "chose",
+                  "example": "I chose the red one.",
+                  "exampleZh": "选择（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "chosen",
+                  "example": "She was chosen.",
+                  "exampleZh": "选择（过去分词）。",
                   "level": 0
                 }
               ]
@@ -784,7 +1742,7 @@
             {
               "id": "drive",
               "root": "drive→drove→driven",
-              "phonetic": "/draɪv/ /droʊv/ /ˈdrɪvən/",
+              "phonetic": "/draɪv/",
               "pos": "v.",
               "clue": "to operate a vehicle",
               "clueZh": "驾驶",
@@ -794,23 +1752,57 @@
                   "posZh": "原",
                   "word": "drive",
                   "example": "Drive carefully.",
-                  "exampleZh": "小心驾驶。",
+                  "exampleZh": "驾驶。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "drove",
-                  "example": "I drove home.",
-                  "exampleZh": "我开车回家了。",
+                  "example": "He drove home.",
+                  "exampleZh": "驾驶（过去式）。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
+                  "posZh": "完",
                   "word": "driven",
-                  "example": "I have driven this road.",
-                  "exampleZh": "我开过这条路。",
+                  "example": "I have driven there.",
+                  "exampleZh": "驾驶（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "ride",
+              "root": "ride→rode→ridden",
+              "phonetic": "/raɪd/",
+              "pos": "v.",
+              "clue": "to travel on",
+              "clueZh": "骑",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "ride",
+                  "example": "Ride a bike.",
+                  "exampleZh": "骑。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "rode",
+                  "example": "She rode a horse.",
+                  "exampleZh": "骑（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "ridden",
+                  "example": "I have ridden this route.",
+                  "exampleZh": "骑（过去分词）。",
                   "level": 0
                 }
               ]
@@ -818,33 +1810,917 @@
             {
               "id": "write",
               "root": "write→wrote→written",
-              "phonetic": "/raɪt/ /roʊt/ /ˈrɪtən/",
+              "phonetic": "/raɪt/",
               "pos": "v.",
-              "clue": "to produce words on paper",
+              "clue": "to put words down",
               "clueZh": "写",
               "members": [
                 {
                   "pos": "v.",
                   "posZh": "原",
                   "word": "write",
-                  "example": "Write a note.",
-                  "exampleZh": "写张便条。",
+                  "example": "Write your name.",
+                  "exampleZh": "写。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
                   "posZh": "过",
                   "word": "wrote",
-                  "example": "She wrote a letter.",
-                  "exampleZh": "她写了一封信。",
+                  "example": "I wrote a letter.",
+                  "exampleZh": "写（过去式）。",
                   "level": 0
                 },
                 {
                   "pos": "v.",
-                  "posZh": "分",
+                  "posZh": "完",
                   "word": "written",
-                  "example": "A written test.",
-                  "exampleZh": "笔试。",
+                  "example": "The book was written well.",
+                  "exampleZh": "写（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "rise",
+              "root": "rise→rose→risen",
+              "phonetic": "/raɪz/",
+              "pos": "v.",
+              "clue": "to go up",
+              "clueZh": "上升",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "rise",
+                  "example": "Rise early.",
+                  "exampleZh": "上升。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "rose",
+                  "example": "The sun rose.",
+                  "exampleZh": "上升（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "risen",
+                  "example": "Prices have risen.",
+                  "exampleZh": "上升（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "eat",
+              "root": "eat→ate→eaten",
+              "phonetic": "/iːt/",
+              "pos": "v.",
+              "clue": "to consume food",
+              "clueZh": "吃",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "eat",
+                  "example": "Eat slowly.",
+                  "exampleZh": "吃。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "ate",
+                  "example": "I ate lunch.",
+                  "exampleZh": "吃（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "eaten",
+                  "example": "Dinner has been eaten.",
+                  "exampleZh": "吃（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "fall",
+              "root": "fall→fell→fallen",
+              "phonetic": "/fɔːl/",
+              "pos": "v.",
+              "clue": "to drop down",
+              "clueZh": "落下",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "fall",
+                  "example": "Don't fall.",
+                  "exampleZh": "落下。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "fell",
+                  "example": "She fell down.",
+                  "exampleZh": "落下（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "fallen",
+                  "example": "The leaves have fallen.",
+                  "exampleZh": "落下（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "forget",
+              "root": "forget→forgot→forgotten",
+              "phonetic": "/fərˈɡet/",
+              "pos": "v.",
+              "clue": "to not remember",
+              "clueZh": "忘记",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "forget",
+                  "example": "Forget the past.",
+                  "exampleZh": "忘记。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "forgot",
+                  "example": "I forgot my keys.",
+                  "exampleZh": "忘记（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "forgotten",
+                  "example": "I have forgotten it.",
+                  "exampleZh": "忘记（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get",
+              "root": "get→got→gotten",
+              "phonetic": "/ɡet/",
+              "pos": "v.",
+              "clue": "to obtain",
+              "clueZh": "得到",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "get",
+                  "example": "Get the door.",
+                  "exampleZh": "得到。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "got",
+                  "example": "I got a gift.",
+                  "exampleZh": "得到（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "gotten",
+                  "example": "He has gotten better.",
+                  "exampleZh": "得到（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "know",
+              "root": "know→knew→known",
+              "phonetic": "/noʊ/",
+              "pos": "v.",
+              "clue": "to understand",
+              "clueZh": "知道",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "know",
+                  "example": "Know the answer.",
+                  "exampleZh": "知道。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "knew",
+                  "example": "I knew it.",
+                  "exampleZh": "知道（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "known",
+                  "example": "It is well known.",
+                  "exampleZh": "知道（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "grow",
+              "root": "grow→grew→grown",
+              "phonetic": "/ɡroʊ/",
+              "pos": "v.",
+              "clue": "to increase",
+              "clueZh": "生长",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "grow",
+                  "example": "Grow plants.",
+                  "exampleZh": "生长。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "grew",
+                  "example": "She grew quickly.",
+                  "exampleZh": "生长（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "grown",
+                  "example": "It has grown a lot.",
+                  "exampleZh": "生长（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "throw",
+              "root": "throw→threw→thrown",
+              "phonetic": "/θroʊ/",
+              "pos": "v.",
+              "clue": "to toss",
+              "clueZh": "扔",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "throw",
+                  "example": "Throw the ball.",
+                  "exampleZh": "扔。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "threw",
+                  "example": "He threw it far.",
+                  "exampleZh": "扔（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "thrown",
+                  "example": "It was thrown away.",
+                  "exampleZh": "扔（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "fly",
+              "root": "fly→flew→flown",
+              "phonetic": "/flaɪ/",
+              "pos": "v.",
+              "clue": "to travel by air",
+              "clueZh": "飞",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "fly",
+                  "example": "Fly to London.",
+                  "exampleZh": "飞。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "flew",
+                  "example": "The bird flew away.",
+                  "exampleZh": "飞（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "flown",
+                  "example": "I have flown often.",
+                  "exampleZh": "飞（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "blow",
+              "root": "blow→blew→blown",
+              "phonetic": "/bloʊ/",
+              "pos": "v.",
+              "clue": "to move air",
+              "clueZh": "吹",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "blow",
+                  "example": "Blow out the candles.",
+                  "exampleZh": "吹。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "blew",
+                  "example": "The wind blew hard.",
+                  "exampleZh": "吹（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "blown",
+                  "example": "The tree was blown down.",
+                  "exampleZh": "吹（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "draw",
+              "root": "draw→drew→drawn",
+              "phonetic": "/drɔː/",
+              "pos": "v.",
+              "clue": "to make a picture",
+              "clueZh": "画",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "draw",
+                  "example": "Draw a picture.",
+                  "exampleZh": "画。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "drew",
+                  "example": "She drew a map.",
+                  "exampleZh": "画（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "drawn",
+                  "example": "It was drawn well.",
+                  "exampleZh": "画（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "wear",
+              "root": "wear→wore→worn",
+              "phonetic": "/wer/",
+              "pos": "v.",
+              "clue": "to have on the body",
+              "clueZh": "穿",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "wear",
+                  "example": "Wear a coat.",
+                  "exampleZh": "穿。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "wore",
+                  "example": "I wore blue.",
+                  "exampleZh": "穿（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "worn",
+                  "example": "It has been worn.",
+                  "exampleZh": "穿（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "see",
+              "root": "see→saw→seen",
+              "phonetic": "/siː/",
+              "pos": "v.",
+              "clue": "to look",
+              "clueZh": "看见",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "see",
+                  "example": "See the view.",
+                  "exampleZh": "看见。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "saw",
+                  "example": "I saw a movie.",
+                  "exampleZh": "看见（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "seen",
+                  "example": "I have seen it.",
+                  "exampleZh": "看见（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "do",
+              "root": "do→did→done",
+              "phonetic": "/duː/",
+              "pos": "v.",
+              "clue": "to perform",
+              "clueZh": "做",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "do",
+                  "example": "Do your best.",
+                  "exampleZh": "做。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "did",
+                  "example": "I did the work.",
+                  "exampleZh": "做（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "done",
+                  "example": "The job is done.",
+                  "exampleZh": "做（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "be",
+              "root": "be→was/were→been",
+              "phonetic": "/biː/",
+              "pos": "v.",
+              "clue": "to exist",
+              "clueZh": "是",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "be",
+                  "example": "Be careful.",
+                  "exampleZh": "是。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "was/were",
+                  "example": "It was cold.",
+                  "exampleZh": "是（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "been",
+                  "example": "I have been here.",
+                  "exampleZh": "是（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "show",
+              "root": "show→showed→shown",
+              "phonetic": "/ʃoʊ/",
+              "pos": "v.",
+              "clue": "to display",
+              "clueZh": "展示",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "show",
+                  "example": "Show me.",
+                  "exampleZh": "展示。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "showed",
+                  "example": "She showed the photo.",
+                  "exampleZh": "展示（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "shown",
+                  "example": "It has been shown.",
+                  "exampleZh": "展示（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "steal",
+              "root": "steal→stole→stolen",
+              "phonetic": "/stiːl/",
+              "pos": "v.",
+              "clue": "to take secretly",
+              "clueZh": "偷",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "steal",
+                  "example": "Steal the show.",
+                  "exampleZh": "偷。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "stole",
+                  "example": "He stole a car.",
+                  "exampleZh": "偷（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "stolen",
+                  "example": "It was stolen.",
+                  "exampleZh": "偷（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "wake",
+              "root": "wake→woke→woken",
+              "phonetic": "/weɪk/",
+              "pos": "v.",
+              "clue": "to stop sleeping",
+              "clueZh": "醒来",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "wake",
+                  "example": "Wake up.",
+                  "exampleZh": "醒来。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "woke",
+                  "example": "I woke early.",
+                  "exampleZh": "醒来（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "woken",
+                  "example": "I have just woken.",
+                  "exampleZh": "醒来（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "freeze",
+              "root": "freeze→froze→frozen",
+              "phonetic": "/friːz/",
+              "pos": "v.",
+              "clue": "to turn to ice",
+              "clueZh": "冻结",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "freeze",
+                  "example": "Freeze the meat.",
+                  "exampleZh": "冻结。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "froze",
+                  "example": "The lake froze.",
+                  "exampleZh": "冻结（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "frozen",
+                  "example": "It is frozen.",
+                  "exampleZh": "冻结（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "hide",
+              "root": "hide→hid→hidden",
+              "phonetic": "/haɪd/",
+              "pos": "v.",
+              "clue": "to keep from sight",
+              "clueZh": "藏",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "hide",
+                  "example": "Hide the gift.",
+                  "exampleZh": "藏。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "hid",
+                  "example": "I hid it away.",
+                  "exampleZh": "藏（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "hidden",
+                  "example": "It is hidden.",
+                  "exampleZh": "藏（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "tear",
+              "root": "tear→tore→torn",
+              "phonetic": "/ter/",
+              "pos": "v.",
+              "clue": "to rip",
+              "clueZh": "撕",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "tear",
+                  "example": "Tear the paper.",
+                  "exampleZh": "撕。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "tore",
+                  "example": "I tore the page.",
+                  "exampleZh": "撕（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "torn",
+                  "example": "It is torn.",
+                  "exampleZh": "撕（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "swear",
+              "root": "swear→swore→sworn",
+              "phonetic": "/swer/",
+              "pos": "v.",
+              "clue": "to promise; to curse",
+              "clueZh": "发誓",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "swear",
+                  "example": "Swear to tell the truth.",
+                  "exampleZh": "发誓。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "swore",
+                  "example": "He swore an oath.",
+                  "exampleZh": "发誓（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "sworn",
+                  "example": "I have sworn it.",
+                  "exampleZh": "发誓（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "weave",
+              "root": "weave→wove→woven",
+              "phonetic": "/wiːv/",
+              "pos": "v.",
+              "clue": "to make cloth",
+              "clueZh": "编织",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "weave",
+                  "example": "Weave a basket.",
+                  "exampleZh": "编织。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "wove",
+                  "example": "She wove the cloth.",
+                  "exampleZh": "编织（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "woven",
+                  "example": "It is woven.",
+                  "exampleZh": "编织（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "lie",
+              "root": "lie→lay→lain",
+              "phonetic": "/laɪ/",
+              "pos": "v.",
+              "clue": "to rest flat",
+              "clueZh": "躺",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "lie",
+                  "example": "Lie down.",
+                  "exampleZh": "躺。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "lay",
+                  "example": "He lay on the bed.",
+                  "exampleZh": "躺（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "lain",
+                  "example": "I have lain there.",
+                  "exampleZh": "躺（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "shake",
+              "root": "shake→shook→shaken",
+              "phonetic": "/ʃeɪk/",
+              "pos": "v.",
+              "clue": "to move rapidly",
+              "clueZh": "摇",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "shake",
+                  "example": "Shake the bottle.",
+                  "exampleZh": "摇。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "shook",
+                  "example": "I shook hands.",
+                  "exampleZh": "摇（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "shaken",
+                  "example": "It was shaken.",
+                  "exampleZh": "摇（过去分词）。",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "prove",
+              "root": "prove→proved→proven",
+              "phonetic": "/pruːv/",
+              "pos": "v.",
+              "clue": "to show is true",
+              "clueZh": "证明",
+              "members": [
+                {
+                  "pos": "v.",
+                  "posZh": "原",
+                  "word": "prove",
+                  "example": "Prove it.",
+                  "exampleZh": "证明。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "过",
+                  "word": "proved",
+                  "example": "She proved him wrong.",
+                  "exampleZh": "证明（过去式）。",
+                  "level": 0
+                },
+                {
+                  "pos": "v.",
+                  "posZh": "完",
+                  "word": "proven",
+                  "example": "It is proven.",
+                  "exampleZh": "证明（过去分词）。",
                   "level": 0
                 }
               ]
@@ -856,27 +2732,27 @@
     {
       "id": "wordpairs",
       "name": "Word Pairs",
-      "nameZh": "词语搭配",
-      "desc": "Common word pairings · make/do/take/have pair-match",
-      "descZh": "常用搭配 · make/do/take/have 配对练习",
-      "gramlin": "think",
+      "nameZh": "词汇搭配",
+      "desc": "Common word pairings · make/do/take/have/get",
+      "descZh": "常用搭配 · make/do/take/have/get",
+      "gramlin": "pencil",
       "icon": "🔗",
       "sort": 2,
       "deckType": "wordpair",
       "lessons": [
         {
           "id": "coll_make",
-          "name": "Make + Noun",
-          "nameZh": "Make + 名词",
+          "name": "Make",
+          "nameZh": "Make",
           "sort": 1,
           "families": [
             {
-              "id": "make_decision",
+              "id": "make_a_decision",
               "root": "make",
               "phonetic": "",
               "pos": "",
               "clue": "make",
-              "clueZh": "做",
+              "clueZh": "做决定",
               "members": [
                 {
                   "pos": "",
@@ -889,12 +2765,12 @@
               ]
             },
             {
-              "id": "make_mistake",
+              "id": "make_a_mistake",
               "root": "make",
               "phonetic": "",
               "pos": "",
               "clue": "make",
-              "clueZh": "犯",
+              "clueZh": "犯错误",
               "members": [
                 {
                   "pos": "",
@@ -912,7 +2788,7 @@
               "phonetic": "",
               "pos": "",
               "clue": "make",
-              "clueZh": "取得",
+              "clueZh": "取得进展",
               "members": [
                 {
                   "pos": "",
@@ -925,66 +2801,12 @@
               ]
             },
             {
-              "id": "make_effort",
-              "root": "make",
-              "phonetic": "",
-              "pos": "",
-              "clue": "make",
-              "clueZh": "付出",
-              "members": [
-                {
-                  "pos": "",
-                  "posZh": "",
-                  "word": "make an effort",
-                  "example": "",
-                  "exampleZh": "付出努力",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "make_difference",
-              "root": "make",
-              "phonetic": "",
-              "pos": "",
-              "clue": "make",
-              "clueZh": "带来",
-              "members": [
-                {
-                  "pos": "",
-                  "posZh": "",
-                  "word": "make a difference",
-                  "example": "",
-                  "exampleZh": "带来改变",
-                  "level": 0
-                }
-              ]
-            },
-            {
-              "id": "make_sense",
-              "root": "make",
-              "phonetic": "",
-              "pos": "",
-              "clue": "make",
-              "clueZh": "有",
-              "members": [
-                {
-                  "pos": "",
-                  "posZh": "",
-                  "word": "make sense",
-                  "example": "",
-                  "exampleZh": "有道理",
-                  "level": 0
-                }
-              ]
-            },
-            {
               "id": "make_money",
               "root": "make",
               "phonetic": "",
               "pos": "",
               "clue": "make",
-              "clueZh": "赚",
+              "clueZh": "赚钱",
               "members": [
                 {
                   "pos": "",
@@ -997,12 +2819,48 @@
               ]
             },
             {
-              "id": "make_friend",
+              "id": "make_a_difference",
               "root": "make",
               "phonetic": "",
               "pos": "",
               "clue": "make",
-              "clueZh": "交",
+              "clueZh": "产生影响",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "make a difference",
+                  "example": "",
+                  "exampleZh": "产生影响",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "make_an_effort",
+              "root": "make",
+              "phonetic": "",
+              "pos": "",
+              "clue": "make",
+              "clueZh": "努力",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "make an effort",
+                  "example": "",
+                  "exampleZh": "努力",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "make_friends",
+              "root": "make",
+              "phonetic": "",
+              "pos": "",
+              "clue": "make",
+              "clueZh": "交朋友",
               "members": [
                 {
                   "pos": "",
@@ -1013,13 +2871,67 @@
                   "level": 0
                 }
               ]
+            },
+            {
+              "id": "make_sense",
+              "root": "make",
+              "phonetic": "",
+              "pos": "",
+              "clue": "make",
+              "clueZh": "有意义",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "make sense",
+                  "example": "",
+                  "exampleZh": "有意义",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "make_a_promise",
+              "root": "make",
+              "phonetic": "",
+              "pos": "",
+              "clue": "make",
+              "clueZh": "许下承诺",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "make a promise",
+                  "example": "",
+                  "exampleZh": "许下承诺",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "make_a_plan",
+              "root": "make",
+              "phonetic": "",
+              "pos": "",
+              "clue": "make",
+              "clueZh": "制定计划",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "make a plan",
+                  "example": "",
+                  "exampleZh": "制定计划",
+                  "level": 0
+                }
+              ]
             }
           ]
         },
         {
           "id": "coll_do",
-          "name": "Do + Noun",
-          "nameZh": "Do + 名词",
+          "name": "Do",
+          "nameZh": "Do",
           "sort": 2,
           "families": [
             {
@@ -1028,7 +2940,7 @@
               "phonetic": "",
               "pos": "",
               "clue": "do",
-              "clueZh": "做",
+              "clueZh": "做作业",
               "members": [
                 {
                   "pos": "",
@@ -1046,7 +2958,7 @@
               "phonetic": "",
               "pos": "",
               "clue": "do",
-              "clueZh": "做",
+              "clueZh": "做生意",
               "members": [
                 {
                   "pos": "",
@@ -1059,48 +2971,66 @@
               ]
             },
             {
-              "id": "do_research",
+              "id": "do_your_best",
               "root": "do",
               "phonetic": "",
               "pos": "",
               "clue": "do",
-              "clueZh": "做",
+              "clueZh": "尽力",
               "members": [
                 {
                   "pos": "",
                   "posZh": "",
-                  "word": "do research",
+                  "word": "do your best",
                   "example": "",
-                  "exampleZh": "做研究",
+                  "exampleZh": "尽力",
                   "level": 0
                 }
               ]
             },
             {
-              "id": "do_exercise",
+              "id": "do_the_dishes",
               "root": "do",
               "phonetic": "",
               "pos": "",
               "clue": "do",
-              "clueZh": "做",
+              "clueZh": "洗碗",
               "members": [
                 {
                   "pos": "",
                   "posZh": "",
-                  "word": "do exercise",
+                  "word": "do the dishes",
                   "example": "",
-                  "exampleZh": "锻炼",
+                  "exampleZh": "洗碗",
                   "level": 0
                 }
               ]
             },
             {
-              "id": "do_favor",
+              "id": "do_harm",
               "root": "do",
               "phonetic": "",
               "pos": "",
               "clue": "do",
-              "clueZh": "帮",
+              "clueZh": "造成伤害",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "do harm",
+                  "example": "",
+                  "exampleZh": "造成伤害",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "do_a_favor",
+              "root": "do",
+              "phonetic": "",
+              "pos": "",
+              "clue": "do",
+              "clueZh": "帮忙",
               "members": [
                 {
                   "pos": "",
@@ -1111,40 +3041,22 @@
                   "level": 0
                 }
               ]
-            },
-            {
-              "id": "do_damage",
-              "root": "do",
-              "phonetic": "",
-              "pos": "",
-              "clue": "do",
-              "clueZh": "造成",
-              "members": [
-                {
-                  "pos": "",
-                  "posZh": "",
-                  "word": "do damage",
-                  "example": "",
-                  "exampleZh": "造成损害",
-                  "level": 0
-                }
-              ]
             }
           ]
         },
         {
           "id": "coll_take",
-          "name": "Take + Noun",
-          "nameZh": "Take + 名词",
+          "name": "Take",
+          "nameZh": "Take",
           "sort": 3,
           "families": [
             {
-              "id": "take_risk",
+              "id": "take_a_risk",
               "root": "take",
               "phonetic": "",
               "pos": "",
               "clue": "take",
-              "clueZh": "承担",
+              "clueZh": "冒险",
               "members": [
                 {
                   "pos": "",
@@ -1157,12 +3069,12 @@
               ]
             },
             {
-              "id": "take_break",
+              "id": "take_a_break",
               "root": "take",
               "phonetic": "",
               "pos": "",
               "clue": "take",
-              "clueZh": "休息",
+              "clueZh": "休息一下",
               "members": [
                 {
                   "pos": "",
@@ -1175,19 +3087,37 @@
               ]
             },
             {
-              "id": "take_advantage",
+              "id": "take_a_photo",
               "root": "take",
               "phonetic": "",
               "pos": "",
               "clue": "take",
-              "clueZh": "利用",
+              "clueZh": "拍照",
               "members": [
                 {
                   "pos": "",
                   "posZh": "",
-                  "word": "take advantage",
+                  "word": "take a photo",
                   "example": "",
-                  "exampleZh": "利用",
+                  "exampleZh": "拍照",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "take_a_chance",
+              "root": "take",
+              "phonetic": "",
+              "pos": "",
+              "clue": "take",
+              "clueZh": "抓住机会",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "take a chance",
+                  "example": "",
+                  "exampleZh": "抓住机会",
                   "level": 0
                 }
               ]
@@ -1198,7 +3128,7 @@
               "phonetic": "",
               "pos": "",
               "clue": "take",
-              "clueZh": "承担",
+              "clueZh": "承担责任",
               "members": [
                 {
                   "pos": "",
@@ -1211,7 +3141,7 @@
               ]
             },
             {
-              "id": "take_care",
+              "id": "take_care_of",
               "root": "take",
               "phonetic": "",
               "pos": "",
@@ -1221,27 +3151,349 @@
                 {
                   "pos": "",
                   "posZh": "",
-                  "word": "take care",
+                  "word": "take care of",
                   "example": "",
-                  "exampleZh": "保重",
+                  "exampleZh": "照顾",
                   "level": 0
                 }
               ]
             },
             {
-              "id": "take_action",
+              "id": "take_place",
               "root": "take",
               "phonetic": "",
               "pos": "",
               "clue": "take",
-              "clueZh": "采取",
+              "clueZh": "发生",
               "members": [
                 {
                   "pos": "",
                   "posZh": "",
-                  "word": "take action",
+                  "word": "take place",
                   "example": "",
-                  "exampleZh": "采取行动",
+                  "exampleZh": "发生",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "take_part_in",
+              "root": "take",
+              "phonetic": "",
+              "pos": "",
+              "clue": "take",
+              "clueZh": "参加",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "take part in",
+                  "example": "",
+                  "exampleZh": "参加",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "take_advantage_of",
+              "root": "take",
+              "phonetic": "",
+              "pos": "",
+              "clue": "take",
+              "clueZh": "利用",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "take advantage of",
+                  "example": "",
+                  "exampleZh": "利用",
+                  "level": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coll_have",
+          "name": "Have",
+          "nameZh": "Have",
+          "sort": 4,
+          "families": [
+            {
+              "id": "have_a_rest",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "休息",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have a rest",
+                  "example": "",
+                  "exampleZh": "休息",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_a_conversation",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "交谈",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have a conversation",
+                  "example": "",
+                  "exampleZh": "交谈",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_an_idea",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "有个想法",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have an idea",
+                  "example": "",
+                  "exampleZh": "有个想法",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_fun",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "玩得开心",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have fun",
+                  "example": "",
+                  "exampleZh": "玩得开心",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_a_look",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "看一眼",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have a look",
+                  "example": "",
+                  "exampleZh": "看一眼",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_breakfast",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "吃早餐",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have breakfast",
+                  "example": "",
+                  "exampleZh": "吃早餐",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_a_meeting",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "开会",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have a meeting",
+                  "example": "",
+                  "exampleZh": "开会",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "have_trouble",
+              "root": "have",
+              "phonetic": "",
+              "pos": "",
+              "clue": "have",
+              "clueZh": "遇到麻烦",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "have trouble",
+                  "example": "",
+                  "exampleZh": "遇到麻烦",
+                  "level": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "coll_get",
+          "name": "Get",
+          "nameZh": "Get",
+          "sort": 5,
+          "families": [
+            {
+              "id": "get_ready",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "准备好",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get ready",
+                  "example": "",
+                  "exampleZh": "准备好",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_lost",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "迷路",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get lost",
+                  "example": "",
+                  "exampleZh": "迷路",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_married",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "结婚",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get married",
+                  "example": "",
+                  "exampleZh": "结婚",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_a_job",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "找到工作",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get a job",
+                  "example": "",
+                  "exampleZh": "找到工作",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_better",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "好转",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get better",
+                  "example": "",
+                  "exampleZh": "好转",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_up",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "起床",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get up",
+                  "example": "",
+                  "exampleZh": "起床",
+                  "level": 0
+                }
+              ]
+            },
+            {
+              "id": "get_along_with",
+              "root": "get",
+              "phonetic": "",
+              "pos": "",
+              "clue": "get",
+              "clueZh": "相处",
+              "members": [
+                {
+                  "pos": "",
+                  "posZh": "",
+                  "word": "get along with",
+                  "example": "",
+                  "exampleZh": "相处",
                   "level": 0
                 }
               ]

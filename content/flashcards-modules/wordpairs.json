@@ -1,0 +1,773 @@
+{
+  "id": "wordpairs",
+  "name": "Word Pairs",
+  "nameZh": "词汇搭配",
+  "desc": "Common word pairings · make/do/take/have/get",
+  "descZh": "常用搭配 · make/do/take/have/get",
+  "gramlin": "pencil",
+  "icon": "🔗",
+  "sort": 2,
+  "deckType": "wordpair",
+  "lessons": [
+    {
+      "id": "coll_make",
+      "name": "Make",
+      "nameZh": "Make",
+      "sort": 1,
+      "families": [
+        {
+          "id": "make_a_decision",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "做决定",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make a decision",
+              "example": "",
+              "exampleZh": "做决定",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_a_mistake",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "犯错误",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make a mistake",
+              "example": "",
+              "exampleZh": "犯错误",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_progress",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "取得进展",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make progress",
+              "example": "",
+              "exampleZh": "取得进展",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_money",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "赚钱",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make money",
+              "example": "",
+              "exampleZh": "赚钱",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_a_difference",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "产生影响",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make a difference",
+              "example": "",
+              "exampleZh": "产生影响",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_an_effort",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "努力",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make an effort",
+              "example": "",
+              "exampleZh": "努力",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_friends",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "交朋友",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make friends",
+              "example": "",
+              "exampleZh": "交朋友",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_sense",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "有意义",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make sense",
+              "example": "",
+              "exampleZh": "有意义",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_a_promise",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "许下承诺",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make a promise",
+              "example": "",
+              "exampleZh": "许下承诺",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "make_a_plan",
+          "root": "make",
+          "phonetic": "",
+          "pos": "",
+          "clue": "make",
+          "clueZh": "制定计划",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "make a plan",
+              "example": "",
+              "exampleZh": "制定计划",
+              "level": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coll_do",
+      "name": "Do",
+      "nameZh": "Do",
+      "sort": 2,
+      "families": [
+        {
+          "id": "do_homework",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "做作业",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do homework",
+              "example": "",
+              "exampleZh": "做作业",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "do_business",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "做生意",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do business",
+              "example": "",
+              "exampleZh": "做生意",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "do_your_best",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "尽力",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do your best",
+              "example": "",
+              "exampleZh": "尽力",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "do_the_dishes",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "洗碗",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do the dishes",
+              "example": "",
+              "exampleZh": "洗碗",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "do_harm",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "造成伤害",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do harm",
+              "example": "",
+              "exampleZh": "造成伤害",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "do_a_favor",
+          "root": "do",
+          "phonetic": "",
+          "pos": "",
+          "clue": "do",
+          "clueZh": "帮忙",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "do a favor",
+              "example": "",
+              "exampleZh": "帮忙",
+              "level": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coll_take",
+      "name": "Take",
+      "nameZh": "Take",
+      "sort": 3,
+      "families": [
+        {
+          "id": "take_a_risk",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "冒险",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take a risk",
+              "example": "",
+              "exampleZh": "冒险",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_a_break",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "休息一下",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take a break",
+              "example": "",
+              "exampleZh": "休息一下",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_a_photo",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "拍照",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take a photo",
+              "example": "",
+              "exampleZh": "拍照",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_a_chance",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "抓住机会",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take a chance",
+              "example": "",
+              "exampleZh": "抓住机会",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_responsibility",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "承担责任",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take responsibility",
+              "example": "",
+              "exampleZh": "承担责任",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_care_of",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "照顾",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take care of",
+              "example": "",
+              "exampleZh": "照顾",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_place",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "发生",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take place",
+              "example": "",
+              "exampleZh": "发生",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_part_in",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "参加",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take part in",
+              "example": "",
+              "exampleZh": "参加",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "take_advantage_of",
+          "root": "take",
+          "phonetic": "",
+          "pos": "",
+          "clue": "take",
+          "clueZh": "利用",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "take advantage of",
+              "example": "",
+              "exampleZh": "利用",
+              "level": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coll_have",
+      "name": "Have",
+      "nameZh": "Have",
+      "sort": 4,
+      "families": [
+        {
+          "id": "have_a_rest",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "休息",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have a rest",
+              "example": "",
+              "exampleZh": "休息",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_a_conversation",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "交谈",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have a conversation",
+              "example": "",
+              "exampleZh": "交谈",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_an_idea",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "有个想法",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have an idea",
+              "example": "",
+              "exampleZh": "有个想法",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_fun",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "玩得开心",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have fun",
+              "example": "",
+              "exampleZh": "玩得开心",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_a_look",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "看一眼",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have a look",
+              "example": "",
+              "exampleZh": "看一眼",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_breakfast",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "吃早餐",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have breakfast",
+              "example": "",
+              "exampleZh": "吃早餐",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_a_meeting",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "开会",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have a meeting",
+              "example": "",
+              "exampleZh": "开会",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "have_trouble",
+          "root": "have",
+          "phonetic": "",
+          "pos": "",
+          "clue": "have",
+          "clueZh": "遇到麻烦",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "have trouble",
+              "example": "",
+              "exampleZh": "遇到麻烦",
+              "level": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coll_get",
+      "name": "Get",
+      "nameZh": "Get",
+      "sort": 5,
+      "families": [
+        {
+          "id": "get_ready",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "准备好",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get ready",
+              "example": "",
+              "exampleZh": "准备好",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_lost",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "迷路",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get lost",
+              "example": "",
+              "exampleZh": "迷路",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_married",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "结婚",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get married",
+              "example": "",
+              "exampleZh": "结婚",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_a_job",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "找到工作",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get a job",
+              "example": "",
+              "exampleZh": "找到工作",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_better",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "好转",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get better",
+              "example": "",
+              "exampleZh": "好转",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_up",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "起床",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get up",
+              "example": "",
+              "exampleZh": "起床",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "get_along_with",
+          "root": "get",
+          "phonetic": "",
+          "pos": "",
+          "clue": "get",
+          "clueZh": "相处",
+          "members": [
+            {
+              "pos": "",
+              "posZh": "",
+              "word": "get along with",
+              "example": "",
+              "exampleZh": "相处",
+              "level": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
