@@ -326,40 +326,6 @@
               "level": 0
             }
           ]
-        },
-        {
-          "id": "beat",
-          "root": "beat→beat→beaten",
-          "phonetic": "/biːt/",
-          "pos": "v.",
-          "clue": "to hit repeatedly",
-          "clueZh": "打",
-          "members": [
-            {
-              "pos": "v.",
-              "posZh": "原",
-              "word": "beat",
-              "example": "Beat the eggs.",
-              "exampleZh": "打。",
-              "level": 0
-            },
-            {
-              "pos": "v.",
-              "posZh": "过",
-              "word": "beat",
-              "example": "He beat the record.",
-              "exampleZh": "打（过去式）。",
-              "level": 0
-            },
-            {
-              "pos": "v.",
-              "posZh": "完",
-              "word": "beaten",
-              "example": "They were beaten.",
-              "exampleZh": "打（过去分词）。",
-              "level": 0
-            }
-          ]
         }
       ]
     },
@@ -2719,6 +2685,40 @@
               "word": "proven",
               "example": "It is proven.",
               "exampleZh": "证明（过去分词）。",
+              "level": 0
+            }
+          ]
+        },
+        {
+          "id": "beat",
+          "root": "beat→beat→beaten",
+          "phonetic": "/biːt/",
+          "pos": "v.",
+          "clue": "to hit repeatedly",
+          "clueZh": "打",
+          "members": [
+            {
+              "pos": "v.",
+              "posZh": "原",
+              "word": "beat",
+              "example": "Beat the eggs.",
+              "exampleZh": "打。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "过",
+              "word": "beat",
+              "example": "He beat the record.",
+              "exampleZh": "打（过去式）。",
+              "level": 0
+            },
+            {
+              "pos": "v.",
+              "posZh": "完",
+              "word": "beaten",
+              "example": "They were beaten.",
+              "exampleZh": "打（过去分词）。",
               "level": 0
             }
           ]

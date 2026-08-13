@@ -5085,7 +5085,10 @@
             "zh": "She ___ her homework before dinner yesterday.",
             "es": "She ___ her homework before dinner yesterday."
           },
-          "a": "had finished",
+          "a": [
+            "had finished",
+            "finished"
+          ],
           "o": {
             "en": [
               "finishes",
@@ -5193,7 +5196,10 @@
             "zh": "He ___ his keys and could not enter.",
             "es": "He ___ his keys and could not enter."
           },
-          "a": "had lost",
+          "a": [
+            "had lost",
+            "lost"
+          ],
           "o": {
             "en": [
               "loses",
@@ -5247,7 +5253,10 @@
             "zh": "By the time we arrived, the film ___.",
             "es": "By the time we arrived, the film ___."
           },
-          "a": "had started",
+          "a": [
+            "had started",
+            "started"
+          ],
           "o": {
             "en": [
               "starts",
@@ -5323,7 +5332,10 @@
             "zh": "Look at those clouds! It ___.",
             "es": "Look at those clouds! It ___."
           },
-          "a": "is going to rain",
+          "a": [
+            "is going to rain",
+            "will rain"
+          ],
           "o": {
             "en": [
               "rains",
@@ -5377,7 +5389,10 @@
             "zh": "I ___ you tomorrow at 3 PM as agreed.",
             "es": "I ___ you tomorrow at 3 PM as agreed."
           },
-          "a": "am seeing",
+          "a": [
+            "am seeing",
+            "will see"
+          ],
           "o": {
             "en": [
               "see",
@@ -5431,7 +5446,10 @@
             "zh": "The train ___ at 6 PM per the schedule.",
             "es": "The train ___ at 6 PM per the schedule."
           },
-          "a": "leaves",
+          "a": [
+            "leaves",
+            "will leave"
+          ],
           "o": {
             "en": [
               "leaves",
@@ -5485,7 +5503,10 @@
             "zh": "I think she ___ the competition.",
             "es": "I think she ___ the competition."
           },
-          "a": "will win",
+          "a": [
+            "will win",
+            "wins"
+          ],
           "o": {
             "en": [
               "wins",
@@ -6859,7 +6880,10 @@
             "zh": "If you ___ water to 100 degrees, it ___.",
             "es": "If you ___ water to 100 degrees, it ___."
           },
-          "a": "heat ... boils",
+          "a": [
+            "heat ... boils",
+            "heat ... will boil"
+          ],
           "o": {
             "en": [
               "heat ... boils",
@@ -6913,7 +6937,10 @@
             "zh": "If you ___ plants, they ___.",
             "es": "If you ___ plants, they ___."
           },
-          "a": "do not water ... die",
+          "a": [
+            "do not water ... die",
+            "do not water ... will die"
+          ],
           "o": {
             "en": [
               "do not water ... die",
@@ -6967,7 +6994,10 @@
             "zh": "When the temperature ___ below zero, water ___.",
             "es": "When the temperature ___ below zero, water ___."
           },
-          "a": "drops ... freezes",
+          "a": [
+            "drops ... freezes",
+            "drops ... will freeze"
+          ],
           "o": {
             "en": [
               "drops ... freezes",
@@ -9803,7 +9833,10 @@
             "zh": "He said: \"I like coffee.\" -> He said he ___ coffee.",
             "es": "He said: \"I like coffee.\" -> He said he ___ coffee."
           },
-          "a": "liked",
+          "a": [
+            "liked",
+            "likes"
+          ],
           "o": {
             "en": [
               "likes",
@@ -9933,7 +9966,10 @@
             "zh": "She asked: \"Where do you live?\" -> She asked where I ___.",
             "es": "She asked: \"Where do you live?\" -> She asked where I ___."
           },
-          "a": "lived",
+          "a": [
+            "lived",
+            "live"
+          ],
           "o": {
             "en": [
               "live",
@@ -10041,7 +10077,10 @@
             "zh": "She asked: \"What time does the train leave?\" -> She asked what time the train ___.",
             "es": "She asked: \"What time does the train leave?\" -> She asked what time the train ___."
           },
-          "a": "left",
+          "a": [
+            "left",
+            "leaves"
+          ],
           "o": {
             "en": [
               "leaves",
@@ -10507,7 +10546,10 @@
             "zh": "He said: \"I have finished.\" -> He said he ___.",
             "es": "He said: \"I have finished.\" -> He said he ___."
           },
-          "a": "had finished",
+          "a": [
+            "had finished",
+            "finished"
+          ],
           "o": {
             "en": [
               "has finished",
@@ -11449,7 +11491,10 @@
             "zh": "She is not here. She ___ be at home.",
             "es": "She is not here. She ___ be at home."
           },
-          "a": "might",
+          "a": [
+            "might",
+            "must"
+          ],
           "o": {
             "en": [
               "must",
@@ -11839,7 +11884,10 @@
             "zh": "You ___ smoke here. It is a hospital.",
             "es": "You ___ smoke here. It is a hospital."
           },
-          "a": "must not",
+          "a": [
+            "must not",
+            "should not"
+          ],
           "o": {
             "en": [
               "do not have to",
@@ -12911,7 +12959,10 @@
             "zh": "___ tiger is an endangered species.",
             "es": "___ tiger is an endangered species."
           },
-          "a": "The",
+          "a": [
+            "The",
+            "A"
+          ],
           "o": {
             "en": [
               "A",
@@ -14709,7 +14760,10 @@
             "zh": "She remembered ___ the door before leaving.",
             "es": "She remembered ___ the door before leaving."
           },
-          "a": "to lock",
+          "a": [
+            "to lock",
+            "locking"
+          ],
           "o": {
             "en": [
               "lock",
@@ -14893,7 +14947,10 @@
             "zh": "She ___ me ___ her car last weekend.",
             "es": "She ___ me ___ her car last weekend."
           },
-          "a": "let ... drive",
+          "a": [
+            "let ... drive",
+            "made ... drive"
+          ],
           "o": {
             "en": [
               "let ... drive",
@@ -15380,7 +15437,10 @@
             "zh": "Choose the correct word order:",
             "es": "Choose the correct word order:"
           },
-          "a": "Never have I seen such beauty.",
+          "a": [
+            "Never have I seen such beauty.",
+            "I have never seen such beauty."
+          ],
           "o": {
             "en": [
               "Never I have seen such beauty.",
@@ -15640,7 +15700,10 @@
             "zh": "I have ___ been to Japan.",
             "es": "I have ___ been to Japan."
           },
-          "a": "never",
+          "a": [
+            "never",
+            "not"
+          ],
           "o": {
             "en": [
               "not",
@@ -16496,7 +16559,10 @@
             "zh": "___ known the truth, I would have acted differently.",
             "es": "___ known the truth, I would have acted differently."
           },
-          "a": "Had I",
+          "a": [
+            "Had I",
+            "If I had"
+          ],
           "o": {
             "en": [
               "If I had",
@@ -16680,7 +16746,10 @@
             "zh": "She asked me to help and I ___.",
             "es": "She asked me to help and I ___."
           },
-          "a": "did so",
+          "a": [
+            "did so",
+            "did"
+          ],
           "o": {
             "en": [
               "did",
