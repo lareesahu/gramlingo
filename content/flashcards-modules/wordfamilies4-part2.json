@@ -136,7 +136,7 @@
         {
           "id": "natural",
           "root": "natural",
-          "phonetic": "/ˈneɪtʃər/",
+          "phonetic": "/ˈnætʃrəl/",
           "pos": "adj.",
           "clue": "from nature; not made by people",
           "clueZh": "自然的",
@@ -329,34 +329,26 @@
         },
         {
           "id": "investment",
-          "root": "invest",
-          "phonetic": "/ɪnˈvest/",
-          "pos": "v. · n.",
-          "clue": "money put in to make a profit",
+          "root": "investment",
+          "phonetic": "/ɪnˈvestmənt/",
+          "pos": "n.",
+          "clue": "money put into something to make a profit",
           "clueZh": "投资",
           "members": [
             {
-              "pos": "v.",
-              "posZh": "动",
-              "word": "invest",
-              "example": "They invest in new houses.",
-              "exampleZh": "他们投资新房子。",
+              "pos": "n.",
+              "posZh": "名",
+              "word": "investment",
+              "example": "A good investment.",
+              "exampleZh": "一笔好的投资。",
               "level": 0
             },
             {
               "pos": "n.",
               "posZh": "名",
-              "word": "investment",
-              "example": "It was a good investment.",
-              "exampleZh": "这是一笔不错的投资。",
-              "level": 1
-            },
-            {
-              "pos": "n.",
-              "posZh": "名",
               "word": "investor",
-              "example": "The investor bought shares.",
-              "exampleZh": "投资者购买了股票。",
+              "example": "An early investor.",
+              "exampleZh": "一位早期投资者。",
               "level": 1
             }
           ]
@@ -1463,43 +1455,27 @@
         },
         {
           "id": "operation",
-          "root": "operate",
-          "phonetic": "/ˈɑːpəreɪt/",
-          "pos": "v. · n.",
-          "clue": "the way something works; surgery",
+          "root": "operation",
+          "phonetic": "/ˌɒpəˈreɪʃn/",
+          "pos": "n.",
+          "clue": "a process or a medical procedure",
           "clueZh": "操作；手术",
           "members": [
-            {
-              "pos": "v.",
-              "posZh": "动",
-              "word": "operate",
-              "example": "He operates the machine.",
-              "exampleZh": "他操作这台机器。",
-              "level": 0
-            },
             {
               "pos": "n.",
               "posZh": "名",
               "word": "operation",
-              "example": "The operation was successful.",
-              "exampleZh": "手术很成功。",
-              "level": 1
-            },
-            {
-              "pos": "n.",
-              "posZh": "名",
-              "word": "operator",
-              "example": "The operator answered the call.",
-              "exampleZh": "接线员接听了电话。",
-              "level": 1
+              "example": "A smooth operation.",
+              "exampleZh": "一次顺利的手术。",
+              "level": 0
             },
             {
               "pos": "adj.",
               "posZh": "形",
               "word": "operational",
-              "example": "The system is now operational.",
-              "exampleZh": "系统现在可以运行了。",
-              "level": 2
+              "example": "Fully operational.",
+              "exampleZh": "完全运转。",
+              "level": 1
             }
           ]
         },
