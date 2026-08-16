@@ -2,10 +2,11 @@
    GRAMLINGO — App Router (home + module pages)
    ═══════════════════════════════════════════════ */
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAppContext } from './app-state';
 import { AppShell } from '../components/AppShell/AppShell';
 import { LoadingScreen } from '../screens/LoadingScreen';
+import { IntroScreen, introAlreadySeen } from '../screens/IntroScreen';
 import { WelcomeScreen } from '../screens/WelcomeScreen';
 import { LearningPathScreen } from '../screens/LearningPathScreen';
 import { ModuleScreen } from '../screens/ModuleScreen';
@@ -20,6 +21,12 @@ const LOAD_DURATION = 1500;
 
 export function App() {
   const { screen, currentUser, navigateTo, cloudEnabled } = useAppContext();
+  const [introSeen, setIntroSeen] = useState<boolean>(introAlreadySeen);
+
+  // First-launch journey: full-screen poster slideshow, shown ONCE, then the app.
+  if (!introSeen) {
+    return <IntroScreen onDone={() => setIntroSeen(true)} />;
+  }
 
   // Loading screen mount: show 1.5s on first visit, then route to welcome
   useEffect(() => {
