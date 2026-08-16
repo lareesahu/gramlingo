@@ -43,8 +43,6 @@
   width: auto;
   cursor: pointer;
   background: transparent;
-  clip-path: inset(20% 7% 25% 7%);
-  margin: 0 -6px;
 }
 
 .btn-back {

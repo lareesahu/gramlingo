@@ -14,9 +14,9 @@ describe("WelcomeScreen", () => {
 
   it("shows the landing page", async () => {
     render(<AppProvider><App /></AppProvider>);
-    expect(await screen.findByText("GramLingo", {}, { timeout: 3000 })).toBeInTheDocument();
-    const buttons = screen.getAllByText("Start Learning");
+    const buttons = await screen.findAllByText("Start Learning", {}, { timeout: 5000 });
     expect(buttons.length).toBeGreaterThanOrEqual(1);
+    expect(document.querySelector(".hero-logo")).toBeInTheDocument();
     expect(screen.getByText(/Grammar Quest/)).toBeInTheDocument();
   });
 

@@ -53,7 +53,7 @@ export function WelcomeScreen() {
         <div className="hero-gramlin">
           <Gramlin pose="peeking" size="xl" animated />
         </div>
-        <h1 className="hero-title">{s.appName}</h1>
+        <img className="hero-logo" src={`${BASE_URL}assets/gramlin/gramlingo-logo.png`} alt="GramLingo" draggable={false} />
         <div className="catchphrase-carousel" aria-live="polite">
           {CATCHPHRASES.map((phrase, i) => (
             <span key={phrase} className={`catchphrase-text ${i === catchIdx ? "visible" : "hidden"}`}>
