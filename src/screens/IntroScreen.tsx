@@ -79,6 +79,9 @@ export function IntroScreen({ onDone }: { onDone: () => void }) {
 
   // ── Pointer/touch drag (direction-locked horizontal, like the app's swipe pattern) ──
   const onPointerDown = (e: React.PointerEvent) => {
+    // Never hijack drag from interactive controls (Skip / Next buttons).
+    const target = e.target as HTMLElement;
+    if (target.closest('button')) return;
     startX.current = e.clientX;
     lastX.current = e.clientX;
     moved.current = 0;
