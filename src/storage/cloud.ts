@@ -9,7 +9,13 @@ export const cloudEnabled = Boolean(url && publishableKey);
 
 /** Canonical app URL used for auth email redirects (confirmation + password reset). */
 export const APP_REDIRECT_URL = typeof window !== 'undefined'
-  ? `${window.location.origin}${import.meta.env.BASE_URL}`
+  ? (() => {
+      // Origin-agnostic: works at https://lareesahu.github.io/gramlingo/ AND
+      // https://gramlingo.online/ regardless of Vite base.
+      const p = window.location.pathname;
+      const root = p.endsWith('/') ? p : p + '/';
+      return window.location.origin + root;
+    })()
   : 'https://lareesahu.github.io/gramlingo/';
 
 const client = cloudEnabled
