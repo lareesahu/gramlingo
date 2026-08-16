@@ -4,18 +4,20 @@
    Versioned — changes to CACHE_VERSION trigger re-cache.
    ═══════════════════════════════════════════════ */
 
-const CACHE_VERSION = 'gramlingo-v2';
+const CACHE_VERSION = 'gramlingo-v3';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 
 // Patterns that are cache-first (app shell + assets)
+// NOTE: origin-agnostic on purpose — the app runs at /gramlingo/ on
+// github.io AND at / on the custom domain gramlingo.online.
 const STATIC_PATTERNS = [
   /\.(js|css|svg|png|jpg|jpeg|webp|woff2?|ttf)$/i,
-  /\/gramlingo\/assets\//,
-  /\/gramlingo\/data\//,
-  /\/gramlingo\/favicon\.svg/,
-  /\/gramlingo\/icons\.svg/,
-  /\/gramlingo\/manifest\.json/,
+  /\/assets\//,
+  /\/data\//,
+  /\/favicon\.svg/,
+  /\/icons\.svg/,
+  /\/manifest\.json/,
   /fonts\.googleapis\.com/,
   /fonts\.gstatic\.com/,
 ];
@@ -39,7 +41,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
       // Cache the root page (navigational pre-cache)
-      return cache.add('/gramlingo/').catch(() => {});
+      return cache.add(new URL('./', self.location.href).href).catch(() => {});
     })
   );
   self.skipWaiting();
