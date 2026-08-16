@@ -2,7 +2,7 @@
    GRAMLINGO — Flashcard Lesson Screen (card stack + swipeable rows)
    ═══════════════════════════════════════════════ */
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { useAppContext } from '../app/app-state';
 import { Gramlin } from '../components/Gramlin/Gramlin';
 import './FlashcardLessonScreen.css';
@@ -20,6 +20,10 @@ export function FlashcardLessonScreen() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [masteredIds, setMasteredIds] = useState<Set<string>>(new Set());
   const [reviewIds, setReviewIds] = useState<Set<string>>(new Set());
+
+  // Swipe state: per-card horizontal drag offset (px) + drag lifecycle.
+  const [swipeOffsets, setSwipeOffsets] = useState<Record<string, number>>({});
+  const swipeDrag = useRef<{ id: string; startX: number; startY: number; dx: number; horiz: boolean; moved: boolean } | null>(null);
 
   const families = lesson?.families || [];
   const totalCards = families.length;
@@ -39,6 +43,53 @@ export function FlashcardLessonScreen() {
     setReviewIds(prev => new Set(prev).add(familyId));
     flashcardMarkNeedsWork(familyId);
   }, [flashcardMarkNeedsWork]);
+
+  // ── Swipe handlers (work on both touch and mouse) ──
+  const SWIPE_THRESHOLD = 80; // px to commit a swipe
+
+  const onSwipeStart = useCallback((e: React.PointerEvent, familyId: string) => {
+    if (masteredIds.has(familyId) || reviewIds.has(familyId)) return; // already done
+    swipeDrag.current = { id: familyId, startX: e.clientX, startY: e.clientY, dx: 0, horiz: false, moved: false };
+  }, [masteredIds, reviewIds]);
+
+  const onSwipeMove = useCallback((e: React.PointerEvent) => {
+    const d = swipeDrag.current;
+    if (!d) return;
+    const dx = e.clientX - d.startX;
+    const dy = e.clientY - d.startY;
+    if (!d.horiz && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+      // classify gesture: horizontal swipe vs vertical scroll
+      d.horiz = Math.abs(dx) > Math.abs(dy);
+    }
+    if (d.horiz) {
+      d.dx = dx;
+      d.moved = true;
+      setSwipeOffsets(prev => ({ ...prev, [d.id]: dx }));
+    }
+  }, []);
+
+  const onSwipeEnd = useCallback((e: React.PointerEvent) => {
+    const d = swipeDrag.current;
+    if (!d) return;
+    swipeDrag.current = null;
+    const id = d.id;
+    const dx = d.dx;
+    const committed = d.horiz && d.moved && Math.abs(dx) >= SWIPE_THRESHOLD;
+    setSwipeOffsets(prev => {
+      const next = { ...prev };
+      delete next[id];
+      return next;
+    });
+    if (committed) {
+      if (dx < 0) handleReview(id);
+      else handleMastered(id);
+      // Suppress the click that follows a swipe so the card doesn't also toggle.
+      (e.currentTarget as HTMLElement).addEventListener('click', (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+      }, { capture: true, once: true });
+    }
+  }, [handleReview, handleMastered]);
 
   const getMemberLevelClass = (level: number) => {
     if (level === 0) return 'fm-l0';
@@ -81,11 +132,17 @@ export function FlashcardLessonScreen() {
           const isMastered = masteredIds.has(family.id);
           const isReview = reviewIds.has(family.id);
           const isDone = isMastered || isReview;
+          const offset = swipeOffsets[family.id] || 0;
 
           return (
             <div
               key={family.id}
-              className={`fcls-card ${isExpanded ? 'fcls-card--open' : ''} ${isMastered ? 'fcls-card--mastered' : ''} ${isReview ? 'fcls-card--review' : ''}`}
+              className={`fcls-card ${isExpanded ? 'fcls-card--open' : ''} ${isMastered ? 'fcls-card--mastered' : ''} ${isReview ? 'fcls-card--review' : ''} ${offset !== 0 ? 'fcls-card--swiping' : ''}`}
+              style={offset !== 0 ? { transform: `translateX(${offset}px) rotate(${offset * 0.02}deg)` } : undefined}
+              onPointerDown={(e) => onSwipeStart(e, family.id)}
+              onPointerMove={onSwipeMove}
+              onPointerUp={onSwipeEnd}
+              onPointerCancel={onSwipeEnd}
             >
               {/* Front: clue only */}
               <div className="fcls-front" onClick={() => handleTap(family.id)}>
