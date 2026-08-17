@@ -97,12 +97,12 @@ export function useUrlSync(screen: Screen, navigateTo: (s: Screen) => void) {
     return () => window.removeEventListener('popstate', onPop);
   }, [navigateTo]);
 
-  // Screen → URL (keep URL clean; don't push a new entry for the same path).
+  // Screen → URL (push a real history entry so Back/Forward works; dedupe same-path).
   useEffect(() => {
     if (!initialized) return;
     const target = screenToPath(screen);
     if (window.location.pathname !== target) {
-      window.history.replaceState(null, '', target);
+      window.history.pushState(null, '', target);
     }
   }, [screen, initialized]);
 

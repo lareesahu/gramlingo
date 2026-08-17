@@ -4,7 +4,7 @@
    lesson page (grammar phases or flashcard lessons).
    ═══════════════════════════════════════════════ */
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useAppContext } from '../../app/app-state';
 import { Gramlin } from '../Gramlin/Gramlin';
 import { GAME_DATA } from '../../game/data';
@@ -24,6 +24,8 @@ interface ModuleModalProps {
   onClose: () => void;
 }
 
+const FOCUSABLE = 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
 export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
   const {
     language, activePanel, getModuleProgress, getPhaseProgress,
@@ -31,13 +33,52 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
   } = useAppContext();
   const s = getStrings(language);
   const isZh = language === 'zh';
+  const panelRef = useRef<HTMLDivElement>(null);
+  const lastFocused = useRef<Element | null>(null);
 
-  // Close on Escape
+  const titleId = moduleId ? `mm-title-${moduleId}` : undefined;
+
+  // Close on Escape + focus trap + scroll lock while open.
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
-    window.addEventListener('keydown', handler);
-    return () => window.removeEventListener('keydown', handler);
-  }, [onClose]);
+    if (!moduleId) return;
+    // Remember what had focus so we can restore it on close.
+    lastFocused.current = document.activeElement;
+    // Lock body scroll.
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { onClose(); return; }
+      if (e.key !== 'Tab' || !panelRef.current) return;
+      // Focus trap: keep Tab cycling within the modal.
+      const els = Array.from(panelRef.current.querySelectorAll<HTMLElement>(FOCUSABLE));
+      if (els.length === 0) return;
+      const first = els[0];
+      const last = els[els.length - 1];
+      const active = document.activeElement;
+      if (e.shiftKey && (active === first || active === panelRef.current)) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && active === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+    // Move focus into the modal after mount.
+    const t = window.setTimeout(() => {
+      const first = panelRef.current?.querySelector<HTMLElement>(FOCUSABLE);
+      first?.focus();
+    }, 10);
+
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      window.clearTimeout(t);
+      document.body.style.overflow = prevOverflow;
+      // Restore focus to whatever opened the modal.
+      (lastFocused.current as HTMLElement | null)?.focus?.();
+    };
+  }, [moduleId, onClose]);
 
   if (!moduleId) return null;
 
@@ -50,13 +91,13 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
     const modLocked = currentUser ? isModuleLocked(currentUser.username, mod.id) : false;
 
     return (
-      <div className="mm-overlay" onClick={onClose} role="dialog" aria-modal="true">
-        <div className="mm-modal" onClick={(e) => e.stopPropagation()}>
+      <div className="mm-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby={titleId}>
+        <div className="mm-modal" onClick={(e) => e.stopPropagation()} ref={panelRef}>
           <button className="mm-close" onClick={onClose} aria-label={isZh ? '关闭' : 'Close'}>×</button>
           <div className="mm-header">
             <Gramlin pose={(mod.gramlin?.replace('.png', '') || 'book') as any} size="lg" />
             <div>
-              <h2>{isZh ? mod.nameZh : mod.name}</h2>
+              <h2 id={titleId}>{isZh ? mod.nameZh : mod.name}</h2>
               <p>{isZh ? mod.descZh : mod.desc}</p>
             </div>
           </div>
@@ -100,13 +141,13 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
   if (!fmod) return null;
 
   return (
-    <div className="mm-overlay" onClick={onClose} role="dialog" aria-modal="true">
-      <div className="mm-modal" onClick={(e) => e.stopPropagation()}>
+    <div className="mm-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby={titleId}>
+      <div className="mm-modal" onClick={(e) => e.stopPropagation()} ref={panelRef}>
         <button className="mm-close" onClick={onClose} aria-label={isZh ? '关闭' : 'Close'}>×</button>
         <div className="mm-header">
           <Gramlin pose={(fmod.gramlin?.replace('.png', '') || 'book') as any} size="lg" />
           <div>
-            <h2>{isZh ? fmod.nameZh : fmod.name}</h2>
+            <h2 id={titleId}>{isZh ? fmod.nameZh : fmod.name}</h2>
             <p>{isZh ? fmod.descZh : fmod.desc}</p>
           </div>
         </div>
