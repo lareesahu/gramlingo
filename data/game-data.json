@@ -200,7 +200,7 @@
       "id": "clauses_rec",
       "name": {
         "en": "Identify Relative Clauses",
-        "zh": "Identify Relative Clauses",
+        "zh": "识别定语从句",
         "es": "Identify Relative Clauses"
       },
       "s": {
@@ -218,7 +218,7 @@
         {
           "id": "clauses_rec_q01",
           "q": {
-            "en": "下面哪个部分是定语从句？\nThe woman who called me is my manager.",
+            "en": "Which part is the relative clause?\nThe woman who called me is my manager.",
             "zh": "下面哪个部分是定语从句？\nThe woman who called me is my manager.",
             "es": "下面哪个部分是定语从句？\nThe woman who called me is my manager."
           },
@@ -231,10 +231,10 @@
               "my manager"
             ],
             "zh": [
-              "The woman",
-              "who called me",
-              "is my manager",
-              "my manager"
+              "那个女人",
+              "给我打电话的",
+              "是我的经理",
+              "我的经理"
             ],
             "es": [
               "The woman",
@@ -245,21 +245,21 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "定语从句是 who called me，用来修饰前面的 the woman。",
             "es": ""
           },
           "ex": {
             "en": [
-              "",
-              "",
-              "",
-              ""
+              "This is the subject of the sentence",
+              "Correct — who called me is the relative clause modifying the woman",
+              "This is the predicate",
+              "This is only part of a prepositional phrase"
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "这是句子的主语",
+              "正确——who called me 是修饰 the woman 的定语从句",
+              "这是谓语部分",
+              "这只是介词短语的一部分"
             ],
             "es": [
               "",
@@ -272,7 +272,7 @@
         {
           "id": "clauses_rec_q02",
           "q": {
-            "en": "下面哪个部分是定语从句？\nI read the book that you recommended.",
+            "en": "Which part is the relative clause?\nI read the book that you recommended.",
             "zh": "下面哪个部分是定语从句？\nI read the book that you recommended.",
             "es": "下面哪个部分是定语从句？\nI read the book that you recommended."
           },
@@ -285,10 +285,10 @@
               "the book that"
             ],
             "zh": [
-              "I read",
-              "the book",
-              "that you recommended",
-              "the book that"
+              "我读了",
+              "那本书",
+              "你推荐的那本",
+              "那本书的"
             ],
             "es": [
               "I read",
@@ -299,21 +299,21 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "定语从句是 that you recommended，修饰 the book。",
             "es": ""
           },
           "ex": {
             "en": [
-              "",
-              "",
-              "",
-              ""
+              "This is the main verb phrase",
+              "Correct — that you recommended is the relative clause",
+              "This is the noun being modified",
+              "This is a truncated clause fragment"
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "这是主句的谓语",
+              "这是被修饰的名词",
+              "正确——that you recommended 是定语从句",
+              "这是截断的从句片段"
             ],
             "es": [
               "",
@@ -326,7 +326,7 @@
         {
           "id": "clauses_rec_q03",
           "q": {
-            "en": "下面哪个部分是定语从句？\nThe cafe where we met has closed.",
+            "en": "Which part is the relative clause?\nThe cafe where we met has closed.",
             "zh": "下面哪个部分是定语从句？\nThe cafe where we met has closed.",
             "es": "下面哪个部分是定语从句？\nThe cafe where we met has closed."
           },
@@ -339,10 +339,10 @@
               "The cafe where"
             ],
             "zh": [
-              "The cafe",
-              "where we met",
-              "has closed",
-              "The cafe where"
+              "这家咖啡馆",
+              "我们见面的那家",
+              "已经关门了",
+              "咖啡馆的那家"
             ],
             "es": [
               "The cafe",
@@ -353,21 +353,21 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "定语从句是 where we met，说明是哪家咖啡馆。",
             "es": ""
           },
           "ex": {
             "en": [
-              "",
-              "",
-              "",
-              ""
+              "This is the subject noun",
+              "Correct — where we met is a place relative clause",
+              "This is the main predicate",
+              "This is a truncated clause fragment"
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "这是主语名词",
+              "正确——where we met 是地点定语从句",
+              "这是主句的谓语",
+              "这是截断的从句片段"
             ],
             "es": [
               "",
@@ -380,7 +380,7 @@
         {
           "id": "clauses_rec_q04",
           "q": {
-            "en": "定语从句修饰的是哪个名词？\nThe scientist who discovered the vaccine won a prize.",
+            "en": "Which noun does the relative clause modify?\nThe scientist who discovered the vaccine won a prize.",
             "zh": "定语从句修饰的是哪个名词？\nThe scientist who discovered the vaccine won a prize.",
             "es": "定语从句修饰的是哪个名词？\nThe scientist who discovered the vaccine won a prize."
           },
@@ -393,10 +393,10 @@
               "won a prize"
             ],
             "zh": [
-              "The scientist",
-              "discovered",
-              "the vaccine",
-              "won a prize"
+              "那位科学家",
+              "发现",
+              "疫苗",
+              "赢得了奖项"
             ],
             "es": [
               "The scientist",
@@ -407,21 +407,21 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "定语从句 who discovered the vaccine 修饰 the scientist。",
             "es": ""
           },
           "ex": {
             "en": [
-              "",
-              "",
-              "",
-              ""
+              "Correct — who discovered the vaccine modifies the scientist",
+              "This is the clause's verb",
+              "This is the clause's object",
+              "This is the main predicate"
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "正确——who discovered the vaccine 修饰 the scientist",
+              "这是从句的动词",
+              "这是从句的宾语",
+              "这是主句的谓语"
             ],
             "es": [
               "",
@@ -434,7 +434,7 @@
         {
           "id": "clauses_rec_q05",
           "q": {
-            "en": "先行词是哪个？\nI use a phone that never crashes.",
+            "en": "What is the antecedent?\nI use a phone that never crashes.",
             "zh": "先行词是哪个？\nI use a phone that never crashes.",
             "es": "先行词是哪个？\nI use a phone that never crashes."
           },
@@ -447,10 +447,10 @@
               "never crashes"
             ],
             "zh": [
-              "I use",
-              "a phone",
-              "that never crashes",
-              "never crashes"
+              "我用",
+              "一部手机",
+              "从不卡顿",
+              "从不卡顿的那部"
             ],
             "es": [
               "I use",
@@ -461,21 +461,21 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "先行词（被修饰的名词）是 a phone。",
             "es": ""
           },
           "ex": {
             "en": [
-              "",
-              "",
-              "",
-              ""
+              "This is the main verb phrase",
+              "Correct — a phone is the antecedent",
+              "This is the relative clause itself",
+              "This is the clause's predicate"
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "这是主句的谓语",
+              "正确——a phone 是先行词",
+              "这是定语从句本身",
+              "这是从句的谓语"
             ],
             "es": [
               "",
@@ -492,7 +492,7 @@
       "id": "clauses_subj",
       "name": {
         "en": "Subject Relatives",
-        "zh": "Subject Relatives",
+        "zh": "主语从句",
         "es": "Subject Relatives"
       },
       "s": {
@@ -511,7 +511,7 @@
           "id": "clauses_subj_q01",
           "q": {
             "en": "The woman ___ called me is my manager.",
-            "zh": "The woman ___ called me is my manager.",
+            "zh": "请选择正确的引导词：The woman ___ called me is my manager.",
             "es": "The woman ___ called me is my manager."
           },
           "a": [
@@ -540,7 +540,7 @@
           },
           "t": {
             "en": "who for people as subject",
-            "zh": "who 指人作主语 → who 或 that 都可以",
+            "zh": "先行词是人的时候，作主语用 who（或 that）。",
             "es": "who for people as subject"
           },
           "ex": {
@@ -551,10 +551,10 @@
               "who for people as subject"
             ],
             "zh": [
-              "who 指人作主语 → who 或 that 都可以",
-              "who 指人作主语 → who 或 that 都可以",
-              "who 指人作主语 → who 或 that 都可以",
-              "who 指人作主语 → who 或 that 都可以"
+              "who 用于指人且作主语",
+              "which 用于指物，不指人",
+              "where 表示地点，不适用",
+              "whom 是宾语形式，不作主语"
             ],
             "es": [
               "who for people as subject",
@@ -568,7 +568,7 @@
           "id": "clauses_subj_q02",
           "q": {
             "en": "The doctor ___ treated me was kind.",
-            "zh": "The doctor ___ treated me was kind.",
+            "zh": "请选择正确的引导词：The doctor ___ treated me was kind.",
             "es": "The doctor ___ treated me was kind."
           },
           "a": [
@@ -597,7 +597,7 @@
           },
           "t": {
             "en": "Person as subject → who/that",
-            "zh": "指人作主语 → who/that",
+            "zh": "先行词是人且作主语 → who/that。",
             "es": "Person as subject → who/that"
           },
           "ex": {
@@ -608,10 +608,10 @@
               "Person as subject → who/that"
             ],
             "zh": [
-              "指人作主语 → who/that",
-              "指人作主语 → who/that",
-              "指人作主语 → who/that",
-              "指人作主语 → who/that"
+              "which 指物，不用于人",
+              "正确——doctor 是人且作主语，用 who",
+              "正确——that 也可以指人作主语",
+              "whom 是宾语形式"
             ],
             "es": [
               "Person as subject → who/that",
@@ -625,7 +625,7 @@
           "id": "clauses_subj_q03",
           "q": {
             "en": "I need a tool ___ can fix this.",
-            "zh": "I need a tool ___ can fix this.",
+            "zh": "请选择正确的引导词：I need a tool ___ can fix this.",
             "es": "I need a tool ___ can fix this."
           },
           "a": "that",
@@ -651,7 +651,7 @@
           },
           "t": {
             "en": "Thing as subject → that/which",
-            "zh": "指物作主语 → that/which",
+            "zh": "先行词是物且作主语 → that/which。",
             "es": "Thing as subject → that/which"
           },
           "ex": {
@@ -662,10 +662,10 @@
               "Thing as subject → that/which"
             ],
             "zh": [
-              "指物作主语 → that/which",
-              "指物作主语 → that/which",
-              "指物作主语 → that/which",
-              "指物作主语 → that/which"
+              "who 指人，不用于物",
+              "正确——tool 是物且作主语，用 that",
+              "where 表示地点",
+              "whom 指人宾语"
             ],
             "es": [
               "Thing as subject → that/which",
@@ -679,7 +679,7 @@
           "id": "clauses_subj_q04",
           "q": {
             "en": "The train ___ arrives at 3 PM is delayed.",
-            "zh": "The train ___ arrives at 3 PM is delayed.",
+            "zh": "请选择正确的引导词：The train ___ arrives at 3 PM is delayed.",
             "es": "The train ___ arrives at 3 PM is delayed."
           },
           "a": "that",
@@ -705,7 +705,7 @@
           },
           "t": {
             "en": "train is a thing → that/which",
-            "zh": "train 是物 → that/which",
+            "zh": "train 是物 → that/which。",
             "es": "train is a thing → that/which"
           },
           "ex": {
@@ -716,10 +716,10 @@
               "train is a thing → that/which"
             ],
             "zh": [
-              "train 是物 → that/which",
-              "train 是物 → that/which",
-              "train 是物 → that/which",
-              "train 是物 → that/which"
+              "who 指人",
+              "正确——train 是物，用 that",
+              "where 表示地点",
+              "when 表示时间"
             ],
             "es": [
               "train is a thing → that/which",
@@ -733,7 +733,7 @@
           "id": "clauses_subj_q05",
           "q": {
             "en": "A friend ___ helps you is priceless.",
-            "zh": "A friend ___ helps you is priceless.",
+            "zh": "请选择正确的引导词：A friend ___ helps you is priceless.",
             "es": "A friend ___ helps you is priceless."
           },
           "a": [
@@ -762,7 +762,7 @@
           },
           "t": {
             "en": "friend = person, subject → who/that",
-            "zh": "friend 指人 → who/that",
+            "zh": "friend 是人且作主语 → who/that。",
             "es": "friend = person, subject → who/that"
           },
           "ex": {
@@ -773,10 +773,10 @@
               "friend = person, subject → who/that"
             ],
             "zh": [
-              "friend 指人 → who/that",
-              "friend 指人 → who/that",
-              "friend 指人 → who/that",
-              "friend 指人 → who/that"
+              "which 指物",
+              "正确——friend 是人，用 who",
+              "正确——that 也可指人",
+              "where 表示地点"
             ],
             "es": [
               "friend = person, subject → who/that",
@@ -790,7 +790,7 @@
           "id": "clauses_subj_q06",
           "q": {
             "en": "People ___ exercise regularly live longer.",
-            "zh": "People ___ exercise regularly live longer.",
+            "zh": "请选择正确的引导词：People ___ exercise regularly live longer.",
             "es": "People ___ exercise regularly live longer."
           },
           "a": [
@@ -819,7 +819,7 @@
           },
           "t": {
             "en": "People as subject → who/that",
-            "zh": "人作主语 → who/that",
+            "zh": "People 作主语 → who/that。",
             "es": "People as subject → who/that"
           },
           "ex": {
@@ -830,10 +830,10 @@
               "People as subject → who/that"
             ],
             "zh": [
-              "人作主语 → who/that",
-              "人作主语 → who/that",
-              "人作主语 → who/that",
-              "人作主语 → who/that"
+              "正确——people 是人且作主语，用 who",
+              "which 指物",
+              "where 表示地点",
+              "whom 是宾语形式"
             ],
             "es": [
               "People as subject → who/that",
@@ -847,7 +847,7 @@
           "id": "clauses_subj_q07",
           "q": {
             "en": "The package ___ arrived today is from Amazon.",
-            "zh": "The package ___ arrived today is from Amazon.",
+            "zh": "请选择正确的引导词：The package ___ arrived today is from Amazon.",
             "es": "The package ___ arrived today is from Amazon."
           },
           "a": "that",
@@ -873,7 +873,7 @@
           },
           "t": {
             "en": "package = thing → that/which",
-            "zh": "package 是物 → that/which",
+            "zh": "package 是物 → that/which。",
             "es": "package = thing → that/which"
           },
           "ex": {
@@ -884,10 +884,10 @@
               "package = thing → that/which"
             ],
             "zh": [
-              "package 是物 → that/which",
-              "package 是物 → that/which",
-              "package 是物 → that/which",
-              "package 是物 → that/which"
+              "who 指人",
+              "正确——package 是物，用 that",
+              "where 表示地点",
+              "when 表示时间"
             ],
             "es": [
               "package = thing → that/which",
@@ -904,7 +904,7 @@
       "id": "clauses_obj",
       "name": {
         "en": "Object Relatives",
-        "zh": "Object Relatives",
+        "zh": "宾语从句",
         "es": "Object Relatives"
       },
       "s": {
@@ -923,7 +923,7 @@
           "id": "clauses_obj_q01",
           "q": {
             "en": "The file ___ you sent is open.",
-            "zh": "The file ___ you sent is open.",
+            "zh": "请选择正确的引导词：The file ___ you sent is open.",
             "es": "The file ___ you sent is open."
           },
           "a": "that",
@@ -949,7 +949,7 @@
           },
           "t": {
             "en": "file is the object of sent",
-            "zh": "file 是 sent 的宾语",
+            "zh": "file 是 sent 的宾语 → that（可省略）。",
             "es": "file is the object of sent"
           },
           "ex": {
@@ -960,10 +960,10 @@
               "file is the object of sent"
             ],
             "zh": [
-              "file 是 sent 的宾语",
-              "file 是 sent 的宾语",
-              "file 是 sent 的宾语",
-              "file 是 sent 的宾语"
+              "who 指人",
+              "正确——file 是物且作宾语，用 that",
+              "where 表示地点",
+              "whom 是宾语形式但指人"
             ],
             "es": [
               "file is the object of sent",
@@ -977,7 +977,7 @@
           "id": "clauses_obj_q02",
           "q": {
             "en": "The movie ___ we watched was boring.",
-            "zh": "The movie ___ we watched was boring.",
+            "zh": "请选择正确的引导词：The movie ___ we watched was boring.",
             "es": "The movie ___ we watched was boring."
           },
           "a": [
@@ -1006,7 +1006,7 @@
           },
           "t": {
             "en": "movie is the object of watched",
-            "zh": "movie 是 watched 的宾语",
+            "zh": "movie 是 watched 的宾语 → that/which。",
             "es": "movie is the object of watched"
           },
           "ex": {
@@ -1017,10 +1017,10 @@
               "movie is the object of watched"
             ],
             "zh": [
-              "movie 是 watched 的宾语",
-              "movie 是 watched 的宾语",
-              "movie 是 watched 的宾语",
-              "movie 是 watched 的宾语"
+              "who 指人",
+              "正确——that 可以指物作宾语",
+              "正确——which 也可以指物作宾语",
+              "whom 指人"
             ],
             "es": [
               "movie is the object of watched",
@@ -1034,7 +1034,7 @@
           "id": "clauses_obj_q03",
           "q": {
             "en": "The client ___ we met yesterday is from Tokyo.",
-            "zh": "The client ___ we met yesterday is from Tokyo.",
+            "zh": "请选择正确的引导词：The client ___ we met yesterday is from Tokyo.",
             "es": "The client ___ we met yesterday is from Tokyo."
           },
           "a": [
@@ -1064,7 +1064,7 @@
           },
           "t": {
             "en": "Person as object → whom/that",
-            "zh": "指人作宾语 → whom/that",
+            "zh": "先行词是人且作宾语 → whom/that（口语中也可用 who）。",
             "es": "Person as object → whom/that"
           },
           "ex": {
@@ -1075,10 +1075,10 @@
               "Person as object → whom/that"
             ],
             "zh": [
-              "指人作宾语 → whom/that",
-              "指人作宾语 → whom/that",
-              "指人作宾语 → whom/that",
-              "指人作宾语 → whom/that"
+              "正确——作宾语时可以用 who",
+              "正确——正式语体中作宾语用 whom",
+              "which 指物",
+              "正确——that 可以指人作宾语"
             ],
             "es": [
               "Person as object → whom/that",
@@ -1092,7 +1092,7 @@
           "id": "clauses_obj_q04",
           "q": {
             "en": "The people ___ I invited are coming.",
-            "zh": "The people ___ I invited are coming.",
+            "zh": "请选择正确的引导词：The people ___ I invited are coming.",
             "es": "The people ___ I invited are coming."
           },
           "a": [
@@ -1122,7 +1122,7 @@
           },
           "t": {
             "en": "People as object → whom/that",
-            "zh": "人作宾语 → whom/that",
+            "zh": "People 作宾语 → whom/that。",
             "es": "People as object → whom/that"
           },
           "ex": {
@@ -1133,10 +1133,10 @@
               "People as object → whom/that"
             ],
             "zh": [
-              "人作宾语 → whom/that",
-              "人作宾语 → whom/that",
-              "人作宾语 → whom/that",
-              "人作宾语 → whom/that"
+              "正确——who 口语中可作宾语",
+              "正确——正式语体用 whom",
+              "which 指物",
+              "正确——that 可指人作宾语"
             ],
             "es": [
               "People as object → whom/that",
@@ -1150,7 +1150,7 @@
           "id": "clauses_obj_q05",
           "q": {
             "en": "The report ___ Anna wrote is on the table.",
-            "zh": "The report ___ Anna wrote is on the table.",
+            "zh": "请选择正确的引导词：The report ___ Anna wrote is on the table.",
             "es": "The report ___ Anna wrote is on the table."
           },
           "a": [
@@ -1179,7 +1179,7 @@
           },
           "t": {
             "en": "report is the object of wrote",
-            "zh": "report 是 wrote 的宾语",
+            "zh": "report 是 wrote 的宾语 → that/which。",
             "es": "report is the object of wrote"
           },
           "ex": {
@@ -1190,10 +1190,10 @@
               "report is the object of wrote"
             ],
             "zh": [
-              "report 是 wrote 的宾语",
-              "report 是 wrote 的宾语",
-              "report 是 wrote 的宾语",
-              "report 是 wrote 的宾语"
+              "who 指人",
+              "正确——that 指物作宾语",
+              "正确——which 指物作宾语",
+              "where 表示地点"
             ],
             "es": [
               "report is the object of wrote",
@@ -1207,7 +1207,7 @@
           "id": "clauses_obj_q06",
           "q": {
             "en": "The advice ___ she gave me was helpful.",
-            "zh": "The advice ___ she gave me was helpful.",
+            "zh": "请选择正确的引导词：The advice ___ she gave me was helpful.",
             "es": "The advice ___ she gave me was helpful."
           },
           "a": [
@@ -1236,7 +1236,7 @@
           },
           "t": {
             "en": "advice is the object of gave",
-            "zh": "advice 是 gave 的宾语",
+            "zh": "advice 是 gave 的宾语 → that/which。",
             "es": "advice is the object of gave"
           },
           "ex": {
@@ -1247,10 +1247,10 @@
               "advice is the object of gave"
             ],
             "zh": [
-              "advice 是 gave 的宾语",
-              "advice 是 gave 的宾语",
-              "advice 是 gave 的宾语",
-              "advice 是 gave 的宾语"
+              "who 指人",
+              "正确——that 指物作宾语",
+              "正确——which 指物作宾语",
+              "where 表示地点"
             ],
             "es": [
               "advice is the object of gave",
@@ -1267,7 +1267,7 @@
       "id": "clauses_subobj",
       "name": {
         "en": "Subject vs Object",
-        "zh": "Subject vs Object",
+        "zh": "主语与宾语",
         "es": "Subject vs Object"
       },
       "s": {
@@ -1286,7 +1286,7 @@
           "id": "clauses_subobj_q01",
           "q": {
             "en": "<b>who called</b> me — is 'who' the subject or object?",
-            "zh": "<b>who called</b> me — who 是主语还是宾语？",
+            "zh": "<b>who called</b> me — 这里的 who 是主语还是宾语？",
             "es": "<b>who called</b> me — is 'who' the subject or object?"
           },
           "a": "subject（主语）",
@@ -1306,7 +1306,7 @@
           },
           "t": {
             "en": "who IS the subject of called",
-            "zh": "who 自己就是 called 的主语",
+            "zh": "who 是 called 的主语（who called = 谁打电话）。",
             "es": "who IS the subject of called"
           },
           "ex": {
@@ -1315,8 +1315,8 @@
               "who IS the subject of called"
             ],
             "zh": [
-              "who 自己就是 called 的主语",
-              "who 自己就是 called 的主语"
+              "正确——who 在从句中作主语",
+              "who 是动作的发出者，不是承受者"
             ],
             "es": [
               "who IS the subject of called",
@@ -1328,7 +1328,7 @@
           "id": "clauses_subobj_q02",
           "q": {
             "en": "<b>who I called</b> — is 'who' the subject or object?",
-            "zh": "<b>who I called</b> — who 是主语还是宾语？",
+            "zh": "<b>who I called</b> — 这里的 who 是主语还是宾语？",
             "es": "<b>who I called</b> — is 'who' the subject or object?"
           },
           "a": "object（宾语）",
@@ -1348,7 +1348,7 @@
           },
           "t": {
             "en": "I is the subject, who is the object",
-            "zh": "I 是主语，who 是 called 的宾语",
+            "zh": "I 是主语，who 是宾语（我打电话给谁）。",
             "es": "I is the subject, who is the object"
           },
           "ex": {
@@ -1357,8 +1357,8 @@
               "I is the subject, who is the object"
             ],
             "zh": [
-              "I 是主语，who 是 called 的宾语",
-              "I 是主语，who 是 called 的宾语"
+              "I 才是主语",
+              "正确——who 在从句中作宾语"
             ],
             "es": [
               "I is the subject, who is the object",
@@ -1370,7 +1370,7 @@
           "id": "clauses_subobj_q03",
           "q": {
             "en": "Fix: The man who he called me is my neighbor. Which word is extra?",
-            "zh": "改正：The man who he called me is my neighbor. 哪个词多余？",
+            "zh": "修改句子：The man who he called me is my neighbor. 哪个词是多余的？",
             "es": "Fix: The man who he called me is my neighbor. Which word is extra?"
           },
           "a": "he",
@@ -1396,7 +1396,7 @@
           },
           "t": {
             "en": "who already represents 'the man'",
-            "zh": "who 已经代表'那个人'了",
+            "zh": "who 已经代表 the man，不需要再写 he。",
             "es": "who already represents 'the man'"
           },
           "ex": {
@@ -1407,10 +1407,10 @@
               "who already represents 'the man'"
             ],
             "zh": [
-              "who 已经代表'那个人'了",
-              "who 已经代表'那个人'了",
-              "who 已经代表'那个人'了",
-              "who 已经代表'那个人'了"
+              "who 是引导词",
+              "正确——who 已指代 the man，he 多余",
+              "man 是先行词",
+              "neighbor 是表语"
             ],
             "es": [
               "who already represents 'the man'",
@@ -1424,7 +1424,7 @@
           "id": "clauses_subobj_q04",
           "q": {
             "en": "Fix: The report that Anna wrote it is ready. Which word is extra?",
-            "zh": "改正：The report that Anna wrote it is ready. 哪个词多余？",
+            "zh": "修改句子：The report that Anna wrote it is ready. 哪个词是多余的？",
             "es": "Fix: The report that Anna wrote it is ready. Which word is extra?"
           },
           "a": "it",
@@ -1450,7 +1450,7 @@
           },
           "t": {
             "en": "that already represents the report",
-            "zh": "that 已经代表 the report",
+            "zh": "that 已经代表 the report，不需要再写 it。",
             "es": "that already represents the report"
           },
           "ex": {
@@ -1461,10 +1461,10 @@
               "that already represents the report"
             ],
             "zh": [
-              "that 已经代表 the report",
-              "that 已经代表 the report",
-              "that 已经代表 the report",
-              "that 已经代表 the report"
+              "that 是引导词",
+              "Anna 是主语",
+              "wrote 是谓语",
+              "正确——it 多余，that 已指代 report"
             ],
             "es": [
               "that already represents the report",
@@ -1498,7 +1498,7 @@
           },
           "t": {
             "en": "answering is done BY the student → subject",
-            "zh": "回答是学生发出的 → 主语",
+            "zh": "回答这个动作是学生发出的 → 主语。",
             "es": "answering is done BY the student → subject"
           },
           "ex": {
@@ -1507,8 +1507,8 @@
               "answering is done BY the student → subject"
             ],
             "zh": [
-              "回答是学生发出的 → 主语",
-              "回答是学生发出的 → 主语"
+              "正确——学生是回答这个动作的发出者",
+              "学生不是被回答的对象"
             ],
             "es": [
               "answering is done BY the student → subject",
@@ -1540,7 +1540,7 @@
           },
           "t": {
             "en": "praising is done BY the teacher → object",
-            "zh": "表扬是老师发出的 → 宾语",
+            "zh": "表扬是老师发出的 → student 是宾语。",
             "es": "praising is done BY the teacher → object"
           },
           "ex": {
@@ -1549,8 +1549,8 @@
               "praising is done BY the teacher → object"
             ],
             "zh": [
-              "表扬是老师发出的 → 宾语",
-              "表扬是老师发出的 → 宾语"
+              "学生不是表扬的发出者",
+              "正确——表扬是老师发出的，student 是宾语"
             ],
             "es": [
               "praising is done BY the teacher → object",
@@ -1565,7 +1565,7 @@
       "id": "clauses_oblq",
       "name": {
         "en": "Oblique Relatives",
-        "zh": "Oblique Relatives",
+        "zh": "状语从句",
         "es": "Oblique Relatives"
       },
       "s": {
@@ -1584,7 +1584,7 @@
           "id": "clauses_oblq_q01",
           "q": {
             "en": "This is the cafe ___ we met.",
-            "zh": "This is the cafe ___ we met.",
+            "zh": "请选择正确的引导词：This is the cafe ___ we met.",
             "es": "This is the cafe ___ we met."
           },
           "a": "where",
@@ -1610,7 +1610,7 @@
           },
           "t": {
             "en": "cafe is a place → where",
-            "zh": "cafe 是地点 → where",
+            "zh": "cafe 是地点 → where。",
             "es": "cafe is a place → where"
           },
           "ex": {
@@ -1621,10 +1621,10 @@
               "cafe is a place → where"
             ],
             "zh": [
-              "cafe 是地点 → where",
-              "cafe 是地点 → where",
-              "cafe 是地点 → where",
-              "cafe 是地点 → where"
+              "who 指人",
+              "which 指物但不表地点",
+              "正确——cafe 是地点，用 where",
+              "when 表示时间"
             ],
             "es": [
               "cafe is a place → where",
@@ -1638,7 +1638,7 @@
           "id": "clauses_oblq_q02",
           "q": {
             "en": "Friday is the day ___ we present.",
-            "zh": "Friday is the day ___ we present.",
+            "zh": "请选择正确的引导词：Friday is the day ___ we present.",
             "es": "Friday is the day ___ we present."
           },
           "a": "when",
@@ -1664,7 +1664,7 @@
           },
           "t": {
             "en": "day is time → when",
-            "zh": "day 是时间 → when",
+            "zh": "day 是时间 → when。",
             "es": "day is time → when"
           },
           "ex": {
@@ -1675,10 +1675,10 @@
               "day is time → when"
             ],
             "zh": [
-              "day 是时间 → when",
-              "day 是时间 → when",
-              "day 是时间 → when",
-              "day 是时间 → when"
+              "who 指人",
+              "which 指物",
+              "where 表示地点",
+              "正确——day 是时间，用 when"
             ],
             "es": [
               "day is time → when",
@@ -1692,7 +1692,7 @@
           "id": "clauses_oblq_q03",
           "q": {
             "en": "That is the reason ___ I left early.",
-            "zh": "That is the reason ___ I left early.",
+            "zh": "请选择正确的引导词：That is the reason ___ I left early.",
             "es": "That is the reason ___ I left early."
           },
           "a": "why",
@@ -1718,7 +1718,7 @@
           },
           "t": {
             "en": "reason is cause → why",
-            "zh": "reason 是原因 → why",
+            "zh": "reason 是原因 → why。",
             "es": "reason is cause → why"
           },
           "ex": {
@@ -1729,10 +1729,10 @@
               "reason is cause → why"
             ],
             "zh": [
-              "reason 是原因 → why",
-              "reason 是原因 → why",
-              "reason 是原因 → why",
-              "reason 是原因 → why"
+              "who 指人",
+              "which 指物",
+              "where 表示地点",
+              "正确——reason 是原因，用 why"
             ],
             "es": [
               "reason is cause → why",
@@ -1746,7 +1746,7 @@
           "id": "clauses_oblq_q04",
           "q": {
             "en": "The office ___ I work is downtown.",
-            "zh": "The office ___ I work is downtown.",
+            "zh": "请选择正确的引导词：The office ___ I work is downtown.",
             "es": "The office ___ I work is downtown."
           },
           "a": "where",
@@ -1772,7 +1772,7 @@
           },
           "t": {
             "en": "office is a place → where",
-            "zh": "office 是地点 → where",
+            "zh": "office 是地点 → where。",
             "es": "office is a place → where"
           },
           "ex": {
@@ -1783,10 +1783,10 @@
               "office is a place → where"
             ],
             "zh": [
-              "office 是地点 → where",
-              "office 是地点 → where",
-              "office 是地点 → where",
-              "office 是地点 → where"
+              "正确——office 是地点，用 where",
+              "which 不表地点",
+              "who 指人",
+              "when 表示时间"
             ],
             "es": [
               "office is a place → where",
@@ -1800,7 +1800,7 @@
           "id": "clauses_oblq_q05",
           "q": {
             "en": "The year ___ I graduated was 2020.",
-            "zh": "The year ___ I graduated was 2020.",
+            "zh": "请选择正确的引导词：The year ___ I graduated was 2020.",
             "es": "The year ___ I graduated was 2020."
           },
           "a": "when",
@@ -1826,7 +1826,7 @@
           },
           "t": {
             "en": "year is time → when",
-            "zh": "year 是时间 → when",
+            "zh": "year 是时间 → when。",
             "es": "year is time → when"
           },
           "ex": {
@@ -1837,10 +1837,10 @@
               "year is time → when"
             ],
             "zh": [
-              "year 是时间 → when",
-              "year 是时间 → when",
-              "year 是时间 → when",
-              "year 是时间 → when"
+              "who 指人",
+              "which 指物",
+              "where 表示地点",
+              "正确——year 是时间，用 when"
             ],
             "es": [
               "year is time → when",
@@ -1854,7 +1854,7 @@
           "id": "clauses_oblq_q06",
           "q": {
             "en": "This is the room ___ the meeting will happen.",
-            "zh": "This is the room ___ the meeting will happen.",
+            "zh": "请选择正确的引导词：This is the room ___ the meeting will happen.",
             "es": "This is the room ___ the meeting will happen."
           },
           "a": "where",
@@ -1880,7 +1880,7 @@
           },
           "t": {
             "en": "room is a place → where",
-            "zh": "room 是地点 → where",
+            "zh": "room 是地点 → where。",
             "es": "room is a place → where"
           },
           "ex": {
@@ -1891,10 +1891,10 @@
               "room is a place → where"
             ],
             "zh": [
-              "room 是地点 → where",
-              "room 是地点 → where",
-              "room 是地点 → where",
-              "room 是地点 → where"
+              "正确——room 是地点，用 where",
+              "which 不表地点",
+              "that 不用于地点",
+              "when 表示时间"
             ],
             "es": [
               "room is a place → where",
@@ -1908,7 +1908,7 @@
           "id": "clauses_oblq_q07",
           "q": {
             "en": "I will never forget the moment ___ I saw the ocean.",
-            "zh": "I will never forget the moment ___ I saw the ocean.",
+            "zh": "请选择正确的引导词：I will never forget the moment ___ I saw the ocean.",
             "es": "I will never forget the moment ___ I saw the ocean."
           },
           "a": "when",
@@ -1934,7 +1934,7 @@
           },
           "t": {
             "en": "moment is a point in time → when",
-            "zh": "moment 是时间点 → when",
+            "zh": "moment 是时间点 → when。",
             "es": "moment is a point in time → when"
           },
           "ex": {
@@ -1945,10 +1945,10 @@
               "moment is a point in time → when"
             ],
             "zh": [
-              "moment 是时间点 → when",
-              "moment 是时间点 → when",
-              "moment 是时间点 → when",
-              "moment 是时间点 → when"
+              "who 指人",
+              "which 指物",
+              "where 表示地点",
+              "正确——moment 是时间点，用 when"
             ],
             "es": [
               "moment is a point in time → when",
@@ -1962,7 +1962,7 @@
           "id": "clauses_oblq_q08",
           "q": {
             "en": "Explain the reason ___ you were late.",
-            "zh": "Explain the reason ___ you were late.",
+            "zh": "请选择正确的引导词：Explain the reason ___ you were late.",
             "es": "Explain the reason ___ you were late."
           },
           "a": "why",
@@ -1988,7 +1988,7 @@
           },
           "t": {
             "en": "reason is cause → why",
-            "zh": "reason 是原因 → why",
+            "zh": "reason 是原因 → why。",
             "es": "reason is cause → why"
           },
           "ex": {
@@ -1999,10 +1999,10 @@
               "reason is cause → why"
             ],
             "zh": [
-              "reason 是原因 → why",
-              "reason 是原因 → why",
-              "reason 是原因 → why",
-              "reason 是原因 → why"
+              "who 指人",
+              "which 指物",
+              "where 表示地点",
+              "正确——reason 是原因，用 why"
             ],
             "es": [
               "reason is cause → why",
@@ -2019,7 +2019,7 @@
       "id": "clauses_gen",
       "name": {
         "en": "Genitive Relatives",
-        "zh": "Genitive Relatives",
+        "zh": "所有格从句",
         "es": "Genitive Relatives"
       },
       "s": {
@@ -2038,7 +2038,7 @@
           "id": "clauses_gen_q01",
           "q": {
             "en": "The man ___ car was stolen reported it.",
-            "zh": "The man ___ car was stolen reported it.",
+            "zh": "请选择正确的引导词：The man ___ car was stolen reported it.",
             "es": "The man ___ car was stolen reported it."
           },
           "a": "whose",
@@ -2064,7 +2064,7 @@
           },
           "t": {
             "en": "his car",
-            "zh": "his car",
+            "zh": "car 属于 the man → whose（his car）。",
             "es": "su coche"
           },
           "ex": {
@@ -2075,10 +2075,10 @@
               "his car"
             ],
             "zh": [
-              "his car",
-              "his car",
-              "his car",
-              "his car"
+              "who 不表示所属",
+              "正确——whose 表示所属（他的车）",
+              "whom 是宾语形式",
+              "which 指物不表所属"
             ],
             "es": [
               "su coche",
@@ -2092,7 +2092,7 @@
           "id": "clauses_gen_q02",
           "q": {
             "en": "I know a woman ___ son is a pilot.",
-            "zh": "I know a woman ___ son is a pilot.",
+            "zh": "请选择正确的引导词：I know a woman ___ son is a pilot.",
             "es": "Conozco a una mujer ___ hijo es piloto."
           },
           "a": "whose",
@@ -2118,7 +2118,7 @@
           },
           "t": {
             "en": "her son",
-            "zh": "her son",
+            "zh": "son 属于 the woman → whose（her son）。",
             "es": "su hijo"
           },
           "ex": {
@@ -2129,10 +2129,10 @@
               "her son"
             ],
             "zh": [
-              "her son",
-              "her son",
-              "her son",
-              "her son"
+              "who 不表示所属",
+              "正确——whose 表示所属（她的儿子）",
+              "whom 是宾语形式",
+              "that 不表示所属"
             ],
             "es": [
               "su hijo",
@@ -2146,7 +2146,7 @@
           "id": "clauses_gen_q03",
           "q": {
             "en": "The company ___ CEO resigned is in trouble.",
-            "zh": "The company ___ CEO resigned is in trouble.",
+            "zh": "请选择正确的引导词：The company ___ CEO resigned is in trouble.",
             "es": "La empresa ___ CEO renuncio tiene problemas."
           },
           "a": "whose",
@@ -2172,7 +2172,7 @@
           },
           "t": {
             "en": "its CEO",
-            "zh": "its CEO",
+            "zh": "CEO 属于公司 → whose（its CEO）。",
             "es": "su CEO"
           },
           "ex": {
@@ -2183,10 +2183,10 @@
               "its CEO"
             ],
             "zh": [
-              "its CEO",
-              "its CEO",
-              "its CEO",
-              "its CEO"
+              "who 指人不指公司",
+              "正确——whose 表示所属（其首席执行官）",
+              "which 不表所属",
+              "that 不表所属"
             ],
             "es": [
               "su CEO",
@@ -2200,7 +2200,7 @@
           "id": "clauses_gen_q04",
           "q": {
             "en": "The tree ___ branches fell was very old.",
-            "zh": "The tree ___ branches fell was very old.",
+            "zh": "请选择正确的引导词：The tree ___ branches fell was very old.",
             "es": "El arbol ___ ramas cayeron era muy viejo."
           },
           "a": "whose",
@@ -2226,7 +2226,7 @@
           },
           "t": {
             "en": "its branches",
-            "zh": "its branches",
+            "zh": "branches 属于树 → whose（its branches）。",
             "es": "sus ramas"
           },
           "ex": {
@@ -2237,10 +2237,10 @@
               "its branches"
             ],
             "zh": [
-              "its branches",
-              "its branches",
-              "its branches",
-              "its branches"
+              "who 指人",
+              "正确——whose 表示所属（它的树枝）",
+              "which 不表所属",
+              "that 不表所属"
             ],
             "es": [
               "sus ramas",
@@ -2254,7 +2254,7 @@
           "id": "clauses_gen_q05",
           "q": {
             "en": "She adopted a dog ___ owner had passed away.",
-            "zh": "She adopted a dog ___ owner had passed away.",
+            "zh": "请选择正确的引导词：She adopted a dog ___ owner had passed away.",
             "es": "Adopto un perro ___ dueno habia fallecido."
           },
           "a": "whose",
@@ -2280,7 +2280,7 @@
           },
           "t": {
             "en": "its owner",
-            "zh": "its owner",
+            "zh": "owner 属于狗 → whose（its owner）。",
             "es": "su dueno"
           },
           "ex": {
@@ -2291,10 +2291,10 @@
               "its owner"
             ],
             "zh": [
-              "its owner",
-              "its owner",
-              "its owner",
-              "its owner"
+              "who 指人",
+              "正确——whose 表示所属（它的主人）",
+              "which 不表所属",
+              "that 不表所属"
             ],
             "es": [
               "su dueno",
@@ -2308,7 +2308,7 @@
           "id": "clauses_gen_q06",
           "q": {
             "en": "That is the writer ___ books I love.",
-            "zh": "That is the writer ___ books I love.",
+            "zh": "请选择正确的引导词：That is the writer ___ books I love.",
             "es": "Ese es el escritor ___ libros adoro."
           },
           "a": "whose",
@@ -2334,7 +2334,7 @@
           },
           "t": {
             "en": "his books",
-            "zh": "his books",
+            "zh": "books 属于作家 → whose（his books）。",
             "es": "sus libros"
           },
           "ex": {
@@ -2345,10 +2345,10 @@
               "his books"
             ],
             "zh": [
-              "his books",
-              "his books",
-              "his books",
-              "his books"
+              "who 不表示所属",
+              "正确——whose 表示所属（他的书）",
+              "whom 是宾语形式",
+              "which 指物不表所属"
             ],
             "es": [
               "sus libros",
@@ -2362,7 +2362,7 @@
           "id": "clauses_gen_q07",
           "q": {
             "en": "Fix: The woman who her car was stolen. who her = ?",
-            "zh": "Fix: The woman who her car was stolen. who her = ?",
+            "zh": "修改句子：The woman who her car was stolen. who her = ?",
             "es": "Corrige: The woman who her car... who her = ?"
           },
           "a": "whose",
@@ -2388,7 +2388,7 @@
           },
           "t": {
             "en": "whose = who + her",
-            "zh": "whose = who + her",
+            "zh": "whose 相当于 who + her，表示所属。",
             "es": "whose = who + her"
           },
           "ex": {
@@ -2399,10 +2399,10 @@
               "whose = who + her"
             ],
             "zh": [
-              "whose = who + her",
-              "whose = who + her",
-              "whose = who + her",
-              "whose = who + her"
+              "who 不含 her 的含义",
+              "正确——whose = who + her（他的/她的）",
+              "whom 是宾语形式",
+              "which 指物"
             ],
             "es": [
               "whose = who + her",
@@ -2419,7 +2419,7 @@
       "id": "clauses_rest",
       "name": {
         "en": "Restrictive vs Non-restrictive",
-        "zh": "Restrictive vs Non-restrictive",
+        "zh": "限定与非限定",
         "es": "Restrictive vs Non-restrictive"
       },
       "s": {
@@ -2438,7 +2438,7 @@
           "id": "clauses_rest_q01",
           "q": {
             "en": "The students who passed celebrated. (only some) comma?",
-            "zh": "The students who passed celebrated. (only some) comma?",
+            "zh": "The students who passed celebrated.（只有部分学生）要加逗号吗？",
             "es": "The students who passed celebrated. (solo algunos) coma?"
           },
           "a": "No comma",
@@ -2448,8 +2448,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2458,7 +2458,7 @@
           },
           "t": {
             "en": "Restrictive = no comma",
-            "zh": "Restrictive = no comma",
+            "zh": "限定性定语从句不加逗号。",
             "es": "Restrictiva = sin coma"
           },
           "ex": {
@@ -2467,8 +2467,8 @@
               "Restrictive = no comma"
             ],
             "zh": [
-              "Restrictive = no comma",
-              "Restrictive = no comma"
+              "正确——限定性从句不加逗号",
+              "非限定性才加逗号"
             ],
             "es": [
               "Restrictiva = sin coma",
@@ -2480,7 +2480,7 @@
           "id": "clauses_rest_q02",
           "q": {
             "en": "The students, who passed, celebrated. (all) comma?",
-            "zh": "The students, who passed, celebrated. (all) comma?",
+            "zh": "The students, who passed, celebrated.（所有学生）要加逗号吗？",
             "es": "The students, who passed, celebrated. (todos) coma?"
           },
           "a": "Comma",
@@ -2490,8 +2490,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2500,7 +2500,7 @@
           },
           "t": {
             "en": "Non-restrictive = comma",
-            "zh": "Non-restrictive = comma",
+            "zh": "非限定性定语从句加逗号。",
             "es": "No restrictiva = coma"
           },
           "ex": {
@@ -2509,8 +2509,8 @@
               "Non-restrictive = comma"
             ],
             "zh": [
-              "Non-restrictive = comma",
-              "Non-restrictive = comma"
+              "限定性才不加逗号",
+              "正确——非限定性从句加逗号"
             ],
             "es": [
               "No restrictiva = coma",
@@ -2522,7 +2522,7 @@
           "id": "clauses_rest_q03",
           "q": {
             "en": "My brother who lives in Tokyo is visiting. (one brother) comma?",
-            "zh": "My brother who lives in Tokyo is visiting. (one brother) comma?",
+            "zh": "My brother who lives in Tokyo is visiting.（只有一个哥哥）要加逗号吗？",
             "es": "My brother who lives in Tokyo... (un hermano) coma?"
           },
           "a": "No comma",
@@ -2532,8 +2532,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2542,7 +2542,7 @@
           },
           "t": {
             "en": "Only one = comma",
-            "zh": "Only one brother = comma",
+            "zh": "只有一个 → 加逗号（非限定）。",
             "es": "Solo uno = coma"
           },
           "ex": {
@@ -2551,8 +2551,8 @@
               "Only one = comma"
             ],
             "zh": [
-              "Only one brother = comma",
-              "Only one brother = comma"
+              "唯一的人不需要限定，应加逗号",
+              "正确——只有一个哥哥时加逗号"
             ],
             "es": [
               "Solo uno = coma",
@@ -2564,7 +2564,7 @@
           "id": "clauses_rest_q04",
           "q": {
             "en": "The car which is parked outside is mine. (several outside) comma?",
-            "zh": "The car which is parked outside is mine. (several outside) comma?",
+            "zh": "The car which is parked outside is mine.（外面有几辆车）要加逗号吗？",
             "es": "The car which is parked... (varios) coma?"
           },
           "a": "No comma",
@@ -2574,8 +2574,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2584,7 +2584,7 @@
           },
           "t": {
             "en": "Need to specify = no comma",
-            "zh": "Need to specify which = no comma",
+            "zh": "需要限定是哪辆车 → 不加逗号。",
             "es": "Hay que especificar = sin coma"
           },
           "ex": {
@@ -2593,8 +2593,8 @@
               "Need to specify = no comma"
             ],
             "zh": [
-              "Need to specify which = no comma",
-              "Need to specify which = no comma"
+              "正确——需要限定则不加逗号",
+              "不加逗号才表示限定"
             ],
             "es": [
               "Hay que especificar = sin coma",
@@ -2606,7 +2606,7 @@
           "id": "clauses_rest_q05",
           "q": {
             "en": "The managers who attended agreed. means?",
-            "zh": "The managers who attended agreed. means?",
+            "zh": "The managers who attended agreed. 意思是什么？",
             "es": "The managers who attended agreed. significa?"
           },
           "a": "Only those who attended",
@@ -2616,8 +2616,8 @@
               "Only those who attended"
             ],
             "zh": [
-              "All attended",
-              "Only those who attended"
+              "所有人都参加了",
+              "只有参加的人"
             ],
             "es": [
               "All attended",
@@ -2626,7 +2626,7 @@
           },
           "t": {
             "en": "No comma = only some",
-            "zh": "No comma = only some",
+            "zh": "不加逗号 = 只有部分人。",
             "es": "Sin coma = solo algunos"
           },
           "ex": {
@@ -2635,8 +2635,8 @@
               "No comma = only some"
             ],
             "zh": [
-              "No comma = only some",
-              "No comma = only some"
+              "加了逗号才是所有人",
+              "正确——不加逗号表示只有部分"
             ],
             "es": [
               "Sin coma = solo algunos",
@@ -2648,7 +2648,7 @@
           "id": "clauses_rest_q06",
           "q": {
             "en": "The managers, who attended, agreed. means?",
-            "zh": "The managers, who attended, agreed. means?",
+            "zh": "The managers, who attended, agreed. 意思是什么？",
             "es": "The managers, who attended, agreed. significa?"
           },
           "a": "All attended",
@@ -2658,8 +2658,8 @@
               "Only those who attended"
             ],
             "zh": [
-              "All attended",
-              "Only those who attended"
+              "所有人都参加了",
+              "只有参加的人"
             ],
             "es": [
               "All attended",
@@ -2668,7 +2668,7 @@
           },
           "t": {
             "en": "Comma = all attended",
-            "zh": "Comma = all attended",
+            "zh": "加逗号 = 所有人都参加了。",
             "es": "Con coma = todos"
           },
           "ex": {
@@ -2677,8 +2677,8 @@
               "Comma = all attended"
             ],
             "zh": [
-              "Comma = all attended",
-              "Comma = all attended"
+              "正确——加逗号表示所有人",
+              "不加逗号才表示部分"
             ],
             "es": [
               "Con coma = todos",
@@ -2690,7 +2690,7 @@
           "id": "clauses_rest_q07",
           "q": {
             "en": "Dr. Chen, who has 20 years exp., will lead. comma?",
-            "zh": "Dr. Chen, who has 20 years exp., will lead. comma?",
+            "zh": "Dr. Chen, who has 20 years exp., will lead. 要加逗号吗？",
             "es": "Dr. Chen, who has 20 years... coma?"
           },
           "a": "Comma",
@@ -2700,8 +2700,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2710,7 +2710,7 @@
           },
           "t": {
             "en": "Known person = comma",
-            "zh": "Already known person = comma",
+            "zh": "已知的人 → 加逗号（非限定）。",
             "es": "Persona conocida = coma"
           },
           "ex": {
@@ -2719,8 +2719,8 @@
               "Known person = comma"
             ],
             "zh": [
-              "Already known person = comma",
-              "Already known person = comma"
+              "已知的人不需要限定",
+              "正确——专有名词加逗号"
             ],
             "es": [
               "Persona conocida = coma",
@@ -2732,7 +2732,7 @@
           "id": "clauses_rest_q08",
           "q": {
             "en": "A doctor who has 20 years exp. will lead. comma?",
-            "zh": "A doctor who has 20 years exp. will lead. comma?",
+            "zh": "A doctor who has 20 years exp. will lead. 要加逗号吗？",
             "es": "A doctor who has 20 years... coma?"
           },
           "a": "No comma",
@@ -2742,8 +2742,8 @@
               "Comma"
             ],
             "zh": [
-              "No comma",
-              "Comma"
+              "不加逗号",
+              "加逗号"
             ],
             "es": [
               "No comma",
@@ -2752,7 +2752,7 @@
           },
           "t": {
             "en": "Need to specify = no comma",
-            "zh": "Need to specify which = no comma",
+            "zh": "需要限定是哪位医生 → 不加逗号。",
             "es": "Hay que especificar = sin coma"
           },
           "ex": {
@@ -2761,8 +2761,8 @@
               "Need to specify = no comma"
             ],
             "zh": [
-              "Need to specify which = no comma",
-              "Need to specify which = no comma"
+              "正确——需要限定则不加逗号",
+              "只有非限定才加逗号"
             ],
             "es": [
               "Hay que especificar = sin coma",
@@ -2777,7 +2777,7 @@
       "id": "clauses_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -2796,7 +2796,7 @@
           "id": "clauses_prod_q01",
           "q": {
             "en": "Combine: A customer called. She ordered yesterday.",
-            "zh": "Combine: A customer called. She ordered yesterday.",
+            "zh": "合并句子：A customer called. She ordered yesterday.",
             "es": "Combina: A customer called. She ordered yesterday."
           },
           "a": "The customer who ordered yesterday called.",
@@ -2819,7 +2819,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "用 who 连接：The customer who ordered yesterday called.",
             "es": ""
           },
           "ex": {
@@ -2829,9 +2829,9 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              ""
+              "正确——who 引导定语从句连接两个句子",
+              "语序错误：called 应该在从句之后",
+              "两个句子不能用逗号直接拼接"
             ],
             "es": [
               "",
@@ -2844,7 +2844,7 @@
           "id": "clauses_prod_q02",
           "q": {
             "en": "Combine: I met a designer. She created our website.",
-            "zh": "Combine: I met a designer. She created our website.",
+            "zh": "合并句子：I met a designer. She created our website.",
             "es": "Combina: I met a designer. She created our website."
           },
           "a": "I met a designer who created our website.",
@@ -2867,7 +2867,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "用 who 连接：I met a designer who created our website.",
             "es": ""
           },
           "ex": {
@@ -2877,9 +2877,9 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              ""
+              "正确——who 引导定语从句",
+              "语序错误",
+              "缺少引导词"
             ],
             "es": [
               "",
@@ -2892,7 +2892,7 @@
           "id": "clauses_prod_q03",
           "q": {
             "en": "Combine: I found a book. It explains grammar.",
-            "zh": "Combine: I found a book. It explains grammar.",
+            "zh": "合并句子：I found a book. It explains grammar.",
             "es": "Combina: I found a book. It explains grammar."
           },
           "a": [
@@ -2921,7 +2921,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "用 which/that 连接：I found a book which explains grammar.",
             "es": ""
           },
           "ex": {
@@ -2932,10 +2932,10 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "正确——which 指物",
+              "正确——that 指物",
+              "两个句子不能并列，需要引导词",
+              "语序错误"
             ],
             "es": [
               "",
@@ -2949,7 +2949,7 @@
           "id": "clauses_prod_q04",
           "q": {
             "en": "Combine: We visited a museum. It has ancient art.",
-            "zh": "Combine: We visited a museum. It has ancient art.",
+            "zh": "合并句子：We visited a museum. It has ancient art.",
             "es": "Combina: We visited a museum. It has ancient art."
           },
           "a": [
@@ -2978,7 +2978,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "用 that/which 连接：We visited a museum that has ancient art.",
             "es": ""
           },
           "ex": {
@@ -2989,10 +2989,10 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "正确——that 指物",
+              "正确——which 指物",
+              "需要引导词，不能直接并列",
+              "语序错误"
             ],
             "es": [
               "",
@@ -3006,7 +3006,7 @@
           "id": "clauses_prod_q05",
           "q": {
             "en": "That was the summer. We traveled to Japan then.",
-            "zh": "That was the summer. We traveled to Japan then.",
+            "zh": "合并句子：That was the summer. We traveled to Japan then.",
             "es": "That was the summer. We traveled to Japan then."
           },
           "a": [
@@ -3032,7 +3032,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "用 when 连接时间：That was the summer when we traveled to Japan.",
             "es": ""
           },
           "ex": {
@@ -3042,9 +3042,9 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              ""
+              "正确——when 引导时间从句",
+              "that 也可用于时间",
+              "when 应放在从句开头"
             ],
             "es": [
               "",
@@ -3057,7 +3057,7 @@
           "id": "clauses_prod_q06",
           "q": {
             "en": "Reorder: The package arrived today that I ordered.",
-            "zh": "Reorder: The package arrived today that I ordered.",
+            "zh": "重新排列：The package arrived today that I ordered.",
             "es": "Reordena: The package arrived today that I ordered."
           },
           "a": "The package that I ordered arrived today.",
@@ -3080,7 +3080,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "从句紧跟名词：The package that I ordered arrived today.",
             "es": ""
           },
           "ex": {
@@ -3090,9 +3090,9 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              ""
+              "正确——that 从句紧跟 package",
+              "that 从句应紧跟先行词",
+              "语序错误"
             ],
             "es": [
               "",
@@ -3105,7 +3105,7 @@
           "id": "clauses_prod_q07",
           "q": {
             "en": "Fix: This is the hotel where I recommended it.",
-            "zh": "Fix: This is the hotel where I recommended it.",
+            "zh": "修改句子：This is the hotel where I recommended it.",
             "es": "Corrige: This is the hotel where I recommended it."
           },
           "a": [
@@ -3134,7 +3134,7 @@
           },
           "t": {
             "en": "",
-            "zh": "",
+            "zh": "去掉多余的 it，用 that/which：This is the hotel that I recommended.",
             "es": ""
           },
           "ex": {
@@ -3145,10 +3145,10 @@
               ""
             ],
             "zh": [
-              "",
-              "",
-              "",
-              ""
+              "正确——去掉 it 并用 that",
+              "正确——which 也可以",
+              "where 表示地点，不用于宾语",
+              "it 多余，应删除"
             ],
             "es": [
               "",

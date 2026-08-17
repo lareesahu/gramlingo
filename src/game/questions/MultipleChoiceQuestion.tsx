@@ -36,7 +36,6 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
   const isEs = language === "es";
   const options = (isZh && question.oZh) || (isEs && question.oEs) || question.o;
   const questionText = (isZh && question.qZh) || (isEs && question.qEs) || question.q;
-  const correctAnswers = Array.isArray(question.a) ? question.a : [question.a || ""];
 
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -44,7 +43,12 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
   const [resultSent, setResultSent] = useState(false);
 
   const selectedText = selectedOption !== null ? options[selectedOption] : "";
-  const isCorrect = answerMatches(selectedText, correctAnswers);
+  // Grade by OPTION INDEX derived from the ENGLISH option array, not by the
+  // displayed (possibly translated) string. This keeps grading correct in any
+  // language: the index is language-independent even when o.zh/o.es differ.
+  const correctAnswers = Array.isArray(question.a) ? question.a : [question.a || ""];
+  const correctIndices = (question.o || []).map((opt, i) => answerMatches(opt, correctAnswers) ? i : -1).filter(i => i >= 0);
+  const isCorrect = selectedOption !== null && correctIndices.includes(selectedOption);
 
   const getExplanation = (optIndex: number): string => {
     const tip = isZh ? question.tZh : isEs ? (question as any).tEs : question.t;
@@ -120,7 +124,7 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
           if (!submitted) {
             if (i === selectedOption) cls += " option-btn--selected";
           } else {
-            if (answerMatches(opt, correctAnswers)) {
+            if (correctIndices.includes(i)) {
               cls += " option-btn--correct";
             } else if (i === selectedOption) {
               cls += " option-btn--wrong";
@@ -144,7 +148,7 @@ export function MultipleChoiceQuestionComponent({ question, language, onFirstRes
       </div>
 
       {submitted && revealedOption !== null && (
-        <div className={`feedback ${answerMatches(options[revealedOption] ?? "", correctAnswers) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
+        <div className={`feedback ${correctIndices.includes(revealedOption) ? "feedback--correct" : "feedback--wrong"} animate-slide-up`}>
           <div className="feedback-label">
             {revealedOption === selectedOption
               ? (isZh ? "你的答案" : isEs ? "Tu respuesta" : "Your answer")

@@ -31,7 +31,7 @@ describe('Learning path', () => {
 
     await user.click(screen.getByRole('button', { name: /Relative Clauses: Lesson plan/ }));
 
-    expect(await screen.findByText('Identify Relative Clauses')).toBeInTheDocument();
+    expect(await screen.findByText(/Identify Relative Clauses/)).toBeInTheDocument();
     expect(document.querySelector('.mm-overlay')).toBeInTheDocument();
     expect(document.querySelector('.mm-modal')).toBeInTheDocument();
   });
