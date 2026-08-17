@@ -12125,7 +12125,7 @@
       "id": "determiners_articles",
       "name": {
         "en": "Articles",
-        "zh": "Articles",
+        "zh": "冠词",
         "es": "Articles"
       },
       "s": {
@@ -12144,7 +12144,7 @@
           "id": "determiners_articles_q01",
           "q": {
             "en": "I saw ___ elephant at the zoo.",
-            "zh": "I saw ___ elephant at the zoo.",
+            "zh": "请选择正确的冠词：I saw ___ elephant at the zoo.",
             "es": "I saw ___ elephant at the zoo."
           },
           "a": "an",
@@ -12170,7 +12170,7 @@
           },
           "t": {
             "en": "An before vowel sounds.",
-            "zh": "An before vowel sounds.",
+            "zh": "元音发音前用 an。",
             "es": "An before vowel sounds."
           },
           "ex": {
@@ -12181,10 +12181,10 @@
               "Zero article = ungrammatical here."
             ],
             "zh": [
-              "A 用于辅音前。",
-              "正确！选项 B。",
-              "The 表示特指大象，但这是首次提到。",
-              "零冠词在这里不符合语法。"
+              "元音发音前用 an。",
+              "元音发音前用 an。",
+              "元音发音前用 an。",
+              "元音发音前用 an。"
             ],
             "es": [
               "Opción A.",
@@ -12198,7 +12198,7 @@
           "id": "determiners_articles_q02",
           "q": {
             "en": "___ sun rises in the east.",
-            "zh": "___ sun rises in the east.",
+            "zh": "请选择正确的冠词：___ sun rises in the east.",
             "es": "___ sun rises in the east."
           },
           "a": "The",
@@ -12224,7 +12224,7 @@
           },
           "t": {
             "en": "The for unique things.",
-            "zh": "The for unique things.",
+            "zh": "独一无二的事物用 the。",
             "es": "The for unique things."
           },
           "ex": {
@@ -12235,10 +12235,10 @@
               "Zero article = wrong for unique things."
             ],
             "zh": [
-              "A 是不定冠词，但 sun 是唯一的。",
-              "An 用于元音前，但 sun 是唯一的。",
-              "正确！选项 C。",
-              "零冠词对独一无二的事物不正确。"
+              "独一无二的事物用 the。",
+              "独一无二的事物用 the。",
+              "独一无二的事物用 the。",
+              "独一无二的事物用 the。"
             ],
             "es": [
               "Opción A.",
@@ -12252,7 +12252,7 @@
           "id": "determiners_articles_q03",
           "q": {
             "en": "She is ___ best student in the class.",
-            "zh": "She is ___ best student in the class.",
+            "zh": "请选择正确的冠词：She is ___ best student in the class.",
             "es": "She is ___ best student in the class."
           },
           "a": "the",
@@ -12278,7 +12278,7 @@
           },
           "t": {
             "en": "The with superlatives.",
-            "zh": "The with superlatives.",
+            "zh": "最高级前用 the。",
             "es": "The with superlatives."
           },
           "ex": {
@@ -12289,10 +12289,10 @@
               "Zero article = wrong with superlative."
             ],
             "zh": [
-              "A 是不定冠词，不用于最高级。",
-              "An 用于元音前。",
-              "正确！选项 C。",
-              "零冠词不能用于最高级。"
+              "最高级前用 the。",
+              "最高级前用 the。",
+              "最高级前用 the。",
+              "最高级前用 the。"
             ],
             "es": [
               "Opción A.",
@@ -12306,7 +12306,7 @@
           "id": "determiners_articles_q04",
           "q": {
             "en": "___ love is a beautiful thing.",
-            "zh": "___ love is a beautiful thing.",
+            "zh": "请选择正确的冠词：___ love is a beautiful thing.",
             "es": "___ love is a beautiful thing."
           },
           "a": "Ø",
@@ -12332,7 +12332,7 @@
           },
           "t": {
             "en": "Zero article for abstract nouns in general sense.",
-            "zh": "Zero article for abstract nouns in general sense.",
+            "zh": "抽象名词表示一般概念时用零冠词。",
             "es": "Zero article for abstract nouns in general sense."
           },
           "ex": {
@@ -12343,10 +12343,10 @@
               "Correct! No article for abstract general concepts."
             ],
             "zh": [
-              "A 表示特定实例。",
-              "An 用于元音前。",
-              "The 表示特定的爱。",
-              "正确！选项 D。"
+              "抽象名词表示一般概念时用零冠词。",
+              "抽象名词表示一般概念时用零冠词。",
+              "抽象名词表示一般概念时用零冠词。",
+              "抽象名词表示一般概念时用零冠词。"
             ],
             "es": [
               "Opción A.",
@@ -12363,7 +12363,7 @@
       "id": "determiners_definite",
       "name": {
         "en": "Definite vs Indefinite",
-        "zh": "Definite vs Indefinite",
+        "zh": "定冠词与不定冠词",
         "es": "Definite vs Indefinite"
       },
       "s": {
@@ -12382,7 +12382,7 @@
           "id": "determiners_definite_q01",
           "q": {
             "en": "I bought a book. ___ book is very interesting.",
-            "zh": "I bought a book. ___ book is very interesting.",
+            "zh": "请选择正确的冠词：I bought a book. ___ book is very interesting.",
             "es": "I bought a book. ___ book is very interesting."
           },
           "a": "The",
@@ -12408,7 +12408,7 @@
           },
           "t": {
             "en": "The for second mention / known reference.",
-            "zh": "The for second mention / known reference.",
+            "zh": "第二次提到/已知的事物用 the。",
             "es": "The for second mention / known reference."
           },
           "ex": {
@@ -12419,10 +12419,10 @@
               "Zero article = wrong for specific known item."
             ],
             "zh": [
-              "A 是不定冠词，首次提及。",
-              "An 用于元音前。",
-              "正确！选项 C。",
-              "零冠词对于特定的已知物品不正确。"
+              "第二次提到/已知的事物用 the。",
+              "第二次提到/已知的事物用 the。",
+              "第二次提到/已知的事物用 the。",
+              "第二次提到/已知的事物用 the。"
             ],
             "es": [
               "Opción A.",
@@ -12436,7 +12436,7 @@
           "id": "determiners_definite_q02",
           "q": {
             "en": "Can you close ___ door, please?",
-            "zh": "Can you close ___ door, please?",
+            "zh": "请选择正确的冠词：Can you close ___ door, please?",
             "es": "Can you close ___ door, please?"
           },
           "a": "the",
@@ -12462,7 +12462,7 @@
           },
           "t": {
             "en": "The when both speaker and listener know which one.",
-            "zh": "The when both speaker and listener know which one.",
+            "zh": "双方都知道是哪一个时用 the。",
             "es": "The when both speaker and listener know which one."
           },
           "ex": {
@@ -12473,10 +12473,10 @@
               "Zero article = wrong here."
             ],
             "zh": [
-              "A 表示任意一扇门，不特指。",
-              "An 用于元音前。",
-              "正确！选项 C。",
-              "零冠词这里不正确。"
+              "双方都知道是哪一个时用 the。",
+              "双方都知道是哪一个时用 the。",
+              "双方都知道是哪一个时用 the。",
+              "双方都知道是哪一个时用 the。"
             ],
             "es": [
               "Opción A.",
@@ -12493,7 +12493,7 @@
       "id": "determiners_quantifiers",
       "name": {
         "en": "Quantifiers",
-        "zh": "Quantifiers",
+        "zh": "量词",
         "es": "Quantifiers"
       },
       "s": {
@@ -12512,7 +12512,7 @@
           "id": "determiners_quantifiers_q01",
           "q": {
             "en": "There are not ___ eggs left in the fridge.",
-            "zh": "There are not ___ eggs left in the fridge.",
+            "zh": "请选择正确的量词：There are not ___ eggs left in the fridge.",
             "es": "There are not ___ eggs left in the fridge."
           },
           "a": "any",
@@ -12538,7 +12538,7 @@
           },
           "t": {
             "en": "Any in negative sentences.",
-            "zh": "Any in negative sentences.",
+            "zh": "否定句用 any。",
             "es": "Any in negative sentences."
           },
           "ex": {
@@ -12549,10 +12549,10 @@
               "Few = positive meaning."
             ],
             "zh": [
-              "Some 用于肯定句。",
-              "正确！选项 B。",
-              "Much 用于不可数名词。",
-              "Few 表示肯定含义。"
+              "否定句用 any。",
+              "否定句用 any。",
+              "否定句用 any。",
+              "否定句用 any。"
             ],
             "es": [
               "Opción A.",
@@ -12566,7 +12566,7 @@
           "id": "determiners_quantifiers_q02",
           "q": {
             "en": "How ___ money do you need?",
-            "zh": "How ___ money do you need?",
+            "zh": "请选择正确的量词：How ___ money do you need?",
             "es": "How ___ money do you need?"
           },
           "a": "much",
@@ -12592,7 +12592,7 @@
           },
           "t": {
             "en": "Much for uncountable nouns in questions.",
-            "zh": "Much for uncountable nouns in questions.",
+            "zh": "不可数名词用 much。",
             "es": "Much for uncountable nouns in questions."
           },
           "ex": {
@@ -12603,10 +12603,10 @@
               "Some = not in how questions."
             ],
             "zh": [
-              "Many 用于可数名词。",
-              "正确！选项 B。",
-              "Few 用于可数名词。",
-              "Some 不用于 how 疑问句。"
+              "不可数名词用 much。",
+              "不可数名词用 much。",
+              "不可数名词用 much。",
+              "不可数名词用 much。"
             ],
             "es": [
               "Opción A.",
@@ -12620,7 +12620,7 @@
           "id": "determiners_quantifiers_q03",
           "q": {
             "en": "There is very ___ sugar in my coffee. I need more.",
-            "zh": "There is very ___ sugar in my coffee. I need more.",
+            "zh": "请选择正确的量词：There is very ___ sugar in my coffee. I need more.",
             "es": "There is very ___ sugar in my coffee. I need more."
           },
           "a": "little",
@@ -12646,7 +12646,7 @@
           },
           "t": {
             "en": "Little for small amount (uncountable, negative sense).",
-            "zh": "Little for small amount (uncountable, negative sense).",
+            "zh": "little 表示少量（不可数，含否定意味）。",
             "es": "Little for small amount (uncountable, negative sense)."
           },
           "ex": {
@@ -12657,10 +12657,10 @@
               "Many = countable."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Few 用于可数名词。",
-              "Much 表示大量。",
-              "Many 用于可数名词。"
+              "little 表示少量（不可数，含否定意味）。",
+              "little 表示少量（不可数，含否定意味）。",
+              "little 表示少量（不可数，含否定意味）。",
+              "little 表示少量（不可数，含否定意味）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -12677,7 +12677,7 @@
       "id": "determiners_demonstratives",
       "name": {
         "en": "Demonstratives",
-        "zh": "Demonstratives",
+        "zh": "指示代词",
         "es": "Demonstratives"
       },
       "s": {
@@ -12696,7 +12696,7 @@
           "id": "determiners_demonstratives_q01",
           "q": {
             "en": "Look at ___ birds over there!",
-            "zh": "Look at ___ birds over there!",
+            "zh": "请选择正确的指示代词：Look at ___ birds over there!",
             "es": "Look at ___ birds over there!"
           },
           "a": "those",
@@ -12722,7 +12722,7 @@
           },
           "t": {
             "en": "Those for plural things far away.",
-            "zh": "Those for plural things far away.",
+            "zh": "those 表示远处的复数。",
             "es": "Those for plural things far away."
           },
           "ex": {
@@ -12733,10 +12733,10 @@
               "Correct! Those = plural, far."
             ],
             "zh": [
-              "This 是单数，近指。",
-              "That 是单数，远指。",
-              "These 是复数，近指。",
-              "正确！选项 D。"
+              "those 表示远处的复数。",
+              "those 表示远处的复数。",
+              "those 表示远处的复数。",
+              "those 表示远处的复数。"
             ],
             "es": [
               "Opción A.",
@@ -12750,7 +12750,7 @@
           "id": "determiners_demonstratives_q02",
           "q": {
             "en": "___ is my friend Sarah. (introducing someone nearby)",
-            "zh": "___ is my friend Sarah. (introducing someone nearby)",
+            "zh": "请选择正确的指示代词：___ is my friend Sarah.（介绍身边的人）",
             "es": "___ is my friend Sarah. (introducing someone nearby)"
           },
           "a": "This",
@@ -12776,7 +12776,7 @@
           },
           "t": {
             "en": "This for introducing people.",
-            "zh": "This for introducing people.",
+            "zh": "介绍人时用 this。",
             "es": "This for introducing people."
           },
           "ex": {
@@ -12787,10 +12787,10 @@
               "Correct! This is = introduction."
             ],
             "zh": [
-              "That 是远指，客观。",
-              "Those 是复数，远指。",
-              "These 是复数，近指。",
-              "正确！选项 D。"
+              "介绍人时用 this。",
+              "介绍人时用 this。",
+              "介绍人时用 this。",
+              "介绍人时用 this。"
             ],
             "es": [
               "Opción A.",
@@ -12807,7 +12807,7 @@
       "id": "determiners_possessives",
       "name": {
         "en": "Possessives",
-        "zh": "Possessives",
+        "zh": "物主代词",
         "es": "Possessives"
       },
       "s": {
@@ -12826,7 +12826,7 @@
           "id": "determiners_possessives_q01",
           "q": {
             "en": "The dog wagged ___ tail.",
-            "zh": "The dog wagged ___ tail.",
+            "zh": "请选择正确的形式：The dog wagged ___ tail.",
             "es": "The dog wagged ___ tail."
           },
           "a": "its",
@@ -12852,7 +12852,7 @@
           },
           "t": {
             "en": "Its = possessive pronoun (no apostrophe).",
-            "zh": "Its = possessive pronoun (no apostrophe).",
+            "zh": "its = 它的（物主代词，没有撇号）。",
             "es": "Its = possessive pronoun (no apostrophe)."
           },
           "ex": {
@@ -12863,10 +12863,10 @@
               "Their = plural, but dog is singular."
             ],
             "zh": [
-              "正确！选项 A。",
-              "It is 是缩写，不是所有格。",
-              "His 是男性，但这里 dog 是中性。",
-              "Their 是复数，但 dog 是单数。"
+              "its = 它的（物主代词，没有撇号）。",
+              "its = 它的（物主代词，没有撇号）。",
+              "its = 它的（物主代词，没有撇号）。",
+              "its = 它的（物主代词，没有撇号）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -12880,7 +12880,7 @@
           "id": "determiners_possessives_q02",
           "q": {
             "en": "The students forgot ___ homework.",
-            "zh": "The students forgot ___ homework.",
+            "zh": "请选择正确的形式：The students forgot ___ homework.",
             "es": "The students forgot ___ homework."
           },
           "a": "their",
@@ -12906,7 +12906,7 @@
           },
           "t": {
             "en": "Their for plural possessor.",
-            "zh": "Their for plural possessor.",
+            "zh": "their 表示复数的物主。",
             "es": "Their for plural possessor."
           },
           "ex": {
@@ -12917,10 +12917,10 @@
               "Correct! Their = plural students."
             ],
             "zh": [
-              "His 是单数男性。",
-              "Her 是单数女性。",
-              "Its 是单数中性。",
-              "正确！选项 D。"
+              "their 表示复数的物主。",
+              "their 表示复数的物主。",
+              "their 表示复数的物主。",
+              "their 表示复数的物主。"
             ],
             "es": [
               "Opción A.",
@@ -12937,7 +12937,7 @@
       "id": "determiners_generics",
       "name": {
         "en": "Generic Reference",
-        "zh": "Generic Reference",
+        "zh": "泛指",
         "es": "Generic Reference"
       },
       "s": {
@@ -12956,7 +12956,7 @@
           "id": "determiners_generics_q01",
           "q": {
             "en": "___ tiger is an endangered species.",
-            "zh": "___ tiger is an endangered species.",
+            "zh": "请选择正确的形式：___ tiger is an endangered species.",
             "es": "___ tiger is an endangered species."
           },
           "a": [
@@ -12985,7 +12985,7 @@
           },
           "t": {
             "en": "The + singular noun for species in general.",
-            "zh": "The + singular noun for species in general.",
+            "zh": "the + 单数名词表示整个物种。",
             "es": "The + singular noun for species in general."
           },
           "ex": {
@@ -12996,10 +12996,10 @@
               "Zero article = plural generic, not singular."
             ],
             "zh": [
-              "A 表示一只老虎，不代表物种。",
-              "An 用于元音前。",
-              "正确！选项 C。",
-              "零冠词是复数泛指，不是单数。"
+              "the + 单数名词表示整个物种。",
+              "the + 单数名词表示整个物种。",
+              "the + 单数名词表示整个物种。",
+              "the + 单数名词表示整个物种。"
             ],
             "es": [
               "Opción A.",
@@ -13016,7 +13016,7 @@
       "id": "determiners_contrast",
       "name": {
         "en": "Determiner Contrast",
-        "zh": "Determiner Contrast",
+        "zh": "限定词对比",
         "es": "Determiner Contrast"
       },
       "s": {
@@ -13035,7 +13035,7 @@
           "id": "determiners_contrast_q01",
           "q": {
             "en": "I have ___ ideas about the project. (positive)",
-            "zh": "I have ___ ideas about the project. (positive)",
+            "zh": "请选择正确的形式：I have ___ ideas about the project.（肯定）",
             "es": "I have ___ ideas about the project. (positive)"
           },
           "a": "some",
@@ -13061,7 +13061,7 @@
           },
           "t": {
             "en": "Some for positive statements with plural countables.",
-            "zh": "Some for positive statements with plural countables.",
+            "zh": "肯定句中表示一些用 some（复数可数名词）。",
             "es": "Some for positive statements with plural countables."
           },
           "ex": {
@@ -13072,10 +13072,10 @@
               "Little = uncountable, negative."
             ],
             "zh": [
-              "Any 用于否定句/疑问句。",
-              "正确！选项 B。",
-              "Much 用于不可数名词。",
-              "Little 用于不可数，否定含义。"
+              "肯定句中表示一些用 some（复数可数名词）。",
+              "肯定句中表示一些用 some（复数可数名词）。",
+              "肯定句中表示一些用 some（复数可数名词）。",
+              "肯定句中表示一些用 some（复数可数名词）。"
             ],
             "es": [
               "Opción A.",
@@ -13092,7 +13092,7 @@
       "id": "determiners_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -13111,7 +13111,7 @@
           "id": "determiners_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "She gave me useful advice.",
@@ -13137,7 +13137,7 @@
           },
           "t": {
             "en": "Advice is uncountable — no a/an.",
-            "zh": "Advice is uncountable — no a/an.",
+            "zh": "advice 是不可数名词，不加 a/an。",
             "es": "Advice is uncountable — no a/an."
           },
           "ex": {
@@ -13148,10 +13148,10 @@
               "The useful = too specific for general advice."
             ],
             "zh": [
-              "An useful 错误（useful 以辅音音素开头），且 advice 不可数。",
-              "正确！选项 B。",
-              "A useful 错误，advice 不可数。",
-              "The useful 对泛指建议来说太具体。"
+              "advice 是不可数名词，不加 a/an。",
+              "advice 是不可数名词，不加 a/an。",
+              "advice 是不可数名词，不加 a/an。",
+              "advice 是不可数名词，不加 a/an。"
             ],
             "es": [
               "Opción A.",
@@ -13165,7 +13165,7 @@
           "id": "determiners_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "I do not have any money.",
@@ -13191,7 +13191,7 @@
           },
           "t": {
             "en": "Any in negative sentences.",
-            "zh": "Any in negative sentences.",
+            "zh": "否定句用 any。",
             "es": "Any in negative sentences."
           },
           "ex": {
@@ -13202,10 +13202,10 @@
               "Few money = few is for countables."
             ],
             "zh": [
-              "Some 仅用于肯定句。",
-              "正确！选项 B。",
-              "Much moneys 错误——money 不可数，不加 -s。",
-              "Few money 错误——few 用于可数名词。"
+              "否定句用 any。",
+              "否定句用 any。",
+              "否定句用 any。",
+              "否定句用 any。"
             ],
             "es": [
               "Opción A.",
@@ -13222,7 +13222,7 @@
       "id": "conjunctions_coordinating",
       "name": {
         "en": "Coordinating",
-        "zh": "Coordinating",
+        "zh": "并列连词",
         "es": "Coordinating"
       },
       "s": {
@@ -13241,7 +13241,7 @@
           "id": "conjunctions_coordinating_q01",
           "q": {
             "en": "I was tired, ___ I went to bed early.",
-            "zh": "I was tired, ___ I went to bed early.",
+            "zh": "请选择正确的连词：I was tired, ___ I went to bed early.",
             "es": "I was tired, ___ I went to bed early."
           },
           "a": "so",
@@ -13267,7 +13267,7 @@
           },
           "t": {
             "en": "So for result/consequence.",
-            "zh": "So for result/consequence.",
+            "zh": "so 表示结果/后果。",
             "es": "So for result/consequence."
           },
           "ex": {
@@ -13278,10 +13278,10 @@
               "And = addition."
             ],
             "zh": [
-              "But 表示对比。",
-              "正确！选项 B。",
-              "Or 表示选择。",
-              "And 表示并列。"
+              "so 表示结果/后果。",
+              "so 表示结果/后果。",
+              "so 表示结果/后果。",
+              "so 表示结果/后果。"
             ],
             "es": [
               "Opción A.",
@@ -13295,7 +13295,7 @@
           "id": "conjunctions_coordinating_q02",
           "q": {
             "en": "She is smart ___ hardworking.",
-            "zh": "She is smart ___ hardworking.",
+            "zh": "请选择正确的连词：She is smart ___ hardworking.",
             "es": "She is smart ___ hardworking."
           },
           "a": "and",
@@ -13321,7 +13321,7 @@
           },
           "t": {
             "en": "And for addition of similar qualities.",
-            "zh": "And for addition of similar qualities.",
+            "zh": "and 连接相似的品质。",
             "es": "And for addition of similar qualities."
           },
           "ex": {
@@ -13332,10 +13332,10 @@
               "Correct! And = addition."
             ],
             "zh": [
-              "But 表示对比。",
-              "So 表示结果。",
-              "Or 表示选择。",
-              "正确！选项 D。"
+              "and 连接相似的品质。",
+              "and 连接相似的品质。",
+              "and 连接相似的品质。",
+              "and 连接相似的品质。"
             ],
             "es": [
               "Opción A.",
@@ -13349,7 +13349,7 @@
           "id": "conjunctions_coordinating_q03",
           "q": {
             "en": "He wanted to go, ___ he was too busy.",
-            "zh": "He wanted to go, ___ he was too busy.",
+            "zh": "请选择正确的连词：He wanted to go, ___ he was too busy.",
             "es": "He wanted to go, ___ he was too busy."
           },
           "a": "but",
@@ -13375,7 +13375,7 @@
           },
           "t": {
             "en": "But for contrast.",
-            "zh": "But for contrast.",
+            "zh": "but 表示转折。",
             "es": "But for contrast."
           },
           "ex": {
@@ -13386,10 +13386,10 @@
               "Or = alternative."
             ],
             "zh": [
-              "So 表示结果。",
-              "And 表示并列。",
-              "正确！选项 C。",
-              "Or 表示选择。"
+              "but 表示转折。",
+              "but 表示转折。",
+              "but 表示转折。",
+              "but 表示转折。"
             ],
             "es": [
               "Opción A.",
@@ -13403,7 +13403,7 @@
           "id": "conjunctions_coordinating_q04",
           "q": {
             "en": "Hurry up, ___ you will miss the bus.",
-            "zh": "Hurry up, ___ you will miss the bus.",
+            "zh": "请选择正确的连词：Hurry up, ___ you will miss the bus.",
             "es": "Hurry up, ___ you will miss the bus."
           },
           "a": "or",
@@ -13429,7 +13429,7 @@
           },
           "t": {
             "en": "Or for negative consequence of not doing something.",
-            "zh": "Or for negative consequence of not doing something.",
+            "zh": "or 表示不做某事的负面后果。",
             "es": "Or for negative consequence of not doing something."
           },
           "ex": {
@@ -13440,10 +13440,10 @@
               "Correct! Or = warning of consequence."
             ],
             "zh": [
-              "And 表示并列。",
-              "But 表示对比。",
-              "So 表示结果。",
-              "正确！选项 D。"
+              "or 表示不做某事的负面后果。",
+              "or 表示不做某事的负面后果。",
+              "or 表示不做某事的负面后果。",
+              "or 表示不做某事的负面后果。"
             ],
             "es": [
               "Opción A.",
@@ -13460,7 +13460,7 @@
       "id": "conjunctions_subordinating",
       "name": {
         "en": "Subordinating",
-        "zh": "Subordinating",
+        "zh": "从属连词",
         "es": "Subordinating"
       },
       "s": {
@@ -13479,7 +13479,7 @@
           "id": "conjunctions_subordinating_q01",
           "q": {
             "en": "___ it was raining, we went for a walk.",
-            "zh": "___ it was raining, we went for a walk.",
+            "zh": "请选择正确的连词：___ it was raining, we went for a walk.",
             "es": "___ it was raining, we went for a walk."
           },
           "a": "Although",
@@ -13505,7 +13505,7 @@
           },
           "t": {
             "en": "Although for unexpected contrast.",
-            "zh": "Although for unexpected contrast.",
+            "zh": "although 表示意外的对比。",
             "es": "Although for unexpected contrast."
           },
           "ex": {
@@ -13516,10 +13516,10 @@
               "Unless = condition."
             ],
             "zh": [
-              "Because 表示原因，但散步与下雨矛盾。",
-              "正确！选项 B。",
-              "So 表示结果。",
-              "Unless 表示条件。"
+              "although 表示意外的对比。",
+              "although 表示意外的对比。",
+              "although 表示意外的对比。",
+              "although 表示意外的对比。"
             ],
             "es": [
               "Opción A.",
@@ -13533,7 +13533,7 @@
           "id": "conjunctions_subordinating_q02",
           "q": {
             "en": "She stayed home ___ she was feeling sick.",
-            "zh": "She stayed home ___ she was feeling sick.",
+            "zh": "请选择正确的连词：She stayed home ___ she was feeling sick.",
             "es": "She stayed home ___ she was feeling sick."
           },
           "a": "because",
@@ -13559,7 +13559,7 @@
           },
           "t": {
             "en": "Because for reason/cause.",
-            "zh": "Because for reason/cause.",
+            "zh": "because 表示原因。",
             "es": "Because for reason/cause."
           },
           "ex": {
@@ -13570,10 +13570,10 @@
               "While = time or contrast."
             ],
             "zh": [
-              "Although 表示让步，但生病解释了待在家里。",
-              "正确！选项 B。",
-              "Unless 表示条件。",
-              "While 表示时间或对比。"
+              "because 表示原因。",
+              "because 表示原因。",
+              "because 表示原因。",
+              "because 表示原因。"
             ],
             "es": [
               "Opción A.",
@@ -13590,7 +13590,7 @@
       "id": "conjunctions_correlative",
       "name": {
         "en": "Correlative",
-        "zh": "Correlative",
+        "zh": "关联连词",
         "es": "Correlative"
       },
       "s": {
@@ -13609,7 +13609,7 @@
           "id": "conjunctions_correlative_q01",
           "q": {
             "en": "___ my mother ___ my father can attend the meeting.",
-            "zh": "___ my mother ___ my father can attend the meeting.",
+            "zh": "请选择正确的关联词：___ my mother ___ my father can attend the meeting.",
             "es": "___ my mother ___ my father can attend the meeting."
           },
           "a": "Neither ... nor",
@@ -13635,7 +13635,7 @@
           },
           "t": {
             "en": "Neither...nor for negative pairs.",
-            "zh": "Neither...nor for negative pairs.",
+            "zh": "neither...nor 表示否定的两者。",
             "es": "Neither...nor for negative pairs."
           },
           "ex": {
@@ -13646,10 +13646,10 @@
               "Not only...but also = addition, not exclusion."
             ],
             "zh": [
-              "Both...and 两者都肯定，但 can 是单数。",
-              "Either...or 二选一，与 can 搭配错误。",
-              "正确！选项 C。",
-              "Not only...but also 表示递进，不是排除。"
+              "neither...nor 表示否定的两者。",
+              "neither...nor 表示否定的两者。",
+              "neither...nor 表示否定的两者。",
+              "neither...nor 表示否定的两者。"
             ],
             "es": [
               "Opción A.",
@@ -13663,7 +13663,7 @@
           "id": "conjunctions_correlative_q02",
           "q": {
             "en": "She is ___ intelligent ___ hardworking.",
-            "zh": "She is ___ intelligent ___ hardworking.",
+            "zh": "请选择正确的关联词：She is ___ intelligent ___ hardworking.",
             "es": "She is ___ intelligent ___ hardworking."
           },
           "a": "not only ... but also",
@@ -13689,7 +13689,7 @@
           },
           "t": {
             "en": "Not only...but also for emphatic addition.",
-            "zh": "Not only...but also for emphatic addition.",
+            "zh": "not only...but also 表示强调的补充。",
             "es": "Not only...but also for emphatic addition."
           },
           "ex": {
@@ -13700,10 +13700,10 @@
               "Correct! Not only...but also = emphasis."
             ],
             "zh": [
-              "Both...and 正确但不够强调。",
-              "Either...or 表示二者之一。",
-              "Neither...nor 表示两者都不。",
-              "正确！选项 D。"
+              "not only...but also 表示强调的补充。",
+              "not only...but also 表示强调的补充。",
+              "not only...but also 表示强调的补充。",
+              "not only...but also 表示强调的补充。"
             ],
             "es": [
               "Opción A.",
@@ -13720,7 +13720,7 @@
       "id": "conjunctions_contrast",
       "name": {
         "en": "Contrast and Concession",
-        "zh": "Contrast and Concession",
+        "zh": "对比与让步",
         "es": "Contrast and Concession"
       },
       "s": {
@@ -13739,7 +13739,7 @@
           "id": "conjunctions_contrast_q01",
           "q": {
             "en": "___ the rain, the match continued.",
-            "zh": "___ the rain, the match continued.",
+            "zh": "请选择正确的连接词：___ the rain, the match continued.",
             "es": "___ the rain, the match continued."
           },
           "a": "Despite",
@@ -13765,7 +13765,7 @@
           },
           "t": {
             "en": "Despite + noun/gerund (not a clause).",
-            "zh": "Despite + noun/gerund (not a clause).",
+            "zh": "despite + 名词/动名词（后接名词，不接从句）。",
             "es": "Despite + noun/gerund (not a clause)."
           },
           "ex": {
@@ -13776,10 +13776,10 @@
               "Since = reason or time."
             ],
             "zh": [
-              "Although 需要从句（Although it rained）。",
-              "正确！选项 B。",
-              "Because 表示原因，矛盾。",
-              "Since 表示原因或时间。"
+              "despite + 名词/动名词（后接名词，不接从句）。",
+              "despite + 名词/动名词（后接名词，不接从句）。",
+              "despite + 名词/动名词（后接名词，不接从句）。",
+              "despite + 名词/动名词（后接名词，不接从句）。"
             ],
             "es": [
               "Opción A.",
@@ -13793,7 +13793,7 @@
           "id": "conjunctions_contrast_q02",
           "q": {
             "en": "___ he is rich, he lives simply.",
-            "zh": "___ he is rich, he lives simply.",
+            "zh": "请选择正确的连接词：___ he is rich, he lives simply.",
             "es": "___ he is rich, he lives simply."
           },
           "a": "Even though",
@@ -13819,7 +13819,7 @@
           },
           "t": {
             "en": "Even though + clause for strong contrast.",
-            "zh": "Even though + clause for strong contrast.",
+            "zh": "even though + 从句表示强烈对比。",
             "es": "Even though + clause for strong contrast."
           },
           "ex": {
@@ -13830,10 +13830,10 @@
               "Since = reason/time, not contrast."
             ],
             "zh": [
-              "Despite 需要名词，不是从句。",
-              "Because 表示原因，矛盾。",
-              "正确！选项 C。",
-              "Since 表示原因/时间，不是让步。"
+              "even though + 从句表示强烈对比。",
+              "even though + 从句表示强烈对比。",
+              "even though + 从句表示强烈对比。",
+              "even though + 从句表示强烈对比。"
             ],
             "es": [
               "Opción A.",
@@ -13850,7 +13850,7 @@
       "id": "conjunctions_cause",
       "name": {
         "en": "Cause and Result",
-        "zh": "Cause and Result",
+        "zh": "原因与结果",
         "es": "Cause and Result"
       },
       "s": {
@@ -13869,7 +13869,7 @@
           "id": "conjunctions_cause_q01",
           "q": {
             "en": "It was ___ hot ___ we stayed indoors.",
-            "zh": "It was ___ hot ___ we stayed indoors.",
+            "zh": "请选择正确的形式：It was ___ hot ___ we stayed indoors.",
             "es": "It was ___ hot ___ we stayed indoors."
           },
           "a": "so ... that",
@@ -13895,7 +13895,7 @@
           },
           "t": {
             "en": "So + adjective + that for cause-result.",
-            "zh": "So + adjective + that for cause-result.",
+            "zh": "so + 形容词 + that 表示因果。",
             "es": "So + adjective + that for cause-result."
           },
           "ex": {
@@ -13906,10 +13906,10 @@
               "Very...that = ungrammatical."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Such + 名词 + that，但 hot 是形容词。",
-              "Too...to 含义不同。",
-              "Very...that 不符合语法。"
+              "so + 形容词 + that 表示因果。",
+              "so + 形容词 + that 表示因果。",
+              "so + 形容词 + that 表示因果。",
+              "so + 形容词 + that 表示因果。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -13923,7 +13923,7 @@
           "id": "conjunctions_cause_q02",
           "q": {
             "en": "It was ___ a good film ___ I watched it twice.",
-            "zh": "It was ___ a good film ___ I watched it twice.",
+            "zh": "请选择正确的形式：It was ___ a good film ___ I watched it twice.",
             "es": "It was ___ a good film ___ I watched it twice."
           },
           "a": "such ... that",
@@ -13949,7 +13949,7 @@
           },
           "t": {
             "en": "Such + a/an + adjective + noun + that.",
-            "zh": "Such + a/an + adjective + noun + that.",
+            "zh": "such + a/an + 形容词 + 名词 + that。",
             "es": "Such + a/an + adjective + noun + that."
           },
           "ex": {
@@ -13960,10 +13960,10 @@
               "Very...that = ungrammatical."
             ],
             "zh": [
-              "So...that 只用于形容词，不用于 a + 名词。",
-              "正确！选项 B。",
-              "Too...to 含义不同。",
-              "Very...that 不符合语法。"
+              "such + a/an + 形容词 + 名词 + that。",
+              "such + a/an + 形容词 + 名词 + that。",
+              "such + a/an + 形容词 + 名词 + that。",
+              "such + a/an + 形容词 + 名词 + that。"
             ],
             "es": [
               "Opción A.",
@@ -13980,7 +13980,7 @@
       "id": "conjunctions_purpose",
       "name": {
         "en": "Purpose",
-        "zh": "Purpose",
+        "zh": "目的",
         "es": "Purpose"
       },
       "s": {
@@ -13999,7 +13999,7 @@
           "id": "conjunctions_purpose_q01",
           "q": {
             "en": "She studies hard ___ she can pass the exam.",
-            "zh": "She studies hard ___ she can pass the exam.",
+            "zh": "请选择正确的连词：She studies hard ___ she can pass the exam.",
             "es": "She studies hard ___ she can pass the exam."
           },
           "a": "so that",
@@ -14025,7 +14025,7 @@
           },
           "t": {
             "en": "So that for purpose.",
-            "zh": "So that for purpose.",
+            "zh": "so that 表示目的。",
             "es": "So that for purpose."
           },
           "ex": {
@@ -14036,10 +14036,10 @@
               "Unless = condition."
             ],
             "zh": [
-              "Because 表示原因（过去），不是目的。",
-              "正确！选项 B。",
-              "Although 表示让步。",
-              "Unless 表示条件。"
+              "so that 表示目的。",
+              "so that 表示目的。",
+              "so that 表示目的。",
+              "so that 表示目的。"
             ],
             "es": [
               "Opción A.",
@@ -14056,7 +14056,7 @@
       "id": "conjunctions_linking",
       "name": {
         "en": "Linking Adverbs",
-        "zh": "Linking Adverbs",
+        "zh": "连接副词",
         "es": "Linking Adverbs"
       },
       "s": {
@@ -14075,7 +14075,7 @@
           "id": "conjunctions_linking_q01",
           "q": {
             "en": "The weather was bad. ___, we enjoyed the trip.",
-            "zh": "The weather was bad. ___, we enjoyed the trip.",
+            "zh": "请选择正确的连接副词：The weather was bad. ___, we enjoyed the trip.",
             "es": "The weather was bad. ___, we enjoyed the trip."
           },
           "a": "However",
@@ -14101,7 +14101,7 @@
           },
           "t": {
             "en": "However for contrast between sentences.",
-            "zh": "However for contrast between sentences.",
+            "zh": "however 表示句子之间的对比。",
             "es": "However for contrast between sentences."
           },
           "ex": {
@@ -14112,10 +14112,10 @@
               "Because = reason, needs clause."
             ],
             "zh": [
-              "Therefore 表示结果，含义相反。",
-              "正确！选项 B。",
-              "Moreover 表示递进。",
-              "Because 表示原因，需要从句。"
+              "however 表示句子之间的对比。",
+              "however 表示句子之间的对比。",
+              "however 表示句子之间的对比。",
+              "however 表示句子之间的对比。"
             ],
             "es": [
               "Opción A.",
@@ -14129,7 +14129,7 @@
           "id": "conjunctions_linking_q02",
           "q": {
             "en": "He studied hard. ___, he passed with top marks.",
-            "zh": "He studied hard. ___, he passed with top marks.",
+            "zh": "请选择正确的连接副词：He studied hard. ___, he passed with top marks.",
             "es": "He studied hard. ___, he passed with top marks."
           },
           "a": "Therefore",
@@ -14155,7 +14155,7 @@
           },
           "t": {
             "en": "Therefore for logical result.",
-            "zh": "Therefore for logical result.",
+            "zh": "therefore 表示逻辑结果。",
             "es": "Therefore for logical result."
           },
           "ex": {
@@ -14166,10 +14166,10 @@
               "Despite = contrast, needs noun."
             ],
             "zh": [
-              "However 表示对比。",
-              "正确！选项 B。",
-              "Although 表示让步，需要从句。",
-              "Despite 表示让步，需要名词。"
+              "therefore 表示逻辑结果。",
+              "therefore 表示逻辑结果。",
+              "therefore 表示逻辑结果。",
+              "therefore 表示逻辑结果。"
             ],
             "es": [
               "Opción A.",
@@ -14186,7 +14186,7 @@
       "id": "conjunctions_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -14205,7 +14205,7 @@
           "id": "conjunctions_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "Although it was late, she continued.",
@@ -14231,7 +14231,7 @@
           },
           "t": {
             "en": "Although + clause. No but in the same sentence.",
-            "zh": "Although + clause. No but in the same sentence.",
+            "zh": "although + 从句，同一句中不再用 but。",
             "es": "Although + clause. No but in the same sentence."
           },
           "ex": {
@@ -14242,10 +14242,10 @@
               "Despite needs a noun, not a clause."
             ],
             "zh": [
-              "Although + but 双重连词，错误。",
-              "正确！选项 B。",
-              "Although + so 双重连词。",
-              "Despite 需要名词，不是从句。"
+              "although + 从句，同一句中不再用 but。",
+              "although + 从句，同一句中不再用 but。",
+              "although + 从句，同一句中不再用 but。",
+              "although + 从句，同一句中不再用 but。"
             ],
             "es": [
               "Opción A.",
@@ -14259,7 +14259,7 @@
           "id": "conjunctions_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "I like both tea and coffee.",
@@ -14285,7 +14285,7 @@
           },
           "t": {
             "en": "Both...and for pairs.",
-            "zh": "Both...and for pairs.",
+            "zh": "both...and 连接两者。",
             "es": "Both...and for pairs."
           },
           "ex": {
@@ -14296,10 +14296,10 @@
               "Neither...or = should be neither...nor."
             ],
             "zh": [
-              "Both...or 搭配错误。",
-              "正确！选项 B。",
-              "Either...and 搭配错误。",
-              "Neither...or 应为 neither...nor。"
+              "both...and 连接两者。",
+              "both...and 连接两者。",
+              "both...and 连接两者。",
+              "both...and 连接两者。"
             ],
             "es": [
               "Opción A.",
@@ -14316,7 +14316,7 @@
       "id": "verb_patterns_gerunds",
       "name": {
         "en": "Gerunds",
-        "zh": "Gerunds",
+        "zh": "动名词",
         "es": "Gerunds"
       },
       "s": {
@@ -14335,7 +14335,7 @@
           "id": "verb_patterns_gerunds_q01",
           "q": {
             "en": "I enjoy ___ books in my free time.",
-            "zh": "I enjoy ___ books in my free time.",
+            "zh": "请选择正确的形式：I enjoy ___ books in my free time.",
             "es": "I enjoy ___ books in my free time."
           },
           "a": "reading",
@@ -14361,7 +14361,7 @@
           },
           "t": {
             "en": "Enjoy + gerund (-ing).",
-            "zh": "Enjoy + gerund (-ing).",
+            "zh": "enjoy + 动名词（-ing）。",
             "es": "Enjoy + gerund (-ing)."
           },
           "ex": {
@@ -14372,10 +14372,10 @@
               "Reads = third person, wrong."
             ],
             "zh": [
-              "Read 是动词原形，错误。",
-              "To read 是不定式，enjoy 后面不加 to。",
-              "正确！选项 C。",
-              "Reads 是第三人称，错误。"
+              "enjoy + 动名词（-ing）。",
+              "enjoy + 动名词（-ing）。",
+              "enjoy + 动名词（-ing）。",
+              "enjoy + 动名词（-ing）。"
             ],
             "es": [
               "Opción A.",
@@ -14389,7 +14389,7 @@
           "id": "verb_patterns_gerunds_q02",
           "q": {
             "en": "She avoids ___ late at night.",
-            "zh": "She avoids ___ late at night.",
+            "zh": "请选择正确的形式：She avoids ___ late at night.",
             "es": "She avoids ___ late at night."
           },
           "a": "working",
@@ -14415,7 +14415,7 @@
           },
           "t": {
             "en": "Avoid + gerund.",
-            "zh": "Avoid + gerund.",
+            "zh": "avoid + 动名词。",
             "es": "Avoid + gerund."
           },
           "ex": {
@@ -14426,10 +14426,10 @@
               "Works = third person."
             ],
             "zh": [
-              "Work 是动词原形。",
-              "To work 是不定式。",
-              "正确！选项 C。",
-              "Works 是第三人称。"
+              "avoid + 动名词。",
+              "avoid + 动名词。",
+              "avoid + 动名词。",
+              "avoid + 动名词。"
             ],
             "es": [
               "Opción A.",
@@ -14443,7 +14443,7 @@
           "id": "verb_patterns_gerunds_q03",
           "q": {
             "en": "He admitted ___ the mistake.",
-            "zh": "He admitted ___ the mistake.",
+            "zh": "请选择正确的形式：He admitted ___ the mistake.",
             "es": "He admitted ___ the mistake."
           },
           "a": "making",
@@ -14469,7 +14469,7 @@
           },
           "t": {
             "en": "Admit + gerund.",
-            "zh": "Admit + gerund.",
+            "zh": "admit + 动名词。",
             "es": "Admit + gerund."
           },
           "ex": {
@@ -14480,10 +14480,10 @@
               "Made = past tense."
             ],
             "zh": [
-              "Make 是动词原形。",
-              "To make 是不定式。",
-              "正确！选项 C。",
-              "Made 是过去式。"
+              "admit + 动名词。",
+              "admit + 动名词。",
+              "admit + 动名词。",
+              "admit + 动名词。"
             ],
             "es": [
               "Opción A.",
@@ -14500,7 +14500,7 @@
       "id": "verb_patterns_infinitives",
       "name": {
         "en": "Infinitives",
-        "zh": "Infinitives",
+        "zh": "不定式",
         "es": "Infinitives"
       },
       "s": {
@@ -14519,7 +14519,7 @@
           "id": "verb_patterns_infinitives_q01",
           "q": {
             "en": "She decided ___ a new job.",
-            "zh": "She decided ___ a new job.",
+            "zh": "请选择正确的形式：She decided ___ a new job.",
             "es": "She decided ___ a new job."
           },
           "a": "to find",
@@ -14545,7 +14545,7 @@
           },
           "t": {
             "en": "Decide + to-infinitive.",
-            "zh": "Decide + to-infinitive.",
+            "zh": "decide + to 不定式。",
             "es": "Decide + to-infinitive."
           },
           "ex": {
@@ -14556,10 +14556,10 @@
               "Found = past tense."
             ],
             "zh": [
-              "Find 是动词原形。",
-              "正确！选项 B。",
-              "Finding 是动名词，decide 后面不跟动名词。",
-              "Found 是过去式。"
+              "decide + to 不定式。",
+              "decide + to 不定式。",
+              "decide + to 不定式。",
+              "decide + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -14573,7 +14573,7 @@
           "id": "verb_patterns_infinitives_q02",
           "q": {
             "en": "He promised ___ me tomorrow.",
-            "zh": "He promised ___ me tomorrow.",
+            "zh": "请选择正确的形式：He promised ___ me tomorrow.",
             "es": "He promised ___ me tomorrow."
           },
           "a": "to call",
@@ -14599,7 +14599,7 @@
           },
           "t": {
             "en": "Promise + to-infinitive.",
-            "zh": "Promise + to-infinitive.",
+            "zh": "promise + to 不定式。",
             "es": "Promise + to-infinitive."
           },
           "ex": {
@@ -14610,10 +14610,10 @@
               "Called = past tense."
             ],
             "zh": [
-              "Call 是动词原形。",
-              "正确！选项 B。",
-              "Calling 是动名词，错误。",
-              "Called 是过去式。"
+              "promise + to 不定式。",
+              "promise + to 不定式。",
+              "promise + to 不定式。",
+              "promise + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -14627,7 +14627,7 @@
           "id": "verb_patterns_infinitives_q03",
           "q": {
             "en": "I want ___ a doctor when I grow up.",
-            "zh": "I want ___ a doctor when I grow up.",
+            "zh": "请选择正确的形式：I want ___ a doctor when I grow up.",
             "es": "I want ___ a doctor when I grow up."
           },
           "a": "to become",
@@ -14653,7 +14653,7 @@
           },
           "t": {
             "en": "Want + to-infinitive.",
-            "zh": "Want + to-infinitive.",
+            "zh": "want + to 不定式。",
             "es": "Want + to-infinitive."
           },
           "ex": {
@@ -14664,10 +14664,10 @@
               "Became = past tense."
             ],
             "zh": [
-              "Become 是动词原形。",
-              "正确！选项 B。",
-              "Becoming 是动名词，want 后面不跟动名词。",
-              "Became 是过去式。"
+              "want + to 不定式。",
+              "want + to 不定式。",
+              "want + to 不定式。",
+              "want + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -14684,7 +14684,7 @@
       "id": "verb_patterns_both",
       "name": {
         "en": "Gerund vs Infinitive",
-        "zh": "Gerund vs Infinitive",
+        "zh": "动名词与不定式",
         "es": "Gerund vs Infinitive"
       },
       "s": {
@@ -14703,7 +14703,7 @@
           "id": "verb_patterns_both_q01",
           "q": {
             "en": "I stopped ___ because it was bad for my health.",
-            "zh": "I stopped ___ because it was bad for my health.",
+            "zh": "请选择正确的形式：I stopped ___ because it was bad for my health.",
             "es": "I stopped ___ because it was bad for my health."
           },
           "a": "smoking",
@@ -14729,7 +14729,7 @@
           },
           "t": {
             "en": "Stop + gerund = quit the activity.",
-            "zh": "Stop + gerund = quit the activity.",
+            "zh": "stop + 动名词 = 停止某项活动。",
             "es": "Stop + gerund = quit the activity."
           },
           "ex": {
@@ -14740,10 +14740,10 @@
               "Smoked = past tense."
             ],
             "zh": [
-              "Smoke 是动词原形。",
-              "To smoke 表示目的（停下来去抽烟）。",
-              "正确！选项 C。",
-              "Smoked 是过去式。"
+              "stop + 动名词 = 停止某项活动。",
+              "stop + 动名词 = 停止某项活动。",
+              "stop + 动名词 = 停止某项活动。",
+              "stop + 动名词 = 停止某项活动。"
             ],
             "es": [
               "Opción A.",
@@ -14757,7 +14757,7 @@
           "id": "verb_patterns_both_q02",
           "q": {
             "en": "She remembered ___ the door before leaving.",
-            "zh": "She remembered ___ the door before leaving.",
+            "zh": "请选择正确的形式：She remembered ___ the door before leaving.",
             "es": "She remembered ___ the door before leaving."
           },
           "a": [
@@ -14786,7 +14786,7 @@
           },
           "t": {
             "en": "Remember + to-infinitive = not forget to do.",
-            "zh": "Remember + to-infinitive = not forget to do.",
+            "zh": "remember + to 不定式 = 记得要做某事。",
             "es": "Remember + to-infinitive = not forget to do."
           },
           "ex": {
@@ -14797,10 +14797,10 @@
               "Locked = past tense."
             ],
             "zh": [
-              "Lock 是动词原形。",
-              "正确！选项 B。",
-              "Locking 表示记得做过锁门这个动作。",
-              "Locked 是过去式。"
+              "remember + to 不定式 = 记得要做某事。",
+              "remember + to 不定式 = 记得要做某事。",
+              "remember + to 不定式 = 记得要做某事。",
+              "remember + to 不定式 = 记得要做某事。"
             ],
             "es": [
               "Opción A.",
@@ -14814,7 +14814,7 @@
           "id": "verb_patterns_both_q03",
           "q": {
             "en": "He tried ___ the heavy box but could not.",
-            "zh": "He tried ___ the heavy box but could not.",
+            "zh": "请选择正确的形式：He tried ___ the heavy box but could not.",
             "es": "He tried ___ the heavy box but could not."
           },
           "a": "to lift",
@@ -14840,7 +14840,7 @@
           },
           "t": {
             "en": "Try + to-infinitive = attempt something difficult.",
-            "zh": "Try + to-infinitive = attempt something difficult.",
+            "zh": "try + to 不定式 = 尝试做困难的事。",
             "es": "Try + to-infinitive = attempt something difficult."
           },
           "ex": {
@@ -14851,10 +14851,10 @@
               "Lifted = past tense."
             ],
             "zh": [
-              "Lift 是动词原形。",
-              "正确！选项 B。",
-              "Lifting 表示尝试（试着用膝盖抬）。",
-              "Lifted 是过去式。"
+              "try + to 不定式 = 尝试做困难的事。",
+              "try + to 不定式 = 尝试做困难的事。",
+              "try + to 不定式 = 尝试做困难的事。",
+              "try + to 不定式 = 尝试做困难的事。"
             ],
             "es": [
               "Opción A.",
@@ -14871,7 +14871,7 @@
       "id": "verb_patterns_causatives",
       "name": {
         "en": "Causatives",
-        "zh": "Causatives",
+        "zh": "使役结构",
         "es": "Causatives"
       },
       "s": {
@@ -14890,7 +14890,7 @@
           "id": "verb_patterns_causatives_q01",
           "q": {
             "en": "The teacher ___ the students ___ in pairs.",
-            "zh": "The teacher ___ the students ___ in pairs.",
+            "zh": "请选择正确的形式：The teacher ___ the students ___ in pairs.",
             "es": "The teacher ___ the students ___ in pairs."
           },
           "a": "made ... work",
@@ -14916,7 +14916,7 @@
           },
           "t": {
             "en": "Make + object + base verb (no to).",
-            "zh": "Make + object + base verb (no to).",
+            "zh": "make + 宾语 + 动词原形（不加 to）。",
             "es": "Make + object + base verb (no to)."
           },
           "ex": {
@@ -14927,10 +14927,10 @@
               "Had + worked = past participle, different structure."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Made + to work 错误（make 后面跟不带 to 的不定式）。",
-              "Let + to work 错误（let 后面跟不带 to 的不定式）。",
-              "Had + worked 是过去分词，结构不同。"
+              "make + 宾语 + 动词原形（不加 to）。",
+              "make + 宾语 + 动词原形（不加 to）。",
+              "make + 宾语 + 动词原形（不加 to）。",
+              "make + 宾语 + 动词原形（不加 to）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -14944,7 +14944,7 @@
           "id": "verb_patterns_causatives_q02",
           "q": {
             "en": "She ___ me ___ her car last weekend.",
-            "zh": "She ___ me ___ her car last weekend.",
+            "zh": "请选择正确的形式：She ___ me ___ her car last weekend.",
             "es": "She ___ me ___ her car last weekend."
           },
           "a": [
@@ -14973,7 +14973,7 @@
           },
           "t": {
             "en": "Let + object + base verb.",
-            "zh": "Let + object + base verb.",
+            "zh": "let + 宾语 + 动词原形。",
             "es": "Let + object + base verb."
           },
           "ex": {
@@ -14984,10 +14984,10 @@
               "Allowed + drive = allowed needs to (allowed me to drive)."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Let + to drive 错误。",
-              "Made + drive 表示强迫，不是允许。",
-              "Allowed + drive 错误——allowed 需要 to（allowed me to drive）。"
+              "let + 宾语 + 动词原形。",
+              "let + 宾语 + 动词原形。",
+              "let + 宾语 + 动词原形。",
+              "let + 宾语 + 动词原形。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15004,7 +15004,7 @@
       "id": "verb_patterns_preposition",
       "name": {
         "en": "Preposition + Gerund",
-        "zh": "Preposition + Gerund",
+        "zh": "介词 + 动名词",
         "es": "Preposition + Gerund"
       },
       "s": {
@@ -15023,7 +15023,7 @@
           "id": "verb_patterns_preposition_q01",
           "q": {
             "en": "She is good ___ playing the piano.",
-            "zh": "She is good ___ playing the piano.",
+            "zh": "请选择正确的介词：She is good ___ playing the piano.",
             "es": "She is good ___ playing the piano."
           },
           "a": "at",
@@ -15049,7 +15049,7 @@
           },
           "t": {
             "en": "Good at + gerund.",
-            "zh": "Good at + gerund.",
+            "zh": "good at + 动名词。",
             "es": "Good at + gerund."
           },
           "ex": {
@@ -15060,10 +15060,10 @@
               "For = wrong preposition."
             ],
             "zh": [
-              "正确！选项 A。",
-              "In 介词搭配错误。",
-              "To 错误，good 不与 to 搭配。",
-              "For 介词搭配错误。"
+              "good at + 动名词。",
+              "good at + 动名词。",
+              "good at + 动名词。",
+              "good at + 动名词。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15077,7 +15077,7 @@
           "id": "verb_patterns_preposition_q02",
           "q": {
             "en": "He is interested ___ learning Spanish.",
-            "zh": "He is interested ___ learning Spanish.",
+            "zh": "请选择正确的介词：He is interested ___ learning Spanish.",
             "es": "He is interested ___ learning Spanish."
           },
           "a": "in",
@@ -15103,7 +15103,7 @@
           },
           "t": {
             "en": "Interested in + gerund.",
-            "zh": "Interested in + gerund.",
+            "zh": "interested in + 动名词。",
             "es": "Interested in + gerund."
           },
           "ex": {
@@ -15114,10 +15114,10 @@
               "For = wrong."
             ],
             "zh": [
-              "At 介词搭配错误。",
-              "正确！选项 B。",
-              "To 错误。",
-              "For 错误。"
+              "interested in + 动名词。",
+              "interested in + 动名词。",
+              "interested in + 动名词。",
+              "interested in + 动名词。"
             ],
             "es": [
               "Opción A.",
@@ -15134,7 +15134,7 @@
       "id": "verb_patterns_adj",
       "name": {
         "en": "Adjective Patterns",
-        "zh": "Adjective Patterns",
+        "zh": "形容词句型",
         "es": "Adjective Patterns"
       },
       "s": {
@@ -15153,7 +15153,7 @@
           "id": "verb_patterns_adj_q01",
           "q": {
             "en": "It is important ___ on time.",
-            "zh": "It is important ___ on time.",
+            "zh": "请选择正确的形式：It is important ___ on time.",
             "es": "It is important ___ on time."
           },
           "a": "to be",
@@ -15179,7 +15179,7 @@
           },
           "t": {
             "en": "It is + adjective + to-infinitive.",
-            "zh": "It is + adjective + to-infinitive.",
+            "zh": "It is + 形容词 + to 不定式。",
             "es": "It is + adjective + to-infinitive."
           },
           "ex": {
@@ -15190,10 +15190,10 @@
               "Been = past participle."
             ],
             "zh": [
-              "Be 是动词原形。",
-              "正确！选项 B。",
-              "Being 是动名词，在 it is important 后错误。",
-              "Been 是过去分词。"
+              "It is + 形容词 + to 不定式。",
+              "It is + 形容词 + to 不定式。",
+              "It is + 形容词 + to 不定式。",
+              "It is + 形容词 + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -15210,7 +15210,7 @@
       "id": "verb_patterns_contrast",
       "name": {
         "en": "Pattern Contrast",
-        "zh": "Pattern Contrast",
+        "zh": "句型对比",
         "es": "Pattern Contrast"
       },
       "s": {
@@ -15231,7 +15231,7 @@
       "id": "verb_patterns_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -15250,7 +15250,7 @@
           "id": "verb_patterns_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "I suggest going early.",
@@ -15276,7 +15276,7 @@
           },
           "t": {
             "en": "Suggest + gerund.",
-            "zh": "Suggest + gerund.",
+            "zh": "suggest + 动名词。",
             "es": "Suggest + gerund."
           },
           "ex": {
@@ -15287,10 +15287,10 @@
               "Suggest to going = wrong."
             ],
             "zh": [
-              "Suggest to go 句型错误。",
-              "正确！选项 B。",
-              "Suggest go 错误。",
-              "Suggest to going 错误。"
+              "suggest + 动名词。",
+              "suggest + 动名词。",
+              "suggest + 动名词。",
+              "suggest + 动名词。"
             ],
             "es": [
               "Opción A.",
@@ -15304,7 +15304,7 @@
           "id": "verb_patterns_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "She made me apologize.",
@@ -15330,7 +15330,7 @@
           },
           "t": {
             "en": "Make + object + base verb.",
-            "zh": "Make + object + base verb.",
+            "zh": "make + 宾语 + 动词原形。",
             "es": "Make + object + base verb."
           },
           "ex": {
@@ -15341,10 +15341,10 @@
               "Made + apologized = wrong."
             ],
             "zh": [
-              "Made + to apologize 错误。",
-              "正确！选项 B。",
-              "Made + apologizing 错误。",
-              "Made + apologized 错误。"
+              "make + 宾语 + 动词原形。",
+              "make + 宾语 + 动词原形。",
+              "make + 宾语 + 动词原形。",
+              "make + 宾语 + 动词原形。"
             ],
             "es": [
               "Opción A.",
@@ -15361,7 +15361,7 @@
       "id": "sentence_structure_word_order",
       "name": {
         "en": "Word Order",
-        "zh": "Word Order",
+        "zh": "语序",
         "es": "Word Order"
       },
       "s": {
@@ -15380,7 +15380,7 @@
           "id": "sentence_structure_word_order_q01",
           "q": {
             "en": "Choose the correct word order:",
-            "zh": "Choose the correct word order:",
+            "zh": "选择正确的语序：",
             "es": "Choose the correct word order:"
           },
           "a": "She speaks English well.",
@@ -15406,7 +15406,7 @@
           },
           "t": {
             "en": "English word order: Subject-Verb-Object-Adverb.",
-            "zh": "English word order: Subject-Verb-Object-Adverb.",
+            "zh": "英语语序：主语-谓语-宾语-副词。",
             "es": "English word order: Subject-Verb-Object-Adverb."
           },
           "ex": {
@@ -15417,10 +15417,10 @@
               "Well she = inverted, poetic or wrong."
             ],
             "zh": [
-              "Well English 副词在宾语前，错误。",
-              "正确！选项 B。",
-              "Well speaks 副词在主语和动词之间，错误。",
-              "Well she 倒装，不自然或错误。"
+              "英语语序：主语-谓语-宾语-副词。",
+              "英语语序：主语-谓语-宾语-副词。",
+              "英语语序：主语-谓语-宾语-副词。",
+              "英语语序：主语-谓语-宾语-副词。"
             ],
             "es": [
               "Opción A.",
@@ -15434,7 +15434,7 @@
           "id": "sentence_structure_word_order_q02",
           "q": {
             "en": "Choose the correct word order:",
-            "zh": "Choose the correct word order:",
+            "zh": "选择正确的语序：",
             "es": "Choose the correct word order:"
           },
           "a": [
@@ -15463,7 +15463,7 @@
           },
           "t": {
             "en": "Inversion after negative adverb at the start.",
-            "zh": "Inversion after negative adverb at the start.",
+            "zh": "否定副词位于句首时用倒装。",
             "es": "Inversion after negative adverb at the start."
           },
           "ex": {
@@ -15474,10 +15474,10 @@
               "I have never = correct but not after fronted never."
             ],
             "zh": [
-              "Never I 否定词前置后没有倒装。",
-              "正确！选项 B。",
-              "I never have 位置别扭。",
-              "I have never 正确但不是在 never 前置时。"
+              "否定副词位于句首时用倒装。",
+              "否定副词位于句首时用倒装。",
+              "否定副词位于句首时用倒装。",
+              "否定副词位于句首时用倒装。"
             ],
             "es": [
               "Opción A.",
@@ -15494,7 +15494,7 @@
       "id": "sentence_structure_questions",
       "name": {
         "en": "Question Formation",
-        "zh": "Question Formation",
+        "zh": "疑问句",
         "es": "Question Formation"
       },
       "s": {
@@ -15513,7 +15513,7 @@
           "id": "sentence_structure_questions_q01",
           "q": {
             "en": "___ you ___ where the museum is?",
-            "zh": "___ you ___ where the museum is?",
+            "zh": "请选择正确的疑问句形式：___ you ___ where the museum is?",
             "es": "___ you ___ where the museum is?"
           },
           "a": "Do ... know",
@@ -15539,7 +15539,7 @@
           },
           "t": {
             "en": "Do-support for present simple questions.",
-            "zh": "Do-support for present simple questions.",
+            "zh": "一般现在时疑问句用 do 助动词。",
             "es": "Do-support for present simple questions."
           },
           "ex": {
@@ -15550,10 +15550,10 @@
               "Did knew = wrong (did + base, not past)."
             ],
             "zh": [
-              "Are know be + 动词原形，错误。",
-              "正确！选项 B。",
-              "Have known 是现在完成时，不是简单疑问。",
-              "Did knew 错误（did + 动词原形，不是过去式）。"
+              "一般现在时疑问句用 do 助动词。",
+              "一般现在时疑问句用 do 助动词。",
+              "一般现在时疑问句用 do 助动词。",
+              "一般现在时疑问句用 do 助动词。"
             ],
             "es": [
               "Opción A.",
@@ -15567,7 +15567,7 @@
           "id": "sentence_structure_questions_q02",
           "q": {
             "en": "___ she ___ at the moment?",
-            "zh": "___ she ___ at the moment?",
+            "zh": "请选择正确的疑问句形式：___ she ___ at the moment?",
             "es": "___ she ___ at the moment?"
           },
           "a": "Is ... working",
@@ -15593,7 +15593,7 @@
           },
           "t": {
             "en": "Present continuous question: is + -ing.",
-            "zh": "Present continuous question: is + -ing.",
+            "zh": "现在进行时疑问句：is + -ing。",
             "es": "Present continuous question: is + -ing."
           },
           "ex": {
@@ -15604,10 +15604,10 @@
               "Did working = wrong form."
             ],
             "zh": [
-              "Does work 是一般现在时疑问句。",
-              "正确！选项 B。",
-              "Has worked 是现在完成时。",
-              "Did working 形式错误。"
+              "现在进行时疑问句：is + -ing。",
+              "现在进行时疑问句：is + -ing。",
+              "现在进行时疑问句：is + -ing。",
+              "现在进行时疑问句：is + -ing。"
             ],
             "es": [
               "Opción A.",
@@ -15624,7 +15624,7 @@
       "id": "sentence_structure_negation",
       "name": {
         "en": "Negation",
-        "zh": "Negation",
+        "zh": "否定句",
         "es": "Negation"
       },
       "s": {
@@ -15643,7 +15643,7 @@
           "id": "sentence_structure_negation_q01",
           "q": {
             "en": "She ___ like coffee.",
-            "zh": "She ___ like coffee.",
+            "zh": "请选择正确的否定形式：She ___ like coffee.",
             "es": "She ___ like coffee."
           },
           "a": "does not",
@@ -15669,7 +15669,7 @@
           },
           "t": {
             "en": "Does not for third person singular negative.",
-            "zh": "Does not for third person singular negative.",
+            "zh": "第三人称单数否定用 does not。",
             "es": "Does not for third person singular negative."
           },
           "ex": {
@@ -15680,10 +15680,10 @@
               "Has not = perfect negation."
             ],
             "zh": [
-              "Do not 用于 I/you/we/they。",
-              "正确！选项 B。",
-              "Is not 是 be 动词否定，不同。",
-              "Has not 是完成时否定。"
+              "第三人称单数否定用 does not。",
+              "第三人称单数否定用 does not。",
+              "第三人称单数否定用 does not。",
+              "第三人称单数否定用 does not。"
             ],
             "es": [
               "Opción A.",
@@ -15697,7 +15697,7 @@
           "id": "sentence_structure_negation_q02",
           "q": {
             "en": "I have ___ been to Japan.",
-            "zh": "I have ___ been to Japan.",
+            "zh": "请选择正确的否定形式：I have ___ been to Japan.",
             "es": "I have ___ been to Japan."
           },
           "a": [
@@ -15726,7 +15726,7 @@
           },
           "t": {
             "en": "Never with present perfect for experiences.",
-            "zh": "Never with present perfect for experiences.",
+            "zh": "现在完成时表经历用 never。",
             "es": "Never with present perfect for experiences."
           },
           "ex": {
@@ -15737,10 +15737,10 @@
               "None = pronoun, not adverb."
             ],
             "zh": [
-              "Not 需要 have not been。",
-              "正确！选项 B。",
-              "No 与 been 搭配错误。",
-              "None 是代词，不是副词。"
+              "现在完成时表经历用 never。",
+              "现在完成时表经历用 never。",
+              "现在完成时表经历用 never。",
+              "现在完成时表经历用 never。"
             ],
             "es": [
               "Opción A.",
@@ -15757,7 +15757,7 @@
       "id": "sentence_structure_clauses",
       "name": {
         "en": "Clause Types",
-        "zh": "Clause Types",
+        "zh": "从句类型",
         "es": "Clause Types"
       },
       "s": {
@@ -15776,7 +15776,7 @@
           "id": "sentence_structure_clauses_q01",
           "q": {
             "en": "Identify the subordinate clause: \"I will call you when I arrive.\"",
-            "zh": "Identify the subordinate clause: \"I will call you when I arrive.\"",
+            "zh": "识别从句：\"I will call you when I arrive.\"",
             "es": "Identify the subordinate clause: \"I will call you when I arrive.\""
           },
           "a": "when I arrive",
@@ -15802,7 +15802,7 @@
           },
           "t": {
             "en": "Subordinate clause introduced by when.",
-            "zh": "Subordinate clause introduced by when.",
+            "zh": "由 when 引导的从句是从句。",
             "es": "Subordinate clause introduced by when."
           },
           "ex": {
@@ -15813,10 +15813,10 @@
               "Call you = verb + object, not a clause."
             ],
             "zh": [
-              "I will call you 是主句。",
-              "正确！选项 B。",
-              "Will call 只是动词短语。",
-              "Call you 是动词+宾语，不是从句。"
+              "由 when 引导的从句是从句。",
+              "由 when 引导的从句是从句。",
+              "由 when 引导的从句是从句。",
+              "由 when 引导的从句是从句。"
             ],
             "es": [
               "Opción A.",
@@ -15830,7 +15830,7 @@
           "id": "sentence_structure_clauses_q02",
           "q": {
             "en": "Which is a complete sentence?",
-            "zh": "Which is a complete sentence?",
+            "zh": "哪个是完整的句子？",
             "es": "Which is a complete sentence?"
           },
           "a": "She went home.",
@@ -15856,7 +15856,7 @@
           },
           "t": {
             "en": "Complete sentence = independent clause.",
-            "zh": "Complete sentence = independent clause.",
+            "zh": "完整句子 = 独立从句。",
             "es": "Complete sentence = independent clause."
           },
           "ex": {
@@ -15867,10 +15867,10 @@
               "When = subordinate clause, incomplete."
             ],
             "zh": [
-              "Because 是从属从句，不完整。",
-              "Although 是从属从句，不完整。",
-              "正确！选项 C。",
-              "When 是从属从句，不完整。"
+              "完整句子 = 独立从句。",
+              "完整句子 = 独立从句。",
+              "完整句子 = 独立从句。",
+              "完整句子 = 独立从句。"
             ],
             "es": [
               "Opción A.",
@@ -15887,7 +15887,7 @@
       "id": "sentence_structure_cleft",
       "name": {
         "en": "Cleft Sentences",
-        "zh": "Cleft Sentences",
+        "zh": "分裂句",
         "es": "Cleft Sentences"
       },
       "s": {
@@ -15906,7 +15906,7 @@
           "id": "sentence_structure_cleft_q01",
           "q": {
             "en": "___ was John ___ broke the window.",
-            "zh": "___ was John ___ broke the window.",
+            "zh": "请选择正确的形式：___ was John ___ broke the window.",
             "es": "___ was John ___ broke the window."
           },
           "a": "It ... who",
@@ -15932,7 +15932,7 @@
           },
           "t": {
             "en": "It-cleft: It is/was + focused element + who/that clause.",
-            "zh": "It-cleft: It is/was + focused element + who/that clause.",
+            "zh": "It 分裂句：It is/was + 强调成分 + who/that 从句。",
             "es": "It-cleft: It is/was + focused element + who/that clause."
           },
           "ex": {
@@ -15943,10 +15943,10 @@
               "He...that = wrong."
             ],
             "zh": [
-              "正确！选项 A。",
-              "What...that 分裂句句型错误。",
-              "That...who 错误。",
-              "He...that 错误。"
+              "It 分裂句：It is/was + 强调成分 + who/that 从句。",
+              "It 分裂句：It is/was + 强调成分 + who/that 从句。",
+              "It 分裂句：It is/was + 强调成分 + who/that 从句。",
+              "It 分裂句：It is/was + 强调成分 + who/that 从句。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -15960,7 +15960,7 @@
           "id": "sentence_structure_cleft_q02",
           "q": {
             "en": "___ I need is a good rest.",
-            "zh": "___ I need is a good rest.",
+            "zh": "请选择正确的形式：___ I need is a good rest.",
             "es": "___ I need is a good rest."
           },
           "a": "What",
@@ -15986,7 +15986,7 @@
           },
           "t": {
             "en": "Wh-cleft: What + clause + is + focused element.",
-            "zh": "Wh-cleft: What + clause + is + focused element.",
+            "zh": "Wh 分裂句：What + 从句 + is + 强调成分。",
             "es": "Wh-cleft: What + clause + is + focused element."
           },
           "ex": {
@@ -15997,10 +15997,10 @@
               "Which = specific choice, not cleft."
             ],
             "zh": [
-              "It 需要 is that 结构。",
-              "正确！选项 B。",
-              "That 不能做分裂句的主语。",
-              "Which 表示具体选择，不是分裂句。"
+              "Wh 分裂句：What + 从句 + is + 强调成分。",
+              "Wh 分裂句：What + 从句 + is + 强调成分。",
+              "Wh 分裂句：What + 从句 + is + 强调成分。",
+              "Wh 分裂句：What + 从句 + is + 强调成分。"
             ],
             "es": [
               "Opción A.",
@@ -16017,7 +16017,7 @@
       "id": "sentence_structure_fragments",
       "name": {
         "en": "Fragments and Run-ons",
-        "zh": "Fragments and Run-ons",
+        "zh": "残缺句与连写句",
         "es": "Fragments and Run-ons"
       },
       "s": {
@@ -16036,7 +16036,7 @@
           "id": "sentence_structure_fragments_q01",
           "q": {
             "en": "Which is a fragment (incomplete sentence)?",
-            "zh": "Which is a fragment (incomplete sentence)?",
+            "zh": "哪个是残缺句（不完整的句子）？",
             "es": "Which is a fragment (incomplete sentence)?"
           },
           "a": "Running down the street.",
@@ -16062,7 +16062,7 @@
           },
           "t": {
             "en": "Fragment: missing main verb or subject.",
-            "zh": "Fragment: missing main verb or subject.",
+            "zh": "残缺句：缺少主要动词或主语。",
             "es": "Fragment: missing main verb or subject."
           },
           "ex": {
@@ -16073,10 +16073,10 @@
               "Complete sentence."
             ],
             "zh": [
-              "完整句子。",
-              "正确！选项 B。",
-              "完整句子。",
-              "完整句子。"
+              "残缺句：缺少主要动词或主语。",
+              "残缺句：缺少主要动词或主语。",
+              "残缺句：缺少主要动词或主语。",
+              "残缺句：缺少主要动词或主语。"
             ],
             "es": [
               "Opción A.",
@@ -16090,7 +16090,7 @@
           "id": "sentence_structure_fragments_q02",
           "q": {
             "en": "Fix the run-on: \"I love pizza it is my favorite food.\"",
-            "zh": "Fix the run-on: \"I love pizza it is my favorite food.\"",
+            "zh": "修改连写句：\"I love pizza it is my favorite food.\"",
             "es": "Fix the run-on: \"I love pizza it is my favorite food.\""
           },
           "a": "I love pizza. It is my favorite food.",
@@ -16116,7 +16116,7 @@
           },
           "t": {
             "en": "Separate two independent clauses with period or semicolon.",
-            "zh": "Separate two independent clauses with period or semicolon.",
+            "zh": "两个独立从句用句号或分号分开。",
             "es": "Separate two independent clauses with period or semicolon."
           },
           "ex": {
@@ -16127,10 +16127,10 @@
               "Comma in wrong place."
             ],
             "zh": [
-              "逗号拼接——仍然是流水句。",
-              "正确！选项 B。",
-              "逗号位置错误。",
-              "逗号位置错误。"
+              "两个独立从句用句号或分号分开。",
+              "两个独立从句用句号或分号分开。",
+              "两个独立从句用句号或分号分开。",
+              "两个独立从句用句号或分号分开。"
             ],
             "es": [
               "Opción A.",
@@ -16147,7 +16147,7 @@
       "id": "sentence_structure_parallelism",
       "name": {
         "en": "Parallel Structure",
-        "zh": "Parallel Structure",
+        "zh": "平行结构",
         "es": "Parallel Structure"
       },
       "s": {
@@ -16166,7 +16166,7 @@
           "id": "sentence_structure_parallelism_q01",
           "q": {
             "en": "Choose the parallel sentence:",
-            "zh": "Choose the parallel sentence:",
+            "zh": "选择结构平行的句子：",
             "es": "Choose the parallel sentence:"
           },
           "a": "She likes swimming, running, and biking.",
@@ -16192,7 +16192,7 @@
           },
           "t": {
             "en": "Parallel structure: all gerunds.",
-            "zh": "Parallel structure: all gerunds.",
+            "zh": "平行结构：全部用动名词。",
             "es": "Parallel structure: all gerunds."
           },
           "ex": {
@@ -16203,10 +16203,10 @@
               "Swim + run + biking = mixed."
             ],
             "zh": [
-              "Swimming（动名词）+ to run（不定式）= 不平行。",
-              "正确！选项 B。",
-              "To swim + running + to bike = 混用。",
-              "Swim + run + biking = 混用。"
+              "平行结构：全部用动名词。",
+              "平行结构：全部用动名词。",
+              "平行结构：全部用动名词。",
+              "平行结构：全部用动名词。"
             ],
             "es": [
               "Opción A.",
@@ -16220,7 +16220,7 @@
           "id": "sentence_structure_parallelism_q02",
           "q": {
             "en": "Choose the parallel sentence:",
-            "zh": "Choose the parallel sentence:",
+            "zh": "选择结构平行的句子：",
             "es": "Choose the parallel sentence:"
           },
           "a": "He is smart, hardworking, and creative.",
@@ -16246,7 +16246,7 @@
           },
           "t": {
             "en": "Parallel: all adjectives after is.",
-            "zh": "Parallel: all adjectives after is.",
+            "zh": "平行结构：is 后全部用形容词。",
             "es": "Parallel: all adjectives after is."
           },
           "ex": {
@@ -16257,10 +16257,10 @@
               "Has smart = wrong (smart is adjective, not noun)."
             ],
             "zh": [
-              "Has creativity 是动词+名词，不是形容词。",
-              "正确！选项 B。",
-              "Works hard 是动词短语，打破了形容词并列。",
-              "Has smart 错误（smart 是形容词，不是名词）。"
+              "平行结构：is 后全部用形容词。",
+              "平行结构：is 后全部用形容词。",
+              "平行结构：is 后全部用形容词。",
+              "平行结构：is 后全部用形容词。"
             ],
             "es": [
               "Opción A.",
@@ -16277,7 +16277,7 @@
       "id": "sentence_structure_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -16296,7 +16296,7 @@
           "id": "sentence_structure_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "John and I went to the cinema.",
@@ -16322,7 +16322,7 @@
           },
           "t": {
             "en": "Subject pronoun I + name order (other person first).",
-            "zh": "Subject pronoun I + name order (other person first).",
+            "zh": "主语代词 I + 姓名顺序（别人在前）。",
             "es": "Subject pronoun I + name order (other person first)."
           },
           "ex": {
@@ -16333,10 +16333,10 @@
               "I and John = correct grammar but impolite order."
             ],
             "zh": [
-              "Me 是宾格代词，不是主格。",
-              "正确！选项 B。",
-              "John and me 中 me 是宾格。",
-              "I and John 语法正确但语序不礼貌。"
+              "主语代词 I + 姓名顺序（别人在前）。",
+              "主语代词 I + 姓名顺序（别人在前）。",
+              "主语代词 I + 姓名顺序（别人在前）。",
+              "主语代词 I + 姓名顺序（别人在前）。"
             ],
             "es": [
               "Opción A.",
@@ -16350,7 +16350,7 @@
           "id": "sentence_structure_production_q02",
           "q": {
             "en": "Choose the best combined sentence: \"The man is my neighbor. He is wearing a hat.\"",
-            "zh": "Choose the best combined sentence: \"The man is my neighbor. He is wearing a hat.\"",
+            "zh": "选择最佳合并句：\"The man is my neighbor. He is wearing a hat.\"",
             "es": "Choose the best combined sentence: \"The man is my neighbor. He is wearing a hat.\""
           },
           "a": "The man wearing a hat is my neighbor.",
@@ -16376,7 +16376,7 @@
           },
           "t": {
             "en": "Participial phrase for combining.",
-            "zh": "Participial phrase for combining.",
+            "zh": "用分词短语合并句子。",
             "es": "Participial phrase for combining."
           },
           "ex": {
@@ -16387,10 +16387,10 @@
               "Awkward word order."
             ],
             "zh": [
-              "流水句，没有连词。",
-              "正确！选项 B。",
-              "歧义——谁戴着帽子？",
-              "语序别扭。"
+              "用分词短语合并句子。",
+              "用分词短语合并句子。",
+              "用分词短语合并句子。",
+              "用分词短语合并句子。"
             ],
             "es": [
               "Opción A.",
@@ -16407,7 +16407,7 @@
       "id": "advanced_emphasis",
       "name": {
         "en": "Emphasis",
-        "zh": "Emphasis",
+        "zh": "强调",
         "es": "Emphasis"
       },
       "s": {
@@ -16426,7 +16426,7 @@
           "id": "advanced_emphasis_q01",
           "q": {
             "en": "Not only ___ the exam, but she also got the highest score.",
-            "zh": "Not only ___ the exam, but she also got the highest score.",
+            "zh": "请选择正确的形式：Not only ___ the exam, but she also got the highest score.",
             "es": "Not only ___ the exam, but she also got the highest score."
           },
           "a": "did she pass",
@@ -16452,7 +16452,7 @@
           },
           "t": {
             "en": "Inversion after not only.",
-            "zh": "Inversion after not only.",
+            "zh": "not only 开头用倒装。",
             "es": "Inversion after not only."
           },
           "ex": {
@@ -16463,10 +16463,10 @@
               "Passed she = wrong inversion."
             ],
             "zh": [
-              "She passed 没有倒装。",
-              "正确！选项 B。",
-              "She did pass 表示强调但无倒装。",
-              "Passed she 倒装错误。"
+              "not only 开头用倒装。",
+              "not only 开头用倒装。",
+              "not only 开头用倒装。",
+              "not only 开头用倒装。"
             ],
             "es": [
               "Opción A.",
@@ -16480,7 +16480,7 @@
           "id": "advanced_emphasis_q02",
           "q": {
             "en": "Rarely ___ such a beautiful sunset.",
-            "zh": "Rarely ___ such a beautiful sunset.",
+            "zh": "请选择正确的形式：Rarely ___ such a beautiful sunset.",
             "es": "Rarely ___ such a beautiful sunset."
           },
           "a": "have I seen",
@@ -16506,7 +16506,7 @@
           },
           "t": {
             "en": "Inversion after rarely (negative adverb).",
-            "zh": "Inversion after rarely (negative adverb).",
+            "zh": "rarely（否定副词）后倒装。",
             "es": "Inversion after rarely (negative adverb)."
           },
           "ex": {
@@ -16517,10 +16517,10 @@
               "I see = present, wrong meaning."
             ],
             "zh": [
-              "I have seen 没有倒装。",
-              "正确！选项 B。",
-              "I saw 没有倒装，时态错误。",
-              "I see 是现在时，含义错误。"
+              "rarely（否定副词）后倒装。",
+              "rarely（否定副词）后倒装。",
+              "rarely（否定副词）后倒装。",
+              "rarely（否定副词）后倒装。"
             ],
             "es": [
               "Opción A.",
@@ -16537,7 +16537,7 @@
       "id": "advanced_inversion",
       "name": {
         "en": "Inversion",
-        "zh": "Inversion",
+        "zh": "倒装",
         "es": "Inversion"
       },
       "s": {
@@ -16556,7 +16556,7 @@
           "id": "advanced_inversion_q01",
           "q": {
             "en": "___ known the truth, I would have acted differently.",
-            "zh": "___ known the truth, I would have acted differently.",
+            "zh": "请选择正确的形式：___ known the truth, I would have acted differently.",
             "es": "___ known the truth, I would have acted differently."
           },
           "a": [
@@ -16585,7 +16585,7 @@
           },
           "t": {
             "en": "Inverted third conditional: Had + subject + past participle.",
-            "zh": "Inverted third conditional: Had + subject + past participle.",
+            "zh": "倒装的第三条件句：Had + 主语 + 过去分词。",
             "es": "Inverted third conditional: Had + subject + past participle."
           },
           "ex": {
@@ -16596,10 +16596,10 @@
               "I had = no subordinator."
             ],
             "zh": [
-              "If I had 是标准形式，不是倒装。",
-              "正确！选项 B。",
-              "If I 不完整。",
-              "I had 没有从属连词。"
+              "倒装的第三条件句：Had + 主语 + 过去分词。",
+              "倒装的第三条件句：Had + 主语 + 过去分词。",
+              "倒装的第三条件句：Had + 主语 + 过去分词。",
+              "倒装的第三条件句：Had + 主语 + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -16613,7 +16613,7 @@
           "id": "advanced_inversion_q02",
           "q": {
             "en": "Only when the rain stopped ___ able to leave.",
-            "zh": "Only when the rain stopped ___ able to leave.",
+            "zh": "请选择正确的形式：Only when the rain stopped ___ able to leave.",
             "es": "Only when the rain stopped ___ able to leave."
           },
           "a": "were we",
@@ -16639,7 +16639,7 @@
           },
           "t": {
             "en": "Inversion after only when.",
-            "zh": "Inversion after only when.",
+            "zh": "only when 后用倒装。",
             "es": "Inversion after only when."
           },
           "ex": {
@@ -16650,10 +16650,10 @@
               "Had we been = wrong tense."
             ],
             "zh": [
-              "We were 没有倒装。",
-              "正确！选项 B。",
-              "We had been 错误。",
-              "Had we been 时态错误。"
+              "only when 后用倒装。",
+              "only when 后用倒装。",
+              "only when 后用倒装。",
+              "only when 后用倒装。"
             ],
             "es": [
               "Opción A.",
@@ -16670,7 +16670,7 @@
       "id": "advanced_substitution",
       "name": {
         "en": "Substitution and Ellipsis",
-        "zh": "Substitution and Ellipsis",
+        "zh": "替代与省略",
         "es": "Substitution and Ellipsis"
       },
       "s": {
@@ -16689,7 +16689,7 @@
           "id": "advanced_substitution_q01",
           "q": {
             "en": "\"Are you coming?\" \"I hope ___.\"",
-            "zh": "\"Are you coming?\" \"I hope ___.\"",
+            "zh": "请选择正确的形式：\"Are you coming?\" \"I hope ___.\"",
             "es": "\"Are you coming?\" \"I hope ___.\""
           },
           "a": "so",
@@ -16715,7 +16715,7 @@
           },
           "t": {
             "en": "So as substitute for that-clause after hope/think/believe.",
-            "zh": "So as substitute for that-clause after hope/think/believe.",
+            "zh": "hope/think/believe 后用 so 代替 that 从句。",
             "es": "So as substitute for that-clause after hope/think/believe."
           },
           "ex": {
@@ -16726,10 +16726,10 @@
               "This = wrong."
             ],
             "zh": [
-              "It 替代错误。",
-              "正确！选项 B。",
-              "That 不完整。",
-              "This 错误。"
+              "hope/think/believe 后用 so 代替 that 从句。",
+              "hope/think/believe 后用 so 代替 that 从句。",
+              "hope/think/believe 后用 so 代替 that 从句。",
+              "hope/think/believe 后用 so 代替 that 从句。"
             ],
             "es": [
               "Opción A.",
@@ -16743,7 +16743,7 @@
           "id": "advanced_substitution_q02",
           "q": {
             "en": "She asked me to help and I ___.",
-            "zh": "She asked me to help and I ___.",
+            "zh": "请选择正确的形式：She asked me to help and I ___.",
             "es": "She asked me to help and I ___."
           },
           "a": [
@@ -16772,7 +16772,7 @@
           },
           "t": {
             "en": "Do so as verb phrase substitution.",
-            "zh": "Do so as verb phrase substitution.",
+            "zh": "do so 代替动词短语。",
             "es": "Do so as verb phrase substitution."
           },
           "ex": {
@@ -16783,10 +16783,10 @@
               "Did it = possible but less formal."
             ],
             "zh": [
-              "Did 太短，不清晰。",
-              "正确！选项 B。",
-              "So did 含义不同（so did I = 我也是）。",
-              "Did it 可以但不正式。"
+              "do so 代替动词短语。",
+              "do so 代替动词短语。",
+              "do so 代替动词短语。",
+              "do so 代替动词短语。"
             ],
             "es": [
               "Opción A.",
@@ -16803,7 +16803,7 @@
       "id": "advanced_register",
       "name": {
         "en": "Register",
-        "zh": "Register",
+        "zh": "语域",
         "es": "Register"
       },
       "s": {
@@ -16822,7 +16822,7 @@
           "id": "advanced_register_q01",
           "q": {
             "en": "Which is more formal?",
-            "zh": "Which is more formal?",
+            "zh": "哪个更正式？",
             "es": "Which is more formal?"
           },
           "a": "May I have a word with you?",
@@ -16848,7 +16848,7 @@
           },
           "t": {
             "en": "May is more formal than can/could for permission.",
-            "zh": "May is more formal than can/could for permission.",
+            "zh": "may 在表示许可时比 can/could 更正式。",
             "es": "May is more formal than can/could for permission."
           },
           "ex": {
@@ -16859,10 +16859,10 @@
               "Let me = informal/direct."
             ],
             "zh": [
-              "Can 非正式。",
-              "正确！选项 B。",
-              "Could 礼貌但不如 may 正式。",
-              "Let me 非正式/直接。"
+              "may 在表示许可时比 can/could 更正式。",
+              "may 在表示许可时比 can/could 更正式。",
+              "may 在表示许可时比 can/could 更正式。",
+              "may 在表示许可时比 can/could 更正式。"
             ],
             "es": [
               "Opción A.",
@@ -16876,7 +16876,7 @@
           "id": "advanced_register_q02",
           "q": {
             "en": "Which is the most formal closing for a business email?",
-            "zh": "Which is the most formal closing for a business email?",
+            "zh": "商务邮件的结尾哪个最正式？",
             "es": "Which is the most formal closing for a business email?"
           },
           "a": "Yours sincerely",
@@ -16902,7 +16902,7 @@
           },
           "t": {
             "en": "Yours sincerely is standard formal email closing.",
-            "zh": "Yours sincerely is standard formal email closing.",
+            "zh": "Yours sincerely 是标准的正式邮件结尾。",
             "es": "Yours sincerely is standard formal email closing."
           },
           "ex": {
@@ -16913,10 +16913,10 @@
               "See ya = extremely informal."
             ],
             "zh": [
-              "Cheers 非常不正式。",
-              "正确！选项 B。",
-              "Best 半正式。",
-              "See ya 极其不正式。"
+              "Yours sincerely 是标准的正式邮件结尾。",
+              "Yours sincerely 是标准的正式邮件结尾。",
+              "Yours sincerely 是标准的正式邮件结尾。",
+              "Yours sincerely 是标准的正式邮件结尾。"
             ],
             "es": [
               "Opción A.",
@@ -16933,7 +16933,7 @@
       "id": "advanced_cohesion",
       "name": {
         "en": "Cohesion",
-        "zh": "Cohesion",
+        "zh": "衔接",
         "es": "Cohesion"
       },
       "s": {
@@ -16952,7 +16952,7 @@
           "id": "advanced_cohesion_q01",
           "q": {
             "en": "The company reported high profits. ___, share prices rose.",
-            "zh": "The company reported high profits. ___, share prices rose.",
+            "zh": "请选择正确的连接词：The company reported high profits. ___, share prices rose.",
             "es": "The company reported high profits. ___, share prices rose."
           },
           "a": "Consequently",
@@ -16978,7 +16978,7 @@
           },
           "t": {
             "en": "Consequently for logical result between sentences.",
-            "zh": "Consequently for logical result between sentences.",
+            "zh": "consequently 表示句子间的逻辑结果。",
             "es": "Consequently for logical result between sentences."
           },
           "ex": {
@@ -16989,10 +16989,10 @@
               "In contrast = contrast."
             ],
             "zh": [
-              "However 表示对比，错误。",
-              "正确！选项 B。",
-              "Nevertheless 表示对比。",
-              "In contrast 表示对比。"
+              "consequently 表示句子间的逻辑结果。",
+              "consequently 表示句子间的逻辑结果。",
+              "consequently 表示句子间的逻辑结果。",
+              "consequently 表示句子间的逻辑结果。"
             ],
             "es": [
               "Opción A.",
@@ -17006,7 +17006,7 @@
           "id": "advanced_cohesion_q02",
           "q": {
             "en": "The first method is expensive. ___, it is highly effective.",
-            "zh": "The first method is expensive. ___, it is highly effective.",
+            "zh": "请选择正确的连接词：The first method is expensive. ___, it is highly effective.",
             "es": "The first method is expensive. ___, it is highly effective."
           },
           "a": "On the other hand",
@@ -17032,7 +17032,7 @@
           },
           "t": {
             "en": "On the other hand for presenting a contrasting point.",
-            "zh": "On the other hand for presenting a contrasting point.",
+            "zh": "on the other hand 表示提出对比的观点。",
             "es": "On the other hand for presenting a contrasting point."
           },
           "ex": {
@@ -17043,10 +17043,10 @@
               "Consequently = result."
             ],
             "zh": [
-              "Therefore 表示结果，错误。",
-              "正确！选项 B。",
-              "As a result 表示结果。",
-              "Consequently 表示结果。"
+              "on the other hand 表示提出对比的观点。",
+              "on the other hand 表示提出对比的观点。",
+              "on the other hand 表示提出对比的观点。",
+              "on the other hand 表示提出对比的观点。"
             ],
             "es": [
               "Opción A.",
@@ -17063,7 +17063,7 @@
       "id": "advanced_nominalisation",
       "name": {
         "en": "Nominalisation",
-        "zh": "Nominalisation",
+        "zh": "名词化",
         "es": "Nominalisation"
       },
       "s": {
@@ -17082,7 +17082,7 @@
           "id": "advanced_nominalisation_q01",
           "q": {
             "en": "The ___ of the new policy led to confusion.",
-            "zh": "The ___ of the new policy led to confusion.",
+            "zh": "请选择正确的形式：The ___ of the new policy led to confusion.",
             "es": "The ___ of the new policy led to confusion."
           },
           "a": "introduction",
@@ -17108,7 +17108,7 @@
           },
           "t": {
             "en": "Nominalisation: verb -> noun for formal/academic style.",
-            "zh": "Nominalisation: verb -> noun for formal/academic style.",
+            "zh": "名词化：动词 → 名词（正式/学术风格）。",
             "es": "Nominalisation: verb -> noun for formal/academic style."
           },
           "ex": {
@@ -17119,10 +17119,10 @@
               "Introduced = past participle."
             ],
             "zh": [
-              "Introduce 是动词，不是名词。",
-              "正确！选项 B。",
-              "Introducing 是动名词，不是纯名词。",
-              "Introduced 是过去分词。"
+              "名词化：动词 → 名词（正式/学术风格）。",
+              "名词化：动词 → 名词（正式/学术风格）。",
+              "名词化：动词 → 名词（正式/学术风格）。",
+              "名词化：动词 → 名词（正式/学术风格）。"
             ],
             "es": [
               "Opción A.",
@@ -17139,7 +17139,7 @@
       "id": "advanced_hedging",
       "name": {
         "en": "Hedging and Stance",
-        "zh": "Hedging and Stance",
+        "zh": "模糊表达与立场",
         "es": "Hedging and Stance"
       },
       "s": {
@@ -17158,7 +17158,7 @@
           "id": "advanced_hedging_q01",
           "q": {
             "en": "It ___ that the experiment was successful.",
-            "zh": "It ___ that the experiment was successful.",
+            "zh": "请选择正确的形式：It ___ that the experiment was successful.",
             "es": "It ___ that the experiment was successful."
           },
           "a": "seems",
@@ -17184,7 +17184,7 @@
           },
           "t": {
             "en": "Seem/appear for hedging (softening claims).",
-            "zh": "Seem/appear for hedging (softening claims).",
+            "zh": "seem/appear 用于模糊表达（弱化断言）。",
             "es": "Seem/appear for hedging (softening claims)."
           },
           "ex": {
@@ -17195,10 +17195,10 @@
               "Shows = too direct."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Is 太绝对。",
-              "Proves 太强。",
-              "Shows 太直接。"
+              "seem/appear 用于模糊表达（弱化断言）。",
+              "seem/appear 用于模糊表达（弱化断言）。",
+              "seem/appear 用于模糊表达（弱化断言）。",
+              "seem/appear 用于模糊表达（弱化断言）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -17212,7 +17212,7 @@
           "id": "advanced_hedging_q02",
           "q": {
             "en": "The results ___ to support the hypothesis.",
-            "zh": "The results ___ to support the hypothesis.",
+            "zh": "请选择正确的形式：The results ___ to support the hypothesis.",
             "es": "The results ___ to support the hypothesis."
           },
           "a": "seem",
@@ -17238,7 +17238,7 @@
           },
           "t": {
             "en": "Tend/seem/appear for cautious academic language.",
-            "zh": "Tend/seem/appear for cautious academic language.",
+            "zh": "tend/seem/appear 用于谨慎的学术语言。",
             "es": "Tend/seem/appear for cautious academic language."
           },
           "ex": {
@@ -17249,10 +17249,10 @@
               "Show = too direct."
             ],
             "zh": [
-              "Are 太绝对。",
-              "正确！选项 B。",
-              "Prove 太强。",
-              "Show 太直接。"
+              "tend/seem/appear 用于谨慎的学术语言。",
+              "tend/seem/appear 用于谨慎的学术语言。",
+              "tend/seem/appear 用于谨慎的学术语言。",
+              "tend/seem/appear 用于谨慎的学术语言。"
             ],
             "es": [
               "Opción A.",
@@ -17269,7 +17269,7 @@
       "id": "advanced_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -17288,7 +17288,7 @@
           "id": "advanced_production_q01",
           "q": {
             "en": "Choose the most academic version:",
-            "zh": "Choose the most academic version:",
+            "zh": "选择最学术的版本：",
             "es": "Choose the most academic version:"
           },
           "a": "There is widespread agreement that climate change poses significant risks.",
@@ -17314,7 +17314,7 @@
           },
           "t": {
             "en": "Academic style: nominalisation, hedging, formal vocabulary.",
-            "zh": "Academic style: nominalisation, hedging, formal vocabulary.",
+            "zh": "学术风格：名词化、模糊表达、正式词汇。",
             "es": "Academic style: nominalisation, hedging, formal vocabulary."
           },
           "ex": {
@@ -17325,10 +17325,10 @@
               "Lots of folks reckon = very informal."
             ],
             "zh": [
-              "A lot of + think + bad 非正式。",
-              "正确！选项 B。",
-              "Many people say + problem 半正式。",
-              "Lots of folks reckon 非常不正式。"
+              "学术风格：名词化、模糊表达、正式词汇。",
+              "学术风格：名词化、模糊表达、正式词汇。",
+              "学术风格：名词化、模糊表达、正式词汇。",
+              "学术风格：名词化、模糊表达、正式词汇。"
             ],
             "es": [
               "Opción A.",
@@ -17342,7 +17342,7 @@
           "id": "advanced_production_q02",
           "q": {
             "en": "Choose the sentence with correct formal grammar:",
-            "zh": "Choose the sentence with correct formal grammar:",
+            "zh": "选择正式语法正确的句子：",
             "es": "Choose the sentence with correct formal grammar:"
           },
           "a": "The person who called was my boss.",
@@ -17368,7 +17368,7 @@
           },
           "t": {
             "en": "Who for people in formal English.",
-            "zh": "Who for people in formal English.",
+            "zh": "正式英语中指人用 who。",
             "es": "Who for people in formal English."
           },
           "ex": {
@@ -17379,10 +17379,10 @@
               "Comma before who suggests non-restrictive, missing second comma."
             ],
             "zh": [
-              "Which 用于事物，不是人。",
-              "正确！选项 B。",
-              "That 用于人不正式，逗号位置错误。",
-              "逗号在 who 前暗示非限制性，缺少第二个逗号。"
+              "正式英语中指人用 who。",
+              "正式英语中指人用 who。",
+              "正式英语中指人用 who。",
+              "正式英语中指人用 who。"
             ],
             "es": [
               "Opción A.",
