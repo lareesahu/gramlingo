@@ -3165,7 +3165,7 @@
       "id": "prepositions_prep_place",
       "name": {
         "en": "In/On/At: Place",
-        "zh": "In/On/At: Place",
+        "zh": "In/On/At：地点",
         "es": "In/On/At: Place"
       },
       "s": {
@@ -3184,7 +3184,7 @@
           "id": "prepositions_prep_place_q01",
           "q": {
             "en": "The cat is sleeping ___ the box.",
-            "zh": "The cat is sleeping ___ the box.",
+            "zh": "请选择正确的介词：The cat is sleeping ___ the box.",
             "es": "El gato duerme ___ la caja."
           },
           "a": "in",
@@ -3210,7 +3210,7 @@
           },
           "t": {
             "en": "inside = in",
-            "zh": "inside = in",
+            "zh": "在盒子里面 = in（在……里面）。",
             "es": "dentro = in"
           },
           "ex": {
@@ -3221,10 +3221,10 @@
               "inside = in"
             ],
             "zh": [
-              "inside = in",
-              "inside = in",
-              "inside = in",
-              "inside = in"
+              "在盒子里面 = in（在……里面）。",
+              "在盒子里面 = in（在……里面）。",
+              "在盒子里面 = in（在……里面）。",
+              "在盒子里面 = in（在……里面）。"
             ],
             "es": [
               "dentro = in",
@@ -3238,7 +3238,7 @@
           "id": "prepositions_prep_place_q02",
           "q": {
             "en": "The book is ___ the table.",
-            "zh": "The book is ___ the table.",
+            "zh": "请选择正确的介词：The book is ___ the table.",
             "es": "El libro esta ___ la mesa."
           },
           "a": "on",
@@ -3264,7 +3264,7 @@
           },
           "t": {
             "en": "surface = on",
-            "zh": "surface = on",
+            "zh": "在表面 = on（在……上面）。",
             "es": "superficie = on"
           },
           "ex": {
@@ -3275,10 +3275,10 @@
               "surface = on"
             ],
             "zh": [
-              "surface = on",
-              "surface = on",
-              "surface = on",
-              "surface = on"
+              "在表面 = on（在……上面）。",
+              "在表面 = on（在……上面）。",
+              "在表面 = on（在……上面）。",
+              "在表面 = on（在……上面）。"
             ],
             "es": [
               "superficie = on",
@@ -3292,7 +3292,7 @@
           "id": "prepositions_prep_place_q03",
           "q": {
             "en": "I met her ___ the bus stop.",
-            "zh": "I met her ___ the bus stop.",
+            "zh": "请选择正确的介词：I met her ___ the bus stop.",
             "es": "La conoci ___ la parada de bus."
           },
           "a": "at",
@@ -3318,7 +3318,7 @@
           },
           "t": {
             "en": "specific point = at",
-            "zh": "specific point = at",
+            "zh": "具体地点 = at（在……处）。",
             "es": "punto especifico = at"
           },
           "ex": {
@@ -3329,10 +3329,10 @@
               "specific point = at"
             ],
             "zh": [
-              "specific point = at",
-              "specific point = at",
-              "specific point = at",
-              "specific point = at"
+              "具体地点 = at（在……处）。",
+              "具体地点 = at（在……处）。",
+              "具体地点 = at（在……处）。",
+              "具体地点 = at（在……处）。"
             ],
             "es": [
               "punto especifico = at",
@@ -3346,7 +3346,7 @@
           "id": "prepositions_prep_place_q04",
           "q": {
             "en": "There is a spider ___ the ceiling.",
-            "zh": "There is a spider ___ the ceiling.",
+            "zh": "请选择正确的介词：There is a spider ___ the ceiling.",
             "es": "Hay una arana ___ el techo."
           },
           "a": "on",
@@ -3372,7 +3372,7 @@
           },
           "t": {
             "en": "ceiling surface = on",
-            "zh": "ceiling surface = on",
+            "zh": "天花板表面 = on。",
             "es": "superficie del techo = on"
           },
           "ex": {
@@ -3383,10 +3383,10 @@
               "ceiling surface = on"
             ],
             "zh": [
-              "ceiling surface = on",
-              "ceiling surface = on",
-              "ceiling surface = on",
-              "ceiling surface = on"
+              "天花板表面 = on。",
+              "天花板表面 = on。",
+              "天花板表面 = on。",
+              "天花板表面 = on。"
             ],
             "es": [
               "superficie del techo = on",
@@ -3400,7 +3400,7 @@
           "id": "prepositions_prep_place_q05",
           "q": {
             "en": "She is waiting ___ the door.",
-            "zh": "She is waiting ___ the door.",
+            "zh": "请选择正确的介词：She is waiting ___ the door.",
             "es": "Ella espera ___ la puerta."
           },
           "a": "at",
@@ -3426,7 +3426,7 @@
           },
           "t": {
             "en": "specific location = at",
-            "zh": "specific location = at",
+            "zh": "具体位置 = at。",
             "es": "ubicacion especifica = at"
           },
           "ex": {
@@ -3437,10 +3437,10 @@
               "specific location = at"
             ],
             "zh": [
-              "specific location = at",
-              "specific location = at",
-              "specific location = at",
-              "specific location = at"
+              "具体位置 = at。",
+              "具体位置 = at。",
+              "具体位置 = at。",
+              "具体位置 = at。"
             ],
             "es": [
               "ubicacion especifica = at",
@@ -3454,7 +3454,7 @@
           "id": "prepositions_prep_place_q06",
           "q": {
             "en": "The kids are playing ___ the garden.",
-            "zh": "The kids are playing ___ the garden.",
+            "zh": "请选择正确的介词：The kids are playing ___ the garden.",
             "es": "Los ninos juegan ___ el jardin."
           },
           "a": "in",
@@ -3480,7 +3480,7 @@
           },
           "t": {
             "en": "inside garden = in",
-            "zh": "inside garden = in",
+            "zh": "在花园里面 = in。",
             "es": "dentro del jardin = in"
           },
           "ex": {
@@ -3491,10 +3491,10 @@
               "inside garden = in"
             ],
             "zh": [
-              "inside garden = in",
-              "inside garden = in",
-              "inside garden = in",
-              "inside garden = in"
+              "在花园里面 = in。",
+              "在花园里面 = in。",
+              "在花园里面 = in。",
+              "在花园里面 = in。"
             ],
             "es": [
               "dentro del jardin = in",
@@ -3511,7 +3511,7 @@
       "id": "prepositions_prep_time",
       "name": {
         "en": "In/On/At: Time",
-        "zh": "In/On/At: Time",
+        "zh": "In/On/At：时间",
         "es": "In/On/At: Time"
       },
       "s": {
@@ -3530,7 +3530,7 @@
           "id": "prepositions_prep_time_q01",
           "q": {
             "en": "The meeting starts ___ 3 PM.",
-            "zh": "The meeting starts ___ 3 PM.",
+            "zh": "请选择正确的介词：The meeting starts ___ 3 PM.",
             "es": "La reunion empieza ___ las 3 PM."
           },
           "a": "at",
@@ -3556,7 +3556,7 @@
           },
           "t": {
             "en": "specific time = at",
-            "zh": "specific time = at",
+            "zh": "具体时间 = at。",
             "es": "hora especifica = at"
           },
           "ex": {
@@ -3567,10 +3567,10 @@
               "specific time = at"
             ],
             "zh": [
-              "specific time = at",
-              "specific time = at",
-              "specific time = at",
-              "specific time = at"
+              "具体时间 = at。",
+              "具体时间 = at。",
+              "具体时间 = at。",
+              "具体时间 = at。"
             ],
             "es": [
               "hora especifica = at",
@@ -3584,7 +3584,7 @@
           "id": "prepositions_prep_time_q02",
           "q": {
             "en": "I was born ___ July.",
-            "zh": "I was born ___ July.",
+            "zh": "请选择正确的介词：I was born ___ July.",
             "es": "Naci ___ julio."
           },
           "a": [
@@ -3613,7 +3613,7 @@
           },
           "t": {
             "en": "month = in",
-            "zh": "month = in",
+            "zh": "月份 = in。",
             "es": "mes = in"
           },
           "ex": {
@@ -3624,10 +3624,10 @@
               "month = in"
             ],
             "zh": [
-              "month = in",
-              "month = in",
-              "month = in",
-              "month = in"
+              "月份 = in。",
+              "月份 = in。",
+              "月份 = in。",
+              "月份 = in。"
             ],
             "es": [
               "mes = in",
@@ -3641,7 +3641,7 @@
           "id": "prepositions_prep_time_q03",
           "q": {
             "en": "She arrived ___ Monday morning.",
-            "zh": "She arrived ___ Monday morning.",
+            "zh": "请选择正确的介词：She arrived ___ Monday morning.",
             "es": "Llego ___ el lunes por la manana."
           },
           "a": "on",
@@ -3667,7 +3667,7 @@
           },
           "t": {
             "en": "specific day = on",
-            "zh": "specific day = on",
+            "zh": "具体某天 = on。",
             "es": "dia especifico = on"
           },
           "ex": {
@@ -3678,10 +3678,10 @@
               "specific day = on"
             ],
             "zh": [
-              "specific day = on",
-              "specific day = on",
-              "specific day = on",
-              "specific day = on"
+              "具体某天 = on。",
+              "具体某天 = on。",
+              "具体某天 = on。",
+              "具体某天 = on。"
             ],
             "es": [
               "dia especifico = on",
@@ -3695,7 +3695,7 @@
           "id": "prepositions_prep_time_q04",
           "q": {
             "en": "We go skiing ___ winter.",
-            "zh": "We go skiing ___ winter.",
+            "zh": "请选择正确的介词：We go skiing ___ winter.",
             "es": "Esquiamos ___ invierno."
           },
           "a": [
@@ -3724,7 +3724,7 @@
           },
           "t": {
             "en": "season = in",
-            "zh": "season = in",
+            "zh": "季节 = in。",
             "es": "temporada = in"
           },
           "ex": {
@@ -3735,10 +3735,10 @@
               "season = in"
             ],
             "zh": [
-              "season = in",
-              "season = in",
-              "season = in",
-              "season = in"
+              "季节 = in。",
+              "季节 = in。",
+              "季节 = in。",
+              "季节 = in。"
             ],
             "es": [
               "temporada = in",
@@ -3752,7 +3752,7 @@
           "id": "prepositions_prep_time_q05",
           "q": {
             "en": "The train leaves ___ noon.",
-            "zh": "The train leaves ___ noon.",
+            "zh": "请选择正确的介词：The train leaves ___ noon.",
             "es": "El tren sale ___ mediodia."
           },
           "a": "at",
@@ -3778,7 +3778,7 @@
           },
           "t": {
             "en": "noon/midnight = at",
-            "zh": "noon/midnight = at",
+            "zh": "正午/午夜 = at。",
             "es": "mediodia/medianoche = at"
           },
           "ex": {
@@ -3789,10 +3789,10 @@
               "noon/midnight = at"
             ],
             "zh": [
-              "noon/midnight = at",
-              "noon/midnight = at",
-              "noon/midnight = at",
-              "noon/midnight = at"
+              "正午/午夜 = at。",
+              "正午/午夜 = at。",
+              "正午/午夜 = at。",
+              "正午/午夜 = at。"
             ],
             "es": [
               "mediodia/medianoche = at",
@@ -3806,7 +3806,7 @@
           "id": "prepositions_prep_time_q06",
           "q": {
             "en": "Her birthday is ___ May 15th.",
-            "zh": "Her birthday is ___ May 15th.",
+            "zh": "请选择正确的介词：Her birthday is ___ May 15th.",
             "es": "Su cumpleanos es ___ 15 de mayo."
           },
           "a": "on",
@@ -3832,7 +3832,7 @@
           },
           "t": {
             "en": "specific date = on",
-            "zh": "specific date = on",
+            "zh": "具体日期 = on。",
             "es": "fecha especifica = on"
           },
           "ex": {
@@ -3843,10 +3843,10 @@
               "specific date = on"
             ],
             "zh": [
-              "specific date = on",
-              "specific date = on",
-              "specific date = on",
-              "specific date = on"
+              "具体日期 = on。",
+              "具体日期 = on。",
+              "具体日期 = on。",
+              "具体日期 = on。"
             ],
             "es": [
               "fecha especifica = on",
@@ -3860,7 +3860,7 @@
           "id": "prepositions_prep_time_q07",
           "q": {
             "en": "I usually wake up ___ 7 o'clock.",
-            "zh": "I usually wake up ___ 7 o'clock.",
+            "zh": "请选择正确的介词：I usually wake up ___ 7 o'clock.",
             "es": "Normalmente despierto ___ las 7."
           },
           "a": "at",
@@ -3886,7 +3886,7 @@
           },
           "t": {
             "en": "specific time = at",
-            "zh": "specific time = at",
+            "zh": "具体时间 = at。",
             "es": "hora especifica = at"
           },
           "ex": {
@@ -3897,10 +3897,10 @@
               "specific time = at"
             ],
             "zh": [
-              "specific time = at",
-              "specific time = at",
-              "specific time = at",
-              "specific time = at"
+              "具体时间 = at。",
+              "具体时间 = at。",
+              "具体时间 = at。",
+              "具体时间 = at。"
             ],
             "es": [
               "hora especifica = at",
@@ -3917,7 +3917,7 @@
       "id": "prepositions_prep_mixed",
       "name": {
         "en": "Mixed Prepositions",
-        "zh": "Mixed Prepositions",
+        "zh": "介词综合练习",
         "es": "Mixed Prepositions"
       },
       "s": {
@@ -3936,7 +3936,7 @@
           "id": "prepositions_prep_mixed_q01",
           "q": {
             "en": "She lives ___ New York.",
-            "zh": "She lives ___ New York.",
+            "zh": "请选择正确的介词：She lives ___ New York.",
             "es": "Ella vive ___ Nueva York."
           },
           "a": "in",
@@ -3962,7 +3962,7 @@
           },
           "t": {
             "en": "city = in",
-            "zh": "city = in",
+            "zh": "城市 = in。",
             "es": "ciudad = in"
           },
           "ex": {
@@ -3973,10 +3973,10 @@
               "city = in"
             ],
             "zh": [
-              "city = in",
-              "city = in",
-              "city = in",
-              "city = in"
+              "城市 = in。",
+              "城市 = in。",
+              "城市 = in。",
+              "城市 = in。"
             ],
             "es": [
               "ciudad = in",
@@ -3990,7 +3990,7 @@
           "id": "prepositions_prep_mixed_q02",
           "q": {
             "en": "We will meet ___ Friday.",
-            "zh": "We will meet ___ Friday.",
+            "zh": "请选择正确的介词：We will meet ___ Friday.",
             "es": "Nos reuniremos ___ el viernes."
           },
           "a": "on",
@@ -4016,7 +4016,7 @@
           },
           "t": {
             "en": "day of week = on",
-            "zh": "day of week = on",
+            "zh": "星期几 = on。",
             "es": "dia de semana = on"
           },
           "ex": {
@@ -4027,10 +4027,10 @@
               "day of week = on"
             ],
             "zh": [
-              "day of week = on",
-              "day of week = on",
-              "day of week = on",
-              "day of week = on"
+              "星期几 = on。",
+              "星期几 = on。",
+              "星期几 = on。",
+              "星期几 = on。"
             ],
             "es": [
               "dia de semana = on",
@@ -4044,7 +4044,7 @@
           "id": "prepositions_prep_mixed_q03",
           "q": {
             "en": "He is standing ___ the corner.",
-            "zh": "He is standing ___ the corner.",
+            "zh": "请选择正确的介词：He is standing ___ the corner.",
             "es": "El esta parado ___ la esquina."
           },
           "a": "at",
@@ -4070,7 +4070,7 @@
           },
           "t": {
             "en": "street corner = at",
-            "zh": "street corner = at",
+            "zh": "街角 = at。",
             "es": "esquina = at"
           },
           "ex": {
@@ -4081,10 +4081,10 @@
               "street corner = at"
             ],
             "zh": [
-              "street corner = at",
-              "street corner = at",
-              "street corner = at",
-              "street corner = at"
+              "街角 = at。",
+              "街角 = at。",
+              "街角 = at。",
+              "街角 = at。"
             ],
             "es": [
               "esquina = at",
@@ -4098,7 +4098,7 @@
           "id": "prepositions_prep_mixed_q04",
           "q": {
             "en": "The party is ___ the evening.",
-            "zh": "The party is ___ the evening.",
+            "zh": "请选择正确的介词：The party is ___ the evening.",
             "es": "La fiesta es ___ la tarde."
           },
           "a": "in",
@@ -4124,7 +4124,7 @@
           },
           "t": {
             "en": "in the evening (fixed)",
-            "zh": "in the evening (fixed)",
+            "zh": "固定搭配 in the evening（在晚上）。",
             "es": "in the evening (fijo)"
           },
           "ex": {
@@ -4135,10 +4135,10 @@
               "in the evening (fixed)"
             ],
             "zh": [
-              "in the evening (fixed)",
-              "in the evening (fixed)",
-              "in the evening (fixed)",
-              "in the evening (fixed)"
+              "固定搭配 in the evening（在晚上）。",
+              "固定搭配 in the evening（在晚上）。",
+              "固定搭配 in the evening（在晚上）。",
+              "固定搭配 in the evening（在晚上）。"
             ],
             "es": [
               "in the evening (fijo)",
@@ -4152,7 +4152,7 @@
           "id": "prepositions_prep_mixed_q05",
           "q": {
             "en": "Put the flowers ___ the vase.",
-            "zh": "Put the flowers ___ the vase.",
+            "zh": "请选择正确的介词：Put the flowers ___ the vase.",
             "es": "Pon las flores ___ el florero."
           },
           "a": "in",
@@ -4178,7 +4178,7 @@
           },
           "t": {
             "en": "inside vase = in",
-            "zh": "inside vase = in",
+            "zh": "在花瓶里面 = in。",
             "es": "dentro del florero = in"
           },
           "ex": {
@@ -4189,10 +4189,10 @@
               "inside vase = in"
             ],
             "zh": [
-              "inside vase = in",
-              "inside vase = in",
-              "inside vase = in",
-              "inside vase = in"
+              "在花瓶里面 = in。",
+              "在花瓶里面 = in。",
+              "在花瓶里面 = in。",
+              "在花瓶里面 = in。"
             ],
             "es": [
               "dentro del florero = in",
@@ -4206,7 +4206,7 @@
           "id": "prepositions_prep_mixed_q06",
           "q": {
             "en": "See you ___ Christmas Day.",
-            "zh": "See you ___ Christmas Day.",
+            "zh": "请选择正确的介词：See you ___ Christmas Day.",
             "es": "Nos vemos ___ Navidad."
           },
           "a": "on",
@@ -4232,7 +4232,7 @@
           },
           "t": {
             "en": "specific holiday = on",
-            "zh": "specific holiday = on",
+            "zh": "具体节日 = on。",
             "es": "dia festivo = on"
           },
           "ex": {
@@ -4243,10 +4243,10 @@
               "specific holiday = on"
             ],
             "zh": [
-              "specific holiday = on",
-              "specific holiday = on",
-              "specific holiday = on",
-              "specific holiday = on"
+              "具体节日 = on。",
+              "具体节日 = on。",
+              "具体节日 = on。",
+              "具体节日 = on。"
             ],
             "es": [
               "dia festivo = on",
@@ -4263,7 +4263,7 @@
       "id": "prepositions_prep_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -4282,7 +4282,7 @@
           "id": "prepositions_prep_prod_q01",
           "q": {
             "en": "Fix: I was born in July 15th.",
-            "zh": "Fix: I was born in July 15th.",
+            "zh": "修改句子：I was born in July 15th.",
             "es": "Corrige: I was born in July 15th."
           },
           "a": "on",
@@ -4308,7 +4308,7 @@
           },
           "t": {
             "en": "specific date = on",
-            "zh": "specific date = on",
+            "zh": "具体日期用 on：born on July 15th。",
             "es": "fecha especifica = on"
           },
           "ex": {
@@ -4319,10 +4319,10 @@
               "specific date = on"
             ],
             "zh": [
-              "specific date = on",
-              "specific date = on",
-              "specific date = on",
-              "specific date = on"
+              "具体日期用 on：born on July 15th。",
+              "具体日期用 on：born on July 15th。",
+              "具体日期用 on：born on July 15th。",
+              "具体日期用 on：born on July 15th。"
             ],
             "es": [
               "fecha especifica = on",
@@ -4336,7 +4336,7 @@
           "id": "prepositions_prep_prod_q02",
           "q": {
             "en": "Fill: Hang the painting ___ the wall.",
-            "zh": "Fill: Hang the painting ___ the wall.",
+            "zh": "填空：Hang the painting ___ the wall.",
             "es": "Completa: Hang the painting ___ the wall."
           },
           "a": "on",
@@ -4362,7 +4362,7 @@
           },
           "t": {
             "en": "wall surface = on",
-            "zh": "wall surface = on",
+            "zh": "墙面表面 = on。",
             "es": "pared = on"
           },
           "ex": {
@@ -4373,10 +4373,10 @@
               "wall surface = on"
             ],
             "zh": [
-              "wall surface = on",
-              "wall surface = on",
-              "wall surface = on",
-              "wall surface = on"
+              "墙面表面 = on。",
+              "墙面表面 = on。",
+              "墙面表面 = on。",
+              "墙面表面 = on。"
             ],
             "es": [
               "pared = on",
@@ -4390,7 +4390,7 @@
           "id": "prepositions_prep_prod_q03",
           "q": {
             "en": "Fix: She arrived at Monday.",
-            "zh": "Fix: She arrived at Monday.",
+            "zh": "修改句子：She arrived at Monday.",
             "es": "Corrige: She arrived at Monday."
           },
           "a": "on",
@@ -4416,7 +4416,7 @@
           },
           "t": {
             "en": "day of week = on",
-            "zh": "day of week = on",
+            "zh": "星期几用 on：arrived on Monday。",
             "es": "dia de semana = on"
           },
           "ex": {
@@ -4427,10 +4427,10 @@
               "day of week = on"
             ],
             "zh": [
-              "day of week = on",
-              "day of week = on",
-              "day of week = on",
-              "day of week = on"
+              "星期几用 on：arrived on Monday。",
+              "星期几用 on：arrived on Monday。",
+              "星期几用 on：arrived on Monday。",
+              "星期几用 on：arrived on Monday。"
             ],
             "es": [
               "dia de semana = on",
@@ -4444,7 +4444,7 @@
           "id": "prepositions_prep_prod_q04",
           "q": {
             "en": "Fill: We stayed ___ a hotel.",
-            "zh": "Fill: We stayed ___ a hotel.",
+            "zh": "填空：We stayed ___ a hotel.",
             "es": "Completa: We stayed ___ a hotel."
           },
           "a": "at",
@@ -4470,7 +4470,7 @@
           },
           "t": {
             "en": "specific place = at",
-            "zh": "specific place = at",
+            "zh": "具体地点 = at。",
             "es": "lugar especifico = at"
           },
           "ex": {
@@ -4481,10 +4481,10 @@
               "specific place = at"
             ],
             "zh": [
-              "specific place = at",
-              "specific place = at",
-              "specific place = at",
-              "specific place = at"
+              "具体地点 = at。",
+              "具体地点 = at。",
+              "具体地点 = at。",
+              "具体地点 = at。"
             ],
             "es": [
               "lugar especifico = at",
@@ -4498,7 +4498,7 @@
           "id": "prepositions_prep_prod_q05",
           "q": {
             "en": "Fix: The answer is in the bottom of the page.",
-            "zh": "Fix: The answer is in the bottom of the page.",
+            "zh": "修改句子：The answer is in the bottom of the page.",
             "es": "Corrige: The answer is in the bottom."
           },
           "a": "at",
@@ -4524,7 +4524,7 @@
           },
           "t": {
             "en": "at the bottom",
-            "zh": "at the bottom",
+            "zh": "固定搭配 at the bottom（在底部）。",
             "es": "at the bottom"
           },
           "ex": {
@@ -4535,10 +4535,10 @@
               "at the bottom"
             ],
             "zh": [
-              "at the bottom",
-              "at the bottom",
-              "at the bottom",
-              "at the bottom"
+              "固定搭配 at the bottom（在底部）。",
+              "固定搭配 at the bottom（在底部）。",
+              "固定搭配 at the bottom（在底部）。",
+              "固定搭配 at the bottom（在底部）。"
             ],
             "es": [
               "at the bottom",
@@ -4552,7 +4552,7 @@
           "id": "prepositions_prep_prod_q06",
           "q": {
             "en": "Fill: I will be back ___ a few minutes.",
-            "zh": "Fill: I will be back ___ a few minutes.",
+            "zh": "填空：I will be back ___ a few minutes.",
             "es": "Completa: I will be back ___ a few minutes."
           },
           "a": "in",
@@ -4578,7 +4578,7 @@
           },
           "t": {
             "en": "in + time period",
-            "zh": "in + time period",
+            "zh": "in + 时间段（在……之后）。",
             "es": "in + periodo"
           },
           "ex": {
@@ -4589,10 +4589,10 @@
               "in + time period"
             ],
             "zh": [
-              "in + time period",
-              "in + time period",
-              "in + time period",
-              "in + time period"
+              "in + 时间段（在……之后）。",
+              "in + 时间段（在……之后）。",
+              "in + 时间段（在……之后）。",
+              "in + 时间段（在……之后）。"
             ],
             "es": [
               "in + periodo",
@@ -4609,7 +4609,7 @@
       "id": "tenses_present",
       "name": {
         "en": "Present Tenses",
-        "zh": "Present Tenses",
+        "zh": "一般现在时",
         "es": "Present Tenses"
       },
       "s": {
@@ -4628,7 +4628,7 @@
           "id": "tenses_present_q01",
           "q": {
             "en": "She ___ to work by bus every day.",
-            "zh": "She ___ to work by bus every day.",
+            "zh": "请选择正确的动词形式：She ___ to work by bus every day.",
             "es": "She ___ to work by bus every day."
           },
           "a": "goes",
@@ -4654,7 +4654,7 @@
           },
           "t": {
             "en": "Present simple: he/she/it + verb-s.",
-            "zh": "Present simple: he/she/it + verb-s.",
+            "zh": "一般现在时：he/she/it + 动词加 s。",
             "es": "Present simple: he/she/it + verb-s."
           },
           "ex": {
@@ -4665,10 +4665,10 @@
               "Is go is ungrammatical."
             ],
             "zh": [
-              "动词原形不加 -s，与主语 she 不匹配。",
-              "正确！选项 B。",
-              "单独用 going 句子不完整。",
-              "Is go 不符合语法。"
+              "一般现在时：he/she/it + 动词加 s。",
+              "一般现在时：he/she/it + 动词加 s。",
+              "一般现在时：he/she/it + 动词加 s。",
+              "一般现在时：he/she/it + 动词加 s。"
             ],
             "es": [
               "Opción A.",
@@ -4682,7 +4682,7 @@
           "id": "tenses_present_q02",
           "q": {
             "en": "Right now they ___ lunch together.",
-            "zh": "Right now they ___ lunch together.",
+            "zh": "请选择正确的动词形式：Right now they ___ lunch together.",
             "es": "Right now they ___ lunch together."
           },
           "a": "are having",
@@ -4708,7 +4708,7 @@
           },
           "t": {
             "en": "Present continuous: am/is/are + -ing.",
-            "zh": "Present continuous: am/is/are + -ing.",
+            "zh": "现在进行时：am/is/are + 动词ing。",
             "es": "Present continuous: am/is/are + -ing."
           },
           "ex": {
@@ -4719,10 +4719,10 @@
               "Having alone misses auxiliary are."
             ],
             "zh": [
-              "Have 是一般现在时，不表示正在进行的动作。",
-              "正确！选项 B。",
-              "Has 与复数主语 they 不一致。",
-              "Having 单独使用缺少助动词 are。"
+              "现在进行时：am/is/are + 动词ing。",
+              "现在进行时：am/is/are + 动词ing。",
+              "现在进行时：am/is/are + 动词ing。",
+              "现在进行时：am/is/are + 动词ing。"
             ],
             "es": [
               "Opción A.",
@@ -4736,7 +4736,7 @@
           "id": "tenses_present_q03",
           "q": {
             "en": "I ___ that film before. It is wonderful.",
-            "zh": "I ___ that film before. It is wonderful.",
+            "zh": "请选择正确的动词形式：I ___ that film before. It is wonderful.",
             "es": "I ___ that film before. It is wonderful."
           },
           "a": "have seen",
@@ -4762,7 +4762,7 @@
           },
           "t": {
             "en": "Present perfect: have/has + past participle.",
-            "zh": "Present perfect: have/has + past participle.",
+            "zh": "现在完成时：have/has + 过去分词。",
             "es": "Present perfect: have/has + past participle."
           },
           "ex": {
@@ -4773,10 +4773,10 @@
               "Seeing alone is incomplete."
             ],
             "zh": [
-              "See 是动词原形，缺少过去分词形式。",
-              "Saw 是过去式，但 before 后面需要完成时。",
-              "正确！选项 C。",
-              "Seeing 单独使用句子不完整。"
+              "现在完成时：have/has + 过去分词。",
+              "现在完成时：have/has + 过去分词。",
+              "现在完成时：have/has + 过去分词。",
+              "现在完成时：have/has + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -4790,7 +4790,7 @@
           "id": "tenses_present_q04",
           "q": {
             "en": "The sun ___ in the east.",
-            "zh": "The sun ___ in the east.",
+            "zh": "请选择正确的动词形式：The sun ___ in the east.",
             "es": "The sun ___ in the east."
           },
           "a": "rises",
@@ -4816,7 +4816,7 @@
           },
           "t": {
             "en": "Present simple for general facts.",
-            "zh": "Present simple for general facts.",
+            "zh": "一般现在时表示普遍事实。",
             "es": "Present simple for general facts."
           },
           "ex": {
@@ -4827,10 +4827,10 @@
               "Rose is past tense."
             ],
             "zh": [
-              "Rise 缺少第三人称单数的 -s。",
-              "正确！选项 B。",
-              "Is rising 表示正在发生，不适用于陈述事实。",
-              "Rose 是过去式，不适合描述一般规律。"
+              "一般现在时表示普遍事实。",
+              "一般现在时表示普遍事实。",
+              "一般现在时表示普遍事实。",
+              "一般现在时表示普遍事实。"
             ],
             "es": [
               "Opción A.",
@@ -4844,7 +4844,7 @@
           "id": "tenses_present_q05",
           "q": {
             "en": "She ___ English at a school this month.",
-            "zh": "She ___ English at a school this month.",
+            "zh": "请选择正确的动词形式：She ___ English at a school this month.",
             "es": "She ___ English at a school this month."
           },
           "a": "is studying",
@@ -4870,7 +4870,7 @@
           },
           "t": {
             "en": "Present continuous for temporary situations.",
-            "zh": "Present continuous for temporary situations.",
+            "zh": "现在进行时表示暂时的状态。",
             "es": "Present continuous for temporary situations."
           },
           "ex": {
@@ -4881,10 +4881,10 @@
               "Studied is past tense."
             ],
             "zh": [
-              "Study 缺少 -s 或只是一般现在时。",
-              "Studies 表示长期习惯，不是临时的。",
-              "正确！选项 C。",
-              "Studied 是过去式。"
+              "现在进行时表示暂时的状态。",
+              "现在进行时表示暂时的状态。",
+              "现在进行时表示暂时的状态。",
+              "现在进行时表示暂时的状态。"
             ],
             "es": [
               "Opción A.",
@@ -4898,7 +4898,7 @@
           "id": "tenses_present_q06",
           "q": {
             "en": "We ___ to Paris three times since 2020.",
-            "zh": "We ___ to Paris three times since 2020.",
+            "zh": "请选择正确的动词形式：We ___ to Paris three times since 2020.",
             "es": "We ___ to Paris three times since 2020."
           },
           "a": "have been",
@@ -4924,7 +4924,7 @@
           },
           "t": {
             "en": "Present perfect with since/for.",
-            "zh": "Present perfect with since/for.",
+            "zh": "现在完成时与 since/for 连用。",
             "es": "Present perfect with since/for."
           },
           "ex": {
@@ -4935,10 +4935,10 @@
               "Are going = future plan."
             ],
             "zh": [
-              "Go 是一般现在时。",
-              "Went 是过去式——since 2020 需要现在完成时。",
-              "正确！选项 C。",
-              "Are going 表示将来的计划。"
+              "现在完成时与 since/for 连用。",
+              "现在完成时与 since/for 连用。",
+              "现在完成时与 since/for 连用。",
+              "现在完成时与 since/for 连用。"
             ],
             "es": [
               "Opción A.",
@@ -4955,7 +4955,7 @@
       "id": "tenses_past",
       "name": {
         "en": "Past Tenses",
-        "zh": "Past Tenses",
+        "zh": "一般过去时",
         "es": "Past Tenses"
       },
       "s": {
@@ -4974,7 +4974,7 @@
           "id": "tenses_past_q01",
           "q": {
             "en": "Last weekend they ___ to the beach.",
-            "zh": "Last weekend they ___ to the beach.",
+            "zh": "请选择正确的动词形式：Last weekend they ___ to the beach.",
             "es": "Last weekend they ___ to the beach."
           },
           "a": "went",
@@ -5000,7 +5000,7 @@
           },
           "t": {
             "en": "Past simple with specific past time.",
-            "zh": "Past simple with specific past time.",
+            "zh": "一般过去时 + 具体过去时间。",
             "es": "Past simple with specific past time."
           },
           "ex": {
@@ -5011,10 +5011,10 @@
               "Were going implies interruption."
             ],
             "zh": [
-              "Go 是动词原形。",
-              "正确！选项 B。",
-              "Have gone 是现在完成时——时态冲突。",
-              "Were going 暗示被打断。"
+              "一般过去时 + 具体过去时间。",
+              "一般过去时 + 具体过去时间。",
+              "一般过去时 + 具体过去时间。",
+              "一般过去时 + 具体过去时间。"
             ],
             "es": [
               "Opción A.",
@@ -5028,7 +5028,7 @@
           "id": "tenses_past_q02",
           "q": {
             "en": "While I ___, the phone rang.",
-            "zh": "While I ___, the phone rang.",
+            "zh": "请选择正确的动词形式：While I ___, the phone rang.",
             "es": "While I ___, the phone rang."
           },
           "a": "was cooking",
@@ -5054,7 +5054,7 @@
           },
           "t": {
             "en": "Past continuous for background interrupted action.",
-            "zh": "Past continuous for background interrupted action.",
+            "zh": "过去进行时表示被打断的背景动作。",
             "es": "Past continuous for background interrupted action."
           },
           "ex": {
@@ -5065,10 +5065,10 @@
               "Have cooked is present perfect."
             ],
             "zh": [
-              "Cook 是动词原形。",
-              "Cooked 是过去式——while 后面需要用进行时。",
-              "正确！选项 C。",
-              "Have cooked 是现在完成时。"
+              "过去进行时表示被打断的背景动作。",
+              "过去进行时表示被打断的背景动作。",
+              "过去进行时表示被打断的背景动作。",
+              "过去进行时表示被打断的背景动作。"
             ],
             "es": [
               "Opción A.",
@@ -5082,7 +5082,7 @@
           "id": "tenses_past_q03",
           "q": {
             "en": "She ___ her homework before dinner yesterday.",
-            "zh": "She ___ her homework before dinner yesterday.",
+            "zh": "请选择正确的动词形式：She ___ her homework before dinner yesterday.",
             "es": "She ___ her homework before dinner yesterday."
           },
           "a": [
@@ -5111,7 +5111,7 @@
           },
           "t": {
             "en": "Past perfect for action before another past action.",
-            "zh": "Past perfect for action before another past action.",
+            "zh": "过去完成时表示在另一个过去动作之前发生的动作。",
             "es": "Past perfect for action before another past action."
           },
           "ex": {
@@ -5122,10 +5122,10 @@
               "Has finished is present perfect."
             ],
             "zh": [
-              "Finishes 是现在时。",
-              "Finished 是一般过去时——需要表示更早的时间。",
-              "正确！选项 C。",
-              "Has finished 是现在完成时。"
+              "过去完成时表示在另一个过去动作之前发生的动作。",
+              "过去完成时表示在另一个过去动作之前发生的动作。",
+              "过去完成时表示在另一个过去动作之前发生的动作。",
+              "过去完成时表示在另一个过去动作之前发生的动作。"
             ],
             "es": [
               "Opción A.",
@@ -5139,7 +5139,7 @@
           "id": "tenses_past_q04",
           "q": {
             "en": "When I was a child, I ___ in the park daily.",
-            "zh": "When I was a child, I ___ in the park daily.",
+            "zh": "请选择正确的动词形式：When I was a child, I ___ in the park daily.",
             "es": "When I was a child, I ___ in the park daily."
           },
           "a": "played",
@@ -5165,7 +5165,7 @@
           },
           "t": {
             "en": "Past simple for repeated past habits.",
-            "zh": "Past simple for repeated past habits.",
+            "zh": "一般过去时表示过去的习惯。",
             "es": "Past simple for repeated past habits."
           },
           "ex": {
@@ -5176,10 +5176,10 @@
               "Have played = present perfect."
             ],
             "zh": [
-              "Play 是动词原形。",
-              "正确！选项 B。",
-              "Was playing 是过去进行时，不表示反复的习惯。",
-              "Have played 是现在完成时。"
+              "一般过去时表示过去的习惯。",
+              "一般过去时表示过去的习惯。",
+              "一般过去时表示过去的习惯。",
+              "一般过去时表示过去的习惯。"
             ],
             "es": [
               "Opción A.",
@@ -5193,7 +5193,7 @@
           "id": "tenses_past_q05",
           "q": {
             "en": "He ___ his keys and could not enter.",
-            "zh": "He ___ his keys and could not enter.",
+            "zh": "请选择正确的动词形式：He ___ his keys and could not enter.",
             "es": "He ___ his keys and could not enter."
           },
           "a": [
@@ -5222,7 +5222,7 @@
           },
           "t": {
             "en": "Past perfect for earlier action with past consequence.",
-            "zh": "Past perfect for earlier action with past consequence.",
+            "zh": "过去完成时表示较早发生并导致过去结果的动作。",
             "es": "Past perfect for earlier action with past consequence."
           },
           "ex": {
@@ -5233,10 +5233,10 @@
               "Was losing = ongoing, not completed loss."
             ],
             "zh": [
-              "Loses 是现在时。",
-              "Lost 是一般过去时——需要表示在到达前已完成。",
-              "正确！选项 C。",
-              "Was losing 表示正在进行，不是已经丢失。"
+              "过去完成时表示较早发生并导致过去结果的动作。",
+              "过去完成时表示较早发生并导致过去结果的动作。",
+              "过去完成时表示较早发生并导致过去结果的动作。",
+              "过去完成时表示较早发生并导致过去结果的动作。"
             ],
             "es": [
               "Opción A.",
@@ -5250,7 +5250,7 @@
           "id": "tenses_past_q06",
           "q": {
             "en": "By the time we arrived, the film ___.",
-            "zh": "By the time we arrived, the film ___.",
+            "zh": "请选择正确的动词形式：By the time we arrived, the film ___.",
             "es": "By the time we arrived, the film ___."
           },
           "a": [
@@ -5279,7 +5279,7 @@
           },
           "t": {
             "en": "Past perfect after by the time.",
-            "zh": "Past perfect after by the time.",
+            "zh": "by the time 后用过去完成时。",
             "es": "Past perfect after by the time."
           },
           "ex": {
@@ -5290,10 +5290,10 @@
               "Was starting = in progress, not completed."
             ],
             "zh": [
-              "Starts 是现在时。",
-              "Started 是一般过去时——没有表示在到达前已完成。",
-              "正确！选项 C。",
-              "Was starting 表示正在进行，不是已完成。"
+              "by the time 后用过去完成时。",
+              "by the time 后用过去完成时。",
+              "by the time 后用过去完成时。",
+              "by the time 后用过去完成时。"
             ],
             "es": [
               "Opción A.",
@@ -5310,7 +5310,7 @@
       "id": "tenses_future",
       "name": {
         "en": "Future Forms",
-        "zh": "Future Forms",
+        "zh": "将来时",
         "es": "Future Forms"
       },
       "s": {
@@ -5329,7 +5329,7 @@
           "id": "tenses_future_q01",
           "q": {
             "en": "Look at those clouds! It ___.",
-            "zh": "Look at those clouds! It ___.",
+            "zh": "请选择正确的动词形式：Look at those clouds! It ___.",
             "es": "Look at those clouds! It ___."
           },
           "a": [
@@ -5358,7 +5358,7 @@
           },
           "t": {
             "en": "Going to for prediction based on evidence.",
-            "zh": "Going to for prediction based on evidence.",
+            "zh": "be going to 表示基于证据的预测。",
             "es": "Going to for prediction based on evidence."
           },
           "ex": {
@@ -5369,10 +5369,10 @@
               "Rained is past."
             ],
             "zh": [
-              "Rains 是一般现在时。",
-              "正确！选项 B。",
-              "Will rain 表示一般预测，缺乏基于证据的判断。",
-              "Rained 是过去式。"
+              "be going to 表示基于证据的预测。",
+              "be going to 表示基于证据的预测。",
+              "be going to 表示基于证据的预测。",
+              "be going to 表示基于证据的预测。"
             ],
             "es": [
               "Opción A.",
@@ -5386,7 +5386,7 @@
           "id": "tenses_future_q02",
           "q": {
             "en": "I ___ you tomorrow at 3 PM as agreed.",
-            "zh": "I ___ you tomorrow at 3 PM as agreed.",
+            "zh": "请选择正确的动词形式：I ___ you tomorrow at 3 PM as agreed.",
             "es": "I ___ you tomorrow at 3 PM as agreed."
           },
           "a": [
@@ -5415,7 +5415,7 @@
           },
           "t": {
             "en": "Present continuous for fixed future arrangements.",
-            "zh": "Present continuous for fixed future arrangements.",
+            "zh": "现在进行时可表示已安排的将来活动。",
             "es": "Present continuous for fixed future arrangements."
           },
           "ex": {
@@ -5426,10 +5426,10 @@
               "Saw is past."
             ],
             "zh": [
-              "See 是一般现在时。",
-              "正确！选项 B。",
-              "Will see 用于已安排的约会不够自然。",
-              "Saw 是过去式。"
+              "现在进行时可表示已安排的将来活动。",
+              "现在进行时可表示已安排的将来活动。",
+              "现在进行时可表示已安排的将来活动。",
+              "现在进行时可表示已安排的将来活动。"
             ],
             "es": [
               "Opción A.",
@@ -5443,7 +5443,7 @@
           "id": "tenses_future_q03",
           "q": {
             "en": "The train ___ at 6 PM per the schedule.",
-            "zh": "The train ___ at 6 PM per the schedule.",
+            "zh": "请选择正确的动词形式：The train ___ at 6 PM per the schedule.",
             "es": "The train ___ at 6 PM per the schedule."
           },
           "a": [
@@ -5472,7 +5472,7 @@
           },
           "t": {
             "en": "Present simple for scheduled future events.",
-            "zh": "Present simple for scheduled future events.",
+            "zh": "一般现在时表示按时刻表发生的将来事件。",
             "es": "Present simple for scheduled future events."
           },
           "ex": {
@@ -5483,10 +5483,10 @@
               "Left is past."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Is leaving 是个人安排，不是固定时刻表。",
-              "Will leave 可以但不那么常规。",
-              "Left 是过去式。"
+              "一般现在时表示按时刻表发生的将来事件。",
+              "一般现在时表示按时刻表发生的将来事件。",
+              "一般现在时表示按时刻表发生的将来事件。",
+              "一般现在时表示按时刻表发生的将来事件。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -5500,7 +5500,7 @@
           "id": "tenses_future_q04",
           "q": {
             "en": "I think she ___ the competition.",
-            "zh": "I think she ___ the competition.",
+            "zh": "请选择正确的动词形式：I think she ___ the competition.",
             "es": "I think she ___ the competition."
           },
           "a": [
@@ -5529,7 +5529,7 @@
           },
           "t": {
             "en": "Will for opinion-based predictions.",
-            "zh": "Will for opinion-based predictions.",
+            "zh": "will 表示基于观点的预测。",
             "es": "Will for opinion-based predictions."
           },
           "ex": {
@@ -5540,10 +5540,10 @@
               "Won is past."
             ],
             "zh": [
-              "Wins 是现在时。",
-              "Is winning 表示现在正在发生。",
-              "正确！选项 C。",
-              "Won 是过去式。"
+              "will 表示基于观点的预测。",
+              "will 表示基于观点的预测。",
+              "will 表示基于观点的预测。",
+              "will 表示基于观点的预测。"
             ],
             "es": [
               "Opción A.",
@@ -5557,7 +5557,7 @@
           "id": "tenses_future_q05",
           "q": {
             "en": "This time next week we ___ on a beach.",
-            "zh": "This time next week we ___ on a beach.",
+            "zh": "请选择正确的动词形式：This time next week we ___ on a beach.",
             "es": "This time next week we ___ on a beach."
           },
           "a": "will be sitting",
@@ -5583,7 +5583,7 @@
           },
           "t": {
             "en": "Future continuous for action at a specific future time.",
-            "zh": "Future continuous for action at a specific future time.",
+            "zh": "将来进行时表示未来某一时刻正在进行的动作。",
             "es": "Future continuous for action at a specific future time."
           },
           "ex": {
@@ -5594,10 +5594,10 @@
               "Sat is past."
             ],
             "zh": [
-              "Sit 是动词原形。",
-              "Are sitting 是现在时。",
-              "正确！选项 C。",
-              "Sat 是过去式。"
+              "将来进行时表示未来某一时刻正在进行的动作。",
+              "将来进行时表示未来某一时刻正在进行的动作。",
+              "将来进行时表示未来某一时刻正在进行的动作。",
+              "将来进行时表示未来某一时刻正在进行的动作。"
             ],
             "es": [
               "Opción A.",
@@ -5611,7 +5611,7 @@
           "id": "tenses_future_q06",
           "q": {
             "en": "By December she ___ here five years.",
-            "zh": "By December she ___ here five years.",
+            "zh": "请选择正确的动词形式：By December she ___ here five years.",
             "es": "By December she ___ here five years."
           },
           "a": "will have worked",
@@ -5637,7 +5637,7 @@
           },
           "t": {
             "en": "Future perfect for completion by future point.",
-            "zh": "Future perfect for completion by future point.",
+            "zh": "将来完成时表示在未来某时间点前完成。",
             "es": "Future perfect for completion by future point."
           },
           "ex": {
@@ -5648,10 +5648,10 @@
               "Worked is past."
             ],
             "zh": [
-              "Works 是现在时。",
-              "Will work 不表示到某个时间点已完成。",
-              "正确！选项 C。",
-              "Worked 是过去式。"
+              "将来完成时表示在未来某时间点前完成。",
+              "将来完成时表示在未来某时间点前完成。",
+              "将来完成时表示在未来某时间点前完成。",
+              "将来完成时表示在未来某时间点前完成。"
             ],
             "es": [
               "Opción A.",
@@ -5668,7 +5668,7 @@
       "id": "tenses_perfect",
       "name": {
         "en": "Perfect Tenses",
-        "zh": "Perfect Tenses",
+        "zh": "完成时",
         "es": "Perfect Tenses"
       },
       "s": {
@@ -5687,7 +5687,7 @@
           "id": "tenses_perfect_q01",
           "q": {
             "en": "I ___ my keys. Can you help me find them?",
-            "zh": "I ___ my keys. Can you help me find them?",
+            "zh": "请选择正确的动词形式：I ___ my keys. Can you help me find them?",
             "es": "I ___ my keys. Can you help me find them?"
           },
           "a": "have lost",
@@ -5713,7 +5713,7 @@
           },
           "t": {
             "en": "Present perfect: past action with present result.",
-            "zh": "Present perfect: past action with present result.",
+            "zh": "现在完成时：过去的动作对现在有影响。",
             "es": "Present perfect: past action with present result."
           },
           "ex": {
@@ -5724,10 +5724,10 @@
               "Was losing = past continuous."
             ],
             "zh": [
-              "Lose 是动词原形。",
-              "Lost 是一般过去时——与现在没有关联。",
-              "正确！选项 C。",
-              "Was losing 是过去进行时。"
+              "现在完成时：过去的动作对现在有影响。",
+              "现在完成时：过去的动作对现在有影响。",
+              "现在完成时：过去的动作对现在有影响。",
+              "现在完成时：过去的动作对现在有影响。"
             ],
             "es": [
               "Opción A.",
@@ -5741,7 +5741,7 @@
           "id": "tenses_perfect_q02",
           "q": {
             "en": "She ___ in London since 2019.",
-            "zh": "She ___ in London since 2019.",
+            "zh": "请选择正确的动词形式：She ___ in London since 2019.",
             "es": "She ___ in London since 2019."
           },
           "a": "has lived",
@@ -5767,7 +5767,7 @@
           },
           "t": {
             "en": "Present perfect with since for duration.",
-            "zh": "Present perfect with since for duration.",
+            "zh": "现在完成时与 since 连用表示持续时间。",
             "es": "Present perfect with since for duration."
           },
           "ex": {
@@ -5778,10 +5778,10 @@
               "Is living = right now, not duration."
             ],
             "zh": [
-              "Lives 表示现在习惯，没有持续时间。",
-              "Lived 表示已不再住在那里。",
-              "正确！选项 C。",
-              "Is living 表示此刻，不表示持续时长。"
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。"
             ],
             "es": [
               "Opción A.",
@@ -5795,7 +5795,7 @@
           "id": "tenses_perfect_q03",
           "q": {
             "en": "He ___ just ___ the office.",
-            "zh": "He ___ just ___ the office.",
+            "zh": "请选择正确的动词形式：He ___ just ___ the office.",
             "es": "He ___ just ___ the office."
           },
           "a": "has ... left",
@@ -5821,7 +5821,7 @@
           },
           "t": {
             "en": "Present perfect with just for recent past.",
-            "zh": "Present perfect with just for recent past.",
+            "zh": "现在完成时与 just 连用表示最近的过去。",
             "es": "Present perfect with just for recent past."
           },
           "ex": {
@@ -5832,10 +5832,10 @@
               "Is leaving = currently leaving."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Did leave 是一般过去时，不搭配 just。",
-              "Was leaving 表示正在进行，不是已完成。",
-              "Is leaving 表示现在正在离开。"
+              "现在完成时与 just 连用表示最近的过去。",
+              "现在完成时与 just 连用表示最近的过去。",
+              "现在完成时与 just 连用表示最近的过去。",
+              "现在完成时与 just 连用表示最近的过去。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -5849,7 +5849,7 @@
           "id": "tenses_perfect_q04",
           "q": {
             "en": "This is the first time I ___ sushi.",
-            "zh": "This is the first time I ___ sushi.",
+            "zh": "请选择正确的动词形式：This is the first time I ___ sushi.",
             "es": "This is the first time I ___ sushi."
           },
           "a": "have tried",
@@ -5875,7 +5875,7 @@
           },
           "t": {
             "en": "Present perfect after This is the first time.",
-            "zh": "Present perfect after This is the first time.",
+            "zh": "This is the first time 后用现在完成时。",
             "es": "Present perfect after This is the first time."
           },
           "ex": {
@@ -5886,10 +5886,10 @@
               "Was trying = continuous, wrong pattern."
             ],
             "zh": [
-              "Try 是动词原形。",
-              "Tried 是一般过去时，句型不对。",
-              "正确！选项 C。",
-              "Was trying 是进行时，句型不对。"
+              "This is the first time 后用现在完成时。",
+              "This is the first time 后用现在完成时。",
+              "This is the first time 后用现在完成时。",
+              "This is the first time 后用现在完成时。"
             ],
             "es": [
               "Opción A.",
@@ -5903,7 +5903,7 @@
           "id": "tenses_perfect_q05",
           "q": {
             "en": "When I got there, the train ___ already ___.",
-            "zh": "When I got there, the train ___ already ___.",
+            "zh": "请选择正确的动词形式：When I got there, the train ___ already ___.",
             "es": "When I got there, the train ___ already ___."
           },
           "a": "had ... left",
@@ -5929,7 +5929,7 @@
           },
           "t": {
             "en": "Past perfect for action before another past.",
-            "zh": "Past perfect for action before another past.",
+            "zh": "过去完成时表示在另一个过去动作之前发生。",
             "es": "Past perfect for action before another past."
           },
           "ex": {
@@ -5940,10 +5940,10 @@
               "Did leave = simple past, no earlier timing."
             ],
             "zh": [
-              "Has left 是现在完成时，不是过去的过去。",
-              "正确！选项 B。",
-              "Was leaving 表示正在进行中，不是已经离开。",
-              "Did leave 是一般过去时，没有更早的时间关系。"
+              "过去完成时表示在另一个过去动作之前发生。",
+              "过去完成时表示在另一个过去动作之前发生。",
+              "过去完成时表示在另一个过去动作之前发生。",
+              "过去完成时表示在另一个过去动作之前发生。"
             ],
             "es": [
               "Opción A.",
@@ -5957,7 +5957,7 @@
           "id": "tenses_perfect_q06",
           "q": {
             "en": "She ___ never ___ such beauty before that trip.",
-            "zh": "She ___ never ___ such beauty before that trip.",
+            "zh": "请选择正确的动词形式：She ___ never ___ such beauty before that trip.",
             "es": "She ___ never ___ such beauty before that trip."
           },
           "a": "had ... seen",
@@ -5983,7 +5983,7 @@
           },
           "t": {
             "en": "Past perfect with never before for experience up to a past point.",
-            "zh": "Past perfect with never before for experience up to a past point.",
+            "zh": "过去完成时与 never before 连用表示到过去某时为止的经历。",
             "es": "Past perfect with never before for experience up to a past point."
           },
           "ex": {
@@ -5994,10 +5994,10 @@
               "Did see = simple past, no before-that-point."
             ],
             "zh": [
-              "Has seen 是现在完成时——时间参照点是过去。",
-              "正确！选项 B。",
-              "Was seeing 表示进行中，不是经历。",
-              "Did see 是一般过去时，没有\"在那之前\"的含义。"
+              "过去完成时与 never before 连用表示到过去某时为止的经历。",
+              "过去完成时与 never before 连用表示到过去某时为止的经历。",
+              "过去完成时与 never before 连用表示到过去某时为止的经历。",
+              "过去完成时与 never before 连用表示到过去某时为止的经历。"
             ],
             "es": [
               "Opción A.",
@@ -6014,7 +6014,7 @@
       "id": "tenses_continuous",
       "name": {
         "en": "Continuous Forms",
-        "zh": "Continuous Forms",
+        "zh": "进行时",
         "es": "Continuous Forms"
       },
       "s": {
@@ -6033,7 +6033,7 @@
           "id": "tenses_continuous_q01",
           "q": {
             "en": "Why ___ you ___ at me? Is something wrong?",
-            "zh": "Why ___ you ___ at me? Is something wrong?",
+            "zh": "请选择正确的动词形式：Why ___ you ___ at me? Is something wrong?",
             "es": "Why ___ you ___ at me? Is something wrong?"
           },
           "a": "are ... looking",
@@ -6059,7 +6059,7 @@
           },
           "t": {
             "en": "Present continuous for this moment.",
-            "zh": "Present continuous for this moment.",
+            "zh": "现在进行时表示此刻正在发生的动作。",
             "es": "Present continuous for this moment."
           },
           "ex": {
@@ -6070,10 +6070,10 @@
               "Did look = past."
             ],
             "zh": [
-              "Do look 是一般现在时。",
-              "正确！选项 B。",
-              "Have looked 表示已完成。",
-              "Did look 是过去式。"
+              "现在进行时表示此刻正在发生的动作。",
+              "现在进行时表示此刻正在发生的动作。",
+              "现在进行时表示此刻正在发生的动作。",
+              "现在进行时表示此刻正在发生的动作。"
             ],
             "es": [
               "Opción A.",
@@ -6087,7 +6087,7 @@
           "id": "tenses_continuous_q02",
           "q": {
             "en": "He ___ always ___ his phone. It drives me crazy!",
-            "zh": "He ___ always ___ his phone. It drives me crazy!",
+            "zh": "请选择正确的动词形式：He ___ always ___ his phone. It drives me crazy!",
             "es": "He ___ always ___ his phone. It drives me crazy!"
           },
           "a": "is ... losing",
@@ -6113,7 +6113,7 @@
           },
           "t": {
             "en": "Present continuous + always for annoying habits.",
-            "zh": "Present continuous + always for annoying habits.",
+            "zh": "现在进行时 + always 表示令人厌烦的习惯。",
             "es": "Present continuous + always for annoying habits."
           },
           "ex": {
@@ -6124,10 +6124,10 @@
               "Does lose = neutral simple present."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Was always losing 是过去习惯。",
-              "Has lost 表示一次性完成。",
-              "Does lose 是中性的一般现在时。"
+              "现在进行时 + always 表示令人厌烦的习惯。",
+              "现在进行时 + always 表示令人厌烦的习惯。",
+              "现在进行时 + always 表示令人厌烦的习惯。",
+              "现在进行时 + always 表示令人厌烦的习惯。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -6144,7 +6144,7 @@
       "id": "tenses_contrast",
       "name": {
         "en": "Tense Contrast",
-        "zh": "Tense Contrast",
+        "zh": "时态对比",
         "es": "Tense Contrast"
       },
       "s": {
@@ -6163,7 +6163,7 @@
           "id": "tenses_contrast_q01",
           "q": {
             "en": "I ___ in this city since I was born.",
-            "zh": "I ___ in this city since I was born.",
+            "zh": "请选择正确的动词形式：I ___ in this city since I was born.",
             "es": "I ___ in this city since I was born."
           },
           "a": "have lived",
@@ -6189,7 +6189,7 @@
           },
           "t": {
             "en": "Present perfect with since for duration.",
-            "zh": "Present perfect with since for duration.",
+            "zh": "现在完成时与 since 连用表示持续时间。",
             "es": "Present perfect with since for duration."
           },
           "ex": {
@@ -6200,10 +6200,10 @@
               "Am living = right now, no duration."
             ],
             "zh": [
-              "Live 是一般现在时，没有持续时间。",
-              "Lived 是过去式，暗示已经不在这里。",
-              "正确！选项 C。",
-              "Am living 表示此刻，没有持续时间。"
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。",
+              "现在完成时与 since 连用表示持续时间。"
             ],
             "es": [
               "Opción A.",
@@ -6217,7 +6217,7 @@
           "id": "tenses_contrast_q02",
           "q": {
             "en": "Shakespeare ___ many famous plays.",
-            "zh": "Shakespeare ___ many famous plays.",
+            "zh": "请选择正确的动词形式：Shakespeare ___ many famous plays.",
             "es": "Shakespeare ___ many famous plays."
           },
           "a": "wrote",
@@ -6243,7 +6243,7 @@
           },
           "t": {
             "en": "Past simple for completed actions by deceased person.",
-            "zh": "Past simple for completed actions by deceased person.",
+            "zh": "去世的人完成的事用一般过去时。",
             "es": "Past simple for completed actions by deceased person."
           },
           "ex": {
@@ -6254,10 +6254,10 @@
               "Was writing = continuous."
             ],
             "zh": [
-              "Writes 是现在时——他已经去世了。",
-              "正确！选项 B。",
-              "Has written 是现在完成时——不能用于已故的人。",
-              "Was writing 是进行时。"
+              "去世的人完成的事用一般过去时。",
+              "去世的人完成的事用一般过去时。",
+              "去世的人完成的事用一般过去时。",
+              "去世的人完成的事用一般过去时。"
             ],
             "es": [
               "Opción A.",
@@ -6271,7 +6271,7 @@
           "id": "tenses_contrast_q03",
           "q": {
             "en": "I ___ my homework yet. I need more time.",
-            "zh": "I ___ my homework yet. I need more time.",
+            "zh": "请选择正确的动词形式：I ___ my homework yet. I need more time.",
             "es": "I ___ my homework yet. I need more time."
           },
           "a": "have not finished",
@@ -6297,7 +6297,7 @@
           },
           "t": {
             "en": "Present perfect with yet for unfinished.",
-            "zh": "Present perfect with yet for unfinished.",
+            "zh": "现在完成时与 yet 连用表示尚未完成。",
             "es": "Present perfect with yet for unfinished."
           },
           "ex": {
@@ -6308,10 +6308,10 @@
               "Do not finish = present habit."
             ],
             "zh": [
-              "Did not finish 是一般过去时。",
-              "正确！选项 B。",
-              "Was not finishing 是过去进行时。",
-              "Do not finish 是现在习惯。"
+              "现在完成时与 yet 连用表示尚未完成。",
+              "现在完成时与 yet 连用表示尚未完成。",
+              "现在完成时与 yet 连用表示尚未完成。",
+              "现在完成时与 yet 连用表示尚未完成。"
             ],
             "es": [
               "Opción A.",
@@ -6325,7 +6325,7 @@
           "id": "tenses_contrast_q04",
           "q": {
             "en": "She ___ three coffees already this morning.",
-            "zh": "She ___ three coffees already this morning.",
+            "zh": "请选择正确的动词形式：She ___ three coffees already this morning.",
             "es": "She ___ three coffees already this morning."
           },
           "a": "has drunk",
@@ -6351,7 +6351,7 @@
           },
           "t": {
             "en": "Present perfect with already in unfinished time.",
-            "zh": "Present perfect with already in unfinished time.",
+            "zh": "现在完成时与 already 连用，用于尚未结束的时间段。",
             "es": "Present perfect with already in unfinished time."
           },
           "ex": {
@@ -6362,10 +6362,10 @@
               "Was drinking = continuous."
             ],
             "zh": [
-              "Drinks 是现在习惯。",
-              "Drank 是过去式——上午还没结束。",
-              "正确！选项 C。",
-              "Was drinking 是进行时。"
+              "现在完成时与 already 连用，用于尚未结束的时间段。",
+              "现在完成时与 already 连用，用于尚未结束的时间段。",
+              "现在完成时与 already 连用，用于尚未结束的时间段。",
+              "现在完成时与 already 连用，用于尚未结束的时间段。"
             ],
             "es": [
               "Opción A.",
@@ -6382,7 +6382,7 @@
       "id": "tenses_narrative",
       "name": {
         "en": "Narrative Tenses",
-        "zh": "Narrative Tenses",
+        "zh": "叙事时态",
         "es": "Narrative Tenses"
       },
       "s": {
@@ -6401,7 +6401,7 @@
           "id": "tenses_narrative_q01",
           "q": {
             "en": "It was dark. The wind ___ and the trees ___.",
-            "zh": "It was dark. The wind ___ and the trees ___.",
+            "zh": "请选择正确的动词形式：It was dark. The wind ___ and the trees ___.",
             "es": "It was dark. The wind ___ and the trees ___."
           },
           "a": "blew ... were shaking",
@@ -6427,7 +6427,7 @@
           },
           "t": {
             "en": "Past simple for events + past continuous for background.",
-            "zh": "Past simple for events + past continuous for background.",
+            "zh": "一般过去时表事件 + 过去进行时表背景。",
             "es": "Past simple for events + past continuous for background."
           },
           "ex": {
@@ -6438,10 +6438,10 @@
               "Was blowing + shook = mixed, less natural."
             ],
             "zh": [
-              "Blows 是现在时。",
-              "正确！选项 B。",
-              "Had blown 是过去完成时，这里不需要。",
-              "Was blowing + shook 混用时态，不够自然。"
+              "一般过去时表事件 + 过去进行时表背景。",
+              "一般过去时表事件 + 过去进行时表背景。",
+              "一般过去时表事件 + 过去进行时表背景。",
+              "一般过去时表事件 + 过去进行时表背景。"
             ],
             "es": [
               "Opción A.",
@@ -6455,7 +6455,7 @@
           "id": "tenses_narrative_q02",
           "q": {
             "en": "When the detective arrived, the suspect ___ already ___.",
-            "zh": "When the detective arrived, the suspect ___ already ___.",
+            "zh": "请选择正确的动词形式：When the detective arrived, the suspect ___ already ___.",
             "es": "When the detective arrived, the suspect ___ already ___."
           },
           "a": "had ... escaped",
@@ -6481,7 +6481,7 @@
           },
           "t": {
             "en": "Past perfect for earlier past in narratives.",
-            "zh": "Past perfect for earlier past in narratives.",
+            "zh": "叙事中更早的过去用过去完成时。",
             "es": "Past perfect for earlier past in narratives."
           },
           "ex": {
@@ -6492,10 +6492,10 @@
               "Did escape = simple past, no before."
             ],
             "zh": [
-              "Has escaped 是现在完成时。",
-              "正确！选项 B。",
-              "Was escaping 表示正在进行。",
-              "Did escape 是一般过去时，没有\"在那之前\"的含义。"
+              "叙事中更早的过去用过去完成时。",
+              "叙事中更早的过去用过去完成时。",
+              "叙事中更早的过去用过去完成时。",
+              "叙事中更早的过去用过去完成时。"
             ],
             "es": [
               "Opción A.",
@@ -6512,7 +6512,7 @@
       "id": "tenses_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -6531,7 +6531,7 @@
           "id": "tenses_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "I saw her yesterday.",
@@ -6557,7 +6557,7 @@
           },
           "t": {
             "en": "Yesterday requires past simple.",
-            "zh": "Yesterday requires past simple.",
+            "zh": "yesterday 要求用一般过去时。",
             "es": "Yesterday requires past simple."
           },
           "ex": {
@@ -6568,10 +6568,10 @@
               "Seeing alone is incomplete."
             ],
             "zh": [
-              "Have seen + yesterday 时态搭配错误。",
-              "正确！选项 B。",
-              "Have saw 不符合语法。",
-              "Seeing 单独使用句子不完整。"
+              "yesterday 要求用一般过去时。",
+              "yesterday 要求用一般过去时。",
+              "yesterday 要求用一般过去时。",
+              "yesterday 要求用一般过去时。"
             ],
             "es": [
               "Opción A.",
@@ -6585,7 +6585,7 @@
           "id": "tenses_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "She knows the answer.",
@@ -6611,7 +6611,7 @@
           },
           "t": {
             "en": "Know is stative, no continuous.",
-            "zh": "Know is stative, no continuous.",
+            "zh": "know 是状态动词，不用进行时。",
             "es": "Know is stative, no continuous."
           },
           "ex": {
@@ -6622,10 +6622,10 @@
               "Knowing alone is incomplete."
             ],
             "zh": [
-              "Is knowing 是错误的用法。",
-              "正确！选项 B。",
-              "Has knowing 不符合语法。",
-              "Knowing 单独使用句子不完整。"
+              "know 是状态动词，不用进行时。",
+              "know 是状态动词，不用进行时。",
+              "know 是状态动词，不用进行时。",
+              "know 是状态动词，不用进行时。"
             ],
             "es": [
               "Opción A.",
@@ -6639,7 +6639,7 @@
           "id": "tenses_production_q03",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "If I see her, I will tell her.",
@@ -6665,7 +6665,7 @@
           },
           "t": {
             "en": "No will in if-clause.",
-            "zh": "No will in if-clause.",
+            "zh": "if 从句中不用 will。",
             "es": "No will in if-clause."
           },
           "ex": {
@@ -6676,10 +6676,10 @@
               "Have seen = unusual for first conditional."
             ],
             "zh": [
-              "Will see 出现在 if 从句中是错误的。",
-              "正确！选项 B。",
-              "Saw 是过去式——不适用于真实将来的条件句。",
-              "Have seen 不常用于第一条件句。"
+              "if 从句中不用 will。",
+              "if 从句中不用 will。",
+              "if 从句中不用 will。",
+              "if 从句中不用 will。"
             ],
             "es": [
               "Opción A.",
@@ -6693,7 +6693,7 @@
           "id": "tenses_production_q04",
           "q": {
             "en": "By 2030, scientists ___ a cure.",
-            "zh": "By 2030, scientists ___ a cure.",
+            "zh": "请选择正确的动词形式：By 2030, scientists ___ a cure.",
             "es": "By 2030, scientists ___ a cure."
           },
           "a": "will have found",
@@ -6719,7 +6719,7 @@
           },
           "t": {
             "en": "Future perfect for deadline completion.",
-            "zh": "Future perfect for deadline completion.",
+            "zh": "将来完成时表示在期限前完成。",
             "es": "Future perfect for deadline completion."
           },
           "ex": {
@@ -6730,10 +6730,10 @@
               "Are finding = present."
             ],
             "zh": [
-              "Find 是动词原形。",
-              "Will find 是将来时，不表示在截止时间前完成。",
-              "正确！选项 C。",
-              "Are finding 是现在时。"
+              "将来完成时表示在期限前完成。",
+              "将来完成时表示在期限前完成。",
+              "将来完成时表示在期限前完成。",
+              "将来完成时表示在期限前完成。"
             ],
             "es": [
               "Opción A.",
@@ -6747,7 +6747,7 @@
           "id": "tenses_production_q05",
           "q": {
             "en": "He ___ for 20 years when he retired.",
-            "zh": "He ___ for 20 years when he retired.",
+            "zh": "请选择正确的动词形式：He ___ for 20 years when he retired.",
             "es": "He ___ for 20 years when he retired."
           },
           "a": "had been working",
@@ -6773,7 +6773,7 @@
           },
           "t": {
             "en": "Past perfect continuous for duration before past.",
-            "zh": "Past perfect continuous for duration before past.",
+            "zh": "过去完成进行时表示过去某时之前持续的动作。",
             "es": "Past perfect continuous for duration before past."
           },
           "ex": {
@@ -6784,10 +6784,10 @@
               "Has worked = present perfect."
             ],
             "zh": [
-              "Works 是现在时。",
-              "Worked 是一般过去时，没有持续时间。",
-              "正确！选项 C。",
-              "Has worked 是现在完成时。"
+              "过去完成进行时表示过去某时之前持续的动作。",
+              "过去完成进行时表示过去某时之前持续的动作。",
+              "过去完成进行时表示过去某时之前持续的动作。",
+              "过去完成进行时表示过去某时之前持续的动作。"
             ],
             "es": [
               "Opción A.",
@@ -6801,7 +6801,7 @@
           "id": "tenses_production_q06",
           "q": {
             "en": "I ___ this book for weeks; still on chapter 3.",
-            "zh": "I ___ this book for weeks; still on chapter 3.",
+            "zh": "请选择正确的动词形式：I ___ this book for weeks; still on chapter 3.",
             "es": "I ___ this book for weeks; still on chapter 3."
           },
           "a": "have been reading",
@@ -6827,7 +6827,7 @@
           },
           "t": {
             "en": "Present perfect continuous for ongoing duration.",
-            "zh": "Present perfect continuous for ongoing duration.",
+            "zh": "现在完成进行时表示持续到现在的动作。",
             "es": "Present perfect continuous for ongoing duration."
           },
           "ex": {
@@ -6838,10 +6838,10 @@
               "Was reading = past, but still reading now."
             ],
             "zh": [
-              "Read 是一般现在时。",
-              "Am reading 表示此刻，不适用于持续数周。",
-              "正确！选项 C。",
-              "Was reading 是过去时，但仍在阅读。"
+              "现在完成进行时表示持续到现在的动作。",
+              "现在完成进行时表示持续到现在的动作。",
+              "现在完成进行时表示持续到现在的动作。",
+              "现在完成进行时表示持续到现在的动作。"
             ],
             "es": [
               "Opción A.",
