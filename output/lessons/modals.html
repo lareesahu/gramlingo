@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 07 · Modals — GramLingo 语法课件</title>
+<style>
+:root{
+  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
+  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
+  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
+
+/* cover */
+.cover{
+  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
+  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
+  position:relative;overflow:hidden;
+}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.10)}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
+.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
+.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
+.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
+.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
+.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
+.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+
+/* toc */
+.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* sections */
+main{padding:clamp(24px,5vw,44px) 0 20px}
+.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
+.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
+.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
+.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
+.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.concept{font-size:clamp(14.5px,2.6vw,16px)}
+.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
+
+.rules{display:grid;gap:0}
+.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.rule:last-child{border-bottom:0}
+.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
+.rule .en{font-size:14.5px}
+.rule .zh{color:var(--ink2);font-size:13.5px}
+
+.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
+.ex .en{font-weight:600;font-size:14.5px}
+.ex .zh{color:var(--ink2);font-size:13.5px}
+
+.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
+.mistakes h3{color:var(--warn)}
+.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
+.mistake:last-child{border-bottom:0}
+.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
+
+/* practice */
+.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.practice details summary::-webkit-details-marker{display:none}
+.practice details[open] summary{border-bottom:1px dashed var(--line)}
+.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
+.practice .qtext{font-size:14.5px;font-weight:600}
+.practice .opts{padding:8px 16px 14px}
+.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
+.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
+.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
+.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
+.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
+.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
+.credit{font-size:12.5px;color:var(--ink2);text-align:center}
+.credit a{color:var(--accent);text-decoration:none;font-weight:600}
+.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
+
+@media print{
+  .toc,footer .nav-prev-next,.toplink{display:none}
+  body{background:#fff}
+  .cover{border-radius:0}
+  .phase{page-break-inside:avoid}
+}
+@media (max-width:640px){
+  .rule{grid-template-columns:1fr}
+  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
+  .objectives{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-accent="#F08C00">
+<header class="cover">
+  <div class="wrap">
+    <div class="kicker">GramLingo 语法课件 · Module 07 / 12</div>
+    <h1>🎯 Modals<span class="zh">情态动词</span></h1>
+    <div class="desc">Express ability, permission, advice, obligation, probability, and deduction.<span class="zh">表达能力、许可、建议、义务、可能性与推断。</span></div>
+    <div class="objectives"><div><b>目标 1</b>Use can, could, be able to for ability · 用 can、could、be able to 表能力</div><div><b>目标 2</b>Give and ask permission politely · 礼貌地请求和给予许可</div><div><b>目标 3</b>Express obligation and advice with must, have to, should · 用 must、have to、should 表义务与建议</div><div><b>目标 4</b>Make deductions with must, might, can't · 用 must、might、can't 作推断</div><div><b>目标 5</b>Use past modals like could have, should have · 使用 could have、should have 等过去情态</div></div>
+  </div>
+</header>
+<nav class="toc"><div class="wrap"><a href="#modals_ability">01. Ability</a><a href="#modals_permission">02. Permission</a><a href="#modals_obligation">03. Obligation</a><a href="#modals_probability">04. Probability</a><a href="#modals_past">05. Past Modals</a><a href="#modals_requests">06. Requests and Offers</a><a href="#modals_contrast">07. Modal Contrast</a><a href="#modals_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<main class="wrap">
+  ['\n      <section class="phase" id="modals_ability">\n        <div class="phase-head">\n          <span class="phase-num">07-01</span>\n          <h2>Ability</h2>\n          <span class="zh">能力</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">can = present ability; could = past ability; be able to = any tense or for achievements.<span class="zh">can 表现在能力；could 表过去能力；be able to 可用于任何时态或表示成功做到。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>现在</b><div class="en">can + base: I can swim.</div><div class="zh">can + 原形：我会游泳。</div></div><div class="rule"><b>过去</b><div class="en">could + base: When I was young, I could run fast.</div><div class="zh">could + 原形：年轻时我能跑很快。</div></div><div class="rule"><b>成功做到</b><div class="en">was/were able to for specific achievements: I was able to finish on time.</div><div class="zh">具体成功做到用 was able to：我按时完成了。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She can speak three languages.</div><div class="zh">她会说三种语言。</div></div><div class="ex"><div class="en">He couldn\'t swim until he was ten.</div><div class="zh">他十岁才会游泳。</div></div><div class="ex"><div class="en">They were able to escape the fire.</div><div class="zh">他们成功逃离了火灾。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She can to swim → modal + base, no to.<span class="zh">❌ 情态动词后接原形，不加 to。</span></div><div class="mistake">❌ I can swims → modal + base form.<span class="zh">❌ 情态动词后动词用原形。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_permission">\n        <div class="phase-head">\n          <span class="phase-num">07-02</span>\n          <h2>Permission</h2>\n          <span class="zh">许可</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">can = informal permission; may = formal permission; could = polite request; be allowed to = other tenses.<span class="zh">can 非正式许可；may 正式许可；could 礼貌请求；be allowed to 用于其他时态。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>非正式</b><div class="en">Can I go out?</div><div class="zh">我能出去吗？（口语）</div></div><div class="rule"><b>正式</b><div class="en">May I come in?</div><div class="zh">我可以进来吗？（正式）</div></div><div class="rule"><b>礼貌</b><div class="en">Could I borrow your pen?</div><div class="zh">我能借用你的笔吗？（更礼貌）</div></div><div class="rule"><b>其他时态</b><div class="en">You will be allowed to enter later.</div><div class="zh">稍后你会被允许进入。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Can I use your phone?</div><div class="zh">我能用你的电话吗？</div></div><div class="ex"><div class="en">May I ask a question?</div><div class="zh">我可以问个问题吗？</div></div><div class="ex"><div class="en">Students are allowed to use the library.</div><div class="zh">学生可以使用图书馆。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ May I... in very informal speech can sound stiff — can is fine among friends.<span class="zh">❌ 朋友之间用 can 更自然。</span></div><div class="mistake">❌ I am allowed to go yesterday → use was allowed to.<span class="zh">❌ 过去时用 was allowed to。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_obligation">\n        <div class="phase-head">\n          <span class="phase-num">07-03</span>\n          <h2>Obligation</h2>\n          <span class="zh">义务</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">must = strong obligation (internal/rule); have to = external necessity; should/ought to = advice; mustn\'t = prohibition; don\'t have to = not necessary.<span class="zh">must 表强烈义务（内部/规则）；have to 表外部必要性；should/ought to 表建议；mustn\'t 表禁止；don\'t have to 表不必。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>must</b><div class="en">You must wear a seatbelt.</div><div class="zh">你必须系安全带。</div></div><div class="rule"><b>have to</b><div class="en">I have to work on Saturdays.</div><div class="zh">我周六必须上班。</div></div><div class="rule"><b>should</b><div class="en">You should drink more water.</div><div class="zh">你应该多喝水。</div></div><div class="rule"><b>禁止 vs 不必</b><div class="en">You mustn\'t smoke here. / You don\'t have to come.</div><div class="zh">禁止：你不能在这里抽烟。不必：你不必来。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">You must finish your homework before playing.</div><div class="zh">你必须先完成作业再玩。</div></div><div class="ex"><div class="en">She has to wear a uniform at work.</div><div class="zh">她上班必须穿制服。</div></div><div class="ex"><div class="en">You ought to see a doctor.</div><div class="zh">你应该去看医生。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ You don\'t have to = no obligation (optional), NOT prohibition.<span class="zh">❌ don\'t have to 表【不必】，不是【禁止】。</span></div><div class="mistake">❌ must not vs don\'t have to — different meanings!<span class="zh">❌ mustn\'t（禁止）与 don\'t have to（不必）意思不同。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_probability">\n        <div class="phase-head">\n          <span class="phase-num">07-04</span>\n          <h2>Probability</h2>\n          <span class="zh">可能性</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Deduction about the present: must = almost certain; might/may/could = possible; can\'t = impossible/almost certainly not.<span class="zh">对现在的推断：must 几乎确定；might/may/could 可能；can\'t 不可能。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>几乎确定</b><div class="en">must + base: She has a key, so she must be the owner.</div><div class="zh">must + 原形：她肯定就是主人。</div></div><div class="rule"><b>可能</b><div class="en">might/may/could: He might be at home now.</div><div class="zh">might/may/could：他现在可能在家。</div></div><div class="rule"><b>不可能</b><div class="en">can\'t + base: That can\'t be true!</div><div class="zh">can\'t + 原形：那不可能是真的！</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The lights are on, so she must be home.</div><div class="zh">灯亮着，所以她一定在家。</div></div><div class="ex"><div class="en">It might rain later.</div><div class="zh">稍后可能会下雨。</div></div><div class="ex"><div class="en">He can\'t be 40 — he looks so young!</div><div class="zh">他不可能是40岁——他看起来太年轻了！</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ mustn\'t for deduction → use can\'t: He can\'t be at home.<span class="zh">❌ 否定推断用 can\'t，不用 mustn\'t。</span></div><div class="mistake">❌ may not = possibly not, NOT prohibition.<span class="zh">❌ may not 表【可能不】，不是禁止。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_past">\n        <div class="phase-head">\n          <span class="phase-num">07-05</span>\n          <h2>Past Modals</h2>\n          <span class="zh">过去情态</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">modal + have + past participle for the past: could have (possibility), should have (regret/criticism), must have (certainty), might have (guess), can\'t have (impossible).<span class="zh">情态动词 + have + 过去分词表过去：could have 可能、should have 本应、must have 一定、might have 也许、can\'t have 不可能。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>must have</b><div class="en">certainty: She must have left early.</div><div class="zh">一定：她一定早就离开了。</div></div><div class="rule"><b>should have</b><div class="en">regret: I should have studied harder.</div><div class="zh">本应：我本该更用功。</div></div><div class="rule"><b>could have</b><div class="en">possibility: He could have been hurt.</div><div class="zh">可能：他可能受伤了。</div></div><div class="rule"><b>can\'t have</b><div class="en">impossibility: He can\'t have seen us.</div><div class="zh">不可能：他不可能看到我们。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">You must have been tired after the trip.</div><div class="zh">旅行后你一定很累。</div></div><div class="ex"><div class="en">She should have called me.</div><div class="zh">她本应给我打电话。</div></div><div class="ex"><div class="en">They might have missed the bus.</div><div class="zh">他们可能错过了公交车。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She must left early → modal + have + pp: must have left.<span class="zh">❌ 过去情态结构是 must have + 过去分词。</span></div><div class="mistake">❌ I should studied → should have studied.<span class="zh">❌ 漏掉 have。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_requests">\n        <div class="phase-head">\n          <span class="phase-num">07-06</span>\n          <h2>Requests and Offers</h2>\n          <span class="zh">请求与提议</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Requests: Can/Could/Would you...? Offers: Shall I...? / Can I...? / Would you like...?<span class="zh">请求：Can/Could/Would you...? 提议：Shall I...? / Can I...? / Would you like...?</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>请求</b><div class="en">Could you open the door, please? (polite)</div><div class="zh">请把门打开好吗？（礼貌）</div></div><div class="rule"><b>提议帮助</b><div class="en">Shall I carry your bag?</div><div class="zh">要我帮你拿包吗？</div></div><div class="rule"><b>邀请</b><div class="en">Would you like some tea?</div><div class="zh">要来点茶吗？</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Can you help me with this box?</div><div class="zh">你能帮我搬这个箱子吗？</div></div><div class="ex"><div class="en">Shall I turn on the light?</div><div class="zh">要我开灯吗？</div></div><div class="ex"><div class="en">Would you like to join us?</div><div class="zh">你愿意加入我们吗？</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Do you want I help? → correct: Shall I help?<span class="zh">❌ 提议帮助用 Shall I...?</span></div><div class="mistake">❌ Give me the book (too direct) → Could you give me the book?<span class="zh">❌ 请求更礼貌的说法。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_contrast">\n        <div class="phase-head">\n          <span class="phase-num">07-07</span>\n          <h2>Modal Contrast</h2>\n          <span class="zh">情态动词对比</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Choose the modal by meaning: ability (can), permission (may), obligation (must), advice (should), possibility (might), certainty (must/can\'t).<span class="zh">按含义选情态动词：能力 can、许可 may、义务 must、建议 should、可能 might、确定 must/can\'t。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>强度排序</b><div class="en">can\'t &lt; might &lt; could &lt; may &lt; must (certainty scale)</div><div class="zh">可能性从低到高：can\'t &lt; might &lt; could &lt; may &lt; must</div></div><div class="rule"><b>语境决定</b><div class="en">Same modal, different job: Can you swim? (ability) / Can I leave? (permission) / It can rain here. (possibility)</div><div class="zh">同一个 can 在不同语境功能不同。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">You must be joking! (certainty — deduction)</div><div class="zh">你一定在开玩笑！（确定推断）</div></div><div class="ex"><div class="en">We might visit them next week. (possibility)</div><div class="zh">我们下周可能会去拜访他们。（可能）</div></div><div class="ex"><div class="en">Everyone should recycle. (advice/general rule)</div><div class="zh">每个人都应该回收利用。（建议）</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Using must for advice → must is strong obligation; use should for suggestions.<span class="zh">❌ 建议用 should，不用 must。</span></div><div class="mistake">❌ Using can\'t for \'not allowed\' vs \'impossible\' — check context.<span class="zh">❌ 分清 can\'t 表「不允许」还是「不可能」。</span></div></div>\n      </section>', '\n      <section class="phase" id="modals_prod">\n        <div class="phase-head">\n          <span class="phase-num">07-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">In real scenarios, identify the function (ability, permission, obligation, advice, possibility) and pick the modal, then check the form: modal + base verb.<span class="zh">在实际场景中先判断功能（能力、许可、义务、建议、可能），再选情态动词，最后检查形式：情态动词 + 动词原形。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>功能优先</b><div class="en">What is the speaker doing? Asking permission, giving advice, making a deduction?</div><div class="zh">说话人在做什么：请求许可、给建议、作推断？</div></div><div class="rule"><b>形式检查</b><div class="en">modal + base (no -s, no to): She must go.</div><div class="zh">情态动词 + 原形（不加 -s、不加 to）。</div></div><div class="rule"><b>过去式</b><div class="en">For past meaning: modal + have + pp.</div><div class="zh">表过去：情态动词 + have + 过去分词。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">You look pale — you should rest.</div><div class="zh">你脸色不好——应该休息一下。</div></div><div class="ex"><div class="en">Passengers must fasten their seatbelts.</div><div class="zh">乘客必须系好安全带。</div></div><div class="ex"><div class="en">She can\'t have forgotten — we reminded her twice.</div><div class="zh">她不可能忘了——我们提醒过她两次。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He can sings → modal + base: He can sing.<span class="zh">❌ 情态动词后动词用原形。</span></div><div class="mistake">❌ You must to go → no to after modals.<span class="zh">❌ 情态动词后不加 to。</span></div></div>\n      </section>']
+  
+      <section class="phase practice" id="practice">
+        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q1</span><span class="qtext">She ___ swim when she was five years old.</span></summary>
+            <div class="opts"><div class="opt">can</div><div class="opt right">could</div><div class="opt">will can</div><div class="opt">is able</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q2</span><span class="qtext">She is not here. She ___ be at home.</span></summary>
+            <div class="opts"><div class="opt">must</div><div class="opt right">might</div><div class="opt">should</div><div class="opt">can</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q3</span><span class="qtext">Choose the correct sentence:</span></summary>
+            <div class="opts"><div class="opt">She cans speak French.</div><div class="opt right">She can speak French.</div><div class="opt">She can speaks French.</div><div class="opt">She can to speak French.</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+      </section>
+</main>
+<footer class="wrap">
+  <div class="nav-prev-next"><a href="modals.html"><div class="dir">← 上一模块</div><div class="t">Modals 情态动词</div></a><a href="conjunctions.html"><div class="dir">下一模块 →</div><div class="t">Conjunctions 连词</div></a></div>
+  <div class="credit">GramLingo 语法课件 · Module 07 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ 返回顶部</a>
+</footer>
+<script>
+document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+var links=[].slice.call(document.querySelectorAll('.toc a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+90,best=-1;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)best=i;});
+  links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+},{passive:true});
+</script>
+</body>
+</html>

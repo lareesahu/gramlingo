@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 01 · Relative Clauses — GramLingo 语法课件</title>
+<style>
+:root{
+  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
+  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
+  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
+
+/* cover */
+.cover{
+  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
+  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
+  position:relative;overflow:hidden;
+}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.10)}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
+.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
+.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
+.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
+.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
+.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
+.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+
+/* toc */
+.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* sections */
+main{padding:clamp(24px,5vw,44px) 0 20px}
+.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
+.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
+.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
+.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
+.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.concept{font-size:clamp(14.5px,2.6vw,16px)}
+.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
+
+.rules{display:grid;gap:0}
+.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.rule:last-child{border-bottom:0}
+.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
+.rule .en{font-size:14.5px}
+.rule .zh{color:var(--ink2);font-size:13.5px}
+
+.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
+.ex .en{font-weight:600;font-size:14.5px}
+.ex .zh{color:var(--ink2);font-size:13.5px}
+
+.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
+.mistakes h3{color:var(--warn)}
+.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
+.mistake:last-child{border-bottom:0}
+.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
+
+/* practice */
+.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.practice details summary::-webkit-details-marker{display:none}
+.practice details[open] summary{border-bottom:1px dashed var(--line)}
+.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
+.practice .qtext{font-size:14.5px;font-weight:600}
+.practice .opts{padding:8px 16px 14px}
+.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
+.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
+.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
+.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
+.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
+.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
+.credit{font-size:12.5px;color:var(--ink2);text-align:center}
+.credit a{color:var(--accent);text-decoration:none;font-weight:600}
+.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
+
+@media print{
+  .toc,footer .nav-prev-next,.toplink{display:none}
+  body{background:#fff}
+  .cover{border-radius:0}
+  .phase{page-break-inside:avoid}
+}
+@media (max-width:640px){
+  .rule{grid-template-columns:1fr}
+  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
+  .objectives{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-accent="#2F9E44">
+<header class="cover">
+  <div class="wrap">
+    <div class="kicker">GramLingo 语法课件 · Module 01 / 12</div>
+    <h1>🔗 Relative Clauses<span class="zh">定语从句</span></h1>
+    <div class="desc">Describe people, things, places, times, and reasons with precise connected sentences.<span class="zh">用精确的连缀句描述人、事物、地点、时间与原因。</span></div>
+    <div class="objectives"><div><b>目标 1</b>Spot a relative clause and its antecedent · 识别定语从句及其先行词</div><div><b>目标 2</b>Choose who / which / that / whose / where / when / why correctly · 正确选用关系词</div><div><b>目标 3</b>Decide when the relative pronoun can be omitted · 判断关系代词何时可省略</div><div><b>目标 4</b>Punctuate restrictive vs non-restrictive clauses · 区分限定性从句的标点用法</div><div><b>目标 5</b>Combine sentences smoothly without double subjects · 顺畅合并句子，避免双重主语</div></div>
+  </div>
+</header>
+<nav class="toc"><div class="wrap"><a href="#clauses_rec">01. Identify Relative Clauses</a><a href="#clauses_subj">02. Subject Relatives</a><a href="#clauses_obj">03. Object Relatives</a><a href="#clauses_subobj">04. Subject vs Object</a><a href="#clauses_oblq">05. Oblique Relatives</a><a href="#clauses_gen">06. Genitive Relatives</a><a href="#clauses_rest">07. Restrictive vs Non-restrictive</a><a href="#clauses_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<main class="wrap">
+  ['\n      <section class="phase" id="clauses_rec">\n        <div class="phase-head">\n          <span class="phase-num">01-01</span>\n          <h2>Identify Relative Clauses</h2>\n          <span class="zh">识别定语从句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">A relative clause is a group of words that describes a noun. The noun it describes is called the antecedent. The clause usually starts with a relative word: who, which, that, whose, where, when, why.<span class="zh">定语从句是修饰名词的从句，被修饰的名词叫先行词。从句通常以关系词开头：who、which、that、whose、where、when、why。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>位置</b><div class="en">The clause comes right after the noun it describes.</div><div class="zh">从句紧跟在它所修饰的名词后面。</div></div><div class="rule"><b>先行词</b><div class="en">Find the noun first, then the clause that explains it.</div><div class="zh">先找名词，再找解释它的从句。</div></div><div class="rule"><b>关系词</b><div class="en">The relative word links the clause back to the noun.</div><div class="zh">关系词把从句和名词连接起来。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The woman who lives next door is a doctor.</div><div class="zh">住在隔壁的那位女士是医生。</div></div><div class="ex"><div class="en">I read the book that you recommended.</div><div class="zh">我读了你推荐的那本书。</div></div><div class="ex"><div class="en">This is the café where we first met.</div><div class="zh">这是我们初次见面的那家咖啡馆。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The book is on the table is mine. → Missing relative word: The book that is on the table is mine.<span class="zh">❌ 缺少关系词。应说 The book that is on the table is mine.（桌上的那本书是我的。）</span></div><div class="mistake">❌ I know the man which lives here. → People need who, not which.<span class="zh">❌ 指人用 who，不用 which。</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_subj">\n        <div class="phase-head">\n          <span class="phase-num">01-02</span>\n          <h2>Subject Relatives</h2>\n          <span class="zh">主语关系词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">who and that refer to people; which and that refer to things. When the relative pronoun is the subject of its clause, it can never be omitted.<span class="zh">who/that 指人，which/that 指物。关系代词在从句中作主语时绝不可省略。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>人</b><div class="en">who / that + verb  →  The girl who sings well is my friend.</div><div class="zh">who/that + 动词 → 唱歌唱得好的那个女孩是我朋友。</div></div><div class="rule"><b>物</b><div class="en">which / that + verb  →  The phone which costs $500 is new.</div><div class="zh">which/that + 动词 → 那部价值 500 美元的手机是新的。</div></div><div class="rule"><b>动词一致</b><div class="en">The verb agrees with the antecedent: The man who lives here (singular).</div><div class="zh">谓语动词与先行词保持一致（单复数）。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The student who won the prize is my classmate.</div><div class="zh">获奖的那个学生是我的同学。</div></div><div class="ex"><div class="en">The train that leaves at 6 is always crowded.</div><div class="zh">六点出发的那班火车总是很挤。</div></div><div class="ex"><div class="en">People who exercise daily feel healthier.</div><div class="zh">每天锻炼的人感觉更健康。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The woman who lives... → who is the subject, so it cannot be dropped.<span class="zh">❌ who 在从句中作主语时不可省略。</span></div><div class="mistake">❌ The dog which eat the food... → subject-verb agreement: which eats.<span class="zh">❌ 注意主谓一致：which eats。</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_obj">\n        <div class="phase-head">\n          <span class="phase-num">01-03</span>\n          <h2>Object Relatives</h2>\n          <span class="zh">宾语关系词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When the relative pronoun is the object of the clause, it can be omitted in everyday English. whom is the formal object form for people.<span class="zh">关系代词在从句中作宾语时，口语中常可省略。whom 是书面语中指人的宾格形式。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>结构</b><div class="en">noun + (who/whom/which/that) + subject + verb  →  The film (that) we watched was great.</div><div class="zh">名词 + (关系词) + 主语 + 动词 → 我们看的那部电影很棒。</div></div><div class="rule"><b>省略</b><div class="en">Object relatives can be left out in informal English.</div><div class="zh">宾语关系词在口语中可省略。</div></div><div class="rule"><b>正式语</b><div class="en">whom for people in formal writing: The man whom I met.</div><div class="zh">书面语指人用 whom：The man whom I met.</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The book (that) she wrote became a bestseller.</div><div class="zh">她写的那本书成了畅销书。</div></div><div class="ex"><div class="en">The person (who) I called didn\'t answer.</div><div class="zh">我打电话的那个人没接。</div></div><div class="ex"><div class="en">The house (which) they bought is near the park.</div><div class="zh">他们买的房子在公园附近。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The book that she wrote it became... → No double object: drop it.<span class="zh">❌ 不要重复宾语：去掉 it。</span></div><div class="mistake">❌ who in \'The man whom I met\' in formal writing → whom is correct.<span class="zh">❌ 正式文体中作宾语指人用 whom。</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_subobj">\n        <div class="phase-head">\n          <span class="phase-num">01-04</span>\n          <h2>Subject vs Object</h2>\n          <span class="zh">主语与宾语关系词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Look at what follows the relative pronoun. If a verb follows → it is a subject relative (no omission). If a noun or pronoun follows → it is an object relative (omission allowed).<span class="zh">看关系词后面的成分：后面是动词→主语关系词（不可省略）；后面是名词/代词→宾语关系词（可省略）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>主语从句</b><div class="en">relative + verb  →  who lives (who = subject)</div><div class="zh">关系词 + 动词 → who lives（who 作主语）</div></div><div class="rule"><b>宾语从句</b><div class="en">relative + noun/pronoun + verb  →  who(m) I met (who = object)</div><div class="zh">关系词 + 名词/代词 + 动词 → whom I met（作宾语）</div></div><div class="rule"><b>判定法</b><div class="en">If you can drop the relative word, it is an object relative.</div><div class="zh">能省略的就是宾语关系词。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The man who called you is my boss. (subject — cannot drop who)</div><div class="zh">给你打电话的那个人是我老板。（主语，不可省略）</div></div><div class="ex"><div class="en">The man (who) you called is my boss. (object — can drop who)</div><div class="zh">你打电话给的那个人是我老板。（宾语，可省略）</div></div><div class="ex"><div class="en">The cake that smells great is chocolate. (subject)</div><div class="zh">闻起来很香的蛋糕是巧克力味的。（主语）</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The man you called him is my boss. → Remove him: The man you called is my boss.<span class="zh">❌ 画蛇添足加 him：直接 The man you called is my boss.</span></div><div class="mistake">❌ Dropping a subject relative: The man called you is my boss → wrong.<span class="zh">❌ 主语关系词不能省略：The man who called you...</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_oblq">\n        <div class="phase-head">\n          <span class="phase-num">01-05</span>\n          <h2>Oblique Relatives</h2>\n          <span class="zh">地点/时间/原因关系词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">where = place, when = time, why = reason. Prepositions can also sit before which/whom in formal style.<span class="zh">where 表地点，when 表时间，why 表原因。正式语中介词可放在 which/whom 之前。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>地点</b><div class="en">place + where + clause  →  the town where I grew up</div><div class="zh">地点 + where → 我长大的小镇</div></div><div class="rule"><b>时间</b><div class="en">time + when + clause  →  the day when we met</div><div class="zh">时间 + when → 我们相遇的那天</div></div><div class="rule"><b>原因</b><div class="en">reason + why + clause  →  the reason why I left</div><div class="zh">原因 + why → 我离开的原因</div></div><div class="rule"><b>介词+which</b><div class="en">the table on which the book lay (formal) = the table (that) the book lay on</div><div class="zh">介词+which：the table on which...（正式）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">This is the school where I studied English.</div><div class="zh">这是我学英语的学校。</div></div><div class="ex"><div class="en">Do you remember the day when we first met?</div><div class="zh">你还记得我们初次见面的那天吗？</div></div><div class="ex"><div class="en">That\'s the reason why she left early.</div><div class="zh">那就是她早退的原因。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ the place where I live in → where already means \'in which\'; do not add in.<span class="zh">❌ where 已含介词意义，不要重复加 in。</span></div><div class="mistake">❌ the reason why because... → redundant; choose one.<span class="zh">❌ why 与 because 重复，选其一。</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_gen">\n        <div class="phase-head">\n          <span class="phase-num">01-06</span>\n          <h2>Genitive Relatives</h2>\n          <span class="zh">所有格关系词 whose</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">whose shows possession and works for both people and things. It is followed directly by a noun.<span class="zh">whose 表示所属关系，人和物都可用，后面直接跟名词。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>人</b><div class="en">person + whose + noun  →  the girl whose name I forgot</div><div class="zh">人 + whose + 名词 → 我忘了名字的那个女孩</div></div><div class="rule"><b>物</b><div class="en">thing + whose + noun  →  the car whose engine broke</div><div class="zh">物 + whose + 名词 → 发动机坏了的车</div></div><div class="rule"><b>不可省略</b><div class="en">whose can never be omitted.</div><div class="zh">whose 不可省略。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The writer whose books I love is coming to town.</div><div class="zh">作品我很喜欢的那个作家要来城里了。</div></div><div class="ex"><div class="en">We adopted a dog whose owner had moved away.</div><div class="zh">我们收养了一只主人已搬走的狗。</div></div><div class="ex"><div class="en">I know a family whose house is on the hill.</div><div class="zh">我认识一家住在山上的房子的人。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ the girl who name I forgot → use whose, not who.<span class="zh">❌ 表所属要用 whose，不是 who。</span></div><div class="mistake">❌ the book which cover is red → use whose: the book whose cover is red.<span class="zh">❌ 物也用 whose：the book whose cover is red.</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_rest">\n        <div class="phase-head">\n          <span class="phase-num">01-07</span>\n          <h2>Restrictive vs Non-restrictive</h2>\n          <span class="zh">限定性 vs 非限定性从句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">A restrictive clause is essential to identify the noun — no commas. A non-restrictive clause adds extra information — set off by commas, uses who/which (never that).<span class="zh">限定性从句是确定名词所必需的信息，不加逗号；非限定性从句只是补充信息，用逗号隔开，用 who/which（不用 that）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>限定性</b><div class="en">No commas, essential: My brother who lives in Beijing is a doctor. (I have more than one brother)</div><div class="zh">无逗号，必需信息：My brother who lives in Beijing...（暗示还有其他兄弟）</div></div><div class="rule"><b>非限定性</b><div class="en">Commas, extra info: My brother, who lives in Beijing, is a doctor. (I have one brother)</div><div class="zh">逗号隔开，补充信息：My brother, who lives in Beijing, ...（只有一位兄弟）</div></div><div class="rule"><b>which 指整句</b><div class="en">which can refer to the whole clause: He passed, which surprised me.</div><div class="zh">which 可指代整个句子：He passed, which surprised me.</div></div><div class="rule"><b>禁止 that</b><div class="en">that is never used in non-restrictive clauses.</div><div class="zh">非限定性从句中不用 that。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The students who study hard will pass. (restrictive — only those students)</div><div class="zh">用功学习的学生会通过。（限定）</div></div><div class="ex"><div class="en">The students, who study hard, will pass. (non-restrictive — all students)</div><div class="zh">学生们都会通过，他们都很用功。（非限定）</div></div><div class="ex"><div class="en">She missed the bus, which made her late.</div><div class="zh">她错过了公交车，这让她迟到了。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ My brother, that lives in Beijing → that is wrong in non-restrictive clauses.<span class="zh">❌ 非限定性从句不能用 that。</span></div><div class="mistake">❌ Adding a comma changes the meaning — be careful with punctuation.<span class="zh">❌ 逗号的有无会改变句意，务必小心。</span></div></div>\n      </section>', '\n      <section class="phase" id="clauses_prod">\n        <div class="phase-head">\n          <span class="phase-num">01-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Combine two short sentences into one sentence with a relative clause; check for double subjects, missing relative words, and wrong relative pronouns.<span class="zh">把两个短句合并成带定语从句的句子；检查双重主语、漏掉关系词、关系词误用等问题。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>合并法</b><div class="en">Find the shared noun → make it the antecedent → choose who/which/whose/where/when/why → place the clause right after it.</div><div class="zh">找共有名词→作为先行词→选关系词→从句紧跟其后。</div></div><div class="rule"><b>检查</b><div class="en">No double subject/object. Verb agrees with antecedent. Punctuation matches meaning.</div><div class="zh">无重复主语/宾语；主谓一致；标点与句意匹配。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">I met a man. The man speaks five languages. → I met a man who speaks five languages.</div><div class="zh">我遇到一个会说五种语言的人。</div></div><div class="ex"><div class="en">This is the house. We lived in it for years. → This is the house (that) we lived in for years.</div><div class="zh">这是我们住了多年的房子。</div></div><div class="ex"><div class="en">She has a cat. Its eyes are green. → She has a cat whose eyes are green.</div><div class="zh">她有一只绿眼睛的猫。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The man he speaks... → drop the extra pronoun.<span class="zh">❌ 去掉多余的代词 he。</span></div><div class="mistake">❌ I met a man speaks five languages → missing who.<span class="zh">❌ 漏掉关系词 who。</span></div></div>\n      </section>']
+  
+      <section class="phase practice" id="practice">
+        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q1</span><span class="qtext">下面哪个部分是定语从句？<br>The woman who called me is my manager.</span></summary>
+            <div class="opts"><div class="opt">The woman</div><div class="opt right">who called me</div><div class="opt">is my manager</div><div class="opt">my manager</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q2</span><span class="qtext">The office ___ I work is downtown.</span></summary>
+            <div class="opts"><div class="opt right">where</div><div class="opt">which</div><div class="opt">who</div><div class="opt">when</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q3</span><span class="qtext">Fix: This is the hotel where I recommended it.</span></summary>
+            <div class="opts"><div class="opt right">This is the hotel that I recommended.</div><div class="opt">This is the hotel which I recommended.</div><div class="opt">This is the hotel where I recommended.</div><div class="opt">This is the hotel where I recommended it.</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+      </section>
+</main>
+<footer class="wrap">
+  <div class="nav-prev-next"><a href="clauses.html"><div class="dir">← 上一模块</div><div class="t">Relative Clauses 定语从句</div></a><a href="tenses.html"><div class="dir">下一模块 →</div><div class="t">Verb Tenses 动词时态</div></a></div>
+  <div class="credit">GramLingo 语法课件 · Module 01 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ 返回顶部</a>
+</footer>
+<script>
+document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+var links=[].slice.call(document.querySelectorAll('.toc a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+90,best=-1;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)best=i;});
+  links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+},{passive:true});
+</script>
+</body>
+</html>

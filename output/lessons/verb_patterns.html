@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 10 · Verb Patterns — GramLingo 语法课件</title>
+<style>
+:root{
+  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
+  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
+  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
+
+/* cover */
+.cover{
+  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
+  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
+  position:relative;overflow:hidden;
+}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.10)}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
+.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
+.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
+.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
+.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
+.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
+.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+
+/* toc */
+.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* sections */
+main{padding:clamp(24px,5vw,44px) 0 20px}
+.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
+.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
+.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
+.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
+.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.concept{font-size:clamp(14.5px,2.6vw,16px)}
+.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
+
+.rules{display:grid;gap:0}
+.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.rule:last-child{border-bottom:0}
+.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
+.rule .en{font-size:14.5px}
+.rule .zh{color:var(--ink2);font-size:13.5px}
+
+.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
+.ex .en{font-weight:600;font-size:14.5px}
+.ex .zh{color:var(--ink2);font-size:13.5px}
+
+.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
+.mistakes h3{color:var(--warn)}
+.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
+.mistake:last-child{border-bottom:0}
+.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
+
+/* practice */
+.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.practice details summary::-webkit-details-marker{display:none}
+.practice details[open] summary{border-bottom:1px dashed var(--line)}
+.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
+.practice .qtext{font-size:14.5px;font-weight:600}
+.practice .opts{padding:8px 16px 14px}
+.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
+.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
+.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
+.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
+.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
+.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
+.credit{font-size:12.5px;color:var(--ink2);text-align:center}
+.credit a{color:var(--accent);text-decoration:none;font-weight:600}
+.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
+
+@media print{
+  .toc,footer .nav-prev-next,.toplink{display:none}
+  body{background:#fff}
+  .cover{border-radius:0}
+  .phase{page-break-inside:avoid}
+}
+@media (max-width:640px){
+  .rule{grid-template-columns:1fr}
+  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
+  .objectives{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-accent="#5C940D">
+<header class="cover">
+  <div class="wrap">
+    <div class="kicker">GramLingo 语法课件 · Module 10 / 12</div>
+    <h1>🧩 Verb Patterns<span class="zh">动词搭配</span></h1>
+    <div class="desc">Control gerunds, infinitives, causatives, and meaning-changing verb patterns.<span class="zh">掌握动名词、不定式、使役结构和会改变含义的动词搭配。</span></div>
+    <div class="objectives"><div><b>目标 1</b>Use gerunds after certain verbs and prepositions · 在特定动词和介词后使用动名词</div><div><b>目标 2</b>Use infinitives after other verbs · 在其他动词后使用不定式</div><div><b>目标 3</b>Know verbs that change meaning with form · 了解形式改变含义的动词</div><div><b>目标 4</b>Use causative patterns: make, let, have, get · 使用 make、let、have、get 使役结构</div></div>
+  </div>
+</header>
+<nav class="toc"><div class="wrap"><a href="#verb_patterns_gerunds">01. Gerunds</a><a href="#verb_patterns_infinitives">02. Infinitives</a><a href="#verb_patterns_both">03. Gerund vs Infinitive</a><a href="#verb_patterns_causatives">04. Causatives</a><a href="#verb_patterns_preposition">05. Preposition + Gerund</a><a href="#verb_patterns_adj">06. Adjective Patterns</a><a href="#verb_patterns_contrast">07. Pattern Contrast</a><a href="#verb_patterns_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<main class="wrap">
+  ['\n      <section class="phase" id="verb_patterns_gerunds">\n        <div class="phase-head">\n          <span class="phase-num">10-01</span>\n          <h2>Gerunds</h2>\n          <span class="zh">动名词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Some verbs are always followed by the -ing form: enjoy, finish, mind, avoid, suggest, keep, practice.<span class="zh">一些动词后永远接 -ing：enjoy、finish、mind、avoid、suggest、keep、practice。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>常用动词</b><div class="en">enjoy, finish, mind, avoid, suggest, keep, practice, consider + -ing</div><div class="zh">enjoy、finish、mind、avoid、suggest、keep、practice、consider + -ing</div></div><div class="rule"><b>介词后</b><div class="en">after any preposition: interested in learning, good at cooking</div><div class="zh">任何介词后：interested in learning（对学习感兴趣）、good at cooking（擅长做饭）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She enjoys reading before bed.</div><div class="zh">她喜欢睡前读书。</div></div><div class="ex"><div class="en">Would you mind closing the window?</div><div class="zh">你介意关上窗户吗？</div></div><div class="ex"><div class="en">He kept asking questions.</div><div class="zh">他不停地问问题。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She enjoys to read → enjoy + -ing: enjoys reading.<span class="zh">❌ enjoy 后接动名词。</span></div><div class="mistake">❌ interested to learn → interested in learning.<span class="zh">❌ 介词后接 -ing。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_infinitives">\n        <div class="phase-head">\n          <span class="phase-num">10-02</span>\n          <h2>Infinitives</h2>\n          <span class="zh">不定式</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Some verbs are always followed by to + base form: want, hope, decide, plan, learn, promise, agree, offer.<span class="zh">一些动词后永远接 to + 原形：want、hope、decide、plan、learn、promise、agree、offer。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>常用动词</b><div class="en">want, hope, decide, plan, learn, promise, agree, offer + to + base</div><div class="zh">want、hope、decide、plan、learn、promise、agree、offer + to + 原形</div></div><div class="rule"><b>疑问词+to</b><div class="en">know/learn/decide + how/what/where + to: I know how to swim.</div><div class="zh">know/learn/decide + how/what/where + to：我知道怎么游泳。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">I want to learn Spanish.</div><div class="zh">我想学西班牙语。</div></div><div class="ex"><div class="en">She decided to stay home.</div><div class="zh">她决定待在家里。</div></div><div class="ex"><div class="en">They promised to help us.</div><div class="zh">他们答应帮助我们。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I want learning → want + to: want to learn.<span class="zh">❌ want 后接不定式。</span></div><div class="mistake">❌ She hopes passing → hopes to pass.<span class="zh">❌ hope 后接 to + 原形。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_both">\n        <div class="phase-head">\n          <span class="phase-num">10-03</span>\n          <h2>Gerund vs Infinitive</h2>\n          <span class="zh">动名词与不定式</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Some verbs change meaning with the form: stop to smoke (stop in order to) vs stop smoking (quit); remember to do (future duty) vs remember doing (past memory); try to do (attempt) vs try doing (experiment).<span class="zh">一些动词接不同形式含义不同：stop to smoke 停下来去抽烟 vs stop smoking 戒烟；remember to do 记得要做 vs remember doing 记得做过；try to do 尝试 vs try doing 试试看。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>stop</b><div class="en">stop + -ing = quit; stop + to + base = pause in order to.</div><div class="zh">stop + -ing 停止；stop + to 停下来去做。</div></div><div class="rule"><b>remember/forget</b><div class="en">+ to = duty; + -ing = memory.</div><div class="zh">接 to 表待办；接 -ing 表记忆。</div></div><div class="rule"><b>try</b><div class="en">+ to = attempt; + -ing = experiment.</div><div class="zh">接 to 表努力尝试；接 -ing 表试验方法。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">I stopped smoking last year.</div><div class="zh">我去年戒烟了。</div></div><div class="ex"><div class="en">On the way home, he stopped to buy milk.</div><div class="zh">回家路上，他停下来买牛奶。</div></div><div class="ex"><div class="en">Remember to lock the door. / I remember locking the door.</div><div class="zh">记得锁门。/ 我记得锁过门。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I stopped to smoke (wrong context) → quitting means stop smoking.<span class="zh">❌ 戒烟要说 stop smoking。</span></div><div class="mistake">❌ Remember locking = past memory; if you mean future duty, use to lock.<span class="zh">❌ 含义随形式变化，务必分清。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_causatives">\n        <div class="phase-head">\n          <span class="phase-num">10-04</span>\n          <h2>Causatives</h2>\n          <span class="zh">使役结构</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">make + object + base (force); let + object + base (allow); have + object + base (arrange); get + object + to + base (persuade).<span class="zh">make + 宾语 + 原形（迫使）；let + 宾语 + 原形（允许）；have + 宾语 + 原形（安排）；get + 宾语 + to + 原形（说服）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>make</b><div class="en">make + object + base: The joke made me laugh.</div><div class="zh">make + 宾语 + 原形：笑话让我笑了。</div></div><div class="rule"><b>let</b><div class="en">let + object + base: My parents let me go.</div><div class="zh">let + 宾语 + 原形：父母让我去。</div></div><div class="rule"><b>have</b><div class="en">have + object + base: I had him fix the car.</div><div class="zh">have + 宾语 + 原形：我让他修车。</div></div><div class="rule"><b>get</b><div class="en">get + object + to + base: I got her to help.</div><div class="zh">get + 宾语 + to + 原形：我说服她帮忙。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The film made me cry.</div><div class="zh">这部电影让我哭了。</div></div><div class="ex"><div class="en">She let her son play outside.</div><div class="zh">她让儿子在外面玩。</div></div><div class="ex"><div class="en">We got the waiter to bring more water.</div><div class="zh">我们让服务员多拿些水。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ make someone to do → make + base, no to.<span class="zh">❌ make 后接原形，不加 to。</span></div><div class="mistake">❌ get someone do → get + to + base.<span class="zh">❌ get 后要加 to。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_preposition">\n        <div class="phase-head">\n          <span class="phase-num">10-05</span>\n          <h2>Preposition + Gerund</h2>\n          <span class="zh">介词 + 动名词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">After every preposition, use the -ing form: interested in, good at, tired of, think about, look forward to, instead of.<span class="zh">介词后一律用 -ing：interested in、good at、tired of、think about、look forward to、instead of。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>介词+ing</b><div class="en">in/at/of/about/for + -ing: She is good at drawing.</div><div class="zh">in/at/of/about/for + -ing：她擅长画画。</div></div><div class="rule"><b>look forward to</b><div class="en">to here is a preposition: I look forward to hearing from you.</div><div class="zh">look forward to 中的 to 是介词：期待你的来信。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">He apologized for being late.</div><div class="zh">他为迟到道歉。</div></div><div class="ex"><div class="en">I\'m thinking about moving to Hangzhou.</div><div class="zh">我在考虑搬到杭州。</div></div><div class="ex"><div class="en">She left without saying goodbye.</div><div class="zh">她没说再见就离开了。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ good at draw → good at drawing.<span class="zh">❌ 介词后接 -ing。</span></div><div class="mistake">❌ look forward to hear → looking forward to hearing.<span class="zh">❌ to 是介词，后接 -ing。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_adj">\n        <div class="phase-head">\n          <span class="phase-num">10-06</span>\n          <h2>Adjective Patterns</h2>\n          <span class="zh">形容词搭配</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">It is + adjective + to + base (It is easy to learn); subject + be + adjective + to + base (I am happy to help).<span class="zh">It is + 形容词 + to + 原形（学起来很容易）；主语 + be + 形容词 + to + 原形（我很乐意帮忙）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>It is + adj + to</b><div class="en">It is important to sleep well.</div><div class="zh">睡好觉很重要。</div></div><div class="rule"><b>主语 + be + adj + to</b><div class="en">She was surprised to see us.</div><div class="zh">看到我们她很惊讶。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">It is difficult to learn a new language.</div><div class="zh">学一门新语言很难。</div></div><div class="ex"><div class="en">We are ready to start.</div><div class="zh">我们准备好开始了。</div></div><div class="ex"><div class="en">He was afraid to speak in public.</div><div class="zh">他害怕当众讲话。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ It is important sleep → to sleep.<span class="zh">❌ 形容词后接 to + 原形。</span></div><div class="mistake">❌ I am happy helping → with person adjectives, prefer to + base: happy to help.<span class="zh">❌ happy to help 更常见。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_contrast">\n        <div class="phase-head">\n          <span class="phase-num">10-07</span>\n          <h2>Pattern Contrast</h2>\n          <span class="zh">搭配对比</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">The verb decides the pattern — memorize the verb + form pairs. Group by pattern: verbs + -ing, verbs + to, verbs + both, verbs + object + form.<span class="zh">动词决定搭配形式——记住【动词 + 形式】的组合，按模式分组记忆：接 -ing、接 to、两者皆可、接宾语 + 形式。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>接 -ing</b><div class="en">enjoy, mind, avoid, suggest, keep, finish</div><div class="zh">enjoy、mind、avoid、suggest、keep、finish</div></div><div class="rule"><b>接 to</b><div class="en">want, hope, decide, plan, promise, agree</div><div class="zh">want、hope、decide、plan、promise、agree</div></div><div class="rule"><b>宾语+原形</b><div class="en">make, let, have</div><div class="zh">make、let、have 接宾语 + 原形</div></div><div class="rule"><b>宾语+to</b><div class="en">get, ask, tell, want</div><div class="zh">get、ask、tell、want 接宾语 + to</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She suggested taking a break.</div><div class="zh">她建议休息一下。</div></div><div class="ex"><div class="en">He promised to call me.</div><div class="zh">他答应给我打电话。</div></div><div class="ex"><div class="en">They asked us to wait.</div><div class="zh">他们让我们等。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ suggest me to go → suggest going / suggest that I go.<span class="zh">❌ suggest 不接宾语 + to。</span></div><div class="mistake">❌ want that he comes → want him to come.<span class="zh">❌ want 接宾语 + to。</span></div></div>\n      </section>', '\n      <section class="phase" id="verb_patterns_prod">\n        <div class="phase-head">\n          <span class="phase-num">10-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When writing, check every verb\'s pattern: does it take -ing, to + base, or object + form? Fix mismatches.<span class="zh">写作时逐一检查动词搭配：接 -ing、to + 原形，还是宾语 + 形式？修正不匹配之处。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>查动词</b><div class="en">For each verb, recall its pattern group before writing the next word.</div><div class="zh">写每个动词前回忆它的搭配分组。</div></div><div class="rule"><b>查介词</b><div class="en">After any preposition, the next verb must be -ing.</div><div class="zh">介词后的动词必须用 -ing。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">❌ I enjoy to cook → I enjoy cooking.</div><div class="zh">❌ enjoy 接 -ing。</div></div><div class="ex"><div class="en">❌ She avoided to answer → She avoided answering.</div><div class="zh">❌ avoid 接 -ing。</div></div><div class="ex"><div class="en">✔ I decided to start learning Chinese.</div><div class="zh">✔ 我决定开始学中文。（decide + to; start + -ing）</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He wants that I help → He wants me to help.<span class="zh">❌ want 接宾语 + to。</span></div><div class="mistake">❌ They made me to wait → They made me wait.<span class="zh">❌ make 接原形，不加 to。</span></div></div>\n      </section>']
+  
+      <section class="phase practice" id="practice">
+        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q1</span><span class="qtext">I enjoy ___ books in my free time.</span></summary>
+            <div class="opts"><div class="opt">read</div><div class="opt">to read</div><div class="opt right">reading</div><div class="opt">reads</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q2</span><span class="qtext">He tried ___ the heavy box but could not.</span></summary>
+            <div class="opts"><div class="opt">lift</div><div class="opt right">to lift</div><div class="opt">lifting</div><div class="opt">lifted</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q3</span><span class="qtext">Choose the correct sentence:</span></summary>
+            <div class="opts"><div class="opt">She made me to apologize.</div><div class="opt right">She made me apologize.</div><div class="opt">She made me apologizing.</div><div class="opt">She made me apologized.</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+      </section>
+</main>
+<footer class="wrap">
+  <div class="nav-prev-next"><a href="verb_patterns.html"><div class="dir">← 上一模块</div><div class="t">Verb Patterns 动词搭配</div></a><a href="advanced.html"><div class="dir">下一模块 →</div><div class="t">Advanced Expressions 高级表达</div></a></div>
+  <div class="credit">GramLingo 语法课件 · Module 10 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ 返回顶部</a>
+</footer>
+<script>
+document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+var links=[].slice.call(document.querySelectorAll('.toc a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+90,best=-1;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)best=i;});
+  links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+},{passive:true});
+</script>
+</body>
+</html>

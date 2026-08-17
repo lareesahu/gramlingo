@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module 11 · Sentence Structure — GramLingo 语法课件</title>
+<style>
+:root{
+  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
+  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
+  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
+
+/* cover */
+.cover{
+  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
+  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
+  position:relative;overflow:hidden;
+}
+.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.10)}
+.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
+.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
+.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
+.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
+.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
+.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
+.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
+
+/* toc */
+.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
+.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* sections */
+main{padding:clamp(24px,5vw,44px) 0 20px}
+.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
+.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
+.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
+.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
+.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
+.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.concept{font-size:clamp(14.5px,2.6vw,16px)}
+.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
+
+.rules{display:grid;gap:0}
+.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
+.rule:last-child{border-bottom:0}
+.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
+.rule .en{font-size:14.5px}
+.rule .zh{color:var(--ink2);font-size:13.5px}
+
+.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
+.ex .en{font-weight:600;font-size:14.5px}
+.ex .zh{color:var(--ink2);font-size:13.5px}
+
+.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
+.mistakes h3{color:var(--warn)}
+.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
+.mistake:last-child{border-bottom:0}
+.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
+
+/* practice */
+.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
+.practice details summary::-webkit-details-marker{display:none}
+.practice details[open] summary{border-bottom:1px dashed var(--line)}
+.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
+.practice .qtext{font-size:14.5px;font-weight:600}
+.practice .opts{padding:8px 16px 14px}
+.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
+.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
+.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
+.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
+
+/* footer */
+footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
+.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
+.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
+.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
+.credit{font-size:12.5px;color:var(--ink2);text-align:center}
+.credit a{color:var(--accent);text-decoration:none;font-weight:600}
+.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
+
+@media print{
+  .toc,footer .nav-prev-next,.toplink{display:none}
+  body{background:#fff}
+  .cover{border-radius:0}
+  .phase{page-break-inside:avoid}
+}
+@media (max-width:640px){
+  .rule{grid-template-columns:1fr}
+  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
+  .objectives{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-accent="#364FC7">
+<header class="cover">
+  <div class="wrap">
+    <div class="kicker">GramLingo 语法课件 · Module 11 / 12</div>
+    <h1>🏗️ Sentence Structure<span class="zh">句子结构</span></h1>
+    <div class="desc">Build, question, negate, combine, and repair complete English sentences.<span class="zh">构建、提问、否定、合并并修复完整的英语句子。</span></div>
+    <div class="objectives"><div><b>目标 1</b>Use correct subject-verb-object word order · 使用正确的主谓宾语序</div><div><b>目标 2</b>Form yes/no and wh- questions correctly · 正确构成一般与特殊疑问句</div><div><b>目标 3</b>Negate sentences without double negatives · 否定句子，避免双重否定</div><div><b>目标 4</b>Identify main, subordinate, and coordinate clauses · 识别主句、从句与并列句</div><div><b>目标 5</b>Repair fragments and run-on sentences · 修复残缺句与流水句</div></div>
+  </div>
+</header>
+<nav class="toc"><div class="wrap"><a href="#sentence_structure_word_order">01. Word Order</a><a href="#sentence_structure_questions">02. Question Formation</a><a href="#sentence_structure_negation">03. Negation</a><a href="#sentence_structure_clauses">04. Clause Types</a><a href="#sentence_structure_cleft">05. Cleft Sentences</a><a href="#sentence_structure_fragments">06. Fragments and Run-ons</a><a href="#sentence_structure_parallelism">07. Parallel Structure</a><a href="#sentence_structure_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<main class="wrap">
+  ['\n      <section class="phase" id="sentence_structure_word_order">\n        <div class="phase-head">\n          <span class="phase-num">11-01</span>\n          <h2>Word Order</h2>\n          <span class="zh">语序</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Standard English order: subject + verb + object (+ place + time). Adverbs of frequency go before the main verb.<span class="zh">英语基本语序：主语 + 谓语 + 宾语（+ 地点 + 时间）。频率副词放在主要动词之前。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>SVO</b><div class="en">Subject + verb + object: She reads books.</div><div class="zh">主语 + 谓语 + 宾语：她读书。</div></div><div class="rule"><b>时间地点</b><div class="en">place before time: We met at the café yesterday.</div><div class="zh">地点在前，时间在后：我们昨天在咖啡馆见面。</div></div><div class="rule"><b>频率副词</b><div class="en">She always gets up early. / I have never seen it.</div><div class="zh">她总是早起。/ 我从未见过。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The students finished their homework quickly.</div><div class="zh">学生们很快完成了作业。</div></div><div class="ex"><div class="en">He usually walks to school.</div><div class="zh">他通常步行上学。</div></div><div class="ex"><div class="en">They visited the museum in Beijing last summer.</div><div class="zh">他们去年夏天参观了北京的博物馆。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I every day drink coffee → I drink coffee every day.<span class="zh">❌ 时间状语放句末或句首。</span></div><div class="mistake">❌ She reads always books → She always reads books.<span class="zh">❌ 频率副词在动词前。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_questions">\n        <div class="phase-head">\n          <span class="phase-num">11-02</span>\n          <h2>Question Formation</h2>\n          <span class="zh">疑问句构成</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Yes/no questions: auxiliary + subject + verb. Wh- questions: wh-word + auxiliary + subject + verb. With be, invert be and subject.<span class="zh">一般疑问句：助动词 + 主语 + 谓语。特殊疑问句：疑问词 + 助动词 + 主语 + 谓语。be 动词直接与主语倒装。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>一般疑问</b><div class="en">Do you like tea? / Is she ready?</div><div class="zh">Do you like tea? / Is she ready?</div></div><div class="rule"><b>特殊疑问</b><div class="en">Where do you live? / What is your name?</div><div class="zh">Where do you live? / What is your name?</div></div><div class="rule"><b>主语疑问</b><div class="en">Who called you? (no auxiliary when who is the subject)</div><div class="zh">Who called you?（who 作主语时不加助动词）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Did you watch the match last night?</div><div class="zh">你昨晚看比赛了吗？</div></div><div class="ex"><div class="en">How often do you exercise?</div><div class="zh">你多久锻炼一次？</div></div><div class="ex"><div class="en">Who lives in that house?</div><div class="zh">谁住在那栋房子里？</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ You like tea? (informal) → standard: Do you like tea?<span class="zh">❌ 标准疑问句要加助动词。</span></div><div class="mistake">❌ Who did call you? → Who called you? (who is subject)<span class="zh">❌ who 作主语时不加 did。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_negation">\n        <div class="phase-head">\n          <span class="phase-num">11-03</span>\n          <h2>Negation</h2>\n          <span class="zh">否定</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">not goes after the auxiliary or be; negative adverbs include never, hardly, rarely; avoid double negatives in standard English.<span class="zh">not 放在助动词或 be 之后；否定副词有 never、hardly、rarely；标准英语避免双重否定。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>not 位置</b><div class="en">I am not tired. / She does not work here.</div><div class="zh">I am not tired. / She does not work here.</div></div><div class="rule"><b>否定副词</b><div class="en">I never eat meat. / She rarely calls.</div><div class="zh">I never eat meat. / She rarely calls.</div></div><div class="rule"><b>无双重否定</b><div class="en">❌ I don\'t have no money → I don\'t have any money.</div><div class="zh">❌ 不能说 I don\'t have no money。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">He hasn\'t finished his work yet.</div><div class="zh">他还没完成工作。</div></div><div class="ex"><div class="en">We hardly ever eat out.</div><div class="zh">我们几乎从不下馆子。</div></div><div class="ex"><div class="en">Nobody answered the phone.</div><div class="zh">没有人接电话。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I don\'t want nothing → I don\'t want anything.<span class="zh">❌ 避免双重否定。</span></div><div class="mistake">❌ She doesn\'t likes → doesn\'t + base: She doesn\'t like.<span class="zh">❌ doesn\'t 后接原形。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_clauses">\n        <div class="phase-head">\n          <span class="phase-num">11-04</span>\n          <h2>Clause Types</h2>\n          <span class="zh">从句类型</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">A main clause can stand alone; a subordinate clause cannot. Coordinate clauses are joined by and/but/or. Subordinate clauses start with because, when, if, although...<span class="zh">主句可独立成句；从句不能。并列句用 and/but/or 连接；从句以 because、when、if、although 等开头。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>主句</b><div class="en">main clause: She left. (complete)</div><div class="zh">主句：She left. 她离开了。（完整）</div></div><div class="rule"><b>从句</b><div class="en">subordinate: because she was tired. (incomplete alone)</div><div class="zh">从句：因为她累了。（不能单独成句）</div></div><div class="rule"><b>并列句</b><div class="en">coordinate: She left, but he stayed.</div><div class="zh">并列句：她走了，但他留下了。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">When the rain stopped, we went out.</div><div class="zh">雨停后我们出去了。</div></div><div class="ex"><div class="en">He stayed home because he was sick.</div><div class="zh">他因为生病待在家里。</div></div><div class="ex"><div class="en">I called her, but she didn\'t answer.</div><div class="zh">我给她打了电话，但她没接。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Because he was sick. (fragment) → join to a main clause.<span class="zh">❌ 从句不能单独成句。</span></div><div class="mistake">❌ Joining two main clauses with only a comma → run-on.<span class="zh">❌ 两个主句不能只用逗号连接。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_cleft">\n        <div class="phase-head">\n          <span class="phase-num">11-05</span>\n          <h2>Cleft Sentences</h2>\n          <span class="zh">强调句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Cleft sentences emphasize one part: It is/was + emphasized part + that/who...; What + subject + verb + is/was + emphasized part.<span class="zh">强调句突出某一部分：It is/was + 被强调部分 + that/who...；What + 主语 + 谓语 + is/was + 被强调部分。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>It is...that</b><div class="en">It was Tom who called you.</div><div class="zh">是汤姆给你打了电话。</div></div><div class="rule"><b>What...is</b><div class="en">What I need is a break.</div><div class="zh">我需要的是休息。</div></div><div class="rule"><b>用途</b><div class="en">Adds focus in speaking and writing.</div><div class="zh">口语与写作中增加焦点。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">It is English that she loves most.</div><div class="zh">她最爱的是英语。</div></div><div class="ex"><div class="en">What surprised me was his calmness.</div><div class="zh">让我惊讶的是他的冷静。</div></div><div class="ex"><div class="en">It was in Shanghai that we first met.</div><div class="zh">我们是在上海初次相遇的。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ It was Tom which called → people take who/that.<span class="zh">❌ 指人用 who/that。</span></div><div class="mistake">❌ What I need is a break — not \'What do I need is\' (no do).<span class="zh">❌ What 从句不用助动词倒装。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_fragments">\n        <div class="phase-head">\n          <span class="phase-num">11-06</span>\n          <h2>Fragments and Run-ons</h2>\n          <span class="zh">残缺句与流水句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">A fragment is an incomplete sentence missing a subject or verb. A run-on joins two sentences without proper punctuation. Fix both by adding or splitting.<span class="zh">残缺句缺少主语或谓语；流水句没有正确标点就连接两个句子。通过补充或拆分来修复。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>残缺句</b><div class="en">❌ Because I was late. → I was late, so I missed the bus.</div><div class="zh">❌ 残缺：Because I was late. 要补主句。</div></div><div class="rule"><b>流水句</b><div class="en">❌ I was late I missed the bus → I was late, so I missed the bus.</div><div class="zh">❌ 流水句要加标点或连词。</div></div><div class="rule"><b>修复法</b><div class="en">Add the missing part, or split into two sentences with punctuation.</div><div class="zh">补充缺失部分，或用标点拆分。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">❌ The dog barking all night. → The dog was barking all night.</div><div class="zh">❌ 缺谓语：加 was。</div></div><div class="ex"><div class="en">❌ She loves music she plays piano. → She loves music, and she plays piano.</div><div class="zh">❌ 流水句：加 and。</div></div><div class="ex"><div class="en">✔ After the meeting, we went for coffee.</div><div class="zh">✔ 会后我们去喝了咖啡。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Fragment: Walking to school. → She was walking to school.<span class="zh">❌ 缺主语或谓语。</span></div><div class="mistake">❌ Run-on without any punctuation: He came he left.<span class="zh">❌ 两个句子要连接或拆开。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_parallelism">\n        <div class="phase-head">\n          <span class="phase-num">11-07</span>\n          <h2>Parallel Structure</h2>\n          <span class="zh">平行结构</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Items in a list or pair must have the same grammatical form: verb + verb, noun + noun, -ing + -ing.<span class="zh">并列项语法形式必须一致：动词对动词、名词对名词、-ing 对 -ing。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>一致形式</b><div class="en">She likes reading, writing, and painting.</div><div class="zh">她喜欢阅读、写作和绘画。（都是 -ing）</div></div><div class="rule"><b>错误示例</b><div class="en">❌ She likes reading, to write, and painting.</div><div class="zh">❌ 形式混杂：reading、to write、painting。</div></div><div class="rule"><b>成对结构</b><div class="en">not only...but also, either...or keep the same form on both sides.</div><div class="zh">not only...but also、either...or 两边形式一致。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">He is smart, kind, and funny.</div><div class="zh">他聪明、善良又风趣。（都是形容词）</div></div><div class="ex"><div class="en">She enjoys swimming and hiking.</div><div class="zh">她喜欢游泳和远足。</div></div><div class="ex"><div class="en">We decided to save money and to travel less.</div><div class="zh">我们决定省钱，少旅行。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I like cooking, to read, and swim → keep all -ing.<span class="zh">❌ 列表项形式要统一。</span></div><div class="mistake">❌ She is both smart and works hard → both + adj + and + verb phrase (unbalanced).<span class="zh">❌ 并列结构要对称。</span></div></div>\n      </section>', '\n      <section class="phase" id="sentence_structure_prod">\n        <div class="phase-head">\n          <span class="phase-num">11-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Edit for sentence quality: check every sentence has a subject and verb, correct word order, no fragments or run-ons, and parallel lists.<span class="zh">修改句子质量：检查每句有主有谓、语序正确、无残缺句或流水句、列表平行。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>五项检查</b><div class="en">subject? verb? order? punctuation? parallel?</div><div class="zh">主语？谓语？语序？标点？平行？</div></div><div class="rule"><b>一个句子一个焦点</b><div class="en">One main idea per sentence; split long chains.</div><div class="zh">一句一个重点，长链要拆分。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">❌ He go to school every day. → He goes to school every day.</div><div class="zh">❌ 主谓一致：goes。</div></div><div class="ex"><div class="en">❌ Because it was raining. → Because it was raining, we stayed inside.</div><div class="zh">❌ 残缺句：补主句。</div></div><div class="ex"><div class="en">✔ She speaks English fluently and writes clearly.</div><div class="zh">✔ 平行结构：speaks...writes。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I am agree → I agree.<span class="zh">❌ agree 是动词，不加 am。</span></div><div class="mistake">❌ There is many people → There are many people.<span class="zh">❌ there be 与主语一致。</span></div></div>\n      </section>']
+  
+      <section class="phase practice" id="practice">
+        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q1</span><span class="qtext">Choose the correct word order:</span></summary>
+            <div class="opts"><div class="opt">She speaks well English.</div><div class="opt right">She speaks English well.</div><div class="opt">She well speaks English.</div><div class="opt">Well she speaks English.</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q2</span><span class="qtext">___ was John ___ broke the window.</span></summary>
+            <div class="opts"><div class="opt right">It ... who</div><div class="opt">What ... that</div><div class="opt">That ... who</div><div class="opt">He ... that</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+        <div class="p-q">
+          <details>
+            <summary><span class="qnum">Q3</span><span class="qtext">Choose the best combined sentence: "The man is my neighbor. He is wearing a hat."</span></summary>
+            <div class="opts"><div class="opt">The man is my neighbor he is wearing a hat.</div><div class="opt right">The man wearing a hat is my neighbor.</div><div class="opt">The man is my neighbor wearing a hat.</div><div class="opt">Wearing a hat the man is my neighbor.</div></div>
+            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+          </details>
+        </div>
+      </section>
+</main>
+<footer class="wrap">
+  <div class="nav-prev-next"><a href="sentence_structure.html"><div class="dir">← 上一模块</div><div class="t">Sentence Structure 句子结构</div></a><a href="index.html"><div class="dir">返回目录 →</div><div class="t">全部模块</div></a></div>
+  <div class="credit">GramLingo 语法课件 · Module 11 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ 返回顶部</a>
+</footer>
+<script>
+document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+var links=[].slice.call(document.querySelectorAll('.toc a'));
+var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+90,best=-1;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)best=i;});
+  links.forEach(function(a,i){a.classList.toggle('on',i===best);});
+},{passive:true});
+</script>
+</body>
+</html>
