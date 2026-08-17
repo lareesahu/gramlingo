@@ -31,6 +31,7 @@ const STEPS = [
 export function WelcomeScreen() {
   const { language, cloudRecoveryPending } = useAppContext();
   const s = getStrings(language);
+  const isZh = language === 'zh';
 
   const [showAuth, setShowAuth] = useState(false);
   const [catchIdx, setCatchIdx] = useState(0);
@@ -64,6 +65,9 @@ export function WelcomeScreen() {
         <Button size="lg" onClick={() => setShowAuth(true)} className="hero-cta">
           {s.startLearning}
         </Button>
+        <a className="hero-journey-link" href={`${BASE_URL}app`}>
+          {isZh ? '开始学习之旅 →' : 'Start the journey →'}
+        </a>
       </section>
 
       {/* ── Module Gallery ── */}

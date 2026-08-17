@@ -5,7 +5,7 @@ import { AppProvider } from '../../app/AppProvider';
 import { App } from '../../app/App';
 
 describe('LanguageSwitcher', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
 
   it('switches between Chinese and English', async () => {
     const user = userEvent.setup();

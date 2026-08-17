@@ -14,7 +14,7 @@ async function login(user: ReturnType<typeof userEvent.setup>) {
 }
 
 describe('Learning path', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
 
   it('renders every module card after login', async () => {
     const user = userEvent.setup();
@@ -24,7 +24,7 @@ describe('Learning path', () => {
     expect(document.querySelectorAll('.lp__card')).toHaveLength(12);
   });
 
-  it('reveals a module lesson plan', async () => {
+  it('reveals a module lesson plan in a modal', async () => {
     const user = userEvent.setup();
     render(<AppProvider><App /></AppProvider>);
     await login(user);
@@ -32,6 +32,7 @@ describe('Learning path', () => {
     await user.click(screen.getByRole('button', { name: /Relative Clauses: Lesson plan/ }));
 
     expect(await screen.findByText('Identify Relative Clauses')).toBeInTheDocument();
-    expect(document.querySelector('.lp__panel')).toBeInTheDocument();
+    expect(document.querySelector('.mm-overlay')).toBeInTheDocument();
+    expect(document.querySelector('.mm-modal')).toBeInTheDocument();
   });
 });

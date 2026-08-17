@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { useAppContext } from '../app/app-state';
 import { useDragScroll } from '../hooks/useDragScroll';
 import { getStrings } from '../i18n/i18n';
+import { ModuleModal } from '../components/ModuleModal/ModuleModal';
 
 /** Trilingual display that dedupes identical strings (data often has en===zh===es). */
 export function trilingualName(primary: string, zh?: string, es?: string): string {
@@ -21,6 +22,7 @@ export function LearningPathScreen() {
   const s = getStrings(language);
   const isZh = language === 'zh';
   const [openModule, setOpenModule] = useState<string | null>(activeModuleId);
+  const [modalModule, setModalModule] = useState<string | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const dragScroll = useDragScroll<HTMLDivElement>();
 
@@ -96,7 +98,10 @@ export function LearningPathScreen() {
               const coverSrc = import.meta.env.BASE_URL + 'assets/covers/cover-' + mod.id + '.jpg';
               const firstUnfinished = playablePhases.find(ph => !getPhaseProgress(ph.id)?.completed && !isPhaseLockedFn(mod.id, ph.id));
               const cls = 'lp__card' + (isOpen ? ' lp__card--open' : '') + (modLocked ? ' lp__card--locked' : '') + (!hasLessons ? ' lp__card--planned' : '') + (isDone ? ' lp__card--done' : '') + (isInProgress ? ' lp__card--progress' : '');
-              const toggleCard = () => setOpenModule(isOpen ? null : mod.id);
+              const toggleCard = () => {
+                if (modLocked) return;
+                setModalModule(mod.id);   // open lesson page as a modal/popup
+              };
 
               return (
                 <article
@@ -175,7 +180,9 @@ export function LearningPathScreen() {
               const isOpen = openModule === mod.id;
               const coverSrc = import.meta.env.BASE_URL + 'assets/covers/cover-' + mod.id + '.jpg';
               const cls = 'lp__card' + (isOpen ? ' lp__card--open' : '');
-              const toggleCard = () => setOpenModule(isOpen ? null : mod.id);
+              const toggleCard = () => {
+                setModalModule(mod.id);   // open lesson page as a modal/popup
+              };
 
               return (
                 <article
@@ -229,6 +236,9 @@ export function LearningPathScreen() {
           <span className="lp__review-count">{flashcardReviewStack.length}</span>
         </div>
       )}
+
+      {/* ═══════════════════════════ MODULE LESSON MODAL ═══════════════════════════ */}
+      <ModuleModal moduleId={modalModule} onClose={() => setModalModule(null)} />
     </div>
   );
 }

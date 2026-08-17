@@ -5,7 +5,7 @@ import { AppProvider } from '../app/AppProvider';
 import { App } from '../app/App';
 
 describe('AdminScreen', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
 
   it('opens from the visible admin action', async () => {
     const user = userEvent.setup();

@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from 'react';
 import { useAppContext } from './app-state';
+import { useUrlSync } from './router';
 import { AppShell } from '../components/AppShell/AppShell';
 import { LoadingScreen } from '../screens/LoadingScreen';
 import { IntroScreen, introAlreadySeen } from '../screens/IntroScreen';
@@ -22,6 +23,9 @@ const LOAD_DURATION = 1500;
 export function App() {
   const { screen, currentUser, navigateTo, cloudEnabled } = useAppContext();
   const [introSeen, setIntroSeen] = useState<boolean>(introAlreadySeen);
+
+  // URL ↔ screen sync (subdomain-aware; landing at /, app at /app, lessons at /app/lesson)
+  useUrlSync(screen, navigateTo);
 
   // First-launch journey: full-screen poster slideshow, shown ONCE, then the app.
   if (!introSeen) {

@@ -1,0 +1,151 @@
+/* ═══════════════════════════════════════════════
+   ModuleModal — lesson page popup overlay
+   ═══════════════════════════════════════════════ */
+
+.mm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(45, 27, 16, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: mmFade 0.18s ease-out;
+}
+
+@keyframes mmFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.mm-modal {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: 85dvh;
+  overflow-y: auto;
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border-light, #eee);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  animation: mmSlide 0.2s var(--ease-out, ease-out);
+}
+
+@keyframes mmSlide {
+  from { transform: translateY(12px); opacity: 0.6; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.mm-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: var(--color-primary-ghost, #fff0e6);
+  color: var(--color-primary, #ff8c42);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s, background 0.15s;
+}
+.mm-close:hover { transform: rotate(90deg); background: var(--color-primary, #ff8c42); color: #fff; }
+
+.mm-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+  padding-right: 32px;
+}
+.mm-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-dark, #2d1b10);
+  line-height: 1.2;
+}
+.mm-header p {
+  margin: 4px 0 0;
+  font-size: 0.75rem;
+  color: var(--color-muted, #888);
+}
+
+.mm-progress {
+  margin-bottom: 14px;
+  font-size: 0.7rem;
+  color: var(--color-muted, #888);
+}
+.mm-progress-bar {
+  margin-top: 4px;
+  height: 5px;
+  background: var(--color-border-light, #f0e9e0);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.mm-progress-fill {
+  height: 100%;
+  background: var(--color-primary, #ff8c42);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.mm-lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mm-lesson {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border-light, #f0e9e0);
+  border-radius: 12px;
+  background: var(--color-surface, #fff);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.mm-lesson:hover:not(:disabled) {
+  border-color: var(--color-primary, #ff8c42);
+  transform: translateX(3px);
+}
+
+.mm-lesson--locked {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.mm-lesson--planned { border-style: dashed; }
+.mm-lesson--done { border-color: var(--color-correct, #4caf50); background: var(--color-correct-bg, #eefaf0); }
+
+.mm-lesson-num {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-primary-ghost, #fff0e6);
+  color: var(--color-primary, #ff8c42);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.mm-lesson--done .mm-lesson-num { background: var(--color-correct, #4caf50); color: #fff; }
+
+.mm-lesson-name { flex: 1; min-width: 0; font-weight: 600; color: var(--color-dark, #2d1b10); }
+.mm-lesson-status { font-size: 0.68rem; color: var(--color-muted, #888); }
+.mm-lesson-arrow { color: var(--color-primary, #ff8c42); }

@@ -5,7 +5,7 @@ import { AppProvider } from "../app/AppProvider";
 import { App } from "../app/App";
 
 describe("WelcomeScreen", () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
 
   it("renders a first-visit screen immediately", () => {
     render(<AppProvider><App /></AppProvider>);

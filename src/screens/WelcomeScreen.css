@@ -36,6 +36,18 @@
   user-select: none;
 }
 
+.hero-journey-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.15s;
+}
+.hero-journey-link:hover { opacity: 0.75; }
+
 .catchphrase-carousel {
   position: relative;
   height: 1.75em;

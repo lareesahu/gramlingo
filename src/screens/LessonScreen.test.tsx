@@ -5,7 +5,7 @@ import { AppProvider } from '../app/AppProvider';
 import { App } from '../app/App';
 
 describe('Lesson flow', () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
 
   it('opens an authored question from the lesson plan', async () => {
     const user = userEvent.setup();
