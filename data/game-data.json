@@ -6858,7 +6858,7 @@
       "id": "conditionals_zero",
       "name": {
         "en": "Zero Conditional",
-        "zh": "Zero Conditional",
+        "zh": "零条件句",
         "es": "Zero Conditional"
       },
       "s": {
@@ -6877,7 +6877,7 @@
           "id": "conditionals_zero_q01",
           "q": {
             "en": "If you ___ water to 100 degrees, it ___.",
-            "zh": "If you ___ water to 100 degrees, it ___.",
+            "zh": "请选择正确的形式：If you ___ water to 100 degrees, it ___.",
             "es": "If you ___ water to 100 degrees, it ___."
           },
           "a": [
@@ -6906,7 +6906,7 @@
           },
           "t": {
             "en": "Zero conditional: if + present, present for facts.",
-            "zh": "Zero conditional: if + present, present for facts.",
+            "zh": "零条件句：if + 一般现在时，表示客观事实。",
             "es": "Zero conditional: if + present, present for facts."
           },
           "ex": {
@@ -6917,10 +6917,10 @@
               "Will heat in if-clause is wrong."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Will boil 是第一条件句，不表示一般规律。",
-              "Would boil 是非真实条件，但这是真实情况。",
-              "Will heat 出现在 if 从句中是错误的。"
+              "零条件句：if + 一般现在时，表示客观事实。",
+              "零条件句：if + 一般现在时，表示客观事实。",
+              "零条件句：if + 一般现在时，表示客观事实。",
+              "零条件句：if + 一般现在时，表示客观事实。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -6934,7 +6934,7 @@
           "id": "conditionals_zero_q02",
           "q": {
             "en": "If you ___ plants, they ___.",
-            "zh": "If you ___ plants, they ___.",
+            "zh": "请选择正确的形式：If you ___ plants, they ___.",
             "es": "If you ___ plants, they ___."
           },
           "a": [
@@ -6963,7 +6963,7 @@
           },
           "t": {
             "en": "Zero conditional for cause-effect truths.",
-            "zh": "Zero conditional for cause-effect truths.",
+            "zh": "零条件句表示因果关系的事实。",
             "es": "Zero conditional for cause-effect truths."
           },
           "ex": {
@@ -6974,10 +6974,10 @@
               "Will not water in if-clause is wrong."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Will die 对一般规律来说过于具体。",
-              "Would die 是非真实条件。",
-              "Will not water 出现在 if 从句中是错误的。"
+              "零条件句表示因果关系的事实。",
+              "零条件句表示因果关系的事实。",
+              "零条件句表示因果关系的事实。",
+              "零条件句表示因果关系的事实。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -6991,7 +6991,7 @@
           "id": "conditionals_zero_q03",
           "q": {
             "en": "When the temperature ___ below zero, water ___.",
-            "zh": "When the temperature ___ below zero, water ___.",
+            "zh": "请选择正确的形式：When the temperature ___ below zero, water ___.",
             "es": "When the temperature ___ below zero, water ___."
           },
           "a": [
@@ -7020,7 +7020,7 @@
           },
           "t": {
             "en": "When + present + present = general truth.",
-            "zh": "When + present + present = general truth.",
+            "zh": "when + 一般现在时 + 一般现在时 = 普遍真理。",
             "es": "When + present + present = general truth."
           },
           "ex": {
@@ -7031,10 +7031,10 @@
               "Will freeze less natural for timeless facts."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Will drop 出现在 when 从句中是错误的。",
-              "Would freeze 是非真实条件。",
-              "Will freeze 用于永恒事实不够自然。"
+              "when + 一般现在时 + 一般现在时 = 普遍真理。",
+              "when + 一般现在时 + 一般现在时 = 普遍真理。",
+              "when + 一般现在时 + 一般现在时 = 普遍真理。",
+              "when + 一般现在时 + 一般现在时 = 普遍真理。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7051,7 +7051,7 @@
       "id": "conditionals_first",
       "name": {
         "en": "First Conditional",
-        "zh": "First Conditional",
+        "zh": "第一条件句",
         "es": "First Conditional"
       },
       "s": {
@@ -7070,7 +7070,7 @@
           "id": "conditionals_first_q01",
           "q": {
             "en": "If it ___ tomorrow, we ___ at home.",
-            "zh": "If it ___ tomorrow, we ___ at home.",
+            "zh": "请选择正确的形式：If it ___ tomorrow, we ___ at home.",
             "es": "If it ___ tomorrow, we ___ at home."
           },
           "a": "rains ... will stay",
@@ -7096,7 +7096,7 @@
           },
           "t": {
             "en": "First conditional: if + present, will + base.",
-            "zh": "First conditional: if + present, will + base.",
+            "zh": "第一条件句：if + 一般现在时，主句 will + 动词原形。",
             "es": "First conditional: if + present, will + base."
           },
           "ex": {
@@ -7107,10 +7107,10 @@
               "Stay lacks will."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Will rain 出现在 if 从句中是错误的。",
-              "Would stay 是非真实的第二条件句。",
-              "Stay 缺少 will。"
+              "第一条件句：if + 一般现在时，主句 will + 动词原形。",
+              "第一条件句：if + 一般现在时，主句 will + 动词原形。",
+              "第一条件句：if + 一般现在时，主句 will + 动词原形。",
+              "第一条件句：if + 一般现在时，主句 will + 动词原形。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7124,7 +7124,7 @@
           "id": "conditionals_first_q02",
           "q": {
             "en": "She ___ the exam if she ___ hard.",
-            "zh": "She ___ the exam if she ___ hard.",
+            "zh": "请选择正确的形式：She ___ the exam if she ___ hard.",
             "es": "She ___ the exam if she ___ hard."
           },
           "a": "will pass ... studies",
@@ -7150,7 +7150,7 @@
           },
           "t": {
             "en": "First conditional: will in main, present in if.",
-            "zh": "First conditional: will in main, present in if.",
+            "zh": "第一条件句：主句用 will，if 从句用一般现在时。",
             "es": "First conditional: will in main, present in if."
           },
           "ex": {
@@ -7161,10 +7161,10 @@
               "Passed is past — mismatch."
             ],
             "zh": [
-              "Passes 是现在时——需要用 will 表示将来。",
-              "正确！选项 B。",
-              "Would pass + studied 是非真实条件。",
-              "Passed 是过去式——时态不匹配。"
+              "第一条件句：主句用 will，if 从句用一般现在时。",
+              "第一条件句：主句用 will，if 从句用一般现在时。",
+              "第一条件句：主句用 will，if 从句用一般现在时。",
+              "第一条件句：主句用 will，if 从句用一般现在时。"
             ],
             "es": [
               "Opción A.",
@@ -7178,7 +7178,7 @@
           "id": "conditionals_first_q03",
           "q": {
             "en": "___ you help me if I ___ you?",
-            "zh": "___ you help me if I ___ you?",
+            "zh": "请选择正确的形式：___ you help me if I ___ you?",
             "es": "___ you help me if I ___ you?"
           },
           "a": "Will ... ask",
@@ -7204,7 +7204,7 @@
           },
           "t": {
             "en": "First conditional question: will + if + present.",
-            "zh": "First conditional question: will + if + present.",
+            "zh": "第一条件句疑问句：will + if + 一般现在时。",
             "es": "First conditional question: will + if + present."
           },
           "ex": {
@@ -7215,10 +7215,10 @@
               "Are + ask is ungrammatical."
             ],
             "zh": [
-              "正确！选项 A。",
-              "Do + will ask 不符合语法。",
-              "Would + asked 是非真实条件。",
-              "Are + ask 不符合语法。"
+              "第一条件句疑问句：will + if + 一般现在时。",
+              "第一条件句疑问句：will + if + 一般现在时。",
+              "第一条件句疑问句：will + if + 一般现在时。",
+              "第一条件句疑问句：will + if + 一般现在时。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -7232,7 +7232,7 @@
           "id": "conditionals_first_q04",
           "q": {
             "en": "I ___ you know if I ___ any news.",
-            "zh": "I ___ you know if I ___ any news.",
+            "zh": "请选择正确的形式：I ___ you know if I ___ any news.",
             "es": "I ___ you know if I ___ any news."
           },
           "a": "will let ... hear",
@@ -7258,7 +7258,7 @@
           },
           "t": {
             "en": "First conditional: will + base, if + present.",
-            "zh": "First conditional: will + base, if + present.",
+            "zh": "第一条件句：主句 will + 原形，if 从句一般现在时。",
             "es": "First conditional: will + base, if + present."
           },
           "ex": {
@@ -7269,10 +7269,10 @@
               "Let + hear = zero conditional fact."
             ],
             "zh": [
-              "Let 是动词原形——需要 will。",
-              "正确！选项 B。",
-              "Would let + heard 是非真实条件。",
-              "Let + hear 是零条件句，陈述事实。"
+              "第一条件句：主句 will + 原形，if 从句一般现在时。",
+              "第一条件句：主句 will + 原形，if 从句一般现在时。",
+              "第一条件句：主句 will + 原形，if 从句一般现在时。",
+              "第一条件句：主句 will + 原形，if 从句一般现在时。"
             ],
             "es": [
               "Opción A.",
@@ -7289,7 +7289,7 @@
       "id": "conditionals_second",
       "name": {
         "en": "Second Conditional",
-        "zh": "Second Conditional",
+        "zh": "第二条件句",
         "es": "Second Conditional"
       },
       "s": {
@@ -7308,7 +7308,7 @@
           "id": "conditionals_second_q01",
           "q": {
             "en": "If I ___ rich, I ___ travel the world.",
-            "zh": "If I ___ rich, I ___ travel the world.",
+            "zh": "请选择正确的形式：If I ___ rich, I ___ travel the world.",
             "es": "If I ___ rich, I ___ travel the world."
           },
           "a": "were ... would",
@@ -7334,7 +7334,7 @@
           },
           "t": {
             "en": "Second conditional: if + past, would + base.",
-            "zh": "Second conditional: if + past, would + base.",
+            "zh": "第二条件句：if + 一般过去时，would + 动词原形。",
             "es": "Second conditional: if + past, would + base."
           },
           "ex": {
@@ -7345,10 +7345,10 @@
               "Will be in if-clause is wrong."
             ],
             "zh": [
-              "Am + will 是第一条件句，指现在的非真实情况。",
-              "正确！选项 B。",
-              "Was + will 混用了条件类型。",
-              "Will be 出现在 if 从句中是错误的。"
+              "第二条件句：if + 一般过去时，would + 动词原形。",
+              "第二条件句：if + 一般过去时，would + 动词原形。",
+              "第二条件句：if + 一般过去时，would + 动词原形。",
+              "第二条件句：if + 一般过去时，would + 动词原形。"
             ],
             "es": [
               "Opción A.",
@@ -7362,7 +7362,7 @@
           "id": "conditionals_second_q02",
           "q": {
             "en": "If she ___ time, she ___ learn piano.",
-            "zh": "If she ___ time, she ___ learn piano.",
+            "zh": "请选择正确的形式：If she ___ time, she ___ learn piano.",
             "es": "If she ___ time, she ___ learn piano."
           },
           "a": "had ... would",
@@ -7388,7 +7388,7 @@
           },
           "t": {
             "en": "Second conditional for hypothetical present.",
-            "zh": "Second conditional for hypothetical present.",
+            "zh": "第二条件句表示对现在的假设。",
             "es": "Second conditional for hypothetical present."
           },
           "ex": {
@@ -7399,10 +7399,10 @@
               "Has + would mixes types."
             ],
             "zh": [
-              "Has + will 是真实第一条件句。",
-              "正确！选项 B。",
-              "Would have 出现在 if 从句中是错误的。",
-              "Has + would 混用了条件类型。"
+              "第二条件句表示对现在的假设。",
+              "第二条件句表示对现在的假设。",
+              "第二条件句表示对现在的假设。",
+              "第二条件句表示对现在的假设。"
             ],
             "es": [
               "Opción A.",
@@ -7416,7 +7416,7 @@
           "id": "conditionals_second_q03",
           "q": {
             "en": "If I ___ you, I ___ accept that offer.",
-            "zh": "If I ___ you, I ___ accept that offer.",
+            "zh": "请选择正确的形式：If I ___ you, I ___ accept that offer.",
             "es": "If I ___ you, I ___ accept that offer."
           },
           "a": "were ... would",
@@ -7442,7 +7442,7 @@
           },
           "t": {
             "en": "If I were you = standard second conditional advice.",
-            "zh": "If I were you = standard second conditional advice.",
+            "zh": "If I were you 是标准的第二条件句建议句式。",
             "es": "If I were you = standard second conditional advice."
           },
           "ex": {
@@ -7453,10 +7453,10 @@
               "Would be in if-clause is wrong."
             ],
             "zh": [
-              "Am + will 过于直接。",
-              "正确！选项 B。",
-              "Was + will 混用了条件类型。",
-              "Would be 出现在 if 从句中是错误的。"
+              "If I were you 是标准的第二条件句建议句式。",
+              "If I were you 是标准的第二条件句建议句式。",
+              "If I were you 是标准的第二条件句建议句式。",
+              "If I were you 是标准的第二条件句建议句式。"
             ],
             "es": [
               "Opción A.",
@@ -7473,7 +7473,7 @@
       "id": "conditionals_third",
       "name": {
         "en": "Third Conditional",
-        "zh": "Third Conditional",
+        "zh": "第三条件句",
         "es": "Third Conditional"
       },
       "s": {
@@ -7492,7 +7492,7 @@
           "id": "conditionals_third_q01",
           "q": {
             "en": "If I ___ about the party, I ___ gone.",
-            "zh": "If I ___ about the party, I ___ gone.",
+            "zh": "请选择正确的形式：If I ___ about the party, I ___ gone.",
             "es": "If I ___ about the party, I ___ gone."
           },
           "a": "had known ... would have",
@@ -7518,7 +7518,7 @@
           },
           "t": {
             "en": "Third conditional: if + had + pp, would have + pp.",
-            "zh": "Third conditional: if + had + pp, would have + pp.",
+            "zh": "第三条件句：if + had + 过去分词，would have + 过去分词。",
             "es": "Third conditional: if + had + pp, would have + pp."
           },
           "ex": {
@@ -7529,10 +7529,10 @@
               "Would know in if-clause is wrong."
             ],
             "zh": [
-              "Know 是现在时——错误。",
-              "正确！选项 B。",
-              "Knew 是一般过去时，不是过去完成时。",
-              "Would know 出现在 if 从句中是错误的。"
+              "第三条件句：if + had + 过去分词，would have + 过去分词。",
+              "第三条件句：if + had + 过去分词，would have + 过去分词。",
+              "第三条件句：if + had + 过去分词，would have + 过去分词。",
+              "第三条件句：if + had + 过去分词，would have + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -7546,7 +7546,7 @@
           "id": "conditionals_third_q02",
           "q": {
             "en": "She ___ the train if she ___ earlier.",
-            "zh": "She ___ the train if she ___ earlier.",
+            "zh": "请选择正确的形式：She ___ the train if she ___ earlier.",
             "es": "She ___ the train if she ___ earlier."
           },
           "a": "would have caught ... had left",
@@ -7572,7 +7572,7 @@
           },
           "t": {
             "en": "Third conditional for unreal past.",
-            "zh": "Third conditional for unreal past.",
+            "zh": "第三条件句表示对过去的不真实假设。",
             "es": "Third conditional for unreal past."
           },
           "ex": {
@@ -7583,10 +7583,10 @@
               "Will catch + left mixes future/past."
             ],
             "zh": [
-              "Catches + leaves 是零条件句。",
-              "正确！选项 B。",
-              "Caught + would leave 混用了条件类型。",
-              "Will catch + left 混用了将来时和过去时。"
+              "第三条件句表示对过去的不真实假设。",
+              "第三条件句表示对过去的不真实假设。",
+              "第三条件句表示对过去的不真实假设。",
+              "第三条件句表示对过去的不真实假设。"
             ],
             "es": [
               "Opción A.",
@@ -7600,7 +7600,7 @@
           "id": "conditionals_third_q03",
           "q": {
             "en": "If they ___ us, we ___ them at the station.",
-            "zh": "If they ___ us, we ___ them at the station.",
+            "zh": "请选择正确的形式：If they ___ us, we ___ them at the station.",
             "es": "If they ___ us, we ___ them at the station."
           },
           "a": "had called ... would have met",
@@ -7626,7 +7626,7 @@
           },
           "t": {
             "en": "Third conditional: regret about past.",
-            "zh": "Third conditional: regret about past.",
+            "zh": "第三条件句表示对过去的遗憾。",
             "es": "Third conditional: regret about past."
           },
           "ex": {
@@ -7637,10 +7637,10 @@
               "Would call in if-clause is wrong."
             ],
             "zh": [
-              "Call + will meet 是第一条件句。",
-              "正确！选项 B。",
-              "Called + will meet 混用了条件类型。",
-              "Would call 出现在 if 从句中是错误的。"
+              "第三条件句表示对过去的遗憾。",
+              "第三条件句表示对过去的遗憾。",
+              "第三条件句表示对过去的遗憾。",
+              "第三条件句表示对过去的遗憾。"
             ],
             "es": [
               "Opción A.",
@@ -7657,7 +7657,7 @@
       "id": "conditionals_mixed",
       "name": {
         "en": "Mixed Conditionals",
-        "zh": "Mixed Conditionals",
+        "zh": "混合条件句",
         "es": "Mixed Conditionals"
       },
       "s": {
@@ -7676,7 +7676,7 @@
           "id": "conditionals_mixed_q01",
           "q": {
             "en": "If I ___ harder at school, I ___ a better job now.",
-            "zh": "If I ___ harder at school, I ___ a better job now.",
+            "zh": "请选择正确的形式：If I ___ harder at school, I ___ a better job now.",
             "es": "If I ___ harder at school, I ___ a better job now."
           },
           "a": "had studied ... would have",
@@ -7702,7 +7702,7 @@
           },
           "t": {
             "en": "Mixed conditional: if + past perfect, would + base for past condition affecting present.",
-            "zh": "Mixed conditional: if + past perfect, would + base for past condition affecting present.",
+            "zh": "混合条件句：if + 过去完成时，主句 would + 原形，表示过去条件影响现在。",
             "es": "Mixed conditional: if + past perfect, would + base for past condition affecting present."
           },
           "ex": {
@@ -7713,10 +7713,10 @@
               "Studied + have is ungrammatical."
             ],
             "zh": [
-              "Study + will have 是错误的。",
-              "正确！选项 B。",
-              "Had studied + would have 是第三条件句，不表示现在的结果。",
-              "Studied + have 不符合语法。"
+              "混合条件句：if + 过去完成时，主句 would + 原形，表示过去条件影响现在。",
+              "混合条件句：if + 过去完成时，主句 would + 原形，表示过去条件影响现在。",
+              "混合条件句：if + 过去完成时，主句 would + 原形，表示过去条件影响现在。",
+              "混合条件句：if + 过去完成时，主句 would + 原形，表示过去条件影响现在。"
             ],
             "es": [
               "Opción A.",
@@ -7730,7 +7730,7 @@
           "id": "conditionals_mixed_q02",
           "q": {
             "en": "If she ___ so shy, she ___ more friends at the party last night.",
-            "zh": "If she ___ so shy, she ___ more friends at the party last night.",
+            "zh": "请选择正确的形式：If she ___ so shy, she ___ more friends at the party last night.",
             "es": "If she ___ so shy, she ___ more friends at the party last night."
           },
           "a": "were not ... would have made",
@@ -7756,7 +7756,7 @@
           },
           "t": {
             "en": "Mixed conditional: if + past (present state), would have + pp (past result).",
-            "zh": "Mixed conditional: if + past (present state), would have + pp (past result).",
+            "zh": "混合条件句：if + 一般过去时（现在的状态），would have + 过去分词（过去的结果）。",
             "es": "Mixed conditional: if + past (present state), would have + pp (past result)."
           },
           "ex": {
@@ -7767,10 +7767,10 @@
               "Had not been + made is wrong structure."
             ],
             "zh": [
-              "Is not + will make 是第一条件句。",
-              "正确！选项 B。",
-              "Was not + would make 是第二条件句。",
-              "Had not been + made 结构错误。"
+              "混合条件句：if + 一般过去时（现在的状态），would have + 过去分词（过去的结果）。",
+              "混合条件句：if + 一般过去时（现在的状态），would have + 过去分词（过去的结果）。",
+              "混合条件句：if + 一般过去时（现在的状态），would have + 过去分词（过去的结果）。",
+              "混合条件句：if + 一般过去时（现在的状态），would have + 过去分词（过去的结果）。"
             ],
             "es": [
               "Opción A.",
@@ -7787,7 +7787,7 @@
       "id": "conditionals_alternatives",
       "name": {
         "en": "Alternatives to If",
-        "zh": "Alternatives to If",
+        "zh": "If 的替代词",
         "es": "Alternatives to If"
       },
       "s": {
@@ -7806,7 +7806,7 @@
           "id": "conditionals_alternatives_q01",
           "q": {
             "en": "You will fail ___ you study harder.",
-            "zh": "You will fail ___ you study harder.",
+            "zh": "请选择正确的连接词：You will fail ___ you study harder.",
             "es": "You will fail ___ you study harder."
           },
           "a": "unless",
@@ -7832,7 +7832,7 @@
           },
           "t": {
             "en": "Unless = if not. You will fail if you do not study.",
-            "zh": "Unless = if not. You will fail if you do not study.",
+            "zh": "unless = if not（如果不）。",
             "es": "Unless = if not. You will fail if you do not study."
           },
           "ex": {
@@ -7843,10 +7843,10 @@
               "Because = reason, not condition."
             ],
             "zh": [
-              "If 在这里含义相反。",
-              "正确！选项 B。",
-              "When 表示时间，不表示条件。",
-              "Because 表示原因，不表示条件。"
+              "unless = if not（如果不）。",
+              "unless = if not（如果不）。",
+              "unless = if not（如果不）。",
+              "unless = if not（如果不）。"
             ],
             "es": [
               "Opción A.",
@@ -7860,7 +7860,7 @@
           "id": "conditionals_alternatives_q02",
           "q": {
             "en": "You can go out ___ you finish your homework first.",
-            "zh": "You can go out ___ you finish your homework first.",
+            "zh": "请选择正确的连接词：You can go out ___ you finish your homework first.",
             "es": "You can go out ___ you finish your homework first."
           },
           "a": "provided that",
@@ -7886,7 +7886,7 @@
           },
           "t": {
             "en": "Provided that = on the condition that.",
-            "zh": "Provided that = on the condition that.",
+            "zh": "provided that = 在……条件下。",
             "es": "Provided that = on the condition that."
           },
           "ex": {
@@ -7897,10 +7897,10 @@
               "As long is incomplete — needs as."
             ],
             "zh": [
-              "Unless 含义相反。",
-              "正确！选项 B。",
-              "Otherwise 表示结果，不表示条件。",
-              "As long 不完整——需要 as。"
+              "provided that = 在……条件下。",
+              "provided that = 在……条件下。",
+              "provided that = 在……条件下。",
+              "provided that = 在……条件下。"
             ],
             "es": [
               "Opción A.",
@@ -7914,7 +7914,7 @@
           "id": "conditionals_alternatives_q03",
           "q": {
             "en": "Take an umbrella ___ it rains.",
-            "zh": "Take an umbrella ___ it rains.",
+            "zh": "请选择正确的连接词：Take an umbrella ___ it rains.",
             "es": "Take an umbrella ___ it rains."
           },
           "a": "in case",
@@ -7940,7 +7940,7 @@
           },
           "t": {
             "en": "In case = as a precaution against possible future.",
-            "zh": "In case = as a precaution against possible future.",
+            "zh": "in case = 以防（为可能的未来做准备）。",
             "es": "In case = as a precaution against possible future."
           },
           "ex": {
@@ -7951,10 +7951,10 @@
               "Provided = granting condition, not precaution."
             ],
             "zh": [
-              "Unless = if not——含义相反。",
-              "正确！选项 B。",
-              "Otherwise 表示结果。",
-              "Provided 表示准许条件，不是预防。"
+              "in case = 以防（为可能的未来做准备）。",
+              "in case = 以防（为可能的未来做准备）。",
+              "in case = 以防（为可能的未来做准备）。",
+              "in case = 以防（为可能的未来做准备）。"
             ],
             "es": [
               "Opción A.",
@@ -7990,7 +7990,7 @@
           "id": "conditionals_wish_q01",
           "q": {
             "en": "I wish I ___ more money.",
-            "zh": "I wish I ___ more money.",
+            "zh": "请选择正确的形式：I wish I ___ more money.",
             "es": "I wish I ___ more money."
           },
           "a": "had",
@@ -8016,7 +8016,7 @@
           },
           "t": {
             "en": "I wish + past simple for unreal present wishes.",
-            "zh": "I wish + past simple for unreal present wishes.",
+            "zh": "I wish + 一般过去时，表示对现在的不真实愿望。",
             "es": "I wish + past simple for unreal present wishes."
           },
           "ex": {
@@ -8027,10 +8027,10 @@
               "Would have = past regret, different structure."
             ],
             "zh": [
-              "Have 是现在时，不是非真实。",
-              "正确！选项 B。",
-              "Will have 是将来时，与 wish 搭配错误。",
-              "Would have 表示过去的遗憾，结构不同。"
+              "I wish + 一般过去时，表示对现在的不真实愿望。",
+              "I wish + 一般过去时，表示对现在的不真实愿望。",
+              "I wish + 一般过去时，表示对现在的不真实愿望。",
+              "I wish + 一般过去时，表示对现在的不真实愿望。"
             ],
             "es": [
               "Opción A.",
@@ -8044,7 +8044,7 @@
           "id": "conditionals_wish_q02",
           "q": {
             "en": "She wishes she ___ harder for the exam yesterday.",
-            "zh": "She wishes she ___ harder for the exam yesterday.",
+            "zh": "请选择正确的形式：She wishes she ___ harder for the exam yesterday.",
             "es": "She wishes she ___ harder for the exam yesterday."
           },
           "a": "had studied",
@@ -8070,7 +8070,7 @@
           },
           "t": {
             "en": "I wish + past perfect for regrets about the past.",
-            "zh": "I wish + past perfect for regrets about the past.",
+            "zh": "I wish + 过去完成时，表示对过去的遗憾。",
             "es": "I wish + past perfect for regrets about the past."
           },
           "ex": {
@@ -8081,10 +8081,10 @@
               "Would study = future, wrong for past regret."
             ],
             "zh": [
-              "Studies 是现在时。",
-              "Studied 是一般过去时，但 yesterday 需要过去完成时。",
-              "正确！选项 C。",
-              "Would study 是将来时，不适合表示过去的遗憾。"
+              "I wish + 过去完成时，表示对过去的遗憾。",
+              "I wish + 过去完成时，表示对过去的遗憾。",
+              "I wish + 过去完成时，表示对过去的遗憾。",
+              "I wish + 过去完成时，表示对过去的遗憾。"
             ],
             "es": [
               "Opción A.",
@@ -8101,7 +8101,7 @@
       "id": "conditionals_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -8120,7 +8120,7 @@
           "id": "conditionals_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "If I had known, I would have come.",
@@ -8146,7 +8146,7 @@
           },
           "t": {
             "en": "Third conditional structure.",
-            "zh": "Third conditional structure.",
+            "zh": "第三条件句结构。",
             "es": "Third conditional structure."
           },
           "ex": {
@@ -8157,10 +8157,10 @@
               "Know + would = mixed types."
             ],
             "zh": [
-              "Would have known 出现在 if 从句中是错误的。",
-              "正确！选项 B。",
-              "Knew + will 混用了条件类型。",
-              "Know + would 混用了条件类型。"
+              "第三条件句结构。",
+              "第三条件句结构。",
+              "第三条件句结构。",
+              "第三条件句结构。"
             ],
             "es": [
               "Opción A.",
@@ -8174,7 +8174,7 @@
           "id": "conditionals_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "If it rains, we will cancel.",
@@ -8200,7 +8200,7 @@
           },
           "t": {
             "en": "First conditional: if + present, will + base.",
-            "zh": "First conditional: if + present, will + base.",
+            "zh": "第一条件句：if + 一般现在时，will + 原形。",
             "es": "First conditional: if + present, will + base."
           },
           "ex": {
@@ -8211,10 +8211,10 @@
               "Would rain in if-clause is wrong."
             ],
             "zh": [
-              "Will rain 出现在 if 从句中是错误的。",
-              "正确！选项 B。",
-              "Rained + will 混用了条件类型。",
-              "Would rain 出现在 if 从句中是错误的。"
+              "第一条件句：if + 一般现在时，will + 原形。",
+              "第一条件句：if + 一般现在时，will + 原形。",
+              "第一条件句：if + 一般现在时，will + 原形。",
+              "第一条件句：if + 一般现在时，will + 原形。"
             ],
             "es": [
               "Opción A.",
@@ -8231,7 +8231,7 @@
       "id": "passive_recognition",
       "name": {
         "en": "Recognize Passive",
-        "zh": "Recognize Passive",
+        "zh": "识别被动语态",
         "es": "Recognize Passive"
       },
       "s": {
@@ -8250,7 +8250,7 @@
           "id": "passive_recognition_q01",
           "q": {
             "en": "Which sentence is passive?",
-            "zh": "Which sentence is passive?",
+            "zh": "哪个句子是被动语态？",
             "es": "Which sentence is passive?"
           },
           "a": "The meal was cooked by the chef.",
@@ -8276,7 +8276,7 @@
           },
           "t": {
             "en": "Passive = be + past participle. Subject receives action.",
-            "zh": "Passive = be + past participle. Subject receives action.",
+            "zh": "被动语态 = be + 过去分词，主语是动作的承受者。",
             "es": "Passive = be + past participle. Subject receives action."
           },
           "ex": {
@@ -8287,10 +8287,10 @@
               "Active: chef does the cooking habitually."
             ],
             "zh": [
-              "主动语态：厨师做了烹饪。",
-              "正确！选项 B。",
-              "主动语态：厨师正在做烹饪。",
-              "主动语态：厨师习惯性地做烹饪。"
+              "被动语态 = be + 过去分词，主语是动作的承受者。",
+              "被动语态 = be + 过去分词，主语是动作的承受者。",
+              "被动语态 = be + 过去分词，主语是动作的承受者。",
+              "被动语态 = be + 过去分词，主语是动作的承受者。"
             ],
             "es": [
               "Opción A.",
@@ -8304,7 +8304,7 @@
           "id": "passive_recognition_q02",
           "q": {
             "en": "The window ___ by the wind.",
-            "zh": "The window ___ by the wind.",
+            "zh": "请选择正确的形式：The window ___ by the wind.",
             "es": "The window ___ by the wind."
           },
           "a": "was broken",
@@ -8330,7 +8330,7 @@
           },
           "t": {
             "en": "Passive voice: be + past participle.",
-            "zh": "Passive voice: be + past participle.",
+            "zh": "被动语态：be + 过去分词。",
             "es": "Passive voice: be + past participle."
           },
           "ex": {
@@ -8341,10 +8341,10 @@
               "Is breaking = active continuous."
             ],
             "zh": [
-              "Broke 是主动过去时。",
-              "正确！选项 B。",
-              "Breaks 是主动现在时。",
-              "Is breaking 是主动进行时。"
+              "被动语态：be + 过去分词。",
+              "被动语态：be + 过去分词。",
+              "被动语态：be + 过去分词。",
+              "被动语态：be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8358,7 +8358,7 @@
           "id": "passive_recognition_q03",
           "q": {
             "en": "Identify the passive:",
-            "zh": "Identify the passive:",
+            "zh": "识别被动语态：",
             "es": "Identify the passive:"
           },
           "a": "This house was built in 1920.",
@@ -8384,7 +8384,7 @@
           },
           "t": {
             "en": "Subject receives action in passive.",
-            "zh": "Subject receives action in passive.",
+            "zh": "被动句中主语是动作的承受者。",
             "es": "Subject receives action in passive."
           },
           "ex": {
@@ -8395,10 +8395,10 @@
               "Active perfect: they have built."
             ],
             "zh": [
-              "主动语态：他们建造了。",
-              "正确！选项 B。",
-              "主动进行时：他们正在建造。",
-              "主动完成时：他们已经建造了。"
+              "被动句中主语是动作的承受者。",
+              "被动句中主语是动作的承受者。",
+              "被动句中主语是动作的承受者。",
+              "被动句中主语是动作的承受者。"
             ],
             "es": [
               "Opción A.",
@@ -8412,7 +8412,7 @@
           "id": "passive_recognition_q04",
           "q": {
             "en": "English ___ all over the world.",
-            "zh": "English ___ all over the world.",
+            "zh": "请选择正确的形式：English ___ all over the world.",
             "es": "English ___ all over the world."
           },
           "a": "is spoken",
@@ -8438,7 +8438,7 @@
           },
           "t": {
             "en": "Passive for general facts when the doer is unimportant.",
-            "zh": "Passive for general facts when the doer is unimportant.",
+            "zh": "动作发出者不重要时，用被动语态表示普遍事实。",
             "es": "Passive for general facts when the doer is unimportant."
           },
           "ex": {
@@ -8449,10 +8449,10 @@
               "Has spoken = active perfect."
             ],
             "zh": [
-              "Speaks 是主动语态，English 成了说话者。",
-              "正确！选项 B。",
-              "Speaking 不完整。",
-              "Has spoken 是主动完成时。"
+              "动作发出者不重要时，用被动语态表示普遍事实。",
+              "动作发出者不重要时，用被动语态表示普遍事实。",
+              "动作发出者不重要时，用被动语态表示普遍事实。",
+              "动作发出者不重要时，用被动语态表示普遍事实。"
             ],
             "es": [
               "Opción A.",
@@ -8469,7 +8469,7 @@
       "id": "passive_formation",
       "name": {
         "en": "Form the Passive",
-        "zh": "Form the Passive",
+        "zh": "被动语态的构成",
         "es": "Form the Passive"
       },
       "s": {
@@ -8488,7 +8488,7 @@
           "id": "passive_formation_q01",
           "q": {
             "en": "The letters ___ every morning.",
-            "zh": "The letters ___ every morning.",
+            "zh": "请选择正确的形式：The letters ___ every morning.",
             "es": "The letters ___ every morning."
           },
           "a": "are delivered",
@@ -8514,7 +8514,7 @@
           },
           "t": {
             "en": "Passive present simple: am/is/are + past participle.",
-            "zh": "Passive present simple: am/is/are + past participle.",
+            "zh": "被动一般现在时：am/is/are + 过去分词。",
             "es": "Passive present simple: am/is/are + past participle."
           },
           "ex": {
@@ -8525,10 +8525,10 @@
               "Have deliver = ungrammatical (missing past participle)."
             ],
             "zh": [
-              "Deliver 是主动动词原形。",
-              "正确！选项 B。",
-              "Delivering 不完整。",
-              "Have deliver 不符合语法（缺少过去分词）。"
+              "被动一般现在时：am/is/are + 过去分词。",
+              "被动一般现在时：am/is/are + 过去分词。",
+              "被动一般现在时：am/is/are + 过去分词。",
+              "被动一般现在时：am/is/are + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8542,7 +8542,7 @@
           "id": "passive_formation_q02",
           "q": {
             "en": "The thief ___ by the police yesterday.",
-            "zh": "The thief ___ by the police yesterday.",
+            "zh": "请选择正确的形式：The thief ___ by the police yesterday.",
             "es": "The thief ___ by the police yesterday."
           },
           "a": "was caught",
@@ -8568,7 +8568,7 @@
           },
           "t": {
             "en": "Passive past simple: was/were + past participle.",
-            "zh": "Passive past simple: was/were + past participle.",
+            "zh": "被动一般过去时：was/were + 过去分词。",
             "es": "Passive past simple: was/were + past participle."
           },
           "ex": {
@@ -8579,10 +8579,10 @@
               "Is catching = active continuous."
             ],
             "zh": [
-              "Catches 是主动现在时。",
-              "正确！选项 B。",
-              "Caught 是主动过去时。",
-              "Is catching 是主动进行时。"
+              "被动一般过去时：was/were + 过去分词。",
+              "被动一般过去时：was/were + 过去分词。",
+              "被动一般过去时：was/were + 过去分词。",
+              "被动一般过去时：was/were + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8596,7 +8596,7 @@
           "id": "passive_formation_q03",
           "q": {
             "en": "A new hospital ___ in our city next year.",
-            "zh": "A new hospital ___ in our city next year.",
+            "zh": "请选择正确的形式：A new hospital ___ in our city next year.",
             "es": "A new hospital ___ in our city next year."
           },
           "a": "will be built",
@@ -8622,7 +8622,7 @@
           },
           "t": {
             "en": "Passive future: will be + past participle.",
-            "zh": "Passive future: will be + past participle.",
+            "zh": "被动将来时：will be + 过去分词。",
             "es": "Passive future: will be + past participle."
           },
           "ex": {
@@ -8633,10 +8633,10 @@
               "Built = active past."
             ],
             "zh": [
-              "Builds 是主动现在时。",
-              "正确！选项 B。",
-              "Is building 是主动进行时。",
-              "Built 是主动过去时。"
+              "被动将来时：will be + 过去分词。",
+              "被动将来时：will be + 过去分词。",
+              "被动将来时：will be + 过去分词。",
+              "被动将来时：will be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8650,7 +8650,7 @@
           "id": "passive_formation_q04",
           "q": {
             "en": "The work ___ yet.",
-            "zh": "The work ___ yet.",
+            "zh": "请选择正确的形式：The work ___ yet.",
             "es": "The work ___ yet."
           },
           "a": "has not been finished",
@@ -8676,7 +8676,7 @@
           },
           "t": {
             "en": "Passive present perfect: has/have been + past participle.",
-            "zh": "Passive present perfect: has/have been + past participle.",
+            "zh": "被动现在完成时：has/have been + 过去分词。",
             "es": "Passive present perfect: has/have been + past participle."
           },
           "ex": {
@@ -8687,10 +8687,10 @@
               "Is not finishing = active continuous."
             ],
             "zh": [
-              "Has not finished 是主动语态，work 成了执行者。",
-              "正确！选项 B。",
-              "Did not finish 是主动过去时。",
-              "Is not finishing 是主动进行时。"
+              "被动现在完成时：has/have been + 过去分词。",
+              "被动现在完成时：has/have been + 过去分词。",
+              "被动现在完成时：has/have been + 过去分词。",
+              "被动现在完成时：has/have been + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8707,7 +8707,7 @@
       "id": "passive_agent",
       "name": {
         "en": "With/Without Agent",
-        "zh": "With/Without Agent",
+        "zh": "有无施动者",
         "es": "With/Without Agent"
       },
       "s": {
@@ -8726,7 +8726,7 @@
           "id": "passive_agent_q01",
           "q": {
             "en": "The book ___ by Mark Twain.",
-            "zh": "The book ___ by Mark Twain.",
+            "zh": "请选择正确的形式：The book ___ by Mark Twain.",
             "es": "The book ___ by Mark Twain."
           },
           "a": "was written",
@@ -8752,7 +8752,7 @@
           },
           "t": {
             "en": "Passive with agent: be + pp + by + doer.",
-            "zh": "Passive with agent: be + pp + by + doer.",
+            "zh": "带施动者的被动：be + 过去分词 + by + 施动者。",
             "es": "Passive with agent: be + pp + by + doer."
           },
           "ex": {
@@ -8763,10 +8763,10 @@
               "Is writing = active continuous."
             ],
             "zh": [
-              "Wrote 是主动过去时。",
-              "正确！选项 B。",
-              "Writes 是主动现在时。",
-              "Is writing 是主动进行时。"
+              "带施动者的被动：be + 过去分词 + by + 施动者。",
+              "带施动者的被动：be + 过去分词 + by + 施动者。",
+              "带施动者的被动：be + 过去分词 + by + 施动者。",
+              "带施动者的被动：be + 过去分词 + by + 施动者。"
             ],
             "es": [
               "Opción A.",
@@ -8780,7 +8780,7 @@
           "id": "passive_agent_q02",
           "q": {
             "en": "My wallet ___. (the doer is unknown)",
-            "zh": "My wallet ___. (the doer is unknown)",
+            "zh": "请选择正确的形式：My wallet ___.（不知道是谁偷的）",
             "es": "My wallet ___. (the doer is unknown)"
           },
           "a": "was stolen",
@@ -8806,7 +8806,7 @@
           },
           "t": {
             "en": "Passive without agent when doer is unknown or unimportant.",
-            "zh": "Passive without agent when doer is unknown or unimportant.",
+            "zh": "施动者未知或不重要时，用不带 by 的被动语态。",
             "es": "Passive without agent when doer is unknown or unimportant."
           },
           "ex": {
@@ -8817,10 +8817,10 @@
               "Has stolen = active, needs subject."
             ],
             "zh": [
-              "Someone stole 是主动语态，指明了执行者。",
-              "正确！选项 B。",
-              "Stole 是主动语态，缺少主语。",
-              "Has stolen 是主动语态，缺少主语。"
+              "施动者未知或不重要时，用不带 by 的被动语态。",
+              "施动者未知或不重要时，用不带 by 的被动语态。",
+              "施动者未知或不重要时，用不带 by 的被动语态。",
+              "施动者未知或不重要时，用不带 by 的被动语态。"
             ],
             "es": [
               "Opción A.",
@@ -8834,7 +8834,7 @@
           "id": "passive_agent_q03",
           "q": {
             "en": "Rice ___ in many Asian countries.",
-            "zh": "Rice ___ in many Asian countries.",
+            "zh": "请选择正确的形式：Rice ___ in many Asian countries.",
             "es": "Rice ___ in many Asian countries."
           },
           "a": "is grown",
@@ -8860,7 +8860,7 @@
           },
           "t": {
             "en": "Passive without agent for general processes.",
-            "zh": "Passive without agent for general processes.",
+            "zh": "表示一般过程时用不带施动者的被动语态。",
             "es": "Passive without agent for general processes."
           },
           "ex": {
@@ -8871,10 +8871,10 @@
               "Has grown = active perfect."
             ],
             "zh": [
-              "Grows 是主动语态，rice 自己生长。",
-              "正确！选项 B。",
-              "Growing 不完整。",
-              "Has grown 是主动完成时。"
+              "表示一般过程时用不带施动者的被动语态。",
+              "表示一般过程时用不带施动者的被动语态。",
+              "表示一般过程时用不带施动者的被动语态。",
+              "表示一般过程时用不带施动者的被动语态。"
             ],
             "es": [
               "Opción A.",
@@ -8891,7 +8891,7 @@
       "id": "passive_tenses",
       "name": {
         "en": "Passive Across Tenses",
-        "zh": "Passive Across Tenses",
+        "zh": "被动语态的各种时态",
         "es": "Passive Across Tenses"
       },
       "s": {
@@ -8910,7 +8910,7 @@
           "id": "passive_tenses_q01",
           "q": {
             "en": "The building ___ at the moment.",
-            "zh": "The building ___ at the moment.",
+            "zh": "请选择正确的形式：The building ___ at the moment.",
             "es": "The building ___ at the moment."
           },
           "a": "is being repaired",
@@ -8936,7 +8936,7 @@
           },
           "t": {
             "en": "Passive present continuous: is/are being + past participle.",
-            "zh": "Passive present continuous: is/are being + past participle.",
+            "zh": "被动现在进行时：is/are being + 过去分词。",
             "es": "Passive present continuous: is/are being + past participle."
           },
           "ex": {
@@ -8947,10 +8947,10 @@
               "Has repaired = active perfect."
             ],
             "zh": [
-              "Repairs 是主动现在时。",
-              "正确！选项 B。",
-              "Was repairing 是主动过去进行时。",
-              "Has repaired 是主动完成时。"
+              "被动现在进行时：is/are being + 过去分词。",
+              "被动现在进行时：is/are being + 过去分词。",
+              "被动现在进行时：is/are being + 过去分词。",
+              "被动现在进行时：is/are being + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -8964,7 +8964,7 @@
           "id": "passive_tenses_q02",
           "q": {
             "en": "When I arrived, the room ___.",
-            "zh": "When I arrived, the room ___.",
+            "zh": "请选择正确的形式：When I arrived, the room ___.",
             "es": "When I arrived, the room ___."
           },
           "a": "was being cleaned",
@@ -8990,7 +8990,7 @@
           },
           "t": {
             "en": "Passive past continuous: was/were being + past participle.",
-            "zh": "Passive past continuous: was/were being + past participle.",
+            "zh": "被动过去进行时：was/were being + 过去分词。",
             "es": "Passive past continuous: was/were being + past participle."
           },
           "ex": {
@@ -9001,10 +9001,10 @@
               "Is cleaning = active present continuous."
             ],
             "zh": [
-              "Cleans 是主动现在时。",
-              "正确！选项 B。",
-              "Has cleaned 是主动完成时。",
-              "Is cleaning 是主动现在进行时。"
+              "被动过去进行时：was/were being + 过去分词。",
+              "被动过去进行时：was/were being + 过去分词。",
+              "被动过去进行时：was/were being + 过去分词。",
+              "被动过去进行时：was/were being + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9018,7 +9018,7 @@
           "id": "passive_tenses_q03",
           "q": {
             "en": "By next month, the project ___.",
-            "zh": "By next month, the project ___.",
+            "zh": "请选择正确的形式：By next month, the project ___.",
             "es": "By next month, the project ___."
           },
           "a": "will have been completed",
@@ -9044,7 +9044,7 @@
           },
           "t": {
             "en": "Passive future perfect: will have been + past participle.",
-            "zh": "Passive future perfect: will have been + past participle.",
+            "zh": "被动将来完成时：will have been + 过去分词。",
             "es": "Passive future perfect: will have been + past participle."
           },
           "ex": {
@@ -9055,10 +9055,10 @@
               "Is completing = active continuous."
             ],
             "zh": [
-              "Completes 是主动现在时。",
-              "正确！选项 B。",
-              "Completed 是主动过去时。",
-              "Is completing 是主动进行时。"
+              "被动将来完成时：will have been + 过去分词。",
+              "被动将来完成时：will have been + 过去分词。",
+              "被动将来完成时：will have been + 过去分词。",
+              "被动将来完成时：will have been + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9075,7 +9075,7 @@
       "id": "passive_modals",
       "name": {
         "en": "Passive with Modals",
-        "zh": "Passive with Modals",
+        "zh": "被动语态与情态动词",
         "es": "Passive with Modals"
       },
       "s": {
@@ -9094,7 +9094,7 @@
           "id": "passive_modals_q01",
           "q": {
             "en": "This door ___ from the inside only.",
-            "zh": "This door ___ from the inside only.",
+            "zh": "请选择正确的形式：This door ___ from the inside only.",
             "es": "This door ___ from the inside only."
           },
           "a": "can be opened",
@@ -9120,7 +9120,7 @@
           },
           "t": {
             "en": "Passive with modals: modal + be + past participle.",
-            "zh": "Passive with modals: modal + be + past participle.",
+            "zh": "情态动词被动：情态动词 + be + 过去分词。",
             "es": "Passive with modals: modal + be + past participle."
           },
           "ex": {
@@ -9131,10 +9131,10 @@
               "Is opening = active continuous."
             ],
             "zh": [
-              "Can open 是主动语态，门自己打开。",
-              "正确！选项 B。",
-              "Opens 是主动现在时。",
-              "Is opening 是主动进行时。"
+              "情态动词被动：情态动词 + be + 过去分词。",
+              "情态动词被动：情态动词 + be + 过去分词。",
+              "情态动词被动：情态动词 + be + 过去分词。",
+              "情态动词被动：情态动词 + be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9148,7 +9148,7 @@
           "id": "passive_modals_q02",
           "q": {
             "en": "The report ___ by Friday.",
-            "zh": "The report ___ by Friday.",
+            "zh": "请选择正确的形式：The report ___ by Friday.",
             "es": "The report ___ by Friday."
           },
           "a": "must be finished",
@@ -9174,7 +9174,7 @@
           },
           "t": {
             "en": "Passive with must: must be + past participle.",
-            "zh": "Passive with must: must be + past participle.",
+            "zh": "must 的被动：must be + 过去分词。",
             "es": "Passive with must: must be + past participle."
           },
           "ex": {
@@ -9185,10 +9185,10 @@
               "Is finishing = active continuous."
             ],
             "zh": [
-              "Must finish 是主动语态，report 成了执行者。",
-              "正确！选项 B。",
-              "Finishes 是主动现在时。",
-              "Is finishing 是主动进行时。"
+              "must 的被动：must be + 过去分词。",
+              "must 的被动：must be + 过去分词。",
+              "must 的被动：must be + 过去分词。",
+              "must 的被动：must be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9202,7 +9202,7 @@
           "id": "passive_modals_q03",
           "q": {
             "en": "Mistakes ___ avoided at all costs.",
-            "zh": "Mistakes ___ avoided at all costs.",
+            "zh": "请选择正确的形式：Mistakes ___ avoided at all costs.",
             "es": "Mistakes ___ avoided at all costs."
           },
           "a": "should be",
@@ -9228,7 +9228,7 @@
           },
           "t": {
             "en": "Passive with should: should be + past participle.",
-            "zh": "Passive with should: should be + past participle.",
+            "zh": "should 的被动：should be + 过去分词。",
             "es": "Passive with should: should be + past participle."
           },
           "ex": {
@@ -9239,10 +9239,10 @@
               "Are should = ungrammatical."
             ],
             "zh": [
-              "Should 不完整——需要 be + 过去分词。",
-              "正确！选项 B。",
-              "Should have 含义不同（表示过去）。",
-              "Are should 不符合语法。"
+              "should 的被动：should be + 过去分词。",
+              "should 的被动：should be + 过去分词。",
+              "should 的被动：should be + 过去分词。",
+              "should 的被动：should be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9259,7 +9259,7 @@
       "id": "passive_causative",
       "name": {
         "en": "Causative Forms",
-        "zh": "Causative Forms",
+        "zh": "使役结构",
         "es": "Causative Forms"
       },
       "s": {
@@ -9278,7 +9278,7 @@
           "id": "passive_causative_q01",
           "q": {
             "en": "I ___ my hair ___ at the salon yesterday.",
-            "zh": "I ___ my hair ___ at the salon yesterday.",
+            "zh": "请选择正确的形式：I ___ my hair ___ at the salon yesterday.",
             "es": "I ___ my hair ___ at the salon yesterday."
           },
           "a": "had ... cut",
@@ -9304,7 +9304,7 @@
           },
           "t": {
             "en": "Causative have: have + object + past participle.",
-            "zh": "Causative have: have + object + past participle.",
+            "zh": "使役结构 have：have + 宾语 + 过去分词。",
             "es": "Causative have: have + object + past participle."
           },
           "ex": {
@@ -9315,10 +9315,10 @@
               "Have cut = wrong tense (present)."
             ],
             "zh": [
-              "Cut 单独使用 = 我自己剪的。",
-              "正确！选项 B。",
-              "Was cut 是被动语态，不是使役。",
-              "Have cut 时态错误（现在时）。"
+              "使役结构 have：have + 宾语 + 过去分词。",
+              "使役结构 have：have + 宾语 + 过去分词。",
+              "使役结构 have：have + 宾语 + 过去分词。",
+              "使役结构 have：have + 宾语 + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9332,7 +9332,7 @@
           "id": "passive_causative_q02",
           "q": {
             "en": "She ___ her car ___ every month.",
-            "zh": "She ___ her car ___ every month.",
+            "zh": "请选择正确的形式：She ___ her car ___ every month.",
             "es": "She ___ her car ___ every month."
           },
           "a": "gets ... washed",
@@ -9358,7 +9358,7 @@
           },
           "t": {
             "en": "Causative get: get + object + past participle.",
-            "zh": "Causative get: get + object + past participle.",
+            "zh": "使役结构 get：get + 宾语 + 过去分词。",
             "es": "Causative get: get + object + past participle."
           },
           "ex": {
@@ -9369,10 +9369,10 @@
               "Has wash = ungrammatical (needs pp)."
             ],
             "zh": [
-              "Washes = 她自己洗。",
-              "正确！选项 B。",
-              "Is washing 是主动进行时。",
-              "Has wash 不符合语法（需要过去分词）。"
+              "使役结构 get：get + 宾语 + 过去分词。",
+              "使役结构 get：get + 宾语 + 过去分词。",
+              "使役结构 get：get + 宾语 + 过去分词。",
+              "使役结构 get：get + 宾语 + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9386,7 +9386,7 @@
           "id": "passive_causative_q03",
           "q": {
             "en": "We need to ___ the roof ___ before winter.",
-            "zh": "We need to ___ the roof ___ before winter.",
+            "zh": "请选择正确的形式：We need to ___ the roof ___ before winter.",
             "es": "We need to ___ the roof ___ before winter."
           },
           "a": "have ... fixed",
@@ -9412,7 +9412,7 @@
           },
           "t": {
             "en": "Causative: have + object + past participle.",
-            "zh": "Causative: have + object + past participle.",
+            "zh": "使役结构：have + 宾语 + 过去分词。",
             "es": "Causative: have + object + past participle."
           },
           "ex": {
@@ -9423,10 +9423,10 @@
               "Get fix = ungrammatical (needs pp)."
             ],
             "zh": [
-              "Fix = 我们自己修。",
-              "正确！选项 B。",
-              "Are fixed 是被动语态，不是使役。",
-              "Get fix 不符合语法（需要过去分词）。"
+              "使役结构：have + 宾语 + 过去分词。",
+              "使役结构：have + 宾语 + 过去分词。",
+              "使役结构：have + 宾语 + 过去分词。",
+              "使役结构：have + 宾语 + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9443,7 +9443,7 @@
       "id": "passive_impersonal",
       "name": {
         "en": "Impersonal Passive",
-        "zh": "Impersonal Passive",
+        "zh": "无人称被动",
         "es": "Impersonal Passive"
       },
       "s": {
@@ -9462,7 +9462,7 @@
           "id": "passive_impersonal_q01",
           "q": {
             "en": "___ that the company will merge next year.",
-            "zh": "___ that the company will merge next year.",
+            "zh": "请选择正确的形式：___ that the company will merge next year.",
             "es": "___ that the company will merge next year."
           },
           "a": "It is believed",
@@ -9488,7 +9488,7 @@
           },
           "t": {
             "en": "Impersonal passive: It is + past participle + that.",
-            "zh": "Impersonal passive: It is + past participle + that.",
+            "zh": "无人称被动：It is + 过去分词 + that。",
             "es": "Impersonal passive: It is + past participle + that."
           },
           "ex": {
@@ -9499,10 +9499,10 @@
               "They are believed = different structure."
             ],
             "zh": [
-              "It believes 是主动语态，it 成了相信者。",
-              "正确！选项 B。",
-              "People believe 是主动语态。",
-              "They are believed 结构不同。"
+              "无人称被动：It is + 过去分词 + that。",
+              "无人称被动：It is + 过去分词 + that。",
+              "无人称被动：It is + 过去分词 + that。",
+              "无人称被动：It is + 过去分词 + that。"
             ],
             "es": [
               "Opción A.",
@@ -9516,7 +9516,7 @@
           "id": "passive_impersonal_q02",
           "q": {
             "en": "___ that he was involved in the scandal.",
-            "zh": "___ that he was involved in the scandal.",
+            "zh": "请选择正确的形式：___ that he was involved in the scandal.",
             "es": "___ that he was involved in the scandal."
           },
           "a": "It is said",
@@ -9542,7 +9542,7 @@
           },
           "t": {
             "en": "Impersonal passive for reporting general beliefs.",
-            "zh": "Impersonal passive for reporting general beliefs.",
+            "zh": "无人称被动用于转述普遍看法。",
             "es": "Impersonal passive for reporting general beliefs."
           },
           "ex": {
@@ -9553,10 +9553,10 @@
               "He is said = personal passive, different."
             ],
             "zh": [
-              "It says 是主动语态，it 成了说话者。",
-              "正确！选项 B。",
-              "They say 是主动语态。",
-              "He is said 是个人被动，结构不同。"
+              "无人称被动用于转述普遍看法。",
+              "无人称被动用于转述普遍看法。",
+              "无人称被动用于转述普遍看法。",
+              "无人称被动用于转述普遍看法。"
             ],
             "es": [
               "Opción A.",
@@ -9573,7 +9573,7 @@
       "id": "passive_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -9592,7 +9592,7 @@
           "id": "passive_production_q01",
           "q": {
             "en": "Rewrite in passive: \"They built this bridge in 1890.\"",
-            "zh": "Rewrite in passive: \"They built this bridge in 1890.\"",
+            "zh": "改为被动语态：\"They built this bridge in 1890.\"",
             "es": "Rewrite in passive: \"They built this bridge in 1890.\""
           },
           "a": "This bridge was built in 1890.",
@@ -9618,7 +9618,7 @@
           },
           "t": {
             "en": "Active to passive: object becomes subject + be + pp.",
-            "zh": "Active to passive: object becomes subject + be + pp.",
+            "zh": "主动变被动：宾语变主语 + be + 过去分词。",
             "es": "Active to passive: object becomes subject + be + pp."
           },
           "ex": {
@@ -9629,10 +9629,10 @@
               "Has built = ungrammatical (bridge cannot build)."
             ],
             "zh": [
-              "缺少 be——不符合语法。",
-              "正确！选项 B。",
-              "Is built 是现在时，但 1890 是过去。",
-              "Has built 不符合语法（桥不能自己建造）。"
+              "主动变被动：宾语变主语 + be + 过去分词。",
+              "主动变被动：宾语变主语 + be + 过去分词。",
+              "主动变被动：宾语变主语 + be + 过去分词。",
+              "主动变被动：宾语变主语 + be + 过去分词。"
             ],
             "es": [
               "Opción A.",
@@ -9646,7 +9646,7 @@
           "id": "passive_production_q02",
           "q": {
             "en": "Rewrite in active: \"The cake was eaten by the children.\"",
-            "zh": "Rewrite in active: \"The cake was eaten by the children.\"",
+            "zh": "改为主动语态：\"The cake was eaten by the children.\"",
             "es": "Rewrite in active: \"The cake was eaten by the children.\""
           },
           "a": "The children ate the cake.",
@@ -9672,7 +9672,7 @@
           },
           "t": {
             "en": "Passive to active: by-agent becomes subject.",
-            "zh": "Passive to active: by-agent becomes subject.",
+            "zh": "被动变主动：by 后的施动者变主语。",
             "es": "Passive to active: by-agent becomes subject."
           },
           "ex": {
@@ -9683,10 +9683,10 @@
               "Missing verb — ungrammatical."
             ],
             "zh": [
-              "含义错误——蛋糕不能吃孩子。",
-              "正确！选项 B。",
-              "Were eating 时态不同（进行时）。",
-              "缺少动词——不符合语法。"
+              "被动变主动：by 后的施动者变主语。",
+              "被动变主动：by 后的施动者变主语。",
+              "被动变主动：by 后的施动者变主语。",
+              "被动变主动：by 后的施动者变主语。"
             ],
             "es": [
               "Opción A.",
@@ -9700,7 +9700,7 @@
           "id": "passive_production_q03",
           "q": {
             "en": "Which is the correct passive form?",
-            "zh": "Which is the correct passive form?",
+            "zh": "哪个是被动语态的正确形式？",
             "es": "Which is the correct passive form?"
           },
           "a": "The book was written by her.",
@@ -9726,7 +9726,7 @@
           },
           "t": {
             "en": "Passive uses past participle, not simple past.",
-            "zh": "Passive uses past participle, not simple past.",
+            "zh": "被动语态用过去分词，不用一般过去式。",
             "es": "Passive uses past participle, not simple past."
           },
           "ex": {
@@ -9737,10 +9737,10 @@
               "Is wrote = wrong participle."
             ],
             "zh": [
-              "Wrote 是一般过去时，不是过去分词。",
-              "正确！选项 B。",
-              "缺少 be——不符合语法。",
-              "Is wrote 过去分词错误。"
+              "被动语态用过去分词，不用一般过去式。",
+              "被动语态用过去分词，不用一般过去式。",
+              "被动语态用过去分词，不用一般过去式。",
+              "被动语态用过去分词，不用一般过去式。"
             ],
             "es": [
               "Opción A.",
