@@ -9757,7 +9757,7 @@
       "id": "reported_statements",
       "name": {
         "en": "Reported Statements",
-        "zh": "Reported Statements",
+        "zh": "陈述句的间接引语",
         "es": "Reported Statements"
       },
       "s": {
@@ -9776,7 +9776,7 @@
           "id": "reported_statements_q01",
           "q": {
             "en": "She said: \"I am tired.\" -> She said that she ___ tired.",
-            "zh": "She said: \"I am tired.\" -> She said that she ___ tired.",
+            "zh": "间接引语：She said: \"I am tired.\" → She said that she ___ tired.",
             "es": "She said: \"I am tired.\" -> She said that she ___ tired."
           },
           "a": "was",
@@ -9802,7 +9802,7 @@
           },
           "t": {
             "en": "Reported speech: present becomes past (backshift).",
-            "zh": "Reported speech: present becomes past (backshift).",
+            "zh": "间接引语：现在时变过去时（时态后移）。",
             "es": "Reported speech: present becomes past (backshift)."
           },
           "ex": {
@@ -9813,10 +9813,10 @@
               "Will be = future, wrong backshift."
             ],
             "zh": [
-              "Is 是直接引语。",
-              "正确！选项 B。",
-              "Has been 是现在完成时，时态倒退错误。",
-              "Will be 是将来时，时态倒退错误。"
+              "间接引语：现在时变过去时（时态后移）。",
+              "间接引语：现在时变过去时（时态后移）。",
+              "间接引语：现在时变过去时（时态后移）。",
+              "间接引语：现在时变过去时（时态后移）。"
             ],
             "es": [
               "Opción A.",
@@ -9830,7 +9830,7 @@
           "id": "reported_statements_q02",
           "q": {
             "en": "He said: \"I like coffee.\" -> He said he ___ coffee.",
-            "zh": "He said: \"I like coffee.\" -> He said he ___ coffee.",
+            "zh": "间接引语：He said: \"I like coffee.\" → He said he ___ coffee.",
             "es": "He said: \"I like coffee.\" -> He said he ___ coffee."
           },
           "a": [
@@ -9859,7 +9859,7 @@
           },
           "t": {
             "en": "Backshift: present simple -> past simple.",
-            "zh": "Backshift: present simple -> past simple.",
+            "zh": "时态后移：一般现在时 → 一般过去时。",
             "es": "Backshift: present simple -> past simple."
           },
           "ex": {
@@ -9870,10 +9870,10 @@
               "Will like = future, wrong."
             ],
             "zh": [
-              "Likes 是直接引语。",
-              "正确！选项 B。",
-              "Has liked 多余的完成时。",
-              "Will like 是将来时，错误。"
+              "时态后移：一般现在时 → 一般过去时。",
+              "时态后移：一般现在时 → 一般过去时。",
+              "时态后移：一般现在时 → 一般过去时。",
+              "时态后移：一般现在时 → 一般过去时。"
             ],
             "es": [
               "Opción A.",
@@ -9887,7 +9887,7 @@
           "id": "reported_statements_q03",
           "q": {
             "en": "They said: \"We are leaving.\" -> They said they ___.",
-            "zh": "They said: \"We are leaving.\" -> They said they ___.",
+            "zh": "间接引语：They said: \"We are leaving.\" → They said they ___.",
             "es": "They said: \"We are leaving.\" -> They said they ___."
           },
           "a": "were leaving",
@@ -9913,7 +9913,7 @@
           },
           "t": {
             "en": "Backshift: present continuous -> past continuous.",
-            "zh": "Backshift: present continuous -> past continuous.",
+            "zh": "时态后移：现在进行时 → 过去进行时。",
             "es": "Backshift: present continuous -> past continuous."
           },
           "ex": {
@@ -9924,10 +9924,10 @@
               "Leave = wrong tense."
             ],
             "zh": [
-              "Are leaving 是直接引语。",
-              "正确！选项 B。",
-              "Have left 含义错误。",
-              "Leave 时态错误。"
+              "时态后移：现在进行时 → 过去进行时。",
+              "时态后移：现在进行时 → 过去进行时。",
+              "时态后移：现在进行时 → 过去进行时。",
+              "时态后移：现在进行时 → 过去进行时。"
             ],
             "es": [
               "Opción A.",
@@ -9944,7 +9944,7 @@
       "id": "reported_questions",
       "name": {
         "en": "Reported Questions",
-        "zh": "Reported Questions",
+        "zh": "疑问句的间接引语",
         "es": "Reported Questions"
       },
       "s": {
@@ -9963,7 +9963,7 @@
           "id": "reported_questions_q01",
           "q": {
             "en": "She asked: \"Where do you live?\" -> She asked where I ___.",
-            "zh": "She asked: \"Where do you live?\" -> She asked where I ___.",
+            "zh": "间接引语：She asked: \"Where do you live?\" → She asked where I ___.",
             "es": "She asked: \"Where do you live?\" -> She asked where I ___."
           },
           "a": [
@@ -9992,7 +9992,7 @@
           },
           "t": {
             "en": "Reported wh- question: wh- + subject + verb (no inversion).",
-            "zh": "Reported wh- question: wh- + subject + verb (no inversion).",
+            "zh": "间接特殊疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
             "es": "Reported wh- question: wh- + subject + verb (no inversion)."
           },
           "ex": {
@@ -10003,10 +10003,10 @@
               "Am living = wrong backshift."
             ],
             "zh": [
-              "Live 是现在时，应该时态倒退。",
-              "正确！选项 B。",
-              "Have lived 含义错误。",
-              "Am living 时态倒退错误。"
+              "间接特殊疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "间接特殊疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "间接特殊疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "间接特殊疑问句：特殊疑问词 + 主语 + 动词（不倒装）。"
             ],
             "es": [
               "Opción A.",
@@ -10020,7 +10020,7 @@
           "id": "reported_questions_q02",
           "q": {
             "en": "He asked: \"Are you coming?\" -> He asked ___ I was coming.",
-            "zh": "He asked: \"Are you coming?\" -> He asked ___ I was coming.",
+            "zh": "间接引语：He asked: \"Are you coming?\" → He asked ___ I was coming.",
             "es": "He asked: \"Are you coming?\" -> He asked ___ I was coming."
           },
           "a": "if",
@@ -10046,7 +10046,7 @@
           },
           "t": {
             "en": "Reported yes/no question: if/whether + statement order.",
-            "zh": "Reported yes/no question: if/whether + statement order.",
+            "zh": "间接一般疑问句：用 if/whether + 陈述语序。",
             "es": "Reported yes/no question: if/whether + statement order."
           },
           "ex": {
@@ -10057,10 +10057,10 @@
               "When = wh- question, but original has no when."
             ],
             "zh": [
-              "That 用于陈述句，不是疑问句。",
-              "正确！选项 B。",
-              "What 是 wh- 疑问句，但原句是一般疑问句。",
-              "When 是 wh- 疑问句，但原句没有 when。"
+              "间接一般疑问句：用 if/whether + 陈述语序。",
+              "间接一般疑问句：用 if/whether + 陈述语序。",
+              "间接一般疑问句：用 if/whether + 陈述语序。",
+              "间接一般疑问句：用 if/whether + 陈述语序。"
             ],
             "es": [
               "Opción A.",
@@ -10074,7 +10074,7 @@
           "id": "reported_questions_q03",
           "q": {
             "en": "She asked: \"What time does the train leave?\" -> She asked what time the train ___.",
-            "zh": "She asked: \"What time does the train leave?\" -> She asked what time the train ___.",
+            "zh": "间接引语：She asked: \"What time does the train leave?\" → She asked what time the train ___.",
             "es": "She asked: \"What time does the train leave?\" -> She asked what time the train ___."
           },
           "a": [
@@ -10103,7 +10103,7 @@
           },
           "t": {
             "en": "Reported question: no auxiliary do, backshift.",
-            "zh": "Reported question: no auxiliary do, backshift.",
+            "zh": "间接疑问句：不用助动词 do，时态后移。",
             "es": "Reported question: no auxiliary do, backshift."
           },
           "ex": {
@@ -10114,10 +10114,10 @@
               "Is leave = ungrammatical."
             ],
             "zh": [
-              "Leaves 是直接引语，没有时态倒退。",
-              "正确！选项 B。",
-              "Does leave 保持了直接疑问句语序。",
-              "Is leave 不符合语法。"
+              "间接疑问句：不用助动词 do，时态后移。",
+              "间接疑问句：不用助动词 do，时态后移。",
+              "间接疑问句：不用助动词 do，时态后移。",
+              "间接疑问句：不用助动词 do，时态后移。"
             ],
             "es": [
               "Opción A.",
@@ -10134,7 +10134,7 @@
       "id": "reported_commands",
       "name": {
         "en": "Reported Commands",
-        "zh": "Reported Commands",
+        "zh": "命令句的间接引语",
         "es": "Reported Commands"
       },
       "s": {
@@ -10153,7 +10153,7 @@
           "id": "reported_commands_q01",
           "q": {
             "en": "He said: \"Close the door.\" -> He told me ___ the door.",
-            "zh": "He said: \"Close the door.\" -> He told me ___ the door.",
+            "zh": "间接引语：He said: \"Close the door.\" → He told me ___ the door.",
             "es": "He said: \"Close the door.\" -> He told me ___ the door."
           },
           "a": "to close",
@@ -10179,7 +10179,7 @@
           },
           "t": {
             "en": "Reported command: tell + object + to-infinitive.",
-            "zh": "Reported command: tell + object + to-infinitive.",
+            "zh": "间接命令：tell + 宾语 + to 不定式。",
             "es": "Reported command: tell + object + to-infinitive."
           },
           "ex": {
@@ -10190,10 +10190,10 @@
               "Closed = past, wrong for command."
             ],
             "zh": [
-              "Close 是直接命令。",
-              "正确！选项 B。",
-              "Closing 形式错误。",
-              "Closed 是过去时，不适合命令。"
+              "间接命令：tell + 宾语 + to 不定式。",
+              "间接命令：tell + 宾语 + to 不定式。",
+              "间接命令：tell + 宾语 + to 不定式。",
+              "间接命令：tell + 宾语 + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -10207,7 +10207,7 @@
           "id": "reported_commands_q02",
           "q": {
             "en": "She said: \"Do not be late.\" -> She told me ___ late.",
-            "zh": "She said: \"Do not be late.\" -> She told me ___ late.",
+            "zh": "间接引语：She said: \"Do not be late.\" → She told me ___ late.",
             "es": "She said: \"Do not be late.\" -> She told me ___ late."
           },
           "a": "not to be",
@@ -10233,7 +10233,7 @@
           },
           "t": {
             "en": "Reported negative command: tell + object + not + to-infinitive.",
-            "zh": "Reported negative command: tell + object + not + to-infinitive.",
+            "zh": "间接否定命令：tell + 宾语 + not + to 不定式。",
             "es": "Reported negative command: tell + object + not + to-infinitive."
           },
           "ex": {
@@ -10244,10 +10244,10 @@
               "Not being = wrong form."
             ],
             "zh": [
-              "Do not be 是直接命令。",
-              "正确！选项 B。",
-              "To not being 不符合语法。",
-              "Not being 形式错误。"
+              "间接否定命令：tell + 宾语 + not + to 不定式。",
+              "间接否定命令：tell + 宾语 + not + to 不定式。",
+              "间接否定命令：tell + 宾语 + not + to 不定式。",
+              "间接否定命令：tell + 宾语 + not + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -10264,7 +10264,7 @@
       "id": "reported_time",
       "name": {
         "en": "Time and Place Shifts",
-        "zh": "Time and Place Shifts",
+        "zh": "时间与地点变化",
         "es": "Time and Place Shifts"
       },
       "s": {
@@ -10283,7 +10283,7 @@
           "id": "reported_time_q01",
           "q": {
             "en": "She said: \"I will call you tomorrow.\" -> She said she would call me ___.",
-            "zh": "She said: \"I will call you tomorrow.\" -> She said she would call me ___.",
+            "zh": "间接引语：She said: \"I will call you tomorrow.\" → She said she would call me ___.",
             "es": "She said: \"I will call you tomorrow.\" -> She said she would call me ___."
           },
           "a": "the next day",
@@ -10309,7 +10309,7 @@
           },
           "t": {
             "en": "Time shift: tomorrow -> the next day / the following day.",
-            "zh": "Time shift: tomorrow -> the next day / the following day.",
+            "zh": "时间变化：tomorrow → the next day（第二天）。",
             "es": "Time shift: tomorrow -> the next day / the following day."
           },
           "ex": {
@@ -10320,10 +10320,10 @@
               "Today = should become that day."
             ],
             "zh": [
-              "Tomorrow 是直接引语，没有转换。",
-              "正确！选项 B。",
-              "Yesterday 方向错误。",
-              "Today 应变为 that day。"
+              "时间变化：tomorrow → the next day（第二天）。",
+              "时间变化：tomorrow → the next day（第二天）。",
+              "时间变化：tomorrow → the next day（第二天）。",
+              "时间变化：tomorrow → the next day（第二天）。"
             ],
             "es": [
               "Opción A.",
@@ -10337,7 +10337,7 @@
           "id": "reported_time_q02",
           "q": {
             "en": "He said: \"I am here now.\" -> He said he was there ___.",
-            "zh": "He said: \"I am here now.\" -> He said he was there ___.",
+            "zh": "间接引语：He said: \"I am here now.\" → He said he was there ___.",
             "es": "He said: \"I am here now.\" -> He said he was there ___."
           },
           "a": "then",
@@ -10363,7 +10363,7 @@
           },
           "t": {
             "en": "Time/place shift: now -> then, here -> there.",
-            "zh": "Time/place shift: now -> then, here -> there.",
+            "zh": "时间/地点变化：now → then，here → there。",
             "es": "Time/place shift: now -> then, here -> there."
           },
           "ex": {
@@ -10374,10 +10374,10 @@
               "Today = wrong time reference."
             ],
             "zh": [
-              "Now 是直接引语。",
-              "正确！选项 B。",
-              "Here 应变为 there。",
-              "Today 时间参照错误。"
+              "时间/地点变化：now → then，here → there。",
+              "时间/地点变化：now → then，here → there。",
+              "时间/地点变化：now → then，here → there。",
+              "时间/地点变化：now → then，here → there。"
             ],
             "es": [
               "Opción A.",
@@ -10394,7 +10394,7 @@
       "id": "reported_verbs",
       "name": {
         "en": "Reporting Verbs",
-        "zh": "Reporting Verbs",
+        "zh": "转述动词",
         "es": "Reporting Verbs"
       },
       "s": {
@@ -10413,7 +10413,7 @@
           "id": "reported_verbs_q01",
           "q": {
             "en": "He ___ that he had made a mistake.",
-            "zh": "He ___ that he had made a mistake.",
+            "zh": "请选择正确的转述动词：He ___ that he had made a mistake.",
             "es": "He ___ that he had made a mistake."
           },
           "a": "admitted",
@@ -10439,7 +10439,7 @@
           },
           "t": {
             "en": "Reporting verb: admit + that clause.",
-            "zh": "Reporting verb: admit + that clause.",
+            "zh": "转述动词：admit + that 从句。",
             "es": "Reporting verb: admit + that clause."
           },
           "ex": {
@@ -10450,10 +10450,10 @@
               "Spoke needs preposition (spoke about)."
             ],
             "zh": [
-              "Told 需要宾语（told me that）。",
-              "Said 可以但 admitted 更精确。",
-              "正确！选项 C。",
-              "Spoke 需要介词（spoke about）。"
+              "转述动词：admit + that 从句。",
+              "转述动词：admit + that 从句。",
+              "转述动词：admit + that 从句。",
+              "转述动词：admit + that 从句。"
             ],
             "es": [
               "Opción A.",
@@ -10467,7 +10467,7 @@
           "id": "reported_verbs_q02",
           "q": {
             "en": "She ___ going to the cinema. (reporting a suggestion)",
-            "zh": "She ___ going to the cinema. (reporting a suggestion)",
+            "zh": "请选择正确的转述动词：She ___ going to the cinema.（转述建议）",
             "es": "She ___ going to the cinema. (reporting a suggestion)"
           },
           "a": "suggested",
@@ -10493,7 +10493,7 @@
           },
           "t": {
             "en": "Suggest + gerund or that clause for proposals.",
-            "zh": "Suggest + gerund or that clause for proposals.",
+            "zh": "suggest + 动名词或 that 从句表示建议。",
             "es": "Suggest + gerund or that clause for proposals."
           },
           "ex": {
@@ -10504,10 +10504,10 @@
               "Spoke = wrong pattern."
             ],
             "zh": [
-              "Said 太笼统。",
-              "Told 需要宾语。",
-              "正确！选项 C。",
-              "Spoke 句型错误。"
+              "suggest + 动名词或 that 从句表示建议。",
+              "suggest + 动名词或 that 从句表示建议。",
+              "suggest + 动名词或 that 从句表示建议。",
+              "suggest + 动名词或 that 从句表示建议。"
             ],
             "es": [
               "Opción A.",
@@ -10524,7 +10524,7 @@
       "id": "reported_tense",
       "name": {
         "en": "Tense Backshift Rules",
-        "zh": "Tense Backshift Rules",
+        "zh": "时态后移规则",
         "es": "Tense Backshift Rules"
       },
       "s": {
@@ -10543,7 +10543,7 @@
           "id": "reported_tense_q01",
           "q": {
             "en": "He said: \"I have finished.\" -> He said he ___.",
-            "zh": "He said: \"I have finished.\" -> He said he ___.",
+            "zh": "间接引语：He said: \"I have finished.\" → He said he ___.",
             "es": "He said: \"I have finished.\" -> He said he ___."
           },
           "a": [
@@ -10572,7 +10572,7 @@
           },
           "t": {
             "en": "Backshift: present perfect -> past perfect.",
-            "zh": "Backshift: present perfect -> past perfect.",
+            "zh": "时态后移：现在完成时 → 过去完成时。",
             "es": "Backshift: present perfect -> past perfect."
           },
           "ex": {
@@ -10583,10 +10583,10 @@
               "Finishes = present, wrong."
             ],
             "zh": [
-              "Has finished 是直接引语。",
-              "正确！选项 B。",
-              "Finished 是一般过去时，丢失了完成含义。",
-              "Finishes 是现在时，错误。"
+              "时态后移：现在完成时 → 过去完成时。",
+              "时态后移：现在完成时 → 过去完成时。",
+              "时态后移：现在完成时 → 过去完成时。",
+              "时态后移：现在完成时 → 过去完成时。"
             ],
             "es": [
               "Opción A.",
@@ -10600,7 +10600,7 @@
           "id": "reported_tense_q02",
           "q": {
             "en": "She said: \"I will help you.\" -> She said she ___ help me.",
-            "zh": "She said: \"I will help you.\" -> She said she ___ help me.",
+            "zh": "间接引语：She said: \"I will help you.\" → She said she ___ help me.",
             "es": "She said: \"I will help you.\" -> She said she ___ help me."
           },
           "a": "would",
@@ -10626,7 +10626,7 @@
           },
           "t": {
             "en": "Backshift: will -> would.",
-            "zh": "Backshift: will -> would.",
+            "zh": "时态后移：will → would。",
             "es": "Backshift: will -> would."
           },
           "ex": {
@@ -10637,10 +10637,10 @@
               "Was = wrong backshift."
             ],
             "zh": [
-              "Will 是直接引语。",
-              "正确！选项 B。",
-              "Had 时态倒退错误。",
-              "Was 时态倒退错误。"
+              "时态后移：will → would。",
+              "时态后移：will → would。",
+              "时态后移：will → would。",
+              "时态后移：will → would。"
             ],
             "es": [
               "Opción A.",
@@ -10657,7 +10657,7 @@
       "id": "reported_embedded",
       "name": {
         "en": "Embedded Questions",
-        "zh": "Embedded Questions",
+        "zh": "嵌入式疑问句",
         "es": "Embedded Questions"
       },
       "s": {
@@ -10676,7 +10676,7 @@
           "id": "reported_embedded_q01",
           "q": {
             "en": "Do you know where ___?",
-            "zh": "Do you know where ___?",
+            "zh": "请选择正确的形式：Do you know where ___?",
             "es": "Do you know where ___?"
           },
           "a": "she lives",
@@ -10702,7 +10702,7 @@
           },
           "t": {
             "en": "Embedded question: wh- + subject + verb (no inversion).",
-            "zh": "Embedded question: wh- + subject + verb (no inversion).",
+            "zh": "嵌入式疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
             "es": "Embedded question: wh- + subject + verb (no inversion)."
           },
           "ex": {
@@ -10713,10 +10713,10 @@
               "Is she live = ungrammatical."
             ],
             "zh": [
-              "Does she live 保持了直接疑问句语序。",
-              "正确！选项 B。",
-              "Lives she 倒装错误。",
-              "Is she live 不符合语法。"
+              "嵌入式疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "嵌入式疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "嵌入式疑问句：特殊疑问词 + 主语 + 动词（不倒装）。",
+              "嵌入式疑问句：特殊疑问词 + 主语 + 动词（不倒装）。"
             ],
             "es": [
               "Opción A.",
@@ -10730,7 +10730,7 @@
           "id": "reported_embedded_q02",
           "q": {
             "en": "Can you tell me ___ the bus stop is?",
-            "zh": "Can you tell me ___ the bus stop is?",
+            "zh": "请选择正确的形式：Can you tell me ___ the bus stop is?",
             "es": "Can you tell me ___ the bus stop is?"
           },
           "a": "where",
@@ -10756,7 +10756,7 @@
           },
           "t": {
             "en": "Embedded question: subject before verb (where the bus stop is).",
-            "zh": "Embedded question: subject before verb (where the bus stop is).",
+            "zh": "嵌入式疑问句：主语在动词前（where the bus stop is）。",
             "es": "Embedded question: subject before verb (where the bus stop is)."
           },
           "ex": {
@@ -10767,10 +10767,10 @@
               "When = wrong question word."
             ],
             "zh": [
-              "Where is 是直接疑问句语序。",
-              "正确！where 引导宾语从句。",
-              "What 语义不符。",
-              "When 语义不符。"
+              "嵌入式疑问句：主语在动词前（where the bus stop is）。",
+              "嵌入式疑问句：主语在动词前（where the bus stop is）。",
+              "嵌入式疑问句：主语在动词前（where the bus stop is）。",
+              "嵌入式疑问句：主语在动词前（where the bus stop is）。"
             ],
             "es": [
               "Opción A.",
@@ -10787,7 +10787,7 @@
       "id": "reported_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -10806,7 +10806,7 @@
           "id": "reported_production_q01",
           "q": {
             "en": "Convert: \"I am going to Paris,\" she said. -> She said ___.",
-            "zh": "Convert: \"I am going to Paris,\" she said. -> She said ___.",
+            "zh": "转换：\"I am going to Paris,\" she said. → She said ___.",
             "es": "Convert: \"I am going to Paris,\" she said. -> She said ___."
           },
           "a": "she was going to Paris",
@@ -10832,7 +10832,7 @@
           },
           "t": {
             "en": "Backshift present continuous to past continuous.",
-            "zh": "Backshift present continuous to past continuous.",
+            "zh": "现在进行时后移为过去进行时。",
             "es": "Backshift present continuous to past continuous."
           },
           "ex": {
@@ -10843,10 +10843,10 @@
               "I am = pronoun not changed."
             ],
             "zh": [
-              "Is going 没有时态倒退。",
-              "正确！选项 B。",
-              "Goes 含义错误。",
-              "I am 代词未转换。"
+              "现在进行时后移为过去进行时。",
+              "现在进行时后移为过去进行时。",
+              "现在进行时后移为过去进行时。",
+              "现在进行时后移为过去进行时。"
             ],
             "es": [
               "Opción A.",
@@ -10860,7 +10860,7 @@
           "id": "reported_production_q02",
           "q": {
             "en": "Convert: \"Do not touch that!\" he said. -> He told me ___.",
-            "zh": "Convert: \"Do not touch that!\" he said. -> He told me ___.",
+            "zh": "转换：\"Do not touch that!\" he said. → He told me ___.",
             "es": "Convert: \"Do not touch that!\" he said. -> He told me ___."
           },
           "a": "not to touch that",
@@ -10886,7 +10886,7 @@
           },
           "t": {
             "en": "Reported command: tell + not + to-infinitive.",
-            "zh": "Reported command: tell + not + to-infinitive.",
+            "zh": "间接命令：tell + not + to 不定式。",
             "es": "Reported command: tell + not + to-infinitive."
           },
           "ex": {
@@ -10897,10 +10897,10 @@
               "Not touching = wrong form."
             ],
             "zh": [
-              "Do not touch 是直接命令。",
-              "正确！选项 B。",
-              "To not touch 分裂不定式，不够标准。",
-              "Not touching 形式错误。"
+              "间接命令：tell + not + to 不定式。",
+              "间接命令：tell + not + to 不定式。",
+              "间接命令：tell + not + to 不定式。",
+              "间接命令：tell + not + to 不定式。"
             ],
             "es": [
               "Opción A.",
@@ -10917,7 +10917,7 @@
       "id": "modals_ability",
       "name": {
         "en": "Ability",
-        "zh": "Ability",
+        "zh": "能力",
         "es": "Ability"
       },
       "s": {
@@ -10936,7 +10936,7 @@
           "id": "modals_ability_q01",
           "q": {
             "en": "She ___ swim when she was five years old.",
-            "zh": "She ___ swim when she was five years old.",
+            "zh": "请选择正确的形式：She ___ swim when she was five years old.",
             "es": "She ___ swim when she was five years old."
           },
           "a": "could",
@@ -10962,7 +10962,7 @@
           },
           "t": {
             "en": "Could for past ability.",
-            "zh": "Could for past ability.",
+            "zh": "could 表示过去的能力。",
             "es": "Could for past ability."
           },
           "ex": {
@@ -10973,10 +10973,10 @@
               "Is able = present, needs was able to for past."
             ],
             "zh": [
-              "Can 表示现在能力，不是过去。",
-              "正确！选项 B。",
-              "Will can 不符合语法。",
-              "Is able 是现在时，过去需要用 was able to。"
+              "could 表示过去的能力。",
+              "could 表示过去的能力。",
+              "could 表示过去的能力。",
+              "could 表示过去的能力。"
             ],
             "es": [
               "Opción A.",
@@ -10990,7 +10990,7 @@
           "id": "modals_ability_q02",
           "q": {
             "en": "I ___ solve the problem after thinking for an hour.",
-            "zh": "I ___ solve the problem after thinking for an hour.",
+            "zh": "请选择正确的形式：I ___ solve the problem after thinking for an hour.",
             "es": "I ___ solve the problem after thinking for an hour."
           },
           "a": "was able to",
@@ -11016,7 +11016,7 @@
           },
           "t": {
             "en": "Was able to for specific past achievement.",
-            "zh": "Was able to for specific past achievement.",
+            "zh": "was able to 表示过去某次具体的成功。",
             "es": "Was able to for specific past achievement."
           },
           "ex": {
@@ -11027,10 +11027,10 @@
               "Could to = ungrammatical."
             ],
             "zh": [
-              "Could 表示一般过去能力，不适用于特定成就。",
-              "正确！选项 B。",
-              "Can 是现在时。",
-              "Could to 不符合语法。"
+              "was able to 表示过去某次具体的成功。",
+              "was able to 表示过去某次具体的成功。",
+              "was able to 表示过去某次具体的成功。",
+              "was able to 表示过去某次具体的成功。"
             ],
             "es": [
               "Opción A.",
@@ -11044,7 +11044,7 @@
           "id": "modals_ability_q03",
           "q": {
             "en": "By next year, she ___ speak three languages.",
-            "zh": "By next year, she ___ speak three languages.",
+            "zh": "请选择正确的形式：By next year, she ___ speak three languages.",
             "es": "By next year, she ___ speak three languages."
           },
           "a": "will be able to",
@@ -11070,7 +11070,7 @@
           },
           "t": {
             "en": "Will be able to for future ability.",
-            "zh": "Will be able to for future ability.",
+            "zh": "will be able to 表示将来的能力。",
             "es": "Will be able to for future ability."
           },
           "ex": {
@@ -11081,10 +11081,10 @@
               "Is able to = present."
             ],
             "zh": [
-              "Can 是现在时。",
-              "正确！选项 B。",
-              "Could 是过去时或假设。",
-              "Is able to 是现在时。"
+              "will be able to 表示将来的能力。",
+              "will be able to 表示将来的能力。",
+              "will be able to 表示将来的能力。",
+              "will be able to 表示将来的能力。"
             ],
             "es": [
               "Opción A.",
@@ -11101,7 +11101,7 @@
       "id": "modals_permission",
       "name": {
         "en": "Permission",
-        "zh": "Permission",
+        "zh": "许可",
         "es": "Permission"
       },
       "s": {
@@ -11120,7 +11120,7 @@
           "id": "modals_permission_q01",
           "q": {
             "en": "___ I use your phone, please?",
-            "zh": "___ I use your phone, please?",
+            "zh": "请选择正确的形式：___ I use your phone, please?",
             "es": "___ I use your phone, please?"
           },
           "a": "Can",
@@ -11146,7 +11146,7 @@
           },
           "t": {
             "en": "Can for informal permission requests.",
-            "zh": "Can for informal permission requests.",
+            "zh": "can 用于非正式地请求许可。",
             "es": "Can for informal permission requests."
           },
           "ex": {
@@ -11157,10 +11157,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "Must 表示义务，不是许可。",
-              "正确！选项 B。",
-              "Should 表示建议。",
-              "Would 表示条件。"
+              "can 用于非正式地请求许可。",
+              "can 用于非正式地请求许可。",
+              "can 用于非正式地请求许可。",
+              "can 用于非正式地请求许可。"
             ],
             "es": [
               "Opción A.",
@@ -11174,7 +11174,7 @@
           "id": "modals_permission_q02",
           "q": {
             "en": "You ___ park here. It is a no-parking zone.",
-            "zh": "You ___ park here. It is a no-parking zone.",
+            "zh": "请选择正确的形式：You ___ park here. It is a no-parking zone.",
             "es": "You ___ park here. It is a no-parking zone."
           },
           "a": "cannot",
@@ -11200,7 +11200,7 @@
           },
           "t": {
             "en": "Cannot for prohibition.",
-            "zh": "Cannot for prohibition.",
+            "zh": "cannot 表示禁止。",
             "es": "Cannot for prohibition."
           },
           "ex": {
@@ -11211,10 +11211,10 @@
               "Should = advice."
             ],
             "zh": [
-              "Can 表示许可，含义相反。",
-              "正确！选项 B。",
-              "Must 表示义务。",
-              "Should 表示建议。"
+              "cannot 表示禁止。",
+              "cannot 表示禁止。",
+              "cannot 表示禁止。",
+              "cannot 表示禁止。"
             ],
             "es": [
               "Opción A.",
@@ -11228,7 +11228,7 @@
           "id": "modals_permission_q03",
           "q": {
             "en": "Students ___ leave early with permission.",
-            "zh": "Students ___ leave early with permission.",
+            "zh": "请选择正确的形式：Students ___ leave early with permission.",
             "es": "Students ___ leave early with permission."
           },
           "a": "may",
@@ -11254,7 +11254,7 @@
           },
           "t": {
             "en": "May for formal permission.",
-            "zh": "May for formal permission.",
+            "zh": "may 用于正式地表示许可。",
             "es": "May for formal permission."
           },
           "ex": {
@@ -11265,10 +11265,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "Must 表示义务。",
-              "正确！选项 B。",
-              "Should 表示建议。",
-              "Would 表示条件。"
+              "may 用于正式地表示许可。",
+              "may 用于正式地表示许可。",
+              "may 用于正式地表示许可。",
+              "may 用于正式地表示许可。"
             ],
             "es": [
               "Opción A.",
@@ -11285,7 +11285,7 @@
       "id": "modals_obligation",
       "name": {
         "en": "Obligation",
-        "zh": "Obligation",
+        "zh": "义务",
         "es": "Obligation"
       },
       "s": {
@@ -11304,7 +11304,7 @@
           "id": "modals_obligation_q01",
           "q": {
             "en": "You ___ wear a seatbelt in the car. It is the law.",
-            "zh": "You ___ wear a seatbelt in the car. It is the law.",
+            "zh": "请选择正确的形式：You ___ wear a seatbelt in the car. It is the law.",
             "es": "You ___ wear a seatbelt in the car. It is the law."
           },
           "a": "must",
@@ -11330,7 +11330,7 @@
           },
           "t": {
             "en": "Must for strong obligation / legal requirement.",
-            "zh": "Must for strong obligation / legal requirement.",
+            "zh": "must 表示强烈的义务/法律要求。",
             "es": "Must for strong obligation / legal requirement."
           },
           "ex": {
@@ -11341,10 +11341,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "Can 表示能力/许可。",
-              "正确！选项 B。",
-              "Might 表示可能性。",
-              "Would 表示条件。"
+              "must 表示强烈的义务/法律要求。",
+              "must 表示强烈的义务/法律要求。",
+              "must 表示强烈的义务/法律要求。",
+              "must 表示强烈的义务/法律要求。"
             ],
             "es": [
               "Opción A.",
@@ -11358,7 +11358,7 @@
           "id": "modals_obligation_q02",
           "q": {
             "en": "I ___ go to work tomorrow. It is a holiday.",
-            "zh": "I ___ go to work tomorrow. It is a holiday.",
+            "zh": "请选择正确的形式：I ___ go to work tomorrow. It is a holiday.",
             "es": "I ___ go to work tomorrow. It is a holiday."
           },
           "a": "do not have to",
@@ -11384,7 +11384,7 @@
           },
           "t": {
             "en": "Do not have to = no obligation.",
-            "zh": "Do not have to = no obligation.",
+            "zh": "do not have to = 没有义务。",
             "es": "Do not have to = no obligation."
           },
           "ex": {
@@ -11395,10 +11395,10 @@
               "Should not = advice against."
             ],
             "zh": [
-              "Must 表示义务，错误。",
-              "正确！选项 B。",
-              "Must not 表示禁止。",
-              "Should not 表示建议不要。"
+              "do not have to = 没有义务。",
+              "do not have to = 没有义务。",
+              "do not have to = 没有义务。",
+              "do not have to = 没有义务。"
             ],
             "es": [
               "Opción A.",
@@ -11412,7 +11412,7 @@
           "id": "modals_obligation_q03",
           "q": {
             "en": "You ___ eat more vegetables. It is good for your health.",
-            "zh": "You ___ eat more vegetables. It is good for your health.",
+            "zh": "请选择正确的形式：You ___ eat more vegetables. It is good for your health.",
             "es": "You ___ eat more vegetables. It is good for your health."
           },
           "a": "should",
@@ -11438,7 +11438,7 @@
           },
           "t": {
             "en": "Should for advice/recommendation.",
-            "zh": "Should for advice/recommendation.",
+            "zh": "should 表示建议/推荐。",
             "es": "Should for advice/recommendation."
           },
           "ex": {
@@ -11449,10 +11449,10 @@
               "Can = ability/permission."
             ],
             "zh": [
-              "Must 语气太强，不适合建议。",
-              "正确！选项 B。",
-              "Might 可能性太弱。",
-              "Can 表示能力/许可。"
+              "should 表示建议/推荐。",
+              "should 表示建议/推荐。",
+              "should 表示建议/推荐。",
+              "should 表示建议/推荐。"
             ],
             "es": [
               "Opción A.",
@@ -11469,7 +11469,7 @@
       "id": "modals_probability",
       "name": {
         "en": "Probability",
-        "zh": "Probability",
+        "zh": "可能性",
         "es": "Probability"
       },
       "s": {
@@ -11488,7 +11488,7 @@
           "id": "modals_probability_q01",
           "q": {
             "en": "She is not here. She ___ be at home.",
-            "zh": "She is not here. She ___ be at home.",
+            "zh": "请选择正确的形式：She is not here. She ___ be at home.",
             "es": "She is not here. She ___ be at home."
           },
           "a": [
@@ -11517,7 +11517,7 @@
           },
           "t": {
             "en": "Might for possibility/probability.",
-            "zh": "Might for possibility/probability.",
+            "zh": "might 表示可能性/概率。",
             "es": "Might for possibility/probability."
           },
           "ex": {
@@ -11528,10 +11528,10 @@
               "Can = ability, not probability."
             ],
             "zh": [
-              "Must 表示强烈肯定，对推测来说太强。",
-              "正确！选项 B。",
-              "Should 表示预期。",
-              "Can 表示能力，不表示概率。"
+              "might 表示可能性/概率。",
+              "might 表示可能性/概率。",
+              "might 表示可能性/概率。",
+              "might 表示可能性/概率。"
             ],
             "es": [
               "Opción A.",
@@ -11545,7 +11545,7 @@
           "id": "modals_probability_q02",
           "q": {
             "en": "He has been working all day. He ___ be exhausted.",
-            "zh": "He has been working all day. He ___ be exhausted.",
+            "zh": "请选择正确的形式：He has been working all day. He ___ be exhausted.",
             "es": "He has been working all day. He ___ be exhausted."
           },
           "a": "must",
@@ -11571,7 +11571,7 @@
           },
           "t": {
             "en": "Must for logical deduction.",
-            "zh": "Must for logical deduction.",
+            "zh": "must 表示逻辑推断。",
             "es": "Must for logical deduction."
           },
           "ex": {
@@ -11582,10 +11582,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "Might 可能但太弱。",
-              "正确！选项 B。",
-              "Can 表示能力。",
-              "Would 表示条件。"
+              "must 表示逻辑推断。",
+              "must 表示逻辑推断。",
+              "must 表示逻辑推断。",
+              "must 表示逻辑推断。"
             ],
             "es": [
               "Opción A.",
@@ -11599,7 +11599,7 @@
           "id": "modals_probability_q03",
           "q": {
             "en": "That ___ be true. I saw him leave with my own eyes.",
-            "zh": "That ___ be true. I saw him leave with my own eyes.",
+            "zh": "请选择正确的形式：That ___ be true. I saw him leave with my own eyes.",
             "es": "That ___ be true. I saw him leave with my own eyes."
           },
           "a": "can not",
@@ -11625,7 +11625,7 @@
           },
           "t": {
             "en": "Cannot = impossibility/disbelief (you saw him leave, so it cannot be true).",
-            "zh": "Cannot 表示不可能（你亲眼见他离开）。",
+            "zh": "cannot = 不可能/难以置信（你亲眼看见他离开，所以不可能是真的）。",
             "es": "Cannot = imposible (lo viste salir)."
           },
           "ex": {
@@ -11636,10 +11636,10 @@
               "Should = advice, wrong."
             ],
             "zh": [
-              "正确！cannot 表示不可能。",
-              "Could not 表示过去不能。",
-              "Must 表示肯定，与事实矛盾。",
-              "Should 表示建议。"
+              "cannot = 不可能/难以置信（你亲眼看见他离开，所以不可能是真的）。",
+              "cannot = 不可能/难以置信（你亲眼看见他离开，所以不可能是真的）。",
+              "cannot = 不可能/难以置信（你亲眼看见他离开，所以不可能是真的）。",
+              "cannot = 不可能/难以置信（你亲眼看见他离开，所以不可能是真的）。"
             ],
             "es": [
               "¡Correcto! Opción A.",
@@ -11656,7 +11656,7 @@
       "id": "modals_past",
       "name": {
         "en": "Past Modals",
-        "zh": "Past Modals",
+        "zh": "情态动词的过去式",
         "es": "Past Modals"
       },
       "s": {
@@ -11675,7 +11675,7 @@
           "id": "modals_past_q01",
           "q": {
             "en": "She ___ left already. Her coat is still here.",
-            "zh": "She ___ left already. Her coat is still here.",
+            "zh": "请选择正确的形式：She ___ left already. Her coat is still here.",
             "es": "She ___ left already. Her coat is still here."
           },
           "a": "can not have",
@@ -11701,7 +11701,7 @@
           },
           "t": {
             "en": "Cannot have for past impossibility.",
-            "zh": "Cannot have for past impossibility.",
+            "zh": "cannot have 表示对过去的不可能推断。",
             "es": "Cannot have for past impossibility."
           },
           "ex": {
@@ -11712,10 +11712,10 @@
               "Might have = possible, but coat evidence contradicts."
             ],
             "zh": [
-              "Must have 表示推测她离开了（证据不对）。",
-              "正确！选项 B。",
-              "Should have 表示过去应该做。",
-              "Might have 表示可能，但外套证据与之矛盾。"
+              "cannot have 表示对过去的不可能推断。",
+              "cannot have 表示对过去的不可能推断。",
+              "cannot have 表示对过去的不可能推断。",
+              "cannot have 表示对过去的不可能推断。"
             ],
             "es": [
               "Opción A.",
@@ -11729,7 +11729,7 @@
           "id": "modals_past_q02",
           "q": {
             "en": "You ___ told me earlier! I could have helped.",
-            "zh": "You ___ told me earlier! I could have helped.",
+            "zh": "请选择正确的形式：You ___ told me earlier! I could have helped.",
             "es": "You ___ told me earlier! I could have helped."
           },
           "a": "should have",
@@ -11755,7 +11755,7 @@
           },
           "t": {
             "en": "Should have for past regret/advice.",
-            "zh": "Should have for past regret/advice.",
+            "zh": "should have 表示对过去的遗憾/建议。",
             "es": "Should have for past regret/advice."
           },
           "ex": {
@@ -11766,10 +11766,10 @@
               "Would have = conditional."
             ],
             "zh": [
-              "Must have 表示推测。",
-              "正确！选项 B。",
-              "Might have 表示可能性。",
-              "Would have 表示条件。"
+              "should have 表示对过去的遗憾/建议。",
+              "should have 表示对过去的遗憾/建议。",
+              "should have 表示对过去的遗憾/建议。",
+              "should have 表示对过去的遗憾/建议。"
             ],
             "es": [
               "Opción A.",
@@ -11786,7 +11786,7 @@
       "id": "modals_requests",
       "name": {
         "en": "Requests and Offers",
-        "zh": "Requests and Offers",
+        "zh": "请求与提议",
         "es": "Requests and Offers"
       },
       "s": {
@@ -11805,7 +11805,7 @@
           "id": "modals_requests_q01",
           "q": {
             "en": "___ you pass me the salt, please?",
-            "zh": "___ you pass me the salt, please?",
+            "zh": "请选择正确的形式：___ you pass me the salt, please?",
             "es": "___ you pass me the salt, please?"
           },
           "a": "Could",
@@ -11831,7 +11831,7 @@
           },
           "t": {
             "en": "Could for polite requests.",
-            "zh": "Could for polite requests.",
+            "zh": "could 用于礼貌的请求。",
             "es": "Could for polite requests."
           },
           "ex": {
@@ -11842,10 +11842,10 @@
               "May = more formal, less common for objects."
             ],
             "zh": [
-              "Must 表示义务。",
-              "正确！选项 B。",
-              "Should 表示建议。",
-              "May 更正式，用于物品不太常见。"
+              "could 用于礼貌的请求。",
+              "could 用于礼貌的请求。",
+              "could 用于礼貌的请求。",
+              "could 用于礼貌的请求。"
             ],
             "es": [
               "Opción A.",
@@ -11862,7 +11862,7 @@
       "id": "modals_contrast",
       "name": {
         "en": "Modal Contrast",
-        "zh": "Modal Contrast",
+        "zh": "情态动词对比",
         "es": "Modal Contrast"
       },
       "s": {
@@ -11881,7 +11881,7 @@
           "id": "modals_contrast_q01",
           "q": {
             "en": "You ___ smoke here. It is a hospital.",
-            "zh": "You ___ smoke here. It is a hospital.",
+            "zh": "请选择正确的形式：You ___ smoke here. It is a hospital.",
             "es": "You ___ smoke here. It is a hospital."
           },
           "a": [
@@ -11910,7 +11910,7 @@
           },
           "t": {
             "en": "Must not = prohibition (vs. do not have to = no obligation).",
-            "zh": "Must not = prohibition (vs. do not have to = no obligation).",
+            "zh": "must not = 禁止（区别于 do not have to = 无义务）。",
             "es": "Must not = prohibition (vs. do not have to = no obligation)."
           },
           "ex": {
@@ -11921,10 +11921,10 @@
               "Might not = possibility, not prohibition."
             ],
             "zh": [
-              "Do not have to 表示不必要，但不是禁止。",
-              "正确！选项 B。",
-              "Should not 是建议，对医院规定来说太弱。",
-              "Might not 表示可能，不是禁止。"
+              "must not = 禁止（区别于 do not have to = 无义务）。",
+              "must not = 禁止（区别于 do not have to = 无义务）。",
+              "must not = 禁止（区别于 do not have to = 无义务）。",
+              "must not = 禁止（区别于 do not have to = 无义务）。"
             ],
             "es": [
               "Opción A.",
@@ -11938,7 +11938,7 @@
           "id": "modals_contrast_q02",
           "q": {
             "en": "I ___ finish this report today. The deadline is tomorrow.",
-            "zh": "I ___ finish this report today. The deadline is tomorrow.",
+            "zh": "请选择正确的形式：I ___ finish this report today. The deadline is tomorrow.",
             "es": "I ___ finish this report today. The deadline is tomorrow."
           },
           "a": "have to",
@@ -11964,7 +11964,7 @@
           },
           "t": {
             "en": "Have to for external obligation.",
-            "zh": "Have to for external obligation.",
+            "zh": "have to 表示外部强制的义务。",
             "es": "Have to for external obligation."
           },
           "ex": {
@@ -11975,10 +11975,10 @@
               "Would = conditional."
             ],
             "zh": [
-              "Can 表示能力，不是义务。",
-              "正确！选项 B。",
-              "Might 表示可能，太弱。",
-              "Would 表示条件。"
+              "have to 表示外部强制的义务。",
+              "have to 表示外部强制的义务。",
+              "have to 表示外部强制的义务。",
+              "have to 表示外部强制的义务。"
             ],
             "es": [
               "Opción A.",
@@ -11995,7 +11995,7 @@
       "id": "modals_prod",
       "name": {
         "en": "Production and Editing",
-        "zh": "Production and Editing",
+        "zh": "输出与修改",
         "es": "Production and Editing"
       },
       "s": {
@@ -12014,7 +12014,7 @@
           "id": "modals_production_q01",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "You must go now.",
@@ -12040,7 +12040,7 @@
           },
           "t": {
             "en": "Must + base verb (no to).",
-            "zh": "Must + base verb (no to).",
+            "zh": "must + 动词原形（不加 to）。",
             "es": "Must + base verb (no to)."
           },
           "ex": {
@@ -12051,10 +12051,10 @@
               "Must gone = ungrammatical."
             ],
             "zh": [
-              "Must to 不符合语法。",
-              "正确！选项 B。",
-              "Must going 不符合语法。",
-              "Must gone 不符合语法。"
+              "must + 动词原形（不加 to）。",
+              "must + 动词原形（不加 to）。",
+              "must + 动词原形（不加 to）。",
+              "must + 动词原形（不加 to）。"
             ],
             "es": [
               "Opción A.",
@@ -12068,7 +12068,7 @@
           "id": "modals_production_q02",
           "q": {
             "en": "Choose the correct sentence:",
-            "zh": "Choose the correct sentence:",
+            "zh": "选择正确的句子：",
             "es": "Choose the correct sentence:"
           },
           "a": "She can speak French.",
@@ -12094,7 +12094,7 @@
           },
           "t": {
             "en": "Can + base verb. No -s, no to.",
-            "zh": "Can + base verb. No -s, no to.",
+            "zh": "can + 动词原形，不加 s，不加 to。",
             "es": "Can + base verb. No -s, no to."
           },
           "ex": {
@@ -12105,10 +12105,10 @@
               "Can to speak = no to after modal."
             ],
             "zh": [
-              "Cans 情态动词不加 -s。",
-              "正确！选项 B。",
-              "Can speaks 情态动词后不加 -s。",
-              "Can to speak 情态动词后不加 to。"
+              "can + 动词原形，不加 s，不加 to。",
+              "can + 动词原形，不加 s，不加 to。",
+              "can + 动词原形，不加 s，不加 to。",
+              "can + 动词原形，不加 s，不加 to。"
             ],
             "es": [
               "Opción A.",
