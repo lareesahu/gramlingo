@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="manifest" href="./assets/manifest-CYkOk8AI.json" />
+    <link rel="manifest" href="./assets/manifest-ByhOF2UQ.json" />
     <meta name="theme-color" content="#ff8c42" />
     <link rel="icon" href="./assets/gramlin-icon-CqjHFEqL.svg" />
     <link rel="apple-touch-icon" href="./assets/gramlin/pwa/apple-touch-icon.png" />
@@ -10,11 +10,29 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="GramLingo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <script>
+      // Route-aware deploy root: the SPA router pushes /app, /app/lesson, etc.
+      // At /app/lesson a relative './assets/...' would resolve to /app/assets/...
+      // (404). Compute the real deploy root and anchor all relative refs to it
+      // BEFORE the bundle loads, so deep-link refreshes boot correctly.
+      (function () {
+        var p = location.pathname;
+        var frags = ['/app/lesson', '/app/module', '/app/completion', '/app/error-log',
+                     '/app/admin', '/app/flashcard-lesson', '/app'];
+        for (var i = 0; i < frags.length; i++) {
+          if (p.endsWith(frags[i])) { p = p.slice(0, -frags[i].length); break; }
+        }
+        if (!p.endsWith('/')) p += '/';
+        var base = document.createElement('base');
+        base.href = p;
+        document.head.appendChild(base);
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet" />
     <title>Gramlingo — Grammar Quest</title>
-    <script type="module" crossorigin src="./assets/index-D78cGu_3.js"></script>
+    <script type="module" crossorigin src="./assets/index-Bxo--Y32.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D5SBkiNF.css">
   </head>
   <body>
