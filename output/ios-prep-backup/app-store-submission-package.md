@@ -59,7 +59,7 @@
 - [x] In-app privacy policy link (AuthScreen footer)
 - [x] No third-party analytics / ads / tracking SDKs
 - [x] No camera / mic / location / contacts permissions
-- [ ] **Confirm privacy policy contact email** — currently `support@gramlingo.app` (placeholder — verify the real support inbox)
+- [x] **Confirm privacy policy contact email** — updated to `contact@gramlingo.online` (real domain inbox)
 - [ ] App Privacy "Data Collection" declarations in App Store Connect:
   - Account email + password (Account Info)
   - Learning progress (Usage Data) — only if cloud sync is on; local mode stores on-device only
