@@ -3,47 +3,32 @@ import { useAppContext } from '../app/app-state';
 import { useDragScroll } from '../hooks/useDragScroll';
 import { getStrings } from '../i18n/i18n';
 import { ModuleModal } from '../components/ModuleModal/ModuleModal';
+import { assetUrl } from '../app/router';
 
-/** Trilingual display that dedupes identical strings (data often has en===zh===es). */
-export function trilingualName(primary: string, zh?: string, es?: string): string {
-  const parts = [primary];
-  if (zh && zh.trim() && zh.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(zh.trim());
-  if (es && es.trim() && es.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(es.trim());
-  return parts.join(' · ');
+/** Display name in the ACTIVE language only (fallback to primary). */
+export function langName(primary: string, zh?: string, es?: string, lang: string = 'en'): string {
+  const pick = lang === 'zh' ? zh : lang === 'es' ? es : primary;
+  return (pick && pick.trim()) ? pick.trim() : primary;
 }
 import { GAME_DATA } from '../game/data';
 import './LearningPathScreen.css';
 
 export function LearningPathScreen() {
-  const { language, currentUser, activeModuleId, activePanel, setActivePanel,
-    getPhaseProgress, navigateTo, startPhase, isModuleLocked, progress, errorLog,
-    flashcardModules, enterFlashcardLesson, flashcardReviewStack,
+  const { language, currentUser, activePanel, setActivePanel,
+    getPhaseProgress, navigateTo, isModuleLocked, progress, errorLog,
+    flashcardModules, flashcardReviewStack,
   } = useAppContext();
   const s = getStrings(language);
   const isZh = language === 'zh';
-  const [openModule, setOpenModule] = useState<string | null>(activeModuleId);
   const [modalModule, setModalModule] = useState<string | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const dragScroll = useDragScroll<HTMLDivElement>();
 
-  const { modules, phases, phaseLockOrder } = GAME_DATA;
+  const { modules, phases } = GAME_DATA;
   const totalCompleted = progress.filter(p => p.completed).length;
   const mistakeCount = errorLog.length;
 
   const scrollGrid = (dir: number) => { if (gridRef.current) gridRef.current.scrollBy({ left: dir * 300, behavior: 'smooth' }); };
-
-  const isPhaseLockedFn = (moduleId: string, phaseId: string) => {
-    const order = phaseLockOrder[moduleId] || [];
-    const idx = order.indexOf(phaseId);
-    if (idx <= 0) return false;
-    // Walk backwards through prerequisites, skipping empty (unauthored) phases
-    for (let i = idx - 1; i >= 0; i--) {
-      const prevPhase = phases.find(p => p.id === order[i]);
-      if (!prevPhase || prevPhase.q.length === 0) continue; // skip unauthored
-      return !getPhaseProgress(order[i])?.completed;
-    }
-    return false; // all prerequisites are empty → unlocked
-  };
 
   return (
     <div className="lp">
@@ -90,14 +75,12 @@ export function LearningPathScreen() {
               const modPhases = phases.filter(p => p.module === mod.id);
               const playablePhases = modPhases.filter(p => p.q.length > 0);
               const completed = playablePhases.filter(p => getPhaseProgress(p.id)?.completed).length;
-              const isOpen = openModule === mod.id;
               const modLocked = currentUser && isModuleLocked(currentUser.username, mod.id);
               const hasLessons = playablePhases.length > 0;
               const isInProgress = completed > 0 && completed < playablePhases.length;
               const isDone = completed === playablePhases.length && hasLessons;
-              const coverSrc = import.meta.env.BASE_URL + 'assets/covers/cover-' + mod.id + '.jpg';
-              const firstUnfinished = playablePhases.find(ph => !getPhaseProgress(ph.id)?.completed && !isPhaseLockedFn(mod.id, ph.id));
-              const cls = 'lp__card' + (isOpen ? ' lp__card--open' : '') + (modLocked ? ' lp__card--locked' : '') + (!hasLessons ? ' lp__card--planned' : '') + (isDone ? ' lp__card--done' : '') + (isInProgress ? ' lp__card--progress' : '');
+              const coverSrc = assetUrl('assets/covers/cover-' + mod.id + '.jpg');
+              const cls = 'lp__card' + (modLocked ? ' lp__card--locked' : '') + (!hasLessons ? ' lp__card--planned' : '') + (isDone ? ' lp__card--done' : '') + (isInProgress ? ' lp__card--progress' : '');
               const toggleCard = () => {
                 if (modLocked) return;
                 setModalModule(mod.id);   // open lesson page as a modal/popup
@@ -111,8 +94,7 @@ export function LearningPathScreen() {
                   onKeyDown={event => {
                     if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); toggleCard(); }
                   }}
-                  role={isOpen ? 'group' : 'button'} tabIndex={isOpen ? -1 : 0}
-                  aria-expanded={isOpen}
+                  role="button" tabIndex={0}
                   aria-label={`${isZh ? mod.nameZh : mod.name}: ${s.lessonPlan}`}
                 >
                   <div className="lp__collapsed">
@@ -128,40 +110,6 @@ export function LearningPathScreen() {
                       <p className="lp__card-desc">{isZh ? mod.descZh : mod.desc}</p>
                     </div>
                   </div>
-                  {isOpen && (
-                    <div className="lp__panel" onClick={e => e.stopPropagation()}>
-                      <div className="lp__panel-drag" onClick={() => setOpenModule(null)} />
-                      <h2 className="lp__panel-title">{isZh ? mod.nameZh : mod.name}</h2>
-                      <div className="lp__phases">
-                        {modPhases.map((phase, i) => {
-                          const hasQuestions = phase.q.length > 0;
-                          const locked = Boolean(modLocked) || !hasQuestions || isPhaseLockedFn(mod.id, phase.id);
-                          const isPhaseDone = getPhaseProgress(phase.id)?.completed;
-                          const phaseCls = 'lp__phase' + (locked ? ' lp__phase--locked' : '') + (!hasQuestions ? ' lp__phase--planned' : '') + (isPhaseDone ? ' lp__phase--done' : '');
-                          return (
-                            <button key={phase.id} className={phaseCls} onClick={!locked ? () => startPhase(mod.id, phase.id) : undefined} disabled={locked}>
-                              <span className="lp__phase-num">{isPhaseDone ? (<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-correct)" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>) : (i + 1)}</span>
-                              <span className="lp__phase-name">{trilingualName(phase.name, phase.nameZh, phase.nameEs)}</span>
-                              {!hasQuestions && <span className="lp__phase-status">{s.comingSoon}</span>}
-                              {hasQuestions && locked && <span className="lp__phase-status">{modLocked ? s.lockedByTeacher : s.locked}</span>}
-                              {!locked && !isPhaseDone && <span className="lp__phase-arrow">→</span>}
-                            </button>
-                          );
-                        })}
-                      </div>
-                      <div className="lp__panel-cta">
-                        {modLocked ? (
-                          <button className="lp__pill-btn" disabled>{s.lockedByTeacher}</button>
-                        ) : firstUnfinished ? (
-                          <button className="lp__pill-btn" onClick={() => startPhase(mod.id, firstUnfinished.id)}>{isInProgress ? s.continue : s.start} →</button>
-                        ) : hasLessons ? (
-                          <button className="lp__pill-btn" onClick={() => setOpenModule(null)}>{isZh ? '已完成' : 'All Done'} ✓</button>
-                        ) : (
-                          <button className="lp__pill-btn" disabled>{s.comingSoon}</button>
-                        )}
-                      </div>
-                    </div>
-                  )}
                 </article>
               );
             })}
@@ -177,9 +125,8 @@ export function LearningPathScreen() {
         <div className="lp__grid-wrapper">
           <div className="lp__grid" ref={gridRef} {...dragScroll}>
             {flashcardModules.map(mod => {
-              const isOpen = openModule === mod.id;
-              const coverSrc = import.meta.env.BASE_URL + 'assets/covers/cover-' + mod.id + '.jpg';
-              const cls = 'lp__card' + (isOpen ? ' lp__card--open' : '');
+              const coverSrc = assetUrl('assets/covers/cover-' + mod.id + '.jpg');
+              const cls = 'lp__card';
               const toggleCard = () => {
                 setModalModule(mod.id);   // open lesson page as a modal/popup
               };
@@ -192,8 +139,8 @@ export function LearningPathScreen() {
                   onKeyDown={event => {
                     if (event.target === event.currentTarget && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); toggleCard(); }
                   }}
-                  role={isOpen ? 'group' : 'button'} tabIndex={isOpen ? -1 : 0}
-                  aria-expanded={isOpen}
+                  role="button" tabIndex={0}
+                  aria-label={`${isZh ? mod.nameZh : mod.name}: ${s.lessonPlan}`}
                 >
                   <div className="lp__collapsed">
                     <div className="lp__img-wrap">
@@ -204,24 +151,6 @@ export function LearningPathScreen() {
                       <p className="lp__card-desc">{isZh ? mod.descZh : mod.desc}</p>
                     </div>
                   </div>
-                  {isOpen && (
-                    <div className="lp__panel" onClick={e => e.stopPropagation()}>
-                      <div className="lp__panel-drag" onClick={() => setOpenModule(null)} />
-                      <h2 className="lp__panel-title">{isZh ? mod.nameZh : mod.name}</h2>
-                      <div className="lp__phases">
-                        {mod.lessons.map((lesson, i) => {
-                          const phaseCls = 'lp__phase';
-                          return (
-                            <button key={lesson.id} className={phaseCls} onClick={() => enterFlashcardLesson(mod.id, lesson.id)}>
-                              <span className="lp__phase-num">{i + 1}</span>
-                              <span className="lp__phase-name">{isZh ? lesson.nameZh : lesson.name}</span>
-                              <span className="lp__phase-arrow">→</span>
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
                 </article>
               );
             })}

@@ -7,7 +7,7 @@ import { useAppContext } from "../app/app-state";
 import { Gramlin } from "../components/Gramlin/Gramlin";
 import { ProgressBar } from "../components/ProgressBar/ProgressBar";
 import { getStrings } from "../i18n/i18n";
-import { trilingualName } from "./LearningPathScreen";
+import { langName } from "./LearningPathScreen";
 import { GAME_DATA } from "../game/data";
 import { QuestionRenderer } from "../game/questions/QuestionRenderer";
 import type { QuestionResult, Question } from "../game/types";
@@ -37,7 +37,7 @@ export function LessonScreen() {
     ? Math.round((activeQuestionIndex / questions.length) * 100)
     : 0;
 
-  const phaseName = trilingualName(phase?.name || '', phase?.nameZh, phase?.nameEs);
+  const phaseName = langName(phase?.name || '', phase?.nameZh, phase?.nameEs, language);
 
   const handleFirstResult = useCallback((result: QuestionResult) => {
     setPointsEarned(prev => prev + result.points);

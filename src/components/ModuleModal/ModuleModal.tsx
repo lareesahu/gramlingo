@@ -9,15 +9,8 @@ import { useAppContext } from '../../app/app-state';
 import { Gramlin } from '../Gramlin/Gramlin';
 import { GAME_DATA } from '../../game/data';
 import { getStrings } from '../../i18n/i18n';
+import { langName } from '../../screens/LearningPathScreen';
 import './ModuleModal.css';
-
-/** Trilingual display that dedupes identical strings (data often has en===zh===es). */
-function trilingualName(primary: string, zh?: string, es?: string): string {
-  const parts = [primary];
-  if (zh && zh.trim() && zh.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(zh.trim());
-  if (es && es.trim() && es.trim().toLowerCase() !== primary.trim().toLowerCase()) parts.push(es.trim());
-  return parts.join(' · ');
-}
 
 interface ModuleModalProps {
   moduleId: string | null;
@@ -123,7 +116,7 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
                   disabled={locked}
                 >
                   <span className="mm-lesson-num">{done ? '✓' : i + 1}</span>
-                  <span className="mm-lesson-name">{trilingualName(phase?.name || pid, phase?.nameZh, phase?.nameEs)}</span>
+                  <span className="mm-lesson-name">{langName(phase?.name || pid, phase?.nameZh, phase?.nameEs, language)}</span>
                   {!hasQuestions && <span className="mm-lesson-status">{s.comingSoon}</span>}
                   {locked && hasQuestions && <span className="mm-lesson-status">{modLocked ? s.lockedByTeacher : s.locked}</span>}
                   {!locked && !done && <span className="mm-lesson-arrow">→</span>}
