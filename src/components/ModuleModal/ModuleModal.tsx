@@ -124,6 +124,14 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
               );
             })}
           </div>
+          <a
+            className="mm-lesson-deck"
+            href={`https://lareesahu.github.io/gramlingo-test/${mod.id}.html`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📖 {s.lessonDeck} →
+          </a>
         </div>
       </div>
     );

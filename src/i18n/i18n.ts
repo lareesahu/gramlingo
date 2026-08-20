@@ -76,6 +76,7 @@ export const EN = {
   optionLabel: "Option",
   comingSoon: "Coming soon",
   lessonPlan: "Lesson plan",
+  lessonDeck: "Lesson deck",
   lockedByTeacher: "Locked by teacher",
 };
 
@@ -153,6 +154,7 @@ export const ZH = {
   optionLabel: "选项",
   comingSoon: "即将推出",
   lessonPlan: "课程计划",
+  lessonDeck: "课件",
   lockedByTeacher: "已被老师锁定",
 };
 
@@ -230,6 +232,7 @@ export const ES = {
   optionLabel: "Opción",
   comingSoon: "Próximamente",
   lessonPlan: "Plan de lecciones",
+  lessonDeck: "Guía de lecciones",
   lockedByTeacher: "Bloqueado por el profesor",
 };
 

@@ -149,3 +149,18 @@
 .mm-lesson-name { flex: 1; min-width: 0; font-weight: 600; color: var(--color-dark, #2d1b10); }
 .mm-lesson-status { font-size: 0.68rem; color: var(--color-muted, #888); }
 .mm-lesson-arrow { color: var(--color-primary, #ff8c42); }
+
+.mm-lesson-deck {
+  display: block;
+  margin-top: 14px;
+  padding: 10px 14px;
+  text-align: center;
+  border-radius: 12px;
+  background: var(--color-primary-ghost, #fff0e6);
+  color: var(--color-primary, #ff8c42);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.mm-lesson-deck:hover { background: var(--color-primary, #ff8c42); color: #fff; transform: translateY(-1px); }
