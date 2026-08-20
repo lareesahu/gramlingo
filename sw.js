@@ -4,7 +4,7 @@
    Versioned — changes to CACHE_VERSION trigger re-cache.
    ═══════════════════════════════════════════════ */
 
-const CACHE_VERSION = 'gramlingo-v8';
+const CACHE_VERSION = 'gramlingo-v5';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 
