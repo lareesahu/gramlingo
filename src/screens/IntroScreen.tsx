@@ -11,25 +11,25 @@ export const INTRO_SEEN_FLAG = 'gramlingo_intro_seen_v1';
 
 const SLIDES = [
   {
-    poster: 1,
+    cover: 'cover-modals.jpg',
     en: 'Learn English by playing',
     cn: '边玩边学英语',
     sub: 'Bite-sized grammar & vocabulary quests — built for exam prep and everyday confidence.',
   },
   {
-    poster: 2,
+    cover: 'cover-tenses.jpg',
     en: 'Answer. Learn. Level up.',
     cn: '作答 · 讲解 · 升级',
     sub: 'Instant feedback and clear explanations on every single question.',
   },
   {
-    poster: 3,
+    cover: 'cover-passive.jpg',
     en: 'Worlds to explore',
     cn: '探索你的世界',
     sub: 'Grammar worlds, plus flashcard decks for verbs, word pairs and word families.',
   },
   {
-    poster: 4,
+    cover: 'cover-advanced.jpg',
     en: 'Your progress, everywhere',
     cn: '进度随身带',
     sub: 'Create an account to sync across devices — or stay local with a PIN.',
@@ -131,9 +131,9 @@ export function IntroScreen({ onDone }: { onDone: () => void }) {
       {/* slides */}
       <div className="intro-slides" style={{ transform: translate }}>
         {SLIDES.map((s) => (
-          <section className="intro-slide" key={s.poster}>
+          <section className="intro-slide" key={s.cover}>
             <img
-              src={`${BASE_URL}assets/intro/poster-${s.poster}.jpg`}
+              src={`${BASE_URL}assets/covers/${s.cover}`}
               alt=""
               draggable={false}
             />
@@ -150,7 +150,7 @@ export function IntroScreen({ onDone }: { onDone: () => void }) {
       {/* dots */}
       <div className="intro-dots" aria-hidden="true">
         {SLIDES.map((s, i) => (
-          <span key={s.poster} className={`intro-dot${i === index ? ' on' : ''}`} />
+          <span key={s.cover} className={`intro-dot${i === index ? ' on' : ''}`} />
         ))}
       </div>
 
