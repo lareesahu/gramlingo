@@ -10,7 +10,7 @@ Pipeline: **fully automated CI on GitHub Actions (free)**. Push a `v*` tag → b
 | Item | State |
 |---|---|
 | Android signing keystore | ✅ Generated (30-yr RSA 2048), backed up |
-| Android CI workflow | ✅ Committed |
+| Android CI workflow | ✅ Verified — signed AAB builds (JDK 21) |
 | iOS CI workflow | ✅ Committed (dormant) |
 | iOS icon set | ✅ Generated (full 18-entry AppIcon set) |
 | Google Play Console | ⏳ **You need to register** ($25 one-time) |
@@ -79,7 +79,7 @@ Version rule: `vMAJOR.MINOR.PATCH` → Android versionCode = `MAJOR*10000 + MINO
 
 ## 5. Local toolchain (this Windows box)
 
-- JDK 17: `C:\Users\hunin\.workbuddy\toolchain\jdk-17.0.20+8`
+- JDK 21 (Capacitor 8 / AGP 8.13 requires it): `C:\Users\hunin\.workbuddy\toolchain\jdk-21.0.9+10`
 - Android SDK: `C:\Users\hunin\.workbuddy\toolchain\android-sdk` (platform 36, build-tools 36, platform-tools)
 - Keystore: `android\keystore\gramlingo-upload.jks` + `android\keystore.properties` (both gitignored)
 - Backups: `C:\Users\hunin\gramlingo-deploy\keystore-backup\`
