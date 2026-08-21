@@ -26,7 +26,7 @@
       (function () {
         var p = location.pathname;
         var frags = ['/app/lesson', '/app/module', '/app/completion', '/app/error-log',
-                     '/app/admin', '/app/flashcard-lesson', '/app'];
+                     '/app/admin', '/app/flashcard-lesson', '/app/login', '/login', '/app'];
         for (var i = 0; i < frags.length; i++) {
           if (p.endsWith(frags[i])) { p = p.slice(0, -frags[i].length); break; }
         }
