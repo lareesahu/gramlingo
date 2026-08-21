@@ -56,12 +56,9 @@ jobs:
           if [ -n "$KEYSTORE_B64" ]; then
             mkdir -p android/keystore
             echo "$KEYSTORE_B64" | base64 -d > android/keystore/gramlingo-upload.jks
-            cat > android/keystore.properties <<EOF
-            storeFile=keystore/gramlingo-upload.jks
-            storePassword=$KEYSTORE_PASSWORD
-            keyAlias=$KEY_ALIAS
-            keyPassword=$KEYSTORE_PASSWORD
-            EOF
+            printf 'storeFile=keystore/gramlingo-upload.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' \
+              "$KEYSTORE_PASSWORD" "$KEY_ALIAS" "$KEYSTORE_PASSWORD" \
+              > android/keystore.properties
           fi
 
       - name: Set version from git tag
