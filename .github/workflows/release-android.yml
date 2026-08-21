@@ -17,6 +17,8 @@ permissions:
 jobs:
   build-android:
     runs-on: ubuntu-latest
+    env:
+      PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
     steps:
       - uses: actions/checkout@v4
 
@@ -90,9 +92,9 @@ jobs:
 
       # Runs only once PLAY_SERVICE_ACCOUNT_JSON exists (set after Play Console registration).
       - name: Upload to Google Play
-        if: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON != '' }}
+        if: ${{ env.PLAY_SERVICE_ACCOUNT_JSON != '' }}
         env:
-          PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          PLAY_SERVICE_ACCOUNT_JSON: ${{ env.PLAY_SERVICE_ACCOUNT_JSON }}
           TRACK: ${{ inputs.track || 'internal' }}
         run: |
           echo "$PLAY_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/play.json"

@@ -13,6 +13,10 @@ permissions:
 jobs:
   build-ios:
     runs-on: macos-latest
+    env:
+      ASC_API_KEY_B64: ${{ secrets.ASC_API_KEY_B64 }}
+      ASC_API_KEY_ID: ${{ secrets.ASC_API_KEY_ID }}
+      ASC_API_ISSUER_ID: ${{ secrets.ASC_API_ISSUER_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -40,9 +44,9 @@ jobs:
           npx cap sync ios
 
       - name: Restore App Store Connect API key
-        if: ${{ secrets.ASC_API_KEY_B64 != '' }}
+        if: ${{ env.ASC_API_KEY_B64 != '' }}
         env:
-          ASC_API_KEY_B64: ${{ secrets.ASC_API_KEY_B64 }}
+          ASC_API_KEY_B64: ${{ env.ASC_API_KEY_B64 }}
         run: |
           mkdir -p ~/.fastlane
           echo "$ASC_API_KEY_B64" | base64 -d > ~/.fastlane/asc-api-key.p8
@@ -70,8 +74,8 @@ jobs:
             MARKETING_VERSION="$VERSION" \
             CURRENT_PROJECT_VERSION="${{ github.run_number }}" \
             -authenticationKeyPath ~/.fastlane/asc-api-key.p8 \
-            -authenticationKeyID "${{ secrets.ASC_API_KEY_ID }}" \
-            -authenticationKeyIssuerID "${{ secrets.ASC_API_ISSUER_ID }}"
+            -authenticationKeyID "${{ env.ASC_API_KEY_ID }}" \
+            -authenticationKeyIssuerID "${{ env.ASC_API_ISSUER_ID }}"
 
       - name: Export IPA
         run: |
@@ -94,10 +98,10 @@ jobs:
 
       # Uploads to TestFlight only when ASC_API_KEY_* secrets exist.
       - name: Upload to TestFlight
-        if: ${{ secrets.ASC_API_KEY_B64 != '' }}
+        if: ${{ env.ASC_API_KEY_B64 != '' }}
         env:
-          ASC_API_KEY_ID: ${{ secrets.ASC_API_KEY_ID }}
-          ASC_API_ISSUER_ID: ${{ secrets.ASC_API_ISSUER_ID }}
+          ASC_API_KEY_ID: ${{ env.ASC_API_KEY_ID }}
+          ASC_API_ISSUER_ID: ${{ env.ASC_API_ISSUER_ID }}
         run: |
           gem install fastlane --no-document --silent
           cd ios/App
