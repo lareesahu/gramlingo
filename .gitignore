@@ -15,3 +15,6 @@ android/.gradle
 android/capacitor-cordova-android-plugins
 ios/App/Pods
 ios/App/build
+# Signing — never commit
+android/keystore/
+android/keystore.properties

@@ -1,0 +1,105 @@
+name: Release Android
+
+# Triggers: push a tag like v1.2.3, or run manually.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      track:
+        description: 'Play Console track to upload to (internal | alpha | beta | production)'
+        required: false
+        default: 'internal'
+
+permissions:
+  contents: read
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Restore web app env
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          echo "VITE_SUPABASE_URL=$SUPABASE_URL" > .env.local
+          echo "VITE_SUPABASE_PUBLISHABLE_KEY=$SUPABASE_KEY" >> .env.local
+
+      - name: Install deps, build web, sync Capacitor
+        run: |
+          npm ci
+          npm run build:mobile
+          npx cap sync android
+
+      - name: Write signing keystore from secrets
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            mkdir -p android/keystore
+            echo "$KEYSTORE_B64" | base64 -d > android/keystore/gramlingo-upload.jks
+            cat > android/keystore.properties <<EOF
+            storeFile=keystore/gramlingo-upload.jks
+            storePassword=$KEYSTORE_PASSWORD
+            keyAlias=$KEY_ALIAS
+            keyPassword=$KEYSTORE_PASSWORD
+            EOF
+          fi
+
+      - name: Set version from git tag
+        id: version
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          V="${V%%-*}"
+          if [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            MAJOR="${V%%.*}"; REST="${V#*.}"
+            MINOR="${REST%%.*}"; PATCH="${REST#*.}"
+            echo "VERSION_NAME=$V" >> "$GITHUB_ENV"
+            echo "VERSION_CODE=$(( MAJOR * 10000 + MINOR * 100 + PATCH ))" >> "$GITHUB_ENV"
+          else
+            echo "VERSION_NAME=1.0.0" >> "$GITHUB_ENV"
+            echo "VERSION_CODE=10000" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build signed release AAB
+        working-directory: android
+        run: ./gradlew bundleRelease
+
+      - name: Upload AAB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gramlingo-app-release.aab
+          path: android/app/build/outputs/bundle/release/app-release.aab
+          retention-days: 90
+
+      # Runs only once PLAY_SERVICE_ACCOUNT_JSON exists (set after Play Console registration).
+      - name: Upload to Google Play
+        if: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON != '' }}
+        env:
+          PLAY_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_SERVICE_ACCOUNT_JSON }}
+          TRACK: ${{ inputs.track || 'internal' }}
+        run: |
+          echo "$PLAY_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/play.json"
+          gem install fastlane --no-document --silent
+          cd android
+          fastlane supply \
+            --aab app/build/outputs/bundle/release/app-release.aab \
+            --json_key "$RUNNER_TEMP/play.json" \
+            --package_name com.gramlingo.app \
+            --track "$TRACK"

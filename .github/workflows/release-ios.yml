@@ -1,0 +1,109 @@
+name: Release iOS
+
+# DORMANT until an Apple Developer account + App Store Connect API key exist.
+# macOS runners are FREE here because lareesahu/gramlingo is a PUBLIC repo.
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Restore web app env
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          echo "VITE_SUPABASE_URL=$SUPABASE_URL" > .env.local
+          echo "VITE_SUPABASE_PUBLISHABLE_KEY=$SUPABASE_KEY" >> .env.local
+
+      - name: Install deps, build web, sync Capacitor
+        run: |
+          npm ci
+          npm run build:mobile
+          npx cap sync ios
+
+      - name: Restore App Store Connect API key
+        if: ${{ secrets.ASC_API_KEY_B64 != '' }}
+        env:
+          ASC_API_KEY_B64: ${{ secrets.ASC_API_KEY_B64 }}
+        run: |
+          mkdir -p ~/.fastlane
+          echo "$ASC_API_KEY_B64" | base64 -d > ~/.fastlane/asc-api-key.p8
+          chmod 600 ~/.fastlane/asc-api-key.p8
+
+      - name: Set version from git tag
+        id: version
+        run: |
+          V="${GITHUB_REF_NAME#v}"
+          V="${V%%-*}"
+          if [[ "$V" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "VERSION=$V" >> "$GITHUB_ENV"
+          else
+            echo "VERSION=1.0.0" >> "$GITHUB_ENV"
+          fi
+
+      - name: Archive app (App Store build)
+        working-directory: ios/App
+        run: |
+          xcodebuild -project App.xcodeproj -scheme App -configuration Release \
+            -archivePath "$RUNNER_TEMP/GramLingo.xcarchive" archive \
+            -allowProvisioningUpdates \
+            DEVELOPMENT_TEAM="${{ secrets.IOS_TEAM_ID }}" \
+            CODE_SIGN_STYLE=Automatic \
+            MARKETING_VERSION="$VERSION" \
+            CURRENT_PROJECT_VERSION="${{ github.run_number }}" \
+            -authenticationKeyPath ~/.fastlane/asc-api-key.p8 \
+            -authenticationKeyID "${{ secrets.ASC_API_KEY_ID }}" \
+            -authenticationKeyIssuerID "${{ secrets.ASC_API_ISSUER_ID }}"
+
+      - name: Export IPA
+        run: |
+          plutil -create xml1 "$RUNNER_TEMP/ExportOptions.plist"
+          plutil -insert method -string app-store "$RUNNER_TEMP/ExportOptions.plist"
+          plutil -insert teamID -string "${{ secrets.IOS_TEAM_ID }}" "$RUNNER_TEMP/ExportOptions.plist"
+          plutil -insert signingStyle -string automatic "$RUNNER_TEMP/ExportOptions.plist"
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/GramLingo.xcarchive" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -allowProvisioningUpdates
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GramLingo.ipa
+          path: ${{ runner.temp }}/export/*.ipa
+          retention-days: 90
+
+      # Uploads to TestFlight only when ASC_API_KEY_* secrets exist.
+      - name: Upload to TestFlight
+        if: ${{ secrets.ASC_API_KEY_B64 != '' }}
+        env:
+          ASC_API_KEY_ID: ${{ secrets.ASC_API_KEY_ID }}
+          ASC_API_ISSUER_ID: ${{ secrets.ASC_API_ISSUER_ID }}
+        run: |
+          gem install fastlane --no-document --silent
+          cd ios/App
+          fastlane pilot upload \
+            --ipa "$RUNNER_TEMP/export/GramLingo.ipa" \
+            --api_key_path ~/.fastlane/asc-api-key.p8 \
+            --api_key_id "$ASC_API_KEY_ID" \
+            --api_issuer_id "$ASC_API_ISSUER_ID" \
+            --distribute_only true
