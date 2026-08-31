@@ -134,6 +134,7 @@ export type Panel = "grammar" | "flashcards" | "context";
 export type Screen =
   | "loading"
   | "welcome"
+  | "login"
   | "learning-path"
   | "module"
   | "lesson"

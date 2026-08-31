@@ -8,7 +8,7 @@ import { Button } from "../components/Button/Button";
 import { Gramlin } from "../components/Gramlin/Gramlin";
 import { AuthScreen } from "../components/AuthScreen/AuthScreen";
 import { useDragScroll } from "../hooks/useDragScroll";
-import { GAME_DATA } from "../game/data";
+import { GAME_DATA, GAME_STATS } from "../game/data";
 import { getStrings } from "../i18n/i18n";
 import "./WelcomeScreen.css";
 
@@ -16,8 +16,8 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 const CATCHPHRASES = [
   "Grammar Quest — Learn by playing",
-  "Your friendly grammar gremlin is ready!",
-  `${GAME_DATA.phases.filter(p => p.q.length > 0).length} phases. ${GAME_DATA.phases.reduce((t, p) => t + p.q.length, 0)} questions. Endless confidence.`,
+  "Your friendly grammar Gramlin is ready!",
+  `${GAME_STATS.phases} phases. ${GAME_STATS.questions} questions. Endless confidence.`,
 ];
 
 const CATCHPHRASE_INTERVAL = 3000;
@@ -28,12 +28,12 @@ const STEPS = [
   { pose: "celebrate" as const, title: "Level Up", desc: "Earn stars, unlock phases, and watch your grammar confidence grow." },
 ];
 
-export function WelcomeScreen() {
+export function WelcomeScreen({ autoAuth = false }: { autoAuth?: boolean }) {
   const { language, cloudRecoveryPending } = useAppContext();
   const s = getStrings(language);
   const isZh = language === 'zh';
 
-  const [showAuth, setShowAuth] = useState(false);
+  const [showAuth, setShowAuth] = useState(autoAuth);
   const [catchIdx, setCatchIdx] = useState(0);
   const galleryRef = useRef<HTMLDivElement>(null);
   const dragScroll = useDragScroll<HTMLDivElement>();
@@ -115,7 +115,7 @@ export function WelcomeScreen() {
       {/* ── Bottom CTA ── */}
       <section className="bottom-cta">
         <h2>Ready to master grammar?</h2>
-        <p>{GAME_DATA.phases.filter(p => p.q.length > 0).length} phases. {GAME_DATA.phases.reduce((t, p) => t + p.q.length, 0)} hand-crafted questions.</p>
+        <p>{GAME_STATS.phases} phases. {GAME_STATS.questions} hand-crafted questions.</p>
         <Button size="lg" onClick={() => setShowAuth(true)}>
           {s.startLearning}
         </Button>

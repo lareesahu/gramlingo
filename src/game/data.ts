@@ -58,3 +58,9 @@ export const GAME_DATA: GameData = {
   phaseLockOrder: rawData.phaseLockOrder || {},
   phases: adaptPhases(rawData.phases || []),
 };
+
+/** Derived stats: playable phases (with questions) and total question count. */
+export const GAME_STATS = {
+  phases: GAME_DATA.phases.filter(p => p.q.length > 0).length,
+  questions: GAME_DATA.phases.reduce((t, p) => t + p.q.length, 0),
+};

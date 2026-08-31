@@ -96,7 +96,7 @@
 }
 
 /* ── Back (expanded) ── */
-.fcls-back {
+.fcls-expanded {
   margin-top: var(--space-3); padding-top: var(--space-3);
   border-top: 1px solid var(--color-border-light);
   display: flex; flex-direction: column; gap: 4px;

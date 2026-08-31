@@ -13,7 +13,9 @@ import type { Screen } from '../game/types';
 /** Path → screen map for the URL router. */
 export const PATH_SCREENS: Record<string, Screen> = {
   '/': 'welcome',
+  '/login': 'login',
   '/app': 'learning-path',
+  '/app/login': 'login',
   '/app/module': 'module',
   '/app/lesson': 'lesson',
   '/app/completion': 'completion',
@@ -54,6 +56,7 @@ export function pathToScreen(path: string): Screen {
 export function screenToPath(screen: Screen): string {
   switch (screen) {
     case 'welcome': return '/';
+    case 'login': return '/login';
     case 'learning-path': return '/app';
     case 'module': return '/app/module';
     case 'lesson': return '/app/lesson';

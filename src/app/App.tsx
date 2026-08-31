@@ -23,26 +23,33 @@ const LOAD_DURATION = 1500;
 export function App() {
   const { screen, currentUser, navigateTo, cloudEnabled } = useAppContext();
   const [introSeen, setIntroSeen] = useState<boolean>(introAlreadySeen);
+  // Deep-linked /login skips the intro — the landing CTA promises direct login.
+  const [skipIntroOnce] = useState<boolean>(() => typeof window !== 'undefined' && window.location.pathname === '/login');
+
+  // Logged-in users landing on /login go straight to the learning path.
+  useEffect(() => {
+    if (screen === 'login' && currentUser) navigateTo('learning-path');
+  }, [screen, currentUser, navigateTo]);
 
   // URL ↔ screen sync (subdomain-aware; landing at /, app at /app, lessons at /app/lesson)
   useUrlSync(screen, navigateTo);
 
-  // First-launch journey: full-screen poster slideshow, shown ONCE, then the app.
-  if (!introSeen) {
-    return <IntroScreen onDone={() => setIntroSeen(true)} />;
+  // First-launch journey: full-screen poster slideshow, shown ONCE, then the login screen.
+  if (!introSeen && !skipIntroOnce) {
+    return <IntroScreen onDone={() => { setIntroSeen(true); navigateTo('login'); }} />;
   }
 
-  // Loading screen mount: show 1.5s on first visit, then route to welcome
+  // Loading screen mount: show 1.5s on first visit, then route to login
   useEffect(() => {
     if (screen === 'loading' && !cloudEnabled) {
       const alreadyLoaded = localStorage.getItem(LOADED_FLAG);
       if (alreadyLoaded) {
-        navigateTo('welcome');
+        navigateTo('login');
         return;
       }
       const timer = setTimeout(() => {
         localStorage.setItem(LOADED_FLAG, 'true');
-        navigateTo('welcome');
+        navigateTo('login');
       }, LOAD_DURATION);
       return () => clearTimeout(timer);
     }
@@ -53,13 +60,16 @@ export function App() {
     return <LoadingScreen />;
   }
 
-  if (!currentUser && screen !== 'welcome') {
+  if (!currentUser && screen !== 'welcome' && screen !== 'login') {
     return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
   }
 
   switch (screen) {
     case 'welcome':
       return <AppShell showNav={false}><WelcomeScreen /></AppShell>;
+
+    case 'login':
+      return <AppShell showNav={false}><WelcomeScreen autoAuth /></AppShell>;
 
     case 'learning-path':
           return <AppShell><LearningPathScreen /></AppShell>;

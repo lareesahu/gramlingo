@@ -26,6 +26,11 @@ import {
 const STORAGE_KEY = 'gramlingo_state';
 const USER_STATE_PREFIX = 'gramlingo_user_state:';
 
+/** Deep-linked /login (landing CTA) — safe in SSR (no window access when absent). */
+function isLoginDeepLink(): boolean {
+  return typeof window !== 'undefined' && window.location.pathname === '/login';
+}
+
 type PersistedUserState = UserProgressState;
 
 function loadState(): Partial<AppState> | null {
@@ -96,8 +101,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
   // Never restore transient screens (lesson, loading state requires live context)
   // First visit: show loading screen. Returning visitor with saved state: restore.
   const restoredScreen = saved?.screen === 'module' ? 'learning-path' : saved?.screen;
+  // Deep-link /login must win over restored state — landing CTA lands users here.
+  const urlLogin = isLoginDeepLink();
   const initialScreen: Screen = cloudEnabled
-    ? 'loading'
+    ? (urlLogin ? 'login' : 'loading')
+    : urlLogin
+    ? 'login'
     : saved === null
     ? 'loading'
     : (restoredScreen && restoredScreen !== 'lesson' && restoredScreen !== 'loading') ? restoredScreen : 'welcome';
@@ -158,7 +167,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
           setCurrentUser(null);
           setIsAdmin(false);
           applyUserState(null);
-          setScreen('welcome');
+          // Deep-linked /login must stay on the login screen, not bounce to welcome.
+          setScreen('login');
           setCloudSyncStatus('synced');
           return;
         }
@@ -176,7 +186,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setCurrentUser(null);
         setIsAdmin(false);
         applyUserState(null);
-        setScreen('welcome');
+        setScreen('login');
       });
 
     // Hard timeout: if restoreCloudIdentity() hangs (e.g. Supabase down), the
@@ -187,7 +197,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setCurrentUser(null);
         setIsAdmin(false);
         applyUserState(null);
-        setScreen('welcome');
+        setScreen('login');
       }
     }, 8000);
 

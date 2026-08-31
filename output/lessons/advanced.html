@@ -1,160 +1,164 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 12 · Advanced Expressions — GramLingo 语法课件</title>
-<style>
-:root{
-  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
-  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
-  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
-}
-.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
-
-/* cover */
-.cover{
-  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
-  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
-  position:relative;overflow:hidden;
-}
-.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:min(260px,38vw);height:min(260px,38vw);border-radius:50%;background:rgba(255,255,255,.10)}
-.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
-.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
-.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
-.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
-.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
-.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
-.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
-
-/* toc */
-.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
-.toc .wrap::-webkit-scrollbar{display:none}
-.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
-.toc a:hover{border-color:var(--accent);color:var(--accent)}
-.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
-
-/* sections */
-main{padding:clamp(24px,5vw,44px) 0 20px}
-.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
-.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
-.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
-.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
-.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
-
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
-.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.concept{font-size:clamp(14.5px,2.6vw,16px)}
-.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
-
-.rules{display:grid;gap:0}
-.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
-.rule:last-child{border-bottom:0}
-.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
-.rule .en{font-size:14.5px}
-.rule .zh{color:var(--ink2);font-size:13.5px}
-
-.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
-.ex .en{font-weight:600;font-size:14.5px}
-.ex .zh{color:var(--ink2);font-size:13.5px}
-
-.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
-.mistakes h3{color:var(--warn)}
-.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
-.mistake:last-child{border-bottom:0}
-.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
-
-/* practice */
-.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
-.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
-.practice details summary::-webkit-details-marker{display:none}
-.practice details[open] summary{border-bottom:1px dashed var(--line)}
-.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
-.practice .qtext{font-size:14.5px;font-weight:600}
-.practice .opts{padding:8px 16px 14px}
-.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
-.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
-.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
-.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
-
-/* footer */
-footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
-.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
-.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
-.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
-.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
-.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
-.credit{font-size:12.5px;color:var(--ink2);text-align:center}
-.credit a{color:var(--accent);text-decoration:none;font-weight:600}
-.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
-
-@media print{
-  .toc,footer .nav-prev-next,.toplink{display:none}
-  body{background:#fff}
-  .cover{border-radius:0}
-  .phase{page-break-inside:avoid}
-}
-@media (max-width:640px){
-  .rule{grid-template-columns:1fr}
-  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
-  .objectives{grid-template-columns:1fr}
-}
-</style>
+<title>Module 12 · Advanced Expressions — GramLingo Lessons / 语法课件</title>
+<link rel="stylesheet" href="lessons.css">
 </head>
 <body data-accent="#A61E4D">
+<nav class="lesson-nav" aria-label="Primary navigation">
+  <a class="lesson-brand" href="index.html"><img src="assets/gramlingo-logo.webp" alt="GramLingo"></a>
+  <div class="lesson-nav-links">
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-worlds">Worlds / 世界</a>
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-how">How it works / 如何学习</a>
+    <a class="lesson-nav-link lesson-nav-link--active" href="index.html">Lessons / 课件</a>
+    <a class="lesson-nav-link lesson-nav-link--cta" href="https://app.gramlingo.online">Start the quest / 开始冒险</a>
+  </div>
+</nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo 语法课件 · Module 12 / 12</div>
+    <div class="kicker">GramLingo · Module 12 / 12 · 模块 12 / 12</div>
     <h1>🚀 Advanced Expressions<span class="zh">高级表达</span></h1>
+    <img class="cover-art" src="assets/covers/cover-advanced.webp" alt="" loading="eager">
     <div class="desc">Use emphasis, inversion, register, compression, and idiomatic grammar in context.<span class="zh">在语境中运用强调、倒装、语域、省略与地道语法。</span></div>
-    <div class="objectives"><div><b>目标 1</b>Add emphasis with fronting and emphatic auxiliaries · 用前置与强调助动词增加强调</div><div><b>目标 2</b>Use inversion after negative adverbs · 否定副词后用倒装</div><div><b>目标 3</b>Use substitution and ellipsis to avoid repetition · 用替代与省略避免重复</div><div><b>目标 4</b>Choose formal vs informal grammar · 区分正式与非正式语法</div><div><b>目标 5</b>Use nominalisation and hedging for academic style · 用名词化与模糊限制语实现学术风格</div></div>
+    <div class="objectives"><div><b>Objective 1 目标</b>Add emphasis with fronting and emphatic auxiliaries · 用前置与强调助动词增加强调</div><div><b>Objective 2 目标</b>Use inversion after negative adverbs · 否定副词后用倒装</div><div><b>Objective 3 目标</b>Use substitution and ellipsis to avoid repetition · 用替代与省略避免重复</div><div><b>Objective 4 目标</b>Choose formal vs informal grammar · 区分正式与非正式语法</div><div><b>Objective 5 目标</b>Use nominalisation and hedging for academic style · 用名词化与模糊限制语实现学术风格</div></div>
   </div>
 </header>
-<nav class="toc"><div class="wrap"><a href="#advanced_emphasis">01. Emphasis</a><a href="#advanced_inversion">02. Inversion</a><a href="#advanced_substitution">03. Substitution and Ellipsis</a><a href="#advanced_register">04. Register</a><a href="#advanced_cohesion">05. Cohesion</a><a href="#advanced_nominalisation">06. Nominalisation</a><a href="#advanced_hedging">07. Hedging and Stance</a><a href="#advanced_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<nav class="toc"><div class="wrap"><a href="#advanced_emphasis">01. Emphasis / 强调</a><a href="#advanced_inversion">02. Inversion / 倒装</a><a href="#advanced_substitution">03. Substitution and Ellipsis / 替代与省略</a><a href="#advanced_register">04. Register / 语域</a><a href="#advanced_cohesion">05. Cohesion / 衔接</a><a href="#advanced_nominalisation">06. Nominalisation / 名词化</a><a href="#advanced_hedging">07. Hedging and Stance / 模糊限制与立场</a><a href="#advanced_prod">08. Production and Editing / 综合运用与改错</a><a href="#practice">Practice 练习</a></div></nav>
 <main class="wrap">
-  ['\n      <section class="phase" id="advanced_emphasis">\n        <div class="phase-head">\n          <span class="phase-num">12-01</span>\n          <h2>Emphasis</h2>\n          <span class="zh">强调</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Emphasize with: fronting (move key words to the front), emphatic do (do/did + base), and cleft structures.<span class="zh">强调手法：前置（把关键词移到句首）、强调 do（do/did + 原形）、强调句。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>前置</b><div class="en">Never have I seen such a view. / That I know for sure.</div><div class="zh">前置：我从未见过这样的景色。/ 这个我确定知道。</div></div><div class="rule"><b>强调 do</b><div class="en">I do like your idea. / She did call you.</div><div class="zh">强调 do：我确实喜欢你的主意。/ 她确实给你打了电话。</div></div><div class="rule"><b>强调句</b><div class="en">It was the price that surprised me.</div><div class="zh">是价格让我惊讶。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">What really matters is your health.</div><div class="zh">真正重要的是你的健康。</div></div><div class="ex"><div class="en">He did finish the report on time.</div><div class="zh">他确实按时完成了报告。</div></div><div class="ex"><div class="en">Never in my life have I felt so happy.</div><div class="zh">我一生中从未如此快乐。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Do I like your idea (question) vs I do like it (emphasis).<span class="zh">❌ 注意语序：强调 do 不放句首。</span></div><div class="mistake">❌ Overusing emphasis weakens writing — use it sparingly.<span class="zh">❌ 强调要节制使用。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_inversion">\n        <div class="phase-head">\n          <span class="phase-num">12-02</span>\n          <h2>Inversion</h2>\n          <span class="zh">倒装</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">After negative or restrictive adverbs (never, rarely, hardly, not only, no sooner), the subject and auxiliary invert: Never have I... Conditionals can drop if with inversion: Had I known...<span class="zh">否定或限制性副词（never、rarely、hardly、not only、no sooner）后主谓倒装：Never have I...；条件句可省略 if 用倒装：Had I known...</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>否定副词</b><div class="en">Never have I seen that. / Rarely does she complain.</div><div class="zh">否定副词倒装：我从未见过。/ 她很少抱怨。</div></div><div class="rule"><b>虚拟倒装</b><div class="en">Had I known, I would have come. (= If I had known)</div><div class="zh">虚拟倒装：要是我知道，我就来了。</div></div><div class="rule"><b>Not only...but</b><div class="en">Not only did he apologize, but he also offered help.</div><div class="zh">Not only 倒装：他不仅道歉，还主动帮忙。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Hardly had we left when it started to rain.</div><div class="zh">我们刚离开就开始下雨了。</div></div><div class="ex"><div class="en">Never before had she felt so confident.</div><div class="zh">她从未如此自信。</div></div><div class="ex"><div class="en">Should you need help, please call me.</div><div class="zh">如果你需要帮助，请给我打电话。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Never I have seen → inversion: Never have I seen.<span class="zh">❌ 否定副词后要倒装。</span></div><div class="mistake">❌ If I had known... would have come → with inversion: Had I known... (no if).<span class="zh">❌ 倒装时去掉 if。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_substitution">\n        <div class="phase-head">\n          <span class="phase-num">12-03</span>\n          <h2>Substitution and Ellipsis</h2>\n          <span class="zh">替代与省略</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Avoid repetition: so/not replace clauses (I think so), do so replaces a verb phrase, ellipsis leaves shared words out in the second half.<span class="zh">避免重复：so/not 替代从句（I think so）、do so 替代动词短语、后半句省略共有词。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>so/not</b><div class="en">Will it rain? I hope not. / I think so.</div><div class="zh">so/not 替代：会下雨吗？我希望不会。/ 我想是的。</div></div><div class="rule"><b>do so</b><div class="en">She said she would call, and she did so.</div><div class="zh">do so 替代：她说会打电话，她也确实打了。</div></div><div class="rule"><b>省略</b><div class="en">I like tea and she (likes) coffee.</div><div class="zh">省略：我喜欢茶，她（喜欢）咖啡。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Are you coming? I believe so.</div><div class="zh">你来吗？我想是的。</div></div><div class="ex"><div class="en">He promised to help, and he did.</div><div class="zh">他答应帮忙，也确实帮了。</div></div><div class="ex"><div class="en">She sings better than anyone else (sings).</div><div class="zh">她比任何人都唱得好。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I think yes (non-standard) → I think so.<span class="zh">❌ 标准表达是 I think so。</span></div><div class="mistake">❌ Over-ellipsis can confuse — keep enough context.<span class="zh">❌ 省略过多会造成歧义。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_register">\n        <div class="phase-head">\n          <span class="phase-num">12-04</span>\n          <h2>Register</h2>\n          <span class="zh">语域</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Formal writing prefers full forms, passive voice, and precise connectors; informal speech uses contractions, phrasal verbs, and simple connectors.<span class="zh">正式写作用完整形式、被动语态和精确连接词；非正式口语用缩略形式、短语动词和简单连接词。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>正式</b><div class="en">The meeting has been postponed due to unforeseen circumstances.</div><div class="zh">正式：会议因不可预见的情况被推迟。</div></div><div class="rule"><b>非正式</b><div class="en">The meeting is put off because something came up.</div><div class="zh">非正式：会议推迟了，因为出了点事。</div></div><div class="rule"><b>选择</b><div class="en">Match the register to the audience: essays and emails to bosses = formal.</div><div class="zh">按受众选择：论文和给上司的邮件用正式语。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">We regret to inform you that... (formal)</div><div class="zh">我们遗憾地通知您……（正式）</div></div><div class="ex"><div class="en">Sorry, but... (informal)</div><div class="zh">抱歉，不过……（非正式）</div></div><div class="ex"><div class="en">The experiment was conducted over three months. (formal)</div><div class="zh">实验历时三个月。（正式）</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Using slang in academic writing weakens it.<span class="zh">❌ 学术写作慎用俚语。</span></div><div class="mistake">❌ Mixing registers in one document confuses readers.<span class="zh">❌ 一篇文章内语域要统一。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_cohesion">\n        <div class="phase-head">\n          <span class="phase-num">12-05</span>\n          <h2>Cohesion</h2>\n          <span class="zh">衔接</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Cohesion ties sentences together: reference (it, they, this), substitution (so, one), discourse markers (however, therefore, in addition).<span class="zh">衔接手段把句子串起来：指代（it、they、this）、替代（so、one）、话语标记（however、therefore、in addition）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>指代</b><div class="en">The plan was good. However, it had one problem.</div><div class="zh">指代：计划很好，但它有一个问题。</div></div><div class="rule"><b>替代</b><div class="en">I wanted the blue one, not the red one.</div><div class="zh">替代：我要蓝色的那个，不是红色的。</div></div><div class="rule"><b>话语标记</b><div class="en">In addition, the cost is low. / Therefore, we agreed.</div><div class="zh">标记：此外，成本很低。/ 因此我们同意了。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The team trained hard. As a result, they won.</div><div class="zh">团队训练刻苦，结果他们赢了。</div></div><div class="ex"><div class="en">She offered a plan, and he accepted it.</div><div class="zh">她提出了一个计划，他接受了。</div></div><div class="ex"><div class="en">First, prepare the tools. Then, start the work.</div><div class="zh">首先准备工具，然后开始工作。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Unclear it: The dog chased the cat. It was hungry. (which one?)<span class="zh">❌ 指代不明会造成歧义。</span></div><div class="mistake">❌ Overusing connectors makes writing mechanical.<span class="zh">❌ 连接词过多会显得机械。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_nominalisation">\n        <div class="phase-head">\n          <span class="phase-num">12-06</span>\n          <h2>Nominalisation</h2>\n          <span class="zh">名词化</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Turn verbs and adjectives into nouns: decide → decision, improve → improvement, important → importance. Common in academic and formal writing.<span class="zh">把动词和形容词变成名词：decide → decision、improve → improvement、important → importance。常见于学术与正式写作。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>转换</b><div class="en">verb → noun: We decided → Our decision...</div><div class="zh">动词转名词：我们决定 → 我们的决定……</div></div><div class="rule"><b>用途</b><div class="en">compresses ideas and sounds formal: The improvement of service...</div><div class="zh">压缩表达、更正式：服务的改善……</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Their arrival surprised everyone.</div><div class="zh">他们的到来让所有人惊讶。</div></div><div class="ex"><div class="en">The development of the city was rapid.</div><div class="zh">城市的发展非常迅速。</div></div><div class="ex"><div class="en">Her success came from hard work.</div><div class="zh">她的成功来自努力。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Over-nominalisation makes sentences heavy: use verbs when clarity matters.<span class="zh">❌ 名词化过度会让句子笨重。</span></div><div class="mistake">❌ The decision was decided → redundant: The decision was made.<span class="zh">❌ 避免同源重复。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_hedging">\n        <div class="phase-head">\n          <span class="phase-num">12-07</span>\n          <h2>Hedging and Stance</h2>\n          <span class="zh">模糊限制与立场</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Hedging softens claims: seem, appear, tend to, it is likely that, may/might, arguably. Stance shows your position: clearly, surprisingly, importantly.<span class="zh">模糊限制语软化断言：seem、appear、tend to、it is likely that、may/might、arguably。立场词表明态度：clearly、surprisingly、importantly。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>模糊限制</b><div class="en">It is likely that prices will rise.</div><div class="zh">价格可能会上涨。</div></div><div class="rule"><b>委婉</b><div class="en">This seems to be a good solution.</div><div class="zh">这似乎是一个好方案。</div></div><div class="rule"><b>立场</b><div class="en">Clearly, more research is needed.</div><div class="zh">显然，还需要更多研究。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The results appear to support the theory.</div><div class="zh">结果似乎支持这一理论。</div></div><div class="ex"><div class="en">There may be some risks involved.</div><div class="zh">可能涉及一些风险。</div></div><div class="ex"><div class="en">Interestingly, the opposite happened.</div><div class="zh">有趣的是，结果恰恰相反。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Hedging too much sounds weak: use strong verbs for real certainty.<span class="zh">❌ 过度模糊会显得缺乏自信。</span></div><div class="mistake">❌ Unhedged absolute claims in academic writing: \'This proves...\' → \'This suggests...\'.<span class="zh">❌ 学术写作中绝对断言要软化。</span></div></div>\n      </section>', '\n      <section class="phase" id="advanced_prod">\n        <div class="phase-head">\n          <span class="phase-num">12-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Write with advanced grammar in context: add emphasis where needed, invert for style, nominalise for formality, hedge for accuracy, and keep cohesion.<span class="zh">在语境中使用高级语法：需要强调处强调、为风格倒装、为正式名词化、为准确模糊化，并保持衔接。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>风格匹配</b><div class="en">Match advanced structures to the text type: essay → nominalisation + hedging; speech → emphasis + fronting.</div><div class="zh">高级结构要匹配文体：论文用名词化+模糊限制；演讲用强调+前置。</div></div><div class="rule"><b>适度</b><div class="en">Advanced grammar adds power only when used naturally.</div><div class="zh">高级语法只有用得自然才有力量。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Never have I seen such dedication. (inversion for emphasis)</div><div class="zh">我从未见过如此投入。（倒装强调）</div></div><div class="ex"><div class="en">The company\'s growth was remarkable. (nominalisation)</div><div class="zh">公司的增长非常显著。（名词化）</div></div><div class="ex"><div class="en">It could be argued that the benefits outweigh the costs. (hedging)</div><div class="zh">可以说利大于弊。（模糊限制）</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Using inversion or cleft sentences in every sentence — too theatrical.<span class="zh">❌ 每句都倒装会太戏剧化。</span></div><div class="mistake">❌ Formal words in spoken chat sound unnatural — know your audience.<span class="zh">❌ 口语中用太正式的词会不自然。</span></div></div>\n      </section>']
+  
+      <section class="phase" id="advanced_emphasis">
+        <div class="phase-head">
+          <span class="phase-num">12-01</span>
+          <h2>Emphasis</h2>
+          <span class="zh">强调</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Emphasize with: fronting (move key words to the front), emphatic do (do/did + base), and cleft structures.<span class="zh">强调手法：前置（把关键词移到句首）、强调 do（do/did + 原形）、强调句。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>前置</b><div class="en">Never have I seen such a view. / That I know for sure.</div><div class="zh">前置：我从未见过这样的景色。/ 这个我确定知道。</div></div><div class="rule"><b>强调 do</b><div class="en">I do like your idea. / She did call you.</div><div class="zh">强调 do：我确实喜欢你的主意。/ 她确实给你打了电话。</div></div><div class="rule"><b>强调句</b><div class="en">It was the price that surprised me.</div><div class="zh">是价格让我惊讶。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">What really matters is your health.</div><div class="zh">真正重要的是你的健康。</div></div><div class="ex"><div class="en">He did finish the report on time.</div><div class="zh">他确实按时完成了报告。</div></div><div class="ex"><div class="en">Never in my life have I felt so happy.</div><div class="zh">我一生中从未如此快乐。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Do I like your idea (question) vs I do like it (emphasis).<span class="zh">❌ 注意语序：强调 do 不放句首。</span></div><div class="mistake">❌ Overusing emphasis weakens writing — use it sparingly.<span class="zh">❌ 强调要节制使用。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_inversion">
+        <div class="phase-head">
+          <span class="phase-num">12-02</span>
+          <h2>Inversion</h2>
+          <span class="zh">倒装</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">After negative or restrictive adverbs (never, rarely, hardly, not only, no sooner), the subject and auxiliary invert: Never have I... Conditionals can drop if with inversion: Had I known...<span class="zh">否定或限制性副词（never、rarely、hardly、not only、no sooner）后主谓倒装：Never have I...；条件句可省略 if 用倒装：Had I known...</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>否定副词</b><div class="en">Never have I seen that. / Rarely does she complain.</div><div class="zh">否定副词倒装：我从未见过。/ 她很少抱怨。</div></div><div class="rule"><b>虚拟倒装</b><div class="en">Had I known, I would have come. (= If I had known)</div><div class="zh">虚拟倒装：要是我知道，我就来了。</div></div><div class="rule"><b>Not only...but</b><div class="en">Not only did he apologize, but he also offered help.</div><div class="zh">Not only 倒装：他不仅道歉，还主动帮忙。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Hardly had we left when it started to rain.</div><div class="zh">我们刚离开就开始下雨了。</div></div><div class="ex"><div class="en">Never before had she felt so confident.</div><div class="zh">她从未如此自信。</div></div><div class="ex"><div class="en">Should you need help, please call me.</div><div class="zh">如果你需要帮助，请给我打电话。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Never I have seen → inversion: Never have I seen.<span class="zh">❌ 否定副词后要倒装。</span></div><div class="mistake">❌ If I had known... would have come → with inversion: Had I known... (no if).<span class="zh">❌ 倒装时去掉 if。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_substitution">
+        <div class="phase-head">
+          <span class="phase-num">12-03</span>
+          <h2>Substitution and Ellipsis</h2>
+          <span class="zh">替代与省略</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Avoid repetition: so/not replace clauses (I think so), do so replaces a verb phrase, ellipsis leaves shared words out in the second half.<span class="zh">避免重复：so/not 替代从句（I think so）、do so 替代动词短语、后半句省略共有词。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>so/not</b><div class="en">Will it rain? I hope not. / I think so.</div><div class="zh">so/not 替代：会下雨吗？我希望不会。/ 我想是的。</div></div><div class="rule"><b>do so</b><div class="en">She said she would call, and she did so.</div><div class="zh">do so 替代：她说会打电话，她也确实打了。</div></div><div class="rule"><b>省略</b><div class="en">I like tea and she (likes) coffee.</div><div class="zh">省略：我喜欢茶，她（喜欢）咖啡。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Are you coming? I believe so.</div><div class="zh">你来吗？我想是的。</div></div><div class="ex"><div class="en">He promised to help, and he did.</div><div class="zh">他答应帮忙，也确实帮了。</div></div><div class="ex"><div class="en">She sings better than anyone else (sings).</div><div class="zh">她比任何人都唱得好。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I think yes (non-standard) → I think so.<span class="zh">❌ 标准表达是 I think so。</span></div><div class="mistake">❌ Over-ellipsis can confuse — keep enough context.<span class="zh">❌ 省略过多会造成歧义。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_register">
+        <div class="phase-head">
+          <span class="phase-num">12-04</span>
+          <h2>Register</h2>
+          <span class="zh">语域</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Formal writing prefers full forms, passive voice, and precise connectors; informal speech uses contractions, phrasal verbs, and simple connectors.<span class="zh">正式写作用完整形式、被动语态和精确连接词；非正式口语用缩略形式、短语动词和简单连接词。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>正式</b><div class="en">The meeting has been postponed due to unforeseen circumstances.</div><div class="zh">正式：会议因不可预见的情况被推迟。</div></div><div class="rule"><b>非正式</b><div class="en">The meeting is put off because something came up.</div><div class="zh">非正式：会议推迟了，因为出了点事。</div></div><div class="rule"><b>选择</b><div class="en">Match the register to the audience: essays and emails to bosses = formal.</div><div class="zh">按受众选择：论文和给上司的邮件用正式语。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">We regret to inform you that... (formal)</div><div class="zh">我们遗憾地通知您……（正式）</div></div><div class="ex"><div class="en">Sorry, but... (informal)</div><div class="zh">抱歉，不过……（非正式）</div></div><div class="ex"><div class="en">The experiment was conducted over three months. (formal)</div><div class="zh">实验历时三个月。（正式）</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Using slang in academic writing weakens it.<span class="zh">❌ 学术写作慎用俚语。</span></div><div class="mistake">❌ Mixing registers in one document confuses readers.<span class="zh">❌ 一篇文章内语域要统一。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_cohesion">
+        <div class="phase-head">
+          <span class="phase-num">12-05</span>
+          <h2>Cohesion</h2>
+          <span class="zh">衔接</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Cohesion ties sentences together: reference (it, they, this), substitution (so, one), discourse markers (however, therefore, in addition).<span class="zh">衔接手段把句子串起来：指代（it、they、this）、替代（so、one）、话语标记（however、therefore、in addition）。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>指代</b><div class="en">The plan was good. However, it had one problem.</div><div class="zh">指代：计划很好，但它有一个问题。</div></div><div class="rule"><b>替代</b><div class="en">I wanted the blue one, not the red one.</div><div class="zh">替代：我要蓝色的那个，不是红色的。</div></div><div class="rule"><b>话语标记</b><div class="en">In addition, the cost is low. / Therefore, we agreed.</div><div class="zh">标记：此外，成本很低。/ 因此我们同意了。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The team trained hard. As a result, they won.</div><div class="zh">团队训练刻苦，结果他们赢了。</div></div><div class="ex"><div class="en">She offered a plan, and he accepted it.</div><div class="zh">她提出了一个计划，他接受了。</div></div><div class="ex"><div class="en">First, prepare the tools. Then, start the work.</div><div class="zh">首先准备工具，然后开始工作。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Unclear it: The dog chased the cat. It was hungry. (which one?)<span class="zh">❌ 指代不明会造成歧义。</span></div><div class="mistake">❌ Overusing connectors makes writing mechanical.<span class="zh">❌ 连接词过多会显得机械。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_nominalisation">
+        <div class="phase-head">
+          <span class="phase-num">12-06</span>
+          <h2>Nominalisation</h2>
+          <span class="zh">名词化</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Turn verbs and adjectives into nouns: decide → decision, improve → improvement, important → importance. Common in academic and formal writing.<span class="zh">把动词和形容词变成名词：decide → decision、improve → improvement、important → importance。常见于学术与正式写作。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>转换</b><div class="en">verb → noun: We decided → Our decision...</div><div class="zh">动词转名词：我们决定 → 我们的决定……</div></div><div class="rule"><b>用途</b><div class="en">compresses ideas and sounds formal: The improvement of service...</div><div class="zh">压缩表达、更正式：服务的改善……</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Their arrival surprised everyone.</div><div class="zh">他们的到来让所有人惊讶。</div></div><div class="ex"><div class="en">The development of the city was rapid.</div><div class="zh">城市的发展非常迅速。</div></div><div class="ex"><div class="en">Her success came from hard work.</div><div class="zh">她的成功来自努力。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Over-nominalisation makes sentences heavy: use verbs when clarity matters.<span class="zh">❌ 名词化过度会让句子笨重。</span></div><div class="mistake">❌ The decision was decided → redundant: The decision was made.<span class="zh">❌ 避免同源重复。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_hedging">
+        <div class="phase-head">
+          <span class="phase-num">12-07</span>
+          <h2>Hedging and Stance</h2>
+          <span class="zh">模糊限制与立场</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Hedging softens claims: seem, appear, tend to, it is likely that, may/might, arguably. Stance shows your position: clearly, surprisingly, importantly.<span class="zh">模糊限制语软化断言：seem、appear、tend to、it is likely that、may/might、arguably。立场词表明态度：clearly、surprisingly、importantly。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>模糊限制</b><div class="en">It is likely that prices will rise.</div><div class="zh">价格可能会上涨。</div></div><div class="rule"><b>委婉</b><div class="en">This seems to be a good solution.</div><div class="zh">这似乎是一个好方案。</div></div><div class="rule"><b>立场</b><div class="en">Clearly, more research is needed.</div><div class="zh">显然，还需要更多研究。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">The results appear to support the theory.</div><div class="zh">结果似乎支持这一理论。</div></div><div class="ex"><div class="en">There may be some risks involved.</div><div class="zh">可能涉及一些风险。</div></div><div class="ex"><div class="en">Interestingly, the opposite happened.</div><div class="zh">有趣的是，结果恰恰相反。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Hedging too much sounds weak: use strong verbs for real certainty.<span class="zh">❌ 过度模糊会显得缺乏自信。</span></div><div class="mistake">❌ Unhedged absolute claims in academic writing: 'This proves...' → 'This suggests...'.<span class="zh">❌ 学术写作中绝对断言要软化。</span></div></div>
+      </section>
+      <section class="phase" id="advanced_prod">
+        <div class="phase-head">
+          <span class="phase-num">12-08</span>
+          <h2>Production and Editing</h2>
+          <span class="zh">综合运用与改错</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Write with advanced grammar in context: add emphasis where needed, invert for style, nominalise for formality, hedge for accuracy, and keep cohesion.<span class="zh">在语境中使用高级语法：需要强调处强调、为风格倒装、为正式名词化、为准确模糊化，并保持衔接。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>风格匹配</b><div class="en">Match advanced structures to the text type: essay → nominalisation + hedging; speech → emphasis + fronting.</div><div class="zh">高级结构要匹配文体：论文用名词化+模糊限制；演讲用强调+前置。</div></div><div class="rule"><b>适度</b><div class="en">Advanced grammar adds power only when used naturally.</div><div class="zh">高级语法只有用得自然才有力量。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Never have I seen such dedication. (inversion for emphasis)</div><div class="zh">我从未见过如此投入。（倒装强调）</div></div><div class="ex"><div class="en">The company's growth was remarkable. (nominalisation)</div><div class="zh">公司的增长非常显著。（名词化）</div></div><div class="ex"><div class="en">It could be argued that the benefits outweigh the costs. (hedging)</div><div class="zh">可以说利大于弊。（模糊限制）</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Using inversion or cleft sentences in every sentence — too theatrical.<span class="zh">❌ 每句都倒装会太戏剧化。</span></div><div class="mistake">❌ Formal words in spoken chat sound unnatural — know your audience.<span class="zh">❌ 口语中用太正式的词会不自然。</span></div></div>
+      </section>
   
       <section class="phase practice" id="practice">
-        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        <div class="phase-head"><span class="phase-num">PR</span><h2>Practice 课堂练习</h2><span class="zh">from the GramLingo question bank</span></div>
         
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q1</span><span class="qtext">Not only ___ the exam, but she also got the highest score.</span></summary>
-            <div class="opts"><div class="opt">she passed</div><div class="opt right">did she pass</div><div class="opt">she did pass</div><div class="opt">passed she</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">she passed</button><button type="button" class="opt right" aria-pressed="false">did she pass</button><button type="button" class="opt" aria-pressed="false">she did pass</button><button type="button" class="opt" aria-pressed="false">passed she</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q2</span><span class="qtext">Which is the most formal closing for a business email?</span></summary>
-            <div class="opts"><div class="opt">Cheers</div><div class="opt right">Yours sincerely</div><div class="opt">Best</div><div class="opt">See ya</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">Cheers</button><button type="button" class="opt right" aria-pressed="false">Yours sincerely</button><button type="button" class="opt" aria-pressed="false">Best</button><button type="button" class="opt" aria-pressed="false">See ya</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q3</span><span class="qtext">Choose the sentence with correct formal grammar:</span></summary>
-            <div class="opts"><div class="opt">The person which called was my boss.</div><div class="opt right">The person who called was my boss.</div><div class="opt">The person that called was, my boss.</div><div class="opt">The person, who called was my boss.</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">The person which called was my boss.</button><button type="button" class="opt right" aria-pressed="false">The person who called was my boss.</button><button type="button" class="opt" aria-pressed="false">The person that called was, my boss.</button><button type="button" class="opt" aria-pressed="false">The person, who called was my boss.</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
       </section>
 </main>
 <footer class="wrap">
-  <div class="nav-prev-next"><a href="advanced.html"><div class="dir">← 上一模块</div><div class="t">Advanced Expressions 高级表达</div></a><a href="index.html"><div class="dir">返回目录 →</div><div class="t">全部模块</div></a></div>
-  <div class="credit">GramLingo 语法课件 · Module 12 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
-  <a class="toplink" href="#top">↑ 返回顶部</a>
+  <a class="hub-link" href="index.html">← All lessons / 全部课件</a>
+  <div class="nav-prev-next"><a href="advanced.html"><div class="dir">← Previous 上一模块</div><div class="t">Advanced Expressions 高级表达</div></a><a href="index.html"><div class="dir">All lessons 返回目录 →</div><div class="t">All modules 全部模块</div></a></div>
+  <div class="credit">GramLingo · Module 12 / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ Back to top 返回顶部</a>
 </footer>
 <script>
 document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+document.querySelectorAll('.practice .opt').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var group = button.closest('.opts');
+    group.querySelectorAll('.opt').forEach(function (option) {
+      option.setAttribute('aria-pressed', option === button ? 'true' : 'false');
+    });
+  });
+});
 var links=[].slice.call(document.querySelectorAll('.toc a'));
 var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
 window.addEventListener('scroll',function(){

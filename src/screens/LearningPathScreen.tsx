@@ -5,6 +5,9 @@ import { getStrings } from '../i18n/i18n';
 import { ModuleModal } from '../components/ModuleModal/ModuleModal';
 const BASE_URL = import.meta.env.BASE_URL;
 
+/** Cover image URL for a module id (route-aware base). */
+const coverUrl = (modId: string) => `${BASE_URL}assets/covers/cover-${modId}.jpg`;
+
 /** Display name in the ACTIVE language only (fallback to primary). */
 export function langName(primary: string, zh?: string, es?: string, lang: string = 'en'): string {
   const pick = lang === 'zh' ? zh : lang === 'es' ? es : primary;
@@ -79,7 +82,7 @@ export function LearningPathScreen() {
               const hasLessons = playablePhases.length > 0;
               const isInProgress = completed > 0 && completed < playablePhases.length;
               const isDone = completed === playablePhases.length && hasLessons;
-              const coverSrc = `${BASE_URL}assets/covers/cover-` + mod.id + '.jpg';
+              const coverSrc = coverUrl(mod.id);
               const cls = 'lp__card' + (modLocked ? ' lp__card--locked' : '') + (!hasLessons ? ' lp__card--planned' : '') + (isDone ? ' lp__card--done' : '') + (isInProgress ? ' lp__card--progress' : '');
               const toggleCard = () => {
                 if (modLocked) return;
@@ -125,7 +128,7 @@ export function LearningPathScreen() {
         <div className="lp__grid-wrapper">
           <div className="lp__grid" ref={gridRef} {...dragScroll}>
             {flashcardModules.map(mod => {
-              const coverSrc = `${BASE_URL}assets/covers/cover-` + mod.id + '.jpg';
+              const coverSrc = coverUrl(mod.id);
               const cls = 'lp__card';
               const toggleCard = () => {
                 setModalModule(mod.id);   // open lesson page as a modal/popup

@@ -1,160 +1,164 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 06 · Reported Speech — GramLingo 语法课件</title>
-<style>
-:root{
-  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
-  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
-  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
-}
-.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
-
-/* cover */
-.cover{
-  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
-  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
-  position:relative;overflow:hidden;
-}
-.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:min(260px,38vw);height:min(260px,38vw);border-radius:50%;background:rgba(255,255,255,.10)}
-.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
-.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
-.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
-.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
-.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
-.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
-.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
-
-/* toc */
-.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
-.toc .wrap::-webkit-scrollbar{display:none}
-.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
-.toc a:hover{border-color:var(--accent);color:var(--accent)}
-.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
-
-/* sections */
-main{padding:clamp(24px,5vw,44px) 0 20px}
-.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
-.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
-.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
-.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
-.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
-
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
-.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.concept{font-size:clamp(14.5px,2.6vw,16px)}
-.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
-
-.rules{display:grid;gap:0}
-.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
-.rule:last-child{border-bottom:0}
-.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
-.rule .en{font-size:14.5px}
-.rule .zh{color:var(--ink2);font-size:13.5px}
-
-.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
-.ex .en{font-weight:600;font-size:14.5px}
-.ex .zh{color:var(--ink2);font-size:13.5px}
-
-.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
-.mistakes h3{color:var(--warn)}
-.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
-.mistake:last-child{border-bottom:0}
-.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
-
-/* practice */
-.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
-.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
-.practice details summary::-webkit-details-marker{display:none}
-.practice details[open] summary{border-bottom:1px dashed var(--line)}
-.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
-.practice .qtext{font-size:14.5px;font-weight:600}
-.practice .opts{padding:8px 16px 14px}
-.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
-.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
-.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
-.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
-
-/* footer */
-footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
-.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
-.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
-.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
-.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
-.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
-.credit{font-size:12.5px;color:var(--ink2);text-align:center}
-.credit a{color:var(--accent);text-decoration:none;font-weight:600}
-.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
-
-@media print{
-  .toc,footer .nav-prev-next,.toplink{display:none}
-  body{background:#fff}
-  .cover{border-radius:0}
-  .phase{page-break-inside:avoid}
-}
-@media (max-width:640px){
-  .rule{grid-template-columns:1fr}
-  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
-  .objectives{grid-template-columns:1fr}
-}
-</style>
+<title>Module 06 · Reported Speech — GramLingo Lessons / 语法课件</title>
+<link rel="stylesheet" href="lessons.css">
 </head>
 <body data-accent="#E03131">
+<nav class="lesson-nav" aria-label="Primary navigation">
+  <a class="lesson-brand" href="index.html"><img src="assets/gramlingo-logo.webp" alt="GramLingo"></a>
+  <div class="lesson-nav-links">
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-worlds">Worlds / 世界</a>
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-how">How it works / 如何学习</a>
+    <a class="lesson-nav-link lesson-nav-link--active" href="index.html">Lessons / 课件</a>
+    <a class="lesson-nav-link lesson-nav-link--cta" href="https://app.gramlingo.online">Start the quest / 开始冒险</a>
+  </div>
+</nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo 语法课件 · Module 06 / 12</div>
+    <div class="kicker">GramLingo · Module 06 / 12 · 模块 06 / 12</div>
     <h1>🗣️ Reported Speech<span class="zh">间接引语</span></h1>
+    <img class="cover-art" src="assets/covers/cover-reported.webp" alt="" loading="eager">
     <div class="desc">Retell statements, questions, requests, and ideas accurately and naturally.<span class="zh">准确自然地转述陈述、疑问、请求与想法。</span></div>
-    <div class="objectives"><div><b>目标 1</b>Backshift tenses and change pronouns · 时态后退与代词转换</div><div><b>目标 2</b>Report questions with correct word order · 用正确语序转述疑问句</div><div><b>目标 3</b>Report commands with tell/ask + to-infinitive · 用 tell/ask + 不定式转述命令</div><div><b>目标 4</b>Shift time and place words correctly · 正确转换时间与地点词</div><div><b>目标 5</b>Choose the right reporting verb · 选择正确的转述动词</div></div>
+    <div class="objectives"><div><b>Objective 1 目标</b>Backshift tenses and change pronouns · 时态后退与代词转换</div><div><b>Objective 2 目标</b>Report questions with correct word order · 用正确语序转述疑问句</div><div><b>Objective 3 目标</b>Report commands with tell/ask + to-infinitive · 用 tell/ask + 不定式转述命令</div><div><b>Objective 4 目标</b>Shift time and place words correctly · 正确转换时间与地点词</div><div><b>Objective 5 目标</b>Choose the right reporting verb · 选择正确的转述动词</div></div>
   </div>
 </header>
-<nav class="toc"><div class="wrap"><a href="#reported_statements">01. Reported Statements</a><a href="#reported_questions">02. Reported Questions</a><a href="#reported_commands">03. Reported Commands</a><a href="#reported_time">04. Time and Place Shifts</a><a href="#reported_verbs">05. Reporting Verbs</a><a href="#reported_tense">06. Tense Backshift Rules</a><a href="#reported_embedded">07. Embedded Questions</a><a href="#reported_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<nav class="toc"><div class="wrap"><a href="#reported_statements">01. Reported Statements / 转述陈述句</a><a href="#reported_questions">02. Reported Questions / 转述疑问句</a><a href="#reported_commands">03. Reported Commands / 转述命令</a><a href="#reported_time">04. Time and Place Shifts / 时间与地点转换</a><a href="#reported_verbs">05. Reporting Verbs / 转述动词</a><a href="#reported_tense">06. Tense Backshift Rules / 时态后退规则</a><a href="#reported_embedded">07. Embedded Questions / 嵌入式疑问句</a><a href="#reported_prod">08. Production and Editing / 综合运用与改错</a><a href="#practice">Practice 练习</a></div></nav>
 <main class="wrap">
-  ['\n      <section class="phase" id="reported_statements">\n        <div class="phase-head">\n          <span class="phase-num">06-01</span>\n          <h2>Reported Statements</h2>\n          <span class="zh">转述陈述句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When reporting, move tenses back one step (backshift) and change pronouns to match the speaker\'s perspective.<span class="zh">转述时把时态后退一步（backshift），并把代词改为符合说话人视角的形式。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>时态后退</b><div class="en">present → past: \'I am tired\' → She said she was tired.</div><div class="zh">现在 → 过去：她说她累了。</div></div><div class="rule"><b>过去完成不变</b><div class="en">past perfect stays: \'I had seen it\' → She said she had seen it.</div><div class="zh">过去完成时不变。</div></div><div class="rule"><b>代词变化</b><div class="en">I/we → he/she/they; my → his/her; you → I/we.</div><div class="zh">I/we 变 he/she/they；my 变 his/her；you 变 I/we。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">He said, \'I love this city.\' → He said he loved that city.</div><div class="zh">他说他喜欢那座城市。</div></div><div class="ex"><div class="en">\'We are leaving now,\' she said. → She said they were leaving then.</div><div class="zh">她说他们当时正要离开。</div></div><div class="ex"><div class="en">\'I have finished,\' Tom said. → Tom said he had finished.</div><div class="zh">汤姆说他已完成。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she is tired (no backshift when reporting past) → was tired.<span class="zh">❌ 转述过去的话要后退时态。</span></div><div class="mistake">❌ Forgetting pronoun changes: \'I\' in reported speech is not always I.<span class="zh">❌ 代词要随视角变化。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_questions">\n        <div class="phase-head">\n          <span class="phase-num">06-02</span>\n          <h2>Reported Questions</h2>\n          <span class="zh">转述疑问句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Reported questions use statement word order (no inversion) and no question mark. Yes/no questions use if or whether.<span class="zh">转述疑问句用陈述语序（不倒装），句末不用问号。一般疑问句用 if 或 whether。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>一般疑问</b><div class="en">if/whether + statement order: \'Are you ready?\' → He asked if I was ready.</div><div class="zh">if/whether + 陈述语序：他问我是否准备好了。</div></div><div class="rule"><b>特殊疑问</b><div class="en">wh-word + statement order: \'Where do you live?\' → She asked where I lived.</div><div class="zh">疑问词 + 陈述语序：她问我住在哪里。</div></div><div class="rule"><b>无问号</b><div class="en">Reported questions end with a period.</div><div class="zh">转述疑问句以句号结尾。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">\'Do you like tea?\' → She asked if I liked tea.</div><div class="zh">她问我是否喜欢茶。</div></div><div class="ex"><div class="en">\'What time is it?\' → He asked what time it was.</div><div class="zh">他问几点了。</div></div><div class="ex"><div class="en">\'Can you help me?\' → They asked whether I could help them.</div><div class="zh">他们问我能否帮忙。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He asked where did I live → no inversion: where I lived.<span class="zh">❌ 转述疑问不倒装。</span></div><div class="mistake">❌ She asked do you like tea → keep original words; use if + past.<span class="zh">❌ 不要照抄原问句结构。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_commands">\n        <div class="phase-head">\n          <span class="phase-num">06-03</span>\n          <h2>Reported Commands</h2>\n          <span class="zh">转述命令</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Commands and requests become tell/ask + object + to-infinitive. Negative commands use not to.<span class="zh">命令与请求变为 tell/ask + 宾语 + to 不定式。否定命令用 not to。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>肯定</b><div class="en">\'Sit down!\' → He told me to sit down.</div><div class="zh">他让我坐下。</div></div><div class="rule"><b>否定</b><div class="en">\'Don\'t talk!\' → She told us not to talk.</div><div class="zh">她叫我们不要说话。</div></div><div class="rule"><b>请求</b><div class="en">ask for polite requests: \'Please wait\' → He asked me to wait.</div><div class="zh">礼貌请求用 ask。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">\'Open the window,\' she said. → She told me to open the window.</div><div class="zh">她叫我把窗户打开。</div></div><div class="ex"><div class="en">\'Don\'t be late!\' → The teacher told us not to be late.</div><div class="zh">老师叫我们不要迟到。</div></div><div class="ex"><div class="en">\'Please help me,\' he said. → He asked me to help him.</div><div class="zh">他请我帮忙。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He said me to sit down → say takes no object; use told me.<span class="zh">❌ say 后不加宾语，用 told me。</span></div><div class="mistake">❌ She told to sit down → need object: told me/him/us to sit.<span class="zh">❌ tell 后必须接宾语。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_time">\n        <div class="phase-head">\n          <span class="phase-num">06-04</span>\n          <h2>Time and Place Shifts</h2>\n          <span class="zh">时间与地点转换</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When reporting, shift time and place words: now → then, today → that day, here → there, tomorrow → the next day, yesterday → the day before.<span class="zh">转述时转换时间地点词：now → then、today → that day、here → there、tomorrow → the next day、yesterday → the day before。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>时间词</b><div class="en">now→then; today→that day; tomorrow→the next day; yesterday→the day before; ago→before.</div><div class="zh">now→then；today→that day；tomorrow→the next day；yesterday→the day before；ago→before。</div></div><div class="rule"><b>地点词</b><div class="en">here→there; this→that; these→those.</div><div class="zh">here→there；this→that；these→those。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">\'I will come here tomorrow.\' → He said he would come there the next day.</div><div class="zh">他说他第二天会去那里。</div></div><div class="ex"><div class="en">\'We met here yesterday.\' → She said they had met there the day before.</div><div class="zh">她说他们前一天在那里见过面。</div></div><div class="ex"><div class="en">\'I am busy now.\' → He said he was busy then.</div><div class="zh">他说他当时很忙。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ here stays here → shift to there.<span class="zh">❌ here 要变 there。</span></div><div class="mistake">❌ tomorrow stays tomorrow → the next day.<span class="zh">❌ tomorrow 要变 the next day。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_verbs">\n        <div class="phase-head">\n          <span class="phase-num">06-05</span>\n          <h2>Reporting Verbs</h2>\n          <span class="zh">转述动词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Choose the reporting verb for the meaning: say/tell for statements, explain, admit, deny, suggest, promise, agree.<span class="zh">按语义选转述动词：say/tell 表陈述，explain 解释、admit 承认、deny 否认、suggest 建议、promise 承诺、agree 同意。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>say vs tell</b><div class="en">say + (that) clause; tell + object + (that) clause: He said (that) he was tired. He told me (that) he was tired.</div><div class="zh">say + 从句；tell + 宾语 + 从句。</div></div><div class="rule"><b>suggest</b><div class="en">suggest + -ing or that-clause: She suggested going out.</div><div class="zh">suggest + -ing 或 that 从句：她建议出去。</div></div><div class="rule"><b>deny/admit</b><div class="en">deny/admit + -ing: He denied taking the money.</div><div class="zh">deny/admit + -ing：他否认拿了钱。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She explained that the shop was closed.</div><div class="zh">她解释说商店关门了。</div></div><div class="ex"><div class="en">He admitted making a mistake.</div><div class="zh">他承认犯了错误。</div></div><div class="ex"><div class="en">They promised to come early.</div><div class="zh">他们答应早点来。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He said me... → say takes no object.<span class="zh">❌ say 后面不能直接接宾语。</span></div><div class="mistake">❌ She suggested me to go → suggest + going / that I go.<span class="zh">❌ suggest 后不用 me to。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_tense">\n        <div class="phase-head">\n          <span class="phase-num">06-06</span>\n          <h2>Tense Backshift Rules</h2>\n          <span class="zh">时态后退规则</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Backshift is required after a past reporting verb, but optional when the reported fact is still true: \'I am hungry\' → She said she was hungry (or is hungry if still true).<span class="zh">转述动词是过去时时态通常后退；若事实仍然成立，可保留现在时。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>必然后退</b><div class="en">past reporting verb + past time: She said she was tired.</div><div class="zh">转述动词过去时 + 过去语境：必须后退。</div></div><div class="rule"><b>可保留</b><div class="en">still-true facts: He said the earth is round.</div><div class="zh">仍然成立的事实：他说地球是圆的。</div></div><div class="rule"><b>不变</b><div class="en">past perfect and would never backshift further.</div><div class="zh">过去完成时和 would 不再后退。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She said she worked in a bank. (backshift)</div><div class="zh">她说她在银行工作。</div></div><div class="ex"><div class="en">He said water boils at 100°C. (still true — present kept)</div><div class="zh">他说水在100°C沸腾。（仍成立，保留现在时）</div></div><div class="ex"><div class="en">They said they had already eaten.</div><div class="zh">他们说他们已经吃过了。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she has been to Paris (no time reference) → had been when reporting past.<span class="zh">❌ 转述过去时用过去完成。</span></div><div class="mistake">❌ Backshifting universal truths is awkward: keep the present for facts.<span class="zh">❌ 普遍真理可保留现在时。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_embedded">\n        <div class="phase-head">\n          <span class="phase-num">06-07</span>\n          <h2>Embedded Questions</h2>\n          <span class="zh">嵌入式疑问句</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Polite questions embed a question inside a phrase: Do you know where...? Can you tell me when...? The embedded part keeps statement word order.<span class="zh">礼貌问句把疑问嵌入短语：Do you know where...? Can you tell me when...? 嵌入部分用陈述语序。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>结构</b><div class="en">Do you know / Can you tell me + wh-word + statement order.</div><div class="zh">Do you know / Can you tell me + 疑问词 + 陈述语序。</div></div><div class="rule"><b>无倒装</b><div class="en">Do you know where the station is? (not where is the station)</div><div class="zh">不倒装：你知道车站在哪里吗？</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Do you know where the station is?</div><div class="zh">你知道车站在哪里吗？</div></div><div class="ex"><div class="en">Can you tell me when the bus leaves?</div><div class="zh">你能告诉我公交车什么时候开吗？</div></div><div class="ex"><div class="en">I wonder if she is coming.</div><div class="zh">我想知道她是否要来。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Do you know where is the station? → statement order: where the station is.<span class="zh">❌ 嵌入疑问不倒装。</span></div><div class="mistake">❌ Can you tell me what time does it start? → what time it starts.<span class="zh">❌ 去掉助动词倒装。</span></div></div>\n      </section>', '\n      <section class="phase" id="reported_prod">\n        <div class="phase-head">\n          <span class="phase-num">06-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Convert direct speech to reported speech in four steps: choose the reporting verb, add the object if needed, backshift the tense, shift pronouns and time/place words.<span class="zh">直接引语转间接引语四步：选转述动词、按需加宾语、时态后退、转换代词与时间地点词。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>四步法</b><div class="en">1) reporting verb 2) object (for tell/ask) 3) backshift 4) shift pronouns + time/place.</div><div class="zh">1) 转述动词 2) 宾语（tell/ask）3) 时态后退 4) 代词与时间地点词转换。</div></div><div class="rule"><b>检查</b><div class="en">No inversion in reported questions; no question mark; no double that.</div><div class="zh">转述疑问不倒装、不用问号、不重复 that。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">\'I will call you tomorrow,\' she said. → She said she would call me the next day.</div><div class="zh">她说她第二天会给我打电话。</div></div><div class="ex"><div class="en">\'Where did you go?\' → He asked where I had gone.</div><div class="zh">他问我去了哪里。</div></div><div class="ex"><div class="en">\'Don\'t touch that!\' → She told me not to touch it.</div><div class="zh">她叫我不许碰那个。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she will call me tomorrow (no backshift) → would...the next day.<span class="zh">❌ 时态与时间词都要转。</span></div><div class="mistake">❌ He asked me that where I went → no that before wh-words.<span class="zh">❌ wh- 疑问前不加 that。</span></div></div>\n      </section>']
+  
+      <section class="phase" id="reported_statements">
+        <div class="phase-head">
+          <span class="phase-num">06-01</span>
+          <h2>Reported Statements</h2>
+          <span class="zh">转述陈述句</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When reporting, move tenses back one step (backshift) and change pronouns to match the speaker's perspective.<span class="zh">转述时把时态后退一步（backshift），并把代词改为符合说话人视角的形式。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>时态后退</b><div class="en">present → past: 'I am tired' → She said she was tired.</div><div class="zh">现在 → 过去：她说她累了。</div></div><div class="rule"><b>过去完成不变</b><div class="en">past perfect stays: 'I had seen it' → She said she had seen it.</div><div class="zh">过去完成时不变。</div></div><div class="rule"><b>代词变化</b><div class="en">I/we → he/she/they; my → his/her; you → I/we.</div><div class="zh">I/we 变 he/she/they；my 变 his/her；you 变 I/we。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">He said, 'I love this city.' → He said he loved that city.</div><div class="zh">他说他喜欢那座城市。</div></div><div class="ex"><div class="en">'We are leaving now,' she said. → She said they were leaving then.</div><div class="zh">她说他们当时正要离开。</div></div><div class="ex"><div class="en">'I have finished,' Tom said. → Tom said he had finished.</div><div class="zh">汤姆说他已完成。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she is tired (no backshift when reporting past) → was tired.<span class="zh">❌ 转述过去的话要后退时态。</span></div><div class="mistake">❌ Forgetting pronoun changes: 'I' in reported speech is not always I.<span class="zh">❌ 代词要随视角变化。</span></div></div>
+      </section>
+      <section class="phase" id="reported_questions">
+        <div class="phase-head">
+          <span class="phase-num">06-02</span>
+          <h2>Reported Questions</h2>
+          <span class="zh">转述疑问句</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Reported questions use statement word order (no inversion) and no question mark. Yes/no questions use if or whether.<span class="zh">转述疑问句用陈述语序（不倒装），句末不用问号。一般疑问句用 if 或 whether。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>一般疑问</b><div class="en">if/whether + statement order: 'Are you ready?' → He asked if I was ready.</div><div class="zh">if/whether + 陈述语序：他问我是否准备好了。</div></div><div class="rule"><b>特殊疑问</b><div class="en">wh-word + statement order: 'Where do you live?' → She asked where I lived.</div><div class="zh">疑问词 + 陈述语序：她问我住在哪里。</div></div><div class="rule"><b>无问号</b><div class="en">Reported questions end with a period.</div><div class="zh">转述疑问句以句号结尾。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">'Do you like tea?' → She asked if I liked tea.</div><div class="zh">她问我是否喜欢茶。</div></div><div class="ex"><div class="en">'What time is it?' → He asked what time it was.</div><div class="zh">他问几点了。</div></div><div class="ex"><div class="en">'Can you help me?' → They asked whether I could help them.</div><div class="zh">他们问我能否帮忙。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He asked where did I live → no inversion: where I lived.<span class="zh">❌ 转述疑问不倒装。</span></div><div class="mistake">❌ She asked do you like tea → keep original words; use if + past.<span class="zh">❌ 不要照抄原问句结构。</span></div></div>
+      </section>
+      <section class="phase" id="reported_commands">
+        <div class="phase-head">
+          <span class="phase-num">06-03</span>
+          <h2>Reported Commands</h2>
+          <span class="zh">转述命令</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Commands and requests become tell/ask + object + to-infinitive. Negative commands use not to.<span class="zh">命令与请求变为 tell/ask + 宾语 + to 不定式。否定命令用 not to。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>肯定</b><div class="en">'Sit down!' → He told me to sit down.</div><div class="zh">他让我坐下。</div></div><div class="rule"><b>否定</b><div class="en">'Don't talk!' → She told us not to talk.</div><div class="zh">她叫我们不要说话。</div></div><div class="rule"><b>请求</b><div class="en">ask for polite requests: 'Please wait' → He asked me to wait.</div><div class="zh">礼貌请求用 ask。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">'Open the window,' she said. → She told me to open the window.</div><div class="zh">她叫我把窗户打开。</div></div><div class="ex"><div class="en">'Don't be late!' → The teacher told us not to be late.</div><div class="zh">老师叫我们不要迟到。</div></div><div class="ex"><div class="en">'Please help me,' he said. → He asked me to help him.</div><div class="zh">他请我帮忙。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He said me to sit down → say takes no object; use told me.<span class="zh">❌ say 后不加宾语，用 told me。</span></div><div class="mistake">❌ She told to sit down → need object: told me/him/us to sit.<span class="zh">❌ tell 后必须接宾语。</span></div></div>
+      </section>
+      <section class="phase" id="reported_time">
+        <div class="phase-head">
+          <span class="phase-num">06-04</span>
+          <h2>Time and Place Shifts</h2>
+          <span class="zh">时间与地点转换</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">When reporting, shift time and place words: now → then, today → that day, here → there, tomorrow → the next day, yesterday → the day before.<span class="zh">转述时转换时间地点词：now → then、today → that day、here → there、tomorrow → the next day、yesterday → the day before。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>时间词</b><div class="en">now→then; today→that day; tomorrow→the next day; yesterday→the day before; ago→before.</div><div class="zh">now→then；today→that day；tomorrow→the next day；yesterday→the day before；ago→before。</div></div><div class="rule"><b>地点词</b><div class="en">here→there; this→that; these→those.</div><div class="zh">here→there；this→that；these→those。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">'I will come here tomorrow.' → He said he would come there the next day.</div><div class="zh">他说他第二天会去那里。</div></div><div class="ex"><div class="en">'We met here yesterday.' → She said they had met there the day before.</div><div class="zh">她说他们前一天在那里见过面。</div></div><div class="ex"><div class="en">'I am busy now.' → He said he was busy then.</div><div class="zh">他说他当时很忙。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ here stays here → shift to there.<span class="zh">❌ here 要变 there。</span></div><div class="mistake">❌ tomorrow stays tomorrow → the next day.<span class="zh">❌ tomorrow 要变 the next day。</span></div></div>
+      </section>
+      <section class="phase" id="reported_verbs">
+        <div class="phase-head">
+          <span class="phase-num">06-05</span>
+          <h2>Reporting Verbs</h2>
+          <span class="zh">转述动词</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Choose the reporting verb for the meaning: say/tell for statements, explain, admit, deny, suggest, promise, agree.<span class="zh">按语义选转述动词：say/tell 表陈述，explain 解释、admit 承认、deny 否认、suggest 建议、promise 承诺、agree 同意。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>say vs tell</b><div class="en">say + (that) clause; tell + object + (that) clause: He said (that) he was tired. He told me (that) he was tired.</div><div class="zh">say + 从句；tell + 宾语 + 从句。</div></div><div class="rule"><b>suggest</b><div class="en">suggest + -ing or that-clause: She suggested going out.</div><div class="zh">suggest + -ing 或 that 从句：她建议出去。</div></div><div class="rule"><b>deny/admit</b><div class="en">deny/admit + -ing: He denied taking the money.</div><div class="zh">deny/admit + -ing：他否认拿了钱。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She explained that the shop was closed.</div><div class="zh">她解释说商店关门了。</div></div><div class="ex"><div class="en">He admitted making a mistake.</div><div class="zh">他承认犯了错误。</div></div><div class="ex"><div class="en">They promised to come early.</div><div class="zh">他们答应早点来。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ He said me... → say takes no object.<span class="zh">❌ say 后面不能直接接宾语。</span></div><div class="mistake">❌ She suggested me to go → suggest + going / that I go.<span class="zh">❌ suggest 后不用 me to。</span></div></div>
+      </section>
+      <section class="phase" id="reported_tense">
+        <div class="phase-head">
+          <span class="phase-num">06-06</span>
+          <h2>Tense Backshift Rules</h2>
+          <span class="zh">时态后退规则</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Backshift is required after a past reporting verb, but optional when the reported fact is still true: 'I am hungry' → She said she was hungry (or is hungry if still true).<span class="zh">转述动词是过去时时态通常后退；若事实仍然成立，可保留现在时。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>必然后退</b><div class="en">past reporting verb + past time: She said she was tired.</div><div class="zh">转述动词过去时 + 过去语境：必须后退。</div></div><div class="rule"><b>可保留</b><div class="en">still-true facts: He said the earth is round.</div><div class="zh">仍然成立的事实：他说地球是圆的。</div></div><div class="rule"><b>不变</b><div class="en">past perfect and would never backshift further.</div><div class="zh">过去完成时和 would 不再后退。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She said she worked in a bank. (backshift)</div><div class="zh">她说她在银行工作。</div></div><div class="ex"><div class="en">He said water boils at 100°C. (still true — present kept)</div><div class="zh">他说水在100°C沸腾。（仍成立，保留现在时）</div></div><div class="ex"><div class="en">They said they had already eaten.</div><div class="zh">他们说他们已经吃过了。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she has been to Paris (no time reference) → had been when reporting past.<span class="zh">❌ 转述过去时用过去完成。</span></div><div class="mistake">❌ Backshifting universal truths is awkward: keep the present for facts.<span class="zh">❌ 普遍真理可保留现在时。</span></div></div>
+      </section>
+      <section class="phase" id="reported_embedded">
+        <div class="phase-head">
+          <span class="phase-num">06-07</span>
+          <h2>Embedded Questions</h2>
+          <span class="zh">嵌入式疑问句</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Polite questions embed a question inside a phrase: Do you know where...? Can you tell me when...? The embedded part keeps statement word order.<span class="zh">礼貌问句把疑问嵌入短语：Do you know where...? Can you tell me when...? 嵌入部分用陈述语序。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>结构</b><div class="en">Do you know / Can you tell me + wh-word + statement order.</div><div class="zh">Do you know / Can you tell me + 疑问词 + 陈述语序。</div></div><div class="rule"><b>无倒装</b><div class="en">Do you know where the station is? (not where is the station)</div><div class="zh">不倒装：你知道车站在哪里吗？</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Do you know where the station is?</div><div class="zh">你知道车站在哪里吗？</div></div><div class="ex"><div class="en">Can you tell me when the bus leaves?</div><div class="zh">你能告诉我公交车什么时候开吗？</div></div><div class="ex"><div class="en">I wonder if she is coming.</div><div class="zh">我想知道她是否要来。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ Do you know where is the station? → statement order: where the station is.<span class="zh">❌ 嵌入疑问不倒装。</span></div><div class="mistake">❌ Can you tell me what time does it start? → what time it starts.<span class="zh">❌ 去掉助动词倒装。</span></div></div>
+      </section>
+      <section class="phase" id="reported_prod">
+        <div class="phase-head">
+          <span class="phase-num">06-08</span>
+          <h2>Production and Editing</h2>
+          <span class="zh">综合运用与改错</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Convert direct speech to reported speech in four steps: choose the reporting verb, add the object if needed, backshift the tense, shift pronouns and time/place words.<span class="zh">直接引语转间接引语四步：选转述动词、按需加宾语、时态后退、转换代词与时间地点词。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>四步法</b><div class="en">1) reporting verb 2) object (for tell/ask) 3) backshift 4) shift pronouns + time/place.</div><div class="zh">1) 转述动词 2) 宾语（tell/ask）3) 时态后退 4) 代词与时间地点词转换。</div></div><div class="rule"><b>检查</b><div class="en">No inversion in reported questions; no question mark; no double that.</div><div class="zh">转述疑问不倒装、不用问号、不重复 that。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">'I will call you tomorrow,' she said. → She said she would call me the next day.</div><div class="zh">她说她第二天会给我打电话。</div></div><div class="ex"><div class="en">'Where did you go?' → He asked where I had gone.</div><div class="zh">他问我去了哪里。</div></div><div class="ex"><div class="en">'Don't touch that!' → She told me not to touch it.</div><div class="zh">她叫我不许碰那个。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ She said she will call me tomorrow (no backshift) → would...the next day.<span class="zh">❌ 时态与时间词都要转。</span></div><div class="mistake">❌ He asked me that where I went → no that before wh-words.<span class="zh">❌ wh- 疑问前不加 that。</span></div></div>
+      </section>
   
       <section class="phase practice" id="practice">
-        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        <div class="phase-head"><span class="phase-num">PR</span><h2>Practice 课堂练习</h2><span class="zh">from the GramLingo question bank</span></div>
         
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q1</span><span class="qtext">She said: "I am tired." -&gt; She said that she ___ tired.</span></summary>
-            <div class="opts"><div class="opt">is</div><div class="opt right">was</div><div class="opt">has been</div><div class="opt">will be</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">is</button><button type="button" class="opt right" aria-pressed="false">was</button><button type="button" class="opt" aria-pressed="false">has been</button><button type="button" class="opt" aria-pressed="false">will be</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q2</span><span class="qtext">He said: "I am here now." -&gt; He said he was there ___.</span></summary>
-            <div class="opts"><div class="opt">now</div><div class="opt right">then</div><div class="opt">here</div><div class="opt">today</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">now</button><button type="button" class="opt right" aria-pressed="false">then</button><button type="button" class="opt" aria-pressed="false">here</button><button type="button" class="opt" aria-pressed="false">today</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q3</span><span class="qtext">Convert: "Do not touch that!" he said. -&gt; He told me ___.</span></summary>
-            <div class="opts"><div class="opt">do not touch that</div><div class="opt right">not to touch that</div><div class="opt">to not touch that</div><div class="opt">not touching that</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">do not touch that</button><button type="button" class="opt right" aria-pressed="false">not to touch that</button><button type="button" class="opt" aria-pressed="false">to not touch that</button><button type="button" class="opt" aria-pressed="false">not touching that</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
       </section>
 </main>
 <footer class="wrap">
-  <div class="nav-prev-next"><a href="reported.html"><div class="dir">← 上一模块</div><div class="t">Reported Speech 间接引语</div></a><a href="determiners.html"><div class="dir">下一模块 →</div><div class="t">Articles &amp; Determiners 冠词与限定词</div></a></div>
-  <div class="credit">GramLingo 语法课件 · Module 06 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
-  <a class="toplink" href="#top">↑ 返回顶部</a>
+  <a class="hub-link" href="index.html">← All lessons / 全部课件</a>
+  <div class="nav-prev-next"><a href="reported.html"><div class="dir">← Previous 上一模块</div><div class="t">Reported Speech 间接引语</div></a><a href="determiners.html"><div class="dir">Next 下一模块 →</div><div class="t">Articles &amp; Determiners 冠词与限定词</div></a></div>
+  <div class="credit">GramLingo · Module 06 / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ Back to top 返回顶部</a>
 </footer>
 <script>
 document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+document.querySelectorAll('.practice .opt').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var group = button.closest('.opts');
+    group.querySelectorAll('.opt').forEach(function (option) {
+      option.setAttribute('aria-pressed', option === button ? 'true' : 'false');
+    });
+  });
+});
 var links=[].slice.call(document.querySelectorAll('.toc a'));
 var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
 window.addEventListener('scroll',function(){

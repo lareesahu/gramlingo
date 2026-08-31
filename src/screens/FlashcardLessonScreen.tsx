@@ -158,7 +158,7 @@ export function FlashcardLessonScreen() {
 
               {/* Back: word family accordion */}
               {isExpanded && (
-                <div className="fcls-back">
+                <div className="fcls-expanded">
                   <div className="fcls-word">{family.root}</div>
                   <div className="fcls-phonetic">{family.phonetic}</div>
                   <div className="fcls-members">

@@ -1,160 +1,164 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module 08 · Articles &amp; Determiners — GramLingo 语法课件</title>
-<style>
-:root{
-  --ink:#1b2420; --ink2:#5b6b62; --line:#e6ebe7; --bg:#fbfcfa; --card:#fff;
-  --accent:#6aa72e; --accent-soft:#eef6e4; --warn:#b3261e; --warn-soft:#fdf0ee;
-  --radius:16px; --shadow:0 1px 2px rgba(20,40,20,.05),0 8px 24px rgba(20,40,20,.06);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
-  background:var(--bg);color:var(--ink);line-height:1.75;-webkit-font-smoothing:antialiased;
-}
-.wrap{max-width:1000px;margin:0 auto;padding:0 clamp(14px,4vw,28px)}
-
-/* cover */
-.cover{
-  background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 55%,#000 18%));
-  color:#fff;border-radius:0 0 28px 28px;padding:clamp(36px,7vw,72px) 0 clamp(28px,5vw,48px);
-  position:relative;overflow:hidden;
-}
-.cover::after{content:"";position:absolute;right:-80px;top:-80px;width:min(260px,38vw);height:min(260px,38vw);border-radius:50%;background:rgba(255,255,255,.10)}
-.kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:14px;font-weight:600}
-.cover h1{font-size:clamp(26px,5vw,40px);line-height:1.25;font-weight:800;letter-spacing:-.01em}
-.cover h1 .zh{display:block;font-size:.62em;font-weight:600;opacity:.9;margin-top:6px}
-.cover .desc{margin-top:16px;max-width:640px;font-size:clamp(14px,2.4vw,16.5px);opacity:.95}
-.cover .desc .zh{display:block;opacity:.82;font-size:.95em;margin-top:4px}
-.objectives{margin-top:24px;display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.objectives div{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 14px;font-size:13.5px;backdrop-filter:blur(4px)}
-.objectives b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:2px}
-
-/* toc */
-.toc{position:sticky;top:0;z-index:50;background:rgba(251,252,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.toc .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
-.toc .wrap::-webkit-scrollbar{display:none}
-.toc a{white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink2);text-decoration:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 13px;transition:.15s}
-.toc a:hover{border-color:var(--accent);color:var(--accent)}
-.toc a.on{background:var(--accent);border-color:var(--accent);color:#fff}
-
-/* sections */
-main{padding:clamp(24px,5vw,44px) 0 20px}
-.phase{scroll-margin-top:64px;margin-bottom:clamp(28px,5vw,44px)}
-.phase-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:10px}
-.phase-num{flex:none;background:var(--accent);color:#fff;font-weight:800;font-size:12.5px;border-radius:8px;padding:3px 9px;letter-spacing:.04em}
-.phase-head h2{font-size:clamp(19px,3.2vw,24px);font-weight:800}
-.phase-head .zh{font-size:clamp(13px,2vw,15px);color:var(--ink2);font-weight:600}
-
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(16px,3vw,24px);margin-bottom:14px}
-.card h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.concept{font-size:clamp(14.5px,2.6vw,16px)}
-.concept .zh{display:block;color:var(--ink2);margin-top:6px;font-size:.95em}
-
-.rules{display:grid;gap:0}
-.rule{display:grid;grid-template-columns:110px 1fr;gap:4px 14px;padding:11px 4px;border-bottom:1px dashed var(--line)}
-.rule:last-child{border-bottom:0}
-.rule b{grid-column:1;grid-row:1/3;font-size:12.5px;color:var(--accent);background:var(--accent-soft);align-self:start;border-radius:8px;padding:3px 10px;text-align:center}
-.rule .en{font-size:14.5px}
-.rule .zh{color:var(--ink2);font-size:13.5px}
-
-.ex{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);border-radius:0 10px 10px 0;margin-bottom:8px}
-.ex .en{font-weight:600;font-size:14.5px}
-.ex .zh{color:var(--ink2);font-size:13.5px}
-
-.mistakes{background:var(--warn-soft);border:1px solid #f3d3cf}
-.mistakes h3{color:var(--warn)}
-.mistake{padding:9px 12px;border-bottom:1px dashed #f0c9c4;font-size:13.8px}
-.mistake:last-child{border-bottom:0}
-.mistake .zh{display:block;color:#8a5a55;font-size:13px;margin-top:2px}
-
-/* practice */
-.practice .p-q{margin-bottom:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
-.practice details summary{cursor:pointer;list-style:none;padding:14px 16px;display:flex;gap:10px;align-items:flex-start}
-.practice details summary::-webkit-details-marker{display:none}
-.practice details[open] summary{border-bottom:1px dashed var(--line)}
-.practice .qnum{flex:none;background:var(--ink);color:#fff;font-size:11px;font-weight:700;border-radius:7px;padding:3px 8px;margin-top:3px}
-.practice .qtext{font-size:14.5px;font-weight:600}
-.practice .opts{padding:8px 16px 14px}
-.practice .opt{font-size:13.8px;padding:7px 10px;border-radius:8px;margin-top:6px;background:#f4f7f4;border:1px solid var(--line)}
-.practice .opt.right{background:#e8f5dc;border-color:#b7d992;font-weight:700}
-.practice .opt.right::after{content:" ✓ 正确答案";color:var(--accent);font-size:12px;font-weight:700}
-.practice .hint{padding:10px 16px;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);background:#fafcfa}
-
-/* footer */
-footer{border-top:1px solid var(--line);margin-top:20px;padding:26px 0 40px}
-.nav-prev-next{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
-.nav-prev-next a{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:.15s}
-.nav-prev-next a:hover{border-color:var(--accent);transform:translateY(-1px)}
-.nav-prev-next .dir{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
-.nav-prev-next .t{font-weight:700;font-size:14.5px;margin-top:2px}
-.credit{font-size:12.5px;color:var(--ink2);text-align:center}
-.credit a{color:var(--accent);text-decoration:none;font-weight:600}
-.toplink{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);text-decoration:none;font-weight:600}
-
-@media print{
-  .toc,footer .nav-prev-next,.toplink{display:none}
-  body{background:#fff}
-  .cover{border-radius:0}
-  .phase{page-break-inside:avoid}
-}
-@media (max-width:640px){
-  .rule{grid-template-columns:1fr}
-  .rule b{grid-row:auto;justify-self:start;margin-bottom:2px}
-  .objectives{grid-template-columns:1fr}
-}
-</style>
+<title>Module 08 · Articles &amp; Determiners — GramLingo Lessons / 语法课件</title>
+<link rel="stylesheet" href="lessons.css">
 </head>
 <body data-accent="#6741D9">
+<nav class="lesson-nav" aria-label="Primary navigation">
+  <a class="lesson-brand" href="index.html"><img src="assets/gramlingo-logo.webp" alt="GramLingo"></a>
+  <div class="lesson-nav-links">
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-worlds">Worlds / 世界</a>
+    <a class="lesson-nav-link" href="https://gramlingo.online/#sec-how">How it works / 如何学习</a>
+    <a class="lesson-nav-link lesson-nav-link--active" href="index.html">Lessons / 课件</a>
+    <a class="lesson-nav-link lesson-nav-link--cta" href="https://app.gramlingo.online">Start the quest / 开始冒险</a>
+  </div>
+</nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo 语法课件 · Module 08 / 12</div>
+    <div class="kicker">GramLingo · Module 08 / 12 · 模块 08 / 12</div>
     <h1>🏷️ Articles &amp; Determiners<span class="zh">冠词与限定词</span></h1>
+    <img class="cover-art" src="assets/covers/cover-determiners.webp" alt="" loading="eager">
     <div class="desc">Signal whether nouns are known, specific, general, countable, or quantified.<span class="zh">标示名词是已知、特指、泛指、可数还是量化。</span></div>
-    <div class="objectives"><div><b>目标 1</b>Use a/an, the, and zero article correctly · 正确使用 a/an、the 和零冠词</div><div><b>目标 2</b>Distinguish definite from indefinite reference · 区分定指与不定指</div><div><b>目标 3</b>Choose quantifiers like some, any, much, many, few · 选择 some、any、much、many、few 等量词</div><div><b>目标 4</b>Use demonstratives, possessives, and generic reference · 使用指示词、所有格与类指</div></div>
+    <div class="objectives"><div><b>Objective 1 目标</b>Use a/an, the, and zero article correctly · 正确使用 a/an、the 和零冠词</div><div><b>Objective 2 目标</b>Distinguish definite from indefinite reference · 区分定指与不定指</div><div><b>Objective 3 目标</b>Choose quantifiers like some, any, much, many, few · 选择 some、any、much、many、few 等量词</div><div><b>Objective 4 目标</b>Use demonstratives, possessives, and generic reference · 使用指示词、所有格与类指</div></div>
   </div>
 </header>
-<nav class="toc"><div class="wrap"><a href="#determiners_articles">01. Articles</a><a href="#determiners_definite">02. Definite vs Indefinite</a><a href="#determiners_quantifiers">03. Quantifiers</a><a href="#determiners_demonstratives">04. Demonstratives</a><a href="#determiners_possessives">05. Possessives</a><a href="#determiners_generics">06. Generic Reference</a><a href="#determiners_contrast">07. Determiner Contrast</a><a href="#determiners_prod">08. Production and Editing</a><a href="#practice">练习</a></div></nav>
+<nav class="toc"><div class="wrap"><a href="#determiners_articles">01. Articles / 冠词</a><a href="#determiners_definite">02. Definite vs Indefinite / 定指与不定指</a><a href="#determiners_quantifiers">03. Quantifiers / 量词</a><a href="#determiners_demonstratives">04. Demonstratives / 指示词</a><a href="#determiners_possessives">05. Possessives / 所有格</a><a href="#determiners_generics">06. Generic Reference / 类指</a><a href="#determiners_contrast">07. Determiner Contrast / 限定词对比</a><a href="#determiners_prod">08. Production and Editing / 综合运用与改错</a><a href="#practice">Practice 练习</a></div></nav>
 <main class="wrap">
-  ['\n      <section class="phase" id="determiners_articles">\n        <div class="phase-head">\n          <span class="phase-num">08-01</span>\n          <h2>Articles</h2>\n          <span class="zh">冠词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">a/an = one, non-specific, first mention (a before consonants, an before vowels); the = specific or known; zero article = general plural or uncountable.<span class="zh">a/an 表【一个】，不特指，首次提及（辅音前用 a，元音前用 an）；the 表特指或已知；零冠词用于泛指复数或不可数。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>a/an</b><div class="en">I saw a dog. / an apple; an hour (silent h).</div><div class="zh">我见到一只狗。/ 一个苹果；an hour（h 不发音）。</div></div><div class="rule"><b>the</b><div class="en">The dog I saw was black. (specific)</div><div class="zh">我见到的那只狗是黑色的。（特指）</div></div><div class="rule"><b>零冠词</b><div class="en">Dogs are friendly. / Water is important. (general)</div><div class="zh">狗很友好。/ 水很重要。（泛指）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She bought a car last week.</div><div class="zh">她上周买了一辆车。</div></div><div class="ex"><div class="en">The car is parked outside.</div><div class="zh">那辆车停在门外。</div></div><div class="ex"><div class="en">Children love ice cream.</div><div class="zh">孩子们喜欢冰淇淋。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ an university → a university (yoo sound).<span class="zh">❌ university 发 /juː/，用 a。</span></div><div class="mistake">❌ The dogs are friendly (general) → zero article: Dogs are friendly.<span class="zh">❌ 泛指复数不加 the。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_definite">\n        <div class="phase-head">\n          <span class="phase-num">08-02</span>\n          <h2>Definite vs Indefinite</h2>\n          <span class="zh">定指与不定指</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Use the when both speaker and listener know which one (mentioned before, unique, or clear from context). Use a/an for new or one-of-many.<span class="zh">说话双方都知道是哪一个（前面提过、独一无二或语境明确）时用 the；新提到或众多之一用 a/an。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>提过</b><div class="en">I saw a bird. The bird was singing.</div><div class="zh">我看到一只鸟。那只鸟在唱歌。</div></div><div class="rule"><b>独一无二</b><div class="en">the sun, the moon, the president</div><div class="zh">the sun（太阳）、the moon（月亮）</div></div><div class="rule"><b>语境明确</b><div class="en">Please close the door. (we know which door)</div><div class="zh">请关门。（知道是哪扇门）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">There is a book on the desk. The book is mine.</div><div class="zh">桌上有一本书。那本书是我的。</div></div><div class="ex"><div class="en">She is the manager of this store.</div><div class="zh">她是这家店的经理。</div></div><div class="ex"><div class="en">I need a pen. Do you have one?</div><div class="zh">我需要一支笔。你有吗？</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I saw the bird (first mention) → a bird.<span class="zh">❌ 首次提及用 a。</span></div><div class="mistake">❌ the first mention of a non-specific thing → a/an.<span class="zh">❌ 不特指时用 a/an。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_quantifiers">\n        <div class="phase-head">\n          <span class="phase-num">08-03</span>\n          <h2>Quantifiers</h2>\n          <span class="zh">量词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">some = positive/offer; any = negative/question; much/little = uncountable; many/few = countable; a few = some (positive), few = almost none.<span class="zh">some 用于肯定/提议；any 用于否定/疑问；much/little 修饰不可数；many/few 修饰可数；a few 表示【有一些】（肯定），few 表示【几乎没有】。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>可数</b><div class="en">many books, a few friends, few chances</div><div class="zh">many books（很多书）、a few friends（几个朋友）、few chances（几乎没有机会）</div></div><div class="rule"><b>不可数</b><div class="en">much time, a little sugar, little water</div><div class="zh">much time（很多时间）、a little sugar（一点糖）、little water（几乎没有水）</div></div><div class="rule"><b>some/any</b><div class="en">I have some money. Do you have any? No, I don\'t have any.</div><div class="zh">我有些钱。你有吗？不，我没有。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Would you like some tea?</div><div class="zh">要来点茶吗？</div></div><div class="ex"><div class="en">There aren\'t many seats left.</div><div class="zh">剩下的座位不多了。</div></div><div class="ex"><div class="en">She has a few good ideas.</div><div class="zh">她有一些好主意。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ many water → much water (uncountable).<span class="zh">❌ 不可数用 much。</span></div><div class="mistake">❌ I don\'t have some → any in negatives: I don\'t have any.<span class="zh">❌ 否定句用 any。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_demonstratives">\n        <div class="phase-head">\n          <span class="phase-num">08-04</span>\n          <h2>Demonstratives</h2>\n          <span class="zh">指示词</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">this/these = near; that/those = far. They point at people or things and agree in number.<span class="zh">this/these 表近；that/those 表远。指示词在单复数上要一致。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>近</b><div class="en">this book (singular), these books (plural)</div><div class="zh">this book（这本书）、these books（这些书）</div></div><div class="rule"><b>远</b><div class="en">that house, those houses</div><div class="zh">that house（那栋房子）、those houses（那些房子）</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">This is my friend Tom.</div><div class="zh">这是我的朋友汤姆。</div></div><div class="ex"><div class="en">Those shoes are expensive.</div><div class="zh">那些鞋很贵。</div></div><div class="ex"><div class="en">Look at that bird in the tree.</div><div class="zh">看树上的那只鸟。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ these book → these books (plural).<span class="zh">❌ these 后接复数。</span></div><div class="mistake">❌ this books → this book.<span class="zh">❌ this 后接单数。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_possessives">\n        <div class="phase-head">\n          <span class="phase-num">08-05</span>\n          <h2>Possessives</h2>\n          <span class="zh">所有格</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Possessive determiners: my, your, his, her, its, our, their. They always come before a noun and agree with the owner, not the thing.<span class="zh">所有格限定词：my、your、his、her、its、our、their。它们修饰名词，与所有者一致，而非与事物一致。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>形式</b><div class="en">my book, your phone, his car, her bag, its tail, our home, their toys</div><div class="zh">my book（我的书）、your phone（你的手机）、his car（他的车）……</div></div><div class="rule"><b>不随事物</b><div class="en">She has a brother. Her brother is tall. (her matches she)</div><div class="zh">her 与所有者 she 一致。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Is this your umbrella?</div><div class="zh">这是你的伞吗？</div></div><div class="ex"><div class="en">The dog wagged its tail.</div><div class="zh">狗摇了摇尾巴。</div></div><div class="ex"><div class="en">Their house is near the river.</div><div class="zh">他们的房子在河边。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ its vs it\'s: its = possessive; it\'s = it is.<span class="zh">❌ its（它的）与 it\'s（它是）别混淆。</span></div><div class="mistake">❌ her brother and his sister — match the owner, not the noun.<span class="zh">❌ 所有格与所有者一致。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_generics">\n        <div class="phase-head">\n          <span class="phase-num">08-06</span>\n          <h2>Generic Reference</h2>\n          <span class="zh">类指</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Talk about a whole class with: zero article + plural (Dogs are loyal), the + singular (The lion is a big cat), or a/an + singular (A teacher helps students).<span class="zh">谈论整个类别：零冠词 + 复数（Dogs are loyal）、the + 单数（The lion...）、或 a/an + 单数（A teacher...）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>复数类指</b><div class="en">Cats are independent.</div><div class="zh">猫是独立的。（泛指所有猫）</div></div><div class="rule"><b>the + 单数</b><div class="en">The smartphone changed communication.</div><div class="zh">智能手机改变了沟通方式。</div></div><div class="rule"><b>a/an + 单数</b><div class="en">A doctor saves lives.</div><div class="zh">医生救死扶伤。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Elephants are intelligent animals.</div><div class="zh">大象是聪明的动物。</div></div><div class="ex"><div class="en">The bicycle is a green way to travel.</div><div class="zh">自行车是绿色出行方式。</div></div><div class="ex"><div class="en">A good book is a good friend.</div><div class="zh">好书如好友。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The elephants are intelligent (general) → zero article: Elephants are...<span class="zh">❌ 泛指用零冠词。</span></div><div class="mistake">❌ Mixing plural generic with singular verb.<span class="zh">❌ 类指单复数要一致。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_contrast">\n        <div class="phase-head">\n          <span class="phase-num">08-07</span>\n          <h2>Determiner Contrast</h2>\n          <span class="zh">限定词对比</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Choose the determiner by what you mean: known (the/this), unknown (a/an/some/any), quantity (many/much/few/little), ownership (my/your/his).<span class="zh">按含义选限定词：已知（the/this）、未知（a/an/some/any）、数量（many/much/few/little）、所属（my/your/his）。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>已知性</b><div class="en">the/this for known; a/an/some for new.</div><div class="zh">已知用 the/this；新信息用 a/an/some。</div></div><div class="rule"><b>数量</b><div class="en">countable: many/few; uncountable: much/little.</div><div class="zh">可数：many/few；不可数：much/little。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">I bought some apples. The apples are in the fridge.</div><div class="zh">我买了些苹果。苹果在冰箱里。</div></div><div class="ex"><div class="en">How much time do we have?</div><div class="zh">我们还有多少时间？</div></div><div class="ex"><div class="en">There are few people in the park today.</div><div class="zh">今天公园里人很少。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ How many time → how much time (uncountable).<span class="zh">❌ time 不可数，用 how much。</span></div><div class="mistake">❌ few vs a few: few = almost none; a few = some.<span class="zh">❌ few 几乎为零；a few 有一些。</span></div></div>\n      </section>', '\n      <section class="phase" id="determiners_prod">\n        <div class="phase-head">\n          <span class="phase-num">08-08</span>\n          <h2>Production and Editing</h2>\n          <span class="zh">综合运用与改错</span>\n        </div>\n        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Edit texts by asking about each noun: Is it specific or general? Countable or uncountable? Singular or plural? Then choose the determiner.<span class="zh">改错时对每个名词提问：特指还是泛指？可数还是不可数？单数还是复数？再选限定词。</span></div></div>\n        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>四问</b><div class="en">specific? countable? plural? known? → the/a/an/zero/quantifier.</div><div class="zh">特指？可数？复数？已知？→ 决定冠词与量词。</div></div><div class="rule"><b>首尾一致</b><div class="en">The determiner must agree with the noun number.</div><div class="zh">限定词与名词单复数一致。</div></div></div></div>\n        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">❌ I have few questions to ask. (few = almost none) → I have a few questions to ask.</div><div class="zh">❌ 想说「有几个问题」用 a few。</div></div><div class="ex"><div class="en">❌ She gave me an useful advice → She gave me useful advice. (advice uncountable, no article)</div><div class="zh">❌ advice 不可数，不用 a/an。</div></div><div class="ex"><div class="en">✔ The teacher gave the students some useful advice.</div><div class="zh">✔ 老师给学生们一些有用的建议。</div></div></div>\n        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ informations → information (uncountable, no plural).<span class="zh">❌ information 不可数。</span></div><div class="mistake">❌ a equipment → equipment (uncountable): some equipment.<span class="zh">❌ equipment 不可数。</span></div></div>\n      </section>']
+  
+      <section class="phase" id="determiners_articles">
+        <div class="phase-head">
+          <span class="phase-num">08-01</span>
+          <h2>Articles</h2>
+          <span class="zh">冠词</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">a/an = one, non-specific, first mention (a before consonants, an before vowels); the = specific or known; zero article = general plural or uncountable.<span class="zh">a/an 表【一个】，不特指，首次提及（辅音前用 a，元音前用 an）；the 表特指或已知；零冠词用于泛指复数或不可数。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>a/an</b><div class="en">I saw a dog. / an apple; an hour (silent h).</div><div class="zh">我见到一只狗。/ 一个苹果；an hour（h 不发音）。</div></div><div class="rule"><b>the</b><div class="en">The dog I saw was black. (specific)</div><div class="zh">我见到的那只狗是黑色的。（特指）</div></div><div class="rule"><b>零冠词</b><div class="en">Dogs are friendly. / Water is important. (general)</div><div class="zh">狗很友好。/ 水很重要。（泛指）</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">She bought a car last week.</div><div class="zh">她上周买了一辆车。</div></div><div class="ex"><div class="en">The car is parked outside.</div><div class="zh">那辆车停在门外。</div></div><div class="ex"><div class="en">Children love ice cream.</div><div class="zh">孩子们喜欢冰淇淋。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ an university → a university (yoo sound).<span class="zh">❌ university 发 /juː/，用 a。</span></div><div class="mistake">❌ The dogs are friendly (general) → zero article: Dogs are friendly.<span class="zh">❌ 泛指复数不加 the。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_definite">
+        <div class="phase-head">
+          <span class="phase-num">08-02</span>
+          <h2>Definite vs Indefinite</h2>
+          <span class="zh">定指与不定指</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Use the when both speaker and listener know which one (mentioned before, unique, or clear from context). Use a/an for new or one-of-many.<span class="zh">说话双方都知道是哪一个（前面提过、独一无二或语境明确）时用 the；新提到或众多之一用 a/an。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>提过</b><div class="en">I saw a bird. The bird was singing.</div><div class="zh">我看到一只鸟。那只鸟在唱歌。</div></div><div class="rule"><b>独一无二</b><div class="en">the sun, the moon, the president</div><div class="zh">the sun（太阳）、the moon（月亮）</div></div><div class="rule"><b>语境明确</b><div class="en">Please close the door. (we know which door)</div><div class="zh">请关门。（知道是哪扇门）</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">There is a book on the desk. The book is mine.</div><div class="zh">桌上有一本书。那本书是我的。</div></div><div class="ex"><div class="en">She is the manager of this store.</div><div class="zh">她是这家店的经理。</div></div><div class="ex"><div class="en">I need a pen. Do you have one?</div><div class="zh">我需要一支笔。你有吗？</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ I saw the bird (first mention) → a bird.<span class="zh">❌ 首次提及用 a。</span></div><div class="mistake">❌ the first mention of a non-specific thing → a/an.<span class="zh">❌ 不特指时用 a/an。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_quantifiers">
+        <div class="phase-head">
+          <span class="phase-num">08-03</span>
+          <h2>Quantifiers</h2>
+          <span class="zh">量词</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">some = positive/offer; any = negative/question; much/little = uncountable; many/few = countable; a few = some (positive), few = almost none.<span class="zh">some 用于肯定/提议；any 用于否定/疑问；much/little 修饰不可数；many/few 修饰可数；a few 表示【有一些】（肯定），few 表示【几乎没有】。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>可数</b><div class="en">many books, a few friends, few chances</div><div class="zh">many books（很多书）、a few friends（几个朋友）、few chances（几乎没有机会）</div></div><div class="rule"><b>不可数</b><div class="en">much time, a little sugar, little water</div><div class="zh">much time（很多时间）、a little sugar（一点糖）、little water（几乎没有水）</div></div><div class="rule"><b>some/any</b><div class="en">I have some money. Do you have any? No, I don't have any.</div><div class="zh">我有些钱。你有吗？不，我没有。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Would you like some tea?</div><div class="zh">要来点茶吗？</div></div><div class="ex"><div class="en">There aren't many seats left.</div><div class="zh">剩下的座位不多了。</div></div><div class="ex"><div class="en">She has a few good ideas.</div><div class="zh">她有一些好主意。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ many water → much water (uncountable).<span class="zh">❌ 不可数用 much。</span></div><div class="mistake">❌ I don't have some → any in negatives: I don't have any.<span class="zh">❌ 否定句用 any。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_demonstratives">
+        <div class="phase-head">
+          <span class="phase-num">08-04</span>
+          <h2>Demonstratives</h2>
+          <span class="zh">指示词</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">this/these = near; that/those = far. They point at people or things and agree in number.<span class="zh">this/these 表近；that/those 表远。指示词在单复数上要一致。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>近</b><div class="en">this book (singular), these books (plural)</div><div class="zh">this book（这本书）、these books（这些书）</div></div><div class="rule"><b>远</b><div class="en">that house, those houses</div><div class="zh">that house（那栋房子）、those houses（那些房子）</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">This is my friend Tom.</div><div class="zh">这是我的朋友汤姆。</div></div><div class="ex"><div class="en">Those shoes are expensive.</div><div class="zh">那些鞋很贵。</div></div><div class="ex"><div class="en">Look at that bird in the tree.</div><div class="zh">看树上的那只鸟。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ these book → these books (plural).<span class="zh">❌ these 后接复数。</span></div><div class="mistake">❌ this books → this book.<span class="zh">❌ this 后接单数。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_possessives">
+        <div class="phase-head">
+          <span class="phase-num">08-05</span>
+          <h2>Possessives</h2>
+          <span class="zh">所有格</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Possessive determiners: my, your, his, her, its, our, their. They always come before a noun and agree with the owner, not the thing.<span class="zh">所有格限定词：my、your、his、her、its、our、their。它们修饰名词，与所有者一致，而非与事物一致。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>形式</b><div class="en">my book, your phone, his car, her bag, its tail, our home, their toys</div><div class="zh">my book（我的书）、your phone（你的手机）、his car（他的车）……</div></div><div class="rule"><b>不随事物</b><div class="en">She has a brother. Her brother is tall. (her matches she)</div><div class="zh">her 与所有者 she 一致。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Is this your umbrella?</div><div class="zh">这是你的伞吗？</div></div><div class="ex"><div class="en">The dog wagged its tail.</div><div class="zh">狗摇了摇尾巴。</div></div><div class="ex"><div class="en">Their house is near the river.</div><div class="zh">他们的房子在河边。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ its vs it's: its = possessive; it's = it is.<span class="zh">❌ its（它的）与 it's（它是）别混淆。</span></div><div class="mistake">❌ her brother and his sister — match the owner, not the noun.<span class="zh">❌ 所有格与所有者一致。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_generics">
+        <div class="phase-head">
+          <span class="phase-num">08-06</span>
+          <h2>Generic Reference</h2>
+          <span class="zh">类指</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Talk about a whole class with: zero article + plural (Dogs are loyal), the + singular (The lion is a big cat), or a/an + singular (A teacher helps students).<span class="zh">谈论整个类别：零冠词 + 复数（Dogs are loyal）、the + 单数（The lion...）、或 a/an + 单数（A teacher...）。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>复数类指</b><div class="en">Cats are independent.</div><div class="zh">猫是独立的。（泛指所有猫）</div></div><div class="rule"><b>the + 单数</b><div class="en">The smartphone changed communication.</div><div class="zh">智能手机改变了沟通方式。</div></div><div class="rule"><b>a/an + 单数</b><div class="en">A doctor saves lives.</div><div class="zh">医生救死扶伤。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">Elephants are intelligent animals.</div><div class="zh">大象是聪明的动物。</div></div><div class="ex"><div class="en">The bicycle is a green way to travel.</div><div class="zh">自行车是绿色出行方式。</div></div><div class="ex"><div class="en">A good book is a good friend.</div><div class="zh">好书如好友。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ The elephants are intelligent (general) → zero article: Elephants are...<span class="zh">❌ 泛指用零冠词。</span></div><div class="mistake">❌ Mixing plural generic with singular verb.<span class="zh">❌ 类指单复数要一致。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_contrast">
+        <div class="phase-head">
+          <span class="phase-num">08-07</span>
+          <h2>Determiner Contrast</h2>
+          <span class="zh">限定词对比</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Choose the determiner by what you mean: known (the/this), unknown (a/an/some/any), quantity (many/much/few/little), ownership (my/your/his).<span class="zh">按含义选限定词：已知（the/this）、未知（a/an/some/any）、数量（many/much/few/little）、所属（my/your/his）。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>已知性</b><div class="en">the/this for known; a/an/some for new.</div><div class="zh">已知用 the/this；新信息用 a/an/some。</div></div><div class="rule"><b>数量</b><div class="en">countable: many/few; uncountable: much/little.</div><div class="zh">可数：many/few；不可数：much/little。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">I bought some apples. The apples are in the fridge.</div><div class="zh">我买了些苹果。苹果在冰箱里。</div></div><div class="ex"><div class="en">How much time do we have?</div><div class="zh">我们还有多少时间？</div></div><div class="ex"><div class="en">There are few people in the park today.</div><div class="zh">今天公园里人很少。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ How many time → how much time (uncountable).<span class="zh">❌ time 不可数，用 how much。</span></div><div class="mistake">❌ few vs a few: few = almost none; a few = some.<span class="zh">❌ few 几乎为零；a few 有一些。</span></div></div>
+      </section>
+      <section class="phase" id="determiners_prod">
+        <div class="phase-head">
+          <span class="phase-num">08-08</span>
+          <h2>Production and Editing</h2>
+          <span class="zh">综合运用与改错</span>
+        </div>
+        <div class="card"><h3>💡 概念 Concept</h3><div class="concept">Edit texts by asking about each noun: Is it specific or general? Countable or uncountable? Singular or plural? Then choose the determiner.<span class="zh">改错时对每个名词提问：特指还是泛指？可数还是不可数？单数还是复数？再选限定词。</span></div></div>
+        <div class="card"><h3>📐 规则 Rules</h3><div class="rules"><div class="rule"><b>四问</b><div class="en">specific? countable? plural? known? → the/a/an/zero/quantifier.</div><div class="zh">特指？可数？复数？已知？→ 决定冠词与量词。</div></div><div class="rule"><b>首尾一致</b><div class="en">The determiner must agree with the noun number.</div><div class="zh">限定词与名词单复数一致。</div></div></div></div>
+        <div class="card"><h3>✏️ 例句 Examples</h3><div class="ex"><div class="en">❌ I have few questions to ask. (few = almost none) → I have a few questions to ask.</div><div class="zh">❌ 想说「有几个问题」用 a few。</div></div><div class="ex"><div class="en">❌ She gave me an useful advice → She gave me useful advice. (advice uncountable, no article)</div><div class="zh">❌ advice 不可数，不用 a/an。</div></div><div class="ex"><div class="en">✔ The teacher gave the students some useful advice.</div><div class="zh">✔ 老师给学生们一些有用的建议。</div></div></div>
+        <div class="card mistakes"><h3>⚠️ 常见错误 Common Mistakes</h3><div class="mistake">❌ informations → information (uncountable, no plural).<span class="zh">❌ information 不可数。</span></div><div class="mistake">❌ a equipment → equipment (uncountable): some equipment.<span class="zh">❌ equipment 不可数。</span></div></div>
+      </section>
   
       <section class="phase practice" id="practice">
-        <div class="phase-head"><span class="phase-num">PR</span><h2>课堂练习 Practice</h2><span class="zh">选自 GramLingo 题库</span></div>
+        <div class="phase-head"><span class="phase-num">PR</span><h2>Practice 课堂练习</h2><span class="zh">from the GramLingo question bank</span></div>
         
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q1</span><span class="qtext">I saw ___ elephant at the zoo.</span></summary>
-            <div class="opts"><div class="opt">a</div><div class="opt right">an</div><div class="opt">the</div><div class="opt">Ø</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">a</button><button type="button" class="opt right" aria-pressed="false">an</button><button type="button" class="opt" aria-pressed="false">the</button><button type="button" class="opt" aria-pressed="false">Ø</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q2</span><span class="qtext">There is very ___ sugar in my coffee. I need more.</span></summary>
-            <div class="opts"><div class="opt right">little</div><div class="opt">few</div><div class="opt">much</div><div class="opt">many</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt right" aria-pressed="false">little</button><button type="button" class="opt" aria-pressed="false">few</button><button type="button" class="opt" aria-pressed="false">much</button><button type="button" class="opt" aria-pressed="false">many</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
         <div class="p-q">
           <details>
             <summary><span class="qnum">Q3</span><span class="qtext">Choose the correct sentence:</span></summary>
-            <div class="opts"><div class="opt">I do not have some money.</div><div class="opt right">I do not have any money.</div><div class="opt">I do not have much moneys.</div><div class="opt">I do not have few money.</div></div>
-            <div class="hint">点击选项上方文字已展开答案 · 正确答案由 GramLingo 题库提供</div>
+            <div class="opts"><button type="button" class="opt" aria-pressed="false">I do not have some money.</button><button type="button" class="opt right" aria-pressed="false">I do not have any money.</button><button type="button" class="opt" aria-pressed="false">I do not have much moneys.</button><button type="button" class="opt" aria-pressed="false">I do not have few money.</button></div>
+            <div class="hint">Tap an option to reveal the answer · 点击选项查看答案</div>
           </details>
         </div>
       </section>
 </main>
 <footer class="wrap">
-  <div class="nav-prev-next"><a href="determiners.html"><div class="dir">← 上一模块</div><div class="t">Articles &amp; Determiners 冠词与限定词</div></a><a href="verb_patterns.html"><div class="dir">下一模块 →</div><div class="t">Verb Patterns 动词搭配</div></a></div>
-  <div class="credit">GramLingo 语法课件 · Module 08 / 12 · 双语教案 EN + 中文<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
-  <a class="toplink" href="#top">↑ 返回顶部</a>
+  <a class="hub-link" href="index.html">← All lessons / 全部课件</a>
+  <div class="nav-prev-next"><a href="determiners.html"><div class="dir">← Previous 上一模块</div><div class="t">Articles &amp; Determiners 冠词与限定词</div></a><a href="verb_patterns.html"><div class="dir">Next 下一模块 →</div><div class="t">Verb Patterns 动词搭配</div></a></div>
+  <div class="credit">GramLingo · Module 08 / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <a class="toplink" href="#top">↑ Back to top 返回顶部</a>
 </footer>
 <script>
 document.documentElement.style.setProperty('--accent', document.body.dataset.accent);
+document.querySelectorAll('.practice .opt').forEach(function (button) {
+  button.addEventListener('click', function () {
+    var group = button.closest('.opts');
+    group.querySelectorAll('.opt').forEach(function (option) {
+      option.setAttribute('aria-pressed', option === button ? 'true' : 'false');
+    });
+  });
+});
 var links=[].slice.call(document.querySelectorAll('.toc a'));
 var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
 window.addEventListener('scroll',function(){

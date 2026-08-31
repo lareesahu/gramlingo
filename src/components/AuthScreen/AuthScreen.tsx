@@ -19,6 +19,14 @@ interface AuthScreenProps {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+/** Returns an error message if invalid, or null when valid. */
+function validateEmail(email: string): string | null {
+  return EMAIL_RE.test(email) ? null : "Enter a valid email address.";
+}
+function validatePassword(password: string): string | null {
+  return password.length >= 6 ? null : "Password must be at least 6 characters.";
+}
+
 export function AuthScreen({ open, onClose }: AuthScreenProps) {
   const {
     language, cloudEnabled, getUsers, login, createAccount,
@@ -96,8 +104,10 @@ export function AuthScreen({ open, onClose }: AuthScreenProps) {
       await submitLocalLogin(localName, localPin);
       return;
     }
-    if (!EMAIL_RE.test(email)) { setError("Enter a valid email address."); return; }
-    if (password.length < 6) { setError("Password must be at least 6 characters."); return; }
+    const emailErr = validateEmail(email);
+    if (emailErr) { setError(emailErr); return; }
+    const passErr = validatePassword(password);
+    if (passErr) { setError(passErr); return; }
     setSubmitting(true);
     const err = await login(email.trim(), password);
     setSubmitting(false);
@@ -115,8 +125,10 @@ export function AuthScreen({ open, onClose }: AuthScreenProps) {
       return;
     }
     if (name.trim().length > 30) { setError("Name is too long (30 characters max)."); return; }
-    if (!EMAIL_RE.test(email)) { setError("Enter a valid email address."); return; }
-    if (password.length < 6) { setError("Password must be at least 6 characters."); return; }
+    const emailErr = validateEmail(email);
+    if (emailErr) { setError(emailErr); return; }
+    const passErr = validatePassword(password);
+    if (passErr) { setError(passErr); return; }
     if (password !== confirm) { setError("Passwords do not match."); return; }
     setSubmitting(true);
     const err = await createAccount(email.trim(), password, name.trim() || undefined);
@@ -132,7 +144,8 @@ export function AuthScreen({ open, onClose }: AuthScreenProps) {
   const handleForgot = async () => {
     setError("");
     setNotice("");
-    if (!EMAIL_RE.test(email)) { setError("Enter a valid email address."); return; }
+    const emailErr = validateEmail(email);
+    if (emailErr) { setError(emailErr); return; }
     setSubmitting(true);
     const err = await requestPasswordReset(email.trim());
     setSubmitting(false);

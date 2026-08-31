@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { AppProvider } from "../app/AppProvider";
 import { App } from "../app/App";
+import { WelcomeScreen } from "./WelcomeScreen";
 
 describe("WelcomeScreen", () => {
   beforeEach(() => { localStorage.clear(); localStorage.setItem("gramlingo_intro_seen_v1", "1"); });
@@ -25,6 +26,16 @@ describe("WelcomeScreen", () => {
     render(<AppProvider><App /></AppProvider>);
     const startBtns = await screen.findAllByText("Start Learning", {}, { timeout: 3000 });
     await user.click(startBtns[0]);
+    expect(await screen.findByRole("dialog")).toBeInTheDocument();
+  });
+
+  it("auto-opens the auth dialog when autoAuth is set (login deep-link)", async () => {
+    // The /login route renders <WelcomeScreen autoAuth /> inside AppProvider; verify the prop opens the dialog.
+    render(
+      <AppProvider>
+        <WelcomeScreen autoAuth />
+      </AppProvider>
+    );
     expect(await screen.findByRole("dialog")).toBeInTheDocument();
   });
 
