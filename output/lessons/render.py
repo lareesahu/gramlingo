@@ -350,7 +350,7 @@ def render_lesson(lesson, idx):
 <footer class="wrap">
   <a class="hub-link" href="index.html">← All lessons / 全部课件</a>
   <div class="nav-prev-next">{nav}</div>
-  <div class="credit">GramLingo · Module {idx:02d} / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></div>
+  <div class="credit">GramLingo · Module {idx:02d} / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></div>
   <a class="toplink" href="#top">↑ Back to top 返回顶部</a>
 </footer>
 <script>
@@ -421,7 +421,7 @@ footer a{{color:#4e9f2f;text-decoration:none;font-weight:600}}
   </div>
 </header>
 <main class="wrap"><div class="grid">{''.join(cards)}</div></main>
-<footer>Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></footer>
+<footer>Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></footer>
 </body>
 </html>'''
 
@@ -463,7 +463,7 @@ def render_index():
   </div>
 </header>
 <main><section class="module-gallery-section"><h2 class="section-heading">Choose a grammar world / 选择语法世界</h2><p class="section-sub">Short, visual lessons that make grammar stick. / 简短、直观，让语法真正留下来。</p><div class="gallery-wrap"><div class="module-gallery-hint">Drag to explore / 拖动浏览 →</div><div class="module-gallery">{''.join(cards)}</div></div></section></main>
-<footer>Learn by playing at <a href="https://app.gramlingo.online">app.gramlingo.online</a> · Built with care by <a href="https://pulsebranding.com">Pulse Branding</a></footer>
+<footer>Learn by playing at <a href="https://app.gramlingo.online">app.gramlingo.online</a> · Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></footer>
 </body>
 </html>'''
 
