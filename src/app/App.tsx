@@ -34,14 +34,10 @@ export function App() {
   // URL ↔ screen sync (subdomain-aware; landing at /, app at /app, lessons at /app/lesson)
   useUrlSync(screen, navigateTo);
 
-  // First-launch journey: full-screen poster slideshow, shown ONCE, then the login screen.
-  if (!introSeen && !skipIntroOnce) {
-    return <IntroScreen onDone={() => { setIntroSeen(true); navigateTo('login'); }} />;
-  }
-
-  // Loading screen mount: show 1.5s on first visit, then route to login
+  // Loading screen mount: show 1.5s on first visit, then route to login.
+  // Guarded so it never runs while the intro owns the boot flow (keeps hooks unconditional).
   useEffect(() => {
-    if (screen === 'loading' && !cloudEnabled) {
+    if (introSeen && screen === 'loading' && !cloudEnabled) {
       const alreadyLoaded = localStorage.getItem(LOADED_FLAG);
       if (alreadyLoaded) {
         navigateTo('login');
@@ -53,7 +49,12 @@ export function App() {
       }, LOAD_DURATION);
       return () => clearTimeout(timer);
     }
-  }, [screen, navigateTo, cloudEnabled]);
+  }, [introSeen, screen, navigateTo, cloudEnabled]);
+
+  // First-launch journey: full-screen poster slideshow, shown ONCE, then the login screen.
+  if (!introSeen && !skipIntroOnce) {
+    return <IntroScreen onDone={() => { setIntroSeen(true); navigateTo('login'); }} />;
+  }
 
   // Show loading screen
   if (screen === 'loading') {
