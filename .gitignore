@@ -18,3 +18,7 @@ ios/App/build
 # Signing — never commit
 android/keystore/
 android/keystore.properties
+
+# python bytecode
+__pycache__/
+*.pyc
