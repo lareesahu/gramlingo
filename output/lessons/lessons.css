@@ -174,3 +174,8 @@ h1,h2,h3{font-family:Baloo2,DMSans,sans-serif}
 @media (max-width:900px){.lesson-nav-links{overflow-x:auto;justify-content:flex-end}.lesson-nav-link{white-space:nowrap}.lesson-language{display:none}.hub-gramlin{right:18px;width:110px}}
 @media (max-width:640px){.lesson-nav{height:58px;padding:0 10px}.lesson-brand img{width:104px}.lesson-nav-links{gap:0}.lesson-nav-link{font-size:11px;padding:7px 8px}.lesson-nav-link:not(.lesson-nav-link--active):not(.lesson-nav-link--cta){display:none}.hub-gramlin{display:none}.cover h1{padding-right:0}}
 @media (max-width:640px){.cover-art{display:none}.cover h1{max-width:none}.cover .desc{max-width:none}.hub .section-heading,.hub .section-sub{padding:0 18px}}
+/* Grammar Foundations tiles (standalone lecture decks) */
+.hub .module-gallery-section + .module-gallery-section{padding-top:clamp(6px,1.6vw,20px)}
+.hub .module-card--foundation .module-card-cover{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 78% 18%,rgba(255,255,255,.9),transparent 52%),var(--accent-soft);border-bottom:2px dashed var(--line)}
+.hub .module-card--foundation .ico{font-size:62px;line-height:1;filter:drop-shadow(0 4px 0 rgba(45,27,16,.18));animation:lesson-float 5s ease-in-out infinite}
+@media (max-width:640px){.hub .module-card--foundation .ico{font-size:50px}}

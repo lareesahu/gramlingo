@@ -12,13 +12,13 @@ def load_lesson(path):
     spec.loader.exec_module(mod)
     return mod.LESSON
 
-LESSONS = []
-for f in sorted(glob.glob(os.path.join(CONTENT_DIR, "m*.py"))):
-    LESSONS.append(load_lesson(f))
+MODULES = [load_lesson(f) for f in sorted(glob.glob(os.path.join(CONTENT_DIR, "m*.py")))]
+FOUNDATIONS = [load_lesson(f) for f in sorted(glob.glob(os.path.join(CONTENT_DIR, "f*.py")))]
 
-# order by game-data module sort
+# order modules by game-data module sort; foundations follow in filename order
 sort_map = {m["id"]: m["sort"] for m in DATA["modules"]}
-LESSONS.sort(key=lambda l: sort_map.get(l["id"], 99))
+MODULES.sort(key=lambda l: sort_map.get(l["id"], 99))
+LESSONS = MODULES + FOUNDATIONS
 
 # Landing-page card metadata (matches gramlingo.online worlds carousel exactly)
 CARD_META = {
@@ -34,6 +34,11 @@ CARD_META = {
     "verb_patterns": ("Verb Patterns", "enjoy doing · decide to do"),
     "sentence_structure": ("Sentence Structure", "subject · verb · object"),
     "advanced": ("Advanced Expressions", "idioms that impress"),
+    # Grammar Foundations (standalone lecture decks, f*.py)
+    "word_classes": ("Word Classes", "noun · verb · adjective · adverb"),
+    "singular_plural": ("Singular & Plural", "one book · two books"),
+    "third_person": ("Third Person", "he · she · it + -s"),
+    "word_building": ("Word Building", "root + -er/-or · -tion · -al · -ism"),
 }
 
 def esc(s):
@@ -242,10 +247,25 @@ h1,h2,h3{font-family:Baloo2,DMSans,sans-serif}
 @media (max-width:900px){.lesson-nav-links{overflow-x:auto;justify-content:flex-end}.lesson-nav-link{white-space:nowrap}.lesson-language{display:none}.hub-gramlin{right:18px;width:110px}}
 @media (max-width:640px){.lesson-nav{height:58px;padding:0 10px}.lesson-brand img{width:104px}.lesson-nav-links{gap:0}.lesson-nav-link{font-size:11px;padding:7px 8px}.lesson-nav-link:not(.lesson-nav-link--active):not(.lesson-nav-link--cta){display:none}.hub-gramlin{display:none}.cover h1{padding-right:0}}
 @media (max-width:640px){.cover-art{display:none}.cover h1{max-width:none}.cover .desc{max-width:none}.hub .section-heading,.hub .section-sub{padding:0 18px}}
+/* Grammar Foundations tiles (standalone lecture decks) */
+.hub .module-gallery-section + .module-gallery-section{padding-top:clamp(6px,1.6vw,20px)}
+.hub .module-card--foundation .module-card-cover{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 78% 18%,rgba(255,255,255,.9),transparent 52%),var(--accent-soft);border-bottom:2px dashed var(--line)}
+.hub .module-card--foundation .ico{font-size:62px;line-height:1;filter:drop-shadow(0 4px 0 rgba(45,27,16,.18));animation:lesson-float 5s ease-in-out infinite}
+@media (max-width:640px){.hub .module-card--foundation .ico{font-size:50px}}
 """
 
 def render_lesson(lesson, idx):
     pid = lesson["id"]
+    foundation = bool(lesson.get("foundation"))
+    if foundation:
+        ph_prefix = "F-"
+        mi = 0
+    else:
+        mi = MODULES.index(lesson) + 1
+        ph_prefix = f"{mi:02d}-"
+    k = LESSONS.index(lesson)
+    prev_l = LESSONS[k - 1] if k > 0 else None
+    next_l = LESSONS[k + 1] if k < len(LESSONS) - 1 else None
     phases_html = []
     for n, p in enumerate(lesson["phases"], 1):
         rules = "".join(
@@ -261,7 +281,7 @@ def render_lesson(lesson, idx):
         phases_html.append(f'''
       <section class="phase" id="{esc(p["id"])}">
         <div class="phase-head">
-          <span class="phase-num">{idx:02d}-{n:02d}</span>
+          <span class="phase-num">{ph_prefix}{n:02d}</span>
           <h2>{esc(p["name"])}</h2>
           <span class="zh">{esc(p["zh"])}</span>
         </div>
@@ -296,17 +316,19 @@ def render_lesson(lesson, idx):
 
     toc = "".join(
         f'<a href="#{esc(p["id"])}">{n:02d}. {esc(p["name"])} / {esc(p["zh"])}</a>'
-        for n, p in enumerate(lesson["phases"], 1)) + '<a href="#practice">Practice 练习</a>'
+        for n, p in enumerate(lesson["phases"], 1))
+    if practice:
+        toc += '<a href="#practice">Practice 练习</a>'
 
-    prev_l = LESSONS[idx - 1] if idx > 0 else None
-    next_l = LESSONS[idx + 1] if idx < len(LESSONS) - 1 else None
+    prev_dir = "← Previous 上一课" if (prev_l and prev_l.get("foundation")) else "← Previous 上一模块"
+    next_dir = "Next 下一课 →" if (next_l and next_l.get("foundation")) else "Next 下一模块 →"
     nav = ""
     if prev_l:
-        nav += f'<a href="{prev_l["id"]}.html"><div class="dir">← Previous 上一模块</div><div class="t">{esc(prev_l["name"])} {esc(prev_l["zh"])}</div></a>'
+        nav += f'<a href="{prev_l["id"]}.html"><div class="dir">{prev_dir}</div><div class="t">{esc(prev_l["name"])} {esc(prev_l["zh"])}</div></a>'
     else:
         nav += f'<a href="index.html"><div class="dir">← All lessons 返回目录</div><div class="t">All modules 全部模块</div></a>'
     if next_l:
-        nav += f'<a href="{next_l["id"]}.html"><div class="dir">Next 下一模块 →</div><div class="t">{esc(next_l["name"])} {esc(next_l["zh"])}</div></a>'
+        nav += f'<a href="{next_l["id"]}.html"><div class="dir">{next_dir}</div><div class="t">{esc(next_l["name"])} {esc(next_l["zh"])}</div></a>'
     else:
         nav += f'<a href="index.html"><div class="dir">All lessons 返回目录 →</div><div class="t">All modules 全部模块</div></a>'
 
@@ -315,12 +337,22 @@ def render_lesson(lesson, idx):
         for n, o in enumerate(lesson.get("objectives", []), 1))
 
     phases = "".join(phases_html)
+    if foundation:
+        page_title = f"{esc(lesson['name'])} · Grammar Foundations — GramLingo Lessons / 语法课件"
+        kicker_txt = "GramLingo · Grammar Foundations / 语法基础"
+        credit_txt = "GramLingo · Grammar Foundations / 语法基础 · Bilingual lessons EN + 中文 / 双语教案"
+        cover_img = ""
+    else:
+        page_title = f"Module {mi:02d} · {esc(lesson['name'])} — GramLingo Lessons / 语法课件"
+        kicker_txt = f"GramLingo · Module {mi:02d} / 12 · 模块 {mi:02d} / 12"
+        credit_txt = f"GramLingo · Module {mi:02d} / 12 · Bilingual lessons EN + 中文 / 双语教案"
+        cover_img = f'<img class="cover-art" src="assets/covers/cover-{esc(pid)}.webp" alt="" loading="eager">'
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Module {idx:02d} · {esc(lesson["name"])} — GramLingo Lessons / 语法课件</title>
+<title>{page_title}</title>
 <link rel="stylesheet" href="lessons.css">
 </head>
 <body data-accent="{esc(lesson.get("accent","#6aa72e"))}">
@@ -335,9 +367,9 @@ def render_lesson(lesson, idx):
 </nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo · Module {idx:02d} / 12 · 模块 {idx:02d} / 12</div>
+    <div class="kicker">{kicker_txt}</div>
     <h1>{esc(lesson.get("icon",""))} {esc(lesson["name"])}<span class="zh">{esc(lesson["zh"])}</span></h1>
-    <img class="cover-art" src="assets/covers/cover-{esc(pid)}.webp" alt="" loading="eager">
+    {cover_img}
     <div class="desc">{esc(lesson["desc"]["en"])}<span class="zh">{esc(lesson["desc"]["zh"])}</span></div>
     <div class="objectives">{objs}</div>
   </div>
@@ -350,7 +382,7 @@ def render_lesson(lesson, idx):
 <footer class="wrap">
   <a class="hub-link" href="index.html">← All lessons / 全部课件</a>
   <div class="nav-prev-next">{nav}</div>
-  <div class="credit">GramLingo · Module {idx:02d} / 12 · Bilingual lessons EN + 中文 / 双语教案<br>Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></div>
+  <div class="credit">{credit_txt}<br>Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></div>
   <a class="toplink" href="#top">↑ Back to top 返回顶部</a>
 </footer>
 <script>
@@ -426,11 +458,21 @@ footer a{{color:#4e9f2f;text-decoration:none;font-weight:600}}
 </html>'''
 
 def render_index():
-    cards = []
-    for l in LESSONS:
+    mod_cards = []
+    for l in MODULES:
         name, keyword = CARD_META[l["id"]]
-        cards.append(f'''\n      <a class="module-card" href="{l["id"]}.html">
+        mod_cards.append(f'''\n      <a class="module-card" href="{l["id"]}.html">
         <div class="module-card-cover"><img src="assets/covers/cover-{l["id"]}.webp" width="512" height="512" alt="{esc(name)}" loading="lazy"></div>
+        <div class="module-card-body">
+          <h2>{esc(name)}</h2>
+          <p>{esc(keyword)}</p>
+        </div>
+      </a>''')
+    fnd_cards = []
+    for l in FOUNDATIONS:
+        name, keyword = CARD_META[l["id"]]
+        fnd_cards.append(f'''\n      <a class="module-card module-card--foundation" style="--accent:{esc(l.get("accent","#6aa72e"))}" href="{l["id"]}.html">
+        <div class="module-card-cover"><div class="ico">{esc(l.get("icon","📘"))}</div></div>
         <div class="module-card-body">
           <h2>{esc(name)}</h2>
           <p>{esc(keyword)}</p>
@@ -456,13 +498,16 @@ def render_index():
 </nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo · 12 modules · 92 lessons / 12 个模块 · 92 节课</div>
+    <div class="kicker">GramLingo · 12 modules · 92 lessons + 4 foundation decks / 12 个模块 · 92 节课 + 4 个基础课件</div>
     <img class="hub-gramlin" src="assets/gramlin/peekaboo-gramlin.png" alt="" aria-hidden="true">
     <h1>Grammar lessons <span class="zh">语法课件目录</span></h1>
     <div class="sub">Build clear grammar intuition through short explanations, examples, common mistakes, and practice.<br><span class="zh">用简短讲解、例句、常见错误与练习，建立清晰的语法直觉。</span></div>
   </div>
 </header>
-<main><section class="module-gallery-section"><h2 class="section-heading">Choose a grammar world / 选择语法世界</h2><p class="section-sub">Short, visual lessons that make grammar stick. / 简短、直观，让语法真正留下来。</p><div class="gallery-wrap"><div class="module-gallery-hint">Drag to explore / 拖动浏览 →</div><div class="module-gallery">{''.join(cards)}</div></div></section></main>
+<main>
+<section class="module-gallery-section"><h2 class="section-heading">Start with the basics / 从语法基础开始</h2><p class="section-sub">Beginner essentials before the grammar worlds: word classes, plurals, he / she / it, and building words. / 先打好地基：词性、单复数、第三人称与构词法。</p><div class="gallery-wrap"><div class="module-gallery-hint">Drag to explore / 拖动浏览 →</div><div class="module-gallery">{''.join(fnd_cards)}</div></div></section>
+<section class="module-gallery-section"><h2 class="section-heading">Choose a grammar world / 选择语法世界</h2><p class="section-sub">Short, visual lessons that make grammar stick. / 简短、直观，让语法真正留下来。</p><div class="gallery-wrap"><div class="module-gallery-hint">Drag to explore / 拖动浏览 →</div><div class="module-gallery">{''.join(mod_cards)}</div></div></section>
+</main>
 <footer>Learn by playing at <a href="https://app.gramlingo.online">app.gramlingo.online</a> · Built with care by <a href="https://pulse-branding.com">Pulse Branding</a></footer>
 </body>
 </html>'''
