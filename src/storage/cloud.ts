@@ -227,6 +227,19 @@ export async function restoreCloudIdentity(): Promise<CloudIdentity | null> {
   return loadIdentity(data.user);
 }
 
+/** True when a cloud session exists in local storage — even if its refresh
+ *  is currently failing (offline / Supabase hiccup). Lets the app keep the
+ *  user signed in ("remember login") instead of forcing a re-login. */
+export async function hasStoredCloudSession(): Promise<boolean> {
+  if (!client) return false;
+  try {
+    const { data } = await client.auth.getSession();
+    return Boolean(data.session);
+  } catch {
+    return false;
+  }
+}
+
 export async function signOutCloud() {
   if (!client) return;
   const { error } = await client.auth.signOut();

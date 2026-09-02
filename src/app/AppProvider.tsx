@@ -11,6 +11,7 @@ import {
   cloudEnabled,
   fetchCloudAdminUsers,
   restoreCloudIdentity,
+  hasStoredCloudSession,
   signIn,
   createAccount as createCloudAccount,
   signOutCloud,
@@ -148,7 +149,6 @@ export function AppProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     if (!cloudEnabled) return;
     let cancelled = false;
-
     // Opened from a password-reset link — let the user set a new password first.
     if (hasRecoveryToken()) {
       setCloudRecoveryPending(true);
@@ -159,17 +159,47 @@ export function AppProvider({ children }: { children: ReactNode }) {
       setCloudSyncStatus('synced');
       return () => { cancelled = true; };
     }
-
-    restoreCloudIdentity()
-      .then((identity) => {
+    // Was there a stored cloud session before this restore attempt? If yes and
+    // the live restore fails (offline / Supabase hiccup / token refresh error),
+    // keep the user signed in with the last saved identity instead of dumping
+    // them on the login screen — "remember login".
+    let hadSession = false;
+    const savedProfile = saved?.currentUser;
+    const goLogin = () => {
+      setCurrentUser(null);
+      setIsAdmin(false);
+      applyUserState(null);
+      setCloudSyncStatus('synced');
+      setScreen('login');
+    };
+    const goSaved = () => {
+      // Offline-ish degrade: serve the cached identity + local progress.
+      setCurrentUser(savedProfile ?? null);
+      setIsAdmin(Boolean(saved?.isAdmin));
+      applyUserState({
+        activeModuleId: saved?.activeModuleId || null,
+        activePhaseId: saved?.activePhaseId || null,
+        activeQuestionIndex: saved?.activeQuestionIndex || 0,
+        progress: saved?.progress || [],
+        errorLog: saved?.errorLog || [],
+      });
+      setCloudSyncStatus('error');
+      setScreen('learning-path');
+    };
+    const degradeOrLogin = () => {
+      if (cancelled) return;
+      if (hadSession && savedProfile) goSaved();
+      else goLogin();
+    };
+    void (async () => {
+      hadSession = await hasStoredCloudSession();
+      if (cancelled) return;
+      try {
+        const identity = await restoreCloudIdentity();
         if (cancelled) return;
         if (!identity) {
-          setCurrentUser(null);
-          setIsAdmin(false);
-          applyUserState(null);
-          // Deep-linked /login must stay on the login screen, not bounce to welcome.
-          setScreen('login');
-          setCloudSyncStatus('synced');
+          if (hadSession && savedProfile) goSaved();
+          else goLogin();
           return;
         }
         setCurrentUser(identity.profile);
@@ -177,27 +207,17 @@ export function AppProvider({ children }: { children: ReactNode }) {
         applyUserState(identity.state);
         setScreen('learning-path');
         setCloudSyncStatus('synced');
-      })
-      .catch(() => {
-        if (cancelled) return;
-        // Supabase unreachable / slow / CORS-blocked → never leave the user
-        // stranded on the loading screen. Fall back to the welcome screen.
-        setCloudSyncStatus('error');
-        setCurrentUser(null);
-        setIsAdmin(false);
-        applyUserState(null);
-        setScreen('login');
-      });
+      } catch {
+        degradeOrLogin();
+      }
+    })();
 
-    // Hard timeout: if restoreCloudIdentity() hangs (e.g. Supabase down), the
-    // app must still reach a usable screen rather than spinning forever.
+    // Hard timeout: if restore hangs (e.g. Supabase down), never strand the
+    // user on the loading screen — keep them signed in if we can.
     const timeout = setTimeout(() => {
       if (!cancelled) {
         setCloudSyncStatus('error');
-        setCurrentUser(null);
-        setIsAdmin(false);
-        applyUserState(null);
-        setScreen('login');
+        degradeOrLogin();
       }
     }, 8000);
 
