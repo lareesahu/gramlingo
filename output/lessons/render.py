@@ -39,6 +39,11 @@ CARD_META = {
     "singular_plural": ("Singular & Plural", "one book · two books"),
     "third_person": ("Third Person", "he · she · it + -s"),
     "word_building": ("Word Building", "root + -er/-or · -tion · -al · -ism"),
+    "comparison": ("Comparison", "-er / -est · more · most · as...as"),
+    "question_words": ("Question Words", "what · who · where · when · why · how"),
+    "be_verbs": ("Be & There is/are", "am · is · are · there is · there are"),
+    "frequency_adverbs": ("Frequency Adverbs", "always · usually · often · never"),
+    "possessives": ("Possessives", "my · mine · Anna's · whose"),
 }
 
 def esc(s):
@@ -498,7 +503,7 @@ def render_index():
 </nav>
 <header class="cover">
   <div class="wrap">
-    <div class="kicker">GramLingo · 12 modules · 92 lessons + 4 foundation decks / 12 个模块 · 92 节课 + 4 个基础课件</div>
+    <div class="kicker">GramLingo · 12 modules · 92 lessons + {len(FOUNDATIONS)} foundation decks / 12 个模块 · 92 节课 + {len(FOUNDATIONS)} 个基础课件</div>
     <img class="hub-gramlin" src="assets/gramlin/peekaboo-gramlin.png" alt="" aria-hidden="true">
     <h1>Grammar lessons <span class="zh">语法课件目录</span></h1>
     <div class="sub">Build clear grammar intuition through short explanations, examples, common mistakes, and practice.<br><span class="zh">用简短讲解、例句、常见错误与练习，建立清晰的语法直觉。</span></div>
