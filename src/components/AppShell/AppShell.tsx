@@ -6,6 +6,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useAppContext } from "../../app/app-state";
 import { getStrings } from "../../i18n/i18n";
+import { PAY_ACCOUNT_URL, PAY_PRICING_URL } from "../../config/pay";
 import type { Language } from "../../game/types";
 import "./AppShell.css";
 
@@ -97,6 +98,8 @@ export function AppShell({ children, showNav = true, backTo }: AppShellProps) {
                   </button>
                   {profileOpen && (
                     <div className="header-dropdown">
+                      <a className="dropdown-option" href={PAY_ACCOUNT_URL} target="_blank" rel="noopener noreferrer" onClick={() => setProfileOpen(false)}>{s.myUnlocks}</a>
+                      <a className="dropdown-option dropdown-option--unlock" href={PAY_PRICING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setProfileOpen(false)}>{s.unlockWorlds}</a>
                       <button className="dropdown-option" onClick={() => { logout(); setProfileOpen(false); }}>Switch User</button>
                       <button className="dropdown-option" onClick={() => { logout(); setProfileOpen(false); }}>Log Out</button>
                     </div>

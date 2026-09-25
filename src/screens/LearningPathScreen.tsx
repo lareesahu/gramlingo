@@ -3,6 +3,7 @@ import { useAppContext } from '../app/app-state';
 import { useDragScroll } from '../hooks/useDragScroll';
 import { getStrings } from '../i18n/i18n';
 import { ModuleModal } from '../components/ModuleModal/ModuleModal';
+import { PAY_PRICING_URL } from '../config/pay';
 const BASE_URL = import.meta.env.BASE_URL;
 
 /** Cover image URL for a module id (route-aware base). */
@@ -111,6 +112,17 @@ export function LearningPathScreen() {
                     <div className="lp__card-body">
                       <h2 className="lp__card-title">{isZh ? mod.nameZh : mod.name}</h2>
                       <p className="lp__card-desc">{isZh ? mod.descZh : mod.desc}</p>
+                      {modLocked && (
+                        <a
+                          className="lp__unlock"
+                          href={PAY_PRICING_URL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          {s.unlockWorlds} →
+                        </a>
+                      )}
                     </div>
                   </div>
                 </article>

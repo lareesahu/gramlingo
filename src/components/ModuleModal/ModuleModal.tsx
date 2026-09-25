@@ -10,6 +10,7 @@ import { Gramlin } from '../Gramlin/Gramlin';
 import { GAME_DATA } from '../../game/data';
 import { getStrings } from '../../i18n/i18n';
 import { langName } from '../../screens/LearningPathScreen';
+import { PAY_PRICING_URL } from '../../config/pay';
 import './ModuleModal.css';
 
 interface ModuleModalProps {
@@ -124,6 +125,14 @@ export function ModuleModal({ moduleId, onClose }: ModuleModalProps) {
               );
             })}
           </div>
+          {order.some((pid: string, i: number) => (
+            modLocked || ((GAME_DATA.phases.find((ph: { id: string }) => ph.id === pid)?.q?.length || 0) === 0) ||
+            (i > 0 && !getPhaseProgress(order[i - 1])?.completed)
+          )) && (
+            <a className="mm-unlock" href={PAY_PRICING_URL} target="_blank" rel="noopener noreferrer">
+              🔓 {s.unlockWorlds} →
+            </a>
+          )}
           <a
             className="mm-lesson-deck"
             href={`https://lareesahu.github.io/gramlingo-test/${mod.id}.html`}

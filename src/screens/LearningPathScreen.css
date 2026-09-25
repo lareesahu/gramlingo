@@ -277,6 +277,18 @@
   overflow: hidden;
 }
 
+/* Unlock entry on a locked module card — link-out to the hosted pricing page. */
+.lp__unlock {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-body), "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.lp__unlock:hover { color: var(--color-primary-hover); text-decoration: underline; }
+
 /* === Expanded Panel === */
 .lp__panel {
   display: flex;

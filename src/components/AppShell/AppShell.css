@@ -143,6 +143,13 @@
   color: var(--color-primary);
 }
 
+/* Paid entry (pulse-pay link-out) — quiet, sunset, no call-out styling. */
+.dropdown-option--unlock {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: var(--font-body), "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
 /* === Main === */
 .app-main {
   flex: 1;

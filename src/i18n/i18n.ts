@@ -78,6 +78,8 @@ export const EN = {
   lessonPlan: "Lesson plan",
   lessonDeck: "Lesson deck",
   lockedByTeacher: "Locked by teacher",
+  unlockWorlds: "Unlock more worlds",
+  myUnlocks: "My unlocks",
 };
 
 export const ZH = {
@@ -156,6 +158,8 @@ export const ZH = {
   lessonPlan: "课程计划",
   lessonDeck: "课件",
   lockedByTeacher: "已被老师锁定",
+  unlockWorlds: "解锁更多世界",
+  myUnlocks: "我的解锁",
 };
 
 export const ES = {
@@ -234,6 +238,8 @@ export const ES = {
   lessonPlan: "Plan de lecciones",
   lessonDeck: "Guía de lecciones",
   lockedByTeacher: "Bloqueado por el profesor",
+  unlockWorlds: "Desbloquear más mundos",
+  myUnlocks: "Mis desbloqueos",
 };
 
 import type { Language } from "../game/types";
