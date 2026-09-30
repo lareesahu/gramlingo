@@ -1,0 +1,40 @@
+{
+  "name": "GramLingo",
+  "branch": "v2-restore",
+  "check": [
+    "C:/Users/hunin/AppData/Local/hermes/scripts/site-guard.py",
+    "--check",
+    "--quiet"
+  ],
+  "write": [
+    "C:/Users/hunin/AppData/Local/hermes/scripts/site-guard.py",
+    "--write"
+  ],
+  "tests": [],
+  "files": [
+    "sitemap.xml",
+    "robots.txt",
+    "llms.txt",
+    "index.html"
+  ],
+  "guard": {
+    "base_url": "https://gramlingo.online",
+    "sitemap": "sitemap.xml",
+    "robots": "robots.txt",
+    "ai_files": [
+      "llms.txt"
+    ],
+    "pages": {
+      "exclude": [
+        "node_modules/*",
+        "dist/*",
+        "output/*",
+        "preview/*",
+        "downloads/*",
+        "android/*",
+        "404.html"
+      ]
+    }
+  },
+  "advisory": true
+}
